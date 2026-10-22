@@ -1,0 +1,12 @@
+{
+  "original_retention_manifest_sha256": "3de3b35bbb8dfd7fb5da1e1d33484f3bdfb4b638a53874b3deccd6da5170a1cb",
+  "qualified_scope": "Additional paired uncertainty, fidelity, full predictor table and updated exposed resource accounting.",
+  "sha256": {
+    "development-accounting.json": "97979e5855ae038eef2f59ab301c51c450b445d1f4b3417dfd7d5017250c614a",
+    "fidelity-analysis.py": "d5d00e7bcd7ab9dffe31a65a67d03cf56e678549a12e8780490f5728206f273b",
+    "fidelity.json": "8bbea76d5e7b49a5bb8398fa883b2e0bd1bb5e8cf4e341b348b3f85e3f0d5673",
+    "predictor-areas.csv": "41b4372f5fb670fe28d6c759be97bb843b6278da293eb34b87971d25083f2977",
+    "uncertainty-mean-query.json": "e26c0c36550f933ecb48bea400d60ac78a8e7df984803e9978a52a3c51f53881",
+    "uncertainty-worst-query.json": "535a98e1ba8a9a3062499ef80fab462ea8f3fc4bad61c8f79982491b4e7f26f3"
+  }
+}

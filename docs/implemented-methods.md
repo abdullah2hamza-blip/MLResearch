@@ -44,7 +44,7 @@ Zero effect and source copy require no recipient measurements; their flat curves
 
 The current paired bootstrap averages acquisition seeds within each query intervention and resamples query interventions. Its interval is descriptive and conditional on the fixed source data, split and scoring/control bank. It omits common-control, biological and batch/guide uncertainty; acquisition seeds do not increase the number of biological replicates. Gaussian coverage diagnostics use ideal unregularized scalar variance around ridge predictions: regularization bias alone can spoil coverage, even before adaptive selection, source uncertainty, heteroskedastic genes or mechanism shifts. They must not be called validated confidence intervals.
 
-The complete controlled grid and accounted development tuning have executed. Outstanding study requirements include the integrated comparator check, frozen external evaluation, external uncertainty/permutation/ablation analyses and the final evidence-to-claim report. A successful smoke run does not satisfy those requirements.
+The complete controlled grid, accounted tuning and integrated comparator development check have executed. Outstanding study requirements include joint prediction freezing, external evaluation, external uncertainty/permutation/ablation analyses and the final evidence-to-claim report. A successful smoke run does not satisfy those requirements.
 
 ## Controlled study additions
 
@@ -67,3 +67,5 @@ The `uncertainty` CLI executes [the paired assessment protocol](assessment-uncer
 The optional `source_sensitivity` setting executes [the source-half protocol](source-sensitivity-protocol.md) with the original paid observations. Its ridge displacements and support disagreements are sensitivity fields, not interval bounds. Neither source-half agreement nor the earlier source stability flag certifies true population support.
 
 `account-development` recomputes the unique exposed cell union from frozen runs. A valid ledger hash chain alone cannot detect truncation; accounting also reconciles every configured checkpoint and final spend. New predictions additionally bind the exact ledger prefix hash and event count. Historical indexes lack this binding and receive an explicit legacy qualification. This is protection against accidental corruption within the cooperative runner model, not an adversary who rewrites all frozen hashes.
+
+The [completed integrated development findings](integrated-development-findings.md) retain exact legacy fidelity, negative reconstruction results and paired uncertainty bands spanning zero. Their updated unique development exposure is 6,428 units, recorded separately from the historical 6,344-unit tuning union and 4,960-unit simulation freeze. The external evaluation must use the full updated union.

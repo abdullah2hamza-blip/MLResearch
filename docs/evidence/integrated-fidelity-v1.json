@@ -1,0 +1,653 @@
+{
+  "analysis_source_sha256": "d5d00e7bcd7ab9dffe31a65a67d03cf56e678549a12e8780490f5728206f273b",
+  "checks": [
+    {
+      "all_seven_predictions_byte_equal": true,
+      "budget": 128,
+      "policy": "worst_query",
+      "seed": 0,
+      "tuning_policy": "worst_query"
+    },
+    {
+      "all_seven_predictions_byte_equal": true,
+      "budget": 256,
+      "policy": "worst_query",
+      "seed": 0,
+      "tuning_policy": "worst_query"
+    },
+    {
+      "all_seven_predictions_byte_equal": true,
+      "budget": 512,
+      "policy": "worst_query",
+      "seed": 0,
+      "tuning_policy": "worst_query"
+    },
+    {
+      "all_seven_predictions_byte_equal": true,
+      "budget": 128,
+      "policy": "worst_query",
+      "seed": 1,
+      "tuning_policy": "worst_query"
+    },
+    {
+      "all_seven_predictions_byte_equal": true,
+      "budget": 256,
+      "policy": "worst_query",
+      "seed": 1,
+      "tuning_policy": "worst_query"
+    },
+    {
+      "all_seven_predictions_byte_equal": true,
+      "budget": 512,
+      "policy": "worst_query",
+      "seed": 1,
+      "tuning_policy": "worst_query"
+    },
+    {
+      "all_seven_predictions_byte_equal": true,
+      "budget": 128,
+      "policy": "worst_query",
+      "seed": 2,
+      "tuning_policy": "worst_query"
+    },
+    {
+      "all_seven_predictions_byte_equal": true,
+      "budget": 256,
+      "policy": "worst_query",
+      "seed": 2,
+      "tuning_policy": "worst_query"
+    },
+    {
+      "all_seven_predictions_byte_equal": true,
+      "budget": 512,
+      "policy": "worst_query",
+      "seed": 2,
+      "tuning_policy": "worst_query"
+    },
+    {
+      "all_seven_predictions_byte_equal": true,
+      "budget": 128,
+      "policy": "worst_query",
+      "seed": 3,
+      "tuning_policy": "worst_query"
+    },
+    {
+      "all_seven_predictions_byte_equal": true,
+      "budget": 256,
+      "policy": "worst_query",
+      "seed": 3,
+      "tuning_policy": "worst_query"
+    },
+    {
+      "all_seven_predictions_byte_equal": true,
+      "budget": 512,
+      "policy": "worst_query",
+      "seed": 3,
+      "tuning_policy": "worst_query"
+    },
+    {
+      "all_seven_predictions_byte_equal": true,
+      "budget": 128,
+      "policy": "worst_query",
+      "seed": 4,
+      "tuning_policy": "worst_query"
+    },
+    {
+      "all_seven_predictions_byte_equal": true,
+      "budget": 256,
+      "policy": "worst_query",
+      "seed": 4,
+      "tuning_policy": "worst_query"
+    },
+    {
+      "all_seven_predictions_byte_equal": true,
+      "budget": 512,
+      "policy": "worst_query",
+      "seed": 4,
+      "tuning_policy": "worst_query"
+    },
+    {
+      "all_seven_predictions_byte_equal": true,
+      "budget": 128,
+      "policy": "fixed_grid",
+      "seed": 0,
+      "tuning_policy": "fixed_cf125_d8"
+    },
+    {
+      "all_seven_predictions_byte_equal": true,
+      "budget": 256,
+      "policy": "fixed_grid",
+      "seed": 0,
+      "tuning_policy": "fixed_cf125_d8"
+    },
+    {
+      "all_seven_predictions_byte_equal": true,
+      "budget": 512,
+      "policy": "fixed_grid",
+      "seed": 0,
+      "tuning_policy": "fixed_cf125_d8"
+    },
+    {
+      "all_seven_predictions_byte_equal": true,
+      "budget": 128,
+      "policy": "fixed_grid",
+      "seed": 1,
+      "tuning_policy": "fixed_cf125_d8"
+    },
+    {
+      "all_seven_predictions_byte_equal": true,
+      "budget": 256,
+      "policy": "fixed_grid",
+      "seed": 1,
+      "tuning_policy": "fixed_cf125_d8"
+    },
+    {
+      "all_seven_predictions_byte_equal": true,
+      "budget": 512,
+      "policy": "fixed_grid",
+      "seed": 1,
+      "tuning_policy": "fixed_cf125_d8"
+    },
+    {
+      "all_seven_predictions_byte_equal": true,
+      "budget": 128,
+      "policy": "fixed_grid",
+      "seed": 2,
+      "tuning_policy": "fixed_cf125_d8"
+    },
+    {
+      "all_seven_predictions_byte_equal": true,
+      "budget": 256,
+      "policy": "fixed_grid",
+      "seed": 2,
+      "tuning_policy": "fixed_cf125_d8"
+    },
+    {
+      "all_seven_predictions_byte_equal": true,
+      "budget": 512,
+      "policy": "fixed_grid",
+      "seed": 2,
+      "tuning_policy": "fixed_cf125_d8"
+    },
+    {
+      "all_seven_predictions_byte_equal": true,
+      "budget": 128,
+      "policy": "fixed_grid",
+      "seed": 3,
+      "tuning_policy": "fixed_cf125_d8"
+    },
+    {
+      "all_seven_predictions_byte_equal": true,
+      "budget": 256,
+      "policy": "fixed_grid",
+      "seed": 3,
+      "tuning_policy": "fixed_cf125_d8"
+    },
+    {
+      "all_seven_predictions_byte_equal": true,
+      "budget": 512,
+      "policy": "fixed_grid",
+      "seed": 3,
+      "tuning_policy": "fixed_cf125_d8"
+    },
+    {
+      "all_seven_predictions_byte_equal": true,
+      "budget": 128,
+      "policy": "fixed_grid",
+      "seed": 4,
+      "tuning_policy": "fixed_cf125_d8"
+    },
+    {
+      "all_seven_predictions_byte_equal": true,
+      "budget": 256,
+      "policy": "fixed_grid",
+      "seed": 4,
+      "tuning_policy": "fixed_cf125_d8"
+    },
+    {
+      "all_seven_predictions_byte_equal": true,
+      "budget": 512,
+      "policy": "fixed_grid",
+      "seed": 4,
+      "tuning_policy": "fixed_cf125_d8"
+    },
+    {
+      "all_seven_predictions_byte_equal": true,
+      "budget": 128,
+      "policy": "bias_aware",
+      "seed": 0,
+      "tuning_policy": "bias_gamma1"
+    },
+    {
+      "all_seven_predictions_byte_equal": true,
+      "budget": 256,
+      "policy": "bias_aware",
+      "seed": 0,
+      "tuning_policy": "bias_gamma1"
+    },
+    {
+      "all_seven_predictions_byte_equal": true,
+      "budget": 512,
+      "policy": "bias_aware",
+      "seed": 0,
+      "tuning_policy": "bias_gamma1"
+    },
+    {
+      "all_seven_predictions_byte_equal": true,
+      "budget": 128,
+      "policy": "bias_aware",
+      "seed": 1,
+      "tuning_policy": "bias_gamma1"
+    },
+    {
+      "all_seven_predictions_byte_equal": true,
+      "budget": 256,
+      "policy": "bias_aware",
+      "seed": 1,
+      "tuning_policy": "bias_gamma1"
+    },
+    {
+      "all_seven_predictions_byte_equal": true,
+      "budget": 512,
+      "policy": "bias_aware",
+      "seed": 1,
+      "tuning_policy": "bias_gamma1"
+    },
+    {
+      "all_seven_predictions_byte_equal": true,
+      "budget": 128,
+      "policy": "bias_aware",
+      "seed": 2,
+      "tuning_policy": "bias_gamma1"
+    },
+    {
+      "all_seven_predictions_byte_equal": true,
+      "budget": 256,
+      "policy": "bias_aware",
+      "seed": 2,
+      "tuning_policy": "bias_gamma1"
+    },
+    {
+      "all_seven_predictions_byte_equal": true,
+      "budget": 512,
+      "policy": "bias_aware",
+      "seed": 2,
+      "tuning_policy": "bias_gamma1"
+    },
+    {
+      "all_seven_predictions_byte_equal": true,
+      "budget": 128,
+      "policy": "bias_aware",
+      "seed": 3,
+      "tuning_policy": "bias_gamma1"
+    },
+    {
+      "all_seven_predictions_byte_equal": true,
+      "budget": 256,
+      "policy": "bias_aware",
+      "seed": 3,
+      "tuning_policy": "bias_gamma1"
+    },
+    {
+      "all_seven_predictions_byte_equal": true,
+      "budget": 512,
+      "policy": "bias_aware",
+      "seed": 3,
+      "tuning_policy": "bias_gamma1"
+    },
+    {
+      "all_seven_predictions_byte_equal": true,
+      "budget": 128,
+      "policy": "bias_aware",
+      "seed": 4,
+      "tuning_policy": "bias_gamma1"
+    },
+    {
+      "all_seven_predictions_byte_equal": true,
+      "budget": 256,
+      "policy": "bias_aware",
+      "seed": 4,
+      "tuning_policy": "bias_gamma1"
+    },
+    {
+      "all_seven_predictions_byte_equal": true,
+      "budget": 512,
+      "policy": "bias_aware",
+      "seed": 4,
+      "tuning_policy": "bias_gamma1"
+    },
+    {
+      "all_seven_predictions_byte_equal": true,
+      "budget": 128,
+      "policy": "bias_gamma025",
+      "seed": 0,
+      "tuning_policy": "bias_aware"
+    },
+    {
+      "all_seven_predictions_byte_equal": true,
+      "budget": 256,
+      "policy": "bias_gamma025",
+      "seed": 0,
+      "tuning_policy": "bias_aware"
+    },
+    {
+      "all_seven_predictions_byte_equal": true,
+      "budget": 512,
+      "policy": "bias_gamma025",
+      "seed": 0,
+      "tuning_policy": "bias_aware"
+    },
+    {
+      "all_seven_predictions_byte_equal": true,
+      "budget": 128,
+      "policy": "bias_gamma025",
+      "seed": 1,
+      "tuning_policy": "bias_aware"
+    },
+    {
+      "all_seven_predictions_byte_equal": true,
+      "budget": 256,
+      "policy": "bias_gamma025",
+      "seed": 1,
+      "tuning_policy": "bias_aware"
+    },
+    {
+      "all_seven_predictions_byte_equal": true,
+      "budget": 512,
+      "policy": "bias_gamma025",
+      "seed": 1,
+      "tuning_policy": "bias_aware"
+    },
+    {
+      "all_seven_predictions_byte_equal": true,
+      "budget": 128,
+      "policy": "bias_gamma025",
+      "seed": 2,
+      "tuning_policy": "bias_aware"
+    },
+    {
+      "all_seven_predictions_byte_equal": true,
+      "budget": 256,
+      "policy": "bias_gamma025",
+      "seed": 2,
+      "tuning_policy": "bias_aware"
+    },
+    {
+      "all_seven_predictions_byte_equal": true,
+      "budget": 512,
+      "policy": "bias_gamma025",
+      "seed": 2,
+      "tuning_policy": "bias_aware"
+    },
+    {
+      "all_seven_predictions_byte_equal": true,
+      "budget": 128,
+      "policy": "bias_gamma025",
+      "seed": 3,
+      "tuning_policy": "bias_aware"
+    },
+    {
+      "all_seven_predictions_byte_equal": true,
+      "budget": 256,
+      "policy": "bias_gamma025",
+      "seed": 3,
+      "tuning_policy": "bias_aware"
+    },
+    {
+      "all_seven_predictions_byte_equal": true,
+      "budget": 512,
+      "policy": "bias_gamma025",
+      "seed": 3,
+      "tuning_policy": "bias_aware"
+    },
+    {
+      "all_seven_predictions_byte_equal": true,
+      "budget": 128,
+      "policy": "bias_gamma025",
+      "seed": 4,
+      "tuning_policy": "bias_aware"
+    },
+    {
+      "all_seven_predictions_byte_equal": true,
+      "budget": 256,
+      "policy": "bias_gamma025",
+      "seed": 4,
+      "tuning_policy": "bias_aware"
+    },
+    {
+      "all_seven_predictions_byte_equal": true,
+      "budget": 512,
+      "policy": "bias_gamma025",
+      "seed": 4,
+      "tuning_policy": "bias_aware"
+    }
+  ],
+  "comparator_diagnostics": {
+    "bias_aware": {
+      "accepted_routes": 15,
+      "basis_ranks": {
+        "15": 5,
+        "16": 10
+      },
+      "checkpoints": 15,
+      "missing_descriptors_per_checkpoint": [
+        3,
+        4,
+        5
+      ],
+      "optimizer_rounds_range": [
+        18,
+        61
+      ],
+      "selected_ridge": {
+        "10.0": 15
+      },
+      "source_half_ridge_cv_mean_shift": 2.8809633001192746e-07,
+      "source_half_support_disagreements": 0
+    },
+    "bias_gamma025": {
+      "accepted_routes": 15,
+      "basis_ranks": {
+        "15": 5,
+        "16": 10
+      },
+      "checkpoints": 15,
+      "missing_descriptors_per_checkpoint": [
+        3,
+        4,
+        5
+      ],
+      "optimizer_rounds_range": [
+        17,
+        61
+      ],
+      "selected_ridge": {
+        "10.0": 15
+      },
+      "source_half_ridge_cv_mean_shift": 8.339643203851834e-07,
+      "source_half_support_disagreements": 0
+    },
+    "d_optimal": {
+      "accepted_routes": 15,
+      "basis_ranks": {
+        "15": 6,
+        "16": 9
+      },
+      "checkpoints": 15,
+      "missing_descriptors_per_checkpoint": [
+        3,
+        4
+      ],
+      "optimizer_rounds_range": [
+        16,
+        68
+      ],
+      "selected_ridge": {
+        "10.0": 15
+      },
+      "source_half_ridge_cv_mean_shift": 4.793574482998602e-06,
+      "source_half_support_disagreements": 0
+    },
+    "disagreement": {
+      "accepted_routes": 15,
+      "basis_ranks": {
+        "15": 5,
+        "16": 10
+      },
+      "checkpoints": 15,
+      "missing_descriptors_per_checkpoint": [
+        3,
+        4
+      ],
+      "optimizer_rounds_range": [
+        16,
+        62
+      ],
+      "selected_ridge": {
+        "1.0": 1,
+        "10.0": 14
+      },
+      "source_half_ridge_cv_mean_shift": 3.098965105346634e-06,
+      "source_half_support_disagreements": 0
+    },
+    "diversity": {
+      "accepted_routes": 15,
+      "basis_ranks": {
+        "15": 5,
+        "16": 10
+      },
+      "checkpoints": 15,
+      "missing_descriptors_per_checkpoint": [
+        3,
+        4
+      ],
+      "optimizer_rounds_range": [
+        16,
+        64
+      ],
+      "selected_ridge": {
+        "10.0": 15
+      },
+      "source_half_ridge_cv_mean_shift": 5.26087748246914e-07,
+      "source_half_support_disagreements": 0
+    },
+    "fixed_grid": {
+      "accepted_routes": 15,
+      "basis_ranks": {
+        "15": 5,
+        "16": 10
+      },
+      "checkpoints": 15,
+      "missing_descriptors_per_checkpoint": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "optimizer_rounds_range": [
+        17,
+        23
+      ],
+      "selected_ridge": {
+        "10.0": 15
+      },
+      "source_half_ridge_cv_mean_shift": 2.302444909011191e-07,
+      "source_half_support_disagreements": 0
+    },
+    "mean_query": {
+      "accepted_routes": 15,
+      "basis_ranks": {
+        "15": 6,
+        "16": 9
+      },
+      "checkpoints": 15,
+      "missing_descriptors_per_checkpoint": [
+        3,
+        4
+      ],
+      "optimizer_rounds_range": [
+        16,
+        61
+      ],
+      "selected_ridge": {
+        "1.0": 1,
+        "10.0": 14
+      },
+      "source_half_ridge_cv_mean_shift": 2.9382912058991683e-06,
+      "source_half_support_disagreements": 0
+    },
+    "random_equal": {
+      "accepted_routes": 15,
+      "basis_ranks": {
+        "15": 5,
+        "16": 10
+      },
+      "checkpoints": 15,
+      "missing_descriptors_per_checkpoint": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "optimizer_rounds_range": [
+        16,
+        64
+      ],
+      "selected_ridge": {
+        "10.0": 15
+      },
+      "source_half_ridge_cv_mean_shift": 5.523234145231097e-07,
+      "source_half_support_disagreements": 0
+    },
+    "reliability": {
+      "accepted_routes": 15,
+      "basis_ranks": {
+        "15": 5,
+        "16": 10
+      },
+      "checkpoints": 15,
+      "missing_descriptors_per_checkpoint": [
+        3,
+        4,
+        5
+      ],
+      "optimizer_rounds_range": [
+        20,
+        69
+      ],
+      "selected_ridge": {
+        "10.0": 15
+      },
+      "source_half_ridge_cv_mean_shift": 5.179741617879642e-07,
+      "source_half_support_disagreements": 0
+    },
+    "worst_query": {
+      "accepted_routes": 15,
+      "basis_ranks": {
+        "15": 5,
+        "16": 10
+      },
+      "checkpoints": 15,
+      "missing_descriptors_per_checkpoint": [
+        3,
+        4
+      ],
+      "optimizer_rounds_range": [
+        16,
+        69
+      ],
+      "selected_ridge": {
+        "1.0": 2,
+        "10.0": 13
+      },
+      "source_half_ridge_cv_mean_shift": 2.197136725849133e-06,
+      "source_half_support_disagreements": 0
+    }
+  },
+  "matched_checkpoint_pairs": 60,
+  "matched_ledger_pairs": 20,
+  "matched_prediction_arrays": 420,
+  "qualification": "Source-half shifts and paid route validation are conditional diagnostics, not coverage guarantees.",
+  "run_manifest_sha256": "de392f34c7d580cf42cda0fb527d16d764469d39f10b1ceaa2042b1fc5015582",
+  "tuning_manifest_sha256": "560e0c2596cc893a450d80db8b3bf930697e4b43a46e7e6d09e5e5b1aba25e56"
+}

@@ -1,0 +1,222 @@
+{
+  "configuration": {
+    "acquisition_cells": 64,
+    "acquisition_controls": 256,
+    "assessment_cells": 32,
+    "assessment_controls": 256,
+    "min_source_cells": 32,
+    "output_directory": "data/episodes/frangieh-control-to-ifng-v1",
+    "query_fraction": 0.25,
+    "seed": 20261021,
+    "source_context": "Control",
+    "source_prepared": "data/prepared/frangieh-moi1-cap96-v1",
+    "target_context": "IFN\u03b3",
+    "target_prepared": "data/prepared/frangieh-moi1-cap96-v1"
+  },
+  "environment": {
+    "git": {
+      "revision": "d2aa77a4613ba002e85743e55262478b691101b8",
+      "status": "M .gitignore\n M README.md\n M pyproject.toml\n M src/mlresearch/__init__.py\n M uv.lock"
+    },
+    "packages": {
+      "h5py": "3.16.0",
+      "matplotlib": "3.11.2",
+      "mlresearch": "0.1.0",
+      "numpy": "2.5.4",
+      "pytest": "9.1.1",
+      "scipy": "1.18.1"
+    },
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.14",
+    "recorded_at": "2026-10-22T02:49:46.457663+00:00",
+    "source_hashes": {
+      "__init__.py": "bb8543f534bc0779c941e08d8786d17c10a58bfc43e97e080422afc3757c8eb0",
+      "__main__.py": "b0d77ab859d763e6f3785dd41bbd3ff202db56bab564968167beefa5d5580d17",
+      "acquisition.py": "52e82caa4c80dd4e577bb2e90cdaca52caf35fc8c97000e529161c21596be19d",
+      "cli.py": "9005059fb5b78a917ea19d13a4ce3099bef04127280d8b087ad522997d2e9aa3",
+      "data.py": "ac2e62e8a74960d279f681cd4983d5a2f42f3cf13c8b8fde1887fc6265953789",
+      "datasets.json": "437d31afc7b04afa0410a23d433ff9c8749f171c664256850b6edacdcbd640e9",
+      "episodes.py": "daee1ed4f271b588d97d8ed3610b2bc3caf6a8d3cc47f9967e71a39de1a1e9a4",
+      "experiment.py": "cceed33b29db4700433d85a2c20b1bfef17ab00a4e72470815d75584e872bc9a",
+      "linear.py": "614d58fc6e8280e6559eb41e1d015723763ebb1db2469b5a7fe5a3ccb270566f",
+      "models.py": "eeedf708d4fcd22803b6aad251babed27a7dd42b9680b81bf55d64359512e68c",
+      "policies.py": "18104f644a4f66b4795ce54a9ea5494eee84999a4696c00550c4de30202d2c6b",
+      "prepare.py": "ee8db1f477dc3185104013f08358682b6255c479226a3935acc17614eb5bf75e",
+      "provenance.py": "07ae363c8f46e0a27271a4e54d3c135eb80f2b2ab4b83df219c6460b76b7984e",
+      "report.py": "bda7279a9b91724bf32d1fe3aaa68e8880d30f0771aeff4d2b3a883d8ba69359",
+      "simulation.py": "67c391950a553ca7f536bbe9c81718958d8da5ac4f54e2815fda69ffd774c2d0"
+    },
+    "source_tree_sha256": "916596ee7c318bfdcf3b8c61588aa0aa763796a124e378ed8c1e10896fec2f35"
+  },
+  "inventory": {
+    "acquisition_cells": 10112,
+    "assessment_cells": 6816,
+    "candidates": 154,
+    "genes": 23712,
+    "interventions": 205,
+    "queries": 51
+  },
+  "limitations": [
+    "Exact gene labels do not resolve aliases or annotation versions.",
+    "Cell resampling is not independent biological replication.",
+    "Input preparation provenance must be assessed separately."
+  ],
+  "prepared_inputs": {
+    "source": {
+      "configuration": {
+        "batch_column": null,
+        "column_block_size": 16,
+        "context_column": "perturbation_2",
+        "context_value": null,
+        "control_labels": [
+          "control"
+        ],
+        "filters": {
+          "MOI": [
+            1
+          ]
+        },
+        "guide_column": "guide_id",
+        "input_path": "data/raw/FrangiehIzar2021_RNA.h5ad",
+        "input_scale": "counts",
+        "max_cells_per_condition": 96,
+        "max_control_cells_per_context": 512,
+        "output_directory": "data/prepared/frangieh-moi1-cap96-v1",
+        "perturbation_column": "perturbation",
+        "row_block_size": 128,
+        "seed": 20261021,
+        "target_library_size": 10000.0
+      },
+      "configuration_sha256": "08d6a38a324e8072fdfca54e5959aa09f07e20ce9bca00072a825b39400508f1",
+      "dtype": "float32",
+      "environment": {
+        "git": {
+          "revision": "d2aa77a4613ba002e85743e55262478b691101b8",
+          "status": "M .gitignore\n M README.md\n M pyproject.toml\n M src/mlresearch/__init__.py\n M uv.lock"
+        },
+        "packages": {
+          "h5py": "3.16.0",
+          "matplotlib": "3.11.2",
+          "mlresearch": "0.1.0",
+          "numpy": "2.5.4",
+          "pytest": "9.1.1",
+          "scipy": "1.18.1"
+        },
+        "platform": "Windows-11-10.0.26200-SP0",
+        "python": "3.12.14",
+        "recorded_at": "2026-10-22T02:37:26.420447+00:00",
+        "source_hashes": {
+          "__init__.py": "bb8543f534bc0779c941e08d8786d17c10a58bfc43e97e080422afc3757c8eb0",
+          "__main__.py": "b0d77ab859d763e6f3785dd41bbd3ff202db56bab564968167beefa5d5580d17",
+          "acquisition.py": "5c7dead4a6e43b31db98a8507131020d4f92ede389d00be28ae6d175eca456c4",
+          "cli.py": "d83af50d0dbce6bac6a60534ef807875ec44152bc9e47b7526f2d860e8ccf336",
+          "data.py": "ac2e62e8a74960d279f681cd4983d5a2f42f3cf13c8b8fde1887fc6265953789",
+          "datasets.json": "437d31afc7b04afa0410a23d433ff9c8749f171c664256850b6edacdcbd640e9",
+          "episodes.py": "efb75413f6dcee14032c0686970ea376c817f5f1b5ca6c441c288e0fd9495c25",
+          "linear.py": "614d58fc6e8280e6559eb41e1d015723763ebb1db2469b5a7fe5a3ccb270566f",
+          "prepare.py": "95a0d5e92ce79907c1420a728ae14cceaec1c9fbd1fa6db994fc2b056cf38bbb",
+          "provenance.py": "07ae363c8f46e0a27271a4e54d3c135eb80f2b2ab4b83df219c6460b76b7984e"
+        },
+        "source_tree_sha256": "38a94acd90554715e41105a1a4b2873efd5c77bcd877c2d7b2e22ff33e8e4067"
+      },
+      "input_sha256": "cc42ef38bcf703a00e0c77c7945dd53159b12d814c438ae8afeaed9bc71f48d1",
+      "limitations": [
+        "Capped cell pools represent retrospective replay, not new experiments.",
+        "Guide/batch labels are preserved; biological independence is not assumed."
+      ],
+      "metadata_sha256": "580becf8e0f6d375a7a3a7dcbe4d0736a20dab9f9b5a26d51c3c4cbb9be9a495",
+      "provenance_caveat": "Initial development preparation captured source hashes at completion while implementation edits were in progress. This artifact is exploratory; later preparation captures start hashes. The single-control-label normalization result is unchanged by subsequent multi-control cap fix.",
+      "schema_version": 1,
+      "selection": "Declared metadata filters and seeded identity sampling; no effect-size filter.",
+      "shape": [
+        64294,
+        23712
+      ],
+      "state": "complete",
+      "transformation": "log1p(10000.0 * counts / full_gene_library_total)",
+      "values_sha256": "9c7a5eb1c731c19b2a35f5bae5763db1fb2640c93cf511d209a74f97c1002902"
+    },
+    "target": {
+      "configuration": {
+        "batch_column": null,
+        "column_block_size": 16,
+        "context_column": "perturbation_2",
+        "context_value": null,
+        "control_labels": [
+          "control"
+        ],
+        "filters": {
+          "MOI": [
+            1
+          ]
+        },
+        "guide_column": "guide_id",
+        "input_path": "data/raw/FrangiehIzar2021_RNA.h5ad",
+        "input_scale": "counts",
+        "max_cells_per_condition": 96,
+        "max_control_cells_per_context": 512,
+        "output_directory": "data/prepared/frangieh-moi1-cap96-v1",
+        "perturbation_column": "perturbation",
+        "row_block_size": 128,
+        "seed": 20261021,
+        "target_library_size": 10000.0
+      },
+      "configuration_sha256": "08d6a38a324e8072fdfca54e5959aa09f07e20ce9bca00072a825b39400508f1",
+      "dtype": "float32",
+      "environment": {
+        "git": {
+          "revision": "d2aa77a4613ba002e85743e55262478b691101b8",
+          "status": "M .gitignore\n M README.md\n M pyproject.toml\n M src/mlresearch/__init__.py\n M uv.lock"
+        },
+        "packages": {
+          "h5py": "3.16.0",
+          "matplotlib": "3.11.2",
+          "mlresearch": "0.1.0",
+          "numpy": "2.5.4",
+          "pytest": "9.1.1",
+          "scipy": "1.18.1"
+        },
+        "platform": "Windows-11-10.0.26200-SP0",
+        "python": "3.12.14",
+        "recorded_at": "2026-10-22T02:37:26.420447+00:00",
+        "source_hashes": {
+          "__init__.py": "bb8543f534bc0779c941e08d8786d17c10a58bfc43e97e080422afc3757c8eb0",
+          "__main__.py": "b0d77ab859d763e6f3785dd41bbd3ff202db56bab564968167beefa5d5580d17",
+          "acquisition.py": "5c7dead4a6e43b31db98a8507131020d4f92ede389d00be28ae6d175eca456c4",
+          "cli.py": "d83af50d0dbce6bac6a60534ef807875ec44152bc9e47b7526f2d860e8ccf336",
+          "data.py": "ac2e62e8a74960d279f681cd4983d5a2f42f3cf13c8b8fde1887fc6265953789",
+          "datasets.json": "437d31afc7b04afa0410a23d433ff9c8749f171c664256850b6edacdcbd640e9",
+          "episodes.py": "efb75413f6dcee14032c0686970ea376c817f5f1b5ca6c441c288e0fd9495c25",
+          "linear.py": "614d58fc6e8280e6559eb41e1d015723763ebb1db2469b5a7fe5a3ccb270566f",
+          "prepare.py": "95a0d5e92ce79907c1420a728ae14cceaec1c9fbd1fa6db994fc2b056cf38bbb",
+          "provenance.py": "07ae363c8f46e0a27271a4e54d3c135eb80f2b2ab4b83df219c6460b76b7984e"
+        },
+        "source_tree_sha256": "38a94acd90554715e41105a1a4b2873efd5c77bcd877c2d7b2e22ff33e8e4067"
+      },
+      "input_sha256": "cc42ef38bcf703a00e0c77c7945dd53159b12d814c438ae8afeaed9bc71f48d1",
+      "limitations": [
+        "Capped cell pools represent retrospective replay, not new experiments.",
+        "Guide/batch labels are preserved; biological independence is not assumed."
+      ],
+      "metadata_sha256": "580becf8e0f6d375a7a3a7dcbe4d0736a20dab9f9b5a26d51c3c4cbb9be9a495",
+      "provenance_caveat": "Initial development preparation captured source hashes at completion while implementation edits were in progress. This artifact is exploratory; later preparation captures start hashes. The single-control-label normalization result is unchanged by subsequent multi-control cap fix.",
+      "schema_version": 1,
+      "selection": "Declared metadata filters and seeded identity sampling; no effect-size filter.",
+      "shape": [
+        64294,
+        23712
+      ],
+      "state": "complete",
+      "transformation": "log1p(10000.0 * counts / full_gene_library_total)",
+      "values_sha256": "9c7a5eb1c731c19b2a35f5bae5763db1fb2640c93cf511d209a74f97c1002902"
+    }
+  },
+  "schema_version": 1,
+  "sha256": {
+    "private-banks.json": "3098219d5e5319e58fe0de824102fbb08f2bf9873f95656e514a9a89adfa762f",
+    "public.json": "9ab27baface0c6ed4a41670722d5a6ae58a4f522bbaf89a8cd7684fa6ecc2a3a",
+    "source.npz": "a4e90bde35b2d77b437f29de5d111f034a3a64636c79aae84f2345827faf162a"
+  },
+  "source_unchanged_during_build": true,
+  "state": "complete"
+}

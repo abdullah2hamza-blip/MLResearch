@@ -1,0 +1,30 @@
+{
+  "checked_at": "2026-10-22T06:40:15.888098+00:00",
+  "checks": [
+    "90 tests",
+    "ruff lint and format",
+    "mypy",
+    "CLI/data registry",
+    "offline demo",
+    "uncertainty CLI",
+    "development accounting CLI",
+    "bounded two-worker controlled study smoke"
+  ],
+  "commit": "43d77dc4a77142459f0f5d177a048cbe343c3fe3",
+  "conclusion": "success",
+  "jobs": [
+    {
+      "conclusion": "success",
+      "id": 119678119580,
+      "name": "checks (ubuntu-latest)"
+    },
+    {
+      "conclusion": "success",
+      "id": 119678119716,
+      "name": "checks (windows-latest)"
+    }
+  ],
+  "repository": "abdullah2hamza-blip/MLResearch",
+  "run_id": 39734879228,
+  "url": "https://github.com/abdullah2hamza-blip/MLResearch/actions/runs/39734879228"
+}

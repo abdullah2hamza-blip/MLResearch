@@ -1,5 +1,7 @@
 # Machine learning frontier research
 
+Latest implementation evidence: [integrated development findings](integrated-development-findings.md), with ten matched acquisition policies, nine prediction backbones, qualified common-control/source diagnostics and canonical external identifiers. The [status ledger](implementation-status.md) records the still-pending frozen external evaluation and final report.
+
 **Research cutoff: October 21, 2026. Status: implementation and exploratory replay pilots; full study active.**
 
 The [first development findings](development-findings.md) retain a negative result for the proposed extension. Zero-effect prediction outperformed the measured methods on that pilot's primary full-gene endpoint. These are conditional retrospective results, not prospective biological validation.
