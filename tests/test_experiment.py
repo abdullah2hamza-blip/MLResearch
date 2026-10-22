@@ -1,5 +1,6 @@
 import csv
 import hashlib
+import json
 import shutil
 import zipfile
 from dataclasses import asdict, replace
@@ -13,6 +14,7 @@ from mlresearch.models import Observations, source_coordinates
 from mlresearch.policies import Policy, PolicyConfig
 from mlresearch.provenance import file_hash, read_json, write_json
 from mlresearch.simulation import SimulationConfig, make_simulation
+from mlresearch.transfer import TransferConfig
 
 
 def fixture(tmp_path):
@@ -97,10 +99,20 @@ def test_offline_end_to_end_is_deterministic_and_pays_for_all_visible_cells(tmp_
     assert all(int(row["spent"]) <= int(row["budget"]) for row in metrics)
 
 
-def test_sealed_query_and_assessment_control_changes_cannot_change_predictions(tmp_path):
+@pytest.mark.parametrize("enable_transfer", [False, True])
+def test_sealed_query_and_assessment_control_changes_cannot_change_predictions(
+    tmp_path, enable_transfer
+):
     data, episode = fixture(tmp_path)
+    transfer = (
+        TransferConfig(rank=2, hidden=8, anchors=4, max_rounds=4, patience=2)
+        if enable_transfer
+        else None
+    )
     first = tmp_path / "first"
-    run_experiment(config(episode, first, ["worst_query"]))
+    run_experiment(
+        replace(config(episode, first, ["worst_query"]), transfer=transfer, source_sensitivity=True)
+    )
     banks = read_json(episode / "private-banks.json")
     queries = load_public_episode(episode).query_ids
     matrix = np.load(data / "target/values.npy", mmap_mode="r+")
@@ -115,7 +127,11 @@ def test_sealed_query_and_assessment_control_changes_cannot_change_predictions(t
     declaration["output_directory"] = str(new_episode)
     build_episode(EpisodeConfig(**declaration))
     second = tmp_path / "second"
-    run_experiment(config(new_episode, second, ["worst_query"]))
+    run_experiment(
+        replace(
+            config(new_episode, second, ["worst_query"]), transfer=transfer, source_sensitivity=True
+        )
+    )
     for budget in [32, 48]:
         with (
             np.load(first / f"seed-0/worst_query/budget-{budget}.npz") as a,
@@ -132,6 +148,47 @@ def test_sealed_query_and_assessment_control_changes_cannot_change_predictions(t
     with (second / "metrics.csv").open(encoding="utf-8") as stream:
         second_errors = [float(row["mse"]) for row in csv.DictReader(stream)]
     assert np.mean(second_errors) > np.mean(first_errors) + 10000
+
+
+def test_transfer_reuses_paid_ledger_and_records_its_complete_training_partition(tmp_path):
+    _, episode = fixture(tmp_path)
+    base = config(episode, tmp_path / "base", ["mean_query"])
+    run_experiment(base)
+    adapted = replace(
+        base,
+        output_directory=str(tmp_path / "transfer"),
+        transfer=TransferConfig(rank=2, hidden=8, anchors=4, max_rounds=4, patience=2),
+        source_sensitivity=True,
+    )
+    declaration = tmp_path / "config.json"
+    write_json(declaration, asdict(adapted))
+    assert RunConfig.load(declaration) == adapted
+    run_experiment(adapted)
+    first = tmp_path / "base/seed-0/mean_query"
+    second = tmp_path / "transfer/seed-0/mean_query"
+    assert (first / "ledger.jsonl").read_bytes() == (second / "ledger.jsonl").read_bytes()
+    ledger = [json.loads(line) for line in (second / "ledger.jsonl").read_text().splitlines()]
+    index = read_json(tmp_path / "transfer/prediction-index.json")
+    for item in index:
+        with (
+            np.load(first / f"budget-{item['budget']}.npz", allow_pickle=False) as a,
+            np.load(second / f"budget-{item['budget']}.npz", allow_pickle=False) as b,
+        ):
+            for name in a.files:
+                np.testing.assert_array_equal(a[name], b[name])
+            assert b["perturbmap_reconstruction"].shape == b["ridge"].shape
+            details = json.loads(str(b["transfer_diagnostics_json"]))
+        paid = ledger[: item["ledger_events"]]
+        identities = {event["action"]["intervention"] for event in paid} - {"__control__"}
+        train, validation = set(details["training_ids"]), set(details["paid_validation_ids"])
+        assert train | validation == identities
+        assert not train & validation
+        assert not (train | validation) & set(load_public_episode(episode).query_ids)
+        assert details["paid_control_cells"] == sum(
+            len(event["cell_ids"])
+            for event in paid
+            if event["action"]["intervention"] == "__control__"
+        )
 
 
 def test_query_variance_policy_does_not_reward_irrelevant_rank_gain():

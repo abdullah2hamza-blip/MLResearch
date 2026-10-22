@@ -23,6 +23,7 @@ Current policies are:
 | `diversity` | Source-feature farthest-point opening; control actions use query-variance reduction. This is a hybrid heuristic. |
 | `d_optimal` | Greedy change in `logdet(M + .01 I)` per cost, with nuisance-aware shared controls. |
 | `worst_query` | Greedy decrease of maximum `q'(M + .01 I)^-1 q` over the fixed source-query coordinates, per cost. |
+| `mean_query` | Greedy mean query-variance reduction under the same shared-control information and support priority, per cost. Added after the controlled study as a secondary comparator aligned with average MSE. |
 | `reliability` | Greedy scalar mean-variance reduction per cost, including controls. |
 | `disagreement` | Query-variance reduction weighted by disagreement between two ridge resolutions fitted only to paid calibrations. |
 | `bias_aware` | Worst-query variance decrease plus a weighted fixed-kernel discrepancy-variance decrease, per cost. |
@@ -43,7 +44,7 @@ Zero effect and source copy require no recipient measurements; their flat curves
 
 The current paired bootstrap averages acquisition seeds within each query intervention and resamples query interventions. Its interval is descriptive and conditional on the fixed source data, split and scoring/control bank. It omits common-control, biological and batch/guide uncertainty; acquisition seeds do not increase the number of biological replicates. Gaussian coverage diagnostics use ideal unregularized scalar variance around ridge predictions: regularization bias alone can spoil coverage, even before adaptive selection, source uncertainty, heteroskedastic genes or mechanism shifts. They must not be called validated confidence intervals.
 
-Outstanding study requirements include development tuning with accounted validation access, stronger comparator fidelity, source uncertainty/block-effect analysis, the complete simulation grid, frozen external evaluation, permutation/ablation controls, appropriate common-control uncertainty analysis, and an evidence-to-claim report. A successful smoke run does not satisfy those requirements.
+The complete controlled grid and accounted development tuning have executed. Outstanding study requirements include the integrated comparator check, frozen external evaluation, external uncertainty/permutation/ablation analyses and the final evidence-to-claim report. A successful smoke run does not satisfy those requirements.
 
 ## Controlled study additions
 
@@ -56,3 +57,13 @@ Study aggregation averages queries and acquisition seeds within each generative 
 For cached classical updates, let total precision be `W`, its feature center be `mu`, and centered information be `M`, including controls at zero feature. Adding precision `t` at `x` gives `M_new = M + [t/(1+t/W)] (x-mu)(x-mu)'` when `W>0`. With no previous observations the first weighted group contributes zero centered scatter. Query variances and log determinants then use rank-one inverse/determinant identities. The independent-control ablation instead uses diagonal contrast noise `v_i/n_i+c`; this intentionally wrong covariance is confined to acquisition. Gaussian-process depth/control gains use rank-one covariance downdates; a new intervention uses its Schur complement, including the shared-control off-diagonal. Dense-reference tests cover empty/partial/full calibration sets and every action type.
 
 The [completed controlled study](controlled-study-findings.md) retains all 70 cases and demonstrates that source measurement error can make conditional numerical support misleading. The [accounted development selection](development-tuning-findings.md) chooses a fixed grid and discrepancy weight but yields near-null predictions and no useful demonstrated development gain. Its updated fixed resource is 6,344 units. These results do not validate the heuristic source deferral rule or complete external evaluation.
+
+## Integrated comparator and analysis additions
+
+Explicit `transfer` configuration enables two additional backbones: the paid-control recipient-local low-rank network and the single-source PerturbMap reconstruction. [The protocol](transfer-comparator-protocol.md) specifies its train-only response basis, paid validation, descriptor features, optimizer, route calibration and fidelity limitations. The default legacy configuration continues to fit seven predictors. Both added predictors share each policy's existing purchases; raw control blocks are retained only when this option is enabled. Their training/validation identities and optimizer diagnostics are stored as a non-pickled JSON scalar in the authenticated checkpoint. Adversarial scorer-query/control changes leave every prediction and ledger unchanged.
+
+The `uncertainty` CLI executes [the paired assessment protocol](assessment-uncertainty-protocol.md): separate query, fixed-query cell and technical-batch sensitivity scopes, preserving one shared control resample. Saved float32 predictions are promoted before arithmetic to match the scorer. It checks the paired projection against the original error area. Missing batch sentinels are unavailable metadata, not extra batches. These analyses condition on fitted predictions and do not become biological confidence intervals.
+
+The optional `source_sensitivity` setting executes [the source-half protocol](source-sensitivity-protocol.md) with the original paid observations. Its ridge displacements and support disagreements are sensitivity fields, not interval bounds. Neither source-half agreement nor the earlier source stability flag certifies true population support.
+
+`account-development` recomputes the unique exposed cell union from frozen runs. A valid ledger hash chain alone cannot detect truncation; accounting also reconciles every configured checkpoint and final spend. New predictions additionally bind the exact ledger prefix hash and event count. Historical indexes lack this binding and receive an explicit legacy qualification. This is protection against accidental corruption within the cooperative runner model, not an adversary who rewrites all frozen hashes.

@@ -14,7 +14,14 @@ import numpy as np
 from mlresearch.acquisition import CONTROL, AcquisitionService, IndexedCellPool, Pool, verify_ledger
 from mlresearch.controls import SOURCE_CONTROLS, transform_source
 from mlresearch.episodes import load_prepared, load_public_episode
-from mlresearch.models import BACKBONES, Observations, predict, source_coordinates
+from mlresearch.models import (
+    BACKBONES,
+    BASE_BACKBONES,
+    Observations,
+    predict,
+    source_coordinates,
+    source_half_coordinates,
+)
 from mlresearch.policies import POLICIES, Policy, PolicyConfig
 from mlresearch.provenance import (
     environment_record,
@@ -27,6 +34,7 @@ from mlresearch.provenance import (
     utc_now,
     write_json,
 )
+from mlresearch.transfer import TransferConfig
 
 
 @dataclass(frozen=True)
@@ -43,8 +51,12 @@ class RunConfig:
     source_control: str = "none"
     source_control_seed: int = 20261022
     development_resource_record: str | None = None
+    transfer: TransferConfig | None = None
+    source_sensitivity: bool = False
 
     def __post_init__(self) -> None:
+        if not isinstance(self.source_sensitivity, bool):
+            raise ValueError("source_sensitivity must be boolean")
         if self.source_control not in SOURCE_CONTROLS:
             raise ValueError("Unknown source-information control")
         if (
@@ -80,8 +92,9 @@ class RunConfig:
                     )
             if variant.pilot_cell_count != self.policy.pilot_cell_count:
                 raise ValueError("Variants must share pilot cell depth")
-        if self.primary_backbone not in BACKBONES:
-            raise ValueError("Unknown primary predictor backbone")
+        enabled = BACKBONES if self.transfer is not None else BASE_BACKBONES
+        if self.primary_backbone not in enabled:
+            raise ValueError("Primary predictor backbone is unknown or disabled")
         if self.policy.pilot_interventions < 3:
             raise ValueError("Paid ridge validation requires at least three pilot interventions")
         if not self.budgets or sorted(set(self.budgets)) != self.budgets:
@@ -123,6 +136,8 @@ class RunConfig:
         value = read_json(path)
         try:
             value["policy"] = PolicyConfig(**value.get("policy", {}))
+            if value.get("transfer") is not None:
+                value["transfer"] = TransferConfig(**value["transfer"])
             return cls(**value)
         except TypeError as error:
             raise ValueError(f"Invalid run configuration: {error}") from error
@@ -279,6 +294,25 @@ def _run_experiment(config: RunConfig) -> dict[str, Any]:
     }
     write_json(output / "manifest.json", manifest)
     coordinates = source_coordinates(public, config.policy.rank)
+    source_halves = (
+        source_half_coordinates(public, config.policy.rank) if config.source_sensitivity else None
+    )
+    if source_halves is not None:
+        manifest["source_sensitivity"] = {
+            "definition": "Refit ridge/ridge_cv at source effects +/- half_difference/2",
+            "source_interventions_with_odd_counts": sum(
+                count % 2 for count in banks["source_counts"].values()
+            ),
+            "half_coordinate_ranks": [half.coordinates.rank for half in source_halves],
+            "qualification": (
+                "Exact source-half effects require even treatment/control counts; "
+                "odd counts give symmetric perturbations. Refit with the fixed paid ledger, "
+                "not a reacquired policy. Shared source controls are perturbed jointly. "
+                "Two noisy halves can agree on incorrect population support. "
+                "No joint interval, biological replication or coverage guarantee. "
+                "The reconstruction network is not refitted in this diagnostic."
+            ),
+        }
     np.save(output / "source-coordinates.npy", coordinates.features)
     predictions: list[dict[str, Any]] = []
     allocations: list[dict[str, Any]] = []
@@ -297,7 +331,7 @@ def _run_experiment(config: RunConfig) -> dict[str, Any]:
                 control_cell_cost=config.policy.control_cell_cost,
                 ledger_path=directory / "ledger.jsonl",
             )
-            observations = Observations()
+            observations = Observations(retain_control_cells=config.transfer is not None)
             policy = Policy(base_policy, public, coordinates, settings, seed)
             for pilot_action in policy.pilot():
                 if (
@@ -320,6 +354,8 @@ def _run_experiment(config: RunConfig) -> dict[str, Any]:
                     ridge=settings.ridge,
                     ridge_grid=tuple(settings.ridge_grid),
                     ridge_include_null=settings.ridge_include_null,
+                    transfer=config.transfer,
+                    source_halves=source_halves,
                 )
                 artifact = directory / f"budget-{budget}.npz"
                 payload: dict[str, Any] = {
@@ -336,6 +372,8 @@ def _run_experiment(config: RunConfig) -> dict[str, Any]:
                         "spent": state["spent"],
                         "artifact": str(artifact.relative_to(output)),
                         "sha256": file_hash(artifact),
+                        "ledger_events": len(service.ledger()),
+                        "ledger_sha256": file_hash(directory / "ledger.jsonl"),
                     }
                 )
                 allocations.append(
@@ -388,6 +426,8 @@ def _run_experiment(config: RunConfig) -> dict[str, Any]:
             raise ValueError("A prediction artifact changed before scoring")
         with np.load(artifact, allow_pickle=False) as arrays:
             for backbone in BACKBONES:
+                if backbone not in arrays:
+                    continue
                 estimated = arrays[backbone]
                 errors = np.mean((estimated - effects) ** 2, axis=1)
                 specificity = np.mean(
@@ -430,6 +470,21 @@ def _run_experiment(config: RunConfig) -> dict[str, Any]:
                             "source_mean_noise_estimate": float(
                                 arrays["source_mean_noise_estimate"][index]
                             ),
+                            "source_half_support_disagreement": bool(
+                                arrays["source_half_support_disagreement"][index]
+                            )
+                            if config.source_sensitivity
+                            else None,
+                            "source_half_identified_both": bool(
+                                arrays["source_half_identified_both"][index]
+                            )
+                            if config.source_sensitivity
+                            else None,
+                            "source_half_max_prediction_shift_mse": float(
+                                arrays[f"source_half_{backbone}_max_shift_mse"][index]
+                            )
+                            if config.source_sensitivity and backbone in ("ridge", "ridge_cv")
+                            else None,
                             "ideal_variance": variance if np.isfinite(variance) else None,
                             "gaussian_coverage_diagnostic": coverage,
                             "gaussian_mean_width_diagnostic": float(2 * width.mean())
@@ -458,6 +513,8 @@ def _run_experiment(config: RunConfig) -> dict[str, Any]:
             "for the ridge predictor's residual risk.",
             "Seeds and cells are not independent biological replicates.",
             "Local residual baseline is an adaptation, not a PerturbMap reproduction.",
+            "Optional PerturbMap reconstruction uses one source and paid validation/controls; "
+            "implementation differences are declared in the comparator protocol.",
             "Fixed-grid settings are declared in configuration; "
             "any development selection must be recorded separately.",
         ],

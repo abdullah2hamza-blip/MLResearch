@@ -1,0 +1,71 @@
+{
+  "accounting_recomputed_cost_units": 6344,
+  "environment": {
+    "git": {
+      "revision": "d0f1ee60a07e9dbe796b4bf12e32a73ed5feb657",
+      "status": "M .github/workflows/checks.yml\n M docs/implementation-guide.md\n M docs/implemented-methods.md\n M src/mlresearch/cli.py\n M src/mlresearch/experiment.py\n M src/mlresearch/models.py\n M src/mlresearch/policies.py\n M tests/test_experiment.py"
+    },
+    "packages": {
+      "h5py": "3.16.0",
+      "matplotlib": "3.11.2",
+      "mlresearch": "0.1.0",
+      "numpy": "2.5.4",
+      "pytest": "9.1.1",
+      "scipy": "1.18.1"
+    },
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.14",
+    "recorded_at": "2026-10-22T06:34:32.921690+00:00",
+    "source_hashes": {
+      "__init__.py": "bb8543f534bc0779c941e08d8786d17c10a58bfc43e97e080422afc3757c8eb0",
+      "__main__.py": "27503438dec93a74b0ebe814fc619333accf571b77f73344c6252c94b0b5d8b3",
+      "accounting.py": "8ed6d877678a1de2f8b0b6e7c0a471126cc3348c21f852f50caa7d17b1de40f8",
+      "acquisition.py": "52e82caa4c80dd4e577bb2e90cdaca52caf35fc8c97000e529161c21596be19d",
+      "cli.py": "3b77ead3e9d7209ff0a01be53586963f5e99f0044723fe020b3fc683bb320e57",
+      "controls.py": "458f52e5886f97eed105e2c56701b51d2a26c080043b60ad8c39e9f6e9d24297",
+      "data.py": "ac2e62e8a74960d279f681cd4983d5a2f42f3cf13c8b8fde1887fc6265953789",
+      "datasets.json": "e90daa691730f09ba8885f1777ed5ae379f075d010a1dc3093c23272865e8881",
+      "design.py": "e83d39a64f0336ba7c5bf97deb997c68db3c72b3c09adf178a71b5d210d055e5",
+      "episodes.py": "62f0ee1615fcd268aec088a83e34c0744b981523a74f58fc34a7fb3a110328c6",
+      "experiment.py": "fd4227b9e1bc89e63e7d4eb9c18bcc86316c441c3d52a9667fd77dc20aafb2ce",
+      "linear.py": "614d58fc6e8280e6559eb41e1d015723763ebb1db2469b5a7fe5a3ccb270566f",
+      "models.py": "5592d6c632bc9b9d6a47d1a1cf699a7fadc48c66fdba0a69c5e11eaa1230e8de",
+      "policies.py": "2ccb2f39cb78fafa6a3b452f0f76d4913e1660847cabb287ea382a69a01980fa",
+      "prepare.py": "ee8db1f477dc3185104013f08358682b6255c479226a3935acc17614eb5bf75e",
+      "provenance.py": "599e5f4b17cd39c44be9a7ddd27df89172ac3d3f6eca7a76b311cfea7c96a7e4",
+      "report.py": "8f6c8f5063b9552bf90e0c67d530adf67e04bf0adc8c4ded2aa5cf5dde3a7a9f",
+      "simulation.py": "eaa3ff0c98f8f9970c7e7c9a6ee75d9fba37326187fb5932ab7a9a5cb0aa0076",
+      "study.py": "514dea833445eee09a3795c5796bd729f67893d54a1b28da5128087c1fe97708",
+      "transfer.py": "1f57c328560f3c5c08c978387fd62c865992816d5e3d962e239bdc40e0dbe20d",
+      "uncertainty.py": "f7fa9518a0636c7492eabe8e4bb6a6be317bc08158546f9fe0270b030ca35f73"
+    },
+    "source_tree_sha256": "4b66553a596277a6bdd0724a13360b0d68617ecec95f15679fa204937e0056fc"
+  },
+  "external_scoring": "not started",
+  "independent_audit": {
+    "added_checks": [
+      "Bound checkpoint ledger prefix hashes and event counts",
+      "Legacy checkpoint/final-spend reconciliation",
+      "Float64 promotion before paired squared-error arithmetic",
+      "Complete unique prediction checkpoint index validation"
+    ],
+    "confirmed_bugs_fixed": [
+      "Truncated hash-chained ledgers accepted by cost accountant",
+      "Missing batch sentinels could become fictitious batches"
+    ],
+    "scope": "read-only uncertainty/accounting review; no external assessment opened"
+  },
+  "mypy": {
+    "passed": true,
+    "source_files": 20
+  },
+  "pytest": {
+    "basetemp": ".cache/pytest-integration-v2",
+    "passed": 90,
+    "seconds": 47.31
+  },
+  "recorded_at": "2026-10-22T06:34:32.507292+00:00",
+  "ruff_check": "passed",
+  "ruff_format": "passed",
+  "uncertainty_projection_matches_original": true
+}

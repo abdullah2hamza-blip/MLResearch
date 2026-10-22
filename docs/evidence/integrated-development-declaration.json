@@ -1,0 +1,9 @@
+{
+  "configuration_sha256": "59664463e51210dad4a11fef945bbfa0e988346cb30fbfb900c171cfae293a5e",
+  "declared_at": "2026-10-22T06:31:40.565449+00:00",
+  "external_assessment_opened": false,
+  "fixed_development_cost_before_run": 6344,
+  "hyperparameter_search": false,
+  "protocol": "docs/integrated-development-protocol.md",
+  "state": "declared; not executed"
+}

@@ -1,0 +1,13 @@
+{
+  "available_ram_bytes": 1282424832,
+  "disk_free_bytes": 643584802816,
+  "disk_total_bytes": 1002016075776,
+  "logical_cpus": 16,
+  "memory_scope": "Current process; peak is over its lifetime, not a per-case delta.",
+  "peak_commit_bytes": 15458304,
+  "peak_working_set_bytes": 25100288,
+  "process_id": 28452,
+  "ram_bytes": 16418983936,
+  "recorded_at": "2026-10-22T06:33:05.473086+00:00",
+  "working_set_bytes": 25100288
+}

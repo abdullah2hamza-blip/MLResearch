@@ -28,6 +28,7 @@ POLICIES = (
     "diversity",
     "d_optimal",
     "worst_query",
+    "mean_query",
     "reliability",
     "disagreement",
     "bias_aware",
@@ -349,9 +350,12 @@ class Policy:
             # Cover the fixed queries, not every source-coordinate direction.
             # Once queries are supported, a new irrelevant direction earns no bonus.
             support_gain = 0.0
-            if self.name in ("worst_query", "disagreement", "bias_aware") and not np.all(
-                before.identified
-            ):
+            if self.name in (
+                "worst_query",
+                "mean_query",
+                "disagreement",
+                "bias_aware",
+            ) and not np.all(before.identified):
                 after = query_support(self.query, after_matrix)
                 support_gain = max(
                     0.0, float(np.sum(before.residual_fraction - after.residual_fraction))
@@ -382,6 +386,8 @@ class Policy:
                     else variance[index] / max(counts[index], 1)
                     - variance[index] / new_counts[index]
                 )
+            elif self.name == "mean_query":
+                score = float(np.mean(improvement))
             else:
                 score = float(before_risk.max() - after_risk.max())
                 if self.name == "disagreement":

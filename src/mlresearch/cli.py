@@ -42,6 +42,21 @@ def parser() -> argparse.ArgumentParser:
     report = commands.add_parser("report", help="Create standalone replay plots and tables")
     report.add_argument("run_directory", type=Path)
     report.add_argument("--output", type=Path, required=True)
+    uncertainty = commands.add_parser(
+        "uncertainty", help="Analyze paired frozen errors with shared-control resampling"
+    )
+    uncertainty.add_argument("run_directory", type=Path)
+    uncertainty.add_argument("--output", type=Path, required=True)
+    uncertainty.add_argument("--policy", default="bias_aware")
+    uncertainty.add_argument("--reference", default="worst_query")
+    uncertainty.add_argument("--backbone", default="ridge_cv")
+    uncertainty.add_argument("--samples", type=int, default=2000)
+    uncertainty.add_argument("--seed", type=int, default=20261022)
+    accounting = commands.add_parser(
+        "account-development", help="Authenticate and count unique exposed development cells"
+    )
+    accounting.add_argument("--output", type=Path, required=True)
+    accounting.add_argument("run_directories", type=Path, nargs="+")
     simulate = commands.add_parser(
         "simulate", help="Generate a configured offline source/recipient dataset"
     )
@@ -101,6 +116,29 @@ def main(argv: list[str] | None = None) -> None:
             from mlresearch.report import summarize_run
 
             emit(summarize_run(arguments.run_directory, arguments.output), None)
+        elif arguments.command == "uncertainty":
+            from mlresearch.uncertainty import analyze_run
+
+            analysis = analyze_run(
+                arguments.run_directory,
+                arguments.output,
+                policy=arguments.policy,
+                reference=arguments.reference,
+                backbone=arguments.backbone,
+                samples=arguments.samples,
+                seed=arguments.seed,
+            )
+            emit(
+                {key: value for key, value in analysis.items() if key != "per_query_differences"},
+                None,
+            )
+        elif arguments.command == "account-development":
+            from mlresearch.accounting import account_development
+
+            if arguments.output.exists():
+                raise ValueError("Accounting output exists")
+            accounting_result = account_development(arguments.run_directories)
+            emit(accounting_result, arguments.output)
         elif arguments.command == "simulate":
             from mlresearch.provenance import read_json
             from mlresearch.simulation import SimulationConfig, make_simulation

@@ -1,0 +1,68 @@
+{
+  "budgets": [
+    128,
+    256,
+    512
+  ],
+  "development_resource_record": "docs/evidence/development-resource-accounting-v2.json",
+  "episode_directory": "data/episodes/frangieh-control-to-ifng-v1",
+  "label": "Integrated comparator development check under docs/integrated-development-protocol.md; external unopened",
+  "output_directory": "runs/frangieh-integrated-v1",
+  "policies": [
+    "random_equal",
+    "fixed_grid",
+    "diversity",
+    "d_optimal",
+    "worst_query",
+    "mean_query",
+    "reliability",
+    "disagreement",
+    "bias_aware",
+    "bias_gamma025"
+  ],
+  "policy": {
+    "block_cells": 8,
+    "cell_cost": 1,
+    "control_cell_cost": 1,
+    "discrepancy_weight": 1.0,
+    "fixed_control_fraction": 0.125,
+    "fixed_depth": 8,
+    "kernel_length": 1.0,
+    "partial_blocks": true,
+    "pilot_cells": 8,
+    "pilot_controls": 16,
+    "pilot_interventions": 6,
+    "rank": 4,
+    "ridge": 0.1,
+    "ridge_grid": [
+      0.1,
+      1,
+      10,
+      100,
+      1000,
+      10000,
+      100000
+    ],
+    "ridge_include_null": true,
+    "setup_cost": 4,
+    "variance_prior": "paid_ratio"
+  },
+  "primary_backbone": "ridge_cv",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "source_sensitivity": true,
+  "transfer": {},
+  "variants": {
+    "bias_gamma025": {
+      "base": "bias_aware",
+      "overrides": {
+        "discrepancy_weight": 0.25
+      }
+    }
+  }
+}

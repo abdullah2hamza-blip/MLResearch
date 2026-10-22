@@ -2,15 +2,17 @@
 
 from __future__ import annotations
 
-from dataclasses import dataclass
+import json
+from dataclasses import dataclass, replace
 
 import numpy as np
 
 from mlresearch.acquisition import CONTROL, Purchase
 from mlresearch.episodes import PublicEpisode
 from mlresearch.linear import design_information, fit_gls, query_support
+from mlresearch.transfer import TransferConfig, reconstruct
 
-BACKBONES = (
+BASE_BACKBONES = (
     "zero",
     "mean",
     "source_copy",
@@ -19,6 +21,8 @@ BACKBONES = (
     "ridge_cv",
     "local_residual_adaptation",
 )
+TRANSFER_BACKBONES = ("recipient_local_lowrank", "perturbmap_reconstruction")
+BACKBONES = (*BASE_BACKBONES, *TRANSFER_BACKBONES)
 
 
 def ridge_validation_scores(
@@ -86,6 +90,12 @@ class SourceCoordinates:
     source_half_noise: float
 
 
+@dataclass(frozen=True)
+class SourcePerturbation:
+    public: PublicEpisode
+    coordinates: SourceCoordinates
+
+
 def source_coordinates(public: PublicEpisode, rank: int) -> SourceCoordinates:
     """PCA of all permitted source responses (including query sources), plus an intercept.
 
@@ -115,6 +125,22 @@ def source_coordinates(public: PublicEpisode, rank: int) -> SourceCoordinates:
     )
 
 
+def source_half_coordinates(public: PublicEpisode, rank: int) -> tuple[SourcePerturbation, ...]:
+    """Two joint source perturbations; exact half means only for equal-size halves.
+
+    The stored difference includes the same control-half contrast for every
+    intervention. Refit source coordinates jointly, preserving that dependence.
+    This finite split sensitivity is neither a bootstrap nor a confidence set.
+    """
+    result = []
+    for sign in (-1, 1):
+        values = public.source_effects + sign * 0.5 * public.source_half_difference
+        values.setflags(write=False)
+        perturbed = replace(public, source_effects=values)
+        result.append(SourcePerturbation(perturbed, source_coordinates(perturbed, rank)))
+    return tuple(result)
+
+
 @dataclass
 class Moment:
     count: int
@@ -131,9 +157,11 @@ class Moment:
 class Observations:
     """Sufficient statistics updated only through paid, audited Purchase objects."""
 
-    def __init__(self) -> None:
+    def __init__(self, *, retain_control_cells: bool = False) -> None:
         self.moments: dict[str, Moment] = {}
         self.cell_ids: set[str] = set()
+        self._retain_control_cells = retain_control_cells
+        self._control_blocks: list[np.ndarray] = []
 
     def update(self, purchase: Purchase) -> None:
         if self.cell_ids.intersection(purchase.cell_ids):
@@ -150,6 +178,20 @@ class Observations:
             count = total
         self.moments[purchase.intervention] = Moment(count, mean, m2)
         self.cell_ids.update(purchase.cell_ids)
+        if self._retain_control_cells and purchase.intervention == CONTROL:
+            block = values.copy()
+            block.setflags(write=False)
+            self._control_blocks.append(block)
+
+    def control_cells(self) -> np.ndarray:
+        """Return only the purchased controls retained for expression descriptors."""
+        if not self._retain_control_cells or not self._control_blocks:
+            raise ValueError("Paid raw controls must be retained explicitly for transfer fitting")
+        values = np.concatenate(self._control_blocks)
+        if len(values) != self.moments[CONTROL].count:
+            raise ValueError("Retained controls disagree with paid sufficient statistics")
+        values.setflags(write=False)
+        return values
 
     def training(self, public: PublicEpisode) -> tuple[list[str], np.ndarray, np.ndarray, float]:
         if CONTROL not in self.moments:
@@ -174,6 +216,8 @@ def predict(
     ridge: float,
     ridge_grid: tuple[float, ...] = (0.1, 1.0, 10.0, 100.0, 1000.0),
     ridge_include_null: bool = False,
+    transfer: TransferConfig | None = None,
+    source_halves: tuple[SourcePerturbation, ...] | None = None,
 ) -> tuple[dict[str, np.ndarray], dict[str, np.ndarray | int | float]]:
     training_ids, effects, variances, control_variance = observations.training(public)
     if not training_ids:
@@ -263,7 +307,7 @@ def predict(
         ),
         "paid_training_residual_mse": float(np.mean((effects - x @ coefficients) ** 2)),
     }
-    return {
+    predictions = {
         "zero": np.zeros_like(fitted),
         "mean": np.broadcast_to(mean, fitted.shape).copy(),
         "source_copy": public.source_effects[query_rows].copy(),
@@ -271,4 +315,55 @@ def predict(
         "ridge": fitted,
         "ridge_cv": cv_fitted,
         "local_residual_adaptation": local,
-    }, diagnostics
+    }
+    if transfer is not None:
+        reconstruction = reconstruct(
+            observations.control_cells(),
+            public.genes,
+            training_ids,
+            effects,
+            source_training,
+            list(identities),
+            public.source_effects[query_rows],
+            transfer,
+        )
+        predictions.update({name: reconstruction[name] for name in TRANSFER_BACKBONES})
+        # A Unicode scalar remains readable with allow_pickle=False and is covered
+        # by the checkpoint hash alongside the predictions that it describes.
+        diagnostics["transfer_diagnostics_json"] = np.asarray(
+            json.dumps(reconstruction["diagnostics"], sort_keys=True, allow_nan=False)
+        )
+    if source_halves is not None:
+        if len(source_halves) != 2:
+            raise ValueError("Exactly two joint source-half perturbations are required")
+        half_predictions, half_support = [], []
+        half_penalties = []
+        for half in source_halves:
+            estimate, details = predict(
+                half.public,
+                half.coordinates,
+                observations,
+                identities,
+                ridge=ridge,
+                ridge_grid=ridge_grid,
+                ridge_include_null=ridge_include_null,
+            )
+            half_predictions.append(estimate)
+            half_support.append(details["identified"])
+            half_penalties.append(details["ridge_cv_selected"])
+        for name in ("ridge", "ridge_cv"):
+            diagnostics[f"source_half_{name}_max_shift_mse"] = np.maximum.reduce(
+                [
+                    np.mean((estimate[name] - predictions[name]) ** 2, axis=1)
+                    for estimate in half_predictions
+                ]
+            )
+            diagnostics[f"source_half_{name}_between_mse"] = np.mean(
+                (half_predictions[0][name] - half_predictions[1][name]) ** 2, axis=1
+            )
+        diagnostics["source_half_identified_both"] = np.all(np.asarray(half_support), axis=0)
+        diagnostics["source_half_support_disagreement"] = np.any(
+            np.asarray(half_support) != support.identified, axis=0
+        )
+        diagnostics["source_half_ridge_cv_penalties"] = np.asarray(half_penalties)
+    return predictions, diagnostics

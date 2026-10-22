@@ -77,4 +77,16 @@ For bounded external preparation, download both pinned Replogle files and run `c
 
 ## Remaining work
 
-Development tuning with accounted validation access, the complete controlled simulation grid, stronger method fidelity, frozen external scoring, source/block uncertainty, permutation controls, ablations, and final claim assessment remain active. See [milestone status](implementation-status.md). Neither passing tests nor a pilot result completes the implementation goal.
+The controlled simulation grid and development tuning have executed. The integrated comparator check, frozen external scoring, remaining metadata/uncertainty analysis and final claim assessment remain active. See [milestone status](implementation-status.md). Neither passing tests nor a pilot result completes the implementation goal.
+
+## Integrated transfer and uncertainty
+
+A run config may set `transfer` to an object of [declared reconstruction settings](transfer-comparator-protocol.md); `{}` selects those defaults. This enables `recipient_local_lowrank` and `perturbmap_reconstruction` alongside the seven earlier predictors, all using the same paid ledger. Omit the option or set it to null for legacy behavior. `source_sensitivity: true` adds [joint source-half diagnostics](source-sensitivity-protocol.md) for ridge predictors without purchasing more cells or changing acquisitions. The [integrated development protocol](integrated-development-protocol.md) freezes the next fidelity check.
+
+```sh
+uv run --locked mlresearch run configs/run-frangieh-integrated-v1.json
+uv run --locked mlresearch uncertainty runs/frangieh-integrated-v1 --output runs/frangieh-integrated-uncertainty.json --backbone ridge_cv
+uv run --locked mlresearch account-development --output runs/development-resource-next.json runs/frangieh-development-v1 runs/frangieh-development-v2 runs/frangieh-tuning-v1 runs/frangieh-integrated-v1
+```
+
+Analysis requires complete runs, the original frozen episode and verified prepared inputs. Every output must use a fresh path. Query bootstrap, cell resampling and batch sensitivity have separate conditional scopes; none is biological replication. New checkpoint indexes authenticate ledger prefixes as well as predictions. Historical runs retain their original indexes and are reconciled against checkpoint spends without claiming missing historical hashes.
