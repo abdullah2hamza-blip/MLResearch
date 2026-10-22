@@ -1,0 +1,48 @@
+{
+  "budgets": [
+    128,
+    256,
+    512
+  ],
+  "episode_directory": "data/episodes/frangieh-control-to-ifng-v1",
+  "label": "development follow-up: paid covariance-correct ridge validation added; original primary fixed-ridge pilot retained",
+  "output_directory": "runs/frangieh-development-v2",
+  "policies": [
+    "random_equal",
+    "fixed_grid",
+    "diversity",
+    "d_optimal",
+    "worst_query",
+    "reliability",
+    "disagreement",
+    "bias_aware"
+  ],
+  "policy": {
+    "block_cells": 8,
+    "cell_cost": 1,
+    "control_cell_cost": 1,
+    "discrepancy_weight": 0.25,
+    "fixed_control_fraction": 0.25,
+    "kernel_length": 1.0,
+    "pilot_controls": 16,
+    "pilot_interventions": 6,
+    "rank": 4,
+    "ridge": 0.1,
+    "ridge_grid": [
+      0.1,
+      1.0,
+      10.0,
+      100.0,
+      1000.0
+    ],
+    "setup_cost": 4
+  },
+  "primary_backbone": "ridge_cv",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "assessment_noise_floor": 0.002276768217966638,
+  "bootstrap_samples": 2000,
+  "bootstrap_seed": 513,
+  "comparisons": [
+    {
+      "acquisition_seeds": 5,
+      "comparator": "worst_query",
+      "conditional_high": 0.006973257662055771,
+      "conditional_low": 0.003908494911560996,
+      "mean_normalized_area": 0.010750338217270214,
+      "paired_difference": 0.005300622922800999,
+      "policy": "random_equal",
+      "query_interventions": 51,
+      "relative_error_change": 0.9726421723682472
+    },
+    {
+      "acquisition_seeds": 5,
+      "comparator": "worst_query",
+      "conditional_high": 0.007576442488820459,
+      "conditional_low": 0.004577383723908679,
+      "mean_normalized_area": 0.011435541344896901,
+      "paired_difference": 0.005985826050427689,
+      "policy": "fixed_grid",
+      "query_interventions": 51,
+      "relative_error_change": 1.0983740850650603
+    },
+    {
+      "acquisition_seeds": 5,
+      "comparator": "worst_query",
+      "conditional_high": 0.002145073518190715,
+      "conditional_low": 0.0018082198571057976,
+      "mean_normalized_area": 0.00743203009470722,
+      "paired_difference": 0.0019823148002380067,
+      "policy": "diversity",
+      "query_interventions": 51,
+      "relative_error_change": 0.3637464882339469
+    },
+    {
+      "acquisition_seeds": 5,
+      "comparator": "worst_query",
+      "conditional_high": 0.00017288885713299715,
+      "conditional_low": -0.00016679606618433813,
+      "mean_normalized_area": 0.005458796951573648,
+      "paired_difference": 9.08165710443441e-06,
+      "policy": "d_optimal",
+      "query_interventions": 51,
+      "relative_error_change": 0.0016664461561232686
+    },
+    {
+      "acquisition_seeds": 5,
+      "comparator": "worst_query",
+      "conditional_high": 0.0,
+      "conditional_low": 0.0,
+      "mean_normalized_area": 0.005449715294469215,
+      "paired_difference": 0.0,
+      "policy": "worst_query",
+      "query_interventions": 51,
+      "relative_error_change": 0.0
+    },
+    {
+      "acquisition_seeds": 5,
+      "comparator": "worst_query",
+      "conditional_high": 0.004239645828810949,
+      "conditional_low": 0.0031583997658875063,
+      "mean_normalized_area": 0.00913376592934046,
+      "paired_difference": 0.0036840506348712466,
+      "policy": "reliability",
+      "query_interventions": 51,
+      "relative_error_change": 0.6760079079011891
+    },
+    {
+      "acquisition_seeds": 5,
+      "comparator": "worst_query",
+      "conditional_high": -0.0005787616441727062,
+      "conditional_low": -0.0007898154790913782,
+      "mean_normalized_area": 0.004772011933256403,
+      "paired_difference": -0.0006777033612128107,
+      "policy": "disagreement",
+      "query_interventions": 51,
+      "relative_error_change": -0.12435573687685954
+    },
+    {
+      "acquisition_seeds": 5,
+      "comparator": "worst_query",
+      "conditional_high": 0.0016645635988899743,
+      "conditional_low": 0.0012746855131506233,
+      "mean_normalized_area": 0.006909503263663189,
+      "paired_difference": 0.0014597879691939759,
+      "policy": "bias_aware",
+      "query_interventions": 51,
+      "relative_error_change": 0.2678649966678956
+    }
+  ],
+  "interpretation": "Lower error area and negative differences favor the named policy.",
+  "interval_scope": "Descriptive query-intervention bootstrap conditional on source data, fixed split, acquisition seeds, and fixed assessment/control bank. Excludes biological, guide/batch and common scoring-control uncertainty.",
+  "limitations": [
+    "Intervals are ideal Gaussian diagnostics; post-selection coverage is unvalidated.",
+    "Scalar variances omit gene heteroskedasticity, guide/batch effects and source-coordinate uncertainty.",
+    "Unregularized ideal variances do not account for ridge shrinkage bias.",
+    "The discrepancy objective uses fixed-kernel variance as a surrogate for the ridge predictor's residual risk.",
+    "Seeds and cells are not independent biological replicates.",
+    "Local residual baseline is an adaptation, not a PerturbMap reproduction.",
+    "Fixed-grid settings have not yet been tuned on a development validation design."
+  ],
+  "run_manifest_sha256": "51da938b9b09a6ac7ebd186adb6ada38bb376e72a1b22b6f4c9cbacae2f6e993"
+}

@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "datasets": [
+    {
+      "key": "nadig-hepg2",
+      "filename": "NadigOConner2024_hepg2.h5ad",
+      "size": 850590740,
+      "md5": "af2be47f7477cf32fa6e4bec1c6a4868",
+      "url": "https://zenodo.org/api/records/13350497/files/NadigOConner2024_hepg2.h5ad/content",
+      "record": "10.5281/zenodo.13350497",
+      "license": "cc-by-4.0"
+    },
+    {
+      "key": "nadig-jurkat",
+      "filename": "NadigOConner2024_jurkat.h5ad",
+      "size": 1293665804,
+      "md5": "d8b05d00bfbd686d37ffdd4293bc6c8c",
+      "url": "https://zenodo.org/api/records/13350497/files/NadigOConner2024_jurkat.h5ad/content",
+      "record": "10.5281/zenodo.13350497",
+      "license": "cc-by-4.0"
+    },
+    {
+      "key": "frangieh-protein",
+      "filename": "FrangiehIzar2021_protein.h5ad",
+      "size": 24714445,
+      "md5": "9d9337e30af69ffdcf5e831f96616ed1",
+      "url": "https://zenodo.org/api/records/13350497/files/FrangiehIzar2021_protein.h5ad/content",
+      "record": "10.5281/zenodo.13350497",
+      "license": "cc-by-4.0"
+    },
+    {
+      "key": "frangieh-rna",
+      "filename": "FrangiehIzar2021_RNA.h5ad",
+      "size": 1458928348,
+      "md5": "dc438f53c476a3dd562898654d48ed15",
+      "url": "https://zenodo.org/api/records/13350497/files/FrangiehIzar2021_RNA.h5ad/content",
+      "record": "10.5281/zenodo.13350497",
+      "license": "cc-by-4.0"
+    },
+    {
+      "key": "replogle-k562",
+      "filename": "ReplogleWeissman2022_K562_essential.h5ad",
+      "size": 1546729675,
+      "md5": "d8cba17576d1a8afc0f7d71b79cad0f7",
+      "url": "https://zenodo.org/api/records/13350497/files/ReplogleWeissman2022_K562_essential.h5ad/content",
+      "record": "10.5281/zenodo.13350497",
+      "license": "cc-by-4.0"
+    },
+    {
+      "key": "replogle-rpe1",
+      "filename": "ReplogleWeissman2022_rpe1.h5ad",
+      "size": 1236886900,
+      "md5": "cc7f1ec50aeb3a3e1b4a6cfa713d80fa",
+      "url": "https://zenodo.org/api/records/13350497/files/ReplogleWeissman2022_rpe1.h5ad/content",
+      "record": "10.5281/zenodo.13350497",
+      "license": "cc-by-4.0"
+    }
+  ]
+}

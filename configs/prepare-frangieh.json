@@ -1,0 +1,16 @@
+{
+  "input_path": "data/raw/FrangiehIzar2021_RNA.h5ad",
+  "output_directory": "data/prepared/frangieh-moi1-cap96-v1",
+  "perturbation_column": "perturbation",
+  "context_column": "perturbation_2",
+  "guide_column": "guide_id",
+  "control_labels": ["control"],
+  "filters": {"MOI": [1]},
+  "input_scale": "counts",
+  "max_cells_per_condition": 96,
+  "max_control_cells_per_context": 512,
+  "seed": 20261021,
+  "column_block_size": 16,
+  "row_block_size": 128,
+  "target_library_size": 10000.0
+}

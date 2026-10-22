@@ -1,0 +1,762 @@
+{
+  "audited_at": "2026-10-22T02:15:15.451830+00:00",
+  "cells": 218331,
+  "duplicate_cell_ids": 0,
+  "duplicate_gene_ids": 0,
+  "expression_encoding": "csc_matrix",
+  "expression_sample": {
+    "fraction_near_integer_among_stored": 1.0,
+    "normalization": "Unknown: inspect provenance; integer-like samples do not prove counts.",
+    "sample_max": 9.0,
+    "sample_min": 1.0,
+    "sampled_rows": null,
+    "sampled_stored_values": 2048,
+    "sampling_axis": "leading stored values in CSC order; not a random cell sample"
+  },
+  "file_size_bytes": 1458928348,
+  "filename": "FrangiehIzar2021_RNA.h5ad",
+  "genes": 23712,
+  "has_raw": false,
+  "layers": [],
+  "limitations": [
+    "Technical cells are not assumed to be biological replicates.",
+    "Metadata availability alone does not establish cross-context compatibility.",
+    "This command is for raw-data auditing, never adaptive query-label access."
+  ],
+  "observation_columns": {
+    "MOI": {
+      "dtype": "int64",
+      "missing_or_empty": 0,
+      "most_common": [
+        [
+          "1",
+          126966
+        ],
+        [
+          "2",
+          45135
+        ],
+        [
+          "0",
+          23028
+        ],
+        [
+          "3",
+          14525
+        ],
+        [
+          "4",
+          5053
+        ],
+        [
+          "5",
+          1942
+        ],
+        [
+          "6",
+          793
+        ],
+        [
+          "7",
+          386
+        ],
+        [
+          "8",
+          222
+        ],
+        [
+          "9",
+          115
+        ],
+        [
+          "10",
+          64
+        ],
+        [
+          "11",
+          37
+        ]
+      ],
+      "unique": 20
+    },
+    "UMI_count": {
+      "dtype": "float64",
+      "missing_or_empty": 0,
+      "most_common": [
+        [
+          "7977.0",
+          33
+        ],
+        [
+          "6605.0",
+          31
+        ],
+        [
+          "10168.0",
+          30
+        ],
+        [
+          "9602.0",
+          30
+        ],
+        [
+          "8028.0",
+          29
+        ],
+        [
+          "7123.0",
+          29
+        ],
+        [
+          "8167.0",
+          28
+        ],
+        [
+          "8315.0",
+          28
+        ],
+        [
+          "9008.0",
+          28
+        ],
+        [
+          "8182.0",
+          28
+        ],
+        [
+          "8500.0",
+          28
+        ],
+        [
+          "7734.0",
+          28
+        ]
+      ],
+      "unique": 33077
+    },
+    "cancer": {
+      "dtype": "bool",
+      "missing_or_empty": 0,
+      "most_common": [
+        [
+          "True",
+          218331
+        ]
+      ],
+      "unique": 1
+    },
+    "celltype": {
+      "dtype": "object",
+      "missing_or_empty": 0,
+      "most_common": [
+        [
+          "melanocytes",
+          218331
+        ]
+      ],
+      "unique": 1
+    },
+    "disease": {
+      "dtype": "object",
+      "missing_or_empty": 0,
+      "most_common": [
+        [
+          "melanoma",
+          218331
+        ]
+      ],
+      "unique": 1
+    },
+    "guide_id": {
+      "dtype": "object",
+      "missing_or_empty": 23028,
+      "most_common": [
+        [
+          "nan",
+          23028
+        ],
+        [
+          "IFNGR2_2",
+          358
+        ],
+        [
+          "NO_SITE_47",
+          333
+        ],
+        [
+          "NO_SITE_913",
+          317
+        ],
+        [
+          "HLA-DRB5_2",
+          315
+        ],
+        [
+          "NO_SITE_36",
+          296
+        ],
+        [
+          "NO_SITE_23",
+          296
+        ],
+        [
+          "ONE_NON-GENE_SITE_531",
+          296
+        ],
+        [
+          "CD59_2",
+          287
+        ],
+        [
+          "JAK2_1",
+          285
+        ],
+        [
+          "FGFR1_1",
+          285
+        ],
+        [
+          "JAK1_2",
+          283
+        ]
+      ],
+      "unique": 58211
+    },
+    "library_preparation_protocol": {
+      "dtype": "object",
+      "missing_or_empty": 0,
+      "most_common": [
+        [
+          "10X 3' v3 sequencing",
+          218331
+        ]
+      ],
+      "unique": 1
+    },
+    "ncounts": {
+      "dtype": "float64",
+      "missing_or_empty": 0,
+      "most_common": [
+        [
+          "7977.0",
+          33
+        ],
+        [
+          "6605.0",
+          31
+        ],
+        [
+          "10168.0",
+          30
+        ],
+        [
+          "9602.0",
+          30
+        ],
+        [
+          "8028.0",
+          29
+        ],
+        [
+          "7123.0",
+          29
+        ],
+        [
+          "8167.0",
+          28
+        ],
+        [
+          "8315.0",
+          28
+        ],
+        [
+          "9008.0",
+          28
+        ],
+        [
+          "8182.0",
+          28
+        ],
+        [
+          "8500.0",
+          28
+        ],
+        [
+          "7734.0",
+          28
+        ]
+      ],
+      "unique": 33077
+    },
+    "ngenes": {
+      "dtype": "int64",
+      "missing_or_empty": 0,
+      "most_common": [
+        [
+          "3173",
+          120
+        ],
+        [
+          "2842",
+          116
+        ],
+        [
+          "2854",
+          111
+        ],
+        [
+          "2994",
+          110
+        ],
+        [
+          "3097",
+          108
+        ],
+        [
+          "3226",
+          108
+        ],
+        [
+          "3546",
+          107
+        ],
+        [
+          "2642",
+          107
+        ],
+        [
+          "2938",
+          104
+        ],
+        [
+          "3154",
+          104
+        ],
+        [
+          "2802",
+          104
+        ],
+        [
+          "3347",
+          103
+        ]
+      ],
+      "unique": 6377
+    },
+    "nperts": {
+      "dtype": "int64",
+      "missing_or_empty": 0,
+      "most_common": [
+        [
+          "1",
+          160726
+        ],
+        [
+          "0",
+          57605
+        ]
+      ],
+      "unique": 2
+    },
+    "organism": {
+      "dtype": "object",
+      "missing_or_empty": 0,
+      "most_common": [
+        [
+          "human",
+          218331
+        ]
+      ],
+      "unique": 1
+    },
+    "percent_mito": {
+      "dtype": "float64",
+      "missing_or_empty": 0,
+      "most_common": [
+        [
+          "0.0",
+          123
+        ],
+        [
+          "5.88235294117647",
+          31
+        ],
+        [
+          "5.263157894736842",
+          23
+        ],
+        [
+          "5.0",
+          23
+        ],
+        [
+          "4.545454545454546",
+          22
+        ],
+        [
+          "4.761904761904762",
+          21
+        ],
+        [
+          "6.25",
+          20
+        ],
+        [
+          "5.555555555555555",
+          19
+        ],
+        [
+          "6.666666666666667",
+          18
+        ],
+        [
+          "4.0",
+          16
+        ],
+        [
+          "7.142857142857142",
+          16
+        ],
+        [
+          "4.166666666666666",
+          15
+        ]
+      ],
+      "unique": 209214
+    },
+    "percent_ribo": {
+      "dtype": "float64",
+      "missing_or_empty": 0,
+      "most_common": [
+        [
+          "14.285714285714285",
+          61
+        ],
+        [
+          "12.5",
+          34
+        ],
+        [
+          "16.666666666666664",
+          26
+        ],
+        [
+          "13.333333333333334",
+          24
+        ],
+        [
+          "13.636363636363635",
+          24
+        ],
+        [
+          "15.0",
+          22
+        ],
+        [
+          "11.11111111111111",
+          20
+        ],
+        [
+          "15.384615384615385",
+          17
+        ],
+        [
+          "15.789473684210526",
+          17
+        ],
+        [
+          "14.583333333333334",
+          14
+        ],
+        [
+          "15.151515151515152",
+          14
+        ],
+        [
+          "13.793103448275861",
+          14
+        ]
+      ],
+      "unique": 209077
+    },
+    "perturbation": {
+      "dtype": "object",
+      "missing_or_empty": 0,
+      "most_common": [
+        [
+          "control",
+          57605
+        ],
+        [
+          "ACTA2",
+          1458
+        ],
+        [
+          "B2M",
+          1379
+        ],
+        [
+          "A2M",
+          1331
+        ],
+        [
+          "AEBP1",
+          1302
+        ],
+        [
+          "CD59",
+          1238
+        ],
+        [
+          "CD274",
+          1222
+        ],
+        [
+          "CTSD",
+          1217
+        ],
+        [
+          "IFNGR2",
+          1203
+        ],
+        [
+          "CSPG4",
+          1195
+        ],
+        [
+          "CD44",
+          1193
+        ],
+        [
+          "FGFR1",
+          1182
+        ]
+      ],
+      "unique": 249
+    },
+    "perturbation_2": {
+      "dtype": "object",
+      "missing_or_empty": 0,
+      "most_common": [
+        [
+          "IFN\u03b3",
+          87590
+        ],
+        [
+          "Co-culture",
+          73114
+        ],
+        [
+          "Control",
+          57627
+        ]
+      ],
+      "unique": 3
+    },
+    "perturbation_type": {
+      "dtype": "object",
+      "missing_or_empty": 0,
+      "most_common": [
+        [
+          "CRISPR",
+          218331
+        ]
+      ],
+      "unique": 1
+    },
+    "perturbation_type_2": {
+      "dtype": "object",
+      "missing_or_empty": 0,
+      "most_common": [
+        [
+          "IFN-\u03b3 stimulation",
+          218331
+        ]
+      ],
+      "unique": 1
+    },
+    "sgRNA": {
+      "dtype": "object",
+      "missing_or_empty": 91365,
+      "most_common": [
+        [
+          "nan",
+          91365
+        ],
+        [
+          "IFNGR2_2",
+          358
+        ],
+        [
+          "NO_SITE_47",
+          333
+        ],
+        [
+          "NO_SITE_913",
+          317
+        ],
+        [
+          "HLA-DRB5_2",
+          315
+        ],
+        [
+          "NO_SITE_36",
+          296
+        ],
+        [
+          "NO_SITE_23",
+          296
+        ],
+        [
+          "ONE_NON-GENE_SITE_531",
+          296
+        ],
+        [
+          "CD59_2",
+          287
+        ],
+        [
+          "JAK2_1",
+          285
+        ],
+        [
+          "FGFR1_1",
+          285
+        ],
+        [
+          "JAK1_2",
+          283
+        ]
+      ],
+      "unique": 819
+    },
+    "tissue_type": {
+      "dtype": "object",
+      "missing_or_empty": 0,
+      "most_common": [
+        [
+          "cell_line_co-culture",
+          218331
+        ]
+      ],
+      "unique": 1
+    },
+    "umap_x": {
+      "dtype": "float64",
+      "missing_or_empty": 0,
+      "most_common": [
+        [
+          "-2.0770097",
+          3
+        ],
+        [
+          "8.541485",
+          3
+        ],
+        [
+          "9.339571",
+          3
+        ],
+        [
+          "10.9196",
+          3
+        ],
+        [
+          "-4.792667",
+          2
+        ],
+        [
+          "-5.387269",
+          2
+        ],
+        [
+          "-3.6261477",
+          2
+        ],
+        [
+          "-5.2298126",
+          2
+        ],
+        [
+          "-4.816585",
+          2
+        ],
+        [
+          "-3.0720768",
+          2
+        ],
+        [
+          "-3.6055734",
+          2
+        ],
+        [
+          "-0.9620708",
+          2
+        ]
+      ],
+      "unique": 217808
+    },
+    "umap_y": {
+      "dtype": "float64",
+      "missing_or_empty": 0,
+      "most_common": [
+        [
+          "7.890347999999999",
+          2
+        ],
+        [
+          "10.225864",
+          2
+        ],
+        [
+          "7.6529117",
+          2
+        ],
+        [
+          "4.295501",
+          2
+        ],
+        [
+          "6.400074",
+          2
+        ],
+        [
+          "6.534732",
+          2
+        ],
+        [
+          "9.297884",
+          2
+        ],
+        [
+          "3.9117134",
+          2
+        ],
+        [
+          "10.509887",
+          2
+        ],
+        [
+          "4.8885627000000005",
+          2
+        ],
+        [
+          "3.037331",
+          2
+        ],
+        [
+          "4.101932499999998",
+          2
+        ]
+      ],
+      "unique": 217904
+    }
+  },
+  "schema_version": 1,
+  "variable_columns": [
+    "ensembl_id",
+    "gene_symbol",
+    "ncells",
+    "ncounts"
+  ]
+}

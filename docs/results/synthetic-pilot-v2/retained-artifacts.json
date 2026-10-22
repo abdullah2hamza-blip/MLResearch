@@ -1,0 +1,64 @@
+{
+  "analysis_environment": {
+    "git": {
+      "revision": "d2aa77a4613ba002e85743e55262478b691101b8",
+      "status": "M .gitignore\n M README.md\n M pyproject.toml\n M src/mlresearch/__init__.py\n M uv.lock"
+    },
+    "packages": {
+      "h5py": "3.16.0",
+      "matplotlib": "3.11.2",
+      "mlresearch": "0.1.0",
+      "numpy": "2.5.4",
+      "pytest": "9.1.1",
+      "scipy": "1.18.1"
+    },
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.14",
+    "recorded_at": "2026-10-22T03:13:06.421305+00:00",
+    "source_hashes": {
+      "__init__.py": "bb8543f534bc0779c941e08d8786d17c10a58bfc43e97e080422afc3757c8eb0",
+      "__main__.py": "b0d77ab859d763e6f3785dd41bbd3ff202db56bab564968167beefa5d5580d17",
+      "acquisition.py": "52e82caa4c80dd4e577bb2e90cdaca52caf35fc8c97000e529161c21596be19d",
+      "cli.py": "9005059fb5b78a917ea19d13a4ce3099bef04127280d8b087ad522997d2e9aa3",
+      "data.py": "ac2e62e8a74960d279f681cd4983d5a2f42f3cf13c8b8fde1887fc6265953789",
+      "datasets.json": "437d31afc7b04afa0410a23d433ff9c8749f171c664256850b6edacdcbd640e9",
+      "episodes.py": "daee1ed4f271b588d97d8ed3610b2bc3caf6a8d3cc47f9967e71a39de1a1e9a4",
+      "experiment.py": "b4e7dbba7e1a5ea61ba9206da123e051302bffa02cf42f074f4cd14d81a2aec5",
+      "linear.py": "614d58fc6e8280e6559eb41e1d015723763ebb1db2469b5a7fe5a3ccb270566f",
+      "models.py": "2b381b463933a8ec17671dcc0d4b4bf7bf5a060c0f93a72f23ed7255e55ca0ab",
+      "policies.py": "326398f47ea885da313ca5e0f3d1c4a48aaab2e2b98fda7e116643da6853abf8",
+      "prepare.py": "ee8db1f477dc3185104013f08358682b6255c479226a3935acc17614eb5bf75e",
+      "provenance.py": "170f9988ab48df70c36a49a9fba6dd5605cae4fb237325c4bca8b37dba4d7543",
+      "report.py": "5fb0d0342a6826e6eb7b790dc55bdb1fbd5dc4eb9df3db7a93cfa1e34ba42529",
+      "simulation.py": "67c391950a553ca7f536bbe9c81718958d8da5ac4f54e2815fda69ffd774c2d0"
+    },
+    "source_tree_sha256": "190db8b3c114d9e34a664648994818a5a3ed787ee00355e355dd634985aae62f"
+  },
+  "analysis_source_snapshot": {
+    "path": "analysis-code.zip",
+    "purpose": "Exact package sources plus available project dependency specification.",
+    "sha256": "8bcebf4be688ab22bf9ac2b2f5f0904e1ddf3ff94a27af3ad3d9f034fe4d0159"
+  },
+  "large_outputs": "Raw/prepared cells and prediction arrays remain ignored; regenerate from pinned inputs and saved configurations.",
+  "metrics_uncompressed_sha256": "f9a43e9f7b5a597b8c40c7ea022a848acbfd881b52d3df8e204821262c5506e0",
+  "raw_cells_included": false,
+  "run_directory": "runs\\synthetic-pilot-v2\\experiment",
+  "sha256": {
+    "acquisition-curves.png": "3e705f28496fc4f4ed5aa1864c121d2684de28d39ebfb3a01848086b136ef7ee",
+    "acquisition-curves.svg": "bd8a64e0b0ec834be02817151d6625c2704be1a4ff225a7a82d9c4bfe5b8e5aa",
+    "allocations.csv": "0b75fbe1745f08a4b7bc70a52f012a2fa3450536b5333afea3837cae8802aeef",
+    "analysis-code.zip": "8bcebf4be688ab22bf9ac2b2f5f0904e1ddf3ff94a27af3ad3d9f034fe4d0159",
+    "areas-by-query-seed.csv": "1c99b4e8f52d881805042f20ab773488b71516f48bde3c4b5b8c3848d686e6c4",
+    "code.zip": "8bcebf4be688ab22bf9ac2b2f5f0904e1ddf3ff94a27af3ad3d9f034fe4d0159",
+    "curves.csv": "3c1451cfc28b3aca3d7b00edc7a0fb646c596aa03d346d9f7eb547a80adab04d",
+    "metrics.csv.gz": "0295045dc081fb73efc27f2346bd4389843a254983247fb4d6b4b3f8bb7ba4d4",
+    "paired-comparisons.csv": "91a7f561f4b1b780146b77acc55bc8bf27dce27c5af089a82674dfde274cded2",
+    "prediction-index.json": "3195aef7481e103db682453a7b04d703356df18ebba2e719df47e9d525dae2cb",
+    "predictor-curves.png": "9034f33ce24abb87a3ad9936e71e10ceddb3f78665a193ed9bbac3ee2abc8ad1",
+    "predictor-curves.svg": "d28970f2a1f41450825521e984c16dc1fdc1f7c36d5db130a39ce38f125a8a68",
+    "results.md": "63f40b8f2880df0ded7097dc6403fd17553ed0623617194f0a93e7ffadef5643",
+    "risk-retention.csv": "0e5ef4012627e9ccdd6ae39461c93b439bd9cd8b178a4f19a363a81eb69fe103",
+    "run-manifest.json": "435ac74ac9d5e56b12cb9b57367a240ca72cf72763cf88987c1378ead5014e7d",
+    "summary.json": "29c30a1925f014a07b0c39e9db156b2f292be67e421adb4d8a73e9e2a5a95646"
+  }
+}

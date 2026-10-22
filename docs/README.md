@@ -1,0 +1,49 @@
+# Machine learning frontier research
+
+**Research cutoff: October 21, 2026. Status: implementation and exploratory replay pilots; full study active.**
+
+The [first development findings](development-findings.md) retain a negative result for the proposed extension. Zero-effect prediction outperformed the measured methods on that pilot's primary full-gene endpoint. These are conditional retrospective results, not prospective biological validation.
+
+## Recommendation
+
+Investigate **budgeted identification of transferable perturbation effects** at the intersection of machine learning, causal inference, experimental design, and single-cell biology.
+
+The practical question is: **When adapting a predictor to a new cellular context, should the next unit of experimental budget buy another perturbation, more cells for an existing perturbation, or more negative-control cells?** Optimize that choice for responses that will remain unmeasured in the new context.
+
+The proposed setting starts with measured perturbation responses in source contexts and unperturbed cells in a recipient context. A small recipient calibration panel can then be acquired. The final query perturbations have source measurements but no recipient measurements. This separates learning to transfer an intervention from inventing an entirely unseen intervention's effects.
+
+The high-novelty hypothesis is that **jointly selecting calibration interventions, measurement depth, and shared controls according to query-specific identifiability can improve the cost of reliable cross-context prediction**. The potentially publishable contribution is the acquisition problem and its validated solution. Low-rank transfer, active learning, uncertainty estimation, and causal motivation already have substantial prior art.
+
+**Assessment:** high novelty potential, substantial interdisciplinary relevance, moderate confidence that this exact intersection is open. Novelty is provisional. The [implementation literature audit](literature-verification.md) recovered the two OpenReview paper identities and added important IterPert and PerturbPlan predecessors; full-method access remains limited. Prediction-directed acquisition and cell/control budgeting individually are already occupied. Their implications and an explicit rejection rule are documented in the [novelty audit](literature-and-novelty.md). No claim of being first is justified yet.
+
+## Read the dossier
+
+| Document | Purpose |
+| --- | --- |
+| [Frontier comparison](frontier-scan.md) | Compare four current research directions and explain the choice. |
+| [Literature and novelty audit](literature-and-novelty.md) | Closest competitors, rejected ideas, and the remaining defensible gap. |
+| [Project proposal](project-proposal.md) | Scientific question, assumptions, candidate method, and falsifiable hypotheses. |
+| [Implementation objective](implementation-objective.md) | Execution scope, expert requirements, and completion criteria for the implementation goal. |
+| [Implementation literature verification](literature-verification.md) | Recovered citations, missing predecessors, and baseline-fidelity requirements. |
+| [Implementation guide](implementation-guide.md) | Executable commands, artifact layout, checks and reproduction. |
+| [Milestone status](implementation-status.md) | Completed evidence and outstanding requirements. |
+| [Implemented methods](implemented-methods.md) | Actual algorithms, paid validation, assumptions and approximations. |
+| [Pilot protocol](pilot-protocol.md) | Settings frozen before the first real-data policy scoring. |
+| [Development findings](development-findings.md) | Actual results, zero baseline, allocation evidence and negative findings. |
+| [External data compatibility](external-data-compatibility.md) | Target-ID checks, protocol differences, attribution and limits. |
+| [Technical notes](technical-notes.md) | Identifiability argument, shared-control covariance, and a reproducible toy calculation. |
+| [Evaluation plan](evaluation-plan.md) | Information boundaries, baselines, metrics, ablations, and failure criteria. |
+| [Data and feasibility](data-and-feasibility.md) | Verified public files, access evidence, resource estimates, and data-audit requirements. |
+| [Roadmap](roadmap.md) | A staged project with decisions about continuation. |
+| [References](references.md) | Primary sources with dates/status where verified and exact inspection limits. |
+| [Research log](research-log.md) | Search strategy, competing interpretations, and unresolved evidence. |
+
+## Why this is timely
+
+Arc's 2026 Virtual Cell Challenge explicitly targets prediction in previously unperturbed cell contexts. That establishes a current community problem, although this proposal's acquisition of recipient perturbations defines a different task from the competition's zero-shot interface. [Arc announcement](https://arcinstitute.org/news/virtual-cell-challenge-2026).
+
+The central research judgment is that a small team can investigate the **value of additional information** more effectively than it can compete on foundation-model scale. The initial study can replay existing experiments; prospective laboratory validation would be a later, separate collaboration.
+
+## What is established here
+
+The dossier compares primary research, identifies close prior art and defines a testable project. Implementation now verifies actual input files, establishes metadata overlap, tests the cooperative information boundary and executes exploratory pilots. The current evidence does **not** establish improved biological prediction or prospective laboratory savings. Full simulation, external, ablation and uncertainty requirements remain active.

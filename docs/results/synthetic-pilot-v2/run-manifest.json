@@ -1,0 +1,127 @@
+{
+  "completed_at": "2026-10-22T03:11:19.227296+00:00",
+  "configuration": {
+    "budgets": [
+      96,
+      144,
+      192
+    ],
+    "episode_directory": "runs\\synthetic-pilot-v2\\episode",
+    "label": "offline-synthetic-demo",
+    "output_directory": "runs\\synthetic-pilot-v2\\experiment",
+    "policies": [
+      "random_equal",
+      "worst_query",
+      "bias_aware"
+    ],
+    "policy": {
+      "block_cells": 8,
+      "cell_cost": 1,
+      "control_cell_cost": 1,
+      "discrepancy_weight": 0.25,
+      "fixed_control_fraction": 0.25,
+      "kernel_length": 1.0,
+      "pilot_controls": 16,
+      "pilot_interventions": 6,
+      "rank": 3,
+      "ridge": 0.1,
+      "ridge_grid": [
+        0.1,
+        1.0,
+        10.0,
+        100.0,
+        1000.0
+      ],
+      "setup_cost": 4
+    },
+    "primary_backbone": "ridge",
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "configuration_sha256": "3d837c172cd0acf2ae89cd5e714a947c911dd26e118abbc56a6edb387546107f",
+  "environment": {
+    "git": {
+      "revision": "d2aa77a4613ba002e85743e55262478b691101b8",
+      "status": "M .gitignore\n M README.md\n M pyproject.toml\n M src/mlresearch/__init__.py\n M uv.lock"
+    },
+    "packages": {
+      "h5py": "3.16.0",
+      "matplotlib": "3.11.2",
+      "mlresearch": "0.1.0",
+      "numpy": "2.5.4",
+      "pytest": "9.1.1",
+      "scipy": "1.18.1"
+    },
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.14",
+    "recorded_at": "2026-10-22T03:11:11.658467+00:00",
+    "source_hashes": {
+      "__init__.py": "bb8543f534bc0779c941e08d8786d17c10a58bfc43e97e080422afc3757c8eb0",
+      "__main__.py": "b0d77ab859d763e6f3785dd41bbd3ff202db56bab564968167beefa5d5580d17",
+      "acquisition.py": "52e82caa4c80dd4e577bb2e90cdaca52caf35fc8c97000e529161c21596be19d",
+      "cli.py": "9005059fb5b78a917ea19d13a4ce3099bef04127280d8b087ad522997d2e9aa3",
+      "data.py": "ac2e62e8a74960d279f681cd4983d5a2f42f3cf13c8b8fde1887fc6265953789",
+      "datasets.json": "437d31afc7b04afa0410a23d433ff9c8749f171c664256850b6edacdcbd640e9",
+      "episodes.py": "daee1ed4f271b588d97d8ed3610b2bc3caf6a8d3cc47f9967e71a39de1a1e9a4",
+      "experiment.py": "b4e7dbba7e1a5ea61ba9206da123e051302bffa02cf42f074f4cd14d81a2aec5",
+      "linear.py": "614d58fc6e8280e6559eb41e1d015723763ebb1db2469b5a7fe5a3ccb270566f",
+      "models.py": "2b381b463933a8ec17671dcc0d4b4bf7bf5a060c0f93a72f23ed7255e55ca0ab",
+      "policies.py": "326398f47ea885da313ca5e0f3d1c4a48aaab2e2b98fda7e116643da6853abf8",
+      "prepare.py": "ee8db1f477dc3185104013f08358682b6255c479226a3935acc17614eb5bf75e",
+      "provenance.py": "170f9988ab48df70c36a49a9fba6dd5605cae4fb237325c4bca8b37dba4d7543",
+      "report.py": "5fb0d0342a6826e6eb7b790dc55bdb1fbd5dc4eb9df3db7a93cfa1e34ba42529",
+      "simulation.py": "67c391950a553ca7f536bbe9c81718958d8da5ac4f54e2815fda69ffd774c2d0"
+    },
+    "source_tree_sha256": "190db8b3c114d9e34a664648994818a5a3ed787ee00355e355dd634985aae62f"
+  },
+  "episode_manifest_sha256": "f302b4e9d84d1c22f9deb32ab64ceacfde258f08efb0367d91df3a03ed70e586",
+  "inference_unit": "Paired query intervention; seeds measure acquisition variability, not biological replication.",
+  "limitations": [
+    "Intervals are ideal Gaussian diagnostics; post-selection coverage is unvalidated.",
+    "Scalar variances omit gene heteroskedasticity, guide/batch effects and source-coordinate uncertainty.",
+    "Unregularized ideal variances do not account for ridge shrinkage bias.",
+    "The discrepancy objective uses fixed-kernel variance as a surrogate for the ridge predictor's residual risk.",
+    "Seeds and cells are not independent biological replicates.",
+    "Local residual baseline is an adaptation, not a PerturbMap reproduction.",
+    "Fixed-grid settings have not yet been tuned on a development validation design."
+  ],
+  "predictions_sha256": "3195aef7481e103db682453a7b04d703356df18ebba2e719df47e9d525dae2cb",
+  "primary_backbone": "ridge",
+  "primary_comparator": "worst_query",
+  "primary_endpoint": "Mean full aligned-gene squared control-relative error; trapezoidal area over the fixed budget grid divided by grid width.",
+  "resources_end": {
+    "available_ram_bytes": 3289632768,
+    "disk_free_bytes": 664566394880,
+    "disk_total_bytes": 1002016075776,
+    "logical_cpus": 16,
+    "ram_bytes": 16418983936,
+    "recorded_at": "2026-10-22T03:11:19.227296+00:00"
+  },
+  "resources_start": {
+    "available_ram_bytes": 3284639744,
+    "disk_free_bytes": 664568905728,
+    "disk_total_bytes": 1002016075776,
+    "logical_cpus": 16,
+    "ram_bytes": 16418983936,
+    "recorded_at": "2026-10-22T03:11:11.807865+00:00"
+  },
+  "results_sha256": "f9a43e9f7b5a597b8c40c7ea022a848acbfd881b52d3df8e204821262c5506e0",
+  "runtime_seconds": 8.021772199994302,
+  "schema_version": 1,
+  "source_coordinates": {
+    "explained_fraction": 0.8398347035653547,
+    "rank": 3,
+    "source_half_noise": 0.15395792613379877
+  },
+  "source_snapshot": {
+    "path": "code.zip",
+    "purpose": "Exact package sources plus available project dependency specification.",
+    "sha256": "8bcebf4be688ab22bf9ac2b2f5f0904e1ddf3ff94a27af3ad3d9f034fe4d0159"
+  },
+  "state": "complete"
+}

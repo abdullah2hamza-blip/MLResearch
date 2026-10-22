@@ -1,0 +1,23 @@
+{
+  "large_outputs": "Raw/prepared data and prediction/assessment arrays remain ignored; regenerate with the saved config, pinned data and code snapshot.",
+  "limitations": "Initial exploratory run predates exact source ZIP capture; environment/source hashes were recorded. A current-code five-seed rerun is retained separately as synthetic-pilot-v2.",
+  "metrics_uncompressed_sha256": "92fdc563ccd61c35c6b6bc5b2bc0a3273cc5d10cedf8a9c1b65fd6a6cf5d2d6c",
+  "raw_cells_included": false,
+  "run_directory": "runs\\synthetic-pilot-v1\\experiment",
+  "sha256": {
+    "acquisition-curves.png": "65d7f993d2434af047771542e16c95d571474dd889773074723fe5fbf6800835",
+    "acquisition-curves.svg": "0a8a7769e1a6701be97365d1cfe88b4518cf3ba6cf4d9284f8258f82ff276645",
+    "allocations.csv": "1e3c251bb2057694aa95d2ca165c1c16cea6b28fe60063074c62c7d207acbb4f",
+    "areas-by-query-seed.csv": "5916706d38ad2acf7a048399af079c69afe6442114f348f6bfaf09f834c74476",
+    "curves.csv": "235bff3c26728a3ac1825ff4ad0d7087f79082de6d92f41cf92c937b56dff814",
+    "metrics.csv.gz": "23fde7ae7186bfceec395a35ed6366b93725c095c4b78396a424bcfefeca5db8",
+    "paired-comparisons.csv": "91a7f561f4b1b780146b77acc55bc8bf27dce27c5af089a82674dfde274cded2",
+    "prediction-index.json": "82773bb6b3f796e6e6b55a9472850d6c79f8c8696861cffc6979f77f02929bba",
+    "predictor-curves.png": "b11264b5ee330d5161e4811011b301f8c1f658f44119384bce4e60d9216e3546",
+    "predictor-curves.svg": "a6255cf58514f63acd5b92173f38cc28c8469c7c99fd93623e5e5708fb060915",
+    "results.md": "63f40b8f2880df0ded7097dc6403fd17553ed0623617194f0a93e7ffadef5643",
+    "risk-retention.csv": "0e5ef4012627e9ccdd6ae39461c93b439bd9cd8b178a4f19a363a81eb69fe103",
+    "run-manifest.json": "550c969a5394dc01f901658714fe562f6fb4c0806f3a176aab32c15cf6b111ed",
+    "summary.json": "558af7ea1057dbf929fd8fdd72fe24e30e78a3e861e08ef79aadfaf99580f89d"
+  }
+}

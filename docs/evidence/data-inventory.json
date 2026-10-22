@@ -1,0 +1,64 @@
+{
+  "accessed_on": "2026-10-21",
+  "source_api": "https://zenodo.org/api/records/7041848",
+  "record_id": 13350497,
+  "doi": "10.5281/zenodo.13350497",
+  "created": "2024-08-26T18:24:22.094845+00:00",
+  "modified": "2024-08-26T18:24:25.084737+00:00",
+  "title": "scPerturb Single-Cell Perturbation Data: RNA and protein h5ad files",
+  "version": "1.4",
+  "license": {
+    "id": "cc-by-4.0"
+  },
+  "verification_scope": "Metadata inventory only. No h5ad files downloaded; usable overlap, raw counts, guide/batch metadata, and effective sample sizes remain unaudited.",
+  "files": [
+    {
+      "key": "NadigOConner2024_hepg2.h5ad",
+      "size": 850590740,
+      "checksum": "md5:af2be47f7477cf32fa6e4bec1c6a4868",
+      "links": {
+        "self": "https://zenodo.org/api/records/13350497/files/NadigOConner2024_hepg2.h5ad/content"
+      }
+    },
+    {
+      "key": "NadigOConner2024_jurkat.h5ad",
+      "size": 1293665804,
+      "checksum": "md5:d8b05d00bfbd686d37ffdd4293bc6c8c",
+      "links": {
+        "self": "https://zenodo.org/api/records/13350497/files/NadigOConner2024_jurkat.h5ad/content"
+      }
+    },
+    {
+      "key": "FrangiehIzar2021_protein.h5ad",
+      "size": 24714445,
+      "checksum": "md5:9d9337e30af69ffdcf5e831f96616ed1",
+      "links": {
+        "self": "https://zenodo.org/api/records/13350497/files/FrangiehIzar2021_protein.h5ad/content"
+      }
+    },
+    {
+      "key": "FrangiehIzar2021_RNA.h5ad",
+      "size": 1458928348,
+      "checksum": "md5:dc438f53c476a3dd562898654d48ed15",
+      "links": {
+        "self": "https://zenodo.org/api/records/13350497/files/FrangiehIzar2021_RNA.h5ad/content"
+      }
+    },
+    {
+      "key": "ReplogleWeissman2022_K562_essential.h5ad",
+      "size": 1546729675,
+      "checksum": "md5:d8cba17576d1a8afc0f7d71b79cad0f7",
+      "links": {
+        "self": "https://zenodo.org/api/records/13350497/files/ReplogleWeissman2022_K562_essential.h5ad/content"
+      }
+    },
+    {
+      "key": "ReplogleWeissman2022_rpe1.h5ad",
+      "size": 1236886900,
+      "checksum": "md5:cc7f1ec50aeb3a3e1b4a6cfa713d80fa",
+      "links": {
+        "self": "https://zenodo.org/api/records/13350497/files/ReplogleWeissman2022_rpe1.h5ad/content"
+      }
+    }
+  ]
+}

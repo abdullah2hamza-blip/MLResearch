@@ -1,0 +1,5245 @@
+{
+  "condition_inventory": [
+    {
+      "context": "Co-culture",
+      "eligible_cells": 229,
+      "intervention": "A2M",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 104,
+      "intervention": "ACSL3",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 243,
+      "intervention": "ACTA2",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 235,
+      "intervention": "AEBP1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 222,
+      "intervention": "AGA",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 7,
+      "intervention": "AHCY",
+      "is_control": false,
+      "retained_cells": 7
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 180,
+      "intervention": "AHNAK",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 203,
+      "intervention": "APOC2",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 190,
+      "intervention": "APOD",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 203,
+      "intervention": "APOE",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 165,
+      "intervention": "ARMC6",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 6,
+      "intervention": "ATP1A1",
+      "is_control": false,
+      "retained_cells": 6
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 194,
+      "intervention": "ATP1B1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 211,
+      "intervention": "ATP5MD",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 268,
+      "intervention": "B2M",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 118,
+      "intervention": "BOLA2",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 113,
+      "intervention": "BOLA2B",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 183,
+      "intervention": "BZW2",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 231,
+      "intervention": "C19orf48",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 104,
+      "intervention": "C1QBP",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 182,
+      "intervention": "C6orf226",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 113,
+      "intervention": "CCND1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 188,
+      "intervention": "CCND2",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 188,
+      "intervention": "CCR10",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 36,
+      "intervention": "CCT3",
+      "is_control": false,
+      "retained_cells": 36
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 15,
+      "intervention": "CCT6A",
+      "is_control": false,
+      "retained_cells": 15
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 205,
+      "intervention": "CD151",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 215,
+      "intervention": "CD274",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 270,
+      "intervention": "CD44",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 186,
+      "intervention": "CD47",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 267,
+      "intervention": "CD58",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 231,
+      "intervention": "CD59",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 178,
+      "intervention": "CD63",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 56,
+      "intervention": "CDC123",
+      "is_control": false,
+      "retained_cells": 56
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 243,
+      "intervention": "CDH19",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 147,
+      "intervention": "CDK4",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 51,
+      "intervention": "CDK6",
+      "is_control": false,
+      "retained_cells": 51
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 252,
+      "intervention": "CDKN1A",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 170,
+      "intervention": "CDKN2A",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 184,
+      "intervention": "CDKN2B",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 216,
+      "intervention": "CGAS",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 213,
+      "intervention": "CHCHD2",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 236,
+      "intervention": "CITED1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 182,
+      "intervention": "CKS1B",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 204,
+      "intervention": "CMSS1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 167,
+      "intervention": "CORO1A",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 255,
+      "intervention": "CSPG4",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 155,
+      "intervention": "CST3",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 71,
+      "intervention": "CTPS1",
+      "is_control": false,
+      "retained_cells": 71
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 186,
+      "intervention": "CTSA",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 220,
+      "intervention": "CTSB",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 270,
+      "intervention": "CTSD",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 195,
+      "intervention": "CTSL",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 189,
+      "intervention": "CTSO",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 199,
+      "intervention": "CXCR4",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 211,
+      "intervention": "CYP27A1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 180,
+      "intervention": "DAG1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 187,
+      "intervention": "DDR1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 137,
+      "intervention": "DDX17",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 142,
+      "intervention": "DDX39A",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 185,
+      "intervention": "DLL3",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 7,
+      "intervention": "DNAJC9",
+      "is_control": false,
+      "retained_cells": 7
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 68,
+      "intervention": "DNMT1",
+      "is_control": false,
+      "retained_cells": 68
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 127,
+      "intervention": "E2F1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 184,
+      "intervention": "EEA1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 29,
+      "intervention": "EEF1G",
+      "is_control": false,
+      "retained_cells": 29
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 9,
+      "intervention": "EIF2S3",
+      "is_control": false,
+      "retained_cells": 9
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 141,
+      "intervention": "EIF3K",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 20,
+      "intervention": "EIF4A1",
+      "is_control": false,
+      "retained_cells": 20
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 181,
+      "intervention": "EMP1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 197,
+      "intervention": "ENPP1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 192,
+      "intervention": "EVA1A",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 13,
+      "intervention": "FARSA",
+      "is_control": false,
+      "retained_cells": 13
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 61,
+      "intervention": "FBL",
+      "is_control": false,
+      "retained_cells": 61
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 247,
+      "intervention": "FBXO32",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 253,
+      "intervention": "FGFR1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 140,
+      "intervention": "FKBP4",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 230,
+      "intervention": "FMN1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 156,
+      "intervention": "FOS",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 50,
+      "intervention": "FOXM1",
+      "is_control": false,
+      "retained_cells": 50
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 150,
+      "intervention": "FRZB",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 245,
+      "intervention": "FSTL3",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 16,
+      "intervention": "FTH1",
+      "is_control": false,
+      "retained_cells": 16
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 228,
+      "intervention": "GAA",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 214,
+      "intervention": "GAS5",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 150,
+      "intervention": "GPATCH4",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 31,
+      "intervention": "GPI",
+      "is_control": false,
+      "retained_cells": 31
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 196,
+      "intervention": "GPNMB",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 186,
+      "intervention": "GRN",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 163,
+      "intervention": "GSEC",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 245,
+      "intervention": "GSN",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 108,
+      "intervention": "HASPIN",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 249,
+      "intervention": "HLA-A",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 137,
+      "intervention": "HLA-B",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 156,
+      "intervention": "HLA-C",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 256,
+      "intervention": "HLA-DRB5",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 178,
+      "intervention": "HLA-E",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 210,
+      "intervention": "HLA-F",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 226,
+      "intervention": "HLA-H",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 165,
+      "intervention": "HNRNPA1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 48,
+      "intervention": "HNRNPC",
+      "is_control": false,
+      "retained_cells": 48
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 169,
+      "intervention": "HSPA1A",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 256,
+      "intervention": "IDH2",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 211,
+      "intervention": "IDI2-AS1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 287,
+      "intervention": "IFNGR1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 435,
+      "intervention": "IFNGR2",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 28,
+      "intervention": "ILF2",
+      "is_control": false,
+      "retained_cells": 28
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 213,
+      "intervention": "IRF3",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 169,
+      "intervention": "IRF4",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 134,
+      "intervention": "ISYNA1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 197,
+      "intervention": "ITGA3",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 360,
+      "intervention": "JAK1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 401,
+      "intervention": "JAK2",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 247,
+      "intervention": "JMJD7",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 128,
+      "intervention": "JPT1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 198,
+      "intervention": "KCNN4",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 211,
+      "intervention": "KDR",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 169,
+      "intervention": "KLF4",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 230,
+      "intervention": "LAMP2",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 230,
+      "intervention": "LCP1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 217,
+      "intervention": "LEF1-AS1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 136,
+      "intervention": "LGALS3",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 174,
+      "intervention": "LGALS3BP",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 225,
+      "intervention": "LINC00518",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 218,
+      "intervention": "LRPAP1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 199,
+      "intervention": "LRRC75A-AS1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 227,
+      "intervention": "LY96",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 175,
+      "intervention": "MC1R",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 149,
+      "intervention": "MDH2",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 259,
+      "intervention": "MFGE8",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 190,
+      "intervention": "MIA",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 85,
+      "intervention": "MRPL47",
+      "is_control": false,
+      "retained_cells": 85
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 140,
+      "intervention": "MT2A",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 67,
+      "intervention": "MYC",
+      "is_control": false,
+      "retained_cells": 67
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 21,
+      "intervention": "NACA",
+      "is_control": false,
+      "retained_cells": 21
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 38,
+      "intervention": "NCL",
+      "is_control": false,
+      "retained_cells": 38
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 82,
+      "intervention": "NDUFA13",
+      "is_control": false,
+      "retained_cells": 82
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 170,
+      "intervention": "NEAT1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 154,
+      "intervention": "NGFR",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 166,
+      "intervention": "NME1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 195,
+      "intervention": "NMRK1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 83,
+      "intervention": "NOLC1",
+      "is_control": false,
+      "retained_cells": 83
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 165,
+      "intervention": "NONO",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 227,
+      "intervention": "NPC1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 212,
+      "intervention": "NPC2",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 177,
+      "intervention": "NSG1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 235,
+      "intervention": "NT5E",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 262,
+      "intervention": "NUP50-AS1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 77,
+      "intervention": "P2RX4",
+      "is_control": false,
+      "retained_cells": 77
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 72,
+      "intervention": "PABPC1",
+      "is_control": false,
+      "retained_cells": 72
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 54,
+      "intervention": "PAICS",
+      "is_control": false,
+      "retained_cells": 54
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 69,
+      "intervention": "PET100",
+      "is_control": false,
+      "retained_cells": 69
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 174,
+      "intervention": "PFDN4",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 92,
+      "intervention": "PFN1",
+      "is_control": false,
+      "retained_cells": 92
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 177,
+      "intervention": "PIK3IP1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 30,
+      "intervention": "POLD2",
+      "is_control": false,
+      "retained_cells": 30
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 27,
+      "intervention": "PPA1",
+      "is_control": false,
+      "retained_cells": 27
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 165,
+      "intervention": "PPIA",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 20,
+      "intervention": "PRELID3B",
+      "is_control": false,
+      "retained_cells": 20
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 164,
+      "intervention": "PROS1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 251,
+      "intervention": "PSAP",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 9,
+      "intervention": "PSMA7",
+      "is_control": false,
+      "retained_cells": 9
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 179,
+      "intervention": "PSMB8-AS1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 216,
+      "intervention": "PTMA",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 60,
+      "intervention": "PUF60",
+      "is_control": false,
+      "retained_cells": 60
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 154,
+      "intervention": "PYGB",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 211,
+      "intervention": "RAB27A",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 3,
+      "intervention": "RACK1",
+      "is_control": false,
+      "retained_cells": 3
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 249,
+      "intervention": "RB1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 206,
+      "intervention": "RBP7",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 51,
+      "intervention": "RNASEH2A",
+      "is_control": false,
+      "retained_cells": 51
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 164,
+      "intervention": "RNF213",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 38,
+      "intervention": "ROMO1",
+      "is_control": false,
+      "retained_cells": 38
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 116,
+      "intervention": "RPSA",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 53,
+      "intervention": "RRS1",
+      "is_control": false,
+      "retained_cells": 53
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 231,
+      "intervention": "RTP4",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 17,
+      "intervention": "RUVBL2",
+      "is_control": false,
+      "retained_cells": 17
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 208,
+      "intervention": "S100A6",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 176,
+      "intervention": "S100B",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 31,
+      "intervention": "SAE1",
+      "is_control": false,
+      "retained_cells": 31
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 179,
+      "intervention": "SAT1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 178,
+      "intervention": "SCARB2",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 242,
+      "intervention": "SDC3",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 211,
+      "intervention": "SDCBP",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 197,
+      "intervention": "SEC11C",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 156,
+      "intervention": "SERPINA3",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 153,
+      "intervention": "SERPINE2",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 212,
+      "intervention": "SERPINF1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 148,
+      "intervention": "SET",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 191,
+      "intervention": "SGK1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 131,
+      "intervention": "SHMT2",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 86,
+      "intervention": "SINHCAF",
+      "is_control": false,
+      "retained_cells": 86
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 172,
+      "intervention": "SLC19A1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 254,
+      "intervention": "SLC22A18",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 218,
+      "intervention": "SLC25A13",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 225,
+      "intervention": "SLC26A2",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 236,
+      "intervention": "SLC5A3",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 175,
+      "intervention": "SLC7A5P1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 132,
+      "intervention": "SLIRP",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 237,
+      "intervention": "SMAD3",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 178,
+      "intervention": "SMAD4",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 176,
+      "intervention": "SNHG6",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 11,
+      "intervention": "SNRPE",
+      "is_control": false,
+      "retained_cells": 11
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 11,
+      "intervention": "SNRPF",
+      "is_control": false,
+      "retained_cells": 11
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 22,
+      "intervention": "SNRPG",
+      "is_control": false,
+      "retained_cells": 22
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 199,
+      "intervention": "SOX4",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 216,
+      "intervention": "SP100",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 217,
+      "intervention": "SPESP1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 217,
+      "intervention": "SPINT1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 134,
+      "intervention": "SSR2",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 195,
+      "intervention": "ST3GAL6-AS1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 140,
+      "intervention": "ST6GALNAC2",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 360,
+      "intervention": "STAT1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 176,
+      "intervention": "STAT3",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 217,
+      "intervention": "STOM",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 196,
+      "intervention": "STX7",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 156,
+      "intervention": "TAPBP",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 224,
+      "intervention": "TAPBPL",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 212,
+      "intervention": "TFAP2A",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 247,
+      "intervention": "TGFB1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 101,
+      "intervention": "TIMM50",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 225,
+      "intervention": "TIMP1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 147,
+      "intervention": "TIMP2",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 194,
+      "intervention": "TIMP3",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 211,
+      "intervention": "TM4SF1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 40,
+      "intervention": "TMED10",
+      "is_control": false,
+      "retained_cells": 40
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 211,
+      "intervention": "TMEM173",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 183,
+      "intervention": "TOP1MT",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 185,
+      "intervention": "TP53",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 197,
+      "intervention": "TPP1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 71,
+      "intervention": "TPRKB",
+      "is_control": false,
+      "retained_cells": 71
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 160,
+      "intervention": "TRIM22",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 249,
+      "intervention": "TSC22D3",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 227,
+      "intervention": "TTLL1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 5,
+      "intervention": "TUBB",
+      "is_control": false,
+      "retained_cells": 5
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 141,
+      "intervention": "TXNDC17",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 252,
+      "intervention": "TYR",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 15,
+      "intervention": "UBA52",
+      "is_control": false,
+      "retained_cells": 15
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 73,
+      "intervention": "UBC",
+      "is_control": false,
+      "retained_cells": 73
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 7,
+      "intervention": "UBL5",
+      "is_control": false,
+      "retained_cells": 7
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 165,
+      "intervention": "UCN2",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 107,
+      "intervention": "UQCRFS1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 71,
+      "intervention": "UQCRH",
+      "is_control": false,
+      "retained_cells": 71
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 151,
+      "intervention": "VAT1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 229,
+      "intervention": "VDAC2",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 225,
+      "intervention": "WBP2",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 187,
+      "intervention": "WNT7A",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 141,
+      "intervention": "XAGE1A",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Co-culture",
+      "eligible_cells": 5707,
+      "intervention": "control",
+      "is_control": true,
+      "retained_cells": 512
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 146,
+      "intervention": "A2M",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 72,
+      "intervention": "ACSL3",
+      "is_control": false,
+      "retained_cells": 72
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 157,
+      "intervention": "ACTA2",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 152,
+      "intervention": "AEBP1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 138,
+      "intervention": "AGA",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 11,
+      "intervention": "AHCY",
+      "is_control": false,
+      "retained_cells": 11
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 144,
+      "intervention": "AHNAK",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 138,
+      "intervention": "APOC2",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 121,
+      "intervention": "APOD",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 140,
+      "intervention": "APOE",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 122,
+      "intervention": "ARMC6",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 3,
+      "intervention": "ATP1A1",
+      "is_control": false,
+      "retained_cells": 3
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 159,
+      "intervention": "ATP1B1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 145,
+      "intervention": "ATP5MD",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 132,
+      "intervention": "B2M",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 85,
+      "intervention": "BOLA2",
+      "is_control": false,
+      "retained_cells": 85
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 95,
+      "intervention": "BOLA2B",
+      "is_control": false,
+      "retained_cells": 95
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 133,
+      "intervention": "BZW2",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 137,
+      "intervention": "C19orf48",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 79,
+      "intervention": "C1QBP",
+      "is_control": false,
+      "retained_cells": 79
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 109,
+      "intervention": "C6orf226",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 86,
+      "intervention": "CCND1",
+      "is_control": false,
+      "retained_cells": 86
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 100,
+      "intervention": "CCND2",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 116,
+      "intervention": "CCR10",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 26,
+      "intervention": "CCT3",
+      "is_control": false,
+      "retained_cells": 26
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 10,
+      "intervention": "CCT6A",
+      "is_control": false,
+      "retained_cells": 10
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 124,
+      "intervention": "CD151",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 141,
+      "intervention": "CD274",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 158,
+      "intervention": "CD44",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 130,
+      "intervention": "CD47",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 128,
+      "intervention": "CD58",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 150,
+      "intervention": "CD59",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 103,
+      "intervention": "CD63",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 39,
+      "intervention": "CDC123",
+      "is_control": false,
+      "retained_cells": 39
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 156,
+      "intervention": "CDH19",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 126,
+      "intervention": "CDK4",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 51,
+      "intervention": "CDK6",
+      "is_control": false,
+      "retained_cells": 51
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 145,
+      "intervention": "CDKN1A",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 108,
+      "intervention": "CDKN2A",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 134,
+      "intervention": "CDKN2B",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 131,
+      "intervention": "CGAS",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 140,
+      "intervention": "CHCHD2",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 147,
+      "intervention": "CITED1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 133,
+      "intervention": "CKS1B",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 124,
+      "intervention": "CMSS1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 136,
+      "intervention": "CORO1A",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 143,
+      "intervention": "CSPG4",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 95,
+      "intervention": "CST3",
+      "is_control": false,
+      "retained_cells": 95
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 56,
+      "intervention": "CTPS1",
+      "is_control": false,
+      "retained_cells": 56
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 146,
+      "intervention": "CTSA",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 133,
+      "intervention": "CTSB",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 169,
+      "intervention": "CTSD",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 139,
+      "intervention": "CTSL",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 168,
+      "intervention": "CTSO",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 105,
+      "intervention": "CXCR4",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 148,
+      "intervention": "CYP27A1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 118,
+      "intervention": "DAG1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 112,
+      "intervention": "DDR1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 107,
+      "intervention": "DDX17",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 75,
+      "intervention": "DDX39A",
+      "is_control": false,
+      "retained_cells": 75
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 124,
+      "intervention": "DLL3",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 5,
+      "intervention": "DNAJC9",
+      "is_control": false,
+      "retained_cells": 5
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 51,
+      "intervention": "DNMT1",
+      "is_control": false,
+      "retained_cells": 51
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 97,
+      "intervention": "E2F1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 107,
+      "intervention": "EEA1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 21,
+      "intervention": "EEF1G",
+      "is_control": false,
+      "retained_cells": 21
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 6,
+      "intervention": "EIF2S3",
+      "is_control": false,
+      "retained_cells": 6
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 116,
+      "intervention": "EIF3K",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 30,
+      "intervention": "EIF4A1",
+      "is_control": false,
+      "retained_cells": 30
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 137,
+      "intervention": "EMP1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 131,
+      "intervention": "ENPP1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 109,
+      "intervention": "EVA1A",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 12,
+      "intervention": "FARSA",
+      "is_control": false,
+      "retained_cells": 12
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 52,
+      "intervention": "FBL",
+      "is_control": false,
+      "retained_cells": 52
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 125,
+      "intervention": "FBXO32",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 165,
+      "intervention": "FGFR1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 106,
+      "intervention": "FKBP4",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 143,
+      "intervention": "FMN1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 119,
+      "intervention": "FOS",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 43,
+      "intervention": "FOXM1",
+      "is_control": false,
+      "retained_cells": 43
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 113,
+      "intervention": "FRZB",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 157,
+      "intervention": "FSTL3",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 19,
+      "intervention": "FTH1",
+      "is_control": false,
+      "retained_cells": 19
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 123,
+      "intervention": "GAA",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 115,
+      "intervention": "GAS5",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 100,
+      "intervention": "GPATCH4",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 23,
+      "intervention": "GPI",
+      "is_control": false,
+      "retained_cells": 23
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 126,
+      "intervention": "GPNMB",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 106,
+      "intervention": "GRN",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 91,
+      "intervention": "GSEC",
+      "is_control": false,
+      "retained_cells": 91
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 163,
+      "intervention": "GSN",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 60,
+      "intervention": "HASPIN",
+      "is_control": false,
+      "retained_cells": 60
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 156,
+      "intervention": "HLA-A",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 98,
+      "intervention": "HLA-B",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 94,
+      "intervention": "HLA-C",
+      "is_control": false,
+      "retained_cells": 94
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 150,
+      "intervention": "HLA-DRB5",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 107,
+      "intervention": "HLA-E",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 131,
+      "intervention": "HLA-F",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 131,
+      "intervention": "HLA-H",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 112,
+      "intervention": "HNRNPA1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 40,
+      "intervention": "HNRNPC",
+      "is_control": false,
+      "retained_cells": 40
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 124,
+      "intervention": "HSPA1A",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 158,
+      "intervention": "IDH2",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 132,
+      "intervention": "IDI2-AS1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 133,
+      "intervention": "IFNGR1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 141,
+      "intervention": "IFNGR2",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 33,
+      "intervention": "ILF2",
+      "is_control": false,
+      "retained_cells": 33
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 131,
+      "intervention": "IRF3",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 103,
+      "intervention": "IRF4",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 106,
+      "intervention": "ISYNA1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 145,
+      "intervention": "ITGA3",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 135,
+      "intervention": "JAK1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 161,
+      "intervention": "JAK2",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 145,
+      "intervention": "JMJD7",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 99,
+      "intervention": "JPT1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 120,
+      "intervention": "KCNN4",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 129,
+      "intervention": "KDR",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 121,
+      "intervention": "KLF4",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 148,
+      "intervention": "LAMP2",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 145,
+      "intervention": "LCP1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 141,
+      "intervention": "LEF1-AS1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 122,
+      "intervention": "LGALS3",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 121,
+      "intervention": "LGALS3BP",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 134,
+      "intervention": "LINC00518",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 122,
+      "intervention": "LRPAP1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 118,
+      "intervention": "LRRC75A-AS1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 113,
+      "intervention": "LY96",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 134,
+      "intervention": "MC1R",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 122,
+      "intervention": "MDH2",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 162,
+      "intervention": "MFGE8",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 110,
+      "intervention": "MIA",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 70,
+      "intervention": "MRPL47",
+      "is_control": false,
+      "retained_cells": 70
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 95,
+      "intervention": "MT2A",
+      "is_control": false,
+      "retained_cells": 95
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 31,
+      "intervention": "MYC",
+      "is_control": false,
+      "retained_cells": 31
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 15,
+      "intervention": "NACA",
+      "is_control": false,
+      "retained_cells": 15
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 31,
+      "intervention": "NCL",
+      "is_control": false,
+      "retained_cells": 31
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 81,
+      "intervention": "NDUFA13",
+      "is_control": false,
+      "retained_cells": 81
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 104,
+      "intervention": "NEAT1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 120,
+      "intervention": "NGFR",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 113,
+      "intervention": "NME1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 139,
+      "intervention": "NMRK1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 56,
+      "intervention": "NOLC1",
+      "is_control": false,
+      "retained_cells": 56
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 121,
+      "intervention": "NONO",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 146,
+      "intervention": "NPC1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 121,
+      "intervention": "NPC2",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 135,
+      "intervention": "NSG1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 177,
+      "intervention": "NT5E",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 153,
+      "intervention": "NUP50-AS1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 69,
+      "intervention": "P2RX4",
+      "is_control": false,
+      "retained_cells": 69
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 42,
+      "intervention": "PABPC1",
+      "is_control": false,
+      "retained_cells": 42
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 48,
+      "intervention": "PAICS",
+      "is_control": false,
+      "retained_cells": 48
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 69,
+      "intervention": "PET100",
+      "is_control": false,
+      "retained_cells": 69
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 160,
+      "intervention": "PFDN4",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 66,
+      "intervention": "PFN1",
+      "is_control": false,
+      "retained_cells": 66
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 114,
+      "intervention": "PIK3IP1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 32,
+      "intervention": "POLD2",
+      "is_control": false,
+      "retained_cells": 32
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 25,
+      "intervention": "PPA1",
+      "is_control": false,
+      "retained_cells": 25
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 108,
+      "intervention": "PPIA",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 23,
+      "intervention": "PRELID3B",
+      "is_control": false,
+      "retained_cells": 23
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 116,
+      "intervention": "PROS1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 166,
+      "intervention": "PSAP",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 3,
+      "intervention": "PSMA7",
+      "is_control": false,
+      "retained_cells": 3
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 126,
+      "intervention": "PSMB8-AS1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 109,
+      "intervention": "PTMA",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 45,
+      "intervention": "PUF60",
+      "is_control": false,
+      "retained_cells": 45
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 132,
+      "intervention": "PYGB",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 131,
+      "intervention": "RAB27A",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 6,
+      "intervention": "RACK1",
+      "is_control": false,
+      "retained_cells": 6
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 157,
+      "intervention": "RB1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 128,
+      "intervention": "RBP7",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 65,
+      "intervention": "RNASEH2A",
+      "is_control": false,
+      "retained_cells": 65
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 131,
+      "intervention": "RNF213",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 32,
+      "intervention": "ROMO1",
+      "is_control": false,
+      "retained_cells": 32
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 55,
+      "intervention": "RPSA",
+      "is_control": false,
+      "retained_cells": 55
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 26,
+      "intervention": "RRS1",
+      "is_control": false,
+      "retained_cells": 26
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 165,
+      "intervention": "RTP4",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 14,
+      "intervention": "RUVBL2",
+      "is_control": false,
+      "retained_cells": 14
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 124,
+      "intervention": "S100A6",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 147,
+      "intervention": "S100B",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 21,
+      "intervention": "SAE1",
+      "is_control": false,
+      "retained_cells": 21
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 137,
+      "intervention": "SAT1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 141,
+      "intervention": "SCARB2",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 131,
+      "intervention": "SDC3",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 147,
+      "intervention": "SDCBP",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 149,
+      "intervention": "SEC11C",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 112,
+      "intervention": "SERPINA3",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 112,
+      "intervention": "SERPINE2",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 148,
+      "intervention": "SERPINF1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 107,
+      "intervention": "SET",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 107,
+      "intervention": "SGK1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 110,
+      "intervention": "SHMT2",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 55,
+      "intervention": "SINHCAF",
+      "is_control": false,
+      "retained_cells": 55
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 87,
+      "intervention": "SLC19A1",
+      "is_control": false,
+      "retained_cells": 87
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 166,
+      "intervention": "SLC22A18",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 117,
+      "intervention": "SLC25A13",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 137,
+      "intervention": "SLC26A2",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 158,
+      "intervention": "SLC5A3",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 125,
+      "intervention": "SLC7A5P1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 112,
+      "intervention": "SLIRP",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 154,
+      "intervention": "SMAD3",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 135,
+      "intervention": "SMAD4",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 112,
+      "intervention": "SNHG6",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 10,
+      "intervention": "SNRPE",
+      "is_control": false,
+      "retained_cells": 10
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 11,
+      "intervention": "SNRPF",
+      "is_control": false,
+      "retained_cells": 11
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 14,
+      "intervention": "SNRPG",
+      "is_control": false,
+      "retained_cells": 14
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 169,
+      "intervention": "SOX4",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 132,
+      "intervention": "SP100",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 152,
+      "intervention": "SPESP1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 139,
+      "intervention": "SPINT1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 93,
+      "intervention": "SSR2",
+      "is_control": false,
+      "retained_cells": 93
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 133,
+      "intervention": "ST3GAL6-AS1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 102,
+      "intervention": "ST6GALNAC2",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 110,
+      "intervention": "STAT1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 123,
+      "intervention": "STAT3",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 142,
+      "intervention": "STOM",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 134,
+      "intervention": "STX7",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 123,
+      "intervention": "TAPBP",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 140,
+      "intervention": "TAPBPL",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 122,
+      "intervention": "TFAP2A",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 164,
+      "intervention": "TGFB1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 92,
+      "intervention": "TIMM50",
+      "is_control": false,
+      "retained_cells": 92
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 135,
+      "intervention": "TIMP1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 104,
+      "intervention": "TIMP2",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 115,
+      "intervention": "TIMP3",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 146,
+      "intervention": "TM4SF1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 51,
+      "intervention": "TMED10",
+      "is_control": false,
+      "retained_cells": 51
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 144,
+      "intervention": "TMEM173",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 140,
+      "intervention": "TOP1MT",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 141,
+      "intervention": "TP53",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 128,
+      "intervention": "TPP1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 45,
+      "intervention": "TPRKB",
+      "is_control": false,
+      "retained_cells": 45
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 106,
+      "intervention": "TRIM22",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 169,
+      "intervention": "TSC22D3",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 167,
+      "intervention": "TTLL1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 2,
+      "intervention": "TUBB",
+      "is_control": false,
+      "retained_cells": 2
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 133,
+      "intervention": "TXNDC17",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 133,
+      "intervention": "TYR",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 10,
+      "intervention": "UBA52",
+      "is_control": false,
+      "retained_cells": 10
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 55,
+      "intervention": "UBC",
+      "is_control": false,
+      "retained_cells": 55
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 3,
+      "intervention": "UBL5",
+      "is_control": false,
+      "retained_cells": 3
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 105,
+      "intervention": "UCN2",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 80,
+      "intervention": "UQCRFS1",
+      "is_control": false,
+      "retained_cells": 80
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 60,
+      "intervention": "UQCRH",
+      "is_control": false,
+      "retained_cells": 60
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 115,
+      "intervention": "VAT1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 135,
+      "intervention": "VDAC2",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 123,
+      "intervention": "WBP2",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 149,
+      "intervention": "WNT7A",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 99,
+      "intervention": "XAGE1A",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "Control",
+      "eligible_cells": 3770,
+      "intervention": "control",
+      "is_control": true,
+      "retained_cells": 512
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 252,
+      "intervention": "A2M",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 109,
+      "intervention": "ACSL3",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 285,
+      "intervention": "ACTA2",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 258,
+      "intervention": "AEBP1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 211,
+      "intervention": "AGA",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 13,
+      "intervention": "AHCY",
+      "is_control": false,
+      "retained_cells": 13
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 200,
+      "intervention": "AHNAK",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 240,
+      "intervention": "APOC2",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 227,
+      "intervention": "APOD",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 232,
+      "intervention": "APOE",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 190,
+      "intervention": "ARMC6",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 11,
+      "intervention": "ATP1A1",
+      "is_control": false,
+      "retained_cells": 11
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 234,
+      "intervention": "ATP1B1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 241,
+      "intervention": "ATP5MD",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 256,
+      "intervention": "B2M",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 130,
+      "intervention": "BOLA2",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 125,
+      "intervention": "BOLA2B",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 196,
+      "intervention": "BZW2",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 260,
+      "intervention": "C19orf48",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 159,
+      "intervention": "C1QBP",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 210,
+      "intervention": "C6orf226",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 140,
+      "intervention": "CCND1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 207,
+      "intervention": "CCND2",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 207,
+      "intervention": "CCR10",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 36,
+      "intervention": "CCT3",
+      "is_control": false,
+      "retained_cells": 36
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 13,
+      "intervention": "CCT6A",
+      "is_control": false,
+      "retained_cells": 13
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 199,
+      "intervention": "CD151",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 270,
+      "intervention": "CD274",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 239,
+      "intervention": "CD44",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 234,
+      "intervention": "CD47",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 205,
+      "intervention": "CD58",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 265,
+      "intervention": "CD59",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 196,
+      "intervention": "CD63",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 78,
+      "intervention": "CDC123",
+      "is_control": false,
+      "retained_cells": 78
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 251,
+      "intervention": "CDH19",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 196,
+      "intervention": "CDK4",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 98,
+      "intervention": "CDK6",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 202,
+      "intervention": "CDKN1A",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 215,
+      "intervention": "CDKN2A",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 237,
+      "intervention": "CDKN2B",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 232,
+      "intervention": "CGAS",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 238,
+      "intervention": "CHCHD2",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 217,
+      "intervention": "CITED1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 218,
+      "intervention": "CKS1B",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 225,
+      "intervention": "CMSS1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 203,
+      "intervention": "CORO1A",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 276,
+      "intervention": "CSPG4",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 163,
+      "intervention": "CST3",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 102,
+      "intervention": "CTPS1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 211,
+      "intervention": "CTSA",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 229,
+      "intervention": "CTSB",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 268,
+      "intervention": "CTSD",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 189,
+      "intervention": "CTSL",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 241,
+      "intervention": "CTSO",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 203,
+      "intervention": "CXCR4",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 223,
+      "intervention": "CYP27A1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 185,
+      "intervention": "DAG1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 217,
+      "intervention": "DDR1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 156,
+      "intervention": "DDX17",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 152,
+      "intervention": "DDX39A",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 212,
+      "intervention": "DLL3",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 12,
+      "intervention": "DNAJC9",
+      "is_control": false,
+      "retained_cells": 12
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 72,
+      "intervention": "DNMT1",
+      "is_control": false,
+      "retained_cells": 72
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 148,
+      "intervention": "E2F1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 169,
+      "intervention": "EEA1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 45,
+      "intervention": "EEF1G",
+      "is_control": false,
+      "retained_cells": 45
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 13,
+      "intervention": "EIF2S3",
+      "is_control": false,
+      "retained_cells": 13
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 182,
+      "intervention": "EIF3K",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 22,
+      "intervention": "EIF4A1",
+      "is_control": false,
+      "retained_cells": 22
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 238,
+      "intervention": "EMP1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 231,
+      "intervention": "ENPP1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 183,
+      "intervention": "EVA1A",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 15,
+      "intervention": "FARSA",
+      "is_control": false,
+      "retained_cells": 15
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 84,
+      "intervention": "FBL",
+      "is_control": false,
+      "retained_cells": 84
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 232,
+      "intervention": "FBXO32",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 288,
+      "intervention": "FGFR1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 168,
+      "intervention": "FKBP4",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 276,
+      "intervention": "FMN1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 182,
+      "intervention": "FOS",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 73,
+      "intervention": "FOXM1",
+      "is_control": false,
+      "retained_cells": 73
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 169,
+      "intervention": "FRZB",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 258,
+      "intervention": "FSTL3",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 40,
+      "intervention": "FTH1",
+      "is_control": false,
+      "retained_cells": 40
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 211,
+      "intervention": "GAA",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 226,
+      "intervention": "GAS5",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 161,
+      "intervention": "GPATCH4",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 36,
+      "intervention": "GPI",
+      "is_control": false,
+      "retained_cells": 36
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 184,
+      "intervention": "GPNMB",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 215,
+      "intervention": "GRN",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 168,
+      "intervention": "GSEC",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 228,
+      "intervention": "GSN",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 114,
+      "intervention": "HASPIN",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 257,
+      "intervention": "HLA-A",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 147,
+      "intervention": "HLA-B",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 164,
+      "intervention": "HLA-C",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 248,
+      "intervention": "HLA-DRB5",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 187,
+      "intervention": "HLA-E",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 229,
+      "intervention": "HLA-F",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 225,
+      "intervention": "HLA-H",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 148,
+      "intervention": "HNRNPA1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 69,
+      "intervention": "HNRNPC",
+      "is_control": false,
+      "retained_cells": 69
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 192,
+      "intervention": "HSPA1A",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 227,
+      "intervention": "IDH2",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 231,
+      "intervention": "IDI2-AS1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 178,
+      "intervention": "IFNGR1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 253,
+      "intervention": "IFNGR2",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 48,
+      "intervention": "ILF2",
+      "is_control": false,
+      "retained_cells": 48
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 199,
+      "intervention": "IRF3",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 186,
+      "intervention": "IRF4",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 150,
+      "intervention": "ISYNA1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 199,
+      "intervention": "ITGA3",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 225,
+      "intervention": "JAK1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 221,
+      "intervention": "JAK2",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 254,
+      "intervention": "JMJD7",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 140,
+      "intervention": "JPT1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 253,
+      "intervention": "KCNN4",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 266,
+      "intervention": "KDR",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 194,
+      "intervention": "KLF4",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 229,
+      "intervention": "LAMP2",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 274,
+      "intervention": "LCP1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 267,
+      "intervention": "LEF1-AS1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 184,
+      "intervention": "LGALS3",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 177,
+      "intervention": "LGALS3BP",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 246,
+      "intervention": "LINC00518",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 252,
+      "intervention": "LRPAP1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 193,
+      "intervention": "LRRC75A-AS1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 233,
+      "intervention": "LY96",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 219,
+      "intervention": "MC1R",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 155,
+      "intervention": "MDH2",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 315,
+      "intervention": "MFGE8",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 231,
+      "intervention": "MIA",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 119,
+      "intervention": "MRPL47",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 156,
+      "intervention": "MT2A",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 49,
+      "intervention": "MYC",
+      "is_control": false,
+      "retained_cells": 49
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 29,
+      "intervention": "NACA",
+      "is_control": false,
+      "retained_cells": 29
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 52,
+      "intervention": "NCL",
+      "is_control": false,
+      "retained_cells": 52
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 113,
+      "intervention": "NDUFA13",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 196,
+      "intervention": "NEAT1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 174,
+      "intervention": "NGFR",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 207,
+      "intervention": "NME1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 211,
+      "intervention": "NMRK1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 81,
+      "intervention": "NOLC1",
+      "is_control": false,
+      "retained_cells": 81
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 170,
+      "intervention": "NONO",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 234,
+      "intervention": "NPC1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 211,
+      "intervention": "NPC2",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 215,
+      "intervention": "NSG1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 283,
+      "intervention": "NT5E",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 273,
+      "intervention": "NUP50-AS1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 102,
+      "intervention": "P2RX4",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 67,
+      "intervention": "PABPC1",
+      "is_control": false,
+      "retained_cells": 67
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 82,
+      "intervention": "PAICS",
+      "is_control": false,
+      "retained_cells": 82
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 112,
+      "intervention": "PET100",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 223,
+      "intervention": "PFDN4",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 99,
+      "intervention": "PFN1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 161,
+      "intervention": "PIK3IP1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 47,
+      "intervention": "POLD2",
+      "is_control": false,
+      "retained_cells": 47
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 41,
+      "intervention": "PPA1",
+      "is_control": false,
+      "retained_cells": 41
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 195,
+      "intervention": "PPIA",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 38,
+      "intervention": "PRELID3B",
+      "is_control": false,
+      "retained_cells": 38
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 149,
+      "intervention": "PROS1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 265,
+      "intervention": "PSAP",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 10,
+      "intervention": "PSMA7",
+      "is_control": false,
+      "retained_cells": 10
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 186,
+      "intervention": "PSMB8-AS1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 185,
+      "intervention": "PTMA",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 85,
+      "intervention": "PUF60",
+      "is_control": false,
+      "retained_cells": 85
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 177,
+      "intervention": "PYGB",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 205,
+      "intervention": "RAB27A",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 15,
+      "intervention": "RACK1",
+      "is_control": false,
+      "retained_cells": 15
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 245,
+      "intervention": "RB1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 234,
+      "intervention": "RBP7",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 127,
+      "intervention": "RNASEH2A",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 194,
+      "intervention": "RNF213",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 57,
+      "intervention": "ROMO1",
+      "is_control": false,
+      "retained_cells": 57
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 120,
+      "intervention": "RPSA",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 59,
+      "intervention": "RRS1",
+      "is_control": false,
+      "retained_cells": 59
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 275,
+      "intervention": "RTP4",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 19,
+      "intervention": "RUVBL2",
+      "is_control": false,
+      "retained_cells": 19
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 212,
+      "intervention": "S100A6",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 225,
+      "intervention": "S100B",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 30,
+      "intervention": "SAE1",
+      "is_control": false,
+      "retained_cells": 30
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 201,
+      "intervention": "SAT1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 206,
+      "intervention": "SCARB2",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 270,
+      "intervention": "SDC3",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 212,
+      "intervention": "SDCBP",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 210,
+      "intervention": "SEC11C",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 195,
+      "intervention": "SERPINA3",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 192,
+      "intervention": "SERPINE2",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 201,
+      "intervention": "SERPINF1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 160,
+      "intervention": "SET",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 230,
+      "intervention": "SGK1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 173,
+      "intervention": "SHMT2",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 102,
+      "intervention": "SINHCAF",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 166,
+      "intervention": "SLC19A1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 306,
+      "intervention": "SLC22A18",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 243,
+      "intervention": "SLC25A13",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 228,
+      "intervention": "SLC26A2",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 240,
+      "intervention": "SLC5A3",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 221,
+      "intervention": "SLC7A5P1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 147,
+      "intervention": "SLIRP",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 243,
+      "intervention": "SMAD3",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 246,
+      "intervention": "SMAD4",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 176,
+      "intervention": "SNHG6",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 19,
+      "intervention": "SNRPE",
+      "is_control": false,
+      "retained_cells": 19
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 14,
+      "intervention": "SNRPF",
+      "is_control": false,
+      "retained_cells": 14
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 35,
+      "intervention": "SNRPG",
+      "is_control": false,
+      "retained_cells": 35
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 230,
+      "intervention": "SOX4",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 203,
+      "intervention": "SP100",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 218,
+      "intervention": "SPESP1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 211,
+      "intervention": "SPINT1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 182,
+      "intervention": "SSR2",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 223,
+      "intervention": "ST3GAL6-AS1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 182,
+      "intervention": "ST6GALNAC2",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 189,
+      "intervention": "STAT1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 187,
+      "intervention": "STAT3",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 247,
+      "intervention": "STOM",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 227,
+      "intervention": "STX7",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 201,
+      "intervention": "TAPBP",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 224,
+      "intervention": "TAPBPL",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 218,
+      "intervention": "TFAP2A",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 248,
+      "intervention": "TGFB1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 116,
+      "intervention": "TIMM50",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 205,
+      "intervention": "TIMP1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 181,
+      "intervention": "TIMP2",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 177,
+      "intervention": "TIMP3",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 213,
+      "intervention": "TM4SF1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 63,
+      "intervention": "TMED10",
+      "is_control": false,
+      "retained_cells": 63
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 205,
+      "intervention": "TMEM173",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 192,
+      "intervention": "TOP1MT",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 209,
+      "intervention": "TP53",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 211,
+      "intervention": "TPP1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 48,
+      "intervention": "TPRKB",
+      "is_control": false,
+      "retained_cells": 48
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 170,
+      "intervention": "TRIM22",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 234,
+      "intervention": "TSC22D3",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 251,
+      "intervention": "TTLL1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 5,
+      "intervention": "TUBB",
+      "is_control": false,
+      "retained_cells": 5
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 201,
+      "intervention": "TXNDC17",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 258,
+      "intervention": "TYR",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 16,
+      "intervention": "UBA52",
+      "is_control": false,
+      "retained_cells": 16
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 94,
+      "intervention": "UBC",
+      "is_control": false,
+      "retained_cells": 94
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 8,
+      "intervention": "UBL5",
+      "is_control": false,
+      "retained_cells": 8
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 192,
+      "intervention": "UCN2",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 106,
+      "intervention": "UQCRFS1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 75,
+      "intervention": "UQCRH",
+      "is_control": false,
+      "retained_cells": 75
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 151,
+      "intervention": "VAT1",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 219,
+      "intervention": "VDAC2",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 252,
+      "intervention": "WBP2",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 264,
+      "intervention": "WNT7A",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 158,
+      "intervention": "XAGE1A",
+      "is_control": false,
+      "retained_cells": 96
+    },
+    {
+      "context": "IFN\u03b3",
+      "eligible_cells": 6144,
+      "intervention": "control",
+      "is_control": true,
+      "retained_cells": 512
+    }
+  ],
+  "control_labels": [
+    "control"
+  ],
+  "input_cells": 218331,
+  "metadata_eligible_cells": 126966,
+  "original_column_mapping": {
+    "batch": null,
+    "context": "perturbation_2",
+    "guide": "guide_id",
+    "intervention": "perturbation"
+  },
+  "retained_cells": 64294
+}

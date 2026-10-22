@@ -1,0 +1,104 @@
+{
+  "scope": "Synthetic exact-arithmetic illustrations; not biological or ML results.",
+  "assumptions": [
+    "Correct linear response model and exact features for the identification example.",
+    "Independent per-cell noise within each pool and an explicitly shared control pool.",
+    "Equal per-cell costs and no intervention setup costs for allocation examples."
+  ],
+  "identification": {
+    "observed_feature": [
+      1,
+      0
+    ],
+    "query_feature": [
+      0,
+      1
+    ],
+    "observed_values_in_two_worlds": [
+      0,
+      0
+    ],
+    "query_values_in_two_worlds": [
+      1,
+      -1
+    ]
+  },
+  "known_baseline_allocation": {
+    "total_cells": 100,
+    "per_cell_variances": [
+      1,
+      9
+    ],
+    "query_feature": [
+      1,
+      1
+    ],
+    "equal_allocation": [
+      50,
+      50
+    ],
+    "equal_variance": {
+      "exact": "1/5",
+      "decimal": 0.2
+    },
+    "optimal_integer_allocation": [
+      25,
+      75
+    ],
+    "optimal_variance": {
+      "exact": "4/25",
+      "decimal": 0.16
+    },
+    "relative_variance_reduction": {
+      "exact": "1/5",
+      "decimal": 0.2
+    }
+  },
+  "shared_control_covariance": {
+    "perturbation_cells_each": 50,
+    "control_cells": 20,
+    "per_cell_variances_perturbed_control": [
+      1,
+      4
+    ],
+    "off_diagonal_covariance": {
+      "exact": "1/5",
+      "decimal": 0.2
+    },
+    "true_variance_of_mean_effect": {
+      "exact": "21/100",
+      "decimal": 0.21
+    },
+    "incorrect_independence_variance": {
+      "exact": "11/100",
+      "decimal": 0.11
+    }
+  },
+  "joint_control_allocation": {
+    "total_cells": 120,
+    "objective": "Variance of the mean of two control-relative effects.",
+    "per_cell_variances": [
+      1,
+      1,
+      4
+    ],
+    "equal_allocation_perturbation1_perturbation2_control": [
+      40,
+      40,
+      40
+    ],
+    "equal_variance": {
+      "exact": "9/80",
+      "decimal": 0.1125
+    },
+    "optimal_integer_allocation": [
+      20,
+      20,
+      80
+    ],
+    "optimal_variance": {
+      "exact": "3/40",
+      "decimal": 0.075
+    }
+  }
+}

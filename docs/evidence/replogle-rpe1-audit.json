@@ -1,0 +1,985 @@
+{
+  "audited_at": "2026-10-22T02:32:27.603064+00:00",
+  "cells": 247914,
+  "duplicate_cell_ids": 0,
+  "duplicate_gene_ids": 0,
+  "expression_encoding": "array",
+  "expression_sample": {
+    "fraction_near_integer_among_stored": 1.0,
+    "normalization": "Unknown: inspect provenance; integer-like samples do not prove counts.",
+    "sample_max": 463.0,
+    "sample_min": 0.0,
+    "sampled_rows": 32,
+    "sampled_stored_values": 279968,
+    "sampling_axis": "leading contiguous rows"
+  },
+  "file_size_bytes": 1236886900,
+  "filename": "ReplogleWeissman2022_rpe1.h5ad",
+  "genes": 8749,
+  "has_raw": false,
+  "layers": [],
+  "limitations": [
+    "Technical cells are not assumed to be biological replicates.",
+    "Metadata availability alone does not establish cross-context compatibility.",
+    "This command is for raw-data auditing, never adaptive query-label access."
+  ],
+  "observation_columns": {
+    "UMI_count": {
+      "dtype": "float64",
+      "missing_or_empty": 0,
+      "most_common": [
+        [
+          "9801.0",
+          40
+        ],
+        [
+          "9879.0",
+          40
+        ],
+        [
+          "11350.0",
+          39
+        ],
+        [
+          "9414.0",
+          38
+        ],
+        [
+          "9933.0",
+          37
+        ],
+        [
+          "10367.0",
+          37
+        ],
+        [
+          "10658.0",
+          37
+        ],
+        [
+          "11758.0",
+          37
+        ],
+        [
+          "11251.0",
+          36
+        ],
+        [
+          "10957.0",
+          36
+        ],
+        [
+          "9955.0",
+          36
+        ],
+        [
+          "10190.0",
+          36
+        ]
+      ],
+      "unique": 31699
+    },
+    "age": {
+      "dtype": "int64",
+      "missing_or_empty": 0,
+      "most_common": [
+        [
+          "1",
+          247914
+        ]
+      ],
+      "unique": 1
+    },
+    "batch": {
+      "dtype": "int64",
+      "missing_or_empty": 0,
+      "most_common": [
+        [
+          "55",
+          5567
+        ],
+        [
+          "44",
+          5429
+        ],
+        [
+          "20",
+          5282
+        ],
+        [
+          "12",
+          5220
+        ],
+        [
+          "22",
+          5212
+        ],
+        [
+          "25",
+          5146
+        ],
+        [
+          "34",
+          5094
+        ],
+        [
+          "13",
+          5085
+        ],
+        [
+          "38",
+          5029
+        ],
+        [
+          "11",
+          4983
+        ],
+        [
+          "35",
+          4950
+        ],
+        [
+          "31",
+          4943
+        ]
+      ],
+      "unique": 56
+    },
+    "cancer": {
+      "dtype": "bool",
+      "missing_or_empty": 0,
+      "most_common": [
+        [
+          "False",
+          247914
+        ]
+      ],
+      "unique": 1
+    },
+    "cell_line": {
+      "dtype": "object",
+      "missing_or_empty": 0,
+      "most_common": [
+        [
+          "RPE1",
+          247914
+        ]
+      ],
+      "unique": 1
+    },
+    "celltype": {
+      "dtype": "object",
+      "missing_or_empty": 0,
+      "most_common": [
+        [
+          "retinal pigment epithelial cells",
+          247914
+        ]
+      ],
+      "unique": 1
+    },
+    "core_adjusted_UMI_count": {
+      "dtype": "float64",
+      "missing_or_empty": 0,
+      "most_common": [
+        [
+          "12896.397",
+          8
+        ],
+        [
+          "10053.901",
+          6
+        ],
+        [
+          "11551.114",
+          6
+        ],
+        [
+          "11198.664",
+          6
+        ],
+        [
+          "12902.302",
+          6
+        ],
+        [
+          "11813.238",
+          6
+        ],
+        [
+          "12231.768",
+          6
+        ],
+        [
+          "11031.138",
+          6
+        ],
+        [
+          "12573.103",
+          6
+        ],
+        [
+          "12026.733",
+          5
+        ],
+        [
+          "12205.056",
+          5
+        ],
+        [
+          "9340.276",
+          5
+        ]
+      ],
+      "unique": 211406
+    },
+    "core_scale_factor": {
+      "dtype": "float64",
+      "missing_or_empty": 0,
+      "most_common": [
+        [
+          "1.0532178",
+          5567
+        ],
+        [
+          "1.3215047",
+          5429
+        ],
+        [
+          "0.8812373",
+          5282
+        ],
+        [
+          "0.88716245",
+          5220
+        ],
+        [
+          "1.0078743",
+          5212
+        ],
+        [
+          "0.80121505",
+          5146
+        ],
+        [
+          "0.7096276",
+          5094
+        ],
+        [
+          "0.9984184",
+          5085
+        ],
+        [
+          "0.732215",
+          5029
+        ],
+        [
+          "1.0079547",
+          4983
+        ],
+        [
+          "0.6007104",
+          4950
+        ],
+        [
+          "0.9181",
+          4943
+        ]
+      ],
+      "unique": 56
+    },
+    "disease": {
+      "dtype": "float64",
+      "missing_or_empty": 247914,
+      "most_common": [
+        [
+          "nan",
+          247914
+        ]
+      ],
+      "unique": 1
+    },
+    "gene": {
+      "dtype": "object",
+      "missing_or_empty": 0,
+      "most_common": [
+        [
+          "non-targeting",
+          11485
+        ],
+        [
+          "TFAM",
+          3580
+        ],
+        [
+          "SLC1A5",
+          1962
+        ],
+        [
+          "GFM1",
+          1699
+        ],
+        [
+          "MRPL36",
+          1686
+        ],
+        [
+          "TARDBP",
+          1675
+        ],
+        [
+          "PPP6C",
+          1581
+        ],
+        [
+          "MRPL35",
+          1491
+        ],
+        [
+          "NBPF12",
+          1159
+        ],
+        [
+          "CCDC6",
+          1086
+        ],
+        [
+          "GTF3C4",
+          942
+        ],
+        [
+          "BCAR1",
+          922
+        ]
+      ],
+      "unique": 2394
+    },
+    "gene_id": {
+      "dtype": "object",
+      "missing_or_empty": 458,
+      "most_common": [
+        [
+          "non-targeting",
+          11485
+        ],
+        [
+          "ENSG00000108064",
+          3580
+        ],
+        [
+          "ENSG00000105281",
+          1962
+        ],
+        [
+          "ENSG00000168827",
+          1699
+        ],
+        [
+          "ENSG00000171421",
+          1686
+        ],
+        [
+          "ENSG00000120948",
+          1675
+        ],
+        [
+          "ENSG00000119414",
+          1581
+        ],
+        [
+          "ENSG00000132313",
+          1491
+        ],
+        [
+          "ENSG00000268043",
+          1159
+        ],
+        [
+          "ENSG00000108091",
+          1086
+        ],
+        [
+          "ENSG00000125484",
+          942
+        ],
+        [
+          "ENSG00000050820",
+          922
+        ]
+      ],
+      "unique": 2392
+    },
+    "gene_transcript": {
+      "dtype": "object",
+      "missing_or_empty": 0,
+      "most_common": [
+        [
+          "8832_TFAM_P1P2_ENSG00000108064",
+          3580
+        ],
+        [
+          "7976_SLC1A5_P1_ENSG00000105281",
+          1779
+        ],
+        [
+          "3346_GFM1_P1P2_ENSG00000168827",
+          1699
+        ],
+        [
+          "5218_MRPL36_P1P2_ENSG00000171421",
+          1686
+        ],
+        [
+          "8692_TARDBP_P1P2_ENSG00000120948",
+          1675
+        ],
+        [
+          "6700_PPP6C_P1P2_ENSG00000119414",
+          1581
+        ],
+        [
+          "5217_MRPL35_P1P2_ENSG00000132313",
+          1491
+        ],
+        [
+          "5481_NBPF12_P1P2_ENSG00000268043",
+          1159
+        ],
+        [
+          "3587_GTF3C4_P1P2_ENSG00000125484",
+          942
+        ],
+        [
+          "5367_MYBL2_P1P2_ENSG00000101057",
+          894
+        ],
+        [
+          "784_BCAR1_P2_ENSG00000050820",
+          873
+        ],
+        [
+          "3948_HSD17B10_P1P2_ENSG00000072506",
+          848
+        ]
+      ],
+      "unique": 2662
+    },
+    "guide_id": {
+      "dtype": "object",
+      "missing_or_empty": 0,
+      "most_common": [
+        [
+          "TFAM_+_60145205.23-P1P2|TFAM_-_60145223.23-P1P2",
+          3580
+        ],
+        [
+          "SLC1A5_+_47291839.23-P1|SLC1A5_+_47291829.23-P1",
+          1779
+        ],
+        [
+          "GFM1_-_158362387.23-P1P2|GFM1_+_158362379.23-P1P2",
+          1699
+        ],
+        [
+          "MRPL36_+_1799909.23-P1P2|MRPL36_+_1799899.23-P1P2",
+          1686
+        ],
+        [
+          "TARDBP_-_11072919.23-P1P2|TARDBP_+_11072781.23-P1P2",
+          1675
+        ],
+        [
+          "PPP6C_-_127952026.23-P1P2|PPP6C_+_127951685.23-P1P2",
+          1581
+        ],
+        [
+          "MRPL35_+_86426814.23-P1P2|MRPL35_-_86426601.23-P1P2",
+          1491
+        ],
+        [
+          "NBPF12_+_146373532.23-P1P2|NBPF12_-_146373567.23-P1P2",
+          1159
+        ],
+        [
+          "GTF3C4_+_135545609.23-P1P2|GTF3C4_-_135545497.23-P1P2",
+          942
+        ],
+        [
+          "MYBL2_+_42295803.23-P1P2|MYBL2_-_42295783.23-P1P2",
+          894
+        ],
+        [
+          "BCAR1_+_75299843.23-P2|BCAR1_+_75299852.23-P2",
+          873
+        ],
+        [
+          "HSD17B10_-_53461314.23-P1P2|HSD17B10_+_53461288.23-P1P2",
+          848
+        ]
+      ],
+      "unique": 2662
+    },
+    "ncounts": {
+      "dtype": "float64",
+      "missing_or_empty": 0,
+      "most_common": [
+        [
+          "10732.0",
+          45
+        ],
+        [
+          "9736.0",
+          43
+        ],
+        [
+          "10124.0",
+          41
+        ],
+        [
+          "9093.0",
+          39
+        ],
+        [
+          "10631.0",
+          39
+        ],
+        [
+          "9693.0",
+          39
+        ],
+        [
+          "10184.0",
+          39
+        ],
+        [
+          "10749.0",
+          38
+        ],
+        [
+          "11502.0",
+          38
+        ],
+        [
+          "10105.0",
+          38
+        ],
+        [
+          "11452.0",
+          38
+        ],
+        [
+          "8624.0",
+          37
+        ]
+      ],
+      "unique": 31346
+    },
+    "ngenes": {
+      "dtype": "int64",
+      "missing_or_empty": 0,
+      "most_common": [
+        [
+          "3279",
+          160
+        ],
+        [
+          "3385",
+          159
+        ],
+        [
+          "3402",
+          158
+        ],
+        [
+          "3098",
+          156
+        ],
+        [
+          "3466",
+          154
+        ],
+        [
+          "3307",
+          152
+        ],
+        [
+          "3525",
+          151
+        ],
+        [
+          "3489",
+          151
+        ],
+        [
+          "3573",
+          150
+        ],
+        [
+          "3362",
+          150
+        ],
+        [
+          "3273",
+          150
+        ],
+        [
+          "3602",
+          150
+        ]
+      ],
+      "unique": 6031
+    },
+    "nperts": {
+      "dtype": "int64",
+      "missing_or_empty": 0,
+      "most_common": [
+        [
+          "1",
+          236429
+        ],
+        [
+          "0",
+          11485
+        ]
+      ],
+      "unique": 2
+    },
+    "organism": {
+      "dtype": "object",
+      "missing_or_empty": 0,
+      "most_common": [
+        [
+          "human",
+          247914
+        ]
+      ],
+      "unique": 1
+    },
+    "percent_mito": {
+      "dtype": "float64",
+      "missing_or_empty": 0,
+      "most_common": [
+        [
+          "0.0625",
+          52
+        ],
+        [
+          "0.05882353",
+          52
+        ],
+        [
+          "0.06666667",
+          35
+        ],
+        [
+          "0.07692308",
+          34
+        ],
+        [
+          "0.055555556",
+          32
+        ],
+        [
+          "0.05263158",
+          28
+        ],
+        [
+          "0.06382979",
+          26
+        ],
+        [
+          "0.071428575",
+          24
+        ],
+        [
+          "0.057142857",
+          23
+        ],
+        [
+          "0.057692308",
+          22
+        ],
+        [
+          "0.06",
+          21
+        ],
+        [
+          "0.06818182",
+          20
+        ]
+      ],
+      "unique": 233450
+    },
+    "percent_ribo": {
+      "dtype": "float64",
+      "missing_or_empty": 0,
+      "most_common": [
+        [
+          "0.2",
+          74
+        ],
+        [
+          "0.18181819",
+          25
+        ],
+        [
+          "0.22222222",
+          24
+        ],
+        [
+          "0.25",
+          23
+        ],
+        [
+          "0.16666667",
+          21
+        ],
+        [
+          "0.21428572",
+          20
+        ],
+        [
+          "0.21052632",
+          18
+        ],
+        [
+          "0.1764706",
+          17
+        ],
+        [
+          "0.20833333",
+          15
+        ],
+        [
+          "0.1923077",
+          14
+        ],
+        [
+          "0.1875",
+          13
+        ],
+        [
+          "0.1891892",
+          13
+        ]
+      ],
+      "unique": 238910
+    },
+    "perturbation": {
+      "dtype": "object",
+      "missing_or_empty": 0,
+      "most_common": [
+        [
+          "control",
+          11485
+        ],
+        [
+          "TFAM",
+          3580
+        ],
+        [
+          "SLC1A5",
+          1962
+        ],
+        [
+          "GFM1",
+          1699
+        ],
+        [
+          "MRPL36",
+          1686
+        ],
+        [
+          "TARDBP",
+          1675
+        ],
+        [
+          "PPP6C",
+          1581
+        ],
+        [
+          "MRPL35",
+          1491
+        ],
+        [
+          "NBPF12",
+          1159
+        ],
+        [
+          "CCDC6",
+          1086
+        ],
+        [
+          "GTF3C4",
+          942
+        ],
+        [
+          "BCAR1",
+          922
+        ]
+      ],
+      "unique": 2394
+    },
+    "perturbation_type": {
+      "dtype": "object",
+      "missing_or_empty": 0,
+      "most_common": [
+        [
+          "CRISPR",
+          247914
+        ]
+      ],
+      "unique": 1
+    },
+    "sex": {
+      "dtype": "object",
+      "missing_or_empty": 0,
+      "most_common": [
+        [
+          "Female",
+          247914
+        ]
+      ],
+      "unique": 1
+    },
+    "tissue_type": {
+      "dtype": "object",
+      "missing_or_empty": 0,
+      "most_common": [
+        [
+          "cell_line",
+          247914
+        ]
+      ],
+      "unique": 1
+    },
+    "transcript": {
+      "dtype": "object",
+      "missing_or_empty": 0,
+      "most_common": [
+        [
+          "P1P2",
+          203698
+        ],
+        [
+          "P2",
+          13569
+        ],
+        [
+          "P1",
+          13298
+        ],
+        [
+          "non-targeting",
+          11485
+        ],
+        [
+          "ENST00000380743.4",
+          424
+        ],
+        [
+          "ENST00000329516.3",
+          381
+        ],
+        [
+          "ENST00000380876.4,ENST00000398943.3,ENST00000398944.3",
+          337
+        ],
+        [
+          "ENST00000340333.3",
+          212
+        ],
+        [
+          "ENST00000502662.1",
+          208
+        ],
+        [
+          "ENST00000443236.1",
+          208
+        ],
+        [
+          "ENST00000281708.4",
+          203
+        ],
+        [
+          "ENST00000248384.1",
+          191
+        ]
+      ],
+      "unique": 62
+    },
+    "z_gemgroup_UMI": {
+      "dtype": "float64",
+      "missing_or_empty": 0,
+      "most_common": [
+        [
+          "-0.20836987",
+          6
+        ],
+        [
+          "-0.1482974",
+          6
+        ],
+        [
+          "-0.067007266",
+          6
+        ],
+        [
+          "0.020896196",
+          6
+        ],
+        [
+          "-0.09535335",
+          5
+        ],
+        [
+          "-0.5425692",
+          5
+        ],
+        [
+          "0.28940108",
+          5
+        ],
+        [
+          "-0.2996297",
+          5
+        ],
+        [
+          "-0.2690392",
+          5
+        ],
+        [
+          "-0.17429581",
+          5
+        ],
+        [
+          "0.43310395",
+          5
+        ],
+        [
+          "0.09420931",
+          5
+        ]
+      ],
+      "unique": 212500
+    }
+  },
+  "schema_version": 1,
+  "variable_columns": [
+    "chr",
+    "class",
+    "cv",
+    "end",
+    "ensembl_id",
+    "fano",
+    "gene_name",
+    "in_matrix",
+    "length",
+    "mean",
+    "ncells",
+    "ncounts",
+    "start",
+    "std",
+    "strand"
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "assessment_noise_floor": 0.05779798459648238,
+  "bootstrap_samples": 2000,
+  "bootstrap_seed": 513,
+  "comparisons": [
+    {
+      "acquisition_seeds": 5,
+      "comparator": "worst_query",
+      "conditional_high": 0.08646189241025955,
+      "conditional_low": 0.009412828739185355,
+      "mean_normalized_area": 0.28383973028427817,
+      "paired_difference": 0.04935282210137786,
+      "policy": "random_equal",
+      "query_interventions": 6,
+      "relative_error_change": 0.21047154608257512
+    },
+    {
+      "acquisition_seeds": 5,
+      "comparator": "worst_query",
+      "conditional_high": 0.0,
+      "conditional_low": 0.0,
+      "mean_normalized_area": 0.2344869081829003,
+      "paired_difference": 0.0,
+      "policy": "worst_query",
+      "query_interventions": 6,
+      "relative_error_change": 0.0
+    },
+    {
+      "acquisition_seeds": 5,
+      "comparator": "worst_query",
+      "conditional_high": 0.010854628401891761,
+      "conditional_low": 0.003456808893942828,
+      "mean_normalized_area": 0.241864469873622,
+      "paired_difference": 0.007377561690721716,
+      "policy": "bias_aware",
+      "query_interventions": 6,
+      "relative_error_change": 0.031462573957294036
+    }
+  ],
+  "interpretation": "Lower error area and negative differences favor the named policy.",
+  "interval_scope": "Descriptive query-intervention bootstrap conditional on source data, fixed split, acquisition seeds, and fixed assessment/control bank. Excludes biological, guide/batch and common scoring-control uncertainty.",
+  "limitations": [
+    "Intervals are ideal Gaussian diagnostics; post-selection coverage is unvalidated.",
+    "Scalar variances omit gene heteroskedasticity, guide/batch effects and source-coordinate uncertainty.",
+    "Seeds and cells are not independent biological replicates.",
+    "Local residual baseline is an adaptation, not a PerturbMap reproduction.",
+    "Fixed-grid settings have not yet been tuned on a development validation design."
+  ],
+  "run_manifest_sha256": "550c969a5394dc01f901658714fe562f6fb4c0806f3a176aab32c15cf6b111ed"
+}

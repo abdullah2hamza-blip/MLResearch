@@ -1,0 +1,40 @@
+{
+  "budgets": [
+    128,
+    256,
+    512
+  ],
+  "episode_directory": "data/episodes/frangieh-control-to-ifng-v1",
+  "label": "exploratory-development; fixed defaults; not final external evaluation",
+  "output_directory": "runs/frangieh-development-v1",
+  "policies": [
+    "random_equal",
+    "fixed_grid",
+    "diversity",
+    "d_optimal",
+    "worst_query",
+    "reliability",
+    "disagreement",
+    "bias_aware"
+  ],
+  "policy": {
+    "block_cells": 8,
+    "cell_cost": 1,
+    "control_cell_cost": 1,
+    "discrepancy_weight": 0.25,
+    "fixed_control_fraction": 0.25,
+    "kernel_length": 1.0,
+    "pilot_controls": 16,
+    "pilot_interventions": 6,
+    "rank": 4,
+    "ridge": 0.1,
+    "setup_cost": 4
+  },
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "assessment_control_cells": 256,
+  "cell_cost": 1,
+  "control_cell_cost": 1,
+  "description": "Unique recipient observations exposed across the exploratory development replay and its scoring bank, now informing method development. Separate fixed development resource, not independent biological replication or free final-test validation.",
+  "limitations": "Fixed development costs must be disclosed alongside incremental recipient budgets; source data and computation are separate resources. This is not a claim that all counterfactual policies could simultaneously buy the same physical cells.",
+  "policy_specific_counterfactual_costs": "Separate ledgers charge each simulated policy afresh; union accounting here counts shared retrospective development observations once.",
+  "query_assessment_cells": 1632,
+  "run_manifest_sha256": "51da938b9b09a6ac7ebd186adb6ada38bb376e72a1b22b6f4c9cbacae2f6e993",
+  "setup_cost": 4,
+  "unique_controls_acquisition_and_assessment": 448,
+  "unique_opened_interventions_acquisition_and_assessment": 202,
+  "unique_perturbed_cells_acquisition_and_assessment": 3704,
+  "unique_resource_cost_units": 4960
+}

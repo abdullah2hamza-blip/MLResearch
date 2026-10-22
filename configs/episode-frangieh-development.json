@@ -1,0 +1,14 @@
+{
+  "acquisition_cells": 64,
+  "acquisition_controls": 256,
+  "assessment_cells": 32,
+  "assessment_controls": 256,
+  "min_source_cells": 32,
+  "output_directory": "data/episodes/frangieh-control-to-ifng-v1",
+  "query_fraction": 0.25,
+  "seed": 20261021,
+  "source_context": "Control",
+  "source_prepared": "data/prepared/frangieh-moi1-cap96-v1",
+  "target_context": "IFN\u03b3",
+  "target_prepared": "data/prepared/frangieh-moi1-cap96-v1"
+}

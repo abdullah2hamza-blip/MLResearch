@@ -1,0 +1,4 @@
+policy,comparator,mean_normalized_area,paired_difference,relative_error_change,conditional_low,conditional_high,query_interventions,acquisition_seeds
+random_equal,worst_query,0.28383973028427817,0.04935282210137786,0.21047154608257512,0.009412828739185355,0.08646189241025955,6,5
+worst_query,worst_query,0.2344869081829003,0.0,0.0,0.0,0.0,6,5
+bias_aware,worst_query,0.241864469873622,0.007377561690721716,0.031462573957294036,0.003456808893942828,0.010854628401891761,6,5
