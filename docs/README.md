@@ -32,6 +32,10 @@ The high-novelty hypothesis is that **jointly selecting calibration intervention
 | [Controlled simulation protocol](controlled-study-protocol.md) | Frozen scenario matrix, paired replication, matched ablations and oracle diagnostics. |
 | [Risk-retention correction](retention-analysis-correction.md) | Corrected diagnostic ordering and denominators; unchanged primary pilot findings. |
 | [Development findings](development-findings.md) | Actual results, zero baseline, allocation evidence and negative findings. |
+| [Controlled study findings](controlled-study-findings.md) | Completed 70-case simulation, mixed acquisition effects and source-support failure. |
+| [Development tuning findings](development-tuning-findings.md) | Predeclared grid/weight selection and updated fixed development resources. |
+| [Assessment uncertainty protocol](assessment-uncertainty-protocol.md) | Separate query, common-control measurement and technical-batch sensitivity scopes. |
+| [Transfer comparator protocol](transfer-comparator-protocol.md) | Prior-method reconstruction and explicit fidelity choices. |
 | [External data compatibility](external-data-compatibility.md) | Target-ID checks, protocol differences, attribution and limits. |
 | [Technical notes](technical-notes.md) | Identifiability argument, shared-control covariance, and a reproducible toy calculation. |
 | [Evaluation plan](evaluation-plan.md) | Information boundaries, baselines, metrics, ablations, and failure criteria. |

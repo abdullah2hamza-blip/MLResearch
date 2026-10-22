@@ -1,0 +1,76 @@
+{
+  "analysis_environment": {
+    "git": {
+      "revision": "536e822dd97e2bf0a16f35daef1fe9bbac2f6ab9",
+      "status": "M src/mlresearch/report.py"
+    },
+    "packages": {
+      "h5py": "3.16.0",
+      "matplotlib": "3.11.2",
+      "mlresearch": "0.1.0",
+      "numpy": "2.5.4",
+      "pytest": "9.1.1",
+      "scipy": "1.18.1"
+    },
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.14",
+    "recorded_at": "2026-10-22T05:55:57.703321+00:00",
+    "source_hashes": {
+      "__init__.py": "bb8543f534bc0779c941e08d8786d17c10a58bfc43e97e080422afc3757c8eb0",
+      "__main__.py": "27503438dec93a74b0ebe814fc619333accf571b77f73344c6252c94b0b5d8b3",
+      "acquisition.py": "52e82caa4c80dd4e577bb2e90cdaca52caf35fc8c97000e529161c21596be19d",
+      "cli.py": "5a1bb5bea2cf8f6d837f4d5837d06f7fe922764426b1bae50223458f0055b408",
+      "controls.py": "458f52e5886f97eed105e2c56701b51d2a26c080043b60ad8c39e9f6e9d24297",
+      "data.py": "ac2e62e8a74960d279f681cd4983d5a2f42f3cf13c8b8fde1887fc6265953789",
+      "datasets.json": "e90daa691730f09ba8885f1777ed5ae379f075d010a1dc3093c23272865e8881",
+      "design.py": "e83d39a64f0336ba7c5bf97deb997c68db3c72b3c09adf178a71b5d210d055e5",
+      "episodes.py": "62f0ee1615fcd268aec088a83e34c0744b981523a74f58fc34a7fb3a110328c6",
+      "experiment.py": "b2fe6a29e3dd94f8dc8e10455d66a39bb7595dca3a88f009dd627b0422ff94d9",
+      "linear.py": "614d58fc6e8280e6559eb41e1d015723763ebb1db2469b5a7fe5a3ccb270566f",
+      "models.py": "909777c0efa98bf0696e867671c2d856addc0fb33dcaa4a4a034f3a90838b04e",
+      "policies.py": "5e7f7041aa9a803b73a44b7a5ede1578451ffd0dc85cda83ac743fb546d0e190",
+      "prepare.py": "ee8db1f477dc3185104013f08358682b6255c479226a3935acc17614eb5bf75e",
+      "provenance.py": "599e5f4b17cd39c44be9a7ddd27df89172ac3d3f6eca7a76b311cfea7c96a7e4",
+      "report.py": "8f6c8f5063b9552bf90e0c67d530adf67e04bf0adc8c4ded2aa5cf5dde3a7a9f",
+      "simulation.py": "eaa3ff0c98f8f9970c7e7c9a6ee75d9fba37326187fb5932ab7a9a5cb0aa0076",
+      "study.py": "514dea833445eee09a3795c5796bd729f67893d54a1b28da5128087c1fe97708"
+    },
+    "source_tree_sha256": "21ec8872e6c2da157139d463be8d4a997a9b839725dc60c3cff0bd58ae4621b9"
+  },
+  "analysis_source_snapshot": {
+    "path": "analysis-code.zip",
+    "purpose": "Exact package sources plus available project dependency specification.",
+    "sha256": "b669d1462574cc5c565f0c1f64d6627567a285584c21a678abb52504136c4e58"
+  },
+  "cell_expression_included": false,
+  "cell_identifiers_included": true,
+  "large_outputs": "Raw/prepared cells and prediction arrays remain ignored; regenerate from pinned inputs and saved configurations.",
+  "metrics_uncompressed_sha256": "9f2db584c10e23b10ad55a74493823425da02863cdd089ad70bcd77af84e61fb",
+  "raw_cells_included": false,
+  "run_directory": "runs\\frangieh-tuning-v1",
+  "sha256": {
+    "acquisition-curves.png": "391676f8257b8fc84e0011e6a0d8012ebd03f67b00bb8ba252eeaaf6122a5496",
+    "acquisition-curves.svg": "32659e6eeabb51647ec589a8f7687f613e93852e38a4b5b9a1f1b89f95d0000e",
+    "acquisition-ledgers.zip": "782f788358419527f383434d9222b7a8fdd3776ae1252387fe2ea00fcb7b5af4",
+    "allocations.csv": "4046967d1c4c04b11604d4b59c2bdc8db5ab4ccce7d857b574ed189114da7a2b",
+    "analysis-code.zip": "b669d1462574cc5c565f0c1f64d6627567a285584c21a678abb52504136c4e58",
+    "areas-by-query-seed.csv": "f0c0615aa37176b60a07749577bdc62d2ea0ad3b8918cf0bedb3adcecab0c060",
+    "assessment-access.json": "356ab0a5f6ac84ce9b4b8c148459eb8171ca3d557746eef0b39eea12a70d15b8",
+    "code.zip": "0e51ebd8caf79daf188eefc4311340c8e1c82bd889712d5fb49ce283dc6bb00b",
+    "curves.csv": "b57bc5edbeb1dd4be2d9f6ad34e0454f5a955399e65656d760e804cb0ccbd242",
+    "episode-manifest.json": "f0e6bc6d8791c687d0286ee7cce0ec43cd9a088514a0cfc41d3367d1aaa8c151",
+    "events.jsonl": "75d102aa74fd31ec7888643aa01dfbee01a90fe5d26f6abe0d65b81c743a4133",
+    "metrics.csv.gz": "c2551a4f08a5ac43640783a7b22965e137003a86a955ca319317e28aecf1bdc3",
+    "paired-comparisons.csv": "6b3a1124fd913ac081b83ccbcab4fbf8fe6f5955536255b9c48d49a487d599f3",
+    "prediction-index.json": "946d93123fc2ed1ae3d551c2dd33ac46177e45a237b03e97005a4c55d7e68edf",
+    "predictor-curves.png": "28ff6778d4dea918357845c1a98e1b92bcfead5b04b756282519bef649f166f3",
+    "predictor-curves.svg": "63b3eac991d77750ee0e137f53752503e7dc5d8efb27b8cae962cefca12d2412",
+    "resource-accounting-analysis.py": "295a45862d6d4c1932d77c28f4b8596331ad1d16a36760ea55d52c882bda20d7",
+    "results.md": "616a5630dc388c18cd63974dedee68cab0baf1a9080d0a7516f9491644f636dd",
+    "risk-retention.csv": "7df50a4b914ab1742a2d69078bda0801df2d257268b691e01cf707dea8733232",
+    "run-manifest.json": "560e0c2596cc893a450d80db8b3bf930697e4b43a46e7e6d09e5e5b1aba25e56",
+    "selection-analysis.py": "37b6aa043c4d5a2b7f6d3d0bd66c1adaa0d456d1b9276080b692f017f0eaaa64",
+    "source-control.json": "150bee657e99bb42b98fc77eb98e698603843cb9a65ea2a68f5781690534a8b8",
+    "summary.json": "4c87844e3815aa06f62d034b3eabccb75c128c23b5fe59cdd189f10b5e9b3e1d"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "prototype_tests_passed": 12,
+  "recorded_date": "2026-10-22",
+  "sha256": {
+    "README.txt": "5d18434df00e7f1ec0cf131143118b9468959dc8cfc0495f55eb0ded8a26423e",
+    "account_development.py": "295a45862d6d4c1932d77c28f4b8596331ad1d16a36760ea55d52c882bda20d7",
+    "assessment_uncertainty.py": "2ec49cc64c69369ad1bfba6d5a744869457d4a24c3382993f10c47f3807f62e0",
+    "perturbmap.py": "acea89a65aefce5cbee360c5860187a0d111707826027b52f215acae502a7e89",
+    "test_account_development.py": "49966286e3c530caf8ae2eb25934bf51cc4634ed8c44369e0f03895982e9c511",
+    "test_assessment_uncertainty.py": "b84356b5ce8fc835fcdbd159cc609ab73ab8113d7703533998cf138a74603433",
+    "test_perturbmap.py": "e3944f1751004d5edd9239d2c14f6bb89fc63f36daea6b998ff296f2eae9baaa"
+  },
+  "state": "prototype; package integration and matched evaluation pending",
+  "test_environment": {
+    "git": {
+      "revision": "536e822dd97e2bf0a16f35daef1fe9bbac2f6ab9",
+      "status": "M README.md\n M docs/README.md\n M docs/implemented-methods.md\n M src/mlresearch/experiment.py\n M src/mlresearch/report.py"
+    },
+    "packages": {
+      "h5py": "3.16.0",
+      "matplotlib": "3.11.2",
+      "mlresearch": "0.1.0",
+      "numpy": "2.5.4",
+      "pytest": "9.1.1",
+      "scipy": "1.18.1"
+    },
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.14",
+    "recorded_at": "2026-10-22T06:05:40.167501+00:00",
+    "source_hashes": {
+      "__init__.py": "bb8543f534bc0779c941e08d8786d17c10a58bfc43e97e080422afc3757c8eb0",
+      "__main__.py": "27503438dec93a74b0ebe814fc619333accf571b77f73344c6252c94b0b5d8b3",
+      "acquisition.py": "52e82caa4c80dd4e577bb2e90cdaca52caf35fc8c97000e529161c21596be19d",
+      "cli.py": "5a1bb5bea2cf8f6d837f4d5837d06f7fe922764426b1bae50223458f0055b408",
+      "controls.py": "458f52e5886f97eed105e2c56701b51d2a26c080043b60ad8c39e9f6e9d24297",
+      "data.py": "ac2e62e8a74960d279f681cd4983d5a2f42f3cf13c8b8fde1887fc6265953789",
+      "datasets.json": "e90daa691730f09ba8885f1777ed5ae379f075d010a1dc3093c23272865e8881",
+      "design.py": "e83d39a64f0336ba7c5bf97deb997c68db3c72b3c09adf178a71b5d210d055e5",
+      "episodes.py": "62f0ee1615fcd268aec088a83e34c0744b981523a74f58fc34a7fb3a110328c6",
+      "experiment.py": "1df97d38e9e59646c32b190f5747e44da56b2ca9ec05d3e724959f799f65b799",
+      "linear.py": "614d58fc6e8280e6559eb41e1d015723763ebb1db2469b5a7fe5a3ccb270566f",
+      "models.py": "909777c0efa98bf0696e867671c2d856addc0fb33dcaa4a4a034f3a90838b04e",
+      "policies.py": "5e7f7041aa9a803b73a44b7a5ede1578451ffd0dc85cda83ac743fb546d0e190",
+      "prepare.py": "ee8db1f477dc3185104013f08358682b6255c479226a3935acc17614eb5bf75e",
+      "provenance.py": "599e5f4b17cd39c44be9a7ddd27df89172ac3d3f6eca7a76b311cfea7c96a7e4",
+      "report.py": "8f6c8f5063b9552bf90e0c67d530adf67e04bf0adc8c4ded2aa5cf5dde3a7a9f",
+      "simulation.py": "eaa3ff0c98f8f9970c7e7c9a6ee75d9fba37326187fb5932ab7a9a5cb0aa0076",
+      "study.py": "514dea833445eee09a3795c5796bd729f67893d54a1b28da5128087c1fe97708"
+    },
+    "source_tree_sha256": "16547c25014552030ce46eb5738cb6fdb1022a510046ab7b19b9131d7eb53809"
+  },
+  "typed_linted_modules": 3,
+  "zip_sha256": "402a0ab6584174f1822f98fa09f4c28d1c806c3fa90232e96d3ebbbaa7065137"
+}

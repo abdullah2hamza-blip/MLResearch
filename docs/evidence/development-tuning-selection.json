@@ -1,0 +1,97 @@
+{
+  "candidate_table_complete": true,
+  "configuration_sha256": "415ba39ff4f5d8446b347c65e8c6412c4936e701d92e444fa28bcbb3eec90d3f",
+  "normalized_error_areas": {
+    "bias_aware": 0.0023907145894425173,
+    "bias_gamma001": 0.002390965204286505,
+    "bias_gamma01": 0.0023907198242876225,
+    "bias_gamma1": 0.0023906508651185487,
+    "fixed_cf125_d16": 0.002390561144338684,
+    "fixed_cf125_d32": 0.002390655036905154,
+    "fixed_cf125_d8": 0.0023904969446375247,
+    "fixed_cf250_d16": 0.0023906680432784965,
+    "fixed_cf250_d32": 0.0023905327185756793,
+    "fixed_cf500_d16": 0.002390560617433196,
+    "fixed_cf500_d32": 0.002390552624549093,
+    "fixed_cf500_d8": 0.0023905351978698486,
+    "fixed_grid": 0.0023906120511369114,
+    "worst_query": 0.002391177827195528
+  },
+  "paid_ridge_cv_choices": {
+    "bias_aware": {
+      "-1.0": 11,
+      "100000.0": 4
+    },
+    "bias_gamma001": {
+      "-1.0": 10,
+      "100000.0": 5
+    },
+    "bias_gamma01": {
+      "-1.0": 11,
+      "100000.0": 4
+    },
+    "bias_gamma1": {
+      "-1.0": 11,
+      "100000.0": 4
+    },
+    "fixed_cf125_d16": {
+      "-1.0": 12,
+      "100000.0": 3
+    },
+    "fixed_cf125_d32": {
+      "-1.0": 13,
+      "100000.0": 2
+    },
+    "fixed_cf125_d8": {
+      "-1.0": 13,
+      "100000.0": 2
+    },
+    "fixed_cf250_d16": {
+      "-1.0": 12,
+      "100000.0": 3
+    },
+    "fixed_cf250_d32": {
+      "-1.0": 14,
+      "100000.0": 1
+    },
+    "fixed_cf500_d16": {
+      "-1.0": 12,
+      "100000.0": 3
+    },
+    "fixed_cf500_d32": {
+      "-1.0": 12,
+      "100000.0": 3
+    },
+    "fixed_cf500_d8": {
+      "-1.0": 13,
+      "100000.0": 2
+    },
+    "fixed_grid": {
+      "-1.0": 12,
+      "100000.0": 3
+    },
+    "worst_query": {
+      "-1.0": 7,
+      "100000.0": 8
+    }
+  },
+  "primary_backbone": "ridge_cv",
+  "protocol_sha256": "05b5d18c00ac73b14d1a3ad2c63fbdfb5775c0296346fdd6f6d2b15cc554b723",
+  "recorded_at": "2026-10-22T05:50:13.540699+00:00",
+  "run_manifest_sha256": "560e0c2596cc893a450d80db8b3bf930697e4b43a46e7e6d09e5e5b1aba25e56",
+  "script_sha256": "37b6aa043c4d5a2b7f6d3d0bd66c1adaa0d456d1b9276080b692f017f0eaaa64",
+  "selected_discrepancy": {
+    "development_area": 0.0023906508651185487,
+    "policy": "bias_gamma1",
+    "weight": 1.0
+  },
+  "selected_fixed_grid": {
+    "development_area": 0.0023904969446375247,
+    "fixed_control_fraction": 0.125,
+    "fixed_depth": 8,
+    "policy": "fixed_cf125_d8"
+  },
+  "selection_scope": "Development only; not confirmatory",
+  "tie_tolerance": 1e-12,
+  "zero_choice_sentinel": -1
+}

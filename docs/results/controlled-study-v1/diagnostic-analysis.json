@@ -1,0 +1,50 @@
+{
+  "environment": {
+    "git": {
+      "revision": "536e822dd97e2bf0a16f35daef1fe9bbac2f6ab9",
+      "status": "M src/mlresearch/report.py"
+    },
+    "packages": {
+      "h5py": "3.16.0",
+      "matplotlib": "3.11.2",
+      "mlresearch": "0.1.0",
+      "numpy": "2.5.4",
+      "pytest": "9.1.1",
+      "scipy": "1.18.1"
+    },
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.14",
+    "recorded_at": "2026-10-22T06:00:07.696221+00:00",
+    "source_hashes": {
+      "__init__.py": "bb8543f534bc0779c941e08d8786d17c10a58bfc43e97e080422afc3757c8eb0",
+      "__main__.py": "27503438dec93a74b0ebe814fc619333accf571b77f73344c6252c94b0b5d8b3",
+      "acquisition.py": "52e82caa4c80dd4e577bb2e90cdaca52caf35fc8c97000e529161c21596be19d",
+      "cli.py": "5a1bb5bea2cf8f6d837f4d5837d06f7fe922764426b1bae50223458f0055b408",
+      "controls.py": "458f52e5886f97eed105e2c56701b51d2a26c080043b60ad8c39e9f6e9d24297",
+      "data.py": "ac2e62e8a74960d279f681cd4983d5a2f42f3cf13c8b8fde1887fc6265953789",
+      "datasets.json": "e90daa691730f09ba8885f1777ed5ae379f075d010a1dc3093c23272865e8881",
+      "design.py": "e83d39a64f0336ba7c5bf97deb997c68db3c72b3c09adf178a71b5d210d055e5",
+      "episodes.py": "62f0ee1615fcd268aec088a83e34c0744b981523a74f58fc34a7fb3a110328c6",
+      "experiment.py": "b2fe6a29e3dd94f8dc8e10455d66a39bb7595dca3a88f009dd627b0422ff94d9",
+      "linear.py": "614d58fc6e8280e6559eb41e1d015723763ebb1db2469b5a7fe5a3ccb270566f",
+      "models.py": "909777c0efa98bf0696e867671c2d856addc0fb33dcaa4a4a034f3a90838b04e",
+      "policies.py": "5e7f7041aa9a803b73a44b7a5ede1578451ffd0dc85cda83ac743fb546d0e190",
+      "prepare.py": "ee8db1f477dc3185104013f08358682b6255c479226a3935acc17614eb5bf75e",
+      "provenance.py": "599e5f4b17cd39c44be9a7ddd27df89172ac3d3f6eca7a76b311cfea7c96a7e4",
+      "report.py": "8f6c8f5063b9552bf90e0c67d530adf67e04bf0adc8c4ded2aa5cf5dde3a7a9f",
+      "simulation.py": "eaa3ff0c98f8f9970c7e7c9a6ee75d9fba37326187fb5932ab7a9a5cb0aa0076",
+      "study.py": "514dea833445eee09a3795c5796bd729f67893d54a1b28da5128087c1fe97708"
+    },
+    "source_tree_sha256": "21ec8872e6c2da157139d463be8d4a997a9b839725dc60c3cff0bd58ae4621b9"
+  },
+  "risk_retention_scope": "Select separately within each world/acquisition seed using predictor variance/support only; aggregate retained query-seed error. No labels break ties.",
+  "script_sha256": "71e9a7fdc406312a489c0e79b8de3e909f23980961437413c7c11072ff011638",
+  "sha256": {
+    "allocation-by-world.csv": "cdb76f7cde422a6cb80f712148335a4c7b2386760b9e834cfb46fd04405a27db",
+    "diagnostic-code.zip": "b669d1462574cc5c565f0c1f64d6627567a285584c21a678abb52504136c4e58",
+    "interval-widths-by-world.csv": "7914fc2e0bc1b9ef6ab39f208c47a4f8264ee2f9d2f69935821c8060d48aed7e",
+    "strata-by-world.csv": "8cca0c28294567b9d304ebb4500511bc4f3579dc82371e0dae74e6e95de09419",
+    "true-risk-retention-by-world.csv": "1488defd1ac558ed0f0df0481a859ef8b0b950b4624c28af28ff3891555e0f9d"
+  },
+  "uncertainty_scope": "Descriptive diagnostics. Five independent worlds; query/seed/gene rows are not independent replicates. Fixed-ridge ideal Gaussian widths exclude source/adaptive/structural errors."
+}

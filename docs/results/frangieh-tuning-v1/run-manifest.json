@@ -1,0 +1,765 @@
+{
+  "completed_at": "2026-10-22T05:42:02.871237+00:00",
+  "configuration": {
+    "budgets": [
+      128,
+      256,
+      512
+    ],
+    "development_resource_record": "docs/evidence/development-resource-accounting.json",
+    "episode_directory": "data/episodes/frangieh-control-to-ifng-v1",
+    "label": "Accounted development tuning under docs/development-tuning-protocol.md; external outcomes unopened",
+    "output_directory": "runs/frangieh-tuning-v1",
+    "policies": [
+      "worst_query",
+      "fixed_grid",
+      "fixed_cf125_d8",
+      "fixed_cf500_d8",
+      "fixed_cf250_d16",
+      "fixed_cf125_d16",
+      "fixed_cf500_d16",
+      "fixed_cf250_d32",
+      "fixed_cf125_d32",
+      "fixed_cf500_d32",
+      "bias_aware",
+      "bias_gamma001",
+      "bias_gamma01",
+      "bias_gamma1"
+    ],
+    "policy": {
+      "allow_controls": true,
+      "allow_depth": true,
+      "allow_opening": true,
+      "block_cells": 8,
+      "cell_cost": 1,
+      "control_cell_cost": 1,
+      "discrepancy_weight": 0.25,
+      "fixed_control_fraction": 0.25,
+      "fixed_depth": 8,
+      "identity_selection": "adaptive",
+      "kernel_length": 1.0,
+      "partial_blocks": true,
+      "pilot_cells": 8,
+      "pilot_controls": 16,
+      "pilot_interventions": 6,
+      "rank": 4,
+      "ridge": 0.1,
+      "ridge_grid": [
+        0.1,
+        1,
+        10,
+        100,
+        1000,
+        10000,
+        100000
+      ],
+      "ridge_include_null": true,
+      "setup_cost": 4,
+      "shared_covariance": true,
+      "variance_prior": "paid_ratio"
+    },
+    "primary_backbone": "ridge_cv",
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_control": "none",
+    "source_control_seed": 20261022,
+    "variants": {
+      "bias_gamma001": {
+        "base": "bias_aware",
+        "overrides": {
+          "discrepancy_weight": 0.01
+        }
+      },
+      "bias_gamma01": {
+        "base": "bias_aware",
+        "overrides": {
+          "discrepancy_weight": 0.1
+        }
+      },
+      "bias_gamma1": {
+        "base": "bias_aware",
+        "overrides": {
+          "discrepancy_weight": 1.0
+        }
+      },
+      "fixed_cf125_d16": {
+        "base": "fixed_grid",
+        "overrides": {
+          "fixed_control_fraction": 0.125,
+          "fixed_depth": 16
+        }
+      },
+      "fixed_cf125_d32": {
+        "base": "fixed_grid",
+        "overrides": {
+          "fixed_control_fraction": 0.125,
+          "fixed_depth": 32
+        }
+      },
+      "fixed_cf125_d8": {
+        "base": "fixed_grid",
+        "overrides": {
+          "fixed_control_fraction": 0.125,
+          "fixed_depth": 8
+        }
+      },
+      "fixed_cf250_d16": {
+        "base": "fixed_grid",
+        "overrides": {
+          "fixed_control_fraction": 0.25,
+          "fixed_depth": 16
+        }
+      },
+      "fixed_cf250_d32": {
+        "base": "fixed_grid",
+        "overrides": {
+          "fixed_control_fraction": 0.25,
+          "fixed_depth": 32
+        }
+      },
+      "fixed_cf500_d16": {
+        "base": "fixed_grid",
+        "overrides": {
+          "fixed_control_fraction": 0.5,
+          "fixed_depth": 16
+        }
+      },
+      "fixed_cf500_d32": {
+        "base": "fixed_grid",
+        "overrides": {
+          "fixed_control_fraction": 0.5,
+          "fixed_depth": 32
+        }
+      },
+      "fixed_cf500_d8": {
+        "base": "fixed_grid",
+        "overrides": {
+          "fixed_control_fraction": 0.5,
+          "fixed_depth": 8
+        }
+      }
+    }
+  },
+  "configuration_sha256": "48e19d1c53ce28abdaa1bcb15fa5f32b28e838f2f21c93082b72d6a083e3102e",
+  "environment": {
+    "git": {
+      "revision": "536e822dd97e2bf0a16f35daef1fe9bbac2f6ab9",
+      "status": ""
+    },
+    "packages": {
+      "h5py": "3.16.0",
+      "matplotlib": "3.11.2",
+      "mlresearch": "0.1.0",
+      "numpy": "2.5.4",
+      "pytest": "9.1.1",
+      "scipy": "1.18.1"
+    },
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.14",
+    "recorded_at": "2026-10-22T05:35:15.954467+00:00",
+    "source_hashes": {
+      "__init__.py": "bb8543f534bc0779c941e08d8786d17c10a58bfc43e97e080422afc3757c8eb0",
+      "__main__.py": "27503438dec93a74b0ebe814fc619333accf571b77f73344c6252c94b0b5d8b3",
+      "acquisition.py": "52e82caa4c80dd4e577bb2e90cdaca52caf35fc8c97000e529161c21596be19d",
+      "cli.py": "5a1bb5bea2cf8f6d837f4d5837d06f7fe922764426b1bae50223458f0055b408",
+      "controls.py": "458f52e5886f97eed105e2c56701b51d2a26c080043b60ad8c39e9f6e9d24297",
+      "data.py": "ac2e62e8a74960d279f681cd4983d5a2f42f3cf13c8b8fde1887fc6265953789",
+      "datasets.json": "e90daa691730f09ba8885f1777ed5ae379f075d010a1dc3093c23272865e8881",
+      "design.py": "e83d39a64f0336ba7c5bf97deb997c68db3c72b3c09adf178a71b5d210d055e5",
+      "episodes.py": "62f0ee1615fcd268aec088a83e34c0744b981523a74f58fc34a7fb3a110328c6",
+      "experiment.py": "b2fe6a29e3dd94f8dc8e10455d66a39bb7595dca3a88f009dd627b0422ff94d9",
+      "linear.py": "614d58fc6e8280e6559eb41e1d015723763ebb1db2469b5a7fe5a3ccb270566f",
+      "models.py": "909777c0efa98bf0696e867671c2d856addc0fb33dcaa4a4a034f3a90838b04e",
+      "policies.py": "5e7f7041aa9a803b73a44b7a5ede1578451ffd0dc85cda83ac743fb546d0e190",
+      "prepare.py": "ee8db1f477dc3185104013f08358682b6255c479226a3935acc17614eb5bf75e",
+      "provenance.py": "599e5f4b17cd39c44be9a7ddd27df89172ac3d3f6eca7a76b311cfea7c96a7e4",
+      "report.py": "0e47c505e80095f6bacbc4e406cefb8f8a13a6225eba2d067bc3649270256ebc",
+      "simulation.py": "eaa3ff0c98f8f9970c7e7c9a6ee75d9fba37326187fb5932ab7a9a5cb0aa0076",
+      "study.py": "514dea833445eee09a3795c5796bd729f67893d54a1b28da5128087c1fe97708"
+    },
+    "source_tree_sha256": "c66a26c9542621d399f9840b9dc481fdc1a8211e959fb3864fac1259ae45a304"
+  },
+  "episode_manifest_sha256": "f0e6bc6d8791c687d0286ee7cce0ec43cd9a088514a0cfc41d3367d1aaa8c151",
+  "fixed_development_resources": {
+    "record": {
+      "assessment_control_cells": 256,
+      "cell_cost": 1,
+      "control_cell_cost": 1,
+      "description": "Unique recipient observations exposed across the exploratory development replay and its scoring bank, now informing method development. Separate fixed development resource, not independent biological replication or free final-test validation.",
+      "limitations": "Fixed development costs must be disclosed alongside incremental recipient budgets; source data and computation are separate resources. This is not a claim that all counterfactual policies could simultaneously buy the same physical cells.",
+      "policy_specific_counterfactual_costs": "Separate ledgers charge each simulated policy afresh; union accounting here counts shared retrospective development observations once.",
+      "query_assessment_cells": 1632,
+      "run_manifest_sha256": "51da938b9b09a6ac7ebd186adb6ada38bb376e72a1b22b6f4c9cbacae2f6e993",
+      "setup_cost": 4,
+      "unique_controls_acquisition_and_assessment": 448,
+      "unique_opened_interventions_acquisition_and_assessment": 202,
+      "unique_perturbed_cells_acquisition_and_assessment": 3704,
+      "unique_resource_cost_units": 4960
+    },
+    "sha256": "3e37524e7ac58a16333fc1175cb7c4856e517ecaf1c9beffbc780c19086156ba",
+    "unique_resource_cost_units": 4960
+  },
+  "fixed_public_source_cells": 19708,
+  "inference_unit": "Paired query intervention; seeds measure acquisition variability, not biological replication.",
+  "limitations": [
+    "Intervals are ideal Gaussian diagnostics; post-selection coverage is unvalidated.",
+    "Scalar variances omit gene heteroskedasticity, guide/batch effects and source-coordinate uncertainty.",
+    "Unregularized ideal variances do not account for ridge shrinkage bias.",
+    "The discrepancy objective uses fixed-kernel variance as a surrogate for the ridge predictor's residual risk.",
+    "Seeds and cells are not independent biological replicates.",
+    "Local residual baseline is an adaptation, not a PerturbMap reproduction.",
+    "Fixed-grid settings have not yet been tuned on a development validation design."
+  ],
+  "policy_specifications": {
+    "bias_aware": {
+      "base": "bias_aware",
+      "settings": {
+        "allow_controls": true,
+        "allow_depth": true,
+        "allow_opening": true,
+        "block_cells": 8,
+        "cell_cost": 1,
+        "control_cell_cost": 1,
+        "discrepancy_weight": 0.25,
+        "fixed_control_fraction": 0.25,
+        "fixed_depth": 8,
+        "identity_selection": "adaptive",
+        "kernel_length": 1.0,
+        "partial_blocks": true,
+        "pilot_cells": 8,
+        "pilot_controls": 16,
+        "pilot_interventions": 6,
+        "rank": 4,
+        "ridge": 0.1,
+        "ridge_grid": [
+          0.1,
+          1,
+          10,
+          100,
+          1000,
+          10000,
+          100000
+        ],
+        "ridge_include_null": true,
+        "setup_cost": 4,
+        "shared_covariance": true,
+        "variance_prior": "paid_ratio"
+      }
+    },
+    "bias_gamma001": {
+      "base": "bias_aware",
+      "settings": {
+        "allow_controls": true,
+        "allow_depth": true,
+        "allow_opening": true,
+        "block_cells": 8,
+        "cell_cost": 1,
+        "control_cell_cost": 1,
+        "discrepancy_weight": 0.01,
+        "fixed_control_fraction": 0.25,
+        "fixed_depth": 8,
+        "identity_selection": "adaptive",
+        "kernel_length": 1.0,
+        "partial_blocks": true,
+        "pilot_cells": 8,
+        "pilot_controls": 16,
+        "pilot_interventions": 6,
+        "rank": 4,
+        "ridge": 0.1,
+        "ridge_grid": [
+          0.1,
+          1,
+          10,
+          100,
+          1000,
+          10000,
+          100000
+        ],
+        "ridge_include_null": true,
+        "setup_cost": 4,
+        "shared_covariance": true,
+        "variance_prior": "paid_ratio"
+      }
+    },
+    "bias_gamma01": {
+      "base": "bias_aware",
+      "settings": {
+        "allow_controls": true,
+        "allow_depth": true,
+        "allow_opening": true,
+        "block_cells": 8,
+        "cell_cost": 1,
+        "control_cell_cost": 1,
+        "discrepancy_weight": 0.1,
+        "fixed_control_fraction": 0.25,
+        "fixed_depth": 8,
+        "identity_selection": "adaptive",
+        "kernel_length": 1.0,
+        "partial_blocks": true,
+        "pilot_cells": 8,
+        "pilot_controls": 16,
+        "pilot_interventions": 6,
+        "rank": 4,
+        "ridge": 0.1,
+        "ridge_grid": [
+          0.1,
+          1,
+          10,
+          100,
+          1000,
+          10000,
+          100000
+        ],
+        "ridge_include_null": true,
+        "setup_cost": 4,
+        "shared_covariance": true,
+        "variance_prior": "paid_ratio"
+      }
+    },
+    "bias_gamma1": {
+      "base": "bias_aware",
+      "settings": {
+        "allow_controls": true,
+        "allow_depth": true,
+        "allow_opening": true,
+        "block_cells": 8,
+        "cell_cost": 1,
+        "control_cell_cost": 1,
+        "discrepancy_weight": 1.0,
+        "fixed_control_fraction": 0.25,
+        "fixed_depth": 8,
+        "identity_selection": "adaptive",
+        "kernel_length": 1.0,
+        "partial_blocks": true,
+        "pilot_cells": 8,
+        "pilot_controls": 16,
+        "pilot_interventions": 6,
+        "rank": 4,
+        "ridge": 0.1,
+        "ridge_grid": [
+          0.1,
+          1,
+          10,
+          100,
+          1000,
+          10000,
+          100000
+        ],
+        "ridge_include_null": true,
+        "setup_cost": 4,
+        "shared_covariance": true,
+        "variance_prior": "paid_ratio"
+      }
+    },
+    "fixed_cf125_d16": {
+      "base": "fixed_grid",
+      "settings": {
+        "allow_controls": true,
+        "allow_depth": true,
+        "allow_opening": true,
+        "block_cells": 8,
+        "cell_cost": 1,
+        "control_cell_cost": 1,
+        "discrepancy_weight": 0.25,
+        "fixed_control_fraction": 0.125,
+        "fixed_depth": 16,
+        "identity_selection": "adaptive",
+        "kernel_length": 1.0,
+        "partial_blocks": true,
+        "pilot_cells": 8,
+        "pilot_controls": 16,
+        "pilot_interventions": 6,
+        "rank": 4,
+        "ridge": 0.1,
+        "ridge_grid": [
+          0.1,
+          1,
+          10,
+          100,
+          1000,
+          10000,
+          100000
+        ],
+        "ridge_include_null": true,
+        "setup_cost": 4,
+        "shared_covariance": true,
+        "variance_prior": "paid_ratio"
+      }
+    },
+    "fixed_cf125_d32": {
+      "base": "fixed_grid",
+      "settings": {
+        "allow_controls": true,
+        "allow_depth": true,
+        "allow_opening": true,
+        "block_cells": 8,
+        "cell_cost": 1,
+        "control_cell_cost": 1,
+        "discrepancy_weight": 0.25,
+        "fixed_control_fraction": 0.125,
+        "fixed_depth": 32,
+        "identity_selection": "adaptive",
+        "kernel_length": 1.0,
+        "partial_blocks": true,
+        "pilot_cells": 8,
+        "pilot_controls": 16,
+        "pilot_interventions": 6,
+        "rank": 4,
+        "ridge": 0.1,
+        "ridge_grid": [
+          0.1,
+          1,
+          10,
+          100,
+          1000,
+          10000,
+          100000
+        ],
+        "ridge_include_null": true,
+        "setup_cost": 4,
+        "shared_covariance": true,
+        "variance_prior": "paid_ratio"
+      }
+    },
+    "fixed_cf125_d8": {
+      "base": "fixed_grid",
+      "settings": {
+        "allow_controls": true,
+        "allow_depth": true,
+        "allow_opening": true,
+        "block_cells": 8,
+        "cell_cost": 1,
+        "control_cell_cost": 1,
+        "discrepancy_weight": 0.25,
+        "fixed_control_fraction": 0.125,
+        "fixed_depth": 8,
+        "identity_selection": "adaptive",
+        "kernel_length": 1.0,
+        "partial_blocks": true,
+        "pilot_cells": 8,
+        "pilot_controls": 16,
+        "pilot_interventions": 6,
+        "rank": 4,
+        "ridge": 0.1,
+        "ridge_grid": [
+          0.1,
+          1,
+          10,
+          100,
+          1000,
+          10000,
+          100000
+        ],
+        "ridge_include_null": true,
+        "setup_cost": 4,
+        "shared_covariance": true,
+        "variance_prior": "paid_ratio"
+      }
+    },
+    "fixed_cf250_d16": {
+      "base": "fixed_grid",
+      "settings": {
+        "allow_controls": true,
+        "allow_depth": true,
+        "allow_opening": true,
+        "block_cells": 8,
+        "cell_cost": 1,
+        "control_cell_cost": 1,
+        "discrepancy_weight": 0.25,
+        "fixed_control_fraction": 0.25,
+        "fixed_depth": 16,
+        "identity_selection": "adaptive",
+        "kernel_length": 1.0,
+        "partial_blocks": true,
+        "pilot_cells": 8,
+        "pilot_controls": 16,
+        "pilot_interventions": 6,
+        "rank": 4,
+        "ridge": 0.1,
+        "ridge_grid": [
+          0.1,
+          1,
+          10,
+          100,
+          1000,
+          10000,
+          100000
+        ],
+        "ridge_include_null": true,
+        "setup_cost": 4,
+        "shared_covariance": true,
+        "variance_prior": "paid_ratio"
+      }
+    },
+    "fixed_cf250_d32": {
+      "base": "fixed_grid",
+      "settings": {
+        "allow_controls": true,
+        "allow_depth": true,
+        "allow_opening": true,
+        "block_cells": 8,
+        "cell_cost": 1,
+        "control_cell_cost": 1,
+        "discrepancy_weight": 0.25,
+        "fixed_control_fraction": 0.25,
+        "fixed_depth": 32,
+        "identity_selection": "adaptive",
+        "kernel_length": 1.0,
+        "partial_blocks": true,
+        "pilot_cells": 8,
+        "pilot_controls": 16,
+        "pilot_interventions": 6,
+        "rank": 4,
+        "ridge": 0.1,
+        "ridge_grid": [
+          0.1,
+          1,
+          10,
+          100,
+          1000,
+          10000,
+          100000
+        ],
+        "ridge_include_null": true,
+        "setup_cost": 4,
+        "shared_covariance": true,
+        "variance_prior": "paid_ratio"
+      }
+    },
+    "fixed_cf500_d16": {
+      "base": "fixed_grid",
+      "settings": {
+        "allow_controls": true,
+        "allow_depth": true,
+        "allow_opening": true,
+        "block_cells": 8,
+        "cell_cost": 1,
+        "control_cell_cost": 1,
+        "discrepancy_weight": 0.25,
+        "fixed_control_fraction": 0.5,
+        "fixed_depth": 16,
+        "identity_selection": "adaptive",
+        "kernel_length": 1.0,
+        "partial_blocks": true,
+        "pilot_cells": 8,
+        "pilot_controls": 16,
+        "pilot_interventions": 6,
+        "rank": 4,
+        "ridge": 0.1,
+        "ridge_grid": [
+          0.1,
+          1,
+          10,
+          100,
+          1000,
+          10000,
+          100000
+        ],
+        "ridge_include_null": true,
+        "setup_cost": 4,
+        "shared_covariance": true,
+        "variance_prior": "paid_ratio"
+      }
+    },
+    "fixed_cf500_d32": {
+      "base": "fixed_grid",
+      "settings": {
+        "allow_controls": true,
+        "allow_depth": true,
+        "allow_opening": true,
+        "block_cells": 8,
+        "cell_cost": 1,
+        "control_cell_cost": 1,
+        "discrepancy_weight": 0.25,
+        "fixed_control_fraction": 0.5,
+        "fixed_depth": 32,
+        "identity_selection": "adaptive",
+        "kernel_length": 1.0,
+        "partial_blocks": true,
+        "pilot_cells": 8,
+        "pilot_controls": 16,
+        "pilot_interventions": 6,
+        "rank": 4,
+        "ridge": 0.1,
+        "ridge_grid": [
+          0.1,
+          1,
+          10,
+          100,
+          1000,
+          10000,
+          100000
+        ],
+        "ridge_include_null": true,
+        "setup_cost": 4,
+        "shared_covariance": true,
+        "variance_prior": "paid_ratio"
+      }
+    },
+    "fixed_cf500_d8": {
+      "base": "fixed_grid",
+      "settings": {
+        "allow_controls": true,
+        "allow_depth": true,
+        "allow_opening": true,
+        "block_cells": 8,
+        "cell_cost": 1,
+        "control_cell_cost": 1,
+        "discrepancy_weight": 0.25,
+        "fixed_control_fraction": 0.5,
+        "fixed_depth": 8,
+        "identity_selection": "adaptive",
+        "kernel_length": 1.0,
+        "partial_blocks": true,
+        "pilot_cells": 8,
+        "pilot_controls": 16,
+        "pilot_interventions": 6,
+        "rank": 4,
+        "ridge": 0.1,
+        "ridge_grid": [
+          0.1,
+          1,
+          10,
+          100,
+          1000,
+          10000,
+          100000
+        ],
+        "ridge_include_null": true,
+        "setup_cost": 4,
+        "shared_covariance": true,
+        "variance_prior": "paid_ratio"
+      }
+    },
+    "fixed_grid": {
+      "base": "fixed_grid",
+      "settings": {
+        "allow_controls": true,
+        "allow_depth": true,
+        "allow_opening": true,
+        "block_cells": 8,
+        "cell_cost": 1,
+        "control_cell_cost": 1,
+        "discrepancy_weight": 0.25,
+        "fixed_control_fraction": 0.25,
+        "fixed_depth": 8,
+        "identity_selection": "adaptive",
+        "kernel_length": 1.0,
+        "partial_blocks": true,
+        "pilot_cells": 8,
+        "pilot_controls": 16,
+        "pilot_interventions": 6,
+        "rank": 4,
+        "ridge": 0.1,
+        "ridge_grid": [
+          0.1,
+          1,
+          10,
+          100,
+          1000,
+          10000,
+          100000
+        ],
+        "ridge_include_null": true,
+        "setup_cost": 4,
+        "shared_covariance": true,
+        "variance_prior": "paid_ratio"
+      }
+    },
+    "worst_query": {
+      "base": "worst_query",
+      "settings": {
+        "allow_controls": true,
+        "allow_depth": true,
+        "allow_opening": true,
+        "block_cells": 8,
+        "cell_cost": 1,
+        "control_cell_cost": 1,
+        "discrepancy_weight": 0.25,
+        "fixed_control_fraction": 0.25,
+        "fixed_depth": 8,
+        "identity_selection": "adaptive",
+        "kernel_length": 1.0,
+        "partial_blocks": true,
+        "pilot_cells": 8,
+        "pilot_controls": 16,
+        "pilot_interventions": 6,
+        "rank": 4,
+        "ridge": 0.1,
+        "ridge_grid": [
+          0.1,
+          1,
+          10,
+          100,
+          1000,
+          10000,
+          100000
+        ],
+        "ridge_include_null": true,
+        "setup_cost": 4,
+        "shared_covariance": true,
+        "variance_prior": "paid_ratio"
+      }
+    }
+  },
+  "predictions_sha256": "946d93123fc2ed1ae3d551c2dd33ac46177e45a237b03e97005a4c55d7e68edf",
+  "primary_backbone": "ridge_cv",
+  "primary_comparator": "worst_query",
+  "primary_endpoint": "Mean full aligned-gene squared control-relative error; trapezoidal area over the fixed budget grid divided by grid width.",
+  "resources_end": {
+    "available_ram_bytes": 1123532800,
+    "disk_free_bytes": 645709422592,
+    "disk_total_bytes": 1002016075776,
+    "logical_cpus": 16,
+    "memory_scope": "Current process; peak is over its lifetime, not a per-case delta.",
+    "peak_commit_bytes": 441417728,
+    "peak_working_set_bytes": 910913536,
+    "process_id": 34160,
+    "ram_bytes": 16418983936,
+    "recorded_at": "2026-10-22T05:42:02.919524+00:00",
+    "working_set_bytes": 886792192
+  },
+  "resources_start": {
+    "available_ram_bytes": 1306218496,
+    "disk_free_bytes": 655010168832,
+    "disk_total_bytes": 1002016075776,
+    "logical_cpus": 16,
+    "memory_scope": "Current process; peak is over its lifetime, not a per-case delta.",
+    "peak_commit_bytes": 180793344,
+    "peak_working_set_bytes": 182353920,
+    "process_id": 34160,
+    "ram_bytes": 16418983936,
+    "recorded_at": "2026-10-22T05:35:29.948867+00:00",
+    "working_set_bytes": 178094080
+  },
+  "results_sha256": "9f2db584c10e23b10ad55a74493823425da02863cdd089ad70bcd77af84e61fb",
+  "runtime_seconds": 407.2718339999992,
+  "schema_version": 1,
+  "scorer_only_assessment_cells": 1888,
+  "source_control": {
+    "control": "none",
+    "recipient_outcomes_accessed": false,
+    "seed": 20261022
+  },
+  "source_coordinates": {
+    "explained_fraction": 0.09308099181066051,
+    "rank": 4,
+    "source_half_noise": 0.0028253257827920092
+  },
+  "source_snapshot": {
+    "path": "code.zip",
+    "purpose": "Exact package sources plus available project dependency specification.",
+    "sha256": "0e51ebd8caf79daf188eefc4311340c8e1c82bd889712d5fb49ce283dc6bb00b"
+  },
+  "state": "complete",
+  "total_program_budget_grid": [
+    5088,
+    5216,
+    5472
+  ]
+}

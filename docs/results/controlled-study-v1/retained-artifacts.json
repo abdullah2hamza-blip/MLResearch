@@ -1,0 +1,32 @@
+{
+  "cell_identifiers_included": true,
+  "full_prediction_arrays_included": false,
+  "qualification": "All 70 cases retained; per-query metrics are descriptive within each frozen synthetic world. Large raw arrays remain in ignored runs; regenerate with saved configuration and exact source ZIP.",
+  "raw_cell_expression_included": false,
+  "retention_source_sha256": "a6cd3c57bae15d6bb1f7e14c9b6133f8275192ae7396fae733c39d3cbb1078ce",
+  "sha256": {
+    "allocation-by-world.csv": "cdb76f7cde422a6cb80f712148335a4c7b2386760b9e834cfb46fd04405a27db",
+    "case-audits.zip": "ab69cac5bd16a0c1bfe3f9d415148c662c549a1016a1b36918d42b17a82f8ea3",
+    "case-index.json": "89fee75e58774390d6a08a450f6d351f38b926d4c6a8f067be5394f33d525e22",
+    "code.zip": "0e51ebd8caf79daf188eefc4311340c8e1c82bd889712d5fb49ce283dc6bb00b",
+    "configuration.json": "b04a6eb44a5ca7137fba52eae4a04d0a89aa1bf3fdbf4bccbbccfeb5210be75a",
+    "controlled-scenarios.png": "941da40ec2c3a29fca5a62b196015d701793fd9ba8d4213170267d627dedd5c4",
+    "controlled-scenarios.svg": "1430ce4c246c06b1022673a1c362a67d646453cbb86fbd04a3e4f0546a780627",
+    "curves-by-world.csv": "51c2385d76d208ac0024d49198777779a03cb212bbc434cb36205fd2e970b89b",
+    "diagnostic-analysis.json": "08239fe70708ddcd2d8d06bcdf9abb0b7e85db30e39569912d984c06c8cda9c0",
+    "diagnostic-analysis.py": "71e9a7fdc406312a489c0e79b8de3e909f23980961437413c7c11072ff011638",
+    "diagnostic-code.zip": "b669d1462574cc5c565f0c1f64d6627567a285584c21a678abb52504136c4e58",
+    "events.jsonl": "b91b0b0f72039664d8bb2f980244add671070b220b7c68230a286f532c1a6cc3",
+    "interval-widths-by-world.csv": "7914fc2e0bc1b9ef6ab39f208c47a4f8264ee2f9d2f69935821c8060d48aed7e",
+    "paired-world-comparisons.csv": "5f56ac6a57b04c1d7fe34c719ef52df3efa51f377f3f3a2911884718bbc2cf9c",
+    "per-query-metrics.zip": "136e34a389f1fc5cd7db1cd68a47f00a37e39449044bbb29e4c452aedf2f28ec",
+    "results.md": "de270646d8561cc3435a7aeaf7a8d54a11cee9974fa0dbc8df95fcb75f995e1a",
+    "retention-analysis.py": "a6cd3c57bae15d6bb1f7e14c9b6133f8275192ae7396fae733c39d3cbb1078ce",
+    "strata-by-world.csv": "8cca0c28294567b9d304ebb4500511bc4f3579dc82371e0dae74e6e95de09419",
+    "study-manifest.json": "c3f26d69755c580e1fa97d692ec6df1ffbd14a48e12ce5228aa1a8c8c69e4eb8",
+    "true-risk-retention-by-world.csv": "1488defd1ac558ed0f0df0481a859ef8b0b950b4624c28af28ff3891555e0f9d",
+    "uncertainty-diagnostics.csv": "ada3b98e3865bde8b4ed77b4524f23cc18838010d6631452327e24da30f519c9"
+  },
+  "source_tree_sha256": "c66a26c9542621d399f9840b9dc481fdc1a8211e959fb3864fac1259ae45a304",
+  "study_manifest_sha256": "c3f26d69755c580e1fa97d692ec6df1ffbd14a48e12ce5228aa1a8c8c69e4eb8"
+}

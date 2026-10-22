@@ -19,7 +19,7 @@ Current policies are:
 | Policy | Executed decision rule |
 | --- | --- |
 | `random_equal` | Equal-depth opening/allocation with random ties, keeping a fixed control-cost fraction. |
-| `fixed_grid` | The same fixed control fraction and equal-depth grid with a seeded fixed identity order. This is currently untuned. |
+| `fixed_grid` | Fixed control fraction and equal-depth grid with a seeded identity order. The initial defaults were untuned; a nine-point development grid is now recorded separately. |
 | `diversity` | Source-feature farthest-point opening; control actions use query-variance reduction. This is a hybrid heuristic. |
 | `d_optimal` | Greedy change in `logdet(M + .01 I)` per cost, with nuisance-aware shared controls. |
 | `worst_query` | Greedy decrease of maximum `q'(M + .01 I)^-1 q` over the fixed source-query coordinates, per cost. |
@@ -54,3 +54,5 @@ Source stability uses public squared response norm versus twice its estimated me
 Study aggregation averages queries and acquisition seeds within each generative world before paired world-level Monte Carlo uncertainty. Gaussian coverage is conditional on finite-width intervals and reports its denominator. Each run records structured JSON events, current-process memory with explicit lifetime-peak scope, and the fixed development resource separately from incremental budgets. The [retention correction](retention-analysis-correction.md) documents corrected predictor-only retention ordering and denominators for the four earlier pilot reports.
 
 For cached classical updates, let total precision be `W`, its feature center be `mu`, and centered information be `M`, including controls at zero feature. Adding precision `t` at `x` gives `M_new = M + [t/(1+t/W)] (x-mu)(x-mu)'` when `W>0`. With no previous observations the first weighted group contributes zero centered scatter. Query variances and log determinants then use rank-one inverse/determinant identities. The independent-control ablation instead uses diagonal contrast noise `v_i/n_i+c`; this intentionally wrong covariance is confined to acquisition. Gaussian-process depth/control gains use rank-one covariance downdates; a new intervention uses its Schur complement, including the shared-control off-diagonal. Dense-reference tests cover empty/partial/full calibration sets and every action type.
+
+The [completed controlled study](controlled-study-findings.md) retains all 70 cases and demonstrates that source measurement error can make conditional numerical support misleading. The [accounted development selection](development-tuning-findings.md) chooses a fixed grid and discrepancy weight but yields near-null predictions and no useful demonstrated development gain. Its updated fixed resource is 6,344 units. These results do not validate the heuristic source deferral rule or complete external evaluation.

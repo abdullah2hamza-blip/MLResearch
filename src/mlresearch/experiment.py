@@ -458,7 +458,8 @@ def _run_experiment(config: RunConfig) -> dict[str, Any]:
             "for the ridge predictor's residual risk.",
             "Seeds and cells are not independent biological replicates.",
             "Local residual baseline is an adaptation, not a PerturbMap reproduction.",
-            "Fixed-grid settings have not yet been tuned on a development validation design.",
+            "Fixed-grid settings are declared in configuration; "
+            "any development selection must be recorded separately.",
         ],
     )
     write_json(output / "manifest.json", manifest)

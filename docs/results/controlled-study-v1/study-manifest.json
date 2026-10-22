@@ -1,0 +1,2543 @@
+{
+  "cases": [
+    {
+      "generative_seed": 71,
+      "manifest_sha256": "bd425f4e4e88ba191142c2712680e2a2f57495e0a19e5fc4fceddfac087fe630",
+      "run": "runs\\controlled-study-v1\\world-71\\baseline\\run",
+      "scenario": "baseline",
+      "truth_metrics_sha256": "8b0da8959c3d8a17d54b00a3b704a05b19c9af89ac38d34094e2e5ddcfdb1804"
+    },
+    {
+      "generative_seed": 71,
+      "manifest_sha256": "9d198e07337e15ef60cca8ed99d27969cbb04ff9d95cae2f949c186d0d96cfa3",
+      "run": "runs\\controlled-study-v1\\world-71\\batch_shift_one\\run",
+      "scenario": "batch_shift_one",
+      "truth_metrics_sha256": "144cc84a485db87db4e35b2ae6e66aabee3bb69d1c2d68a95e08de25b939cc7f"
+    },
+    {
+      "generative_seed": 71,
+      "manifest_sha256": "7c9febebe7079c5cc9b7c5494d0393c989f02143807f531ead70e3928f5b75d5",
+      "run": "runs\\controlled-study-v1\\world-71\\control_noise_four\\run",
+      "scenario": "control_noise_four",
+      "truth_metrics_sha256": "cb013e4a054d97bb870bb4f11c94cfc3a651317e5c1e8095522097431cf73e34"
+    },
+    {
+      "generative_seed": 71,
+      "manifest_sha256": "92a13fa0422f7f61ce3ac892258efd54588d9fb304957c9c23da9be618f6d75b",
+      "run": "runs\\controlled-study-v1\\world-71\\exact_rank_full\\run",
+      "scenario": "exact_rank_full",
+      "truth_metrics_sha256": "99f15f45f44e77e881772ef96980fe35a5f4e345b9917d4dc5bd46113511bb88"
+    },
+    {
+      "generative_seed": 71,
+      "manifest_sha256": "28a91ac651f318a87eb116ff42c62039d466f299d9bb47bd1e102e7f35a4476a",
+      "run": "runs\\controlled-study-v1\\world-71\\exact_rank_missing\\run",
+      "scenario": "exact_rank_missing",
+      "truth_metrics_sha256": "233a18fa29cd54717e407d0146203a8f037382ea218c3f1ca2f727654d74f36b"
+    },
+    {
+      "generative_seed": 71,
+      "manifest_sha256": "a9950f015ebcea35809a51ce2821fa7eb2e86069b152063b77059980626a40c8",
+      "run": "runs\\controlled-study-v1\\world-71\\mechanism_shift_2\\run",
+      "scenario": "mechanism_shift_2",
+      "truth_metrics_sha256": "7aa8dd4ae08d41d4fbccf8bee8a13fea403c61957d6551e9a07a21cd391ecd95"
+    },
+    {
+      "generative_seed": 71,
+      "manifest_sha256": "b8b6bbf69e278def3fa4b2d14178a2d14baf23be83998019af7bb88f41f62ebd",
+      "run": "runs\\controlled-study-v1\\world-71\\query_gene_permutation\\run",
+      "scenario": "query_gene_permutation",
+      "truth_metrics_sha256": "081ea80700e42ef7b2aed7c255d21d69e3a5a8b64fda0ac82da13141eb8cbeeb"
+    },
+    {
+      "generative_seed": 71,
+      "manifest_sha256": "90d32f5c94709f876325cdbdedba51496352a1843175e0534994d4342f0d9ae3",
+      "run": "runs\\controlled-study-v1\\world-71\\rank_missing\\run",
+      "scenario": "rank_missing",
+      "truth_metrics_sha256": "6205352e0c07c8aad3cedde346e99653a2695313b86d22c9c1d390c449ebadb2"
+    },
+    {
+      "generative_seed": 71,
+      "manifest_sha256": "b3b2f1afbc2ff98dc8d9d0830349eb57a8ca9a9e7053a67ff8e73d100472a7f4",
+      "run": "runs\\controlled-study-v1\\world-71\\recipient_noise_double\\run",
+      "scenario": "recipient_noise_double",
+      "truth_metrics_sha256": "2cd13fd582e076b3b27b5d872b8e9fafa4a3b26c088c1b757d068d2794578758"
+    },
+    {
+      "generative_seed": 71,
+      "manifest_sha256": "3f928e494c3d44799a0fdd5b5b3b962ec08cf6489ed6ad5df94ec109faca7607",
+      "run": "runs\\controlled-study-v1\\world-71\\recipient_noise_half\\run",
+      "scenario": "recipient_noise_half",
+      "truth_metrics_sha256": "9db988d4d37da255a41ba642da576bf710ed6c844b37aad2ae437da599c71983"
+    },
+    {
+      "generative_seed": 71,
+      "manifest_sha256": "092480b15841d19541d214178fe0ed4a157002a1c95aadf7e5d4e66a838a5c72",
+      "run": "runs\\controlled-study-v1\\world-71\\source_feature_error_half\\run",
+      "scenario": "source_feature_error_half",
+      "truth_metrics_sha256": "d66b622dbe2e0e9eea28d41b6bbdeeab9183be8d760084dbf75d655edb71992b"
+    },
+    {
+      "generative_seed": 71,
+      "manifest_sha256": "9bbe35b70600c80f379bbad8714076954c7d8e6d122ed54b02c19e4eaf5e6ef3",
+      "run": "runs\\controlled-study-v1\\world-71\\source_feature_error_one\\run",
+      "scenario": "source_feature_error_one",
+      "truth_metrics_sha256": "6a9d043101af5f794f68dc2a1f46b910d4da01a41acc20f5f93669104bd3f307"
+    },
+    {
+      "generative_seed": 71,
+      "manifest_sha256": "546aba585ebfc684121b07f05142194de37f3565aed4fc991b72d05436a1e9b5",
+      "run": "runs\\controlled-study-v1\\world-71\\source_identity_permutation\\run",
+      "scenario": "source_identity_permutation",
+      "truth_metrics_sha256": "9b4652b9f7edb7d046cb360259dd9e24f2755a4fd37318d32f82be002a19341b"
+    },
+    {
+      "generative_seed": 71,
+      "manifest_sha256": "98e651f419198dc28e5bcc3db1b036ec963bb30f8a67072eb7842cf94286731a",
+      "run": "runs\\controlled-study-v1\\world-71\\source_measurement_noise_two\\run",
+      "scenario": "source_measurement_noise_two",
+      "truth_metrics_sha256": "4d7d49c04eb55edccd5b7b3ccadef33b265dc6b958bfe6ab969a97ee6eeafb9f"
+    },
+    {
+      "generative_seed": 72,
+      "manifest_sha256": "7a2ea86cb68f10a7bfffb9c80c45bfd6d9342f8eb4de6cdfaf4290f759a4f495",
+      "run": "runs\\controlled-study-v1\\world-72\\baseline\\run",
+      "scenario": "baseline",
+      "truth_metrics_sha256": "9db1fb3e77b2e8bbb39007106cbe34dda6dac04442344f6704119daa3a414b93"
+    },
+    {
+      "generative_seed": 72,
+      "manifest_sha256": "9196b043bc45b37c058d5245e3ddd34f4986e7de8c24300d8cd686bbf01defbf",
+      "run": "runs\\controlled-study-v1\\world-72\\batch_shift_one\\run",
+      "scenario": "batch_shift_one",
+      "truth_metrics_sha256": "3ba59e9b2ad7245ad73eae0adfb068b61c85724f6a14b9f9ced3f5622964dc2d"
+    },
+    {
+      "generative_seed": 72,
+      "manifest_sha256": "776a984cc3df4293e9f6ef23e01cc46b7ae3b24201dc216bbbb5f64ec2bef972",
+      "run": "runs\\controlled-study-v1\\world-72\\control_noise_four\\run",
+      "scenario": "control_noise_four",
+      "truth_metrics_sha256": "4591463a6212efba5605831a871844c1e1e13fe754845d110ecfa2514e6925c5"
+    },
+    {
+      "generative_seed": 72,
+      "manifest_sha256": "2f39830c05b0a3db34220a5c6e03b11b1e72a546003c283e626c6e6a651da170",
+      "run": "runs\\controlled-study-v1\\world-72\\exact_rank_full\\run",
+      "scenario": "exact_rank_full",
+      "truth_metrics_sha256": "a0f5493cf14f01786dfbd7ac8229248cd58183146240323acc6ef9fb6e57c47a"
+    },
+    {
+      "generative_seed": 72,
+      "manifest_sha256": "213b9947d79d790320e1ff3f537b885595d5e6c08fa073baf2384952fa1ad4b1",
+      "run": "runs\\controlled-study-v1\\world-72\\exact_rank_missing\\run",
+      "scenario": "exact_rank_missing",
+      "truth_metrics_sha256": "9a99c8c02954bd456c4cd4fe85102f6de50bec15ff1b0004892dd7652b2f1928"
+    },
+    {
+      "generative_seed": 72,
+      "manifest_sha256": "bb5226ee85dd4d057000f7eac9c99c7f35c3af55da74ed01c0043488006f2cef",
+      "run": "runs\\controlled-study-v1\\world-72\\mechanism_shift_2\\run",
+      "scenario": "mechanism_shift_2",
+      "truth_metrics_sha256": "c976ab620fdd444a6bf015ef7b46932e9f4cd9e0c83e5efb036a38d0a687efdf"
+    },
+    {
+      "generative_seed": 72,
+      "manifest_sha256": "6bfdcd53895aa32d55fd69c3a126ee3a61a042fef25550508ba59181b61492ea",
+      "run": "runs\\controlled-study-v1\\world-72\\query_gene_permutation\\run",
+      "scenario": "query_gene_permutation",
+      "truth_metrics_sha256": "41d817db0bd37b6d9c69a7b7d2a55a29ca2f2b98756ebb83edc058cf66fc17ae"
+    },
+    {
+      "generative_seed": 72,
+      "manifest_sha256": "7bdb3517c698d0cdaf9fe50c45de208c731cec9879a04b43152cf242b89ea0e5",
+      "run": "runs\\controlled-study-v1\\world-72\\rank_missing\\run",
+      "scenario": "rank_missing",
+      "truth_metrics_sha256": "255568eb2ecdf73cbf0365d0aec6b85142ad523392e80fbed6290a434d923a94"
+    },
+    {
+      "generative_seed": 72,
+      "manifest_sha256": "1a8ba42866cce9acb0a668532388ba9d80d7957ce6638fffc65dab37e1867a09",
+      "run": "runs\\controlled-study-v1\\world-72\\recipient_noise_double\\run",
+      "scenario": "recipient_noise_double",
+      "truth_metrics_sha256": "3c60f4b0b0748f7aa594a852f114761f8a9cb622fb7acfe7ab1de8b1ed144c36"
+    },
+    {
+      "generative_seed": 72,
+      "manifest_sha256": "09a42f6af3be4c2897a7dec375e24158c9ee64c64de274fa31be7454ea77396a",
+      "run": "runs\\controlled-study-v1\\world-72\\recipient_noise_half\\run",
+      "scenario": "recipient_noise_half",
+      "truth_metrics_sha256": "b55070483f5d996cf73e8eec28b8063fc8afc50345f08c5333966ba2cc2062b2"
+    },
+    {
+      "generative_seed": 72,
+      "manifest_sha256": "186f8d058483a698eb2efa57ecc589a9cfcfcfd735ec03e1da9ba67ec36bef25",
+      "run": "runs\\controlled-study-v1\\world-72\\source_feature_error_half\\run",
+      "scenario": "source_feature_error_half",
+      "truth_metrics_sha256": "dad178c8152471f00fb5055bb4e249e0ed99d9ca2a89259eb98f2fd99c29a794"
+    },
+    {
+      "generative_seed": 72,
+      "manifest_sha256": "05fca227d82a1ecec8731cdc3204a2c62f08a98c81a944a0cf306e64b6527bee",
+      "run": "runs\\controlled-study-v1\\world-72\\source_feature_error_one\\run",
+      "scenario": "source_feature_error_one",
+      "truth_metrics_sha256": "3ae8bbf1792bdf3d7c5e64b09c8047dfb5d92f2688cfc5bd2917d5a0e6b6cf50"
+    },
+    {
+      "generative_seed": 72,
+      "manifest_sha256": "eb0fda1b3075c7e65529ed42d302e85c32fb19bda83e7644ba0fd327d785e8b4",
+      "run": "runs\\controlled-study-v1\\world-72\\source_identity_permutation\\run",
+      "scenario": "source_identity_permutation",
+      "truth_metrics_sha256": "26a157c3849267500719c088461f1bf48f5182460250b5c8e43de94df54020b1"
+    },
+    {
+      "generative_seed": 72,
+      "manifest_sha256": "c5eb560cf6edd6227f2fa29ddb298f368e23c8285c8e64c37871c3de431aaae5",
+      "run": "runs\\controlled-study-v1\\world-72\\source_measurement_noise_two\\run",
+      "scenario": "source_measurement_noise_two",
+      "truth_metrics_sha256": "3c320d1599adc047b608da03d095dc95f3ed7442850b29035adcb7428e27c490"
+    },
+    {
+      "generative_seed": 73,
+      "manifest_sha256": "65f28ec2137e02b026dd12437757faf74cb4c5e6acf88d64a3ce75fd3b68cce0",
+      "run": "runs\\controlled-study-v1\\world-73\\baseline\\run",
+      "scenario": "baseline",
+      "truth_metrics_sha256": "b8d9956d4f98a6efa0bc0d585cf8821b8938fad5ebb135b05ce63f916c602da9"
+    },
+    {
+      "generative_seed": 73,
+      "manifest_sha256": "e6e05e3e209d9de08576722e6b71da181e362c710069e1982699c5e66e579ea2",
+      "run": "runs\\controlled-study-v1\\world-73\\batch_shift_one\\run",
+      "scenario": "batch_shift_one",
+      "truth_metrics_sha256": "d2035ada096a8d40b88764e14cb095e0db005116b926e76b5d3b4d53a1014a3d"
+    },
+    {
+      "generative_seed": 73,
+      "manifest_sha256": "4537fb6feaa83b24e90b35f17f969bd8e16d1e2b4f3d85b8f22c78e00c462b4a",
+      "run": "runs\\controlled-study-v1\\world-73\\control_noise_four\\run",
+      "scenario": "control_noise_four",
+      "truth_metrics_sha256": "e1a417d20165cc94a2198f28e682e2295c1269377e53a564e7d7109b4f567443"
+    },
+    {
+      "generative_seed": 73,
+      "manifest_sha256": "c4417b35881273324f95b5314ceb8b7a4740ba9246074cd9c421cee5991bfc55",
+      "run": "runs\\controlled-study-v1\\world-73\\exact_rank_full\\run",
+      "scenario": "exact_rank_full",
+      "truth_metrics_sha256": "6b920b933fc932619b1baba44373054e7c774166b653ea7fedd141ed5e8d8b0f"
+    },
+    {
+      "generative_seed": 73,
+      "manifest_sha256": "bdcef527b2c9c37c150828b3ef361696bc7b3332356ec20377110ef0431eb911",
+      "run": "runs\\controlled-study-v1\\world-73\\exact_rank_missing\\run",
+      "scenario": "exact_rank_missing",
+      "truth_metrics_sha256": "4e9c8d99a6c4e09293d84999fa71624f691ac838dd2bafb015d8ab863fa0bbc6"
+    },
+    {
+      "generative_seed": 73,
+      "manifest_sha256": "ae3e029eccf560a6d3a96da3e72d028f597bf657fa1d67349a33e6a45c0f961e",
+      "run": "runs\\controlled-study-v1\\world-73\\mechanism_shift_2\\run",
+      "scenario": "mechanism_shift_2",
+      "truth_metrics_sha256": "9d77187508b8407ac358ba079f0fa25ed417ea41f6827f93045cfe7c4aaf116c"
+    },
+    {
+      "generative_seed": 73,
+      "manifest_sha256": "8ea07f0c7bd4c333913b5ac191fb842edcfd51677853234711facb15dbd79da0",
+      "run": "runs\\controlled-study-v1\\world-73\\query_gene_permutation\\run",
+      "scenario": "query_gene_permutation",
+      "truth_metrics_sha256": "215ef009d74d3209b316bb9ae7b9eceaaac58d7c9e8597c86550770e6938b036"
+    },
+    {
+      "generative_seed": 73,
+      "manifest_sha256": "d9186e2e072fad6c52c859aca7ec25523e81bd5a54625fdae965f29b227d7cc7",
+      "run": "runs\\controlled-study-v1\\world-73\\rank_missing\\run",
+      "scenario": "rank_missing",
+      "truth_metrics_sha256": "523148b2efa9dbec2a7c6546d4fe80eee3af4758395172a7bd8de8c4e74af9bd"
+    },
+    {
+      "generative_seed": 73,
+      "manifest_sha256": "0c18eb87d8c8dab00b3b6668ab30c7e006f5f95204126d1ed41f91a3c613d357",
+      "run": "runs\\controlled-study-v1\\world-73\\recipient_noise_double\\run",
+      "scenario": "recipient_noise_double",
+      "truth_metrics_sha256": "94e32838e3950b42867fbcfa8a9fe3289abed67b632b36ff35398282d9f14527"
+    },
+    {
+      "generative_seed": 73,
+      "manifest_sha256": "699c54f54227ffc6f937be6862bbeda740004108fd587aca53b13dc686b6f3f0",
+      "run": "runs\\controlled-study-v1\\world-73\\recipient_noise_half\\run",
+      "scenario": "recipient_noise_half",
+      "truth_metrics_sha256": "d06e7d71c9d90bda1674ffce88e18edc12bca1e0662c45f0c634b22f1b664f42"
+    },
+    {
+      "generative_seed": 73,
+      "manifest_sha256": "55587c60a97a8f220f8ed1dd9cde4695aad5d0899f3773e2a23f8720554145c4",
+      "run": "runs\\controlled-study-v1\\world-73\\source_feature_error_half\\run",
+      "scenario": "source_feature_error_half",
+      "truth_metrics_sha256": "3d161cdafb705592b66faf8dc9d331c699c33fecf850074ff7a81f7cfb4309ca"
+    },
+    {
+      "generative_seed": 73,
+      "manifest_sha256": "000c1edbc67f2ff0eb3945f1a5f10130e3a3266cb35fd047c90bd8b2dd968d72",
+      "run": "runs\\controlled-study-v1\\world-73\\source_feature_error_one\\run",
+      "scenario": "source_feature_error_one",
+      "truth_metrics_sha256": "7f3d122b4fed18f15e4c9ccb1b2f7987facc7ffa109bcff020af34cd51e09ddf"
+    },
+    {
+      "generative_seed": 73,
+      "manifest_sha256": "62646fdf3e000bf6f1f8a8e58594797d9ffce37948009a84f34f8a8f7894ed1a",
+      "run": "runs\\controlled-study-v1\\world-73\\source_identity_permutation\\run",
+      "scenario": "source_identity_permutation",
+      "truth_metrics_sha256": "8dd5050e165dd64eeb257c34c68d79fbda4a597078afa9f3d4b8c2a38a7b27ef"
+    },
+    {
+      "generative_seed": 73,
+      "manifest_sha256": "8c0e232584df3af75843dc933bf1bbf7704224854f2a59761b9fc210accbf38d",
+      "run": "runs\\controlled-study-v1\\world-73\\source_measurement_noise_two\\run",
+      "scenario": "source_measurement_noise_two",
+      "truth_metrics_sha256": "8c4adb41fd64f3b316dff79d87f9c3181732367af794d6312260e1fcfce59ab1"
+    },
+    {
+      "generative_seed": 74,
+      "manifest_sha256": "15121dc8c0efe797f03905636d0a29716b86fecf19be8780329572a7cae7fa05",
+      "run": "runs\\controlled-study-v1\\world-74\\baseline\\run",
+      "scenario": "baseline",
+      "truth_metrics_sha256": "4e8114255d5c998900071a65512fb19091abe32462b6bcd7339187f21087f02e"
+    },
+    {
+      "generative_seed": 74,
+      "manifest_sha256": "67fa2c8f669d15bf054a464f18b23df448be87cf90fdd65cdf81888ef9804984",
+      "run": "runs\\controlled-study-v1\\world-74\\batch_shift_one\\run",
+      "scenario": "batch_shift_one",
+      "truth_metrics_sha256": "a3b6e5f5301c83b4c575ac1f17759e84a9ac9171e4752e4d2029d4442a093f25"
+    },
+    {
+      "generative_seed": 74,
+      "manifest_sha256": "09f70d92363e7f758e28e3a51099a0246ae5530b94ecabc392cb40365c5ffc11",
+      "run": "runs\\controlled-study-v1\\world-74\\control_noise_four\\run",
+      "scenario": "control_noise_four",
+      "truth_metrics_sha256": "654d5a0b15c20549e170c155ac5c22785cd40056feaef8a51ccdc22c89b8fbcc"
+    },
+    {
+      "generative_seed": 74,
+      "manifest_sha256": "71179a474be203af0b29aae39e9a7a8202ceb120167d65d3e86f96ac4b51a3b9",
+      "run": "runs\\controlled-study-v1\\world-74\\exact_rank_full\\run",
+      "scenario": "exact_rank_full",
+      "truth_metrics_sha256": "e3420ca55ec613f1ef5ee72908ed334fbb52f63f8dca7939722b927763a84788"
+    },
+    {
+      "generative_seed": 74,
+      "manifest_sha256": "952844ef6d21e5d069482f0e7fa54b453b4830e49970a27c2af1cd6b4560397f",
+      "run": "runs\\controlled-study-v1\\world-74\\exact_rank_missing\\run",
+      "scenario": "exact_rank_missing",
+      "truth_metrics_sha256": "386b33c05a423626242cc72792f8b4b2f0cf9481cf0e1f9d1d8cde5c7d2c22de"
+    },
+    {
+      "generative_seed": 74,
+      "manifest_sha256": "66a42f7ca3f6f5bb267601a5d2295ecf01ab52b2098a5d65126e26c794988810",
+      "run": "runs\\controlled-study-v1\\world-74\\mechanism_shift_2\\run",
+      "scenario": "mechanism_shift_2",
+      "truth_metrics_sha256": "739ec00f70e38c5aeddb7624801072d34ba9c51b2b7fed4fffa1caed59aea7f2"
+    },
+    {
+      "generative_seed": 74,
+      "manifest_sha256": "042857841f89a7b7da37010cfcdb42ad5bf7c3da48a76d38eb75ff1cd8410c9a",
+      "run": "runs\\controlled-study-v1\\world-74\\query_gene_permutation\\run",
+      "scenario": "query_gene_permutation",
+      "truth_metrics_sha256": "12c3c171bcb5b9e63c6b3df8426bf686671efae780906417229c94c33e9f6fee"
+    },
+    {
+      "generative_seed": 74,
+      "manifest_sha256": "d17274c70acbe5b7cc3c33aa40d3b0b855b3c9ebf1a312dbf9db9cff27aa1730",
+      "run": "runs\\controlled-study-v1\\world-74\\rank_missing\\run",
+      "scenario": "rank_missing",
+      "truth_metrics_sha256": "0743ddfb4f5537e0a346397af371e7048258f292a9bfa568544687664a1623c5"
+    },
+    {
+      "generative_seed": 74,
+      "manifest_sha256": "44e6c0f2e5910a4f3e874218e15520dcc5978c264b6c35a343c28881fa8c5baa",
+      "run": "runs\\controlled-study-v1\\world-74\\recipient_noise_double\\run",
+      "scenario": "recipient_noise_double",
+      "truth_metrics_sha256": "9732c3fc65184130a5687d857a6c16d59a1e0351bccca2260889f617684ea937"
+    },
+    {
+      "generative_seed": 74,
+      "manifest_sha256": "cc81b05e201342a93373404ad2c801562026b3f8dfbf9826afef05b085cf22d2",
+      "run": "runs\\controlled-study-v1\\world-74\\recipient_noise_half\\run",
+      "scenario": "recipient_noise_half",
+      "truth_metrics_sha256": "1403476a5d6ea28878cccf205a0f06b1dac5d2a6b23ab8b264befb1631c55d93"
+    },
+    {
+      "generative_seed": 74,
+      "manifest_sha256": "5e274c37df46d7166dd3974e3a1e422ef60a4cc687bbd3a32af414c3872f03bf",
+      "run": "runs\\controlled-study-v1\\world-74\\source_feature_error_half\\run",
+      "scenario": "source_feature_error_half",
+      "truth_metrics_sha256": "4dc001055d8486fda0473066508719308eb7b0285afb6882f84f5487804e94d4"
+    },
+    {
+      "generative_seed": 74,
+      "manifest_sha256": "05ae3d7628e04e786da545c056bac0b9897469bff0929ead34f39315d70fc839",
+      "run": "runs\\controlled-study-v1\\world-74\\source_feature_error_one\\run",
+      "scenario": "source_feature_error_one",
+      "truth_metrics_sha256": "260cca75f39d32b0f6980062e4960826ef591fb99bd206638793ad7c258b869a"
+    },
+    {
+      "generative_seed": 74,
+      "manifest_sha256": "6b182c33a60de4f2e1aa4b2040f45b9ce4060e7257bb450edfba1d34484a40fe",
+      "run": "runs\\controlled-study-v1\\world-74\\source_identity_permutation\\run",
+      "scenario": "source_identity_permutation",
+      "truth_metrics_sha256": "c446c75bb248700fb37e16d63c923fd6dcaf7aeb1d999bc5f73dedeeaa3794a4"
+    },
+    {
+      "generative_seed": 74,
+      "manifest_sha256": "f6fb7f8b15359fa7c59b7ecac3b7a1bc85ff37790ba553b32d6a294f57e8d6c5",
+      "run": "runs\\controlled-study-v1\\world-74\\source_measurement_noise_two\\run",
+      "scenario": "source_measurement_noise_two",
+      "truth_metrics_sha256": "6b224f8ba5f1640eea95173cdbaea1ef266184cf038f4455caa97609f36b6bc5"
+    },
+    {
+      "generative_seed": 75,
+      "manifest_sha256": "ec6be2f4eeadd21dcf7ae0ac5b0fd1b05915b93ce2a6fa53dee6426ca69a53e7",
+      "run": "runs\\controlled-study-v1\\world-75\\baseline\\run",
+      "scenario": "baseline",
+      "truth_metrics_sha256": "d010c6548ee320a92061b4cf88d04494f3e4e6479dc1c33318df7b9429ab4c4a"
+    },
+    {
+      "generative_seed": 75,
+      "manifest_sha256": "8ae94cc1c30bc26432c2bb47c291d9f53106a30f873fa873a29be530b4d90cca",
+      "run": "runs\\controlled-study-v1\\world-75\\batch_shift_one\\run",
+      "scenario": "batch_shift_one",
+      "truth_metrics_sha256": "931844375868dd0f632a807242e52284c99adf9ba7176bda8bc6eb9466bddeae"
+    },
+    {
+      "generative_seed": 75,
+      "manifest_sha256": "64ec30d71a987f96d31fb9dac5c2f3ab6cdaede858881345c276e1b45971201f",
+      "run": "runs\\controlled-study-v1\\world-75\\control_noise_four\\run",
+      "scenario": "control_noise_four",
+      "truth_metrics_sha256": "c17075c0274a7b178ab35fd946320b465cab30970ff7b70b3f8973d5e1d572e0"
+    },
+    {
+      "generative_seed": 75,
+      "manifest_sha256": "ca6d8db11043fc26955f0207ecac1d18c650df06fa221af45eeb24ecabed3a6f",
+      "run": "runs\\controlled-study-v1\\world-75\\exact_rank_full\\run",
+      "scenario": "exact_rank_full",
+      "truth_metrics_sha256": "8776dacc657f75d179289f1edf182700d0ff06e9775d49e28d5621317ae16b70"
+    },
+    {
+      "generative_seed": 75,
+      "manifest_sha256": "23454f5a6913f64f5f3852876bce064a41628a969f48944bd01830f800e1b7a8",
+      "run": "runs\\controlled-study-v1\\world-75\\exact_rank_missing\\run",
+      "scenario": "exact_rank_missing",
+      "truth_metrics_sha256": "4adbb04594b9abe59ac45bcdee72cc284dbb6421d28379e202ec0728b163966d"
+    },
+    {
+      "generative_seed": 75,
+      "manifest_sha256": "7c5ae94f1a0e25aeb73c52c2be7be028b521f151146f1e0cfb8602a71770117c",
+      "run": "runs\\controlled-study-v1\\world-75\\mechanism_shift_2\\run",
+      "scenario": "mechanism_shift_2",
+      "truth_metrics_sha256": "6b1a28a3f6252a0232fd2d44d287e65bb1bd89ad22d1fe2563b7bad05f6edfe4"
+    },
+    {
+      "generative_seed": 75,
+      "manifest_sha256": "b64def1c3ac86cca35de2913999f143038437e24c204c725f69d0cba2c8f9920",
+      "run": "runs\\controlled-study-v1\\world-75\\query_gene_permutation\\run",
+      "scenario": "query_gene_permutation",
+      "truth_metrics_sha256": "151efdf571abb81cc5624ca4a17edf31557aa7385eb64b302d10a7b1242269d8"
+    },
+    {
+      "generative_seed": 75,
+      "manifest_sha256": "9bb9411073a297363702fd2f5d0cb1f2fda50343eb23a5b35e9ed6117d5ad03b",
+      "run": "runs\\controlled-study-v1\\world-75\\rank_missing\\run",
+      "scenario": "rank_missing",
+      "truth_metrics_sha256": "236e8bae570010ecc1958a7772596cc5629005ed3b122324a8866c09afe87c46"
+    },
+    {
+      "generative_seed": 75,
+      "manifest_sha256": "528b955cc6c09fc2282e8aa1a15f0f8ccf29acacfcf8e5aa939c10bcf0c0cc1f",
+      "run": "runs\\controlled-study-v1\\world-75\\recipient_noise_double\\run",
+      "scenario": "recipient_noise_double",
+      "truth_metrics_sha256": "eec85749461c083552f56fb976bcf309f617e25b1dc9ee750ef51d2ff1faa8d0"
+    },
+    {
+      "generative_seed": 75,
+      "manifest_sha256": "ae1f123a46df22740c234ab11493c61aa6482dd81585f605fe359402926fa84f",
+      "run": "runs\\controlled-study-v1\\world-75\\recipient_noise_half\\run",
+      "scenario": "recipient_noise_half",
+      "truth_metrics_sha256": "432ac7b7c68dc6262cc86a8674875ba35fb808240f599981ce786db64a39c0f8"
+    },
+    {
+      "generative_seed": 75,
+      "manifest_sha256": "57e029bf44fcf200df2cc6c14291778dd40bab233dd6345bc7ccc70d532afe73",
+      "run": "runs\\controlled-study-v1\\world-75\\source_feature_error_half\\run",
+      "scenario": "source_feature_error_half",
+      "truth_metrics_sha256": "f81f7f4b6cb10ac9c8b2d96de7caea61d57589a44daff9597b57eb576f5dea07"
+    },
+    {
+      "generative_seed": 75,
+      "manifest_sha256": "6aafd7722fbacc458e0bd333c587c86c80654994b649cbf1f9b1d3a4f75a487f",
+      "run": "runs\\controlled-study-v1\\world-75\\source_feature_error_one\\run",
+      "scenario": "source_feature_error_one",
+      "truth_metrics_sha256": "b3aebea0398d8a3164c21ae38206b380e995d0083e0c4a571087783942333455"
+    },
+    {
+      "generative_seed": 75,
+      "manifest_sha256": "d84a0417b68a4a6dcbf1db2113011f1dbd82bf9607c280fbeea99019e474d801",
+      "run": "runs\\controlled-study-v1\\world-75\\source_identity_permutation\\run",
+      "scenario": "source_identity_permutation",
+      "truth_metrics_sha256": "5887d733b58848e883aeb1fd20bc9a7337f9d8221e70df5237465e5a26630e89"
+    },
+    {
+      "generative_seed": 75,
+      "manifest_sha256": "ca48cd26325086b04f39f8458844da1401583a80b9c21d6b040f8af79e0c6315",
+      "run": "runs\\controlled-study-v1\\world-75\\source_measurement_noise_two\\run",
+      "scenario": "source_measurement_noise_two",
+      "truth_metrics_sha256": "df9ce1403394e667ceb6fc1e58994ab555fffa2d828945d131ba0dab67193c01"
+    }
+  ],
+  "configuration_sha256": "a1b7dc03e8841d1c9654e0eab13e54da108f0865c0a29a7c09a9075bdc654acc",
+  "development_resource_sha256": "3e37524e7ac58a16333fc1175cb7c4856e517ecaf1c9beffbc780c19086156ba",
+  "environment": {
+    "git": {
+      "revision": "536e822dd97e2bf0a16f35daef1fe9bbac2f6ab9",
+      "status": ""
+    },
+    "packages": {
+      "h5py": "3.16.0",
+      "matplotlib": "3.11.2",
+      "mlresearch": "0.1.0",
+      "numpy": "2.5.4",
+      "pytest": "9.1.1",
+      "scipy": "1.18.1"
+    },
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.14",
+    "recorded_at": "2026-10-22T05:14:15.610792+00:00",
+    "source_hashes": {
+      "__init__.py": "bb8543f534bc0779c941e08d8786d17c10a58bfc43e97e080422afc3757c8eb0",
+      "__main__.py": "27503438dec93a74b0ebe814fc619333accf571b77f73344c6252c94b0b5d8b3",
+      "acquisition.py": "52e82caa4c80dd4e577bb2e90cdaca52caf35fc8c97000e529161c21596be19d",
+      "cli.py": "5a1bb5bea2cf8f6d837f4d5837d06f7fe922764426b1bae50223458f0055b408",
+      "controls.py": "458f52e5886f97eed105e2c56701b51d2a26c080043b60ad8c39e9f6e9d24297",
+      "data.py": "ac2e62e8a74960d279f681cd4983d5a2f42f3cf13c8b8fde1887fc6265953789",
+      "datasets.json": "e90daa691730f09ba8885f1777ed5ae379f075d010a1dc3093c23272865e8881",
+      "design.py": "e83d39a64f0336ba7c5bf97deb997c68db3c72b3c09adf178a71b5d210d055e5",
+      "episodes.py": "62f0ee1615fcd268aec088a83e34c0744b981523a74f58fc34a7fb3a110328c6",
+      "experiment.py": "b2fe6a29e3dd94f8dc8e10455d66a39bb7595dca3a88f009dd627b0422ff94d9",
+      "linear.py": "614d58fc6e8280e6559eb41e1d015723763ebb1db2469b5a7fe5a3ccb270566f",
+      "models.py": "909777c0efa98bf0696e867671c2d856addc0fb33dcaa4a4a034f3a90838b04e",
+      "policies.py": "5e7f7041aa9a803b73a44b7a5ede1578451ffd0dc85cda83ac743fb546d0e190",
+      "prepare.py": "ee8db1f477dc3185104013f08358682b6255c479226a3935acc17614eb5bf75e",
+      "provenance.py": "599e5f4b17cd39c44be9a7ddd27df89172ac3d3f6eca7a76b311cfea7c96a7e4",
+      "report.py": "0e47c505e80095f6bacbc4e406cefb8f8a13a6225eba2d067bc3649270256ebc",
+      "simulation.py": "eaa3ff0c98f8f9970c7e7c9a6ee75d9fba37326187fb5932ab7a9a5cb0aa0076",
+      "study.py": "514dea833445eee09a3795c5796bd729f67893d54a1b28da5128087c1fe97708"
+    },
+    "source_tree_sha256": "c66a26c9542621d399f9840b9dc481fdc1a8211e959fb3864fac1259ae45a304"
+  },
+  "errors": [],
+  "resources_end": {
+    "available_ram_bytes": 2380537856,
+    "disk_free_bytes": 645247516672,
+    "disk_total_bytes": 1002016075776,
+    "logical_cpus": 16,
+    "memory_scope": "Current process; peak is over its lifetime, not a per-case delta.",
+    "peak_commit_bytes": 536895488,
+    "peak_working_set_bytes": 45948928,
+    "process_id": 34576,
+    "ram_bytes": 16418983936,
+    "recorded_at": "2026-10-22T05:52:43.668721+00:00",
+    "working_set_bytes": 27512832
+  },
+  "resources_start": {
+    "available_ram_bytes": 1014136832,
+    "disk_free_bytes": 655483830272,
+    "disk_total_bytes": 1002016075776,
+    "logical_cpus": 16,
+    "memory_scope": "Current process; peak is over its lifetime, not a per-case delta.",
+    "peak_commit_bytes": 535269376,
+    "peak_working_set_bytes": 42635264,
+    "process_id": 34576,
+    "ram_bytes": 16418983936,
+    "recorded_at": "2026-10-22T05:14:16.330340+00:00",
+    "working_set_bytes": 41508864
+  },
+  "runtime_seconds": 2307.1821950000012,
+  "source_snapshot": {
+    "path": "code.zip",
+    "purpose": "Exact package sources plus available project dependency specification.",
+    "sha256": "0e51ebd8caf79daf188eefc4311340c8e1c82bd889712d5fb49ce283dc6bb00b"
+  },
+  "state": "complete",
+  "summary": {
+    "cases": 70,
+    "comparisons": [
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.052275084357172694,
+        "monte_carlo_standard_error": 0.0004464569753578836,
+        "paired_difference": 0.0007274841175080385,
+        "policy": "bias_aware",
+        "relative_error_change": 0.014112861008576241,
+        "scenario": "baseline",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.05850408198760169,
+        "monte_carlo_standard_error": 0.00129049250019577,
+        "paired_difference": 0.006956481747937034,
+        "policy": "bias_equal_depth",
+        "relative_error_change": 0.13495258199399526,
+        "scenario": "baseline",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.05464065458877972,
+        "monte_carlo_standard_error": 0.0012343370307563758,
+        "paired_difference": 0.0030930543491150793,
+        "policy": "bias_fixed_controls",
+        "relative_error_change": 0.06000384760365717,
+        "scenario": "baseline",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.06918189409422092,
+        "monte_carlo_standard_error": 0.0012040673605794828,
+        "paired_difference": 0.01763429385455626,
+        "policy": "bias_fixed_interventions",
+        "relative_error_change": 0.34209728042755894,
+        "scenario": "baseline",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.06122351906919456,
+        "monte_carlo_standard_error": 0.002141901665381648,
+        "paired_difference": 0.009675918829529898,
+        "policy": "bias_fixed_order",
+        "relative_error_change": 0.18770842453465972,
+        "scenario": "baseline",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.05167528298191586,
+        "monte_carlo_standard_error": 0.0004217547565730654,
+        "paired_difference": 0.00012768274225121308,
+        "policy": "bias_independent_controls",
+        "relative_error_change": 0.0024769871275785262,
+        "scenario": "baseline",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.05154760023966465,
+        "monte_carlo_standard_error": 0.0,
+        "paired_difference": 0.0,
+        "policy": "bias_no_extension",
+        "relative_error_change": 0.0,
+        "scenario": "baseline",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.05050514171971181,
+        "monte_carlo_standard_error": 0.001227920442376216,
+        "paired_difference": -0.001042458519952845,
+        "policy": "d_optimal",
+        "relative_error_change": -0.020223221160753434,
+        "scenario": "baseline",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.04832731098861051,
+        "monte_carlo_standard_error": 0.0010646013996612783,
+        "paired_difference": -0.003220289251054144,
+        "policy": "disagreement",
+        "relative_error_change": -0.06247214683286475,
+        "scenario": "baseline",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.05931061934416783,
+        "monte_carlo_standard_error": 0.001728486703494284,
+        "paired_difference": 0.007763019104503175,
+        "policy": "diversity",
+        "relative_error_change": 0.15059903988565732,
+        "scenario": "baseline",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.06415828988371873,
+        "monte_carlo_standard_error": 0.0012554590901777394,
+        "paired_difference": 0.012610689644054074,
+        "policy": "fixed_grid",
+        "relative_error_change": 0.24464164355706416,
+        "scenario": "baseline",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.06363072676904794,
+        "monte_carlo_standard_error": 0.0011443291868353197,
+        "paired_difference": 0.012083126529383289,
+        "policy": "random_equal",
+        "relative_error_change": 0.23440715907635232,
+        "scenario": "baseline",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.06408096917190367,
+        "monte_carlo_standard_error": 0.0017941374262864995,
+        "paired_difference": 0.012533368932239025,
+        "policy": "reliability",
+        "relative_error_change": 0.24314165691451328,
+        "scenario": "baseline",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.05154760023966465,
+        "monte_carlo_standard_error": 0.0,
+        "paired_difference": 0.0,
+        "policy": "worst_query",
+        "relative_error_change": 0.0,
+        "scenario": "baseline",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.06702657308305546,
+        "monte_carlo_standard_error": 0.0012782029837927126,
+        "paired_difference": 0.0019211840688024395,
+        "policy": "bias_aware",
+        "relative_error_change": 0.029508833260820384,
+        "scenario": "batch_shift_one",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.0778210929027219,
+        "monte_carlo_standard_error": 0.003357894703023561,
+        "paired_difference": 0.01271570388846888,
+        "policy": "bias_equal_depth",
+        "relative_error_change": 0.19530954473960874,
+        "scenario": "batch_shift_one",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.06594898747513997,
+        "monte_carlo_standard_error": 0.001579629770178089,
+        "paired_difference": 0.0008435984608869532,
+        "policy": "bias_fixed_controls",
+        "relative_error_change": 0.012957429080137601,
+        "scenario": "batch_shift_one",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.08626115900235472,
+        "monte_carlo_standard_error": 0.0027934183864120783,
+        "paired_difference": 0.021155769988101696,
+        "policy": "bias_fixed_interventions",
+        "relative_error_change": 0.324946526062078,
+        "scenario": "batch_shift_one",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.07817981865667714,
+        "monte_carlo_standard_error": 0.0028518690339831066,
+        "paired_difference": 0.013074429642424123,
+        "policy": "bias_fixed_order",
+        "relative_error_change": 0.20081946887010904,
+        "scenario": "batch_shift_one",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.06888222353176862,
+        "monte_carlo_standard_error": 0.0031566473352688204,
+        "paired_difference": 0.0037768345175155913,
+        "policy": "bias_independent_controls",
+        "relative_error_change": 0.058011089015822616,
+        "scenario": "batch_shift_one",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.06510538901425302,
+        "monte_carlo_standard_error": 0.0,
+        "paired_difference": 0.0,
+        "policy": "bias_no_extension",
+        "relative_error_change": 0.0,
+        "scenario": "batch_shift_one",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.06478135108491062,
+        "monte_carlo_standard_error": 0.0012090405522604596,
+        "paired_difference": -0.0003240379293423995,
+        "policy": "d_optimal",
+        "relative_error_change": -0.004977129147810796,
+        "scenario": "batch_shift_one",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.06539238294657927,
+        "monte_carlo_standard_error": 0.0026556788244366924,
+        "paired_difference": 0.00028699393232625573,
+        "policy": "disagreement",
+        "relative_error_change": 0.0044081440364856185,
+        "scenario": "batch_shift_one",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.07483621585542524,
+        "monte_carlo_standard_error": 0.0014967514428795088,
+        "paired_difference": 0.009730826841172217,
+        "policy": "diversity",
+        "relative_error_change": 0.1494626940796241,
+        "scenario": "batch_shift_one",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.08644393257506844,
+        "monte_carlo_standard_error": 0.003563781768438876,
+        "paired_difference": 0.02133854356081542,
+        "policy": "fixed_grid",
+        "relative_error_change": 0.32775387543024953,
+        "scenario": "batch_shift_one",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.08600553783373674,
+        "monte_carlo_standard_error": 0.004260263541146207,
+        "paired_difference": 0.02090014881948372,
+        "policy": "random_equal",
+        "relative_error_change": 0.32102025862879363,
+        "scenario": "batch_shift_one",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.080685878678455,
+        "monte_carlo_standard_error": 0.0018401584082219763,
+        "paired_difference": 0.015580489664201974,
+        "policy": "reliability",
+        "relative_error_change": 0.2393118281006056,
+        "scenario": "batch_shift_one",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.06510538901425302,
+        "monte_carlo_standard_error": 0.0,
+        "paired_difference": 0.0,
+        "policy": "worst_query",
+        "relative_error_change": 0.0,
+        "scenario": "batch_shift_one",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.0677995532379498,
+        "monte_carlo_standard_error": 0.0006278437082409015,
+        "paired_difference": 0.00033936714113942115,
+        "policy": "bias_aware",
+        "relative_error_change": 0.005030628594062935,
+        "scenario": "control_noise_four",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.07074448389495509,
+        "monte_carlo_standard_error": 0.0008298954571669753,
+        "paired_difference": 0.0032842977981447086,
+        "policy": "bias_equal_depth",
+        "relative_error_change": 0.04868497981063226,
+        "scenario": "control_noise_four",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.047673528415719806,
+        "monte_carlo_standard_error": 0.004590412121302563,
+        "paired_difference": -0.01978665768109057,
+        "policy": "bias_fixed_controls",
+        "relative_error_change": -0.29330867324758403,
+        "scenario": "control_noise_four",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.08099822235742285,
+        "monte_carlo_standard_error": 0.0014864285202770627,
+        "paired_difference": 0.013538036260612474,
+        "policy": "bias_fixed_interventions",
+        "relative_error_change": 0.20068186946867275,
+        "scenario": "control_noise_four",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.07547008139549356,
+        "monte_carlo_standard_error": 0.002125940302922807,
+        "paired_difference": 0.008009895298683182,
+        "policy": "bias_fixed_order",
+        "relative_error_change": 0.11873514975467732,
+        "scenario": "control_noise_four",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.05743416939514211,
+        "monte_carlo_standard_error": 0.004202041593538116,
+        "paired_difference": -0.010026016701668273,
+        "policy": "bias_independent_controls",
+        "relative_error_change": -0.1486212428658319,
+        "scenario": "control_noise_four",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.06746018609681038,
+        "monte_carlo_standard_error": 0.0,
+        "paired_difference": 0.0,
+        "policy": "bias_no_extension",
+        "relative_error_change": 0.0,
+        "scenario": "control_noise_four",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.0483262858135545,
+        "monte_carlo_standard_error": 0.0038767334917501448,
+        "paired_difference": -0.01913390028325588,
+        "policy": "d_optimal",
+        "relative_error_change": -0.2836324859198774,
+        "scenario": "control_noise_four",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.06738317267776057,
+        "monte_carlo_standard_error": 0.0018275194210416396,
+        "paired_difference": -7.701341904979842e-05,
+        "policy": "disagreement",
+        "relative_error_change": -0.0011416129054147351,
+        "scenario": "control_noise_four",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.05065886303035285,
+        "monte_carlo_standard_error": 0.0041274867740878785,
+        "paired_difference": -0.016801323066457527,
+        "policy": "diversity",
+        "relative_error_change": -0.24905539161048829,
+        "scenario": "control_noise_four",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.06514408951330075,
+        "monte_carlo_standard_error": 0.003738448306973184,
+        "paired_difference": -0.002316096583509626,
+        "policy": "fixed_grid",
+        "relative_error_change": -0.03433279268138773,
+        "scenario": "control_noise_four",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.06532243922760446,
+        "monte_carlo_standard_error": 0.002449584394226303,
+        "paired_difference": -0.0021377468692059254,
+        "policy": "random_equal",
+        "relative_error_change": -0.03168901529767646,
+        "scenario": "control_noise_four",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.055483302929839454,
+        "monte_carlo_standard_error": 0.005262857499307804,
+        "paired_difference": -0.01197688316697093,
+        "policy": "reliability",
+        "relative_error_change": -0.17754002560537283,
+        "scenario": "control_noise_four",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.06746018609681038,
+        "monte_carlo_standard_error": 0.0,
+        "paired_difference": 0.0,
+        "policy": "worst_query",
+        "relative_error_change": 0.0,
+        "scenario": "control_noise_four",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.051565183908517956,
+        "monte_carlo_standard_error": 0.0006000800950942472,
+        "paired_difference": 0.00043121162776784685,
+        "policy": "bias_aware",
+        "relative_error_change": 0.008432977305191304,
+        "scenario": "exact_rank_full",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.05790446757754093,
+        "monte_carlo_standard_error": 0.0012997112087681536,
+        "paired_difference": 0.006770495296790832,
+        "policy": "bias_equal_depth",
+        "relative_error_change": 0.13240698883352062,
+        "scenario": "exact_rank_full",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.05414845355407001,
+        "monte_carlo_standard_error": 0.0012110986627400244,
+        "paired_difference": 0.003014481273319901,
+        "policy": "bias_fixed_controls",
+        "relative_error_change": 0.05895261288853032,
+        "scenario": "exact_rank_full",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.06824473035901776,
+        "monte_carlo_standard_error": 0.0012482734554711324,
+        "paired_difference": 0.01711075807826767,
+        "policy": "bias_fixed_interventions",
+        "relative_error_change": 0.3346260287450656,
+        "scenario": "exact_rank_full",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.06126650552584506,
+        "monte_carlo_standard_error": 0.002170490182659604,
+        "paired_difference": 0.010132533245094959,
+        "policy": "bias_fixed_order",
+        "relative_error_change": 0.19815658344441692,
+        "scenario": "exact_rank_full",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.05143748125310044,
+        "monte_carlo_standard_error": 0.0001863091901416553,
+        "paired_difference": 0.00030350897235033173,
+        "policy": "bias_independent_controls",
+        "relative_error_change": 0.005935564142834855,
+        "scenario": "exact_rank_full",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.051133972280750103,
+        "monte_carlo_standard_error": 0.0,
+        "paired_difference": 0.0,
+        "policy": "bias_no_extension",
+        "relative_error_change": 0.0,
+        "scenario": "exact_rank_full",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.049725593650101284,
+        "monte_carlo_standard_error": 0.001404856054096188,
+        "paired_difference": -0.0014083786306488169,
+        "policy": "d_optimal",
+        "relative_error_change": -0.027542914579687664,
+        "scenario": "exact_rank_full",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.04772761321659743,
+        "monte_carlo_standard_error": 0.0008729370009733175,
+        "paired_difference": -0.0034063590641526726,
+        "policy": "disagreement",
+        "relative_error_change": -0.06661635918778465,
+        "scenario": "exact_rank_full",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.05872438058835833,
+        "monte_carlo_standard_error": 0.001715868663647255,
+        "paired_difference": 0.007590408307608229,
+        "policy": "diversity",
+        "relative_error_change": 0.14844159311412844,
+        "scenario": "exact_rank_full",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.06356771678428787,
+        "monte_carlo_standard_error": 0.0013270690576097349,
+        "paired_difference": 0.012433744503537758,
+        "policy": "fixed_grid",
+        "relative_error_change": 0.24316015261381455,
+        "scenario": "exact_rank_full",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.0631417314459983,
+        "monte_carlo_standard_error": 0.0014346740238954526,
+        "paired_difference": 0.012007759165248209,
+        "policy": "random_equal",
+        "relative_error_change": 0.23482938308253926,
+        "scenario": "exact_rank_full",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.06412665923361484,
+        "monte_carlo_standard_error": 0.0021751221247058375,
+        "paired_difference": 0.012992686952864724,
+        "policy": "reliability",
+        "relative_error_change": 0.2540910939116684,
+        "scenario": "exact_rank_full",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.051133972280750103,
+        "monte_carlo_standard_error": 0.0,
+        "paired_difference": 0.0,
+        "policy": "worst_query",
+        "relative_error_change": 0.0,
+        "scenario": "exact_rank_full",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.1457829802213857,
+        "monte_carlo_standard_error": 0.00047110317153654203,
+        "paired_difference": 0.00022496656781738344,
+        "policy": "bias_aware",
+        "relative_error_change": 0.0015455457392597393,
+        "scenario": "exact_rank_missing",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.14843436480099742,
+        "monte_carlo_standard_error": 0.0006403709046463177,
+        "paired_difference": 0.002876351147429149,
+        "policy": "bias_equal_depth",
+        "relative_error_change": 0.019760857373850513,
+        "scenario": "exact_rank_missing",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.1483964810606509,
+        "monte_carlo_standard_error": 0.0015476885314306907,
+        "paired_difference": 0.002838467407082615,
+        "policy": "bias_fixed_controls",
+        "relative_error_change": 0.019500591797290103,
+        "scenario": "exact_rank_missing",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.15262111704757247,
+        "monte_carlo_standard_error": 0.0017080210936826264,
+        "paired_difference": 0.007063103394004194,
+        "policy": "bias_fixed_interventions",
+        "relative_error_change": 0.048524318357452696,
+        "scenario": "exact_rank_missing",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.15109168494045996,
+        "monte_carlo_standard_error": 0.001453453010058499,
+        "paired_difference": 0.005533671286891667,
+        "policy": "bias_fixed_order",
+        "relative_error_change": 0.03801694697525856,
+        "scenario": "exact_rank_missing",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.14585023965931,
+        "monte_carlo_standard_error": 0.00027394362034018196,
+        "paired_difference": 0.0002922260057416831,
+        "policy": "bias_independent_controls",
+        "relative_error_change": 0.0020076256772587476,
+        "scenario": "exact_rank_missing",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.1455580136535683,
+        "monte_carlo_standard_error": 0.0,
+        "paired_difference": 0.0,
+        "policy": "bias_no_extension",
+        "relative_error_change": 0.0,
+        "scenario": "exact_rank_missing",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.1418826180455703,
+        "monte_carlo_standard_error": 0.0012353372387565453,
+        "paired_difference": -0.0036753956079979807,
+        "policy": "d_optimal",
+        "relative_error_change": -0.025250383099796304,
+        "scenario": "exact_rank_missing",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.1422437184522023,
+        "monte_carlo_standard_error": 0.001178810424871614,
+        "paired_difference": -0.003314295201366016,
+        "policy": "disagreement",
+        "relative_error_change": -0.022769582506492025,
+        "scenario": "exact_rank_missing",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.1475631487768403,
+        "monte_carlo_standard_error": 0.0009718547323946274,
+        "paired_difference": 0.0020051351232719646,
+        "policy": "diversity",
+        "relative_error_change": 0.01377550485158609,
+        "scenario": "exact_rank_missing",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.1497005173485782,
+        "monte_carlo_standard_error": 0.0019296378858991293,
+        "paired_difference": 0.00414250369500987,
+        "policy": "fixed_grid",
+        "relative_error_change": 0.028459468434827172,
+        "scenario": "exact_rank_missing",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.14860117163106232,
+        "monte_carlo_standard_error": 0.0018144207407167377,
+        "paired_difference": 0.003043157977493996,
+        "policy": "random_equal",
+        "relative_error_change": 0.020906839143441377,
+        "scenario": "exact_rank_missing",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.15179380325815028,
+        "monte_carlo_standard_error": 0.0015909371478622391,
+        "paired_difference": 0.00623578960458199,
+        "policy": "reliability",
+        "relative_error_change": 0.04284057914821045,
+        "scenario": "exact_rank_missing",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.1455580136535683,
+        "monte_carlo_standard_error": 0.0,
+        "paired_difference": 0.0,
+        "policy": "worst_query",
+        "relative_error_change": 0.0,
+        "scenario": "exact_rank_missing",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.09306537720919353,
+        "monte_carlo_standard_error": 0.0012112402666523412,
+        "paired_difference": -0.004984374886881448,
+        "policy": "bias_aware",
+        "relative_error_change": -0.050835160521338824,
+        "scenario": "mechanism_shift_2",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.10301118542872185,
+        "monte_carlo_standard_error": 0.0030596309038432674,
+        "paired_difference": 0.004961433332646886,
+        "policy": "bias_equal_depth",
+        "relative_error_change": 0.05060118181416083,
+        "scenario": "mechanism_shift_2",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.09294659545083249,
+        "monte_carlo_standard_error": 0.0024636900197945507,
+        "paired_difference": -0.005103156645242463,
+        "policy": "bias_fixed_controls",
+        "relative_error_change": -0.052046604261090715,
+        "scenario": "mechanism_shift_2",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.11133599733440776,
+        "monte_carlo_standard_error": 0.00382583339880554,
+        "paired_difference": 0.013286245238332795,
+        "policy": "bias_fixed_interventions",
+        "relative_error_change": 0.1355051385067669,
+        "scenario": "mechanism_shift_2",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.10660310818869831,
+        "monte_carlo_standard_error": 0.005140665952750529,
+        "paired_difference": 0.00855335609262336,
+        "policy": "bias_fixed_order",
+        "relative_error_change": 0.08723485689430684,
+        "scenario": "mechanism_shift_2",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.09095117497792923,
+        "monte_carlo_standard_error": 0.0015361083385017555,
+        "paired_difference": -0.007098577118145733,
+        "policy": "bias_independent_controls",
+        "relative_error_change": -0.07239770592372459,
+        "scenario": "mechanism_shift_2",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.09804975209607496,
+        "monte_carlo_standard_error": 0.0,
+        "paired_difference": 0.0,
+        "policy": "bias_no_extension",
+        "relative_error_change": 0.0,
+        "scenario": "mechanism_shift_2",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.11031809145393437,
+        "monte_carlo_standard_error": 0.0041846406146331255,
+        "paired_difference": 0.012268339357859398,
+        "policy": "d_optimal",
+        "relative_error_change": 0.12512361424267704,
+        "scenario": "mechanism_shift_2",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.09853600342123583,
+        "monte_carlo_standard_error": 0.0029780247353721383,
+        "paired_difference": 0.0004862513251608608,
+        "policy": "disagreement",
+        "relative_error_change": 0.0049592305412909455,
+        "scenario": "mechanism_shift_2",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.10413776270684168,
+        "monte_carlo_standard_error": 0.0035968179351601047,
+        "paired_difference": 0.006088010610766717,
+        "policy": "diversity",
+        "relative_error_change": 0.06209103522058193,
+        "scenario": "mechanism_shift_2",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.11182509116758566,
+        "monte_carlo_standard_error": 0.0033715678330529107,
+        "paired_difference": 0.013775339071510694,
+        "policy": "fixed_grid",
+        "relative_error_change": 0.14049335951418623,
+        "scenario": "mechanism_shift_2",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.11428275486660018,
+        "monte_carlo_standard_error": 0.005005521841196588,
+        "paired_difference": 0.016233002770525216,
+        "policy": "random_equal",
+        "relative_error_change": 0.165558835422849,
+        "scenario": "mechanism_shift_2",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.09961390360159081,
+        "monte_carlo_standard_error": 0.004552752512566876,
+        "paired_difference": 0.0015641515055158483,
+        "policy": "reliability",
+        "relative_error_change": 0.015952630905004227,
+        "scenario": "mechanism_shift_2",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.09804975209607496,
+        "monte_carlo_standard_error": 0.0,
+        "paired_difference": 0.0,
+        "policy": "worst_query",
+        "relative_error_change": 0.0,
+        "scenario": "mechanism_shift_2",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.3046670276460564,
+        "monte_carlo_standard_error": 0.00036056306428816756,
+        "paired_difference": 0.0008001461020967826,
+        "policy": "bias_aware",
+        "relative_error_change": 0.00263321260293721,
+        "scenario": "query_gene_permutation",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.28227141381211995,
+        "monte_carlo_standard_error": 0.022438064040105055,
+        "paired_difference": -0.021595467731839617,
+        "policy": "bias_equal_depth",
+        "relative_error_change": -0.0710688431135114,
+        "scenario": "query_gene_permutation",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.3088928909668906,
+        "monte_carlo_standard_error": 0.0013613980676175958,
+        "paired_difference": 0.005026009422931016,
+        "policy": "bias_fixed_controls",
+        "relative_error_change": 0.016540168502054798,
+        "scenario": "query_gene_permutation",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.2803375198618324,
+        "monte_carlo_standard_error": 0.03127315518208299,
+        "paired_difference": -0.02352936168212716,
+        "policy": "bias_fixed_interventions",
+        "relative_error_change": -0.07743312322347716,
+        "scenario": "query_gene_permutation",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.27841884543274936,
+        "monte_carlo_standard_error": 0.03158964230400327,
+        "paired_difference": -0.025448036111210236,
+        "policy": "bias_fixed_order",
+        "relative_error_change": -0.0837473171867489,
+        "scenario": "query_gene_permutation",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.3900364270651167,
+        "monte_carlo_standard_error": 0.08431825543902592,
+        "paired_difference": 0.0861695455211571,
+        "policy": "bias_independent_controls",
+        "relative_error_change": 0.2835766276447313,
+        "scenario": "query_gene_permutation",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.3038668815439596,
+        "monte_carlo_standard_error": 0.0,
+        "paired_difference": 0.0,
+        "policy": "bias_no_extension",
+        "relative_error_change": 0.0,
+        "scenario": "query_gene_permutation",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.26109195945239294,
+        "monte_carlo_standard_error": 0.04477748857982259,
+        "paired_difference": -0.042774922091566706,
+        "policy": "d_optimal",
+        "relative_error_change": -0.14076862168797613,
+        "scenario": "query_gene_permutation",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.30281909568731036,
+        "monte_carlo_standard_error": 0.0012117842409124268,
+        "paired_difference": -0.0010477858566492692,
+        "policy": "disagreement",
+        "relative_error_change": -0.0034481739218352064,
+        "scenario": "query_gene_permutation",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.2510585063036631,
+        "monte_carlo_standard_error": 0.06264069777204109,
+        "paired_difference": -0.05280837524029648,
+        "policy": "diversity",
+        "relative_error_change": -0.1737878605657025,
+        "scenario": "query_gene_permutation",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.3726351687538511,
+        "monte_carlo_standard_error": 0.06565189594660072,
+        "paired_difference": 0.06876828720989156,
+        "policy": "fixed_grid",
+        "relative_error_change": 0.22631057014333772,
+        "scenario": "query_gene_permutation",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.3177034608706168,
+        "monte_carlo_standard_error": 0.011490488909663329,
+        "paired_difference": 0.013836579326657212,
+        "policy": "random_equal",
+        "relative_error_change": 0.045535002881370315,
+        "scenario": "query_gene_permutation",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.25291393601067746,
+        "monte_carlo_standard_error": 0.060356399021881356,
+        "paired_difference": -0.050952945533282154,
+        "policy": "reliability",
+        "relative_error_change": -0.16768179959062413,
+        "scenario": "query_gene_permutation",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.3038668815439596,
+        "monte_carlo_standard_error": 0.0,
+        "paired_difference": 0.0,
+        "policy": "worst_query",
+        "relative_error_change": 0.0,
+        "scenario": "query_gene_permutation",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.18594620212319524,
+        "monte_carlo_standard_error": 0.0002437111705992756,
+        "paired_difference": 0.00024371117059927562,
+        "policy": "bias_aware",
+        "relative_error_change": 0.0013123742678362211,
+        "scenario": "rank_missing",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.18058344386677153,
+        "monte_carlo_standard_error": 0.0029650576635313515,
+        "paired_difference": -0.0051190470858244515,
+        "policy": "bias_equal_depth",
+        "relative_error_change": -0.027565850407096498,
+        "scenario": "rank_missing",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.18594620212319524,
+        "monte_carlo_standard_error": 0.0002437111705992756,
+        "paired_difference": 0.00024371117059927562,
+        "policy": "bias_fixed_controls",
+        "relative_error_change": 0.0013123742678362211,
+        "scenario": "rank_missing",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.1678890743445078,
+        "monte_carlo_standard_error": 0.008582858394694089,
+        "paired_difference": -0.017813416608088124,
+        "policy": "bias_fixed_interventions",
+        "relative_error_change": -0.09592448930927551,
+        "scenario": "rank_missing",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.17324438377377635,
+        "monte_carlo_standard_error": 0.005244122710368918,
+        "paired_difference": -0.012458107178819613,
+        "policy": "bias_fixed_order",
+        "relative_error_change": -0.06708637625113913,
+        "scenario": "rank_missing",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.1824318891020949,
+        "monte_carlo_standard_error": 0.0020577059624160903,
+        "paired_difference": -0.0032706018505010703,
+        "policy": "bias_independent_controls",
+        "relative_error_change": -0.01761205158705142,
+        "scenario": "rank_missing",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.18570249095259597,
+        "monte_carlo_standard_error": 0.0,
+        "paired_difference": 0.0,
+        "policy": "bias_no_extension",
+        "relative_error_change": 0.0,
+        "scenario": "rank_missing",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.16808866175713066,
+        "monte_carlo_standard_error": 0.0051765476624318334,
+        "paired_difference": -0.017613829195465287,
+        "policy": "d_optimal",
+        "relative_error_change": -0.09484971959779229,
+        "scenario": "rank_missing",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.18537805568993798,
+        "monte_carlo_standard_error": 0.0004674912212934777,
+        "paired_difference": -0.00032443526265798497,
+        "policy": "disagreement",
+        "relative_error_change": -0.001747070063485595,
+        "scenario": "rank_missing",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.17256394908985961,
+        "monte_carlo_standard_error": 0.0055739967151418055,
+        "paired_difference": -0.013138541862736363,
+        "policy": "diversity",
+        "relative_error_change": -0.07075048802705733,
+        "scenario": "rank_missing",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.1687642966978552,
+        "monte_carlo_standard_error": 0.0049327161468740955,
+        "paired_difference": -0.016938194254740774,
+        "policy": "fixed_grid",
+        "relative_error_change": -0.09121145423442147,
+        "scenario": "rank_missing",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.16918160850820071,
+        "monte_carlo_standard_error": 0.0034646621750877185,
+        "paired_difference": -0.016520882444395237,
+        "policy": "random_equal",
+        "relative_error_change": -0.08896424791960653,
+        "scenario": "rank_missing",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.17750514934879652,
+        "monte_carlo_standard_error": 0.005550368732551784,
+        "paired_difference": -0.008197341603799434,
+        "policy": "reliability",
+        "relative_error_change": -0.04414233520374242,
+        "scenario": "rank_missing",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.18570249095259597,
+        "monte_carlo_standard_error": 0.0,
+        "paired_difference": 0.0,
+        "policy": "worst_query",
+        "relative_error_change": 0.0,
+        "scenario": "rank_missing",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.10344587331180835,
+        "monte_carlo_standard_error": 0.0020301910553153597,
+        "paired_difference": -0.0017701189295313946,
+        "policy": "bias_aware",
+        "relative_error_change": -0.01682366807387203,
+        "scenario": "recipient_noise_double",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.1174298084978758,
+        "monte_carlo_standard_error": 0.0020541218424119405,
+        "paired_difference": 0.012213816256536073,
+        "policy": "bias_equal_depth",
+        "relative_error_change": 0.11608326829747105,
+        "scenario": "recipient_noise_double",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.09700082485012465,
+        "monte_carlo_standard_error": 0.003393675324322446,
+        "paired_difference": -0.008215167391215084,
+        "policy": "bias_fixed_controls",
+        "relative_error_change": -0.07807907539731698,
+        "scenario": "recipient_noise_double",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.12830257393904232,
+        "monte_carlo_standard_error": 0.0022768121596876464,
+        "paired_difference": 0.02308658169770258,
+        "policy": "bias_fixed_interventions",
+        "relative_error_change": 0.2194208428386781,
+        "scenario": "recipient_noise_double",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.1196168739147772,
+        "monte_carlo_standard_error": 0.0011451630194610055,
+        "paired_difference": 0.014400881673437477,
+        "policy": "bias_fixed_order",
+        "relative_error_change": 0.13686970361316728,
+        "scenario": "recipient_noise_double",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.10082537329238495,
+        "monte_carlo_standard_error": 0.0022133627779679435,
+        "paired_difference": -0.00439061894895478,
+        "policy": "bias_independent_controls",
+        "relative_error_change": -0.04172957794176169,
+        "scenario": "recipient_noise_double",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.10521599224133973,
+        "monte_carlo_standard_error": 0.0,
+        "paired_difference": 0.0,
+        "policy": "bias_no_extension",
+        "relative_error_change": 0.0,
+        "scenario": "recipient_noise_double",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.09770883647198944,
+        "monte_carlo_standard_error": 0.0015693751017641306,
+        "paired_difference": -0.007507155769350279,
+        "policy": "d_optimal",
+        "relative_error_change": -0.07134994984536858,
+        "scenario": "recipient_noise_double",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.1026894978991451,
+        "monte_carlo_standard_error": 0.0018710737001984882,
+        "paired_difference": -0.0025264943421946296,
+        "policy": "disagreement",
+        "relative_error_change": -0.02401245560085077,
+        "scenario": "recipient_noise_double",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.1054594891113555,
+        "monte_carlo_standard_error": 0.002021675114055581,
+        "paired_difference": 0.00024349687001575248,
+        "policy": "diversity",
+        "relative_error_change": 0.0023142572229631238,
+        "scenario": "recipient_noise_double",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.12294174627863508,
+        "monte_carlo_standard_error": 0.0026506249986601596,
+        "paired_difference": 0.017725754037295354,
+        "policy": "fixed_grid",
+        "relative_error_change": 0.16847015039915997,
+        "scenario": "recipient_noise_double",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.12454633638140737,
+        "monte_carlo_standard_error": 0.005422060835774888,
+        "paired_difference": 0.01933034414006765,
+        "policy": "random_equal",
+        "relative_error_change": 0.18372058969637023,
+        "scenario": "recipient_noise_double",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.11226091703890458,
+        "monte_carlo_standard_error": 0.002837580992344871,
+        "paired_difference": 0.007044924797564836,
+        "policy": "reliability",
+        "relative_error_change": 0.06695678715271251,
+        "scenario": "recipient_noise_double",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.10521599224133973,
+        "monte_carlo_standard_error": 0.0,
+        "paired_difference": 0.0,
+        "policy": "worst_query",
+        "relative_error_change": 0.0,
+        "scenario": "recipient_noise_double",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.020303446544904603,
+        "monte_carlo_standard_error": 0.0002971835782504343,
+        "paired_difference": 0.0011577328214548092,
+        "policy": "bias_aware",
+        "relative_error_change": 0.06046955669439529,
+        "scenario": "recipient_noise_half",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.02347344522578037,
+        "monte_carlo_standard_error": 0.00017565318484660472,
+        "paired_difference": 0.004327731502330573,
+        "policy": "bias_equal_depth",
+        "relative_error_change": 0.2260417952990669,
+        "scenario": "recipient_noise_half",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.02292937848138371,
+        "monte_carlo_standard_error": 0.0007176070253901225,
+        "paired_difference": 0.0037836647579339174,
+        "policy": "bias_fixed_controls",
+        "relative_error_change": 0.19762463873570096,
+        "scenario": "recipient_noise_half",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.029093105878913082,
+        "monte_carlo_standard_error": 0.0011720597423529296,
+        "paired_difference": 0.009947392155463286,
+        "policy": "bias_fixed_interventions",
+        "relative_error_change": 0.5195623573583291,
+        "scenario": "recipient_noise_half",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.025014614053434536,
+        "monte_carlo_standard_error": 0.001069025995929613,
+        "paired_difference": 0.005868900329984743,
+        "policy": "bias_fixed_order",
+        "relative_error_change": 0.30653860256964344,
+        "scenario": "recipient_noise_half",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.021254318528283987,
+        "monte_carlo_standard_error": 0.0004908453556039716,
+        "paired_difference": 0.0021086048048341932,
+        "policy": "bias_independent_controls",
+        "relative_error_change": 0.1101345625079289,
+        "scenario": "recipient_noise_half",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.01914571372344979,
+        "monte_carlo_standard_error": 0.0,
+        "paired_difference": 0.0,
+        "policy": "bias_no_extension",
+        "relative_error_change": 0.0,
+        "scenario": "recipient_noise_half",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.019881559001840476,
+        "monte_carlo_standard_error": 0.0007051302996226233,
+        "paired_difference": 0.000735845278390685,
+        "policy": "d_optimal",
+        "relative_error_change": 0.038433943441315385,
+        "scenario": "recipient_noise_half",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.017657874624504265,
+        "monte_carlo_standard_error": 0.0004966845009982355,
+        "paired_difference": -0.001487839098945529,
+        "policy": "disagreement",
+        "relative_error_change": -0.07771134157945829,
+        "scenario": "recipient_noise_half",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.02477717711393848,
+        "monte_carlo_standard_error": 0.0007751092893338976,
+        "paired_difference": 0.005631463390488685,
+        "policy": "diversity",
+        "relative_error_change": 0.2941370309737387,
+        "scenario": "recipient_noise_half",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.025719780767264954,
+        "monte_carlo_standard_error": 0.0006854486976291592,
+        "paired_difference": 0.006574067043815163,
+        "policy": "fixed_grid",
+        "relative_error_change": 0.34337017354245736,
+        "scenario": "recipient_noise_half",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.025421873043004202,
+        "monte_carlo_standard_error": 0.0007066827416003062,
+        "paired_difference": 0.006276159319554405,
+        "policy": "random_equal",
+        "relative_error_change": 0.32781015167208555,
+        "scenario": "recipient_noise_half",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.027382707897398283,
+        "monte_carlo_standard_error": 0.0008132418020412472,
+        "paired_difference": 0.008236994173948489,
+        "policy": "reliability",
+        "relative_error_change": 0.43022654015032963,
+        "scenario": "recipient_noise_half",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.01914571372344979,
+        "monte_carlo_standard_error": 0.0,
+        "paired_difference": 0.0,
+        "policy": "worst_query",
+        "relative_error_change": 0.0,
+        "scenario": "recipient_noise_half",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.06985464145484377,
+        "monte_carlo_standard_error": 0.0007997514702795269,
+        "paired_difference": -6.320874664248466e-05,
+        "policy": "bias_aware",
+        "relative_error_change": -0.000904043051385768,
+        "scenario": "source_feature_error_half",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.07527544211591568,
+        "monte_carlo_standard_error": 0.0017155451542636834,
+        "paired_difference": 0.005357591914429421,
+        "policy": "bias_equal_depth",
+        "relative_error_change": 0.07662695433269393,
+        "scenario": "source_feature_error_half",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.07192275712140342,
+        "monte_carlo_standard_error": 0.0008075370461759542,
+        "paired_difference": 0.0020049069199171684,
+        "policy": "bias_fixed_controls",
+        "relative_error_change": 0.028675179716474604,
+        "scenario": "source_feature_error_half",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.0899578843200283,
+        "monte_carlo_standard_error": 0.0015850272308692592,
+        "paired_difference": 0.020040034118542036,
+        "policy": "bias_fixed_interventions",
+        "relative_error_change": 0.28662257293082566,
+        "scenario": "source_feature_error_half",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.08107033560898916,
+        "monte_carlo_standard_error": 0.0020107819709582597,
+        "paired_difference": 0.0111524854075029,
+        "policy": "bias_fixed_order",
+        "relative_error_change": 0.15950841416554068,
+        "scenario": "source_feature_error_half",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.07021256351843097,
+        "monte_carlo_standard_error": 0.00047463626679059744,
+        "paired_difference": 0.00029471331694471,
+        "policy": "bias_independent_controls",
+        "relative_error_change": 0.004215136994278541,
+        "scenario": "source_feature_error_half",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.06991785020148625,
+        "monte_carlo_standard_error": 0.0,
+        "paired_difference": 0.0,
+        "policy": "bias_no_extension",
+        "relative_error_change": 0.0,
+        "scenario": "source_feature_error_half",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.06972792945877071,
+        "monte_carlo_standard_error": 0.0007902001615879893,
+        "paired_difference": -0.00018992074271556025,
+        "policy": "d_optimal",
+        "relative_error_change": -0.002716341280063029,
+        "scenario": "source_feature_error_half",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.06749108710284188,
+        "monte_carlo_standard_error": 0.001798419238943734,
+        "paired_difference": -0.002426763098644362,
+        "policy": "disagreement",
+        "relative_error_change": -0.034708777395915644,
+        "scenario": "source_feature_error_half",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.07667284650284498,
+        "monte_carlo_standard_error": 0.0013611530270207983,
+        "paired_difference": 0.006754996301358712,
+        "policy": "diversity",
+        "relative_error_change": 0.09661332952733036,
+        "scenario": "source_feature_error_half",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.08148999138974453,
+        "monte_carlo_standard_error": 0.0017897493733794057,
+        "paired_difference": 0.011572141188258256,
+        "policy": "fixed_grid",
+        "relative_error_change": 0.16551054065464196,
+        "scenario": "source_feature_error_half",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.08057886811022551,
+        "monte_carlo_standard_error": 0.0020713628089983555,
+        "paired_difference": 0.010661017908739249,
+        "policy": "random_equal",
+        "relative_error_change": 0.15247920063355477,
+        "scenario": "source_feature_error_half",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.08096215595749547,
+        "monte_carlo_standard_error": 0.0020968128127610147,
+        "paired_difference": 0.0110443057560092,
+        "policy": "reliability",
+        "relative_error_change": 0.15796117478129257,
+        "scenario": "source_feature_error_half",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.06991785020148625,
+        "monte_carlo_standard_error": 0.0,
+        "paired_difference": 0.0,
+        "policy": "worst_query",
+        "relative_error_change": 0.0,
+        "scenario": "source_feature_error_half",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.1324245147037743,
+        "monte_carlo_standard_error": 0.0019317430250951153,
+        "paired_difference": -0.004233555414529152,
+        "policy": "bias_aware",
+        "relative_error_change": -0.030979183379834116,
+        "scenario": "source_feature_error_one",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.13776331004732653,
+        "monte_carlo_standard_error": 0.0031063886650606774,
+        "paired_difference": 0.0011052399290230885,
+        "policy": "bias_equal_depth",
+        "relative_error_change": 0.008087630156538093,
+        "scenario": "source_feature_error_one",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.13107331651560278,
+        "monte_carlo_standard_error": 0.00282577550267824,
+        "paired_difference": -0.005584753602700695,
+        "policy": "bias_fixed_controls",
+        "relative_error_change": -0.04086662132624903,
+        "scenario": "source_feature_error_one",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.15613553191644822,
+        "monte_carlo_standard_error": 0.006866775090013838,
+        "paired_difference": 0.019477461798144757,
+        "policy": "bias_fixed_interventions",
+        "relative_error_change": 0.14252697832834402,
+        "scenario": "source_feature_error_one",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.14654871971017666,
+        "monte_carlo_standard_error": 0.0031151577801648957,
+        "paired_difference": 0.009890649591873208,
+        "policy": "bias_fixed_order",
+        "relative_error_change": 0.07237515928119705,
+        "scenario": "source_feature_error_one",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.13146590549372217,
+        "monte_carlo_standard_error": 0.001596023456749552,
+        "paired_difference": -0.005192164624581305,
+        "policy": "bias_independent_controls",
+        "relative_error_change": -0.037993838344757114,
+        "scenario": "source_feature_error_one",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.13665807011830347,
+        "monte_carlo_standard_error": 0.0,
+        "paired_difference": 0.0,
+        "policy": "bias_no_extension",
+        "relative_error_change": 0.0,
+        "scenario": "source_feature_error_one",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.13701809604606374,
+        "monte_carlo_standard_error": 0.0042985144409056,
+        "paired_difference": 0.0003600259277602852,
+        "policy": "d_optimal",
+        "relative_error_change": 0.002634501771089073,
+        "scenario": "source_feature_error_one",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.13575867918284648,
+        "monte_carlo_standard_error": 0.002878790120329657,
+        "paired_difference": -0.0008993909354569702,
+        "policy": "disagreement",
+        "relative_error_change": -0.006581323259419489,
+        "scenario": "source_feature_error_one",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.1350040631631904,
+        "monte_carlo_standard_error": 0.0046945858923289835,
+        "paired_difference": -0.0016540069551130687,
+        "policy": "diversity",
+        "relative_error_change": -0.012103251229006908,
+        "scenario": "source_feature_error_one",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.14387556841816046,
+        "monte_carlo_standard_error": 0.002591050471580043,
+        "paired_difference": 0.007217498299857022,
+        "policy": "fixed_grid",
+        "relative_error_change": 0.05281428527132652,
+        "scenario": "source_feature_error_one",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.14525702972345741,
+        "monte_carlo_standard_error": 0.002816278575877619,
+        "paired_difference": 0.008598959605153963,
+        "policy": "random_equal",
+        "relative_error_change": 0.06292317458976213,
+        "scenario": "source_feature_error_one",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.1358149317045169,
+        "monte_carlo_standard_error": 0.007573018274096914,
+        "paired_difference": -0.0008431384137865871,
+        "policy": "reliability",
+        "relative_error_change": -0.00616969355016276,
+        "scenario": "source_feature_error_one",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.13665807011830347,
+        "monte_carlo_standard_error": 0.0,
+        "paired_difference": 0.0,
+        "policy": "worst_query",
+        "relative_error_change": 0.0,
+        "scenario": "source_feature_error_one",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.25768425352813457,
+        "monte_carlo_standard_error": 0.003044647579186574,
+        "paired_difference": 0.001201129505694337,
+        "policy": "bias_aware",
+        "relative_error_change": 0.00468307421890747,
+        "scenario": "source_identity_permutation",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.2514848604166276,
+        "monte_carlo_standard_error": 0.009932564118311898,
+        "paired_difference": -0.004998263605812669,
+        "policy": "bias_equal_depth",
+        "relative_error_change": -0.019487689979069973,
+        "scenario": "source_identity_permutation",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.2556396789638825,
+        "monte_carlo_standard_error": 0.007472461848692448,
+        "paired_difference": -0.0008434450585577235,
+        "policy": "bias_fixed_controls",
+        "relative_error_change": -0.0032885011899805496,
+        "scenario": "source_identity_permutation",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.2658357038312347,
+        "monte_carlo_standard_error": 0.007173372912349496,
+        "paired_difference": 0.009352579808794458,
+        "policy": "bias_fixed_interventions",
+        "relative_error_change": 0.03646469858179122,
+        "scenario": "source_identity_permutation",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.25521646633753886,
+        "monte_carlo_standard_error": 0.008711483931218738,
+        "paired_difference": -0.0012666576849013843,
+        "policy": "bias_fixed_order",
+        "relative_error_change": -0.00493856151249375,
+        "scenario": "source_identity_permutation",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.2572619412698649,
+        "monte_carlo_standard_error": 0.0040245925193613035,
+        "paired_difference": 0.0007788172474246624,
+        "policy": "bias_independent_controls",
+        "relative_error_change": 0.0030365243342736345,
+        "scenario": "source_identity_permutation",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.2564831240224402,
+        "monte_carlo_standard_error": 0.0,
+        "paired_difference": 0.0,
+        "policy": "bias_no_extension",
+        "relative_error_change": 0.0,
+        "scenario": "source_identity_permutation",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.25137235991868656,
+        "monte_carlo_standard_error": 0.013087528692555936,
+        "paired_difference": -0.005110764103753701,
+        "policy": "d_optimal",
+        "relative_error_change": -0.019926317270318926,
+        "scenario": "source_identity_permutation",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.2642576812605675,
+        "monte_carlo_standard_error": 0.00550920232181686,
+        "paired_difference": 0.007774557238127239,
+        "policy": "disagreement",
+        "relative_error_change": 0.03031215900757286,
+        "scenario": "source_identity_permutation",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.246000509741235,
+        "monte_carlo_standard_error": 0.015039766279635039,
+        "paired_difference": -0.010482614281205227,
+        "policy": "diversity",
+        "relative_error_change": -0.04087058094429668,
+        "scenario": "source_identity_permutation",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.24770558704163967,
+        "monte_carlo_standard_error": 0.008900467912651498,
+        "paired_difference": -0.008777536980800554,
+        "policy": "fixed_grid",
+        "relative_error_change": -0.034222668700934065,
+        "scenario": "source_identity_permutation",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.24540466441016026,
+        "monte_carlo_standard_error": 0.010412113934826982,
+        "paired_difference": -0.011078459612279951,
+        "policy": "random_equal",
+        "relative_error_change": -0.04319371753796431,
+        "scenario": "source_identity_permutation",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.24447020054188986,
+        "monte_carlo_standard_error": 0.01423241561047443,
+        "paired_difference": -0.012012923480550358,
+        "policy": "reliability",
+        "relative_error_change": -0.046837091236846144,
+        "scenario": "source_identity_permutation",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.2564831240224402,
+        "monte_carlo_standard_error": 0.0,
+        "paired_difference": 0.0,
+        "policy": "worst_query",
+        "relative_error_change": 0.0,
+        "scenario": "source_identity_permutation",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.06158274883942498,
+        "monte_carlo_standard_error": 0.0006795393332264853,
+        "paired_difference": 0.002062508039896756,
+        "policy": "bias_aware",
+        "relative_error_change": 0.03465221262870133,
+        "scenario": "source_measurement_noise_two",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.06529147459636281,
+        "monte_carlo_standard_error": 0.0015552035486892956,
+        "paired_difference": 0.005771233796834589,
+        "policy": "bias_equal_depth",
+        "relative_error_change": 0.09696254113407979,
+        "scenario": "source_measurement_noise_two",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.06296134828378254,
+        "monte_carlo_standard_error": 0.0009003434997581113,
+        "paired_difference": 0.003441107484254309,
+        "policy": "bias_fixed_controls",
+        "relative_error_change": 0.05781407195317638,
+        "scenario": "source_measurement_noise_two",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.07854864899685558,
+        "monte_carlo_standard_error": 0.002495480186892967,
+        "paired_difference": 0.019028408197327366,
+        "policy": "bias_fixed_interventions",
+        "relative_error_change": 0.31969642497612666,
+        "scenario": "source_measurement_noise_two",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.07011482608459127,
+        "monte_carlo_standard_error": 0.0034871477453812037,
+        "paired_difference": 0.010594585285063043,
+        "policy": "bias_fixed_order",
+        "relative_error_change": 0.1779997046844444,
+        "scenario": "source_measurement_noise_two",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.06070364795462709,
+        "monte_carlo_standard_error": 0.0008195696445273874,
+        "paired_difference": 0.0011834071550988659,
+        "policy": "bias_independent_controls",
+        "relative_error_change": 0.01988243224829571,
+        "scenario": "source_measurement_noise_two",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.05952024079952822,
+        "monte_carlo_standard_error": 0.0,
+        "paired_difference": 0.0,
+        "policy": "bias_no_extension",
+        "relative_error_change": 0.0,
+        "scenario": "source_measurement_noise_two",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.05933191849277427,
+        "monte_carlo_standard_error": 0.0003830573149222936,
+        "paired_difference": -0.0001883223067539491,
+        "policy": "d_optimal",
+        "relative_error_change": -0.0031640044499860595,
+        "scenario": "source_measurement_noise_two",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.05571721317673366,
+        "monte_carlo_standard_error": 0.0007623403155103417,
+        "paired_difference": -0.0038030276227945608,
+        "policy": "disagreement",
+        "relative_error_change": -0.06389469484177061,
+        "scenario": "source_measurement_noise_two",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.06695650202346629,
+        "monte_carlo_standard_error": 0.0014009409243483162,
+        "paired_difference": 0.007436261223938069,
+        "policy": "diversity",
+        "relative_error_change": 0.12493667908677229,
+        "scenario": "source_measurement_noise_two",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.0716483032341108,
+        "monte_carlo_standard_error": 0.00241279174226944,
+        "paired_difference": 0.012128062434582573,
+        "policy": "fixed_grid",
+        "relative_error_change": 0.20376366546350907,
+        "scenario": "source_measurement_noise_two",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.07103154885084202,
+        "monte_carlo_standard_error": 0.001883026390170011,
+        "paired_difference": 0.011511308051313809,
+        "policy": "random_equal",
+        "relative_error_change": 0.19340157056967167,
+        "scenario": "source_measurement_noise_two",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.0715587392461138,
+        "monte_carlo_standard_error": 0.001744845759355696,
+        "paired_difference": 0.012038498446585588,
+        "policy": "reliability",
+        "relative_error_change": 0.20225890024761137,
+        "scenario": "source_measurement_noise_two",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.05952024079952822,
+        "monte_carlo_standard_error": 0.0,
+        "paired_difference": 0.0,
+        "policy": "worst_query",
+        "relative_error_change": 0.0,
+        "scenario": "source_measurement_noise_two",
+        "worlds": 5
+      }
+    ],
+    "independent_generative_worlds": 5,
+    "limitations": [
+      "Synthetic Gaussian expression is not a regulatory or biological validation model.",
+      "Gaussian coverage is an ideal-model diagnostic; post-selection coverage is unproven.",
+      "Coverage conditions on finite-width queries; the eligible fraction is reported.",
+      "Batch stress shares technical batch effects across disjoint cell banks.",
+      "Known truth and latent coordinates were scorer-only diagnostics."
+    ],
+    "primary_backbone": "ridge_cv",
+    "uncertainty_scope": "Monte Carlo standard errors use paired independent generative worlds. Queries and acquisition seeds are averaged within world; they are not biological replicates."
+  }
+}

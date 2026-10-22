@@ -196,6 +196,7 @@ def summarize_run(
             figure.savefig(
                 output / f"{kind}-curves.{extension}",
                 metadata={"Date": None} if extension == "svg" else None,
+                bbox_inches="tight",
             )
         plt.close(figure)
     scope = (

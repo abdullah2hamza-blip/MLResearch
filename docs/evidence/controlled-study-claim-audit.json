@@ -1,0 +1,10 @@
+{
+  "clarification_applied": "Coverage figures explicitly identify worst_query, fixed ridge, budget192 and finite-width conditioning",
+  "findings_sha256": "0e17ae17a1a676bf8ec0b2dade762eab52e10f918d139b5d2683df97e970c383",
+  "material_numerical_or_replication_issues": 0,
+  "recorded_date": "2026-10-22",
+  "results_sha256": "de270646d8561cc3435a7aeaf7a8d54a11cee9974fa0dbc8df95fcb75f995e1a",
+  "reviewer": "literature_audit subagent",
+  "scope": "Bounded independent read-only audit of controlled-study and tuning claims against retained tables",
+  "tuning_findings_sha256": "27d46bbe773186720f3c1c8a45d81c8f397f0e46379f27b16d9d386798471f24"
+}

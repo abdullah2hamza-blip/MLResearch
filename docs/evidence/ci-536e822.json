@@ -1,0 +1,30 @@
+{
+  "commit": "536e822dd97e2bf0a16f35daef1fe9bbac2f6ab9",
+  "conclusion": "success",
+  "jobs": [
+    {
+      "conclusion": "success",
+      "id": 119652634110,
+      "name": "checks (ubuntu-latest)"
+    },
+    {
+      "conclusion": "success",
+      "id": 119652634395,
+      "name": "checks (windows-latest)"
+    }
+  ],
+  "recorded_date": "2026-10-22",
+  "source": "Authenticated GitHub connector workflow-run and job API responses",
+  "verified_steps": [
+    "Locked environment installation",
+    "62-test suite",
+    "Ruff lint and format",
+    "Mypy",
+    "CLI help",
+    "Dataset registry",
+    "Offline replay",
+    "Bounded two-worker controlled-study smoke"
+  ],
+  "workflow_run_id": 39726858341,
+  "workflow_url": "https://github.com/abdullah2hamza-blip/MLResearch/actions/runs/39726858341"
+}

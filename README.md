@@ -41,3 +41,5 @@ retains a negative result for the extension; it is not a completed study.
 - Install development tools with `uv sync --locked --group dev`.
 
 The [controlled simulation protocol](docs/controlled-study-protocol.md) and `configs/study-controlled-v1.json` define the larger synthetic study. Run it with `uv run mlresearch study configs/study-controlled-v1.json`; use a fresh output directory for another run. This study is separate from the still-pending external evaluation. The [risk-retention analysis correction](docs/retention-analysis-correction.md) preserves the original pilot findings while correcting their diagnostic selection rule.
+
+The [70-case controlled study](docs/controlled-study-findings.md) is complete and reports mixed, mainly negative extension results plus a source-support failure under measurement error. [Development tuning](docs/development-tuning-findings.md) and its full candidate table are retained. External evaluation and final method/uncertainty integration remain in progress.

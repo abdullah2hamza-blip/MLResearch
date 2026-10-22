@@ -1,0 +1,5 @@
+{
+  "identical_bias_aware_action_sequences": 25,
+  "paired_world_seed_trajectories": 25,
+  "qualification": "Cell IDs differ by generated data namespace; this compares ordered actions only. Fixed discrepancy prior does not estimate realized mechanism shift."
+}

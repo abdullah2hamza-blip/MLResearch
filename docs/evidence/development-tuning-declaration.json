@@ -1,0 +1,8 @@
+{
+  "candidate_policies": 14,
+  "configuration_sha256": "415ba39ff4f5d8446b347c65e8c6412c4936e701d92e444fa28bcbb3eec90d3f",
+  "controlled_study_configuration_unchanged": true,
+  "protocol_sha256": "05b5d18c00ac73b14d1a3ad2c63fbdfb5775c0296346fdd6f6d2b15cc554b723",
+  "recorded_at": "2026-10-22T05:35:13.577728+00:00",
+  "selection_scope": "Frangieh development only; external assessment banks unopened"
+}

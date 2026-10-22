@@ -1,0 +1,137 @@
+{
+  "budgets": [
+    128,
+    256,
+    512
+  ],
+  "development_resource_record": "docs/evidence/development-resource-accounting.json",
+  "episode_directory": "data/episodes/frangieh-control-to-ifng-v1",
+  "label": "Accounted development tuning under docs/development-tuning-protocol.md; external outcomes unopened",
+  "output_directory": "runs/frangieh-tuning-v1",
+  "policies": [
+    "worst_query",
+    "fixed_grid",
+    "fixed_cf125_d8",
+    "fixed_cf500_d8",
+    "fixed_cf250_d16",
+    "fixed_cf125_d16",
+    "fixed_cf500_d16",
+    "fixed_cf250_d32",
+    "fixed_cf125_d32",
+    "fixed_cf500_d32",
+    "bias_aware",
+    "bias_gamma001",
+    "bias_gamma01",
+    "bias_gamma1"
+  ],
+  "policy": {
+    "block_cells": 8,
+    "cell_cost": 1,
+    "control_cell_cost": 1,
+    "discrepancy_weight": 0.25,
+    "fixed_control_fraction": 0.25,
+    "kernel_length": 1.0,
+    "partial_blocks": true,
+    "pilot_cells": 8,
+    "pilot_controls": 16,
+    "pilot_interventions": 6,
+    "rank": 4,
+    "ridge": 0.1,
+    "ridge_grid": [
+      0.1,
+      1,
+      10,
+      100,
+      1000,
+      10000,
+      100000
+    ],
+    "ridge_include_null": true,
+    "setup_cost": 4,
+    "variance_prior": "paid_ratio"
+  },
+  "primary_backbone": "ridge_cv",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "variants": {
+    "bias_gamma001": {
+      "base": "bias_aware",
+      "overrides": {
+        "discrepancy_weight": 0.01
+      }
+    },
+    "bias_gamma01": {
+      "base": "bias_aware",
+      "overrides": {
+        "discrepancy_weight": 0.1
+      }
+    },
+    "bias_gamma1": {
+      "base": "bias_aware",
+      "overrides": {
+        "discrepancy_weight": 1.0
+      }
+    },
+    "fixed_cf125_d16": {
+      "base": "fixed_grid",
+      "overrides": {
+        "fixed_control_fraction": 0.125,
+        "fixed_depth": 16
+      }
+    },
+    "fixed_cf125_d32": {
+      "base": "fixed_grid",
+      "overrides": {
+        "fixed_control_fraction": 0.125,
+        "fixed_depth": 32
+      }
+    },
+    "fixed_cf125_d8": {
+      "base": "fixed_grid",
+      "overrides": {
+        "fixed_control_fraction": 0.125,
+        "fixed_depth": 8
+      }
+    },
+    "fixed_cf250_d16": {
+      "base": "fixed_grid",
+      "overrides": {
+        "fixed_control_fraction": 0.25,
+        "fixed_depth": 16
+      }
+    },
+    "fixed_cf250_d32": {
+      "base": "fixed_grid",
+      "overrides": {
+        "fixed_control_fraction": 0.25,
+        "fixed_depth": 32
+      }
+    },
+    "fixed_cf500_d16": {
+      "base": "fixed_grid",
+      "overrides": {
+        "fixed_control_fraction": 0.5,
+        "fixed_depth": 16
+      }
+    },
+    "fixed_cf500_d32": {
+      "base": "fixed_grid",
+      "overrides": {
+        "fixed_control_fraction": 0.5,
+        "fixed_depth": 32
+      }
+    },
+    "fixed_cf500_d8": {
+      "base": "fixed_grid",
+      "overrides": {
+        "fixed_control_fraction": 0.5,
+        "fixed_depth": 8
+      }
+    }
+  }
+}
