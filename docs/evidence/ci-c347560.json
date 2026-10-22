@@ -1,0 +1,149 @@
+{
+  "repository": "abdullah2hamza-blip/MLResearch",
+  "commit": "c347560b054f7cfe5363f9a4291fcaa3ed9fbb5a",
+  "run_id": 39717233811,
+  "workflow": "Fast offline checks",
+  "event": "push",
+  "status": "completed",
+  "conclusion": "success",
+  "url": "https://github.com/abdullah2hamza-blip/MLResearch/actions/runs/39717233811",
+  "updated_at": "2026-10-22T03:32:08Z",
+  "jobs": [
+    {
+      "name": "checks (ubuntu-latest)",
+      "id": 119622140815,
+      "status": "completed",
+      "conclusion": "success",
+      "steps": [
+        {
+          "name": "Set up job",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/checkout@v7",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/setup-python@v7",
+          "conclusion": "success"
+        },
+        {
+          "name": "Install locked environment",
+          "conclusion": "success"
+        },
+        {
+          "name": "Prepare local test directory",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run uv run --locked python -m pytest --basetemp .cache/pytest",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run uv run --locked ruff check src tests",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run uv run --locked ruff format --check src tests",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run uv run --locked python -m mypy src/mlresearch",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run uv run --locked mlresearch --help",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run uv run --locked mlresearch data list",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run uv run --locked mlresearch demo --directory .cache/offline-demo",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/setup-python@v7",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/checkout@v7",
+          "conclusion": "success"
+        },
+        {
+          "name": "Complete job",
+          "conclusion": "success"
+        }
+      ]
+    },
+    {
+      "name": "checks (windows-latest)",
+      "id": 119622140982,
+      "status": "completed",
+      "conclusion": "success",
+      "steps": [
+        {
+          "name": "Set up job",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/checkout@v7",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/setup-python@v7",
+          "conclusion": "success"
+        },
+        {
+          "name": "Install locked environment",
+          "conclusion": "success"
+        },
+        {
+          "name": "Prepare local test directory",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run uv run --locked python -m pytest --basetemp .cache/pytest",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run uv run --locked ruff check src tests",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run uv run --locked ruff format --check src tests",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run uv run --locked python -m mypy src/mlresearch",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run uv run --locked mlresearch --help",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run uv run --locked mlresearch data list",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run uv run --locked mlresearch demo --directory .cache/offline-demo",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/setup-python@v7",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/checkout@v7",
+          "conclusion": "success"
+        },
+        {
+          "name": "Complete job",
+          "conclusion": "success"
+        }
+      ]
+    }
+  ]
+}

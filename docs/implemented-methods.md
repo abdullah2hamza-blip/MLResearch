@@ -12,6 +12,8 @@ Identification is evaluated before ridge: a query must lie in the numerical row 
 
 Every policy receives the same public source summaries and the same paid pilot: recipient controls, then seeded calibration identities. The same finite cell order is used for matched policy comparisons. Blocks, setup charges, cell charges, control charges and budgets are frozen in configuration. Each observation updates paid sufficient statistics only after a successful purchase. New interventions require setup costs; increasing depth does not. Each purchase contains previously unseen cell IDs. Unused budget is recorded when a whole block cannot fit. Separate scorer controls are never predictors' paid controls.
 
+The service's ability to request a chosen intervention's next cell block is a retrospective design abstraction. A pooled screen does not automatically offer that physical action; implementing it may require library reweighting, enrichment, sorting or arrayed work. Setup and measurement units are hypothetical accounting parameters, not verified laboratory prices. Prospective feasibility and cost must be established before claiming laboratory savings.
+
 Current policies are:
 
 | Policy | Executed decision rule |

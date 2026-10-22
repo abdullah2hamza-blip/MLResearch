@@ -1,0 +1,64 @@
+{
+  "analysis_environment": {
+    "git": {
+      "revision": "c347560b054f7cfe5363f9a4291fcaa3ed9fbb5a",
+      "status": "M docs/implementation-status.md"
+    },
+    "packages": {
+      "h5py": "3.16.0",
+      "matplotlib": "3.11.2",
+      "mlresearch": "0.1.0",
+      "numpy": "2.5.4",
+      "pytest": "9.1.1",
+      "scipy": "1.18.1"
+    },
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.14",
+    "recorded_at": "2026-10-22T03:38:38.871198+00:00",
+    "source_hashes": {
+      "__init__.py": "bb8543f534bc0779c941e08d8786d17c10a58bfc43e97e080422afc3757c8eb0",
+      "__main__.py": "b0d77ab859d763e6f3785dd41bbd3ff202db56bab564968167beefa5d5580d17",
+      "acquisition.py": "52e82caa4c80dd4e577bb2e90cdaca52caf35fc8c97000e529161c21596be19d",
+      "cli.py": "9005059fb5b78a917ea19d13a4ce3099bef04127280d8b087ad522997d2e9aa3",
+      "data.py": "ac2e62e8a74960d279f681cd4983d5a2f42f3cf13c8b8fde1887fc6265953789",
+      "datasets.json": "e90daa691730f09ba8885f1777ed5ae379f075d010a1dc3093c23272865e8881",
+      "episodes.py": "62f0ee1615fcd268aec088a83e34c0744b981523a74f58fc34a7fb3a110328c6",
+      "experiment.py": "625000dea66b2fd9a8480a457e57b7b0ac7678c24693846851d60534178aa41c",
+      "linear.py": "614d58fc6e8280e6559eb41e1d015723763ebb1db2469b5a7fe5a3ccb270566f",
+      "models.py": "2c93ff76f0701527510fe2e514e297449d68da69ac51d7dc50dc35263f675118",
+      "policies.py": "326398f47ea885da313ca5e0f3d1c4a48aaab2e2b98fda7e116643da6853abf8",
+      "prepare.py": "ee8db1f477dc3185104013f08358682b6255c479226a3935acc17614eb5bf75e",
+      "provenance.py": "d908200cc6c7e92d8cdfbdb4cb6deef29f48fb54e9d16f24b68b4cbe55ce9087",
+      "report.py": "284c7bb57bdd6e68e128148e46e35c3cdbc66d848715bb11cd5ee2ceeff1483f",
+      "simulation.py": "67c391950a553ca7f536bbe9c81718958d8da5ac4f54e2815fda69ffd774c2d0"
+    },
+    "source_tree_sha256": "1a64fded5e2de23c6000b6a6d9cf662367e5cc7a2c797458e2e50e7e18f547c4"
+  },
+  "analysis_source_snapshot": {
+    "path": "analysis-code.zip",
+    "purpose": "Exact package sources plus available project dependency specification.",
+    "sha256": "add1b059bd735255f2e63dde0a353d8979faf3f7960e35979490661d453ec99b"
+  },
+  "large_outputs": "Raw/prepared cells and prediction arrays remain ignored; regenerate from pinned inputs and saved configurations.",
+  "metrics_uncompressed_sha256": "70be87f06af4303b6912995bd8867b1e2d623e092a4a326619e867e9e2279f4d",
+  "raw_cells_included": false,
+  "run_directory": "runs\\frangieh-development-v2",
+  "sha256": {
+    "acquisition-curves.png": "389f7aec752f3724744ba62bd13b5a8fd29d36114e65a7b9c673c1c47d721555",
+    "acquisition-curves.svg": "710c0eba3d6b3743e41556a503dfb9536fe49f66cdf7041e966fe834d26ec81a",
+    "allocations.csv": "397f0a8ba17870b637d0bb2665c05aebd97e862b161ba278d5411f1d53dd5f43",
+    "analysis-code.zip": "add1b059bd735255f2e63dde0a353d8979faf3f7960e35979490661d453ec99b",
+    "areas-by-query-seed.csv": "4aa3c2d66154b86fe56432f654a409773421974a8e382c83d449e6d7d7d81bfa",
+    "code.zip": "add1b059bd735255f2e63dde0a353d8979faf3f7960e35979490661d453ec99b",
+    "curves.csv": "e0ca8710e3978c5d5977da1d6fb9f211634a01eceb28e9bbb6cec7ed3a154753",
+    "metrics.csv.gz": "eaf4568f411a6af1d58db5c9bf225fa3ad09408d12e93b1713a43169385714c0",
+    "paired-comparisons.csv": "ea3196f3ae8137ad0c13ef03f0ccff653ae2f948a48b0aec1efa5d5b4729e205",
+    "prediction-index.json": "92f5f95523d94de6351f8558d8c577e3dedbc60cf6c34031848b5f4b4e2ed883",
+    "predictor-curves.png": "07a2c46be1d36cfd50ebcfdeb9750d9143d6df7db0de9c3025393b7aa48390b4",
+    "predictor-curves.svg": "5557f45d497577348aa86063503910b9519be68c7f3ed7ca8901ac2137a83af5",
+    "results.md": "55eebc0f90b18a43d54409700d5fe1fc2a241bbbf819d7e38049f181e1f589ef",
+    "risk-retention.csv": "b94bd588a5fe3bca5e6cd5e7a10dfd44b2eed566a1632e3883eaa48d7e8267e8",
+    "run-manifest.json": "3307568f128347d52632a3c41562dc0b3ce4bf5f139502f27a5e35cb07829f44",
+    "summary.json": "255542b1f28db5913a4dab8964c882d46764da8f7d236d9738e1e84ad55cc16b"
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "completed_at": "2026-10-22T03:37:22.876405+00:00",
+  "configuration": {
+    "budgets": [
+      128,
+      256,
+      512
+    ],
+    "episode_directory": "data/episodes/frangieh-control-to-ifng-v1",
+    "label": "development follow-up: paid covariance-correct ridge validation added; original primary fixed-ridge pilot retained",
+    "output_directory": "runs/frangieh-development-v2",
+    "policies": [
+      "random_equal",
+      "fixed_grid",
+      "diversity",
+      "d_optimal",
+      "worst_query",
+      "reliability",
+      "disagreement",
+      "bias_aware"
+    ],
+    "policy": {
+      "block_cells": 8,
+      "cell_cost": 1,
+      "control_cell_cost": 1,
+      "discrepancy_weight": 0.25,
+      "fixed_control_fraction": 0.25,
+      "kernel_length": 1.0,
+      "pilot_controls": 16,
+      "pilot_interventions": 6,
+      "rank": 4,
+      "ridge": 0.1,
+      "ridge_grid": [
+        0.1,
+        1.0,
+        10.0,
+        100.0,
+        1000.0
+      ],
+      "setup_cost": 4
+    },
+    "primary_backbone": "ridge_cv",
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "configuration_sha256": "71220029496f4dd5e71a6cfd3eef4bca91d1c2569e3a381e7ebc6c0c71c8a64a",
+  "environment": {
+    "git": {
+      "revision": "c347560b054f7cfe5363f9a4291fcaa3ed9fbb5a",
+      "status": ""
+    },
+    "packages": {
+      "h5py": "3.16.0",
+      "matplotlib": "3.11.2",
+      "mlresearch": "0.1.0",
+      "numpy": "2.5.4",
+      "pytest": "9.1.1",
+      "scipy": "1.18.1"
+    },
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.14",
+    "recorded_at": "2026-10-22T03:30:32.025859+00:00",
+    "source_hashes": {
+      "__init__.py": "bb8543f534bc0779c941e08d8786d17c10a58bfc43e97e080422afc3757c8eb0",
+      "__main__.py": "b0d77ab859d763e6f3785dd41bbd3ff202db56bab564968167beefa5d5580d17",
+      "acquisition.py": "52e82caa4c80dd4e577bb2e90cdaca52caf35fc8c97000e529161c21596be19d",
+      "cli.py": "9005059fb5b78a917ea19d13a4ce3099bef04127280d8b087ad522997d2e9aa3",
+      "data.py": "ac2e62e8a74960d279f681cd4983d5a2f42f3cf13c8b8fde1887fc6265953789",
+      "datasets.json": "e90daa691730f09ba8885f1777ed5ae379f075d010a1dc3093c23272865e8881",
+      "episodes.py": "62f0ee1615fcd268aec088a83e34c0744b981523a74f58fc34a7fb3a110328c6",
+      "experiment.py": "625000dea66b2fd9a8480a457e57b7b0ac7678c24693846851d60534178aa41c",
+      "linear.py": "614d58fc6e8280e6559eb41e1d015723763ebb1db2469b5a7fe5a3ccb270566f",
+      "models.py": "2c93ff76f0701527510fe2e514e297449d68da69ac51d7dc50dc35263f675118",
+      "policies.py": "326398f47ea885da313ca5e0f3d1c4a48aaab2e2b98fda7e116643da6853abf8",
+      "prepare.py": "ee8db1f477dc3185104013f08358682b6255c479226a3935acc17614eb5bf75e",
+      "provenance.py": "d908200cc6c7e92d8cdfbdb4cb6deef29f48fb54e9d16f24b68b4cbe55ce9087",
+      "report.py": "284c7bb57bdd6e68e128148e46e35c3cdbc66d848715bb11cd5ee2ceeff1483f",
+      "simulation.py": "67c391950a553ca7f536bbe9c81718958d8da5ac4f54e2815fda69ffd774c2d0"
+    },
+    "source_tree_sha256": "1a64fded5e2de23c6000b6a6d9cf662367e5cc7a2c797458e2e50e7e18f547c4"
+  },
+  "episode_manifest_sha256": "f0e6bc6d8791c687d0286ee7cce0ec43cd9a088514a0cfc41d3367d1aaa8c151",
+  "fixed_public_source_cells": 19708,
+  "inference_unit": "Paired query intervention; seeds measure acquisition variability, not biological replication.",
+  "limitations": [
+    "Intervals are ideal Gaussian diagnostics; post-selection coverage is unvalidated.",
+    "Scalar variances omit gene heteroskedasticity, guide/batch effects and source-coordinate uncertainty.",
+    "Unregularized ideal variances do not account for ridge shrinkage bias.",
+    "The discrepancy objective uses fixed-kernel variance as a surrogate for the ridge predictor's residual risk.",
+    "Seeds and cells are not independent biological replicates.",
+    "Local residual baseline is an adaptation, not a PerturbMap reproduction.",
+    "Fixed-grid settings have not yet been tuned on a development validation design."
+  ],
+  "predictions_sha256": "92f5f95523d94de6351f8558d8c577e3dedbc60cf6c34031848b5f4b4e2ed883",
+  "primary_backbone": "ridge_cv",
+  "primary_comparator": "worst_query",
+  "primary_endpoint": "Mean full aligned-gene squared control-relative error; trapezoidal area over the fixed budget grid divided by grid width.",
+  "resources_end": {
+    "available_ram_bytes": 1130229760,
+    "disk_free_bytes": 657243996160,
+    "disk_total_bytes": 1002016075776,
+    "logical_cpus": 16,
+    "ram_bytes": 16418983936,
+    "recorded_at": "2026-10-22T03:37:22.904623+00:00"
+  },
+  "resources_start": {
+    "available_ram_bytes": 2732122112,
+    "disk_free_bytes": 664202952704,
+    "disk_total_bytes": 1002016075776,
+    "logical_cpus": 16,
+    "ram_bytes": 16418983936,
+    "recorded_at": "2026-10-22T03:30:48.234293+00:00"
+  },
+  "results_sha256": "70be87f06af4303b6912995bd8867b1e2d623e092a4a326619e867e9e2279f4d",
+  "runtime_seconds": 411.31564400000207,
+  "schema_version": 1,
+  "scorer_only_assessment_cells": 1888,
+  "source_coordinates": {
+    "explained_fraction": 0.09308099181066051,
+    "rank": 4,
+    "source_half_noise": 0.0028253257827920092
+  },
+  "source_snapshot": {
+    "path": "code.zip",
+    "purpose": "Exact package sources plus available project dependency specification.",
+    "sha256": "add1b059bd735255f2e63dde0a353d8979faf3f7960e35979490661d453ec99b"
+  },
+  "state": "complete"
+}
