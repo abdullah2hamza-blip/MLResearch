@@ -12,12 +12,22 @@
     "strongest-development-reference deviation and post-primary comparisons",
     "conditional count-blind interface;cohort capture bias retained"
   ],
-  "recorded_at": "2026-10-22T23:14:10.915038+00:00",
-  "remaining_required_work": [
-    "publish final code/results/docs",
-    "confirm expanded Windows and Ubuntu CI",
-    "reconcile final ledger and goal status"
-  ],
+  "publication": {
+    "branch": "main",
+    "code_results_commit": "f892907323353166acb5dff31827bbc87ec8d938",
+    "hosted_ci_conclusion": "success",
+    "hosted_ci_run": 39870606542,
+    "hosted_matrices": [
+      "ubuntu-latest",
+      "windows-latest"
+    ],
+    "qualification": "Final evidence/docs record follows the verified code/results commit; package, tests, helpers, configurations and workflow are unchanged.",
+    "repository": "https://github.com/abdullah2hamza-blip/MLResearch",
+    "staged_bytes_verified": 84706292,
+    "staged_files_byte_verified_before_code_results_commit": 265
+  },
+  "recorded_at": "2026-10-22T23:19:37.456663+00:00",
+  "remaining_required_work": [],
   "requirements": [
     {
       "computational_scope": "verified",
@@ -32,6 +42,7 @@
     {
       "computational_scope": "verified",
       "evidence_sha256": {
+        "docs/evidence/ci-f892907.json": "da707dbf617fd41450a7102dd4fbbed768d2f12f51b32fffc50e9d7d2da24902",
         "docs/evidence/final-local-checks-v1.json": "99e5e3f71e055834beb598189dfff6955d7681984b0e69c39fe8ce74ab912faa",
         "docs/evidence/installed-wheel-a04f92f.json": "fa869b8e855300cc2291e7d2b280f7678ee19fd31f29583592973c2011189ac8",
         "docs/implementation-guide.md": "988129d6c4e3299b6cee801f3ced99e3d9b9836700a79a24410bd2b17cc38f6d",
@@ -78,7 +89,7 @@
       "computational_scope": "verified",
       "evidence_sha256": {
         "docs/results/external-evaluation-v1/supplement/summary.json": "ebe12b14106cdd873eb188310cb8d7d56c19383962dacc24599995286778418f",
-        "docs/secondary-supplement-findings.md": "c37603d05c4b09b4f63a0372f82f8f2dd83c1f440b8a3a0dd8f00e786906be09",
+        "docs/secondary-supplement-findings.md": "437dc83792ca379b2fc78a93ec33d7e79cfd4e7365d5e527442654bd839fd442",
         "docs/transfer-comparator-protocol.md": "4b15212f565d39e7154a678c8201536a80c48f9458aa2b6046db398a8dd2128e"
       },
       "name": "Matched comparators",
@@ -100,12 +111,13 @@
       "computational_scope": "verified",
       "evidence_sha256": {
         ".github/workflows/checks.yml": "2ab137a824906de781babbeba534aeaa5c44273f90942c0a0e144d79e9da7856",
+        "docs/evidence/ci-f892907.json": "da707dbf617fd41450a7102dd4fbbed768d2f12f51b32fffc50e9d7d2da24902",
         "docs/evidence/final-local-checks-v1.json": "99e5e3f71e055834beb598189dfff6955d7681984b0e69c39fe8ce74ab912faa",
         "tests/test_ranking_diagnostics.py": "a6663c0ac161122cc3260dae82e55c61af77a38dd7d7f4f195d66d9f83467dca",
         "tests/test_secondary_diagnostics.py": "cf663fb97f0cd8ca2dd186ab437d8c10b5f1ae325a0aced5f964c9d61c2a9e7f"
       },
       "name": "Correctness and CI",
-      "qualification": "108 passing local tests; independent covariance/leakage/determinism references;60-file lint/format and22-module types. Final hosted result pending publication.",
+      "qualification": "108 tests,60-file lint/format,22-module types and every offline CLI/resume/retention check passed on both hosted OS matrices and locally.",
       "requirement": 8
     },
     {
@@ -123,9 +135,9 @@
     {
       "computational_scope": "verified",
       "evidence_sha256": {
-        "docs/research-report.md": "084629756d9a72a8f0692f068a8f66c4215dc85e25565de027cbd1b04c86fab7",
+        "docs/research-report.md": "9f4e4e2a866e4a81fb8dc74f4dd88622db125eb7c7250225bde960711a6dd817",
         "docs/results/secondary-supplement-v1/diagnostic-analysis/summary.json": "1ac366de1bb5885656c7d0e38ce1cd0d3fdd952216e762b7d8421403114bf2a3",
-        "docs/secondary-supplement-findings.md": "c37603d05c4b09b4f63a0372f82f8f2dd83c1f440b8a3a0dd8f00e786906be09"
+        "docs/secondary-supplement-findings.md": "437dc83792ca379b2fc78a93ec33d7e79cfd4e7365d5e527442654bd839fd442"
       },
       "name": "Actual analysis",
       "qualification": "Primary remains fixed; comparator-selection deviation and post-primary timing explicit; all promised secondary analyses complete with denominator/cost/uncertainty limitations.",
@@ -134,13 +146,14 @@
     {
       "computational_scope": "verified",
       "evidence_sha256": {
+        "docs/evidence/ci-f892907.json": "da707dbf617fd41450a7102dd4fbbed768d2f12f51b32fffc50e9d7d2da24902",
         "docs/evidence/external-retention-verification-v1.json": "9fa791503fd89f580f65db8091f614467c363be593d78b5bbe819d2a7e6338ac",
         "docs/evidence/secondary-retention-verification-v1.json": "fa09002fd414d09b46d090e255f598b790006b664ea4e6293d38a04a8ef777c9",
-        "docs/implementation-status.md": "736fc1824db542ad5081b6c7c34ce2dc8d1c85c783d2683635ffc643d042ba8a",
-        "docs/secondary-supplement-reproduction.md": "4391aab2c5c169aba8bae703c2f8a51f1c0bb4058adbfb819e233ad7404eb6c6"
+        "docs/implementation-status.md": "724cc9c8bab49a5d167ecd95260f93a10df0cbaf943941bb28f3d001510badb9",
+        "docs/secondary-supplement-reproduction.md": "59d6f9e86d66ca104bfa60554e67a51d9292f5504012d381179a51e51e92bc16"
       },
       "name": "Research artifacts",
-      "qualification": "229 secondary+179 unchanged primary files verified; all11 full requirements and original-plan extras reviewed. Final publication/CI pending.",
+      "qualification": "All11 full requirements and original-plan extras reviewed;229 secondary+179 unchanged primary files verified; code/results published with passing expanded hosted CI; final evidence/docs record retained.",
       "requirement": 11
     }
   ],
@@ -150,5 +163,5 @@
     "inaccessible full competitor methods remain explicit",
     "one primary720-checkpoint suite;raw preparation and episodes separately reproduced"
   ],
-  "state": "computational_scope_verified_publication_pending"
+  "state": "complete"
 }

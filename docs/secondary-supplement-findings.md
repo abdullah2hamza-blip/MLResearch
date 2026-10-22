@@ -39,7 +39,7 @@ Authenticated frozen predictions from all six external runs and 70 original cont
 
 At budget 512 under extension purchases, paid-validation ridge's fixed-gene rank score is **.07931 forward and .03856 reverse**. All 7,226 genes in all five seeds have defined ranks here (36,130 gene/seed observations per direction). Permuting gene coordinates only in scoring reduces these to .00791/.00207. Zero and shared-mean predictions have no perturbation ordering: their conditional correlations are undefined and their neutral aggregates are zero. Some other checkpoints include null ridge fits; the [full table](results/secondary-supplement-v1/diagnostic-analysis/ranking-by-world.csv) reports the resulting defined fractions rather than dropping them silently.
 
-The reconstruction's forward rank score (.09087) exceeds paid ridge's while its absolute MSE is higher. In reverse, source copy ranks better (.06824 approximately), while its absolute error is much larger. Ranking and absolute-effect estimation therefore answer different questions. A common per-gene control shift cancels in ranks; that invariance does not validate absolute effects or guarantee useful biological ranking.
+The reconstruction's forward rank score (.09087) exceeds paid ridge's while its absolute MSE is higher. In reverse, source copy ranks better (.06820), while its absolute error is much larger. Ranking and absolute-effect estimation therefore answer different questions. A common per-gene control shift cancels in ranks; that invariance does not validate absolute effects or guarantee useful biological ranking.
 
 ![Absolute error and actual ordinal ranking](results/secondary-supplement-v1/diagnostic-analysis/figures/absolute-error-versus-ordinal-ranking.png)
 

@@ -5,8 +5,8 @@ perturbation prediction: joint allocation of calibration identities, cell depth
 and shared controls under sealed recipient queries.
 
 The [research report](docs/research-report.md) retains the completed experiments
-and negative primary result. The proposed discrepancy extension does not improve
-classical worst-query acquisition in either frozen K562/RPE1 direction by the primary test.
+and negative primary result. The primary test found no demonstrated improvement
+over classical worst-query acquisition in either frozen K562/RPE1 direction.
 
 - [External results and standalone figures](docs/external-evaluation-findings.md)
 - [Secondary cost, ranking and interval checks](docs/secondary-supplement-findings.md)

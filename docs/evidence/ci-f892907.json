@@ -1,0 +1,262 @@
+{
+  "checked_at": "2026-10-22T23:19:10.248Z",
+  "commit": "f892907323353166acb5dff31827bbc87ec8d938",
+  "conclusion": "success",
+  "run_id": 39870606542,
+  "url": "https://github.com/abdullah2hamza-blip/MLResearch/actions/runs/39870606542",
+  "checks": [
+    "108 tests",
+    "60-file src/tests/scripts lint and format",
+    "22-module mypy",
+    "all original offline CLI checks",
+    "secondary coordinate/interval/ranking CLI",
+    "idempotent authenticated ranking resume",
+    "229-file secondary plus unchanged179-file primary retention verification"
+  ],
+  "jobs": [
+    {
+      "id": 120143780375,
+      "name": "checks (ubuntu-latest)",
+      "conclusion": "success",
+      "url": "https://github.com/abdullah2hamza-blip/MLResearch/actions/runs/39870606542/job/120143780375",
+      "started_at": "2026-10-22T23:15:45Z",
+      "completed_at": "2026-10-22T23:16:37Z",
+      "steps": [
+        {
+          "name": "Set up job",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/checkout@v7",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/setup-python@v7",
+          "conclusion": "success"
+        },
+        {
+          "name": "Install locked environment",
+          "conclusion": "success"
+        },
+        {
+          "name": "Prepare local test directory",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run uv run --locked python -m pytest --basetemp .cache/pytest",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run uv run --locked ruff check src tests scripts",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run uv run --locked ruff format --check src tests scripts",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run uv run --locked python -m mypy src/mlresearch",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run uv run --locked mlresearch --help",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run uv run --locked mlresearch data list",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run uv run --locked mlresearch demo --directory .cache/offline-demo",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run uv run --locked mlresearch external configs/external-smoke.json",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run uv run --locked mlresearch score-external .cache/external-smoke-suite",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run uv run --locked python scripts/audit-external-completion.py .cache/external-smoke-suite --output .cache/external-smoke-audit.json",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run uv run --locked python scripts/report-external-suite.py .cache/external-smoke-suite --output .cache/external-smoke-reports",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run uv run --locked python scripts/analyze-external-suite.py .cache/external-smoke-suite --output .cache/external-smoke-supplement",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run uv run --locked python scripts/retain-external-diagnostics.py .cache/external-smoke-suite --output .cache/external-smoke-diagnostics",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run uv run --locked python scripts/secondary-frozen-diagnostics.py --external-suite .cache/external-smoke-suite --output .cache/secondary-frozen-smoke",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run uv run --locked python scripts/ranking-diagnostics.py --diagnostics .cache/secondary-frozen-smoke --output .cache/ranking-smoke",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run uv run --locked python scripts/ranking-diagnostics.py --diagnostics .cache/secondary-frozen-smoke --output .cache/ranking-smoke --resume",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run uv run --locked python scripts/verify-secondary-retention.py --bundle docs/results/secondary-supplement-v1 --primary docs/results/external-evaluation-v1 --output .cache/secondary-retention.json",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run uv run --locked mlresearch uncertainty .cache/offline-demo/experiment --output .cache/uncertainty.json --samples 200",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run uv run --locked mlresearch account-development --output .cache/development-cost.json .cache/offline-demo/experiment",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run uv run --locked mlresearch study configs/study-smoke.json",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/setup-python@v7",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/checkout@v7",
+          "conclusion": "success"
+        },
+        {
+          "name": "Complete job",
+          "conclusion": "success"
+        }
+      ]
+    },
+    {
+      "id": 120143780887,
+      "name": "checks (windows-latest)",
+      "conclusion": "success",
+      "url": "https://github.com/abdullah2hamza-blip/MLResearch/actions/runs/39870606542/job/120143780887",
+      "started_at": "2026-10-22T23:15:45Z",
+      "completed_at": "2026-10-22T23:18:07Z",
+      "steps": [
+        {
+          "name": "Set up job",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/checkout@v7",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/setup-python@v7",
+          "conclusion": "success"
+        },
+        {
+          "name": "Install locked environment",
+          "conclusion": "success"
+        },
+        {
+          "name": "Prepare local test directory",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run uv run --locked python -m pytest --basetemp .cache/pytest",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run uv run --locked ruff check src tests scripts",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run uv run --locked ruff format --check src tests scripts",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run uv run --locked python -m mypy src/mlresearch",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run uv run --locked mlresearch --help",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run uv run --locked mlresearch data list",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run uv run --locked mlresearch demo --directory .cache/offline-demo",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run uv run --locked mlresearch external configs/external-smoke.json",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run uv run --locked mlresearch score-external .cache/external-smoke-suite",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run uv run --locked python scripts/audit-external-completion.py .cache/external-smoke-suite --output .cache/external-smoke-audit.json",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run uv run --locked python scripts/report-external-suite.py .cache/external-smoke-suite --output .cache/external-smoke-reports",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run uv run --locked python scripts/analyze-external-suite.py .cache/external-smoke-suite --output .cache/external-smoke-supplement",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run uv run --locked python scripts/retain-external-diagnostics.py .cache/external-smoke-suite --output .cache/external-smoke-diagnostics",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run uv run --locked python scripts/secondary-frozen-diagnostics.py --external-suite .cache/external-smoke-suite --output .cache/secondary-frozen-smoke",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run uv run --locked python scripts/ranking-diagnostics.py --diagnostics .cache/secondary-frozen-smoke --output .cache/ranking-smoke",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run uv run --locked python scripts/ranking-diagnostics.py --diagnostics .cache/secondary-frozen-smoke --output .cache/ranking-smoke --resume",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run uv run --locked python scripts/verify-secondary-retention.py --bundle docs/results/secondary-supplement-v1 --primary docs/results/external-evaluation-v1 --output .cache/secondary-retention.json",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run uv run --locked mlresearch uncertainty .cache/offline-demo/experiment --output .cache/uncertainty.json --samples 200",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run uv run --locked mlresearch account-development --output .cache/development-cost.json .cache/offline-demo/experiment",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run uv run --locked mlresearch study configs/study-smoke.json",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/setup-python@v7",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/checkout@v7",
+          "conclusion": "success"
+        },
+        {
+          "name": "Complete job",
+          "conclusion": "success"
+        }
+      ]
+    }
+  ]
+}

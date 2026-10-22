@@ -40,3 +40,9 @@ uv run --locked python scripts/check-full-preparation-reproduction.py --director
 This creates another approximately 9.6 GB of ignored matrices, verifies all metadata and every output-file byte, and archives code/config/manifests without expression matrices. It preserves the originals. The published execution verified all 2,405,927,872 values exactly. `--resume` requires identical source/config identity and authenticates finished comparisons; use it only after verifying the original process has stopped. The RPE1 IO block change is explicitly recorded. Historical preparation source hashes remain historical even when current output is exact.
 
 The retained secondary bundle includes full CSV tables (largest about 22.3 MB), hash-bound ranking shards, compressed cell-ID ledgers and per-query metrics, and PNG/SVG/PDF figures. Raw/prepared expression and full prediction arrays stay ignored. `supplement-artifacts.json` covers all retained files except itself; `analysis-helpers.zip` preserves the actual supplementary scripts. Check the [retention verification](evidence/secondary-retention-verification-v1.json) before interpreting or modifying a copy. Reports record their own source/input hashes because Git environment status intentionally omits untracked files and alone cannot establish that a script was committed when run.
+
+The retained-bundle check needs no raw datasets or prediction matrices:
+
+```sh
+uv run --locked python scripts/verify-secondary-retention.py --bundle docs/results/secondary-supplement-v1 --primary docs/results/external-evaluation-v1 --output runs/reproduced-secondary-retention.json
+```
