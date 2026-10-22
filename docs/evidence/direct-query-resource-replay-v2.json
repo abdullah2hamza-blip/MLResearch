@@ -1,0 +1,24 @@
+{
+  "all60_ledgers_byte_identical": true,
+  "all60_prediction_arrays_equal_to_initial_execution": true,
+  "current_manifest_sha256": "52352910aed429d3704ed23c08cb5a93a25161cf3897298983820b432cda503a",
+  "process_cpu_seconds": 22.90625,
+  "qualification": "Repeat of the exact fixed reference to add explicit per-process environment/CPU/memory accounting. Same data and predictions; not additional independent evidence or replication.",
+  "recorded_at": "2026-10-22T22:10:35.036382+00:00",
+  "resources_end": {
+    "available_ram_bytes": 1286328320,
+    "disk_free_bytes": 615859875840,
+    "disk_total_bytes": 1002016075776,
+    "logical_cpus": 16,
+    "memory_scope": "Current process; peak is over its lifetime, not a per-case delta.",
+    "peak_commit_bytes": 250769408,
+    "peak_working_set_bytes": 762994688,
+    "process_id": 14604,
+    "ram_bytes": 16418983936,
+    "recorded_at": "2026-10-22T22:00:25.371015+00:00",
+    "working_set_bytes": 688205824
+  },
+  "runtime_seconds": 37.094780799990986,
+  "source_sha256": "7aaf803034265321a0530ef3a88f8c0f03d17bd399d70066f633fb0d4b1e389b",
+  "state": "passed"
+}

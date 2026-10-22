@@ -1,0 +1,28 @@
+{
+  "actual_helper_archive_sources_match": true,
+  "full_preparation_archive_hash_and_crc_verified": true,
+  "git_diff_check": "passed",
+  "local_document_links_verified": 158,
+  "mypy_source_modules": 22,
+  "package_source_sha256": "5df3ead591e659904efc40a4bce1bf977dccca9919c2f1fea370d2f2b4c2c696",
+  "pytest_command": "python -m pytest --basetemp .cache/pytest-final-108-v1",
+  "pytest_seconds": 87.98,
+  "pytest_terminal_session": 85126,
+  "python": "3.12.14",
+  "qualification": "Local Windows verification; hosted Windows/Ubuntu verification follows publication. No package scientific-source changes since a04f92f.",
+  "recorded_at": "2026-10-22T23:13:24.592766+00:00",
+  "ruff_check": "passed",
+  "ruff_format_files": 60,
+  "ruff_scope": "src tests scripts",
+  "state": "passed",
+  "supplement_source_bindings_verified": [
+    "direct-query/manifest.json",
+    "frozen-diagnostics-complete/summary.json",
+    "ranking/summary.json",
+    "allocation-analysis/summary.json",
+    "diagnostic-analysis/summary.json",
+    "count-interface-sensitivity-v1.json",
+    "full-preparation-reproduction-v1.json"
+  ],
+  "tests": 108
+}

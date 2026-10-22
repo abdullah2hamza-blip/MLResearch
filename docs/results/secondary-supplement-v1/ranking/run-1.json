@@ -1,0 +1,32 @@
+{
+  "input": {
+    "checkpoints": 240,
+    "generative_seed": null,
+    "public_interface_fields": [
+      "interventions",
+      "query_ids",
+      "candidate_ids",
+      "genes",
+      "source_effects",
+      "source_per_cell_variance",
+      "source_effect_mean_variance",
+      "source_half_difference"
+    ],
+    "queries": 131,
+    "run": "external-rpe1-to-k562-v1",
+    "run_directory": "C:\\Users\\Abdul\\Documents\\MLResearch\\runs\\external-rpe1-to-k562-v1",
+    "run_manifest_sha256": "51c1bd407974b76b7153af2cafa725494c4ab7d4ed263984b41a4047746fc9c2",
+    "scenario": "external",
+    "scope": "external_assessment",
+    "source_condition_counts": [
+      96
+    ],
+    "uncapped_counts_absent_from_public_interface": true,
+    "uniform_candidate_pool_cells": [
+      64
+    ]
+  },
+  "rows": 2160,
+  "sha256": "9afa35b2a43fdfebbe7c503fa835cc7746e80c774e687b3f396771361cbd5058",
+  "shard": "run-1-attempt-0.csv"
+}

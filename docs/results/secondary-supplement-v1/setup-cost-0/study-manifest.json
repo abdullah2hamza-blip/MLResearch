@@ -1,0 +1,288 @@
+{
+  "cases": [
+    {
+      "generative_seed": 171,
+      "manifest_sha256": "68e17f91eb31bfe2dcf540121174650d2fd31f6bf20570344749427d342b7c17",
+      "run": "runs\\setup-cost-0-v1\\world-171\\baseline\\run",
+      "scenario": "baseline",
+      "truth_metrics_sha256": "8e008b8002d4a6013ea99642a7bd207632f870ab6fcdff37827b879bcf306810"
+    },
+    {
+      "generative_seed": 171,
+      "manifest_sha256": "0a3fbdea5ab7bde0249b2c5bda9634aecd4fdf358a489e76fa18bf40abe5439f",
+      "run": "runs\\setup-cost-0-v1\\world-171\\mechanism_shift_2\\run",
+      "scenario": "mechanism_shift_2",
+      "truth_metrics_sha256": "a6a0d6c234ddde170c0a6598d4f82fe8fdd23208a7af2aed0effcb02b64888a8"
+    },
+    {
+      "generative_seed": 172,
+      "manifest_sha256": "b3e6a64493e6cb66b3cc99735a37da7d75b9a58c87738d551b482428628e7a97",
+      "run": "runs\\setup-cost-0-v1\\world-172\\baseline\\run",
+      "scenario": "baseline",
+      "truth_metrics_sha256": "686203e5c2bdca78b4c01c8d9492322ead93d73c19925f9180bb9900dc8e6a9a"
+    },
+    {
+      "generative_seed": 172,
+      "manifest_sha256": "5a74e346e564103cd29473e894e6f1d3ed206fc8c9a289bb49474417ac765a57",
+      "run": "runs\\setup-cost-0-v1\\world-172\\mechanism_shift_2\\run",
+      "scenario": "mechanism_shift_2",
+      "truth_metrics_sha256": "02347e1280ef4f8c53731943263d632fe45a0d5e13cd715e9a62a013cfd41b7a"
+    },
+    {
+      "generative_seed": 173,
+      "manifest_sha256": "b785d044ffb3f9a3ddc902dae86e1cdd389b62f2af9e267e00d427d5e23f4156",
+      "run": "runs\\setup-cost-0-v1\\world-173\\baseline\\run",
+      "scenario": "baseline",
+      "truth_metrics_sha256": "9a33de4755654f824a890e25d44bb21967c9187bc1c4467c8da3ee7ee480e4ca"
+    },
+    {
+      "generative_seed": 173,
+      "manifest_sha256": "f47233f8b036a1b7aaaca056540fd2e418dff7ca3c15ee79ca6266aa79f8a4ae",
+      "run": "runs\\setup-cost-0-v1\\world-173\\mechanism_shift_2\\run",
+      "scenario": "mechanism_shift_2",
+      "truth_metrics_sha256": "ac5f79a4d7b0fc1ad88aa186826bb39b919dc4eb8061597d29b491a1c18b5182"
+    },
+    {
+      "generative_seed": 174,
+      "manifest_sha256": "346ec291a52df9f8e5094f5fa9a84d0d87970b7aa5efc1ee3f89257d16d322c9",
+      "run": "runs\\setup-cost-0-v1\\world-174\\baseline\\run",
+      "scenario": "baseline",
+      "truth_metrics_sha256": "ddec251af4d3452783c5d1462e15469d9f67e806f9326b49fcca0ee823d0b366"
+    },
+    {
+      "generative_seed": 174,
+      "manifest_sha256": "9f6e9425992c1367573f9871b731114a21e10276bc1b9f07d0ed915c5268cbce",
+      "run": "runs\\setup-cost-0-v1\\world-174\\mechanism_shift_2\\run",
+      "scenario": "mechanism_shift_2",
+      "truth_metrics_sha256": "36cee7c8f0582a16b6648a07631fdcc9fc71280d8cd8e6038a153e1482333b7c"
+    },
+    {
+      "generative_seed": 175,
+      "manifest_sha256": "1dc5894180ea172cc224b5d8e6aaabfeb6cc3e4234c8e5925614684a052ae7b1",
+      "run": "runs\\setup-cost-0-v1\\world-175\\baseline\\run",
+      "scenario": "baseline",
+      "truth_metrics_sha256": "dbddcf0ebac7daf60f7f5dd40648bd4e0d9118c941f7d650991321af3425d281"
+    },
+    {
+      "generative_seed": 175,
+      "manifest_sha256": "5bd7f7775a8544d12bb89f095c2bd2f18ec1785598cbd4c77e5aa41b322fe43b",
+      "run": "runs\\setup-cost-0-v1\\world-175\\mechanism_shift_2\\run",
+      "scenario": "mechanism_shift_2",
+      "truth_metrics_sha256": "2978019a3f7ec9018cf99cc716d0fbfcb00731916dfd5dbb9c310315ea4d67ce"
+    }
+  ],
+  "configuration_sha256": "7b2ee209454612129ce80b491bf43991101cb5ab6b8cfd0deb26fe04b4990145",
+  "development_resource_sha256": "97979e5855ae038eef2f59ab301c51c450b445d1f4b3417dfd7d5017250c614a",
+  "environment": {
+    "git": {
+      "revision": "19811f287aa46108c8be5e609dbaacd624ce577a",
+      "status": ""
+    },
+    "packages": {
+      "h5py": "3.16.0",
+      "matplotlib": "3.11.2",
+      "mlresearch": "0.1.0",
+      "numpy": "2.5.4",
+      "pytest": "9.1.1",
+      "scipy": "1.18.1"
+    },
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.14",
+    "recorded_at": "2026-10-22T21:42:25.732687+00:00",
+    "source_hashes": {
+      "__init__.py": "bb8543f534bc0779c941e08d8786d17c10a58bfc43e97e080422afc3757c8eb0",
+      "__main__.py": "27503438dec93a74b0ebe814fc619333accf571b77f73344c6252c94b0b5d8b3",
+      "accounting.py": "8ed6d877678a1de2f8b0b6e7c0a471126cc3348c21f852f50caa7d17b1de40f8",
+      "acquisition.py": "52e82caa4c80dd4e577bb2e90cdaca52caf35fc8c97000e529161c21596be19d",
+      "cli.py": "6c3dd5025df8fdf80da117f6129bf36e3bbb87d0304589ea3b678ddd7d272f97",
+      "controls.py": "458f52e5886f97eed105e2c56701b51d2a26c080043b60ad8c39e9f6e9d24297",
+      "data.py": "ac2e62e8a74960d279f681cd4983d5a2f42f3cf13c8b8fde1887fc6265953789",
+      "datasets.json": "e90daa691730f09ba8885f1777ed5ae379f075d010a1dc3093c23272865e8881",
+      "design.py": "e83d39a64f0336ba7c5bf97deb997c68db3c72b3c09adf178a71b5d210d055e5",
+      "episodes.py": "62f0ee1615fcd268aec088a83e34c0744b981523a74f58fc34a7fb3a110328c6",
+      "experiment.py": "62caf7bff0edf14dd6e59d65a43198c7f34f72ade9c20df6e9faa2c7bdd6c6ef",
+      "external.py": "264b6312dda17caed78ba4e608f301ecaad034311189ee5c33597446fdd42a68",
+      "identifiers.py": "d0010bfbab280eabda82e43a5d286b3bc6a4c105a344102798ff1dcd97ccb2de",
+      "linear.py": "614d58fc6e8280e6559eb41e1d015723763ebb1db2469b5a7fe5a3ccb270566f",
+      "models.py": "5592d6c632bc9b9d6a47d1a1cf699a7fadc48c66fdba0a69c5e11eaa1230e8de",
+      "policies.py": "2ccb2f39cb78fafa6a3b452f0f76d4913e1660847cabb287ea382a69a01980fa",
+      "prepare.py": "ee8db1f477dc3185104013f08358682b6255c479226a3935acc17614eb5bf75e",
+      "provenance.py": "599e5f4b17cd39c44be9a7ddd27df89172ac3d3f6eca7a76b311cfea7c96a7e4",
+      "report.py": "1d370344507b9c5c668dcd61161df884a82ab3f91eeea4fa3bd71ef4f19b9f1c",
+      "simulation.py": "eaa3ff0c98f8f9970c7e7c9a6ee75d9fba37326187fb5932ab7a9a5cb0aa0076",
+      "study.py": "514dea833445eee09a3795c5796bd729f67893d54a1b28da5128087c1fe97708",
+      "transfer.py": "1f57c328560f3c5c08c978387fd62c865992816d5e3d962e239bdc40e0dbe20d",
+      "uncertainty.py": "f7fa9518a0636c7492eabe8e4bb6a6be317bc08158546f9fe0270b030ca35f73"
+    },
+    "source_tree_sha256": "5df3ead591e659904efc40a4bce1bf977dccca9919c2f1fea370d2f2b4c2c696"
+  },
+  "errors": [],
+  "resources_end": {
+    "available_ram_bytes": 511438848,
+    "disk_free_bytes": 616962195456,
+    "disk_total_bytes": 1002016075776,
+    "logical_cpus": 16,
+    "memory_scope": "Current process; peak is over its lifetime, not a per-case delta.",
+    "peak_commit_bytes": 45203456,
+    "peak_working_set_bytes": 63836160,
+    "process_id": 49816,
+    "ram_bytes": 16418983936,
+    "recorded_at": "2026-10-22T21:44:56.868549+00:00",
+    "working_set_bytes": 59604992
+  },
+  "resources_start": {
+    "available_ram_bytes": 1362255872,
+    "disk_free_bytes": 617045925888,
+    "disk_total_bytes": 1002016075776,
+    "logical_cpus": 16,
+    "memory_scope": "Current process; peak is over its lifetime, not a per-case delta.",
+    "peak_commit_bytes": 45072384,
+    "peak_working_set_bytes": 63033344,
+    "process_id": 49816,
+    "ram_bytes": 16418983936,
+    "recorded_at": "2026-10-22T21:42:26.098536+00:00",
+    "working_set_bytes": 58892288
+  },
+  "runtime_seconds": 150.62933320002048,
+  "source_snapshot": {
+    "path": "code.zip",
+    "purpose": "Exact package sources plus available project dependency specification.",
+    "sha256": "c8fa5b6732d7ccd5fb060366f0fc50ece34fba409ecf58ffff701f105f210e42"
+  },
+  "state": "complete",
+  "summary": {
+    "cases": 10,
+    "comparisons": [
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.017029516957341343,
+        "monte_carlo_standard_error": 0.0,
+        "paired_difference": 0.0,
+        "policy": "bias_aware",
+        "relative_error_change": 0.0,
+        "scenario": "baseline",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.04040347801570321,
+        "monte_carlo_standard_error": 0.0034195594253614374,
+        "paired_difference": 0.023373961058361863,
+        "policy": "bias_identity_only",
+        "relative_error_change": 1.3725557287921464,
+        "scenario": "baseline",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.017029516957341343,
+        "monte_carlo_standard_error": 0.0,
+        "paired_difference": 0.0,
+        "policy": "fixed_grid",
+        "relative_error_change": 0.0,
+        "scenario": "baseline",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.017029516957341343,
+        "monte_carlo_standard_error": 0.0,
+        "paired_difference": 0.0,
+        "policy": "mean_query",
+        "relative_error_change": 0.0,
+        "scenario": "baseline",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.017029516957341343,
+        "monte_carlo_standard_error": 0.0,
+        "paired_difference": 0.0,
+        "policy": "random_equal",
+        "relative_error_change": 0.0,
+        "scenario": "baseline",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.017029516957341343,
+        "monte_carlo_standard_error": 0.0,
+        "paired_difference": 0.0,
+        "policy": "worst_query",
+        "relative_error_change": 0.0,
+        "scenario": "baseline",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.030556041820136694,
+        "monte_carlo_standard_error": 0.0,
+        "paired_difference": 0.0,
+        "policy": "bias_aware",
+        "relative_error_change": 0.0,
+        "scenario": "mechanism_shift_2",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.054578871698824714,
+        "monte_carlo_standard_error": 0.0036136484228612136,
+        "paired_difference": 0.024022829878688028,
+        "policy": "bias_identity_only",
+        "relative_error_change": 0.7861891936165887,
+        "scenario": "mechanism_shift_2",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.030556041820136694,
+        "monte_carlo_standard_error": 0.0,
+        "paired_difference": 0.0,
+        "policy": "fixed_grid",
+        "relative_error_change": 0.0,
+        "scenario": "mechanism_shift_2",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.030556041820136694,
+        "monte_carlo_standard_error": 0.0,
+        "paired_difference": 0.0,
+        "policy": "mean_query",
+        "relative_error_change": 0.0,
+        "scenario": "mechanism_shift_2",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.030556041820136694,
+        "monte_carlo_standard_error": 0.0,
+        "paired_difference": 0.0,
+        "policy": "random_equal",
+        "relative_error_change": 0.0,
+        "scenario": "mechanism_shift_2",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.030556041820136694,
+        "monte_carlo_standard_error": 0.0,
+        "paired_difference": 0.0,
+        "policy": "worst_query",
+        "relative_error_change": 0.0,
+        "scenario": "mechanism_shift_2",
+        "worlds": 5
+      }
+    ],
+    "independent_generative_worlds": 5,
+    "limitations": [
+      "Synthetic Gaussian expression is not a regulatory or biological validation model.",
+      "Gaussian coverage is an ideal-model diagnostic; post-selection coverage is unproven.",
+      "Coverage conditions on finite-width queries; the eligible fraction is reported.",
+      "Batch stress shares technical batch effects across disjoint cell banks.",
+      "Known truth and latent coordinates were scorer-only diagnostics."
+    ],
+    "primary_backbone": "ridge_cv",
+    "uncertainty_scope": "Monte Carlo standard errors use paired independent generative worlds. Queries and acquisition seeds are averaged within world; they are not biological replicates."
+  }
+}

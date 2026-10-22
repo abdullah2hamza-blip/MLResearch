@@ -33,6 +33,8 @@ Raw datasets and generated replay arrays live under ignored `data/`. Keep source
 
 ## Bounded-memory preparation
 
+The [completed research report](research-report.md) and [secondary supplement commands](secondary-supplement-reproduction.md) connect the stages below to actual results, full raw-preparation verification and final retained hashes. Historical milestone counts in this guide remain tied to their recorded code versions.
+
 ```sh
 uv run --locked mlresearch data prepare configs/prepare-frangieh.json
 ```

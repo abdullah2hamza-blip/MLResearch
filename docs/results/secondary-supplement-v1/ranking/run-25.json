@@ -1,0 +1,32 @@
+{
+  "input": {
+    "checkpoints": 210,
+    "generative_seed": 72,
+    "public_interface_fields": [
+      "interventions",
+      "query_ids",
+      "candidate_ids",
+      "genes",
+      "source_effects",
+      "source_per_cell_variance",
+      "source_effect_mean_variance",
+      "source_half_difference"
+    ],
+    "queries": 6,
+    "run": "run",
+    "run_directory": "runs\\controlled-study-v1\\world-72\\mechanism_shift_2\\run",
+    "run_manifest_sha256": "bb5226ee85dd4d057000f7eac9c99c7f35c3af55da74ed01c0043488006f2cef",
+    "scenario": "mechanism_shift_2",
+    "scope": "controlled_truth",
+    "source_condition_counts": [
+      32
+    ],
+    "uncapped_counts_absent_from_public_interface": true,
+    "uniform_candidate_pool_cells": [
+      24
+    ]
+  },
+  "rows": 1470,
+  "sha256": "97410ddaefda13a1aef2ea7d9be29b83858888dea3e5a7b136c7c1f3031b7142",
+  "shard": "run-25-attempt-0.csv"
+}

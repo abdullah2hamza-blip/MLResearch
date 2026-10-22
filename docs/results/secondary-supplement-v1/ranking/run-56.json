@@ -1,0 +1,32 @@
+{
+  "input": {
+    "checkpoints": 210,
+    "generative_seed": 74,
+    "public_interface_fields": [
+      "interventions",
+      "query_ids",
+      "candidate_ids",
+      "genes",
+      "source_effects",
+      "source_per_cell_variance",
+      "source_effect_mean_variance",
+      "source_half_difference"
+    ],
+    "queries": 6,
+    "run": "run",
+    "run_directory": "runs\\controlled-study-v1\\world-74\\recipient_noise_double\\run",
+    "run_manifest_sha256": "44e6c0f2e5910a4f3e874218e15520dcc5978c264b6c35a343c28881fa8c5baa",
+    "scenario": "recipient_noise_double",
+    "scope": "controlled_truth",
+    "source_condition_counts": [
+      32
+    ],
+    "uncapped_counts_absent_from_public_interface": true,
+    "uniform_candidate_pool_cells": [
+      24
+    ]
+  },
+  "rows": 1470,
+  "sha256": "623864e14dbbb391cb0ed73c1f7d113ad0fa3e928a99ec91c9b3257badce8ec2",
+  "shard": "run-56-attempt-0.csv"
+}

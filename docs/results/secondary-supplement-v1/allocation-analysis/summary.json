@@ -1,0 +1,20 @@
+{
+  "analysis_source_sha256": "a81c29097b49b426af1b8477b362176669c30a02417aae3c09a7ea9a72a4b929",
+  "cost_cases": 30,
+  "direct_checkpoints": 60,
+  "qualification": [
+    "Post-primary supplements; original primary result unchanged.",
+    "Price0/16 exhaust pools and constrained policies may underspend.",
+    "MCSE uses paired independent generated worlds, not biological replication.",
+    "Direct starts802 > primary max512; no equal-cost crossover observed."
+  ],
+  "sources": {
+    "docs\\results\\external-evaluation-v1\\supplement\\curves-and-specificity.csv": "e76721a7e16cd1f6d9c66ede2be28822cf6952fa51d913edf58e9e31950f21b7",
+    "docs\\results\\external-evaluation-v1\\supplement\\summary.json": "ebe12b14106cdd873eb188310cb8d7d56c19383962dacc24599995286778418f",
+    "docs\\results\\secondary-supplement-v1\\direct-query\\checkpoint-summary.csv": "d3e92eeec408982f965c6d37e3202d3dbc31b62139c89435b37dff8aafa1f4de",
+    "docs\\results\\secondary-supplement-v1\\setup-cost-0\\study-manifest.json": "6f9edd3727995247ec452e4c1c90335dc460e61b6dabcfe71237c72588bad7e2",
+    "docs\\results\\secondary-supplement-v1\\setup-cost-16\\study-manifest.json": "0ad6738d14c15430d31c633ec22c2ce774a954ea58ac36c719c4b47008cbadc5",
+    "docs\\results\\secondary-supplement-v1\\setup-cost-64\\study-manifest.json": "cf2cbd634353550e781ddb0f62cbd14d9eaf5c11b7fc1f980ac8e659e5d8465a"
+  },
+  "worlds_per_price_scenario": 5
+}

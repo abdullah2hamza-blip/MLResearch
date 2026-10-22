@@ -1,0 +1,32 @@
+{
+  "input": {
+    "checkpoints": 210,
+    "generative_seed": 73,
+    "public_interface_fields": [
+      "interventions",
+      "query_ids",
+      "candidate_ids",
+      "genes",
+      "source_effects",
+      "source_per_cell_variance",
+      "source_effect_mean_variance",
+      "source_half_difference"
+    ],
+    "queries": 6,
+    "run": "run",
+    "run_directory": "runs\\controlled-study-v1\\world-73\\control_noise_four\\run",
+    "run_manifest_sha256": "4537fb6feaa83b24e90b35f17f969bd8e16d1e2b4f3d85b8f22c78e00c462b4a",
+    "scenario": "control_noise_four",
+    "scope": "controlled_truth",
+    "source_condition_counts": [
+      32
+    ],
+    "uncapped_counts_absent_from_public_interface": true,
+    "uniform_candidate_pool_cells": [
+      24
+    ]
+  },
+  "rows": 1470,
+  "sha256": "61e653ff76d426a33c33943a11dd896638b5663c37eeb859a6bf9811eab5654e",
+  "shard": "run-36-attempt-0.csv"
+}

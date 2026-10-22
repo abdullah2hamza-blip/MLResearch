@@ -1,0 +1,10 @@
+{"event": "Completed simulation case: baseline world=171 (1/10)", "level": "INFO", "logger": "mlresearch.study", "recorded_at": "2026-10-22T21:45:22.806288+00:00"}
+{"event": "Completed simulation case: mechanism_shift_2 world=171 (2/10)", "level": "INFO", "logger": "mlresearch.study", "recorded_at": "2026-10-22T21:45:37.201845+00:00"}
+{"event": "Completed simulation case: baseline world=172 (3/10)", "level": "INFO", "logger": "mlresearch.study", "recorded_at": "2026-10-22T21:45:53.037994+00:00"}
+{"event": "Completed simulation case: mechanism_shift_2 world=172 (4/10)", "level": "INFO", "logger": "mlresearch.study", "recorded_at": "2026-10-22T21:46:06.322773+00:00"}
+{"event": "Completed simulation case: baseline world=173 (5/10)", "level": "INFO", "logger": "mlresearch.study", "recorded_at": "2026-10-22T21:46:22.943015+00:00"}
+{"event": "Completed simulation case: mechanism_shift_2 world=173 (6/10)", "level": "INFO", "logger": "mlresearch.study", "recorded_at": "2026-10-22T21:46:36.525265+00:00"}
+{"event": "Completed simulation case: baseline world=174 (7/10)", "level": "INFO", "logger": "mlresearch.study", "recorded_at": "2026-10-22T21:46:48.606507+00:00"}
+{"event": "Completed simulation case: mechanism_shift_2 world=174 (8/10)", "level": "INFO", "logger": "mlresearch.study", "recorded_at": "2026-10-22T21:47:03.474505+00:00"}
+{"event": "Completed simulation case: baseline world=175 (9/10)", "level": "INFO", "logger": "mlresearch.study", "recorded_at": "2026-10-22T21:47:19.307017+00:00"}
+{"event": "Completed simulation case: mechanism_shift_2 world=175 (10/10)", "level": "INFO", "logger": "mlresearch.study", "recorded_at": "2026-10-22T21:47:33.664407+00:00"}

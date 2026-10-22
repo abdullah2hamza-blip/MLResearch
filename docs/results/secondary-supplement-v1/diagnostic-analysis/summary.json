@@ -1,0 +1,32 @@
+{
+  "analysis_source_sha256": "8ada14c2fb70ac31873ad387482fe9e53daf8b9cb78a2879cb3fb571abb948b1",
+  "bootstrap_samples": 2000,
+  "bootstrap_seed": 20261022,
+  "development_best": [
+    0.0023904494716073792,
+    "bias_aware",
+    "zero"
+  ],
+  "development_best_paid": [
+    0.0023904693694588664,
+    "reliability",
+    "ridge_cv"
+  ],
+  "development_table_sha256": "41b4372f5fb670fe28d6c759be97bb843b6278da293eb34b87971d25083f2977",
+  "input_sha256": {
+    "docs\\results\\secondary-supplement-v1\\frozen-diagnostics-complete\\coordinate-and-interval-diagnostics.csv": "aac5123382bde587594964b72092aff60f87eb2586fb3ce11bc20a94a824a1df",
+    "docs\\results\\secondary-supplement-v1\\frozen-diagnostics-complete\\summary.json": "eec6d1509e9650a166373fd4e2d7edec10d332793b974864c4f6af800835d70e",
+    "docs\\results\\secondary-supplement-v1\\ranking\\summary.json": "5d9088c74ac70b12e106cb79a4a10964115e1b4a9e0703f64445d9482ad3dcd6",
+    "docs\\results\\secondary-supplement-v1\\ranking\\within-gene-perturbation-ranking.csv": "97538327543f25a3df05d32db3c47ceaf198c8fcdbe4e6894713cab74eae85d2"
+  },
+  "legacy95_checkpoint_comparisons_passed": 15420,
+  "qualification": [
+    "All supplements are post-primary; original worst-query comparison is unchanged.",
+    "References use development points, with no external performance selection.",
+    "Query bands condition on the bank; no biological or combined interval claim.",
+    "Tables retain worlds; correlated genes/seeds do not add replication.",
+    "Fixed-gene rank scores use neutral0 for undefined genes; conditional correlations and denominators remain explicit."
+  ],
+  "recorded_at": "2026-10-22T22:50:44.666880+00:00",
+  "state": "complete"
+}

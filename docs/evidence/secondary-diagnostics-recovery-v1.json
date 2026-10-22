@@ -1,0 +1,20 @@
+{
+  "completed_external_csv": "docs\\results\\secondary-supplement-v1\\frozen-diagnostics\\coordinate-and-interval-diagnostics.csv",
+  "completed_external_csv_sha256": "4b3ebae5f17a3e78fc882725635dea9750f3c0e9c1a5bcc258002ea60a6fff3c",
+  "completed_external_rows": 6480,
+  "completed_summary_sha256": "eec6d1509e9650a166373fd4e2d7edec10d332793b974864c4f6af800835d70e",
+  "corrected_analysis_source_sha256": "24a3c932957157d5cc5daea6c32d88ba7c4fa9214bcd3125088483873168d1ef",
+  "failure": "KeyError latent_target_effects at first controlled case; no controlled rows emitted",
+  "initial_source_archive_sha256": "8e94f218e5ad1b869a9acf397719f75052be6993a186814f56a4b533a1e344b6",
+  "initial_source_sha256": "aa640698bc77a65124cc1455d364d16425c62e7663dcdfd1f7e99ad5eeb839a8",
+  "metric_function_ast_equal_to_original": {
+    "coordinate_metrics": true,
+    "cosine_rows": true,
+    "interval_diagnostics": true,
+    "nearest_distance": true
+  },
+  "primary_artifacts_unchanged": true,
+  "recovery": "Authenticate and reuse complete external rows; regenerate small distance-retention records and run controlled diagnostics with the actual producer field name.",
+  "reused_external_csv_is_exact_byte_prefix_of_completed_csv": true,
+  "terminal_session": 67433
+}

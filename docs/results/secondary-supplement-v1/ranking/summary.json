@@ -1,0 +1,2523 @@
+{
+  "coordinate_metrics_sha256": "aac5123382bde587594964b72092aff60f87eb2586fb3ce11bc20a94a824a1df",
+  "diagnostic_summary_sha256": "eec6d1509e9650a166373fd4e2d7edec10d332793b974864c4f6af800835d70e",
+  "environment": {
+    "git": {
+      "revision": "19811f287aa46108c8be5e609dbaacd624ce577a",
+      "status": "M .github/workflows/checks.yml\n M docs/secondary-supplement-protocol.md"
+    },
+    "packages": {
+      "h5py": "3.16.0",
+      "matplotlib": "3.11.2",
+      "mlresearch": "0.1.0",
+      "numpy": "2.5.4",
+      "pytest": "9.1.1",
+      "scipy": "1.18.1"
+    },
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.14",
+    "recorded_at": "2026-10-22T22:29:11.776804+00:00",
+    "source_hashes": {
+      "__init__.py": "bb8543f534bc0779c941e08d8786d17c10a58bfc43e97e080422afc3757c8eb0",
+      "__main__.py": "27503438dec93a74b0ebe814fc619333accf571b77f73344c6252c94b0b5d8b3",
+      "accounting.py": "8ed6d877678a1de2f8b0b6e7c0a471126cc3348c21f852f50caa7d17b1de40f8",
+      "acquisition.py": "52e82caa4c80dd4e577bb2e90cdaca52caf35fc8c97000e529161c21596be19d",
+      "cli.py": "6c3dd5025df8fdf80da117f6129bf36e3bbb87d0304589ea3b678ddd7d272f97",
+      "controls.py": "458f52e5886f97eed105e2c56701b51d2a26c080043b60ad8c39e9f6e9d24297",
+      "data.py": "ac2e62e8a74960d279f681cd4983d5a2f42f3cf13c8b8fde1887fc6265953789",
+      "datasets.json": "e90daa691730f09ba8885f1777ed5ae379f075d010a1dc3093c23272865e8881",
+      "design.py": "e83d39a64f0336ba7c5bf97deb997c68db3c72b3c09adf178a71b5d210d055e5",
+      "episodes.py": "62f0ee1615fcd268aec088a83e34c0744b981523a74f58fc34a7fb3a110328c6",
+      "experiment.py": "62caf7bff0edf14dd6e59d65a43198c7f34f72ade9c20df6e9faa2c7bdd6c6ef",
+      "external.py": "264b6312dda17caed78ba4e608f301ecaad034311189ee5c33597446fdd42a68",
+      "identifiers.py": "d0010bfbab280eabda82e43a5d286b3bc6a4c105a344102798ff1dcd97ccb2de",
+      "linear.py": "614d58fc6e8280e6559eb41e1d015723763ebb1db2469b5a7fe5a3ccb270566f",
+      "models.py": "5592d6c632bc9b9d6a47d1a1cf699a7fadc48c66fdba0a69c5e11eaa1230e8de",
+      "policies.py": "2ccb2f39cb78fafa6a3b452f0f76d4913e1660847cabb287ea382a69a01980fa",
+      "prepare.py": "ee8db1f477dc3185104013f08358682b6255c479226a3935acc17614eb5bf75e",
+      "provenance.py": "599e5f4b17cd39c44be9a7ddd27df89172ac3d3f6eca7a76b311cfea7c96a7e4",
+      "report.py": "1d370344507b9c5c668dcd61161df884a82ab3f91eeea4fa3bd71ef4f19b9f1c",
+      "simulation.py": "eaa3ff0c98f8f9970c7e7c9a6ee75d9fba37326187fb5932ab7a9a5cb0aa0076",
+      "study.py": "514dea833445eee09a3795c5796bd729f67893d54a1b28da5128087c1fe97708",
+      "transfer.py": "1f57c328560f3c5c08c978387fd62c865992816d5e3d962e239bdc40e0dbe20d",
+      "uncertainty.py": "f7fa9518a0636c7492eabe8e4bb6a6be317bc08158546f9fe0270b030ca35f73"
+    },
+    "source_tree_sha256": "5df3ead591e659904efc40a4bce1bf977dccca9919c2f1fea370d2f2b4c2c696"
+  },
+  "process_cpu_seconds_this_pass": 682.640625,
+  "qualification": [
+    "Spearman ranks perturbations within each gene, with average ties.",
+    "Conditional correlations exclude constant genes and report their denominator.",
+    "Fixed-gene score assigns undefined genes0 as an explicitly neutral aggregate; a constant-vector correlation remains undefined.",
+    "Common gene shifts preserve ranks; ranks do not identify absolute effects.",
+    "No gene significance, biological replication or new primary superiority claim.",
+    "Scoring permutation seed20261022; predictions/acquisitions are never refitted."
+  ],
+  "ranking_csv_sha256": "97538327543f25a3df05d32db3c47ceaf198c8fcdbe4e6894713cab74eae85d2",
+  "recorded_at": "2026-10-22T22:41:24.239241+00:00",
+  "resources_end": {
+    "available_ram_bytes": 1432268800,
+    "disk_free_bytes": 615343333376,
+    "disk_total_bytes": 1002016075776,
+    "logical_cpus": 16,
+    "memory_scope": "Current process; peak is over its lifetime, not a per-case delta.",
+    "peak_commit_bytes": 362270720,
+    "peak_working_set_bytes": 555139072,
+    "process_id": 26448,
+    "ram_bytes": 16418983936,
+    "recorded_at": "2026-10-22T22:41:24.263806+00:00",
+    "working_set_bytes": 172453888
+  },
+  "resources_start": {
+    "available_ram_bytes": 1864757248,
+    "disk_free_bytes": 615427809280,
+    "disk_total_bytes": 1002016075776,
+    "logical_cpus": 16,
+    "memory_scope": "Current process; peak is over its lifetime, not a per-case delta.",
+    "peak_commit_bytes": 75780096,
+    "peak_working_set_bytes": 99287040,
+    "process_id": 26448,
+    "ram_bytes": 16418983936,
+    "recorded_at": "2026-10-22T22:29:12.136027+00:00",
+    "working_set_bytes": 95203328
+  },
+  "rows": 109380,
+  "run_count": 76,
+  "runtime_seconds_this_pass": 732.6599784999853,
+  "shards": [
+    {
+      "input": {
+        "checkpoints": 240,
+        "generative_seed": null,
+        "public_interface_fields": [
+          "interventions",
+          "query_ids",
+          "candidate_ids",
+          "genes",
+          "source_effects",
+          "source_per_cell_variance",
+          "source_effect_mean_variance",
+          "source_half_difference"
+        ],
+        "queries": 131,
+        "run": "external-k562-to-rpe1-v1",
+        "run_directory": "C:\\Users\\Abdul\\Documents\\MLResearch\\runs\\external-k562-to-rpe1-v1",
+        "run_manifest_sha256": "008ad74413a3151a3df01c18f6576ebd31e64ccf243d7996963e9599b221bc4f",
+        "scenario": "external",
+        "scope": "external_assessment",
+        "source_condition_counts": [
+          96
+        ],
+        "uncapped_counts_absent_from_public_interface": true,
+        "uniform_candidate_pool_cells": [
+          64
+        ]
+      },
+      "rows": 2160,
+      "sha256": "568c1c987f96005c0f43219a9617e07784af502618cf173774e81886e037d195",
+      "shard": "run-0-attempt-0.csv"
+    },
+    {
+      "input": {
+        "checkpoints": 240,
+        "generative_seed": null,
+        "public_interface_fields": [
+          "interventions",
+          "query_ids",
+          "candidate_ids",
+          "genes",
+          "source_effects",
+          "source_per_cell_variance",
+          "source_effect_mean_variance",
+          "source_half_difference"
+        ],
+        "queries": 131,
+        "run": "external-rpe1-to-k562-v1",
+        "run_directory": "C:\\Users\\Abdul\\Documents\\MLResearch\\runs\\external-rpe1-to-k562-v1",
+        "run_manifest_sha256": "51c1bd407974b76b7153af2cafa725494c4ab7d4ed263984b41a4047746fc9c2",
+        "scenario": "external",
+        "scope": "external_assessment",
+        "source_condition_counts": [
+          96
+        ],
+        "uncapped_counts_absent_from_public_interface": true,
+        "uniform_candidate_pool_cells": [
+          64
+        ]
+      },
+      "rows": 2160,
+      "sha256": "9afa35b2a43fdfebbe7c503fa835cc7746e80c774e687b3f396771361cbd5058",
+      "shard": "run-1-attempt-0.csv"
+    },
+    {
+      "input": {
+        "checkpoints": 60,
+        "generative_seed": null,
+        "public_interface_fields": [
+          "interventions",
+          "query_ids",
+          "candidate_ids",
+          "genes",
+          "source_effects",
+          "source_per_cell_variance",
+          "source_effect_mean_variance",
+          "source_half_difference"
+        ],
+        "queries": 131,
+        "run": "external-k562-to-rpe1-identity-permuted-v1",
+        "run_directory": "C:\\Users\\Abdul\\Documents\\MLResearch\\runs\\external-k562-to-rpe1-identity-permuted-v1",
+        "run_manifest_sha256": "3cf97359c9a2e3801acab0e3127ff2109f58214b8de20a45091c7b5d1aa841ac",
+        "scenario": "external",
+        "scope": "external_assessment",
+        "source_condition_counts": [
+          96
+        ],
+        "uncapped_counts_absent_from_public_interface": true,
+        "uniform_candidate_pool_cells": [
+          64
+        ]
+      },
+      "rows": 540,
+      "sha256": "ec643ee6c72646793914c896c57ad805c084528058a5d922fbaa3f7f540b94df",
+      "shard": "run-2-attempt-0.csv"
+    },
+    {
+      "input": {
+        "checkpoints": 60,
+        "generative_seed": null,
+        "public_interface_fields": [
+          "interventions",
+          "query_ids",
+          "candidate_ids",
+          "genes",
+          "source_effects",
+          "source_per_cell_variance",
+          "source_effect_mean_variance",
+          "source_half_difference"
+        ],
+        "queries": 131,
+        "run": "external-k562-to-rpe1-query-gene-permuted-v1",
+        "run_directory": "C:\\Users\\Abdul\\Documents\\MLResearch\\runs\\external-k562-to-rpe1-query-gene-permuted-v1",
+        "run_manifest_sha256": "8bfa39930a440210c992cb93537db16d871eb6cb996a0cdf33f4778fc88bc2e6",
+        "scenario": "external",
+        "scope": "external_assessment",
+        "source_condition_counts": [
+          96
+        ],
+        "uncapped_counts_absent_from_public_interface": true,
+        "uniform_candidate_pool_cells": [
+          64
+        ]
+      },
+      "rows": 540,
+      "sha256": "7958fc83b7cb642f160d30577c2167eb981fcbfc56db35d2384a305a0002ae8c",
+      "shard": "run-3-attempt-0.csv"
+    },
+    {
+      "input": {
+        "checkpoints": 60,
+        "generative_seed": null,
+        "public_interface_fields": [
+          "interventions",
+          "query_ids",
+          "candidate_ids",
+          "genes",
+          "source_effects",
+          "source_per_cell_variance",
+          "source_effect_mean_variance",
+          "source_half_difference"
+        ],
+        "queries": 131,
+        "run": "external-rpe1-to-k562-identity-permuted-v1",
+        "run_directory": "C:\\Users\\Abdul\\Documents\\MLResearch\\runs\\external-rpe1-to-k562-identity-permuted-v1",
+        "run_manifest_sha256": "49d478c5fb256898cec9f8a342f0bbd8bd226492746c8de970e3fcecf69a1f15",
+        "scenario": "external",
+        "scope": "external_assessment",
+        "source_condition_counts": [
+          96
+        ],
+        "uncapped_counts_absent_from_public_interface": true,
+        "uniform_candidate_pool_cells": [
+          64
+        ]
+      },
+      "rows": 540,
+      "sha256": "bf700df3439855088352c67472d3bcce0f58d52ded84a21ea0518614b18449d4",
+      "shard": "run-4-attempt-0.csv"
+    },
+    {
+      "input": {
+        "checkpoints": 60,
+        "generative_seed": null,
+        "public_interface_fields": [
+          "interventions",
+          "query_ids",
+          "candidate_ids",
+          "genes",
+          "source_effects",
+          "source_per_cell_variance",
+          "source_effect_mean_variance",
+          "source_half_difference"
+        ],
+        "queries": 131,
+        "run": "external-rpe1-to-k562-query-gene-permuted-v1",
+        "run_directory": "C:\\Users\\Abdul\\Documents\\MLResearch\\runs\\external-rpe1-to-k562-query-gene-permuted-v1",
+        "run_manifest_sha256": "572e4e54941ec0365f2f954efb7072f34c4e44dd81c54342ea29e9843d03d0b6",
+        "scenario": "external",
+        "scope": "external_assessment",
+        "source_condition_counts": [
+          96
+        ],
+        "uncapped_counts_absent_from_public_interface": true,
+        "uniform_candidate_pool_cells": [
+          64
+        ]
+      },
+      "rows": 540,
+      "sha256": "1c038058b96196f3fb0b15c4f87c8097481092ea21cc9b0bade07bd4879dabc6",
+      "shard": "run-5-attempt-0.csv"
+    },
+    {
+      "input": {
+        "checkpoints": 210,
+        "generative_seed": 71,
+        "public_interface_fields": [
+          "interventions",
+          "query_ids",
+          "candidate_ids",
+          "genes",
+          "source_effects",
+          "source_per_cell_variance",
+          "source_effect_mean_variance",
+          "source_half_difference"
+        ],
+        "queries": 6,
+        "run": "run",
+        "run_directory": "runs\\controlled-study-v1\\world-71\\baseline\\run",
+        "run_manifest_sha256": "bd425f4e4e88ba191142c2712680e2a2f57495e0a19e5fc4fceddfac087fe630",
+        "scenario": "baseline",
+        "scope": "controlled_truth",
+        "source_condition_counts": [
+          32
+        ],
+        "uncapped_counts_absent_from_public_interface": true,
+        "uniform_candidate_pool_cells": [
+          24
+        ]
+      },
+      "rows": 1470,
+      "sha256": "0fa3591982e5ad887177a5c76fb53b76decf52ae14f9e4ad151e2dd819a2b922",
+      "shard": "run-6-attempt-0.csv"
+    },
+    {
+      "input": {
+        "checkpoints": 210,
+        "generative_seed": 71,
+        "public_interface_fields": [
+          "interventions",
+          "query_ids",
+          "candidate_ids",
+          "genes",
+          "source_effects",
+          "source_per_cell_variance",
+          "source_effect_mean_variance",
+          "source_half_difference"
+        ],
+        "queries": 6,
+        "run": "run",
+        "run_directory": "runs\\controlled-study-v1\\world-71\\batch_shift_one\\run",
+        "run_manifest_sha256": "9d198e07337e15ef60cca8ed99d27969cbb04ff9d95cae2f949c186d0d96cfa3",
+        "scenario": "batch_shift_one",
+        "scope": "controlled_truth",
+        "source_condition_counts": [
+          32
+        ],
+        "uncapped_counts_absent_from_public_interface": true,
+        "uniform_candidate_pool_cells": [
+          24
+        ]
+      },
+      "rows": 1470,
+      "sha256": "193d5cede5e73a4883fbe61ba4e70378dbf165b01d08ed00959fc922b464eb14",
+      "shard": "run-7-attempt-0.csv"
+    },
+    {
+      "input": {
+        "checkpoints": 210,
+        "generative_seed": 71,
+        "public_interface_fields": [
+          "interventions",
+          "query_ids",
+          "candidate_ids",
+          "genes",
+          "source_effects",
+          "source_per_cell_variance",
+          "source_effect_mean_variance",
+          "source_half_difference"
+        ],
+        "queries": 6,
+        "run": "run",
+        "run_directory": "runs\\controlled-study-v1\\world-71\\control_noise_four\\run",
+        "run_manifest_sha256": "7c9febebe7079c5cc9b7c5494d0393c989f02143807f531ead70e3928f5b75d5",
+        "scenario": "control_noise_four",
+        "scope": "controlled_truth",
+        "source_condition_counts": [
+          32
+        ],
+        "uncapped_counts_absent_from_public_interface": true,
+        "uniform_candidate_pool_cells": [
+          24
+        ]
+      },
+      "rows": 1470,
+      "sha256": "8ff063d8f6adf9d8a85b6d4443ef75e0248cc61b2cddbe0f26594effa4927a3d",
+      "shard": "run-8-attempt-0.csv"
+    },
+    {
+      "input": {
+        "checkpoints": 210,
+        "generative_seed": 71,
+        "public_interface_fields": [
+          "interventions",
+          "query_ids",
+          "candidate_ids",
+          "genes",
+          "source_effects",
+          "source_per_cell_variance",
+          "source_effect_mean_variance",
+          "source_half_difference"
+        ],
+        "queries": 6,
+        "run": "run",
+        "run_directory": "runs\\controlled-study-v1\\world-71\\exact_rank_full\\run",
+        "run_manifest_sha256": "92a13fa0422f7f61ce3ac892258efd54588d9fb304957c9c23da9be618f6d75b",
+        "scenario": "exact_rank_full",
+        "scope": "controlled_truth",
+        "source_condition_counts": [
+          32
+        ],
+        "uncapped_counts_absent_from_public_interface": true,
+        "uniform_candidate_pool_cells": [
+          24
+        ]
+      },
+      "rows": 1470,
+      "sha256": "c7242bfbef38e5109db4b61f0f3ad176b3d3fa9f0c018b7d8ced419db452dc7a",
+      "shard": "run-9-attempt-0.csv"
+    },
+    {
+      "input": {
+        "checkpoints": 210,
+        "generative_seed": 71,
+        "public_interface_fields": [
+          "interventions",
+          "query_ids",
+          "candidate_ids",
+          "genes",
+          "source_effects",
+          "source_per_cell_variance",
+          "source_effect_mean_variance",
+          "source_half_difference"
+        ],
+        "queries": 6,
+        "run": "run",
+        "run_directory": "runs\\controlled-study-v1\\world-71\\exact_rank_missing\\run",
+        "run_manifest_sha256": "28a91ac651f318a87eb116ff42c62039d466f299d9bb47bd1e102e7f35a4476a",
+        "scenario": "exact_rank_missing",
+        "scope": "controlled_truth",
+        "source_condition_counts": [
+          32
+        ],
+        "uncapped_counts_absent_from_public_interface": true,
+        "uniform_candidate_pool_cells": [
+          24
+        ]
+      },
+      "rows": 1470,
+      "sha256": "7e6497234328074708be303324876392ecda2b5831d9157a01b348c5ace1a274",
+      "shard": "run-10-attempt-0.csv"
+    },
+    {
+      "input": {
+        "checkpoints": 210,
+        "generative_seed": 71,
+        "public_interface_fields": [
+          "interventions",
+          "query_ids",
+          "candidate_ids",
+          "genes",
+          "source_effects",
+          "source_per_cell_variance",
+          "source_effect_mean_variance",
+          "source_half_difference"
+        ],
+        "queries": 6,
+        "run": "run",
+        "run_directory": "runs\\controlled-study-v1\\world-71\\mechanism_shift_2\\run",
+        "run_manifest_sha256": "a9950f015ebcea35809a51ce2821fa7eb2e86069b152063b77059980626a40c8",
+        "scenario": "mechanism_shift_2",
+        "scope": "controlled_truth",
+        "source_condition_counts": [
+          32
+        ],
+        "uncapped_counts_absent_from_public_interface": true,
+        "uniform_candidate_pool_cells": [
+          24
+        ]
+      },
+      "rows": 1470,
+      "sha256": "dabc2500964ba95becb60488e8809e3f06d170b8409649ec384a44163e8972d3",
+      "shard": "run-11-attempt-0.csv"
+    },
+    {
+      "input": {
+        "checkpoints": 210,
+        "generative_seed": 71,
+        "public_interface_fields": [
+          "interventions",
+          "query_ids",
+          "candidate_ids",
+          "genes",
+          "source_effects",
+          "source_per_cell_variance",
+          "source_effect_mean_variance",
+          "source_half_difference"
+        ],
+        "queries": 6,
+        "run": "run",
+        "run_directory": "runs\\controlled-study-v1\\world-71\\query_gene_permutation\\run",
+        "run_manifest_sha256": "b8b6bbf69e278def3fa4b2d14178a2d14baf23be83998019af7bb88f41f62ebd",
+        "scenario": "query_gene_permutation",
+        "scope": "controlled_truth",
+        "source_condition_counts": [
+          32
+        ],
+        "uncapped_counts_absent_from_public_interface": true,
+        "uniform_candidate_pool_cells": [
+          24
+        ]
+      },
+      "rows": 1470,
+      "sha256": "f1b59b59bb806d3c34104e6d55f1c106cab3c96a49e6d1b9e6f5ee3829a93496",
+      "shard": "run-12-attempt-0.csv"
+    },
+    {
+      "input": {
+        "checkpoints": 210,
+        "generative_seed": 71,
+        "public_interface_fields": [
+          "interventions",
+          "query_ids",
+          "candidate_ids",
+          "genes",
+          "source_effects",
+          "source_per_cell_variance",
+          "source_effect_mean_variance",
+          "source_half_difference"
+        ],
+        "queries": 6,
+        "run": "run",
+        "run_directory": "runs\\controlled-study-v1\\world-71\\rank_missing\\run",
+        "run_manifest_sha256": "90d32f5c94709f876325cdbdedba51496352a1843175e0534994d4342f0d9ae3",
+        "scenario": "rank_missing",
+        "scope": "controlled_truth",
+        "source_condition_counts": [
+          32
+        ],
+        "uncapped_counts_absent_from_public_interface": true,
+        "uniform_candidate_pool_cells": [
+          24
+        ]
+      },
+      "rows": 1470,
+      "sha256": "d0969998fa311621626d34e61104ace6b7a6a63b7270ec5dd02fb11b8704e038",
+      "shard": "run-13-attempt-0.csv"
+    },
+    {
+      "input": {
+        "checkpoints": 210,
+        "generative_seed": 71,
+        "public_interface_fields": [
+          "interventions",
+          "query_ids",
+          "candidate_ids",
+          "genes",
+          "source_effects",
+          "source_per_cell_variance",
+          "source_effect_mean_variance",
+          "source_half_difference"
+        ],
+        "queries": 6,
+        "run": "run",
+        "run_directory": "runs\\controlled-study-v1\\world-71\\recipient_noise_double\\run",
+        "run_manifest_sha256": "b3b2f1afbc2ff98dc8d9d0830349eb57a8ca9a9e7053a67ff8e73d100472a7f4",
+        "scenario": "recipient_noise_double",
+        "scope": "controlled_truth",
+        "source_condition_counts": [
+          32
+        ],
+        "uncapped_counts_absent_from_public_interface": true,
+        "uniform_candidate_pool_cells": [
+          24
+        ]
+      },
+      "rows": 1470,
+      "sha256": "9f0d3ee6df3bdb00c29bf4e2fa96c2ec7d25f0c9c23583766f51b52fb9c8d858",
+      "shard": "run-14-attempt-0.csv"
+    },
+    {
+      "input": {
+        "checkpoints": 210,
+        "generative_seed": 71,
+        "public_interface_fields": [
+          "interventions",
+          "query_ids",
+          "candidate_ids",
+          "genes",
+          "source_effects",
+          "source_per_cell_variance",
+          "source_effect_mean_variance",
+          "source_half_difference"
+        ],
+        "queries": 6,
+        "run": "run",
+        "run_directory": "runs\\controlled-study-v1\\world-71\\recipient_noise_half\\run",
+        "run_manifest_sha256": "3f928e494c3d44799a0fdd5b5b3b962ec08cf6489ed6ad5df94ec109faca7607",
+        "scenario": "recipient_noise_half",
+        "scope": "controlled_truth",
+        "source_condition_counts": [
+          32
+        ],
+        "uncapped_counts_absent_from_public_interface": true,
+        "uniform_candidate_pool_cells": [
+          24
+        ]
+      },
+      "rows": 1470,
+      "sha256": "51c66f3c599b8143c48c30fc08fc275af15888daf7de7b0cf4e915ff56948bc5",
+      "shard": "run-15-attempt-0.csv"
+    },
+    {
+      "input": {
+        "checkpoints": 210,
+        "generative_seed": 71,
+        "public_interface_fields": [
+          "interventions",
+          "query_ids",
+          "candidate_ids",
+          "genes",
+          "source_effects",
+          "source_per_cell_variance",
+          "source_effect_mean_variance",
+          "source_half_difference"
+        ],
+        "queries": 6,
+        "run": "run",
+        "run_directory": "runs\\controlled-study-v1\\world-71\\source_feature_error_half\\run",
+        "run_manifest_sha256": "092480b15841d19541d214178fe0ed4a157002a1c95aadf7e5d4e66a838a5c72",
+        "scenario": "source_feature_error_half",
+        "scope": "controlled_truth",
+        "source_condition_counts": [
+          32
+        ],
+        "uncapped_counts_absent_from_public_interface": true,
+        "uniform_candidate_pool_cells": [
+          24
+        ]
+      },
+      "rows": 1470,
+      "sha256": "e77abe9c9251434431806a01adccae7495032ffa9b730cc1c70461e557c37143",
+      "shard": "run-16-attempt-0.csv"
+    },
+    {
+      "input": {
+        "checkpoints": 210,
+        "generative_seed": 71,
+        "public_interface_fields": [
+          "interventions",
+          "query_ids",
+          "candidate_ids",
+          "genes",
+          "source_effects",
+          "source_per_cell_variance",
+          "source_effect_mean_variance",
+          "source_half_difference"
+        ],
+        "queries": 6,
+        "run": "run",
+        "run_directory": "runs\\controlled-study-v1\\world-71\\source_feature_error_one\\run",
+        "run_manifest_sha256": "9bbe35b70600c80f379bbad8714076954c7d8e6d122ed54b02c19e4eaf5e6ef3",
+        "scenario": "source_feature_error_one",
+        "scope": "controlled_truth",
+        "source_condition_counts": [
+          32
+        ],
+        "uncapped_counts_absent_from_public_interface": true,
+        "uniform_candidate_pool_cells": [
+          24
+        ]
+      },
+      "rows": 1470,
+      "sha256": "6136e6ea84e0018c6c69a8403684864001e8958481e33230840814122b3d5f01",
+      "shard": "run-17-attempt-0.csv"
+    },
+    {
+      "input": {
+        "checkpoints": 210,
+        "generative_seed": 71,
+        "public_interface_fields": [
+          "interventions",
+          "query_ids",
+          "candidate_ids",
+          "genes",
+          "source_effects",
+          "source_per_cell_variance",
+          "source_effect_mean_variance",
+          "source_half_difference"
+        ],
+        "queries": 6,
+        "run": "run",
+        "run_directory": "runs\\controlled-study-v1\\world-71\\source_identity_permutation\\run",
+        "run_manifest_sha256": "546aba585ebfc684121b07f05142194de37f3565aed4fc991b72d05436a1e9b5",
+        "scenario": "source_identity_permutation",
+        "scope": "controlled_truth",
+        "source_condition_counts": [
+          32
+        ],
+        "uncapped_counts_absent_from_public_interface": true,
+        "uniform_candidate_pool_cells": [
+          24
+        ]
+      },
+      "rows": 1470,
+      "sha256": "009ca238e7f160aaf813e6e2b26332991385535d0d5099f32969ffb31ef42eb5",
+      "shard": "run-18-attempt-0.csv"
+    },
+    {
+      "input": {
+        "checkpoints": 210,
+        "generative_seed": 71,
+        "public_interface_fields": [
+          "interventions",
+          "query_ids",
+          "candidate_ids",
+          "genes",
+          "source_effects",
+          "source_per_cell_variance",
+          "source_effect_mean_variance",
+          "source_half_difference"
+        ],
+        "queries": 6,
+        "run": "run",
+        "run_directory": "runs\\controlled-study-v1\\world-71\\source_measurement_noise_two\\run",
+        "run_manifest_sha256": "98e651f419198dc28e5bcc3db1b036ec963bb30f8a67072eb7842cf94286731a",
+        "scenario": "source_measurement_noise_two",
+        "scope": "controlled_truth",
+        "source_condition_counts": [
+          32
+        ],
+        "uncapped_counts_absent_from_public_interface": true,
+        "uniform_candidate_pool_cells": [
+          24
+        ]
+      },
+      "rows": 1470,
+      "sha256": "c198e2800ebab7ae5c741a2cc6101994d7e681f4ca0bf9e95ae472293b4afbf8",
+      "shard": "run-19-attempt-0.csv"
+    },
+    {
+      "input": {
+        "checkpoints": 210,
+        "generative_seed": 72,
+        "public_interface_fields": [
+          "interventions",
+          "query_ids",
+          "candidate_ids",
+          "genes",
+          "source_effects",
+          "source_per_cell_variance",
+          "source_effect_mean_variance",
+          "source_half_difference"
+        ],
+        "queries": 6,
+        "run": "run",
+        "run_directory": "runs\\controlled-study-v1\\world-72\\baseline\\run",
+        "run_manifest_sha256": "7a2ea86cb68f10a7bfffb9c80c45bfd6d9342f8eb4de6cdfaf4290f759a4f495",
+        "scenario": "baseline",
+        "scope": "controlled_truth",
+        "source_condition_counts": [
+          32
+        ],
+        "uncapped_counts_absent_from_public_interface": true,
+        "uniform_candidate_pool_cells": [
+          24
+        ]
+      },
+      "rows": 1470,
+      "sha256": "2c7e9f2912f4df414a5628ac9f807a5c90825913558b0192a5660706aed505e4",
+      "shard": "run-20-attempt-0.csv"
+    },
+    {
+      "input": {
+        "checkpoints": 210,
+        "generative_seed": 72,
+        "public_interface_fields": [
+          "interventions",
+          "query_ids",
+          "candidate_ids",
+          "genes",
+          "source_effects",
+          "source_per_cell_variance",
+          "source_effect_mean_variance",
+          "source_half_difference"
+        ],
+        "queries": 6,
+        "run": "run",
+        "run_directory": "runs\\controlled-study-v1\\world-72\\batch_shift_one\\run",
+        "run_manifest_sha256": "9196b043bc45b37c058d5245e3ddd34f4986e7de8c24300d8cd686bbf01defbf",
+        "scenario": "batch_shift_one",
+        "scope": "controlled_truth",
+        "source_condition_counts": [
+          32
+        ],
+        "uncapped_counts_absent_from_public_interface": true,
+        "uniform_candidate_pool_cells": [
+          24
+        ]
+      },
+      "rows": 1470,
+      "sha256": "eaefc3dbb32efa95554aca8494f0441d04768299d1d29d45ccfed73c377e7dc7",
+      "shard": "run-21-attempt-0.csv"
+    },
+    {
+      "input": {
+        "checkpoints": 210,
+        "generative_seed": 72,
+        "public_interface_fields": [
+          "interventions",
+          "query_ids",
+          "candidate_ids",
+          "genes",
+          "source_effects",
+          "source_per_cell_variance",
+          "source_effect_mean_variance",
+          "source_half_difference"
+        ],
+        "queries": 6,
+        "run": "run",
+        "run_directory": "runs\\controlled-study-v1\\world-72\\control_noise_four\\run",
+        "run_manifest_sha256": "776a984cc3df4293e9f6ef23e01cc46b7ae3b24201dc216bbbb5f64ec2bef972",
+        "scenario": "control_noise_four",
+        "scope": "controlled_truth",
+        "source_condition_counts": [
+          32
+        ],
+        "uncapped_counts_absent_from_public_interface": true,
+        "uniform_candidate_pool_cells": [
+          24
+        ]
+      },
+      "rows": 1470,
+      "sha256": "5dceb54ee614ee0c62c748fed5718d3e87ff323fa2ac0739cf1d4adb56a01920",
+      "shard": "run-22-attempt-0.csv"
+    },
+    {
+      "input": {
+        "checkpoints": 210,
+        "generative_seed": 72,
+        "public_interface_fields": [
+          "interventions",
+          "query_ids",
+          "candidate_ids",
+          "genes",
+          "source_effects",
+          "source_per_cell_variance",
+          "source_effect_mean_variance",
+          "source_half_difference"
+        ],
+        "queries": 6,
+        "run": "run",
+        "run_directory": "runs\\controlled-study-v1\\world-72\\exact_rank_full\\run",
+        "run_manifest_sha256": "2f39830c05b0a3db34220a5c6e03b11b1e72a546003c283e626c6e6a651da170",
+        "scenario": "exact_rank_full",
+        "scope": "controlled_truth",
+        "source_condition_counts": [
+          32
+        ],
+        "uncapped_counts_absent_from_public_interface": true,
+        "uniform_candidate_pool_cells": [
+          24
+        ]
+      },
+      "rows": 1470,
+      "sha256": "0526efcd797a24a501f39a1cd22d70cc53e1a62e914a1b910770bd603b3514de",
+      "shard": "run-23-attempt-0.csv"
+    },
+    {
+      "input": {
+        "checkpoints": 210,
+        "generative_seed": 72,
+        "public_interface_fields": [
+          "interventions",
+          "query_ids",
+          "candidate_ids",
+          "genes",
+          "source_effects",
+          "source_per_cell_variance",
+          "source_effect_mean_variance",
+          "source_half_difference"
+        ],
+        "queries": 6,
+        "run": "run",
+        "run_directory": "runs\\controlled-study-v1\\world-72\\exact_rank_missing\\run",
+        "run_manifest_sha256": "213b9947d79d790320e1ff3f537b885595d5e6c08fa073baf2384952fa1ad4b1",
+        "scenario": "exact_rank_missing",
+        "scope": "controlled_truth",
+        "source_condition_counts": [
+          32
+        ],
+        "uncapped_counts_absent_from_public_interface": true,
+        "uniform_candidate_pool_cells": [
+          24
+        ]
+      },
+      "rows": 1470,
+      "sha256": "a910933e003d55a547e0a3c6d8097a4fe43d0385f463a77c6cc253aac1df6b5a",
+      "shard": "run-24-attempt-0.csv"
+    },
+    {
+      "input": {
+        "checkpoints": 210,
+        "generative_seed": 72,
+        "public_interface_fields": [
+          "interventions",
+          "query_ids",
+          "candidate_ids",
+          "genes",
+          "source_effects",
+          "source_per_cell_variance",
+          "source_effect_mean_variance",
+          "source_half_difference"
+        ],
+        "queries": 6,
+        "run": "run",
+        "run_directory": "runs\\controlled-study-v1\\world-72\\mechanism_shift_2\\run",
+        "run_manifest_sha256": "bb5226ee85dd4d057000f7eac9c99c7f35c3af55da74ed01c0043488006f2cef",
+        "scenario": "mechanism_shift_2",
+        "scope": "controlled_truth",
+        "source_condition_counts": [
+          32
+        ],
+        "uncapped_counts_absent_from_public_interface": true,
+        "uniform_candidate_pool_cells": [
+          24
+        ]
+      },
+      "rows": 1470,
+      "sha256": "97410ddaefda13a1aef2ea7d9be29b83858888dea3e5a7b136c7c1f3031b7142",
+      "shard": "run-25-attempt-0.csv"
+    },
+    {
+      "input": {
+        "checkpoints": 210,
+        "generative_seed": 72,
+        "public_interface_fields": [
+          "interventions",
+          "query_ids",
+          "candidate_ids",
+          "genes",
+          "source_effects",
+          "source_per_cell_variance",
+          "source_effect_mean_variance",
+          "source_half_difference"
+        ],
+        "queries": 6,
+        "run": "run",
+        "run_directory": "runs\\controlled-study-v1\\world-72\\query_gene_permutation\\run",
+        "run_manifest_sha256": "6bfdcd53895aa32d55fd69c3a126ee3a61a042fef25550508ba59181b61492ea",
+        "scenario": "query_gene_permutation",
+        "scope": "controlled_truth",
+        "source_condition_counts": [
+          32
+        ],
+        "uncapped_counts_absent_from_public_interface": true,
+        "uniform_candidate_pool_cells": [
+          24
+        ]
+      },
+      "rows": 1470,
+      "sha256": "a922964a59074efa3a3e1babc82566d808626f0f53259b17a32da8cbdc74e86e",
+      "shard": "run-26-attempt-0.csv"
+    },
+    {
+      "input": {
+        "checkpoints": 210,
+        "generative_seed": 72,
+        "public_interface_fields": [
+          "interventions",
+          "query_ids",
+          "candidate_ids",
+          "genes",
+          "source_effects",
+          "source_per_cell_variance",
+          "source_effect_mean_variance",
+          "source_half_difference"
+        ],
+        "queries": 6,
+        "run": "run",
+        "run_directory": "runs\\controlled-study-v1\\world-72\\rank_missing\\run",
+        "run_manifest_sha256": "7bdb3517c698d0cdaf9fe50c45de208c731cec9879a04b43152cf242b89ea0e5",
+        "scenario": "rank_missing",
+        "scope": "controlled_truth",
+        "source_condition_counts": [
+          32
+        ],
+        "uncapped_counts_absent_from_public_interface": true,
+        "uniform_candidate_pool_cells": [
+          24
+        ]
+      },
+      "rows": 1470,
+      "sha256": "eb98ff0117d3dcf20f68b65add5d11a6fa979dd3e44801abc7473c410f55d772",
+      "shard": "run-27-attempt-0.csv"
+    },
+    {
+      "input": {
+        "checkpoints": 210,
+        "generative_seed": 72,
+        "public_interface_fields": [
+          "interventions",
+          "query_ids",
+          "candidate_ids",
+          "genes",
+          "source_effects",
+          "source_per_cell_variance",
+          "source_effect_mean_variance",
+          "source_half_difference"
+        ],
+        "queries": 6,
+        "run": "run",
+        "run_directory": "runs\\controlled-study-v1\\world-72\\recipient_noise_double\\run",
+        "run_manifest_sha256": "1a8ba42866cce9acb0a668532388ba9d80d7957ce6638fffc65dab37e1867a09",
+        "scenario": "recipient_noise_double",
+        "scope": "controlled_truth",
+        "source_condition_counts": [
+          32
+        ],
+        "uncapped_counts_absent_from_public_interface": true,
+        "uniform_candidate_pool_cells": [
+          24
+        ]
+      },
+      "rows": 1470,
+      "sha256": "fea88f174980843b712dbeb420f6ec3ebb60d9308555c37dfc52bdce717a97b8",
+      "shard": "run-28-attempt-0.csv"
+    },
+    {
+      "input": {
+        "checkpoints": 210,
+        "generative_seed": 72,
+        "public_interface_fields": [
+          "interventions",
+          "query_ids",
+          "candidate_ids",
+          "genes",
+          "source_effects",
+          "source_per_cell_variance",
+          "source_effect_mean_variance",
+          "source_half_difference"
+        ],
+        "queries": 6,
+        "run": "run",
+        "run_directory": "runs\\controlled-study-v1\\world-72\\recipient_noise_half\\run",
+        "run_manifest_sha256": "09a42f6af3be4c2897a7dec375e24158c9ee64c64de274fa31be7454ea77396a",
+        "scenario": "recipient_noise_half",
+        "scope": "controlled_truth",
+        "source_condition_counts": [
+          32
+        ],
+        "uncapped_counts_absent_from_public_interface": true,
+        "uniform_candidate_pool_cells": [
+          24
+        ]
+      },
+      "rows": 1470,
+      "sha256": "3d85f1d386bda90f29d3a7a869ec87cbc16119ec21ad6369e8fbee0c74d052c9",
+      "shard": "run-29-attempt-0.csv"
+    },
+    {
+      "input": {
+        "checkpoints": 210,
+        "generative_seed": 72,
+        "public_interface_fields": [
+          "interventions",
+          "query_ids",
+          "candidate_ids",
+          "genes",
+          "source_effects",
+          "source_per_cell_variance",
+          "source_effect_mean_variance",
+          "source_half_difference"
+        ],
+        "queries": 6,
+        "run": "run",
+        "run_directory": "runs\\controlled-study-v1\\world-72\\source_feature_error_half\\run",
+        "run_manifest_sha256": "186f8d058483a698eb2efa57ecc589a9cfcfcfd735ec03e1da9ba67ec36bef25",
+        "scenario": "source_feature_error_half",
+        "scope": "controlled_truth",
+        "source_condition_counts": [
+          32
+        ],
+        "uncapped_counts_absent_from_public_interface": true,
+        "uniform_candidate_pool_cells": [
+          24
+        ]
+      },
+      "rows": 1470,
+      "sha256": "c8c8850a52ba00ea8dd786a405a2e284c1e5a06acab9fac78acd3f5eff65ff2a",
+      "shard": "run-30-attempt-0.csv"
+    },
+    {
+      "input": {
+        "checkpoints": 210,
+        "generative_seed": 72,
+        "public_interface_fields": [
+          "interventions",
+          "query_ids",
+          "candidate_ids",
+          "genes",
+          "source_effects",
+          "source_per_cell_variance",
+          "source_effect_mean_variance",
+          "source_half_difference"
+        ],
+        "queries": 6,
+        "run": "run",
+        "run_directory": "runs\\controlled-study-v1\\world-72\\source_feature_error_one\\run",
+        "run_manifest_sha256": "05fca227d82a1ecec8731cdc3204a2c62f08a98c81a944a0cf306e64b6527bee",
+        "scenario": "source_feature_error_one",
+        "scope": "controlled_truth",
+        "source_condition_counts": [
+          32
+        ],
+        "uncapped_counts_absent_from_public_interface": true,
+        "uniform_candidate_pool_cells": [
+          24
+        ]
+      },
+      "rows": 1470,
+      "sha256": "cd8869782371f57c3a7d6879f3fce51cc70eab90074bf63047f7da771d9f8268",
+      "shard": "run-31-attempt-0.csv"
+    },
+    {
+      "input": {
+        "checkpoints": 210,
+        "generative_seed": 72,
+        "public_interface_fields": [
+          "interventions",
+          "query_ids",
+          "candidate_ids",
+          "genes",
+          "source_effects",
+          "source_per_cell_variance",
+          "source_effect_mean_variance",
+          "source_half_difference"
+        ],
+        "queries": 6,
+        "run": "run",
+        "run_directory": "runs\\controlled-study-v1\\world-72\\source_identity_permutation\\run",
+        "run_manifest_sha256": "eb0fda1b3075c7e65529ed42d302e85c32fb19bda83e7644ba0fd327d785e8b4",
+        "scenario": "source_identity_permutation",
+        "scope": "controlled_truth",
+        "source_condition_counts": [
+          32
+        ],
+        "uncapped_counts_absent_from_public_interface": true,
+        "uniform_candidate_pool_cells": [
+          24
+        ]
+      },
+      "rows": 1470,
+      "sha256": "cc700386b63ea4c2506dbd4bf9fdfc9df0198a67535c066b510af616d1b1e653",
+      "shard": "run-32-attempt-0.csv"
+    },
+    {
+      "input": {
+        "checkpoints": 210,
+        "generative_seed": 72,
+        "public_interface_fields": [
+          "interventions",
+          "query_ids",
+          "candidate_ids",
+          "genes",
+          "source_effects",
+          "source_per_cell_variance",
+          "source_effect_mean_variance",
+          "source_half_difference"
+        ],
+        "queries": 6,
+        "run": "run",
+        "run_directory": "runs\\controlled-study-v1\\world-72\\source_measurement_noise_two\\run",
+        "run_manifest_sha256": "c5eb560cf6edd6227f2fa29ddb298f368e23c8285c8e64c37871c3de431aaae5",
+        "scenario": "source_measurement_noise_two",
+        "scope": "controlled_truth",
+        "source_condition_counts": [
+          32
+        ],
+        "uncapped_counts_absent_from_public_interface": true,
+        "uniform_candidate_pool_cells": [
+          24
+        ]
+      },
+      "rows": 1470,
+      "sha256": "f1a60a570304d13022b618b52c9dfb64599e08a7f0ff953cf5e5677c86dece43",
+      "shard": "run-33-attempt-0.csv"
+    },
+    {
+      "input": {
+        "checkpoints": 210,
+        "generative_seed": 73,
+        "public_interface_fields": [
+          "interventions",
+          "query_ids",
+          "candidate_ids",
+          "genes",
+          "source_effects",
+          "source_per_cell_variance",
+          "source_effect_mean_variance",
+          "source_half_difference"
+        ],
+        "queries": 6,
+        "run": "run",
+        "run_directory": "runs\\controlled-study-v1\\world-73\\baseline\\run",
+        "run_manifest_sha256": "65f28ec2137e02b026dd12437757faf74cb4c5e6acf88d64a3ce75fd3b68cce0",
+        "scenario": "baseline",
+        "scope": "controlled_truth",
+        "source_condition_counts": [
+          32
+        ],
+        "uncapped_counts_absent_from_public_interface": true,
+        "uniform_candidate_pool_cells": [
+          24
+        ]
+      },
+      "rows": 1470,
+      "sha256": "2f58e2a753bb2c51e2b28e27b9de33a50d0070f6e06c54b6d77f70ae26d47586",
+      "shard": "run-34-attempt-0.csv"
+    },
+    {
+      "input": {
+        "checkpoints": 210,
+        "generative_seed": 73,
+        "public_interface_fields": [
+          "interventions",
+          "query_ids",
+          "candidate_ids",
+          "genes",
+          "source_effects",
+          "source_per_cell_variance",
+          "source_effect_mean_variance",
+          "source_half_difference"
+        ],
+        "queries": 6,
+        "run": "run",
+        "run_directory": "runs\\controlled-study-v1\\world-73\\batch_shift_one\\run",
+        "run_manifest_sha256": "e6e05e3e209d9de08576722e6b71da181e362c710069e1982699c5e66e579ea2",
+        "scenario": "batch_shift_one",
+        "scope": "controlled_truth",
+        "source_condition_counts": [
+          32
+        ],
+        "uncapped_counts_absent_from_public_interface": true,
+        "uniform_candidate_pool_cells": [
+          24
+        ]
+      },
+      "rows": 1470,
+      "sha256": "917da711d801ebbea197c10da0d1c345cd628821b1f7d4668b6215234c624c32",
+      "shard": "run-35-attempt-0.csv"
+    },
+    {
+      "input": {
+        "checkpoints": 210,
+        "generative_seed": 73,
+        "public_interface_fields": [
+          "interventions",
+          "query_ids",
+          "candidate_ids",
+          "genes",
+          "source_effects",
+          "source_per_cell_variance",
+          "source_effect_mean_variance",
+          "source_half_difference"
+        ],
+        "queries": 6,
+        "run": "run",
+        "run_directory": "runs\\controlled-study-v1\\world-73\\control_noise_four\\run",
+        "run_manifest_sha256": "4537fb6feaa83b24e90b35f17f969bd8e16d1e2b4f3d85b8f22c78e00c462b4a",
+        "scenario": "control_noise_four",
+        "scope": "controlled_truth",
+        "source_condition_counts": [
+          32
+        ],
+        "uncapped_counts_absent_from_public_interface": true,
+        "uniform_candidate_pool_cells": [
+          24
+        ]
+      },
+      "rows": 1470,
+      "sha256": "61e653ff76d426a33c33943a11dd896638b5663c37eeb859a6bf9811eab5654e",
+      "shard": "run-36-attempt-0.csv"
+    },
+    {
+      "input": {
+        "checkpoints": 210,
+        "generative_seed": 73,
+        "public_interface_fields": [
+          "interventions",
+          "query_ids",
+          "candidate_ids",
+          "genes",
+          "source_effects",
+          "source_per_cell_variance",
+          "source_effect_mean_variance",
+          "source_half_difference"
+        ],
+        "queries": 6,
+        "run": "run",
+        "run_directory": "runs\\controlled-study-v1\\world-73\\exact_rank_full\\run",
+        "run_manifest_sha256": "c4417b35881273324f95b5314ceb8b7a4740ba9246074cd9c421cee5991bfc55",
+        "scenario": "exact_rank_full",
+        "scope": "controlled_truth",
+        "source_condition_counts": [
+          32
+        ],
+        "uncapped_counts_absent_from_public_interface": true,
+        "uniform_candidate_pool_cells": [
+          24
+        ]
+      },
+      "rows": 1470,
+      "sha256": "bc0f59a98a346827d9b7b706f0836409fc477950644a0de51b9669f23c45f9c5",
+      "shard": "run-37-attempt-0.csv"
+    },
+    {
+      "input": {
+        "checkpoints": 210,
+        "generative_seed": 73,
+        "public_interface_fields": [
+          "interventions",
+          "query_ids",
+          "candidate_ids",
+          "genes",
+          "source_effects",
+          "source_per_cell_variance",
+          "source_effect_mean_variance",
+          "source_half_difference"
+        ],
+        "queries": 6,
+        "run": "run",
+        "run_directory": "runs\\controlled-study-v1\\world-73\\exact_rank_missing\\run",
+        "run_manifest_sha256": "bdcef527b2c9c37c150828b3ef361696bc7b3332356ec20377110ef0431eb911",
+        "scenario": "exact_rank_missing",
+        "scope": "controlled_truth",
+        "source_condition_counts": [
+          32
+        ],
+        "uncapped_counts_absent_from_public_interface": true,
+        "uniform_candidate_pool_cells": [
+          24
+        ]
+      },
+      "rows": 1470,
+      "sha256": "4800f26b143fa4c6dec61848d22be46f4e253c03c819932ac72161fde4e587e8",
+      "shard": "run-38-attempt-0.csv"
+    },
+    {
+      "input": {
+        "checkpoints": 210,
+        "generative_seed": 73,
+        "public_interface_fields": [
+          "interventions",
+          "query_ids",
+          "candidate_ids",
+          "genes",
+          "source_effects",
+          "source_per_cell_variance",
+          "source_effect_mean_variance",
+          "source_half_difference"
+        ],
+        "queries": 6,
+        "run": "run",
+        "run_directory": "runs\\controlled-study-v1\\world-73\\mechanism_shift_2\\run",
+        "run_manifest_sha256": "ae3e029eccf560a6d3a96da3e72d028f597bf657fa1d67349a33e6a45c0f961e",
+        "scenario": "mechanism_shift_2",
+        "scope": "controlled_truth",
+        "source_condition_counts": [
+          32
+        ],
+        "uncapped_counts_absent_from_public_interface": true,
+        "uniform_candidate_pool_cells": [
+          24
+        ]
+      },
+      "rows": 1470,
+      "sha256": "769334c2d8d94fbb618be63faceab903daeea4f3591ab2c85dff3de6c90766be",
+      "shard": "run-39-attempt-0.csv"
+    },
+    {
+      "input": {
+        "checkpoints": 210,
+        "generative_seed": 73,
+        "public_interface_fields": [
+          "interventions",
+          "query_ids",
+          "candidate_ids",
+          "genes",
+          "source_effects",
+          "source_per_cell_variance",
+          "source_effect_mean_variance",
+          "source_half_difference"
+        ],
+        "queries": 6,
+        "run": "run",
+        "run_directory": "runs\\controlled-study-v1\\world-73\\query_gene_permutation\\run",
+        "run_manifest_sha256": "8ea07f0c7bd4c333913b5ac191fb842edcfd51677853234711facb15dbd79da0",
+        "scenario": "query_gene_permutation",
+        "scope": "controlled_truth",
+        "source_condition_counts": [
+          32
+        ],
+        "uncapped_counts_absent_from_public_interface": true,
+        "uniform_candidate_pool_cells": [
+          24
+        ]
+      },
+      "rows": 1470,
+      "sha256": "0f8773b35bd9b58ef7d9bdf846bc328699ddd5875b94c31340e9dcd715416dee",
+      "shard": "run-40-attempt-0.csv"
+    },
+    {
+      "input": {
+        "checkpoints": 210,
+        "generative_seed": 73,
+        "public_interface_fields": [
+          "interventions",
+          "query_ids",
+          "candidate_ids",
+          "genes",
+          "source_effects",
+          "source_per_cell_variance",
+          "source_effect_mean_variance",
+          "source_half_difference"
+        ],
+        "queries": 6,
+        "run": "run",
+        "run_directory": "runs\\controlled-study-v1\\world-73\\rank_missing\\run",
+        "run_manifest_sha256": "d9186e2e072fad6c52c859aca7ec25523e81bd5a54625fdae965f29b227d7cc7",
+        "scenario": "rank_missing",
+        "scope": "controlled_truth",
+        "source_condition_counts": [
+          32
+        ],
+        "uncapped_counts_absent_from_public_interface": true,
+        "uniform_candidate_pool_cells": [
+          24
+        ]
+      },
+      "rows": 1470,
+      "sha256": "a0b0932bb41f5ae52ac9f9b34c92c94f3780ef36974b802d0312d42d04ad889d",
+      "shard": "run-41-attempt-0.csv"
+    },
+    {
+      "input": {
+        "checkpoints": 210,
+        "generative_seed": 73,
+        "public_interface_fields": [
+          "interventions",
+          "query_ids",
+          "candidate_ids",
+          "genes",
+          "source_effects",
+          "source_per_cell_variance",
+          "source_effect_mean_variance",
+          "source_half_difference"
+        ],
+        "queries": 6,
+        "run": "run",
+        "run_directory": "runs\\controlled-study-v1\\world-73\\recipient_noise_double\\run",
+        "run_manifest_sha256": "0c18eb87d8c8dab00b3b6668ab30c7e006f5f95204126d1ed41f91a3c613d357",
+        "scenario": "recipient_noise_double",
+        "scope": "controlled_truth",
+        "source_condition_counts": [
+          32
+        ],
+        "uncapped_counts_absent_from_public_interface": true,
+        "uniform_candidate_pool_cells": [
+          24
+        ]
+      },
+      "rows": 1470,
+      "sha256": "4c53b7a8cc25353ca5b4f91bc5e9bc1648b8d4da1802e191aa80d2c6b6f2548c",
+      "shard": "run-42-attempt-0.csv"
+    },
+    {
+      "input": {
+        "checkpoints": 210,
+        "generative_seed": 73,
+        "public_interface_fields": [
+          "interventions",
+          "query_ids",
+          "candidate_ids",
+          "genes",
+          "source_effects",
+          "source_per_cell_variance",
+          "source_effect_mean_variance",
+          "source_half_difference"
+        ],
+        "queries": 6,
+        "run": "run",
+        "run_directory": "runs\\controlled-study-v1\\world-73\\recipient_noise_half\\run",
+        "run_manifest_sha256": "699c54f54227ffc6f937be6862bbeda740004108fd587aca53b13dc686b6f3f0",
+        "scenario": "recipient_noise_half",
+        "scope": "controlled_truth",
+        "source_condition_counts": [
+          32
+        ],
+        "uncapped_counts_absent_from_public_interface": true,
+        "uniform_candidate_pool_cells": [
+          24
+        ]
+      },
+      "rows": 1470,
+      "sha256": "6a5dfa8905aef692be59785d8d9d0e047df08af84bb6c4421e5e6cb685d16d2f",
+      "shard": "run-43-attempt-0.csv"
+    },
+    {
+      "input": {
+        "checkpoints": 210,
+        "generative_seed": 73,
+        "public_interface_fields": [
+          "interventions",
+          "query_ids",
+          "candidate_ids",
+          "genes",
+          "source_effects",
+          "source_per_cell_variance",
+          "source_effect_mean_variance",
+          "source_half_difference"
+        ],
+        "queries": 6,
+        "run": "run",
+        "run_directory": "runs\\controlled-study-v1\\world-73\\source_feature_error_half\\run",
+        "run_manifest_sha256": "55587c60a97a8f220f8ed1dd9cde4695aad5d0899f3773e2a23f8720554145c4",
+        "scenario": "source_feature_error_half",
+        "scope": "controlled_truth",
+        "source_condition_counts": [
+          32
+        ],
+        "uncapped_counts_absent_from_public_interface": true,
+        "uniform_candidate_pool_cells": [
+          24
+        ]
+      },
+      "rows": 1470,
+      "sha256": "70152217d1483ae311d88699966b32a86f599003d566df4a1915fee91d244c3b",
+      "shard": "run-44-attempt-0.csv"
+    },
+    {
+      "input": {
+        "checkpoints": 210,
+        "generative_seed": 73,
+        "public_interface_fields": [
+          "interventions",
+          "query_ids",
+          "candidate_ids",
+          "genes",
+          "source_effects",
+          "source_per_cell_variance",
+          "source_effect_mean_variance",
+          "source_half_difference"
+        ],
+        "queries": 6,
+        "run": "run",
+        "run_directory": "runs\\controlled-study-v1\\world-73\\source_feature_error_one\\run",
+        "run_manifest_sha256": "000c1edbc67f2ff0eb3945f1a5f10130e3a3266cb35fd047c90bd8b2dd968d72",
+        "scenario": "source_feature_error_one",
+        "scope": "controlled_truth",
+        "source_condition_counts": [
+          32
+        ],
+        "uncapped_counts_absent_from_public_interface": true,
+        "uniform_candidate_pool_cells": [
+          24
+        ]
+      },
+      "rows": 1470,
+      "sha256": "1bd1a248454263649ecfdfcbf31ed170838e7b6bc77f171f0546c1ee1395e02c",
+      "shard": "run-45-attempt-0.csv"
+    },
+    {
+      "input": {
+        "checkpoints": 210,
+        "generative_seed": 73,
+        "public_interface_fields": [
+          "interventions",
+          "query_ids",
+          "candidate_ids",
+          "genes",
+          "source_effects",
+          "source_per_cell_variance",
+          "source_effect_mean_variance",
+          "source_half_difference"
+        ],
+        "queries": 6,
+        "run": "run",
+        "run_directory": "runs\\controlled-study-v1\\world-73\\source_identity_permutation\\run",
+        "run_manifest_sha256": "62646fdf3e000bf6f1f8a8e58594797d9ffce37948009a84f34f8a8f7894ed1a",
+        "scenario": "source_identity_permutation",
+        "scope": "controlled_truth",
+        "source_condition_counts": [
+          32
+        ],
+        "uncapped_counts_absent_from_public_interface": true,
+        "uniform_candidate_pool_cells": [
+          24
+        ]
+      },
+      "rows": 1470,
+      "sha256": "3f2874370f7131e7d03612e281269dd11fc0d4ef78596e238e9cda62d22043f6",
+      "shard": "run-46-attempt-0.csv"
+    },
+    {
+      "input": {
+        "checkpoints": 210,
+        "generative_seed": 73,
+        "public_interface_fields": [
+          "interventions",
+          "query_ids",
+          "candidate_ids",
+          "genes",
+          "source_effects",
+          "source_per_cell_variance",
+          "source_effect_mean_variance",
+          "source_half_difference"
+        ],
+        "queries": 6,
+        "run": "run",
+        "run_directory": "runs\\controlled-study-v1\\world-73\\source_measurement_noise_two\\run",
+        "run_manifest_sha256": "8c0e232584df3af75843dc933bf1bbf7704224854f2a59761b9fc210accbf38d",
+        "scenario": "source_measurement_noise_two",
+        "scope": "controlled_truth",
+        "source_condition_counts": [
+          32
+        ],
+        "uncapped_counts_absent_from_public_interface": true,
+        "uniform_candidate_pool_cells": [
+          24
+        ]
+      },
+      "rows": 1470,
+      "sha256": "0db64b6a186681e1bc07b2b7a23403b375b3f7498b185f43a761d9f1d6ef6820",
+      "shard": "run-47-attempt-0.csv"
+    },
+    {
+      "input": {
+        "checkpoints": 210,
+        "generative_seed": 74,
+        "public_interface_fields": [
+          "interventions",
+          "query_ids",
+          "candidate_ids",
+          "genes",
+          "source_effects",
+          "source_per_cell_variance",
+          "source_effect_mean_variance",
+          "source_half_difference"
+        ],
+        "queries": 6,
+        "run": "run",
+        "run_directory": "runs\\controlled-study-v1\\world-74\\baseline\\run",
+        "run_manifest_sha256": "15121dc8c0efe797f03905636d0a29716b86fecf19be8780329572a7cae7fa05",
+        "scenario": "baseline",
+        "scope": "controlled_truth",
+        "source_condition_counts": [
+          32
+        ],
+        "uncapped_counts_absent_from_public_interface": true,
+        "uniform_candidate_pool_cells": [
+          24
+        ]
+      },
+      "rows": 1470,
+      "sha256": "34694fcf5efe8a3cad4f8acc1f154c8321a2a8d37927877f52d42e081b8f321e",
+      "shard": "run-48-attempt-0.csv"
+    },
+    {
+      "input": {
+        "checkpoints": 210,
+        "generative_seed": 74,
+        "public_interface_fields": [
+          "interventions",
+          "query_ids",
+          "candidate_ids",
+          "genes",
+          "source_effects",
+          "source_per_cell_variance",
+          "source_effect_mean_variance",
+          "source_half_difference"
+        ],
+        "queries": 6,
+        "run": "run",
+        "run_directory": "runs\\controlled-study-v1\\world-74\\batch_shift_one\\run",
+        "run_manifest_sha256": "67fa2c8f669d15bf054a464f18b23df448be87cf90fdd65cdf81888ef9804984",
+        "scenario": "batch_shift_one",
+        "scope": "controlled_truth",
+        "source_condition_counts": [
+          32
+        ],
+        "uncapped_counts_absent_from_public_interface": true,
+        "uniform_candidate_pool_cells": [
+          24
+        ]
+      },
+      "rows": 1470,
+      "sha256": "4d7ef1b623157ab883643c2665c36a301910d72ca17199eca95071615894bce3",
+      "shard": "run-49-attempt-0.csv"
+    },
+    {
+      "input": {
+        "checkpoints": 210,
+        "generative_seed": 74,
+        "public_interface_fields": [
+          "interventions",
+          "query_ids",
+          "candidate_ids",
+          "genes",
+          "source_effects",
+          "source_per_cell_variance",
+          "source_effect_mean_variance",
+          "source_half_difference"
+        ],
+        "queries": 6,
+        "run": "run",
+        "run_directory": "runs\\controlled-study-v1\\world-74\\control_noise_four\\run",
+        "run_manifest_sha256": "09f70d92363e7f758e28e3a51099a0246ae5530b94ecabc392cb40365c5ffc11",
+        "scenario": "control_noise_four",
+        "scope": "controlled_truth",
+        "source_condition_counts": [
+          32
+        ],
+        "uncapped_counts_absent_from_public_interface": true,
+        "uniform_candidate_pool_cells": [
+          24
+        ]
+      },
+      "rows": 1470,
+      "sha256": "3aae90c345919213e1c36af0101567a101657be4ccfe6db48639f32c97c28b08",
+      "shard": "run-50-attempt-0.csv"
+    },
+    {
+      "input": {
+        "checkpoints": 210,
+        "generative_seed": 74,
+        "public_interface_fields": [
+          "interventions",
+          "query_ids",
+          "candidate_ids",
+          "genes",
+          "source_effects",
+          "source_per_cell_variance",
+          "source_effect_mean_variance",
+          "source_half_difference"
+        ],
+        "queries": 6,
+        "run": "run",
+        "run_directory": "runs\\controlled-study-v1\\world-74\\exact_rank_full\\run",
+        "run_manifest_sha256": "71179a474be203af0b29aae39e9a7a8202ceb120167d65d3e86f96ac4b51a3b9",
+        "scenario": "exact_rank_full",
+        "scope": "controlled_truth",
+        "source_condition_counts": [
+          32
+        ],
+        "uncapped_counts_absent_from_public_interface": true,
+        "uniform_candidate_pool_cells": [
+          24
+        ]
+      },
+      "rows": 1470,
+      "sha256": "03b43bf5edcffa38531ef7285d6dd8c763d8cd8c41eef6cad03a260171bab464",
+      "shard": "run-51-attempt-0.csv"
+    },
+    {
+      "input": {
+        "checkpoints": 210,
+        "generative_seed": 74,
+        "public_interface_fields": [
+          "interventions",
+          "query_ids",
+          "candidate_ids",
+          "genes",
+          "source_effects",
+          "source_per_cell_variance",
+          "source_effect_mean_variance",
+          "source_half_difference"
+        ],
+        "queries": 6,
+        "run": "run",
+        "run_directory": "runs\\controlled-study-v1\\world-74\\exact_rank_missing\\run",
+        "run_manifest_sha256": "952844ef6d21e5d069482f0e7fa54b453b4830e49970a27c2af1cd6b4560397f",
+        "scenario": "exact_rank_missing",
+        "scope": "controlled_truth",
+        "source_condition_counts": [
+          32
+        ],
+        "uncapped_counts_absent_from_public_interface": true,
+        "uniform_candidate_pool_cells": [
+          24
+        ]
+      },
+      "rows": 1470,
+      "sha256": "e9687600ff2370fe50ea14e924f23510a182da66b19dcd1d6eb7d1d813170c07",
+      "shard": "run-52-attempt-0.csv"
+    },
+    {
+      "input": {
+        "checkpoints": 210,
+        "generative_seed": 74,
+        "public_interface_fields": [
+          "interventions",
+          "query_ids",
+          "candidate_ids",
+          "genes",
+          "source_effects",
+          "source_per_cell_variance",
+          "source_effect_mean_variance",
+          "source_half_difference"
+        ],
+        "queries": 6,
+        "run": "run",
+        "run_directory": "runs\\controlled-study-v1\\world-74\\mechanism_shift_2\\run",
+        "run_manifest_sha256": "66a42f7ca3f6f5bb267601a5d2295ecf01ab52b2098a5d65126e26c794988810",
+        "scenario": "mechanism_shift_2",
+        "scope": "controlled_truth",
+        "source_condition_counts": [
+          32
+        ],
+        "uncapped_counts_absent_from_public_interface": true,
+        "uniform_candidate_pool_cells": [
+          24
+        ]
+      },
+      "rows": 1470,
+      "sha256": "d110d4dba87c31f1a8a13a25824e4001c3b0b3b14ebbc67e5b97601586dbd3eb",
+      "shard": "run-53-attempt-0.csv"
+    },
+    {
+      "input": {
+        "checkpoints": 210,
+        "generative_seed": 74,
+        "public_interface_fields": [
+          "interventions",
+          "query_ids",
+          "candidate_ids",
+          "genes",
+          "source_effects",
+          "source_per_cell_variance",
+          "source_effect_mean_variance",
+          "source_half_difference"
+        ],
+        "queries": 6,
+        "run": "run",
+        "run_directory": "runs\\controlled-study-v1\\world-74\\query_gene_permutation\\run",
+        "run_manifest_sha256": "042857841f89a7b7da37010cfcdb42ad5bf7c3da48a76d38eb75ff1cd8410c9a",
+        "scenario": "query_gene_permutation",
+        "scope": "controlled_truth",
+        "source_condition_counts": [
+          32
+        ],
+        "uncapped_counts_absent_from_public_interface": true,
+        "uniform_candidate_pool_cells": [
+          24
+        ]
+      },
+      "rows": 1470,
+      "sha256": "591c4cd73aa77da52d26e25d1b875cf8d61c89383ea2bf3f19fd013c3fccef3e",
+      "shard": "run-54-attempt-0.csv"
+    },
+    {
+      "input": {
+        "checkpoints": 210,
+        "generative_seed": 74,
+        "public_interface_fields": [
+          "interventions",
+          "query_ids",
+          "candidate_ids",
+          "genes",
+          "source_effects",
+          "source_per_cell_variance",
+          "source_effect_mean_variance",
+          "source_half_difference"
+        ],
+        "queries": 6,
+        "run": "run",
+        "run_directory": "runs\\controlled-study-v1\\world-74\\rank_missing\\run",
+        "run_manifest_sha256": "d17274c70acbe5b7cc3c33aa40d3b0b855b3c9ebf1a312dbf9db9cff27aa1730",
+        "scenario": "rank_missing",
+        "scope": "controlled_truth",
+        "source_condition_counts": [
+          32
+        ],
+        "uncapped_counts_absent_from_public_interface": true,
+        "uniform_candidate_pool_cells": [
+          24
+        ]
+      },
+      "rows": 1470,
+      "sha256": "dba7379b4467ca2ebc3e412012172e0399bd019d64fe1b171a0b808a35354b11",
+      "shard": "run-55-attempt-0.csv"
+    },
+    {
+      "input": {
+        "checkpoints": 210,
+        "generative_seed": 74,
+        "public_interface_fields": [
+          "interventions",
+          "query_ids",
+          "candidate_ids",
+          "genes",
+          "source_effects",
+          "source_per_cell_variance",
+          "source_effect_mean_variance",
+          "source_half_difference"
+        ],
+        "queries": 6,
+        "run": "run",
+        "run_directory": "runs\\controlled-study-v1\\world-74\\recipient_noise_double\\run",
+        "run_manifest_sha256": "44e6c0f2e5910a4f3e874218e15520dcc5978c264b6c35a343c28881fa8c5baa",
+        "scenario": "recipient_noise_double",
+        "scope": "controlled_truth",
+        "source_condition_counts": [
+          32
+        ],
+        "uncapped_counts_absent_from_public_interface": true,
+        "uniform_candidate_pool_cells": [
+          24
+        ]
+      },
+      "rows": 1470,
+      "sha256": "623864e14dbbb391cb0ed73c1f7d113ad0fa3e928a99ec91c9b3257badce8ec2",
+      "shard": "run-56-attempt-0.csv"
+    },
+    {
+      "input": {
+        "checkpoints": 210,
+        "generative_seed": 74,
+        "public_interface_fields": [
+          "interventions",
+          "query_ids",
+          "candidate_ids",
+          "genes",
+          "source_effects",
+          "source_per_cell_variance",
+          "source_effect_mean_variance",
+          "source_half_difference"
+        ],
+        "queries": 6,
+        "run": "run",
+        "run_directory": "runs\\controlled-study-v1\\world-74\\recipient_noise_half\\run",
+        "run_manifest_sha256": "cc81b05e201342a93373404ad2c801562026b3f8dfbf9826afef05b085cf22d2",
+        "scenario": "recipient_noise_half",
+        "scope": "controlled_truth",
+        "source_condition_counts": [
+          32
+        ],
+        "uncapped_counts_absent_from_public_interface": true,
+        "uniform_candidate_pool_cells": [
+          24
+        ]
+      },
+      "rows": 1470,
+      "sha256": "c0a92286209d6d2f45d95b3195af51e62e7003b3273282aa456000bc5c3b0ab2",
+      "shard": "run-57-attempt-0.csv"
+    },
+    {
+      "input": {
+        "checkpoints": 210,
+        "generative_seed": 74,
+        "public_interface_fields": [
+          "interventions",
+          "query_ids",
+          "candidate_ids",
+          "genes",
+          "source_effects",
+          "source_per_cell_variance",
+          "source_effect_mean_variance",
+          "source_half_difference"
+        ],
+        "queries": 6,
+        "run": "run",
+        "run_directory": "runs\\controlled-study-v1\\world-74\\source_feature_error_half\\run",
+        "run_manifest_sha256": "5e274c37df46d7166dd3974e3a1e422ef60a4cc687bbd3a32af414c3872f03bf",
+        "scenario": "source_feature_error_half",
+        "scope": "controlled_truth",
+        "source_condition_counts": [
+          32
+        ],
+        "uncapped_counts_absent_from_public_interface": true,
+        "uniform_candidate_pool_cells": [
+          24
+        ]
+      },
+      "rows": 1470,
+      "sha256": "52a8038b199a6e1f2c8f307412e11f4c1ab006f0381a6b52698413f56f72a0e1",
+      "shard": "run-58-attempt-0.csv"
+    },
+    {
+      "input": {
+        "checkpoints": 210,
+        "generative_seed": 74,
+        "public_interface_fields": [
+          "interventions",
+          "query_ids",
+          "candidate_ids",
+          "genes",
+          "source_effects",
+          "source_per_cell_variance",
+          "source_effect_mean_variance",
+          "source_half_difference"
+        ],
+        "queries": 6,
+        "run": "run",
+        "run_directory": "runs\\controlled-study-v1\\world-74\\source_feature_error_one\\run",
+        "run_manifest_sha256": "05ae3d7628e04e786da545c056bac0b9897469bff0929ead34f39315d70fc839",
+        "scenario": "source_feature_error_one",
+        "scope": "controlled_truth",
+        "source_condition_counts": [
+          32
+        ],
+        "uncapped_counts_absent_from_public_interface": true,
+        "uniform_candidate_pool_cells": [
+          24
+        ]
+      },
+      "rows": 1470,
+      "sha256": "1141620755d77ab12e38b073f927c67a73104a0accd72b5ee715aeb35e05eabd",
+      "shard": "run-59-attempt-0.csv"
+    },
+    {
+      "input": {
+        "checkpoints": 210,
+        "generative_seed": 74,
+        "public_interface_fields": [
+          "interventions",
+          "query_ids",
+          "candidate_ids",
+          "genes",
+          "source_effects",
+          "source_per_cell_variance",
+          "source_effect_mean_variance",
+          "source_half_difference"
+        ],
+        "queries": 6,
+        "run": "run",
+        "run_directory": "runs\\controlled-study-v1\\world-74\\source_identity_permutation\\run",
+        "run_manifest_sha256": "6b182c33a60de4f2e1aa4b2040f45b9ce4060e7257bb450edfba1d34484a40fe",
+        "scenario": "source_identity_permutation",
+        "scope": "controlled_truth",
+        "source_condition_counts": [
+          32
+        ],
+        "uncapped_counts_absent_from_public_interface": true,
+        "uniform_candidate_pool_cells": [
+          24
+        ]
+      },
+      "rows": 1470,
+      "sha256": "9264531d9495a15c831f2bb570e3de320e289f3b25b9b3084e0280500be60f3e",
+      "shard": "run-60-attempt-0.csv"
+    },
+    {
+      "input": {
+        "checkpoints": 210,
+        "generative_seed": 74,
+        "public_interface_fields": [
+          "interventions",
+          "query_ids",
+          "candidate_ids",
+          "genes",
+          "source_effects",
+          "source_per_cell_variance",
+          "source_effect_mean_variance",
+          "source_half_difference"
+        ],
+        "queries": 6,
+        "run": "run",
+        "run_directory": "runs\\controlled-study-v1\\world-74\\source_measurement_noise_two\\run",
+        "run_manifest_sha256": "f6fb7f8b15359fa7c59b7ecac3b7a1bc85ff37790ba553b32d6a294f57e8d6c5",
+        "scenario": "source_measurement_noise_two",
+        "scope": "controlled_truth",
+        "source_condition_counts": [
+          32
+        ],
+        "uncapped_counts_absent_from_public_interface": true,
+        "uniform_candidate_pool_cells": [
+          24
+        ]
+      },
+      "rows": 1470,
+      "sha256": "132ef96763e0ad42d1c196930a637b73c01bce6634c39aaf336a456e8a6b6beb",
+      "shard": "run-61-attempt-0.csv"
+    },
+    {
+      "input": {
+        "checkpoints": 210,
+        "generative_seed": 75,
+        "public_interface_fields": [
+          "interventions",
+          "query_ids",
+          "candidate_ids",
+          "genes",
+          "source_effects",
+          "source_per_cell_variance",
+          "source_effect_mean_variance",
+          "source_half_difference"
+        ],
+        "queries": 6,
+        "run": "run",
+        "run_directory": "runs\\controlled-study-v1\\world-75\\baseline\\run",
+        "run_manifest_sha256": "ec6be2f4eeadd21dcf7ae0ac5b0fd1b05915b93ce2a6fa53dee6426ca69a53e7",
+        "scenario": "baseline",
+        "scope": "controlled_truth",
+        "source_condition_counts": [
+          32
+        ],
+        "uncapped_counts_absent_from_public_interface": true,
+        "uniform_candidate_pool_cells": [
+          24
+        ]
+      },
+      "rows": 1470,
+      "sha256": "a131d0fb792750d70b3ab01cf5d18a7789c8489fd2b810bde87342487adbab45",
+      "shard": "run-62-attempt-0.csv"
+    },
+    {
+      "input": {
+        "checkpoints": 210,
+        "generative_seed": 75,
+        "public_interface_fields": [
+          "interventions",
+          "query_ids",
+          "candidate_ids",
+          "genes",
+          "source_effects",
+          "source_per_cell_variance",
+          "source_effect_mean_variance",
+          "source_half_difference"
+        ],
+        "queries": 6,
+        "run": "run",
+        "run_directory": "runs\\controlled-study-v1\\world-75\\batch_shift_one\\run",
+        "run_manifest_sha256": "8ae94cc1c30bc26432c2bb47c291d9f53106a30f873fa873a29be530b4d90cca",
+        "scenario": "batch_shift_one",
+        "scope": "controlled_truth",
+        "source_condition_counts": [
+          32
+        ],
+        "uncapped_counts_absent_from_public_interface": true,
+        "uniform_candidate_pool_cells": [
+          24
+        ]
+      },
+      "rows": 1470,
+      "sha256": "d4ed0c6229ddb548695e03d6ceef705c9abdc17fd8976c72073c0c4154b1c29d",
+      "shard": "run-63-attempt-0.csv"
+    },
+    {
+      "input": {
+        "checkpoints": 210,
+        "generative_seed": 75,
+        "public_interface_fields": [
+          "interventions",
+          "query_ids",
+          "candidate_ids",
+          "genes",
+          "source_effects",
+          "source_per_cell_variance",
+          "source_effect_mean_variance",
+          "source_half_difference"
+        ],
+        "queries": 6,
+        "run": "run",
+        "run_directory": "runs\\controlled-study-v1\\world-75\\control_noise_four\\run",
+        "run_manifest_sha256": "64ec30d71a987f96d31fb9dac5c2f3ab6cdaede858881345c276e1b45971201f",
+        "scenario": "control_noise_four",
+        "scope": "controlled_truth",
+        "source_condition_counts": [
+          32
+        ],
+        "uncapped_counts_absent_from_public_interface": true,
+        "uniform_candidate_pool_cells": [
+          24
+        ]
+      },
+      "rows": 1470,
+      "sha256": "22ab41f366348a229e2baa03d281a4083356ae86718b61cbc726112b440df4c0",
+      "shard": "run-64-attempt-0.csv"
+    },
+    {
+      "input": {
+        "checkpoints": 210,
+        "generative_seed": 75,
+        "public_interface_fields": [
+          "interventions",
+          "query_ids",
+          "candidate_ids",
+          "genes",
+          "source_effects",
+          "source_per_cell_variance",
+          "source_effect_mean_variance",
+          "source_half_difference"
+        ],
+        "queries": 6,
+        "run": "run",
+        "run_directory": "runs\\controlled-study-v1\\world-75\\exact_rank_full\\run",
+        "run_manifest_sha256": "ca6d8db11043fc26955f0207ecac1d18c650df06fa221af45eeb24ecabed3a6f",
+        "scenario": "exact_rank_full",
+        "scope": "controlled_truth",
+        "source_condition_counts": [
+          32
+        ],
+        "uncapped_counts_absent_from_public_interface": true,
+        "uniform_candidate_pool_cells": [
+          24
+        ]
+      },
+      "rows": 1470,
+      "sha256": "f3378e26c5f9f21018f0ad1ce762a09ca6a086343bbf4beeece8795d212c7694",
+      "shard": "run-65-attempt-0.csv"
+    },
+    {
+      "input": {
+        "checkpoints": 210,
+        "generative_seed": 75,
+        "public_interface_fields": [
+          "interventions",
+          "query_ids",
+          "candidate_ids",
+          "genes",
+          "source_effects",
+          "source_per_cell_variance",
+          "source_effect_mean_variance",
+          "source_half_difference"
+        ],
+        "queries": 6,
+        "run": "run",
+        "run_directory": "runs\\controlled-study-v1\\world-75\\exact_rank_missing\\run",
+        "run_manifest_sha256": "23454f5a6913f64f5f3852876bce064a41628a969f48944bd01830f800e1b7a8",
+        "scenario": "exact_rank_missing",
+        "scope": "controlled_truth",
+        "source_condition_counts": [
+          32
+        ],
+        "uncapped_counts_absent_from_public_interface": true,
+        "uniform_candidate_pool_cells": [
+          24
+        ]
+      },
+      "rows": 1470,
+      "sha256": "de7d9cb6a2fd568ce6ede83e7b88c0c318553cfc184e8d768f9203a3bfc025b0",
+      "shard": "run-66-attempt-0.csv"
+    },
+    {
+      "input": {
+        "checkpoints": 210,
+        "generative_seed": 75,
+        "public_interface_fields": [
+          "interventions",
+          "query_ids",
+          "candidate_ids",
+          "genes",
+          "source_effects",
+          "source_per_cell_variance",
+          "source_effect_mean_variance",
+          "source_half_difference"
+        ],
+        "queries": 6,
+        "run": "run",
+        "run_directory": "runs\\controlled-study-v1\\world-75\\mechanism_shift_2\\run",
+        "run_manifest_sha256": "7c5ae94f1a0e25aeb73c52c2be7be028b521f151146f1e0cfb8602a71770117c",
+        "scenario": "mechanism_shift_2",
+        "scope": "controlled_truth",
+        "source_condition_counts": [
+          32
+        ],
+        "uncapped_counts_absent_from_public_interface": true,
+        "uniform_candidate_pool_cells": [
+          24
+        ]
+      },
+      "rows": 1470,
+      "sha256": "c8a9814f27b7c717cd803cc3a936f12196581a5aa8972ad4678642a0b4992ffd",
+      "shard": "run-67-attempt-0.csv"
+    },
+    {
+      "input": {
+        "checkpoints": 210,
+        "generative_seed": 75,
+        "public_interface_fields": [
+          "interventions",
+          "query_ids",
+          "candidate_ids",
+          "genes",
+          "source_effects",
+          "source_per_cell_variance",
+          "source_effect_mean_variance",
+          "source_half_difference"
+        ],
+        "queries": 6,
+        "run": "run",
+        "run_directory": "runs\\controlled-study-v1\\world-75\\query_gene_permutation\\run",
+        "run_manifest_sha256": "b64def1c3ac86cca35de2913999f143038437e24c204c725f69d0cba2c8f9920",
+        "scenario": "query_gene_permutation",
+        "scope": "controlled_truth",
+        "source_condition_counts": [
+          32
+        ],
+        "uncapped_counts_absent_from_public_interface": true,
+        "uniform_candidate_pool_cells": [
+          24
+        ]
+      },
+      "rows": 1470,
+      "sha256": "aff781c0282a4d6100e6f4b881420c20f1b8b7f9a4d18a940540e93763f69252",
+      "shard": "run-68-attempt-0.csv"
+    },
+    {
+      "input": {
+        "checkpoints": 210,
+        "generative_seed": 75,
+        "public_interface_fields": [
+          "interventions",
+          "query_ids",
+          "candidate_ids",
+          "genes",
+          "source_effects",
+          "source_per_cell_variance",
+          "source_effect_mean_variance",
+          "source_half_difference"
+        ],
+        "queries": 6,
+        "run": "run",
+        "run_directory": "runs\\controlled-study-v1\\world-75\\rank_missing\\run",
+        "run_manifest_sha256": "9bb9411073a297363702fd2f5d0cb1f2fda50343eb23a5b35e9ed6117d5ad03b",
+        "scenario": "rank_missing",
+        "scope": "controlled_truth",
+        "source_condition_counts": [
+          32
+        ],
+        "uncapped_counts_absent_from_public_interface": true,
+        "uniform_candidate_pool_cells": [
+          24
+        ]
+      },
+      "rows": 1470,
+      "sha256": "cdc5ed1634d1a3297a2f27ae0ae54f529b5be281b6ab7586843ce951b3a5bb6a",
+      "shard": "run-69-attempt-0.csv"
+    },
+    {
+      "input": {
+        "checkpoints": 210,
+        "generative_seed": 75,
+        "public_interface_fields": [
+          "interventions",
+          "query_ids",
+          "candidate_ids",
+          "genes",
+          "source_effects",
+          "source_per_cell_variance",
+          "source_effect_mean_variance",
+          "source_half_difference"
+        ],
+        "queries": 6,
+        "run": "run",
+        "run_directory": "runs\\controlled-study-v1\\world-75\\recipient_noise_double\\run",
+        "run_manifest_sha256": "528b955cc6c09fc2282e8aa1a15f0f8ccf29acacfcf8e5aa939c10bcf0c0cc1f",
+        "scenario": "recipient_noise_double",
+        "scope": "controlled_truth",
+        "source_condition_counts": [
+          32
+        ],
+        "uncapped_counts_absent_from_public_interface": true,
+        "uniform_candidate_pool_cells": [
+          24
+        ]
+      },
+      "rows": 1470,
+      "sha256": "4aeafc161216eb9e95a5cbfb31cef36f41ec0c38d8650812e62a25fef9fe94c1",
+      "shard": "run-70-attempt-0.csv"
+    },
+    {
+      "input": {
+        "checkpoints": 210,
+        "generative_seed": 75,
+        "public_interface_fields": [
+          "interventions",
+          "query_ids",
+          "candidate_ids",
+          "genes",
+          "source_effects",
+          "source_per_cell_variance",
+          "source_effect_mean_variance",
+          "source_half_difference"
+        ],
+        "queries": 6,
+        "run": "run",
+        "run_directory": "runs\\controlled-study-v1\\world-75\\recipient_noise_half\\run",
+        "run_manifest_sha256": "ae1f123a46df22740c234ab11493c61aa6482dd81585f605fe359402926fa84f",
+        "scenario": "recipient_noise_half",
+        "scope": "controlled_truth",
+        "source_condition_counts": [
+          32
+        ],
+        "uncapped_counts_absent_from_public_interface": true,
+        "uniform_candidate_pool_cells": [
+          24
+        ]
+      },
+      "rows": 1470,
+      "sha256": "3a5383c33998cba45c5bd97befdac1959632b4b5e393a31165d3049c5f3da506",
+      "shard": "run-71-attempt-0.csv"
+    },
+    {
+      "input": {
+        "checkpoints": 210,
+        "generative_seed": 75,
+        "public_interface_fields": [
+          "interventions",
+          "query_ids",
+          "candidate_ids",
+          "genes",
+          "source_effects",
+          "source_per_cell_variance",
+          "source_effect_mean_variance",
+          "source_half_difference"
+        ],
+        "queries": 6,
+        "run": "run",
+        "run_directory": "runs\\controlled-study-v1\\world-75\\source_feature_error_half\\run",
+        "run_manifest_sha256": "57e029bf44fcf200df2cc6c14291778dd40bab233dd6345bc7ccc70d532afe73",
+        "scenario": "source_feature_error_half",
+        "scope": "controlled_truth",
+        "source_condition_counts": [
+          32
+        ],
+        "uncapped_counts_absent_from_public_interface": true,
+        "uniform_candidate_pool_cells": [
+          24
+        ]
+      },
+      "rows": 1470,
+      "sha256": "ce4050f61b411ec46ad2a5be53571b1f83f6fd0e31cbd54ed9f3ee5ff46ad328",
+      "shard": "run-72-attempt-0.csv"
+    },
+    {
+      "input": {
+        "checkpoints": 210,
+        "generative_seed": 75,
+        "public_interface_fields": [
+          "interventions",
+          "query_ids",
+          "candidate_ids",
+          "genes",
+          "source_effects",
+          "source_per_cell_variance",
+          "source_effect_mean_variance",
+          "source_half_difference"
+        ],
+        "queries": 6,
+        "run": "run",
+        "run_directory": "runs\\controlled-study-v1\\world-75\\source_feature_error_one\\run",
+        "run_manifest_sha256": "6aafd7722fbacc458e0bd333c587c86c80654994b649cbf1f9b1d3a4f75a487f",
+        "scenario": "source_feature_error_one",
+        "scope": "controlled_truth",
+        "source_condition_counts": [
+          32
+        ],
+        "uncapped_counts_absent_from_public_interface": true,
+        "uniform_candidate_pool_cells": [
+          24
+        ]
+      },
+      "rows": 1470,
+      "sha256": "428723e7a67581dff8734de547b1d8e4a6680f9569cd927205a9d6cf6adf1599",
+      "shard": "run-73-attempt-0.csv"
+    },
+    {
+      "input": {
+        "checkpoints": 210,
+        "generative_seed": 75,
+        "public_interface_fields": [
+          "interventions",
+          "query_ids",
+          "candidate_ids",
+          "genes",
+          "source_effects",
+          "source_per_cell_variance",
+          "source_effect_mean_variance",
+          "source_half_difference"
+        ],
+        "queries": 6,
+        "run": "run",
+        "run_directory": "runs\\controlled-study-v1\\world-75\\source_identity_permutation\\run",
+        "run_manifest_sha256": "d84a0417b68a4a6dcbf1db2113011f1dbd82bf9607c280fbeea99019e474d801",
+        "scenario": "source_identity_permutation",
+        "scope": "controlled_truth",
+        "source_condition_counts": [
+          32
+        ],
+        "uncapped_counts_absent_from_public_interface": true,
+        "uniform_candidate_pool_cells": [
+          24
+        ]
+      },
+      "rows": 1470,
+      "sha256": "0e6b849de661c962fd58b2353dda75ed60ee7ffebc184fecad76162d158dc1dd",
+      "shard": "run-74-attempt-0.csv"
+    },
+    {
+      "input": {
+        "checkpoints": 210,
+        "generative_seed": 75,
+        "public_interface_fields": [
+          "interventions",
+          "query_ids",
+          "candidate_ids",
+          "genes",
+          "source_effects",
+          "source_per_cell_variance",
+          "source_effect_mean_variance",
+          "source_half_difference"
+        ],
+        "queries": 6,
+        "run": "run",
+        "run_directory": "runs\\controlled-study-v1\\world-75\\source_measurement_noise_two\\run",
+        "run_manifest_sha256": "ca48cd26325086b04f39f8458844da1401583a80b9c21d6b040f8af79e0c6315",
+        "scenario": "source_measurement_noise_two",
+        "scope": "controlled_truth",
+        "source_condition_counts": [
+          32
+        ],
+        "uncapped_counts_absent_from_public_interface": true,
+        "uniform_candidate_pool_cells": [
+          24
+        ]
+      },
+      "rows": 1470,
+      "sha256": "208f04e94c34d4be9b1640b5ccaac973a2fa9294c5330704130b2faaf25864dd",
+      "shard": "run-75-attempt-0.csv"
+    }
+  ],
+  "source_sha256": "8a53560c78fec150065f7f5a929ce9e4a983671e0ec810ca9081c7e93db238cb",
+  "state": "complete"
+}

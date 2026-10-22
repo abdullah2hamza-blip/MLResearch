@@ -1,0 +1,154 @@
+{
+  "independent_final_review": "Bounded read-only subagent audit found no missing scientific experiment; parent verified retained sources/inputs/results and integrated qualifications.",
+  "objective_sha256": "4ba1d6e1f20161df83ea8c28f6ebeca54e240b28906c9e7efff5e34e3e45eb55",
+  "original_plan_extras": [
+    "setup/cell ratios0/16/64 with pool exhaustion and actual spend",
+    "combined fixed-depth/control identity-only ablation",
+    "charged direct-query reference;minimum802>primary512",
+    "distance-only retention with label-free ties",
+    "actual within-gene Spearman and undefined denominators",
+    "direction/sign and scoring-gene permutation",
+    "90/95 intervals and finite counts",
+    "strongest-development-reference deviation and post-primary comparisons",
+    "conditional count-blind interface;cohort capture bias retained"
+  ],
+  "recorded_at": "2026-10-22T23:14:10.915038+00:00",
+  "remaining_required_work": [
+    "publish final code/results/docs",
+    "confirm expanded Windows and Ubuntu CI",
+    "reconcile final ledger and goal status"
+  ],
+  "requirements": [
+    {
+      "computational_scope": "verified",
+      "evidence_sha256": {
+        "docs/external-data-compatibility.md": "adb78e031c5c1d9116687ddaba723803ccdd28bf6802fb3999545da63052e3e6",
+        "docs/literature-verification.md": "847b0c19368299c3c42245cd10671177cecd01263aa35cce8061176165fea52a"
+      },
+      "name": "Evidence and scope",
+      "qualification": "Priority restricted; inaccessible full methods explicit; IterPert/PerturbPlan interfaces audited.",
+      "requirement": 1
+    },
+    {
+      "computational_scope": "verified",
+      "evidence_sha256": {
+        "docs/evidence/final-local-checks-v1.json": "99e5e3f71e055834beb598189dfff6955d7681984b0e69c39fe8ce74ab912faa",
+        "docs/evidence/installed-wheel-a04f92f.json": "fa869b8e855300cc2291e7d2b280f7678ee19fd31f29583592973c2011189ac8",
+        "docs/implementation-guide.md": "988129d6c4e3299b6cee801f3ced99e3d9b9836700a79a24410bd2b17cc38f6d",
+        "pyproject.toml": "54c37ae7d40778499fb9213164c7769ed4da8be229782ae190bc8338bcf1453f",
+        "uv.lock": "e6ee1d8b57a6e68da675ced2dee5a9c2858247b4220644a4dfef2a48676f5921"
+      },
+      "name": "Package and CLI",
+      "qualification": "Locked typed CPU-first Python3.12 package and actual isolated-wheel/offline/fresh real-episode execution.",
+      "requirement": 2
+    },
+    {
+      "computational_scope": "verified",
+      "evidence_sha256": {
+        "docs/data-dictionary.md": "7e3e3030c74852f02fcc876b71b33ee94a3fea8b6fcdcee32d7155bd728dafb8",
+        "docs/evidence/external-canonical-identifiers-v1.json": "a760b19f4e33ae6706eb4fd345eceaffa8b3c80aa427642dd5482163c725ae6b",
+        "docs/evidence/full-preparation-reproduction-v1.json": "b5410da54f019498de3a0e46cb24a53619f0e30ca6fcebc4f6e5ac2cd6558191"
+      },
+      "name": "Data and provenance",
+      "qualification": "Pinned3 raw files; full retained metadata and 2,405,927,872 values reproduce exactly; protocol/cohort/replication limits explicit.",
+      "requirement": 3
+    },
+    {
+      "computational_scope": "verified",
+      "evidence_sha256": {
+        "docs/evidence/external-completion-audit-v1.json": "a2919cdc096ef8b05d16b13ab8967b2e1b9f731f907f383e8688bb3f90a90e6a",
+        "docs/external-evaluation-protocol.md": "1148f0dcfb5283a60eca30ddebd53ac71deaab32db9a64496863406557c322db"
+      },
+      "name": "Information boundary",
+      "qualification": "720 jointly frozen checkpoints;240 independent ledger reconciliations; scorer exclusions and cooperative threat model.",
+      "requirement": 4
+    },
+    {
+      "computational_scope": "verified",
+      "evidence_sha256": {
+        "docs/assessment-uncertainty-protocol.md": "84a0a345415d05e4cb565d5038e1229765faafbc0651649fb11f493631ba7ef9",
+        "docs/controlled-study-findings.md": "c7cbb89ebc185d0ef187d0daebd7125dd2caae91b0ded9031c2a131d582401eb",
+        "docs/implemented-methods.md": "ffb583d1c2bcc8f4059981e42840be6e11639153a9ccc5eb6108338de67df24f"
+      },
+      "name": "Model and uncertainty",
+      "qualification": "Nuisance/shared covariance, paid CV, numerical span, source-error failure, qualified separate resampling and deferral.",
+      "requirement": 5
+    },
+    {
+      "computational_scope": "verified",
+      "evidence_sha256": {
+        "docs/results/external-evaluation-v1/supplement/summary.json": "ebe12b14106cdd873eb188310cb8d7d56c19383962dacc24599995286778418f",
+        "docs/secondary-supplement-findings.md": "c37603d05c4b09b4f63a0372f82f8f2dd83c1f440b8a3a0dd8f00e786906be09",
+        "docs/transfer-comparator-protocol.md": "4b15212f565d39e7154a678c8201536a80c48f9458aa2b6046db398a8dd2128e"
+      },
+      "name": "Matched comparators",
+      "qualification": "Nine shared backbones, canonical policies/ablations and qualified reconstruction; direct query expressly distinct stronger task.",
+      "requirement": 6
+    },
+    {
+      "computational_scope": "verified",
+      "evidence_sha256": {
+        "docs/external-evaluation-findings.md": "8ebced98d0ce70911f00deea6f08b6cd921069969f969a5fd4f36a0667660d8e",
+        "docs/implemented-methods.md": "ffb583d1c2bcc8f4059981e42840be6e11639153a9ccc5eb6108338de67df24f",
+        "docs/secondary-supplement-protocol.md": "661d58373535a4e6e3cb66acb085112622d7c7f6ebb4805e2b2ec83140a5ff3e"
+      },
+      "name": "Concrete extension",
+      "qualification": "Fixed-kernel discrepancy objective; classical baseline; opening/depth/control/setup finite-pool actions; negative result retained.",
+      "requirement": 7
+    },
+    {
+      "computational_scope": "verified",
+      "evidence_sha256": {
+        ".github/workflows/checks.yml": "2ab137a824906de781babbeba534aeaa5c44273f90942c0a0e144d79e9da7856",
+        "docs/evidence/final-local-checks-v1.json": "99e5e3f71e055834beb598189dfff6955d7681984b0e69c39fe8ce74ab912faa",
+        "tests/test_ranking_diagnostics.py": "a6663c0ac161122cc3260dae82e55c61af77a38dd7d7f4f195d66d9f83467dca",
+        "tests/test_secondary_diagnostics.py": "cf663fb97f0cd8ca2dd186ab437d8c10b5f1ae325a0aced5f964c9d61c2a9e7f"
+      },
+      "name": "Correctness and CI",
+      "qualification": "108 passing local tests; independent covariance/leakage/determinism references;60-file lint/format and22-module types. Final hosted result pending publication.",
+      "requirement": 8
+    },
+    {
+      "computational_scope": "verified",
+      "evidence_sha256": {
+        "docs/controlled-study-findings.md": "c7cbb89ebc185d0ef187d0daebd7125dd2caae91b0ded9031c2a131d582401eb",
+        "docs/external-evaluation-findings.md": "8ebced98d0ce70911f00deea6f08b6cd921069969f969a5fd4f36a0667660d8e",
+        "docs/integrated-development-findings.md": "08381c7edbb4320d59408513a3430868b6710153ba16dfb126519b0d567b7877",
+        "docs/results/secondary-supplement-v1/allocation-analysis/summary.json": "5b6353172950f736f8d7670826891cc46f644bc9a4a25e30a24ce8242b7477b4"
+      },
+      "name": "Executed study",
+      "qualification": "Pilots/tuning,70 original controlled cases,both external directions,30 additional price cases,5 seeds and justified conditional replication.",
+      "requirement": 9
+    },
+    {
+      "computational_scope": "verified",
+      "evidence_sha256": {
+        "docs/research-report.md": "084629756d9a72a8f0692f068a8f66c4215dc85e25565de027cbd1b04c86fab7",
+        "docs/results/secondary-supplement-v1/diagnostic-analysis/summary.json": "1ac366de1bb5885656c7d0e38ce1cd0d3fdd952216e762b7d8421403114bf2a3",
+        "docs/secondary-supplement-findings.md": "c37603d05c4b09b4f63a0372f82f8f2dd83c1f440b8a3a0dd8f00e786906be09"
+      },
+      "name": "Actual analysis",
+      "qualification": "Primary remains fixed; comparator-selection deviation and post-primary timing explicit; all promised secondary analyses complete with denominator/cost/uncertainty limitations.",
+      "requirement": 10
+    },
+    {
+      "computational_scope": "verified",
+      "evidence_sha256": {
+        "docs/evidence/external-retention-verification-v1.json": "9fa791503fd89f580f65db8091f614467c363be593d78b5bbe819d2a7e6338ac",
+        "docs/evidence/secondary-retention-verification-v1.json": "fa09002fd414d09b46d090e255f598b790006b664ea4e6293d38a04a8ef777c9",
+        "docs/implementation-status.md": "736fc1824db542ad5081b6c7c34ce2dc8d1c85c783d2683635ffc643d042ba8a",
+        "docs/secondary-supplement-reproduction.md": "4391aab2c5c169aba8bae703c2f8a51f1c0bb4058adbfb819e233ad7404eb6c6"
+      },
+      "name": "Research artifacts",
+      "qualification": "229 secondary+179 unchanged primary files verified; all11 full requirements and original-plan extras reviewed. Final publication/CI pending.",
+      "requirement": 11
+    }
+  ],
+  "scope_limitations": [
+    "no biological replication or prospective validation",
+    "no monetary-savings or novelty-priority claim",
+    "inaccessible full competitor methods remain explicit",
+    "one primary720-checkpoint suite;raw preparation and episodes separately reproduced"
+  ],
+  "state": "computational_scope_verified_publication_pending"
+}

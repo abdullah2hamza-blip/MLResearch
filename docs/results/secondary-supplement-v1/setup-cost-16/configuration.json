@@ -1,0 +1,99 @@
+{
+  "acquisition_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "budgets": [
+    512,
+    768,
+    1024
+  ],
+  "development_resource_record": "docs/evidence/development-resource-accounting-v3.json",
+  "generative_seeds": [
+    171,
+    172,
+    173,
+    174,
+    175
+  ],
+  "output_directory": "runs/setup-cost-16-v1",
+  "policies": [
+    "random_equal",
+    "fixed_grid",
+    "worst_query",
+    "mean_query",
+    "bias_aware",
+    "bias_identity_only"
+  ],
+  "policy": {
+    "allow_controls": true,
+    "allow_depth": true,
+    "allow_opening": true,
+    "block_cells": 8,
+    "cell_cost": 1,
+    "control_cell_cost": 1,
+    "discrepancy_weight": 0.25,
+    "fixed_control_fraction": 0.25,
+    "fixed_depth": 8,
+    "identity_selection": "adaptive",
+    "kernel_length": 1.0,
+    "partial_blocks": true,
+    "pilot_cells": 8,
+    "pilot_controls": 16,
+    "pilot_interventions": 6,
+    "rank": 3,
+    "ridge": 0.1,
+    "ridge_grid": [
+      0.1,
+      1,
+      10,
+      100,
+      1000,
+      10000,
+      100000
+    ],
+    "ridge_include_null": true,
+    "setup_cost": 16,
+    "shared_covariance": true,
+    "variance_prior": "paid_ratio"
+  },
+  "primary_backbone": "ridge_cv",
+  "scenarios": {
+    "baseline": {},
+    "mechanism_shift_2": {
+      "mechanism_shift": 2
+    }
+  },
+  "simulation": {
+    "acquisition_cells": 24,
+    "assessment_cells": 24,
+    "batch_noise_scale": 0.0,
+    "batches": 4,
+    "calibration_last_axis_scale": 1.0,
+    "control_noise_multiplier": 1.0,
+    "controls_each_bank": 64,
+    "genes": 64,
+    "interventions": 24,
+    "latent_rank": 3,
+    "measurement_noise": 1.0,
+    "mechanism_shift": 0.0,
+    "query_fraction": 0.25,
+    "seed": 71,
+    "source_cells": 32,
+    "source_feature_error": 0.0,
+    "source_measurement_noise": 0.5
+  },
+  "variants": {
+    "bias_identity_only": {
+      "base": "bias_aware",
+      "overrides": {
+        "allow_controls": false,
+        "allow_depth": false
+      }
+    }
+  },
+  "workers": 1
+}

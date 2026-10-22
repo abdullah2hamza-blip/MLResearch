@@ -1,0 +1,32 @@
+{
+  "input": {
+    "checkpoints": 60,
+    "generative_seed": null,
+    "public_interface_fields": [
+      "interventions",
+      "query_ids",
+      "candidate_ids",
+      "genes",
+      "source_effects",
+      "source_per_cell_variance",
+      "source_effect_mean_variance",
+      "source_half_difference"
+    ],
+    "queries": 131,
+    "run": "external-rpe1-to-k562-identity-permuted-v1",
+    "run_directory": "C:\\Users\\Abdul\\Documents\\MLResearch\\runs\\external-rpe1-to-k562-identity-permuted-v1",
+    "run_manifest_sha256": "49d478c5fb256898cec9f8a342f0bbd8bd226492746c8de970e3fcecf69a1f15",
+    "scenario": "external",
+    "scope": "external_assessment",
+    "source_condition_counts": [
+      96
+    ],
+    "uncapped_counts_absent_from_public_interface": true,
+    "uniform_candidate_pool_cells": [
+      64
+    ]
+  },
+  "rows": 540,
+  "sha256": "bf700df3439855088352c67472d3bcce0f58d52ded84a21ea0518614b18449d4",
+  "shard": "run-4-attempt-0.csv"
+}

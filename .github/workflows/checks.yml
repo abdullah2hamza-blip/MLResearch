@@ -36,6 +36,10 @@ jobs:
       - run: uv run --locked python scripts/report-external-suite.py .cache/external-smoke-suite --output .cache/external-smoke-reports
       - run: uv run --locked python scripts/analyze-external-suite.py .cache/external-smoke-suite --output .cache/external-smoke-supplement
       - run: uv run --locked python scripts/retain-external-diagnostics.py .cache/external-smoke-suite --output .cache/external-smoke-diagnostics
+      - run: uv run --locked python scripts/secondary-frozen-diagnostics.py --external-suite .cache/external-smoke-suite --output .cache/secondary-frozen-smoke
+      - run: uv run --locked python scripts/ranking-diagnostics.py --diagnostics .cache/secondary-frozen-smoke --output .cache/ranking-smoke
+      - run: uv run --locked python scripts/ranking-diagnostics.py --diagnostics .cache/secondary-frozen-smoke --output .cache/ranking-smoke --resume
+      - run: uv run --locked python scripts/verify-secondary-retention.py --bundle docs/results/secondary-supplement-v1 --primary docs/results/external-evaluation-v1 --output .cache/secondary-retention.json
       - run: uv run --locked mlresearch uncertainty .cache/offline-demo/experiment --output .cache/uncertainty.json --samples 200
       - run: uv run --locked mlresearch account-development --output .cache/development-cost.json .cache/offline-demo/experiment
       - run: uv run --locked mlresearch study configs/study-smoke.json

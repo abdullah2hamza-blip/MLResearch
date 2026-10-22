@@ -1,0 +1,32 @@
+{
+  "input": {
+    "checkpoints": 60,
+    "generative_seed": null,
+    "public_interface_fields": [
+      "interventions",
+      "query_ids",
+      "candidate_ids",
+      "genes",
+      "source_effects",
+      "source_per_cell_variance",
+      "source_effect_mean_variance",
+      "source_half_difference"
+    ],
+    "queries": 131,
+    "run": "external-k562-to-rpe1-query-gene-permuted-v1",
+    "run_directory": "C:\\Users\\Abdul\\Documents\\MLResearch\\runs\\external-k562-to-rpe1-query-gene-permuted-v1",
+    "run_manifest_sha256": "8bfa39930a440210c992cb93537db16d871eb6cb996a0cdf33f4778fc88bc2e6",
+    "scenario": "external",
+    "scope": "external_assessment",
+    "source_condition_counts": [
+      96
+    ],
+    "uncapped_counts_absent_from_public_interface": true,
+    "uniform_candidate_pool_cells": [
+      64
+    ]
+  },
+  "rows": 540,
+  "sha256": "7958fc83b7cb642f160d30577c2167eb981fcbfc56db35d2384a305a0002ae8c",
+  "shard": "run-3-attempt-0.csv"
+}

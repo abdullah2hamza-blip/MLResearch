@@ -1,0 +1,24 @@
+{
+  "cell_identifiers_included": true,
+  "full_prediction_arrays_included": false,
+  "qualification": "All 10 cases retained; per-query metrics are descriptive within each frozen synthetic world. Large raw arrays remain in ignored runs; regenerate with saved configuration and exact source ZIP.",
+  "raw_cell_expression_included": false,
+  "retention_source_sha256": "a6cd3c57bae15d6bb1f7e14c9b6133f8275192ae7396fae733c39d3cbb1078ce",
+  "sha256": {
+    "case-audits.zip": "b4e17c472d44be1826af5febd4060f27d65c317ff80a87df22fbf70283bbba46",
+    "case-index.json": "f367b9dec0a4c0565ca8c098b60e26b35e1c7ad28a085a6db598c43d17e8f9d3",
+    "code.zip": "c8fa5b6732d7ccd5fb060366f0fc50ece34fba409ecf58ffff701f105f210e42",
+    "configuration.json": "f14330e42042b36ff7fc671350e7e413fbf65f1abcd599acc22c295738526d77",
+    "controlled-scenarios.png": "73b5bb66843cee4bffd007b6a8a3fee23cce4c7d2b0dccdf344cfd17839707fe",
+    "controlled-scenarios.svg": "ddb0a583aca5fafd2cb69b68d488f6c21dd3f6244bdb7e7fe444768b179718ae",
+    "curves-by-world.csv": "2432c59087a8cf0cc0cf89a11d46b4cf29dc94f5607cb858c143c7de6a4f5da9",
+    "events.jsonl": "1bd8b854dd2e562c1bb889e3ae4c3c3a9f58eaa07d3e3f78a85586ae648fff59",
+    "paired-world-comparisons.csv": "8c933220889a1f0dbd8b92ac542c0ad3524a14578b3ffd44bf33a6b258abc6d2",
+    "per-query-metrics.zip": "a41371c31f0064bcec9ed181a50a296382323e9cfc785b19a09d9adc51a8d90e",
+    "retention-analysis.py": "a6cd3c57bae15d6bb1f7e14c9b6133f8275192ae7396fae733c39d3cbb1078ce",
+    "study-manifest.json": "cf2cbd634353550e781ddb0f62cbd14d9eaf5c11b7fc1f980ac8e659e5d8465a",
+    "uncertainty-diagnostics.csv": "4f4babfcb7baab367d4a3174dcaf29777042e118dc33939364393f636c167d06"
+  },
+  "source_tree_sha256": "5df3ead591e659904efc40a4bce1bf977dccca9919c2f1fea370d2f2b4c2c696",
+  "study_manifest_sha256": "cf2cbd634353550e781ddb0f62cbd14d9eaf5c11b7fc1f980ac8e659e5d8465a"
+}

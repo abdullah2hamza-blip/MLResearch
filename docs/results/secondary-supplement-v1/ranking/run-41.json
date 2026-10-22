@@ -1,0 +1,32 @@
+{
+  "input": {
+    "checkpoints": 210,
+    "generative_seed": 73,
+    "public_interface_fields": [
+      "interventions",
+      "query_ids",
+      "candidate_ids",
+      "genes",
+      "source_effects",
+      "source_per_cell_variance",
+      "source_effect_mean_variance",
+      "source_half_difference"
+    ],
+    "queries": 6,
+    "run": "run",
+    "run_directory": "runs\\controlled-study-v1\\world-73\\rank_missing\\run",
+    "run_manifest_sha256": "d9186e2e072fad6c52c859aca7ec25523e81bd5a54625fdae965f29b227d7cc7",
+    "scenario": "rank_missing",
+    "scope": "controlled_truth",
+    "source_condition_counts": [
+      32
+    ],
+    "uncapped_counts_absent_from_public_interface": true,
+    "uniform_candidate_pool_cells": [
+      24
+    ]
+  },
+  "rows": 1470,
+  "sha256": "a0b0932bb41f5ae52ac9f9b34c92c94f3780ef36974b802d0312d42d04ad889d",
+  "shard": "run-41-attempt-0.csv"
+}

@@ -1,0 +1,59 @@
+{
+  "analysis_source_sha256": "7a0365128f162f32f99c88c89450849603eff2a204b6a7371038bc22a321f9ff",
+  "primary_suite_manifest_sha256": "6520d23aebfa4963cf7a6e13f983840b3d680c4ae8fc1b4b27e02b127a3eebc4",
+  "qualification": "Conditional fixed-cohort count-blind interface check: varying unused raw-count annotations leaves every policy input identical; deterministic predictions cannot depend on those annotations. No new cohort or policy rerun is claimed. Eligibility still requires counts>=96; capture/survival selection bias remains. Paid sample counts and finite remaining availability are necessarily visible.",
+  "recorded_at": "2026-10-22T21:56:46.665263+00:00",
+  "runs": [
+    {
+      "actual_uncapped_eligible_counts_range": [
+        96,
+        1962
+      ],
+      "all_policy_public_fields_identical_after_count_annotation": true,
+      "episode_manifest_sha256": "6b9a48d9650c26b40068074b975979568f384f0b6443b513055279dce636413e",
+      "public_fields": [
+        "interventions",
+        "query_ids",
+        "candidate_ids",
+        "genes",
+        "source_effects",
+        "source_per_cell_variance",
+        "source_effect_mean_variance",
+        "source_half_difference"
+      ],
+      "run": "external-k562-to-rpe1-v1",
+      "uniform_candidate_pool_cells": [
+        64
+      ],
+      "uniform_source_condition_cells": [
+        96
+      ]
+    },
+    {
+      "actual_uncapped_eligible_counts_range": [
+        96,
+        752
+      ],
+      "all_policy_public_fields_identical_after_count_annotation": true,
+      "episode_manifest_sha256": "d64e6ffe37bec7d895a0dc1f6802b7b1ec2d2e541f1a58f5287e40056eff1ec0",
+      "public_fields": [
+        "interventions",
+        "query_ids",
+        "candidate_ids",
+        "genes",
+        "source_effects",
+        "source_per_cell_variance",
+        "source_effect_mean_variance",
+        "source_half_difference"
+      ],
+      "run": "external-rpe1-to-k562-v1",
+      "uniform_candidate_pool_cells": [
+        64
+      ],
+      "uniform_source_condition_cells": [
+        96
+      ]
+    }
+  ],
+  "state": "passed"
+}

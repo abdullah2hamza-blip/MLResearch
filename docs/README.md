@@ -4,6 +4,8 @@ The [research report](research-report.md) gives the completed computational stud
 
 **Original dossier cutoff: October 21, 2026. Computational evidence updated October 22, 2026.** The proposal below is retained as the original research rationale. Its novelty potential is not a finding of the implemented study. Prospective biological validation remains outside scope.
 
+The [completed secondary supplement](secondary-supplement-findings.md) adds setup-cost sensitivity, a charged direct-query reference, actual ordinal ranking, both interval levels, distance retention and a count-interface audit. [Full raw preparation](evidence/full-preparation-reproduction-v1.json) reproduces every retained matrix byte and all metadata. [Supplement reproduction](secondary-supplement-reproduction.md) preserves its post-primary timing and source/failure records.
+
 ## Recommendation
 
 Investigate **budgeted identification of transferable perturbation effects** at the intersection of machine learning, causal inference, experimental design, and single-cell biology.

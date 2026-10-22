@@ -1,0 +1,15 @@
+{
+  "all_zip_crc_members_verified": 1349,
+  "direct_task_ledgers_independently_verified": 60,
+  "nested_hash_bound_members_verified": 1200,
+  "primary_index_sha256": "d5dce36cb75f6a6d40ce50d574c6ccc3f69cd619ee2b63f6ada187bba4dfd063",
+  "qualification": "Retention/cost integrity, not a new independent biological experiment. Direct-task primary/scorer bank membership was verified at generation; this offline check reauthenticates retained bytes, chain, nonreuse and prices.",
+  "ranking_rows_matched_to_76_receipts_and_shards": 109380,
+  "recorded_at": "2026-10-22T23:11:52.648210+00:00",
+  "secondary_files_verified": 229,
+  "secondary_index_sha256": "6034103910fccdec5f0e6ea65acf51c2f9f103048e065519320d2c46190f1f5e",
+  "setup_cost_cases": 30,
+  "state": "passed",
+  "unchanged_primary_files_verified": 179,
+  "verification_source_sha256": "feea673d9a775e2a3643eada1b547b0dfd04ca2d0fdf9fb28c78c15c5e112768"
+}

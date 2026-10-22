@@ -1,0 +1,288 @@
+{
+  "cases": [
+    {
+      "generative_seed": 171,
+      "manifest_sha256": "96d1524f5bfe6522baa931360abd95338424c67b4248030ddfbaac8b89f3fa66",
+      "run": "runs\\setup-cost-16-v1\\world-171\\baseline\\run",
+      "scenario": "baseline",
+      "truth_metrics_sha256": "80b405e845d533bb358ac66be8cd755319d866df71cb949c57460e0c41f779ef"
+    },
+    {
+      "generative_seed": 171,
+      "manifest_sha256": "d8bd9ebb996f7a2deb71422735297a878b3390290a0c23467d55ffb70d20000b",
+      "run": "runs\\setup-cost-16-v1\\world-171\\mechanism_shift_2\\run",
+      "scenario": "mechanism_shift_2",
+      "truth_metrics_sha256": "39e6d7e74ddcb63a7e657d4ef432f39eb65ee2626f5aec39b10e52e3c2b8145c"
+    },
+    {
+      "generative_seed": 172,
+      "manifest_sha256": "e9a1177f9a41c209bd37694adc67b2e00fab1b521c157135347261db2a30a039",
+      "run": "runs\\setup-cost-16-v1\\world-172\\baseline\\run",
+      "scenario": "baseline",
+      "truth_metrics_sha256": "7a08235f469c0281479af6b3daefd1d5f01fed57f85a09ce71336c4226806262"
+    },
+    {
+      "generative_seed": 172,
+      "manifest_sha256": "b15a8006f02a1690eabd2d885fba365df6fd0d765a2c08b304281071e2439659",
+      "run": "runs\\setup-cost-16-v1\\world-172\\mechanism_shift_2\\run",
+      "scenario": "mechanism_shift_2",
+      "truth_metrics_sha256": "55b9d97993bada9fe6883a6c8a7dc792291350adb371d24ea144298cdc5095dc"
+    },
+    {
+      "generative_seed": 173,
+      "manifest_sha256": "2cb08e7ac10ab28f6374336ba268f489d9ba46ab9e4155e25f229ac6f59b662e",
+      "run": "runs\\setup-cost-16-v1\\world-173\\baseline\\run",
+      "scenario": "baseline",
+      "truth_metrics_sha256": "50fafb23c56127d2851f683e089a72313f06ae0f0a905d846689576833833f1c"
+    },
+    {
+      "generative_seed": 173,
+      "manifest_sha256": "e6c9d9d18006ab29a5eb83b9f799b3d5106a50c398f7b1a5f91700ebd2ba2c28",
+      "run": "runs\\setup-cost-16-v1\\world-173\\mechanism_shift_2\\run",
+      "scenario": "mechanism_shift_2",
+      "truth_metrics_sha256": "e6473a6ed8303fa1c729ac951827e4742b2aa4bfb101d38e7c99281e20d0115c"
+    },
+    {
+      "generative_seed": 174,
+      "manifest_sha256": "c1692c54d26c2545056ab6f149e128bd84c36362cda38381229ac398ecc24af1",
+      "run": "runs\\setup-cost-16-v1\\world-174\\baseline\\run",
+      "scenario": "baseline",
+      "truth_metrics_sha256": "3052dab7f9927921115b86f3d73f1c9644e37995be66e212c48e9b000efa5f58"
+    },
+    {
+      "generative_seed": 174,
+      "manifest_sha256": "775f1b7c645032baf4934747f026bd09aba9f71a22922db1854452fdbcddaae8",
+      "run": "runs\\setup-cost-16-v1\\world-174\\mechanism_shift_2\\run",
+      "scenario": "mechanism_shift_2",
+      "truth_metrics_sha256": "122d5d31aa0895914b79e6ec0b63c7cb03c4535073b858ab417aaf726fadbffc"
+    },
+    {
+      "generative_seed": 175,
+      "manifest_sha256": "a2fb16802db42284c887d44a1bb3f190647ac8061c0262523129b082be76a694",
+      "run": "runs\\setup-cost-16-v1\\world-175\\baseline\\run",
+      "scenario": "baseline",
+      "truth_metrics_sha256": "c769abfe819ef91810a929c118f4ddda03862da6bb0cc37f385d494cd4aaf5f7"
+    },
+    {
+      "generative_seed": 175,
+      "manifest_sha256": "05ad6d95c183e39e37f436ccf5ae2fe5a6b210dd0d3e5af8f059404d975756b0",
+      "run": "runs\\setup-cost-16-v1\\world-175\\mechanism_shift_2\\run",
+      "scenario": "mechanism_shift_2",
+      "truth_metrics_sha256": "d460e5e1eb4cb855ed4064d22c8bec70ab7432db9700939b556886616889a075"
+    }
+  ],
+  "configuration_sha256": "d1c70f7b44db87829e8927112ae8fa88005b451237c73bea4d7f49db764b53a2",
+  "development_resource_sha256": "97979e5855ae038eef2f59ab301c51c450b445d1f4b3417dfd7d5017250c614a",
+  "environment": {
+    "git": {
+      "revision": "19811f287aa46108c8be5e609dbaacd624ce577a",
+      "status": ""
+    },
+    "packages": {
+      "h5py": "3.16.0",
+      "matplotlib": "3.11.2",
+      "mlresearch": "0.1.0",
+      "numpy": "2.5.4",
+      "pytest": "9.1.1",
+      "scipy": "1.18.1"
+    },
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.14",
+    "recorded_at": "2026-10-22T21:45:03.832122+00:00",
+    "source_hashes": {
+      "__init__.py": "bb8543f534bc0779c941e08d8786d17c10a58bfc43e97e080422afc3757c8eb0",
+      "__main__.py": "27503438dec93a74b0ebe814fc619333accf571b77f73344c6252c94b0b5d8b3",
+      "accounting.py": "8ed6d877678a1de2f8b0b6e7c0a471126cc3348c21f852f50caa7d17b1de40f8",
+      "acquisition.py": "52e82caa4c80dd4e577bb2e90cdaca52caf35fc8c97000e529161c21596be19d",
+      "cli.py": "6c3dd5025df8fdf80da117f6129bf36e3bbb87d0304589ea3b678ddd7d272f97",
+      "controls.py": "458f52e5886f97eed105e2c56701b51d2a26c080043b60ad8c39e9f6e9d24297",
+      "data.py": "ac2e62e8a74960d279f681cd4983d5a2f42f3cf13c8b8fde1887fc6265953789",
+      "datasets.json": "e90daa691730f09ba8885f1777ed5ae379f075d010a1dc3093c23272865e8881",
+      "design.py": "e83d39a64f0336ba7c5bf97deb997c68db3c72b3c09adf178a71b5d210d055e5",
+      "episodes.py": "62f0ee1615fcd268aec088a83e34c0744b981523a74f58fc34a7fb3a110328c6",
+      "experiment.py": "62caf7bff0edf14dd6e59d65a43198c7f34f72ade9c20df6e9faa2c7bdd6c6ef",
+      "external.py": "264b6312dda17caed78ba4e608f301ecaad034311189ee5c33597446fdd42a68",
+      "identifiers.py": "d0010bfbab280eabda82e43a5d286b3bc6a4c105a344102798ff1dcd97ccb2de",
+      "linear.py": "614d58fc6e8280e6559eb41e1d015723763ebb1db2469b5a7fe5a3ccb270566f",
+      "models.py": "5592d6c632bc9b9d6a47d1a1cf699a7fadc48c66fdba0a69c5e11eaa1230e8de",
+      "policies.py": "2ccb2f39cb78fafa6a3b452f0f76d4913e1660847cabb287ea382a69a01980fa",
+      "prepare.py": "ee8db1f477dc3185104013f08358682b6255c479226a3935acc17614eb5bf75e",
+      "provenance.py": "599e5f4b17cd39c44be9a7ddd27df89172ac3d3f6eca7a76b311cfea7c96a7e4",
+      "report.py": "1d370344507b9c5c668dcd61161df884a82ab3f91eeea4fa3bd71ef4f19b9f1c",
+      "simulation.py": "eaa3ff0c98f8f9970c7e7c9a6ee75d9fba37326187fb5932ab7a9a5cb0aa0076",
+      "study.py": "514dea833445eee09a3795c5796bd729f67893d54a1b28da5128087c1fe97708",
+      "transfer.py": "1f57c328560f3c5c08c978387fd62c865992816d5e3d962e239bdc40e0dbe20d",
+      "uncertainty.py": "f7fa9518a0636c7492eabe8e4bb6a6be317bc08158546f9fe0270b030ca35f73"
+    },
+    "source_tree_sha256": "5df3ead591e659904efc40a4bce1bf977dccca9919c2f1fea370d2f2b4c2c696"
+  },
+  "errors": [],
+  "resources_end": {
+    "available_ram_bytes": 1325645824,
+    "disk_free_bytes": 616624844800,
+    "disk_total_bytes": 1002016075776,
+    "logical_cpus": 16,
+    "memory_scope": "Current process; peak is over its lifetime, not a per-case delta.",
+    "peak_commit_bytes": 44924928,
+    "peak_working_set_bytes": 63533056,
+    "process_id": 12592,
+    "ram_bytes": 16418983936,
+    "recorded_at": "2026-10-22T21:47:33.973500+00:00",
+    "working_set_bytes": 59301888
+  },
+  "resources_start": {
+    "available_ram_bytes": 648474624,
+    "disk_free_bytes": 616949055488,
+    "disk_total_bytes": 1002016075776,
+    "logical_cpus": 16,
+    "memory_scope": "Current process; peak is over its lifetime, not a per-case delta.",
+    "peak_commit_bytes": 44793856,
+    "peak_working_set_bytes": 62939136,
+    "process_id": 12592,
+    "ram_bytes": 16418983936,
+    "recorded_at": "2026-10-22T21:45:04.194745+00:00",
+    "working_set_bytes": 58798080
+  },
+  "runtime_seconds": 149.6238122000068,
+  "source_snapshot": {
+    "path": "code.zip",
+    "purpose": "Exact package sources plus available project dependency specification.",
+    "sha256": "c8fa5b6732d7ccd5fb060366f0fc50ece34fba409ecf58ffff701f105f210e42"
+  },
+  "state": "complete",
+  "summary": {
+    "cases": 10,
+    "comparisons": [
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.0182066649756351,
+        "monte_carlo_standard_error": 9.547390175385232e-05,
+        "paired_difference": 0.00024841253356933243,
+        "policy": "bias_aware",
+        "relative_error_change": 0.013832778794636272,
+        "scenario": "baseline",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.04040347801570321,
+        "monte_carlo_standard_error": 0.003297612618684146,
+        "paired_difference": 0.02244522557363744,
+        "policy": "bias_identity_only",
+        "relative_error_change": 1.2498557777849972,
+        "scenario": "baseline",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.01971200097010707,
+        "monte_carlo_standard_error": 0.00039958426376187256,
+        "paired_difference": 0.0017537485280413028,
+        "policy": "fixed_grid",
+        "relative_error_change": 0.09765697044848791,
+        "scenario": "baseline",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.0177121853555529,
+        "monte_carlo_standard_error": 6.151216624162689e-05,
+        "paired_difference": -0.00024606708651286646,
+        "policy": "mean_query",
+        "relative_error_change": -0.013702173265839274,
+        "scenario": "baseline",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.019590014562864095,
+        "monte_carlo_standard_error": 0.00043057780559481164,
+        "paired_difference": 0.001631762120798325,
+        "policy": "random_equal",
+        "relative_error_change": 0.09086419327618164,
+        "scenario": "baseline",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.01795825244206577,
+        "monte_carlo_standard_error": 0.0,
+        "paired_difference": 0.0,
+        "policy": "worst_query",
+        "relative_error_change": 0.0,
+        "scenario": "baseline",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.03172578289332438,
+        "monte_carlo_standard_error": 0.0002671012116828122,
+        "paired_difference": 0.0004606994675257832,
+        "policy": "bias_aware",
+        "relative_error_change": 0.014735270693237101,
+        "scenario": "mechanism_shift_2",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.054578871698824714,
+        "monte_carlo_standard_error": 0.0033505315146330926,
+        "paired_difference": 0.023313788273026124,
+        "policy": "bias_identity_only",
+        "relative_error_change": 0.7456813070195932,
+        "scenario": "mechanism_shift_2",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.033196548649420475,
+        "monte_carlo_standard_error": 0.0003825281617428496,
+        "paired_difference": 0.0019314652236218804,
+        "policy": "fixed_grid",
+        "relative_error_change": 0.061777069241021706,
+        "scenario": "mechanism_shift_2",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.03132548409182952,
+        "monte_carlo_standard_error": 0.00037345576904652456,
+        "paired_difference": 6.0400666030912406e-05,
+        "policy": "mean_query",
+        "relative_error_change": 0.0019318888489218734,
+        "scenario": "mechanism_shift_2",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.03331038099443418,
+        "monte_carlo_standard_error": 0.0004616301607109948,
+        "paired_difference": 0.0020452975686355854,
+        "policy": "random_equal",
+        "relative_error_change": 0.06541794694038441,
+        "scenario": "mechanism_shift_2",
+        "worlds": 5
+      },
+      {
+        "backbone": "ridge_cv",
+        "mean_true_error_area": 0.031265083425798604,
+        "monte_carlo_standard_error": 0.0,
+        "paired_difference": 0.0,
+        "policy": "worst_query",
+        "relative_error_change": 0.0,
+        "scenario": "mechanism_shift_2",
+        "worlds": 5
+      }
+    ],
+    "independent_generative_worlds": 5,
+    "limitations": [
+      "Synthetic Gaussian expression is not a regulatory or biological validation model.",
+      "Gaussian coverage is an ideal-model diagnostic; post-selection coverage is unproven.",
+      "Coverage conditions on finite-width queries; the eligible fraction is reported.",
+      "Batch stress shares technical batch effects across disjoint cell banks.",
+      "Known truth and latent coordinates were scorer-only diagnostics."
+    ],
+    "primary_backbone": "ridge_cv",
+    "uncertainty_scope": "Monte Carlo standard errors use paired independent generative worlds. Queries and acquisition seeds are averaged within world; they are not biological replicates."
+  }
+}

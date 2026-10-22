@@ -1,0 +1,233 @@
+{
+  "all_full_matrices_byte_identical": true,
+  "analysis_source_sha256": "c58bade740409f306aa093db68ff5152e9eb7749531f98f68aaa591449d63065",
+  "archive_sha256": "e82674851aff23b78ff61a12adcb579dec12b9dc548675e45058b813c0f8458e",
+  "configuration_sha256": {
+    "frangieh": "126e6346a9bf12eae48bc7dd0220dfe66e77fc4f62c5a7f407832222b5bfc504",
+    "k562": "9775a8f6657e6f4b501e0f2316c14121d0d606cf4d0999f6883a3baa95a34f48",
+    "rpe1": "92ef0c066d05b9abca21216d2b127ccd99d775f635127af543f17bb32664973f"
+  },
+  "datasets": [
+    {
+      "complete_metadata_equal": true,
+      "dataset": "frangieh",
+      "entire_npy_file_byte_identical": true,
+      "maximum_absolute_difference": 0.0,
+      "numeric_entries_verified": 1524539328,
+      "original_directory": "data\\prepared\\frangieh-moi1-cap96-v1",
+      "original_manifest_sha256": "353b8c0d6583648be5cab4f53dc4fdd24bd8cf3646fc08b293443b9e3b28085b",
+      "original_values_sha256": "9c7a5eb1c731c19b2a35f5bae5763db1fb2640c93cf511d209a74f97c1002902",
+      "preparation_io": {
+        "column_block_size": {
+          "original": 16,
+          "rebuilt": 16
+        },
+        "row_block_size": {
+          "original": 128,
+          "rebuilt": 128
+        }
+      },
+      "process_cpu_seconds_including_comparison": 246.734375,
+      "raw_sha256": "cc42ef38bcf703a00e0c77c7945dd53159b12d814c438ae8afeaed9bc71f48d1",
+      "rebuilt_directory": "C:\\Users\\Abdul\\Documents\\MLResearch\\.cache\\full-prepared-reproduction-v1\\frangieh-attempt-0",
+      "rebuilt_manifest_sha256": "084bb69c67d023fbeeb8bdc6ccda239c1a470d0386daf396b06523711dee53c3",
+      "rebuilt_values_sha256": "9c7a5eb1c731c19b2a35f5bae5763db1fb2640c93cf511d209a74f97c1002902",
+      "resources_end": {
+        "available_ram_bytes": 3963154432,
+        "disk_free_bytes": 609008377856,
+        "disk_total_bytes": 1002016075776,
+        "logical_cpus": 16,
+        "memory_scope": "Current process; peak is over its lifetime, not a per-case delta.",
+        "peak_commit_bytes": 272556032,
+        "peak_working_set_bytes": 2687827968,
+        "process_id": 27348,
+        "ram_bytes": 16418983936,
+        "recorded_at": "2026-10-22T22:54:26.425235+00:00",
+        "working_set_bytes": 35540992
+      },
+      "resources_start": {
+        "available_ram_bytes": 1228468224,
+        "disk_free_bytes": 615337222144,
+        "disk_total_bytes": 1002016075776,
+        "logical_cpus": 16,
+        "memory_scope": "Current process; peak is over its lifetime, not a per-case delta.",
+        "peak_commit_bytes": 45023232,
+        "peak_working_set_bytes": 64876544,
+        "process_id": 27348,
+        "ram_bytes": 16418983936,
+        "recorded_at": "2026-10-22T22:43:35.492437+00:00",
+        "working_set_bytes": 60588032
+      },
+      "runtime_seconds_including_comparison": 650.9217123999842,
+      "shape": [
+        64294,
+        23712
+      ],
+      "unequal_float32_entries": 0
+    },
+    {
+      "complete_metadata_equal": true,
+      "dataset": "k562",
+      "entire_npy_file_byte_identical": true,
+      "maximum_absolute_difference": 0.0,
+      "numeric_entries_verified": 435959456,
+      "original_directory": "data\\prepared\\k562-paired-cap96-v1",
+      "original_manifest_sha256": "01e726e9f9cabe5602b511a2b96aad8c18a3174752323130e6fcff5b708abcc3",
+      "original_values_sha256": "1e7b84aaf55a8a0d8ccc760695a994380d746441b9e2ef589c0b0f229b42f7d2",
+      "preparation_io": {
+        "column_block_size": {
+          "original": 16,
+          "rebuilt": 16
+        },
+        "row_block_size": {
+          "original": 128,
+          "rebuilt": 128
+        }
+      },
+      "process_cpu_seconds_including_comparison": 487.328125,
+      "raw_sha256": "412fd0df8c4ccea9f4db91cd88033c49200838b29d40945e48574be588b48789",
+      "rebuilt_directory": "C:\\Users\\Abdul\\Documents\\MLResearch\\.cache\\full-prepared-reproduction-v1\\k562-attempt-0",
+      "rebuilt_manifest_sha256": "211a75158ef3da54eeb5e0fda2168bbc19d223ea4dfe44d95221ef00e2ac220b",
+      "rebuilt_values_sha256": "1e7b84aaf55a8a0d8ccc760695a994380d746441b9e2ef589c0b0f229b42f7d2",
+      "resources_end": {
+        "available_ram_bytes": 3412262912,
+        "disk_free_bytes": 607224745984,
+        "disk_total_bytes": 1002016075776,
+        "logical_cpus": 16,
+        "memory_scope": "Current process; peak is over its lifetime, not a per-case delta.",
+        "peak_commit_bytes": 272556032,
+        "peak_working_set_bytes": 2687827968,
+        "process_id": 27348,
+        "ram_bytes": 16418983936,
+        "recorded_at": "2026-10-22T23:02:55.374725+00:00",
+        "working_set_bytes": 44879872
+      },
+      "resources_start": {
+        "available_ram_bytes": 3956232192,
+        "disk_free_bytes": 609008361472,
+        "disk_total_bytes": 1002016075776,
+        "logical_cpus": 16,
+        "memory_scope": "Current process; peak is over its lifetime, not a per-case delta.",
+        "peak_commit_bytes": 272556032,
+        "peak_working_set_bytes": 2687827968,
+        "process_id": 27348,
+        "ram_bytes": 16418983936,
+        "recorded_at": "2026-10-22T22:54:26.458995+00:00",
+        "working_set_bytes": 35864576
+      },
+      "runtime_seconds_including_comparison": 508.91530690001673,
+      "shape": [
+        50912,
+        8563
+      ],
+      "unequal_float32_entries": 0
+    },
+    {
+      "complete_metadata_equal": true,
+      "dataset": "rpe1",
+      "entire_npy_file_byte_identical": true,
+      "maximum_absolute_difference": 0.0,
+      "numeric_entries_verified": 445429088,
+      "original_directory": "data\\prepared\\rpe1-paired-cap96-v1",
+      "original_manifest_sha256": "7193144ea20b7b2a33c0a56bea9a304478a3bafc5d1b5200ac308519323680a7",
+      "original_values_sha256": "ee306adf6454a4ebffd039516fa320988940b70263b21aa53ee7d5ccd84a7f96",
+      "preparation_io": {
+        "column_block_size": {
+          "original": 16,
+          "rebuilt": 16
+        },
+        "row_block_size": {
+          "original": 128,
+          "rebuilt": 969
+        }
+      },
+      "process_cpu_seconds_including_comparison": 102.15625,
+      "raw_sha256": "12d6a0cf9378c4f09411e27f0ce07b59f1d97731bd576d6fadf112f6f088d1a4",
+      "rebuilt_directory": "C:\\Users\\Abdul\\Documents\\MLResearch\\.cache\\full-prepared-reproduction-v1\\rpe1-attempt-0",
+      "rebuilt_manifest_sha256": "41cb1f46f06641b6ca4cbdc4cc069200a5413f0368431d6e4ff0022d2eb44031",
+      "rebuilt_values_sha256": "ee306adf6454a4ebffd039516fa320988940b70263b21aa53ee7d5ccd84a7f96",
+      "resources_end": {
+        "available_ram_bytes": 3434610688,
+        "disk_free_bytes": 605434933248,
+        "disk_total_bytes": 1002016075776,
+        "logical_cpus": 16,
+        "memory_scope": "Current process; peak is over its lifetime, not a per-case delta.",
+        "peak_commit_bytes": 484827136,
+        "peak_working_set_bytes": 2687827968,
+        "process_id": 27348,
+        "ram_bytes": 16418983936,
+        "recorded_at": "2026-10-22T23:04:46.445824+00:00",
+        "working_set_bytes": 51421184
+      },
+      "resources_start": {
+        "available_ram_bytes": 3412414464,
+        "disk_free_bytes": 607224729600,
+        "disk_total_bytes": 1002016075776,
+        "logical_cpus": 16,
+        "memory_scope": "Current process; peak is over its lifetime, not a per-case delta.",
+        "peak_commit_bytes": 272556032,
+        "peak_working_set_bytes": 2687827968,
+        "process_id": 27348,
+        "ram_bytes": 16418983936,
+        "recorded_at": "2026-10-22T23:02:55.390847+00:00",
+        "working_set_bytes": 44904448
+      },
+      "runtime_seconds_including_comparison": 111.05534019999322,
+      "shape": [
+        50912,
+        8749
+      ],
+      "unequal_float32_entries": 0
+    }
+  ],
+  "environment": {
+    "git": {
+      "revision": "19811f287aa46108c8be5e609dbaacd624ce577a",
+      "status": "M .github/workflows/checks.yml\n M docs/secondary-supplement-protocol.md"
+    },
+    "packages": {
+      "h5py": "3.16.0",
+      "matplotlib": "3.11.2",
+      "mlresearch": "0.1.0",
+      "numpy": "2.5.4",
+      "pytest": "9.1.1",
+      "scipy": "1.18.1"
+    },
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.14",
+    "recorded_at": "2026-10-22T22:43:35.273509+00:00",
+    "source_hashes": {
+      "__init__.py": "bb8543f534bc0779c941e08d8786d17c10a58bfc43e97e080422afc3757c8eb0",
+      "__main__.py": "27503438dec93a74b0ebe814fc619333accf571b77f73344c6252c94b0b5d8b3",
+      "accounting.py": "8ed6d877678a1de2f8b0b6e7c0a471126cc3348c21f852f50caa7d17b1de40f8",
+      "acquisition.py": "52e82caa4c80dd4e577bb2e90cdaca52caf35fc8c97000e529161c21596be19d",
+      "cli.py": "6c3dd5025df8fdf80da117f6129bf36e3bbb87d0304589ea3b678ddd7d272f97",
+      "controls.py": "458f52e5886f97eed105e2c56701b51d2a26c080043b60ad8c39e9f6e9d24297",
+      "data.py": "ac2e62e8a74960d279f681cd4983d5a2f42f3cf13c8b8fde1887fc6265953789",
+      "datasets.json": "e90daa691730f09ba8885f1777ed5ae379f075d010a1dc3093c23272865e8881",
+      "design.py": "e83d39a64f0336ba7c5bf97deb997c68db3c72b3c09adf178a71b5d210d055e5",
+      "episodes.py": "62f0ee1615fcd268aec088a83e34c0744b981523a74f58fc34a7fb3a110328c6",
+      "experiment.py": "62caf7bff0edf14dd6e59d65a43198c7f34f72ade9c20df6e9faa2c7bdd6c6ef",
+      "external.py": "264b6312dda17caed78ba4e608f301ecaad034311189ee5c33597446fdd42a68",
+      "identifiers.py": "d0010bfbab280eabda82e43a5d286b3bc6a4c105a344102798ff1dcd97ccb2de",
+      "linear.py": "614d58fc6e8280e6559eb41e1d015723763ebb1db2469b5a7fe5a3ccb270566f",
+      "models.py": "5592d6c632bc9b9d6a47d1a1cf699a7fadc48c66fdba0a69c5e11eaa1230e8de",
+      "policies.py": "2ccb2f39cb78fafa6a3b452f0f76d4913e1660847cabb287ea382a69a01980fa",
+      "prepare.py": "ee8db1f477dc3185104013f08358682b6255c479226a3935acc17614eb5bf75e",
+      "provenance.py": "599e5f4b17cd39c44be9a7ddd27df89172ac3d3f6eca7a76b311cfea7c96a7e4",
+      "report.py": "1d370344507b9c5c668dcd61161df884a82ab3f91eeea4fa3bd71ef4f19b9f1c",
+      "simulation.py": "eaa3ff0c98f8f9970c7e7c9a6ee75d9fba37326187fb5932ab7a9a5cb0aa0076",
+      "study.py": "514dea833445eee09a3795c5796bd729f67893d54a1b28da5128087c1fe97708",
+      "transfer.py": "1f57c328560f3c5c08c978387fd62c865992816d5e3d962e239bdc40e0dbe20d",
+      "uncertainty.py": "f7fa9518a0636c7492eabe8e4bb6a6be317bc08158546f9fe0270b030ca35f73"
+    },
+    "source_tree_sha256": "5df3ead591e659904efc40a4bce1bf977dccca9919c2f1fea370d2f2b4c2c696"
+  },
+  "numeric_entries_verified": 2405927872,
+  "package_source_sha256": "5df3ead591e659904efc40a4bce1bf977dccca9919c2f1fea370d2f2b4c2c696",
+  "process_cpu_seconds_this_pass": 836.5,
+  "qualification": "All retained metadata and prepared values rebuilt from pinned raw files. Original artifacts remain unchanged; source-history hashes are preserved. IO batch sizes may differ, not scientific selection or transformation. Raw/rebuilt matrices remain ignored; archive contains only code/config/manifests.",
+  "recorded_at": "2026-10-22T23:04:46.517738+00:00",
+  "runtime_seconds_this_pass": 1271.4794379000086,
+  "state": "passed"
+}

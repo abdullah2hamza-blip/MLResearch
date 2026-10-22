@@ -6,9 +6,10 @@ and shared controls under sealed recipient queries.
 
 The [research report](docs/research-report.md) retains the completed experiments
 and negative primary result. The proposed discrepancy extension does not improve
-classical worst-query acquisition in either frozen K562/RPE1 direction.
+classical worst-query acquisition in either frozen K562/RPE1 direction by the primary test.
 
 - [External results and standalone figures](docs/external-evaluation-findings.md)
+- [Secondary cost, ranking and interval checks](docs/secondary-supplement-findings.md)
 - [Methods and assumptions](docs/implemented-methods.md)
 - [Data dictionary and provenance](docs/data-dictionary.md)
 - [Reproduction workflow](docs/external-reproduction.md)

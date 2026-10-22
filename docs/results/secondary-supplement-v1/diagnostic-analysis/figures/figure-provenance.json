@@ -1,0 +1,14 @@
+{
+  "analysis_source_sha256": "2522be7eb40e73219ec19f8d119e7c028aa29fc2377d09f4572fa0a6ea1302f1",
+  "input_sha256": {
+    "docs\\results\\external-evaluation-v1\\supplement\\summary.json": "ebe12b14106cdd873eb188310cb8d7d56c19383962dacc24599995286778418f",
+    "docs\\results\\secondary-supplement-v1\\diagnostic-analysis\\coordinate-metrics-by-world.csv": "31d0865f0b490c2a6ad1d1b5325743ebd3efa202c440fa23f5c89a20217c60d9",
+    "docs\\results\\secondary-supplement-v1\\diagnostic-analysis\\intervals-by-world.csv": "db7e345e36b5e66053e9f2c48976d5b6561a05a6f87b18df90f4b6b2e1292a99",
+    "docs\\results\\secondary-supplement-v1\\diagnostic-analysis\\ranking-by-world.csv": "6cc2dd5a18bb4feaa0fe5ec5b4f07e2cf09d2d3483863a110c674073e8a6a806"
+  },
+  "qualification": [
+    "Rank scores and absolute effects answer different questions.",
+    "Undefined-gene neutral scores and correlation denominators remain in tables.",
+    "Intervals are ideal-model diagnostics, not validated adaptive/biological CIs."
+  ]
+}
