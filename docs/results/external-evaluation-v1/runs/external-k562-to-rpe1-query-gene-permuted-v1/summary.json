@@ -1,0 +1,68 @@
+{
+  "analysis_version": 2,
+  "assessment_noise_floor": 0.004848967395861667,
+  "bootstrap_samples": 2000,
+  "bootstrap_seed": 20261022,
+  "comparisons": [
+    {
+      "acquisition_seeds": 5,
+      "comparator": "worst_query",
+      "conditional_high": 8.240785481002144e-05,
+      "conditional_low": -5.76896801387202e-05,
+      "mean_normalized_area": 0.00815918849471468,
+      "paired_difference": 5.754189012800226e-06,
+      "policy": "fixed_grid",
+      "query_interventions": 131,
+      "relative_error_change": 0.0007057380727009956
+    },
+    {
+      "acquisition_seeds": 5,
+      "comparator": "worst_query",
+      "conditional_high": 0.0,
+      "conditional_low": 0.0,
+      "mean_normalized_area": 0.008153434305701882,
+      "paired_difference": 0.0,
+      "policy": "worst_query",
+      "query_interventions": 131,
+      "relative_error_change": 0.0
+    },
+    {
+      "acquisition_seeds": 5,
+      "comparator": "worst_query",
+      "conditional_high": -3.294445817918331e-05,
+      "conditional_low": -0.0001280256192229984,
+      "mean_normalized_area": 0.00807259724138068,
+      "paired_difference": -8.083706432119998e-05,
+      "policy": "mean_query",
+      "query_interventions": 131,
+      "relative_error_change": -0.009914480363773678
+    },
+    {
+      "acquisition_seeds": 5,
+      "comparator": "worst_query",
+      "conditional_high": -4.726182427045952e-05,
+      "conditional_low": -0.000146512414341588,
+      "mean_normalized_area": 0.008058708351626098,
+      "paired_difference": -9.472595407578391e-05,
+      "policy": "bias_aware",
+      "query_interventions": 131,
+      "relative_error_change": -0.01161792080786619
+    }
+  ],
+  "fixed_development_cost_units": 6428,
+  "interpretation": "Lower error area and negative differences favor the named policy.",
+  "interval_scope": "Descriptive query-intervention bootstrap conditional on source data, fixed split, acquisition seeds, and fixed assessment/control bank. Excludes biological, guide/batch and common scoring-control uncertainty.",
+  "limitations": [
+    "Intervals are ideal Gaussian diagnostics; post-selection coverage is unvalidated.",
+    "Scalar variances omit gene heteroskedasticity, guide/batch effects and source-coordinate uncertainty.",
+    "Unregularized ideal variances do not account for ridge shrinkage bias.",
+    "The discrepancy objective uses fixed-kernel variance as a surrogate for the ridge predictor's residual risk.",
+    "Seeds and cells are not independent biological replicates.",
+    "Local residual baseline is an adaptation, not a PerturbMap reproduction.",
+    "Optional PerturbMap reconstruction uses one source and paid validation/controls; implementation differences are declared in the comparator protocol.",
+    "Fixed-grid settings are declared in configuration; any development selection must be recorded separately."
+  ],
+  "risk_retention_backbone": "ridge_cv",
+  "risk_retention_source_stability_available": true,
+  "run_manifest_sha256": "8bfa39930a440210c992cb93537db16d871eb6cb996a0cdf33f4778fc88bc2e6"
+}

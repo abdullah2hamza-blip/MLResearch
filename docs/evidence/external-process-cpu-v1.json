@@ -1,0 +1,12 @@
+{
+  "analysis_source_sha256": "5de90b202bdc2f91ef3786a22caf1c98f82ff85a67365866bbbd239f032a881b",
+  "created_at": "2026-10-22T12:57:11.412991+00:00",
+  "exited_at": "2026-10-22T21:20:59.267294+00:00",
+  "kernel_cpu_seconds": 647.515625,
+  "observer_opened_at": "2026-10-22T21:16:54.742173+00:00",
+  "process_id": 16992,
+  "qualification": "Windows GetProcessTimes for the exact suite process over its lifetime; sum of thread CPU times, distinct from elapsed time and exclusive of child-process CPU.",
+  "recorded_at": "2026-10-22T21:20:59.284578+00:00",
+  "total_process_cpu_seconds": 2297.234375,
+  "user_cpu_seconds": 1649.71875
+}

@@ -1,0 +1,141 @@
+{
+  "analysis_source_sha256": "ea43dd8e2f2568a17ae1d25f521e742945a27c987eba36230d531d09154cf693",
+  "audited_at": "2026-10-22T21:25:56.722558+00:00",
+  "datasets": [
+    {
+      "all_retained_metadata_rows_verified": 64294,
+      "configuration": "configs\\prepare-frangieh.json",
+      "full_input_genes": 23712,
+      "max_absolute_float32_discrepancy": 0.0,
+      "prepare_module_matches_recorded_environment": false,
+      "prepared_manifest_sha256": "353b8c0d6583648be5cab4f53dc4fdd24bd8cf3646fc08b293443b9e3b28085b",
+      "prepared_values_sha256": "9c7a5eb1c731c19b2a35f5bae5763db1fb2640c93cf511d209a74f97c1002902",
+      "qualification": "Full metadata/selection reproducibility and sampled full-gene expression rows; not a second computation of every matrix entry.",
+      "raw_sha256": "cc42ef38bcf703a00e0c77c7945dd53159b12d814c438ae8afeaed9bc71f48d1",
+      "reproduction_io": {
+        "column_block_size": 16,
+        "row_block_size": 128
+      },
+      "sampled_cell_ids": [
+        "cc42ef38bcf703a0:CELL_1",
+        "cc42ef38bcf703a0:CELL_117",
+        "cc42ef38bcf703a0:CELL_21726",
+        "cc42ef38bcf703a0:CELL_27515",
+        "cc42ef38bcf703a0:CELL_32831",
+        "cc42ef38bcf703a0:CELL_37354",
+        "cc42ef38bcf703a0:CELL_40031",
+        "cc42ef38bcf703a0:CELL_52328",
+        "cc42ef38bcf703a0:CELL_57629",
+        "cc42ef38bcf703a0:CELL_77121",
+        "cc42ef38bcf703a0:CELL_84611",
+        "cc42ef38bcf703a0:CELL_100922",
+        "cc42ef38bcf703a0:CELL_108543",
+        "cc42ef38bcf703a0:CELL_145222",
+        "cc42ef38bcf703a0:CELL_171665",
+        "cc42ef38bcf703a0:CELL_179499",
+        "cc42ef38bcf703a0:CELL_183398",
+        "cc42ef38bcf703a0:CELL_191724",
+        "cc42ef38bcf703a0:CELL_217831",
+        "cc42ef38bcf703a0:CELL_218325"
+      ],
+      "sampled_rows": 20,
+      "stored_io": {
+        "column_block_size": 16,
+        "row_block_size": 128
+      },
+      "unequal_float32_entries": 0
+    },
+    {
+      "all_retained_metadata_rows_verified": 50912,
+      "configuration": "configs\\prepare-k562.json",
+      "full_input_genes": 8563,
+      "max_absolute_float32_discrepancy": 0.0,
+      "prepare_module_matches_recorded_environment": false,
+      "prepared_manifest_sha256": "01e726e9f9cabe5602b511a2b96aad8c18a3174752323130e6fcff5b708abcc3",
+      "prepared_values_sha256": "1e7b84aaf55a8a0d8ccc760695a994380d746441b9e2ef589c0b0f229b42f7d2",
+      "qualification": "Full metadata/selection reproducibility and sampled full-gene expression rows; not a second computation of every matrix entry.",
+      "raw_sha256": "412fd0df8c4ccea9f4db91cd88033c49200838b29d40945e48574be588b48789",
+      "reproduction_io": {
+        "column_block_size": 16,
+        "row_block_size": 128
+      },
+      "sampled_cell_ids": [
+        "412fd0df8c4ccea9:AAACCCAAGAATAGTC-43",
+        "412fd0df8c4ccea9:AAACCCAAGGAGGGTG-47",
+        "412fd0df8c4ccea9:AAGTACCTCGCGTTTC-44",
+        "412fd0df8c4ccea9:AAGTCGTAGTCGCTAT-16",
+        "412fd0df8c4ccea9:CACAGGCGTGACACAG-5",
+        "412fd0df8c4ccea9:CAGATCAGTCGTCGGT-5",
+        "412fd0df8c4ccea9:CCCAACTCAAGGTCGA-15",
+        "412fd0df8c4ccea9:CCGATCTCACTTGAGT-37",
+        "412fd0df8c4ccea9:CCTCTCCCAATAACGA-2",
+        "412fd0df8c4ccea9:CTGAGCGGTGCACATT-3",
+        "412fd0df8c4ccea9:GAAGAATGTGTCATGT-26",
+        "412fd0df8c4ccea9:GAGTTACTCATACAGC-19",
+        "412fd0df8c4ccea9:GATGAGGCACAATCTG-37",
+        "412fd0df8c4ccea9:GGTCACGAGTAGGCCA-14",
+        "412fd0df8c4ccea9:GTGGTTACAGTAGAGC-15",
+        "412fd0df8c4ccea9:TCCCATGGTGCAGTGA-20",
+        "412fd0df8c4ccea9:TGATTTCCAGCGTGAA-4",
+        "412fd0df8c4ccea9:TTTCCTCTCGCCTAGG-4",
+        "412fd0df8c4ccea9:TTTGTTGGTTGCATGT-43",
+        "412fd0df8c4ccea9:TTTGTTGTCTGTGCGG-44"
+      ],
+      "sampled_rows": 20,
+      "stored_io": {
+        "column_block_size": 16,
+        "row_block_size": 128
+      },
+      "unequal_float32_entries": 0
+    },
+    {
+      "all_retained_metadata_rows_verified": 50912,
+      "configuration": "configs\\prepare-rpe1.json",
+      "full_input_genes": 8749,
+      "max_absolute_float32_discrepancy": 0.0,
+      "prepare_module_matches_recorded_environment": true,
+      "prepared_manifest_sha256": "7193144ea20b7b2a33c0a56bea9a304478a3bafc5d1b5200ac308519323680a7",
+      "prepared_values_sha256": "ee306adf6454a4ebffd039516fa320988940b70263b21aa53ee7d5ccd84a7f96",
+      "qualification": "Full metadata/selection reproducibility and sampled full-gene expression rows; not a second computation of every matrix entry.",
+      "raw_sha256": "12d6a0cf9378c4f09411e27f0ce07b59f1d97731bd576d6fadf112f6f088d1a4",
+      "reproduction_io": {
+        "column_block_size": 16,
+        "row_block_size": 969
+      },
+      "sampled_cell_ids": [
+        "12d6a0cf9378c4f0:AAACCCAAGAAGCGAA-32",
+        "12d6a0cf9378c4f0:AAACCCAAGTGCCGAA-55",
+        "12d6a0cf9378c4f0:AAGTGAAGTGTGGACA-32",
+        "12d6a0cf9378c4f0:AAGTGAATCTTCACGC-31",
+        "12d6a0cf9378c4f0:CACAGGCTCCCTTGTG-23",
+        "12d6a0cf9378c4f0:CAGATACGTATGGAGC-35",
+        "12d6a0cf9378c4f0:CCACTTGGTGAGCCAA-5",
+        "12d6a0cf9378c4f0:CCCTGATGTGTCTTAG-9",
+        "12d6a0cf9378c4f0:CCTCCAATCATCCTAT-9",
+        "12d6a0cf9378c4f0:CTGAATGAGTATGGCG-44",
+        "12d6a0cf9378c4f0:GAACGTTGTTACGATC-55",
+        "12d6a0cf9378c4f0:GAGTTACCAAGGCAAC-7",
+        "12d6a0cf9378c4f0:GATGAGGAGTAGGAAG-4",
+        "12d6a0cf9378c4f0:GGTAGAGGTAGAAACT-9",
+        "12d6a0cf9378c4f0:GTGGTTACACGGCGTT-15",
+        "12d6a0cf9378c4f0:TCCCATGTCAAGCCTA-31",
+        "12d6a0cf9378c4f0:TGCACGGAGGATTACA-47",
+        "12d6a0cf9378c4f0:TTTCCTCTCACTGCTC-28",
+        "12d6a0cf9378c4f0:TTTGTTGGTCCGGCAT-41",
+        "12d6a0cf9378c4f0:TTTGTTGTCTTTCCGG-22"
+      ],
+      "sampled_rows": 20,
+      "stored_io": {
+        "column_block_size": 16,
+        "row_block_size": 128
+      },
+      "unequal_float32_entries": 0
+    }
+  ],
+  "information_scope": "Scorer suite already complete; this audit neither refits models nor changes acquisitions or settings.",
+  "raw_expression_retained": false,
+  "samples": 20,
+  "seed": 20261022,
+  "state": "passed",
+  "suite_manifest_sha256": "6520d23aebfa4963cf7a6e13f983840b3d680c4ae8fc1b4b27e02b127a3eebc4"
+}

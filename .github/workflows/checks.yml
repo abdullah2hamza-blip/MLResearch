@@ -24,14 +24,18 @@ jobs:
       - name: Prepare local test directory
         run: python -c "from pathlib import Path; Path('.cache').mkdir(exist_ok=True)"
       - run: uv run --locked python -m pytest --basetemp .cache/pytest
-      - run: uv run --locked ruff check src tests
-      - run: uv run --locked ruff format --check src tests
+      - run: uv run --locked ruff check src tests scripts
+      - run: uv run --locked ruff format --check src tests scripts
       - run: uv run --locked python -m mypy src/mlresearch
       - run: uv run --locked mlresearch --help
       - run: uv run --locked mlresearch data list
       - run: uv run --locked mlresearch demo --directory .cache/offline-demo
       - run: uv run --locked mlresearch external configs/external-smoke.json
       - run: uv run --locked mlresearch score-external .cache/external-smoke-suite
+      - run: uv run --locked python scripts/audit-external-completion.py .cache/external-smoke-suite --output .cache/external-smoke-audit.json
+      - run: uv run --locked python scripts/report-external-suite.py .cache/external-smoke-suite --output .cache/external-smoke-reports
+      - run: uv run --locked python scripts/analyze-external-suite.py .cache/external-smoke-suite --output .cache/external-smoke-supplement
+      - run: uv run --locked python scripts/retain-external-diagnostics.py .cache/external-smoke-suite --output .cache/external-smoke-diagnostics
       - run: uv run --locked mlresearch uncertainty .cache/offline-demo/experiment --output .cache/uncertainty.json --samples 200
       - run: uv run --locked mlresearch account-development --output .cache/development-cost.json .cache/offline-demo/experiment
       - run: uv run --locked mlresearch study configs/study-smoke.json

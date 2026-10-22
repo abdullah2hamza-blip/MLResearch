@@ -44,7 +44,7 @@ Zero effect and source copy require no recipient measurements; their flat curves
 
 The current paired bootstrap averages acquisition seeds within each query intervention and resamples query interventions. Its interval is descriptive and conditional on the fixed source data, split and scoring/control bank. It omits common-control, biological and batch/guide uncertainty; acquisition seeds do not increase the number of biological replicates. Gaussian coverage diagnostics use ideal unregularized scalar variance around ridge predictions: regularization bias alone can spoil coverage, even before adaptive selection, source uncertainty, heteroskedastic genes or mechanism shifts. They must not be called validated confidence intervals.
 
-The complete controlled grid, accounted tuning and integrated comparator development check have executed. Outstanding study requirements include joint prediction freezing, external evaluation, external uncertainty/permutation/ablation analyses and the final evidence-to-claim report. A successful smoke run does not satisfy those requirements.
+The controlled grid, accounted tuning, integrated comparator check and six-run jointly frozen external evaluation have executed. The [research report](research-report.md) and [external findings](external-evaluation-findings.md) retain actual uncertainty/permutation/ablation results, all negative outcomes and the evidence-to-claim assessment. The [status ledger](implementation-status.md) records final publication verification. A smoke run alone would not establish those scientific results.
 
 ## Controlled study additions
 

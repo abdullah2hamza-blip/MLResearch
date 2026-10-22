@@ -1,0 +1,19 @@
+{
+  "analysis_source_sha256": "dd4364df91aaac0bb98ff5d5e4b40fbe6d1dda6c071240671a2ec5ad91feaa56",
+  "changed_budget_template_rejected": true,
+  "checked_at": "2026-10-22T13:05:21.728186+00:00",
+  "existing_frozen_episode_inputs": true,
+  "generated_new_output_and_audit_paths": true,
+  "metadata_only": true,
+  "preparation_io_differences": {
+    "K562": {},
+    "RPE1": {
+      "row_block_size": {
+        "prepared": 128,
+        "reproduction_config": 969
+      }
+    }
+  },
+  "qualification": "Helper validation on existing verified episodes; no new model fits or scorer-bank access. Full raw-data reproduction remains the documented user workflow.",
+  "scientific_settings_changed": false
+}

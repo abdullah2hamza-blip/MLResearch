@@ -1,10 +1,8 @@
 # Machine learning frontier research
 
-Latest implementation evidence: [integrated development findings](integrated-development-findings.md), with ten matched acquisition policies, nine prediction backbones, qualified common-control/source diagnostics and canonical external identifiers. The [status ledger](implementation-status.md) records the still-pending frozen external evaluation and final report.
+The [research report](research-report.md) gives the completed computational study's results and evidence-to-claim assessment. The frozen external extension is 0.565% and 0.0138% worse than classical worst-query acquisition in the two directions; no primary benefit is demonstrated. Full [external findings](external-evaluation-findings.md), [data dictionary](data-dictionary.md), [reproduction commands](external-reproduction.md) and [status ledger](implementation-status.md) connect the implementation to authoritative artifacts.
 
-**Research cutoff: October 21, 2026. Status: implementation and exploratory replay pilots; full study active.**
-
-The [first development findings](development-findings.md) retain a negative result for the proposed extension. Zero-effect prediction outperformed the measured methods on that pilot's primary full-gene endpoint. These are conditional retrospective results, not prospective biological validation.
+**Original dossier cutoff: October 21, 2026. Computational evidence updated October 22, 2026.** The proposal below is retained as the original research rationale. Its novelty potential is not a finding of the implemented study. Prospective biological validation remains outside scope.
 
 ## Recommendation
 
@@ -16,7 +14,7 @@ The proposed setting starts with measured perturbation responses in source conte
 
 The high-novelty hypothesis is that **jointly selecting calibration interventions, measurement depth, and shared controls according to query-specific identifiability can improve the cost of reliable cross-context prediction**. The potentially publishable contribution is the acquisition problem and its validated solution. Low-rank transfer, active learning, uncertainty estimation, and causal motivation already have substantial prior art.
 
-**Assessment:** high novelty potential, substantial interdisciplinary relevance, moderate confidence that this exact intersection is open. Novelty is provisional. The [implementation literature audit](literature-verification.md) recovered the two OpenReview paper identities and added important IterPert and PerturbPlan predecessors; full-method access remains limited. Prediction-directed acquisition and cell/control budgeting individually are already occupied. Their implications and an explicit rejection rule are documented in the [novelty audit](literature-and-novelty.md). No claim of being first is justified yet.
+**Original proposal assessment:** high novelty potential, substantial interdisciplinary relevance, moderate confidence that this exact intersection is open. Novelty is provisional. The [implementation literature audit](literature-verification.md) recovered the two OpenReview paper identities and added important IterPert and PerturbPlan predecessors; full-method access remains limited. Prediction-directed acquisition and cell/control budgeting individually are already occupied. Their implications and an explicit rejection rule are documented in the [novelty audit](literature-and-novelty.md). No claim of being first is justified yet.
 
 ## Read the dossier
 
@@ -54,4 +52,4 @@ The central research judgment is that a small team can investigate the **value o
 
 ## What is established here
 
-The dossier compares primary research, identifies close prior art and defines a testable project. Implementation now verifies actual input files, establishes metadata overlap, tests the cooperative information boundary and executes exploratory pilots. The current evidence does **not** establish improved biological prediction or prospective laboratory savings. Full simulation, external, ablation and uncertainty requirements remain active.
+The dossier defines the original hypothesis. The implemented study verifies pinned inputs, tests cooperative information boundaries, and executes pilots, a 70-case controlled matrix, development selection, both external directions and all declared controls. The resulting negative/failure evidence does not establish a novel acquisition benefit, biological identification or prospective laboratory savings. Read the research report for the supported claims and qualifications.

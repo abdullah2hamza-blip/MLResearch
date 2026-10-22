@@ -1,0 +1,2824 @@
+{
+  "analysis_source_sha256": "d497a5b985929055dc8ad3518a67628de5a2c2875e27d5ed85de5fdf80e68c92",
+  "analyzed_at": "2026-10-22T21:23:58.787614+00:00",
+  "bootstrap_samples": 2000,
+  "bootstrap_seed": 20261022,
+  "qualifications": [
+    "Queries averaged over acquisition seeds before paired descriptive bootstrap.",
+    "Directions reuse observations and are not independent biological replications.",
+    "Gaussian fields measure noisy-contrast compatibility, not population coverage.",
+    "Source-half support and instability/deferral flags are uncalibrated diagnostics.",
+    "Weak/strong strata use permitted public sources, including deliberate corruption."
+  ],
+  "runs": [
+    {
+      "acquisition_runtime_seconds": 482.8596910999913,
+      "areas": [
+        {
+          "backbone": "zero",
+          "mse_area": 0.008125083908890643,
+          "policy": "random_equal",
+          "specificity_area": 0.0069095687441631925
+        },
+        {
+          "backbone": "mean",
+          "mse_area": 0.012588392197033442,
+          "policy": "random_equal",
+          "specificity_area": 0.006909568744168695
+        },
+        {
+          "backbone": "source_copy",
+          "mse_area": 0.00902911241227292,
+          "policy": "random_equal",
+          "specificity_area": 0.007756828216740747
+        },
+        {
+          "backbone": "affine",
+          "mse_area": 0.007858646017572316,
+          "policy": "random_equal",
+          "specificity_area": 0.006688342212600519
+        },
+        {
+          "backbone": "ridge",
+          "mse_area": 0.039219798611860784,
+          "policy": "random_equal",
+          "specificity_area": 0.032072039807927354
+        },
+        {
+          "backbone": "ridge_cv",
+          "mse_area": 0.008032355328711584,
+          "policy": "random_equal",
+          "specificity_area": 0.00683671885248121
+        },
+        {
+          "backbone": "local_residual_adaptation",
+          "mse_area": 0.01158469977754282,
+          "policy": "random_equal",
+          "specificity_area": 0.007720115000031289
+        },
+        {
+          "backbone": "recipient_local_lowrank",
+          "mse_area": 0.010200824499494776,
+          "policy": "random_equal",
+          "specificity_area": 0.007331473312727157
+        },
+        {
+          "backbone": "perturbmap_reconstruction",
+          "mse_area": 0.011059873184137078,
+          "policy": "random_equal",
+          "specificity_area": 0.006753162797933665
+        },
+        {
+          "backbone": "zero",
+          "mse_area": 0.008125083908890643,
+          "policy": "fixed_grid",
+          "specificity_area": 0.0069095687441631925
+        },
+        {
+          "backbone": "mean",
+          "mse_area": 0.01274852218313093,
+          "policy": "fixed_grid",
+          "specificity_area": 0.006909568744168981
+        },
+        {
+          "backbone": "source_copy",
+          "mse_area": 0.00902911241227292,
+          "policy": "fixed_grid",
+          "specificity_area": 0.007756828216740747
+        },
+        {
+          "backbone": "affine",
+          "mse_area": 0.007937173591660905,
+          "policy": "fixed_grid",
+          "specificity_area": 0.006726889483613704
+        },
+        {
+          "backbone": "ridge",
+          "mse_area": 0.045784933059942516,
+          "policy": "fixed_grid",
+          "specificity_area": 0.03802594696559446
+        },
+        {
+          "backbone": "ridge_cv",
+          "mse_area": 0.008081825661386474,
+          "policy": "fixed_grid",
+          "specificity_area": 0.006876030036151171
+        },
+        {
+          "backbone": "local_residual_adaptation",
+          "mse_area": 0.011614447071855959,
+          "policy": "fixed_grid",
+          "specificity_area": 0.007734633520876718
+        },
+        {
+          "backbone": "recipient_local_lowrank",
+          "mse_area": 0.01007158459749823,
+          "policy": "fixed_grid",
+          "specificity_area": 0.007266381912009387
+        },
+        {
+          "backbone": "perturbmap_reconstruction",
+          "mse_area": 0.011245727256824736,
+          "policy": "fixed_grid",
+          "specificity_area": 0.006868312636197768
+        },
+        {
+          "backbone": "zero",
+          "mse_area": 0.008125083908890643,
+          "policy": "diversity",
+          "specificity_area": 0.0069095687441631925
+        },
+        {
+          "backbone": "mean",
+          "mse_area": 0.01769498421371534,
+          "policy": "diversity",
+          "specificity_area": 0.006909568744175656
+        },
+        {
+          "backbone": "source_copy",
+          "mse_area": 0.00902911241227292,
+          "policy": "diversity",
+          "specificity_area": 0.007756828216740747
+        },
+        {
+          "backbone": "affine",
+          "mse_area": 0.008178685196591451,
+          "policy": "diversity",
+          "specificity_area": 0.006953715558686351
+        },
+        {
+          "backbone": "ridge",
+          "mse_area": 0.018653116966210734,
+          "policy": "diversity",
+          "specificity_area": 0.01007896815697044
+        },
+        {
+          "backbone": "ridge_cv",
+          "mse_area": 0.0077069795802913515,
+          "policy": "diversity",
+          "specificity_area": 0.006562259007613165
+        },
+        {
+          "backbone": "local_residual_adaptation",
+          "mse_area": 0.01384456510613797,
+          "policy": "diversity",
+          "specificity_area": 0.007782093222146388
+        },
+        {
+          "backbone": "recipient_local_lowrank",
+          "mse_area": 0.011909535674198186,
+          "policy": "diversity",
+          "specificity_area": 0.007267947640798128
+        },
+        {
+          "backbone": "perturbmap_reconstruction",
+          "mse_area": 0.014273103153884515,
+          "policy": "diversity",
+          "specificity_area": 0.006659162614405925
+        },
+        {
+          "backbone": "zero",
+          "mse_area": 0.008125083908890643,
+          "policy": "d_optimal",
+          "specificity_area": 0.0069095687441631925
+        },
+        {
+          "backbone": "mean",
+          "mse_area": 0.01468107924262235,
+          "policy": "d_optimal",
+          "specificity_area": 0.006909568744172272
+        },
+        {
+          "backbone": "source_copy",
+          "mse_area": 0.00902911241227292,
+          "policy": "d_optimal",
+          "specificity_area": 0.007756828216740747
+        },
+        {
+          "backbone": "affine",
+          "mse_area": 0.008137659175053762,
+          "policy": "d_optimal",
+          "specificity_area": 0.006867257617994431
+        },
+        {
+          "backbone": "ridge",
+          "mse_area": 0.01688508186608402,
+          "policy": "d_optimal",
+          "specificity_area": 0.009702733277116776
+        },
+        {
+          "backbone": "ridge_cv",
+          "mse_area": 0.007763310584292931,
+          "policy": "d_optimal",
+          "specificity_area": 0.006571234013544635
+        },
+        {
+          "backbone": "local_residual_adaptation",
+          "mse_area": 0.01173756118973257,
+          "policy": "d_optimal",
+          "specificity_area": 0.007711486046694372
+        },
+        {
+          "backbone": "recipient_local_lowrank",
+          "mse_area": 0.01088029511718737,
+          "policy": "d_optimal",
+          "specificity_area": 0.007346921841116939
+        },
+        {
+          "backbone": "perturbmap_reconstruction",
+          "mse_area": 0.012396558828393694,
+          "policy": "d_optimal",
+          "specificity_area": 0.006912313444977234
+        },
+        {
+          "backbone": "zero",
+          "mse_area": 0.008125083908890643,
+          "policy": "worst_query",
+          "specificity_area": 0.0069095687441631925
+        },
+        {
+          "backbone": "mean",
+          "mse_area": 0.013012318802708984,
+          "policy": "worst_query",
+          "specificity_area": 0.006909568744170053
+        },
+        {
+          "backbone": "source_copy",
+          "mse_area": 0.00902911241227292,
+          "policy": "worst_query",
+          "specificity_area": 0.007756828216740747
+        },
+        {
+          "backbone": "affine",
+          "mse_area": 0.008009272920239088,
+          "policy": "worst_query",
+          "specificity_area": 0.006817681797868758
+        },
+        {
+          "backbone": "ridge",
+          "mse_area": 0.016558062125849732,
+          "policy": "worst_query",
+          "specificity_area": 0.010709415423649145
+        },
+        {
+          "backbone": "ridge_cv",
+          "mse_area": 0.007824223179393217,
+          "policy": "worst_query",
+          "specificity_area": 0.00666668753262651
+        },
+        {
+          "backbone": "local_residual_adaptation",
+          "mse_area": 0.011395815062780881,
+          "policy": "worst_query",
+          "specificity_area": 0.007754380792171257
+        },
+        {
+          "backbone": "recipient_local_lowrank",
+          "mse_area": 0.01050444955041217,
+          "policy": "worst_query",
+          "specificity_area": 0.0073557848553383095
+        },
+        {
+          "backbone": "perturbmap_reconstruction",
+          "mse_area": 0.011077359793827657,
+          "policy": "worst_query",
+          "specificity_area": 0.006835111143508141
+        },
+        {
+          "backbone": "zero",
+          "mse_area": 0.008125083908890643,
+          "policy": "mean_query",
+          "specificity_area": 0.0069095687441631925
+        },
+        {
+          "backbone": "mean",
+          "mse_area": 0.012079796090217993,
+          "policy": "mean_query",
+          "specificity_area": 0.006909568744169317
+        },
+        {
+          "backbone": "source_copy",
+          "mse_area": 0.00902911241227292,
+          "policy": "mean_query",
+          "specificity_area": 0.007756828216740747
+        },
+        {
+          "backbone": "affine",
+          "mse_area": 0.008017403345450383,
+          "policy": "mean_query",
+          "specificity_area": 0.006861700140822702
+        },
+        {
+          "backbone": "ridge",
+          "mse_area": 0.013687481029995577,
+          "policy": "mean_query",
+          "specificity_area": 0.008850482759870859
+        },
+        {
+          "backbone": "ridge_cv",
+          "mse_area": 0.007805868771762403,
+          "policy": "mean_query",
+          "specificity_area": 0.006638421382360607
+        },
+        {
+          "backbone": "local_residual_adaptation",
+          "mse_area": 0.010724425717927671,
+          "policy": "mean_query",
+          "specificity_area": 0.007763548671747804
+        },
+        {
+          "backbone": "recipient_local_lowrank",
+          "mse_area": 0.009805261012841463,
+          "policy": "mean_query",
+          "specificity_area": 0.007186729878595463
+        },
+        {
+          "backbone": "perturbmap_reconstruction",
+          "mse_area": 0.01026969163276386,
+          "policy": "mean_query",
+          "specificity_area": 0.006773997291009956
+        },
+        {
+          "backbone": "zero",
+          "mse_area": 0.008125083908890643,
+          "policy": "reliability",
+          "specificity_area": 0.0069095687441631925
+        },
+        {
+          "backbone": "mean",
+          "mse_area": 0.01993317957418331,
+          "policy": "reliability",
+          "specificity_area": 0.006909568744177852
+        },
+        {
+          "backbone": "source_copy",
+          "mse_area": 0.00902911241227292,
+          "policy": "reliability",
+          "specificity_area": 0.007756828216740747
+        },
+        {
+          "backbone": "affine",
+          "mse_area": 0.00805419509520571,
+          "policy": "reliability",
+          "specificity_area": 0.006843620883759546
+        },
+        {
+          "backbone": "ridge",
+          "mse_area": 0.027219133220725084,
+          "policy": "reliability",
+          "specificity_area": 0.015029232712845848
+        },
+        {
+          "backbone": "ridge_cv",
+          "mse_area": 0.0077373725751183065,
+          "policy": "reliability",
+          "specificity_area": 0.00658932340008948
+        },
+        {
+          "backbone": "local_residual_adaptation",
+          "mse_area": 0.015173499268612101,
+          "policy": "reliability",
+          "specificity_area": 0.007653924200440232
+        },
+        {
+          "backbone": "recipient_local_lowrank",
+          "mse_area": 0.013400072583818272,
+          "policy": "reliability",
+          "specificity_area": 0.007568961999941342
+        },
+        {
+          "backbone": "perturbmap_reconstruction",
+          "mse_area": 0.016352266000608223,
+          "policy": "reliability",
+          "specificity_area": 0.006714902426086371
+        },
+        {
+          "backbone": "zero",
+          "mse_area": 0.008125083908890643,
+          "policy": "disagreement",
+          "specificity_area": 0.0069095687441631925
+        },
+        {
+          "backbone": "mean",
+          "mse_area": 0.012356451506852412,
+          "policy": "disagreement",
+          "specificity_area": 0.006909568744169616
+        },
+        {
+          "backbone": "source_copy",
+          "mse_area": 0.00902911241227292,
+          "policy": "disagreement",
+          "specificity_area": 0.007756828216740747
+        },
+        {
+          "backbone": "affine",
+          "mse_area": 0.007983520038440857,
+          "policy": "disagreement",
+          "specificity_area": 0.006810077685230339
+        },
+        {
+          "backbone": "ridge",
+          "mse_area": 0.013946081017676214,
+          "policy": "disagreement",
+          "specificity_area": 0.008715895967465866
+        },
+        {
+          "backbone": "ridge_cv",
+          "mse_area": 0.007795916842346639,
+          "policy": "disagreement",
+          "specificity_area": 0.006610724828096578
+        },
+        {
+          "backbone": "local_residual_adaptation",
+          "mse_area": 0.01103819721069491,
+          "policy": "disagreement",
+          "specificity_area": 0.00777509804346768
+        },
+        {
+          "backbone": "recipient_local_lowrank",
+          "mse_area": 0.0095746777800531,
+          "policy": "disagreement",
+          "specificity_area": 0.007080808392297699
+        },
+        {
+          "backbone": "perturbmap_reconstruction",
+          "mse_area": 0.010302421311798529,
+          "policy": "disagreement",
+          "specificity_area": 0.0067976885479923465
+        },
+        {
+          "backbone": "zero",
+          "mse_area": 0.008125083908890643,
+          "policy": "bias_aware",
+          "specificity_area": 0.0069095687441631925
+        },
+        {
+          "backbone": "mean",
+          "mse_area": 0.01413892517744076,
+          "policy": "bias_aware",
+          "specificity_area": 0.006909568744171339
+        },
+        {
+          "backbone": "source_copy",
+          "mse_area": 0.00902911241227292,
+          "policy": "bias_aware",
+          "specificity_area": 0.007756828216740747
+        },
+        {
+          "backbone": "affine",
+          "mse_area": 0.007996402930239958,
+          "policy": "bias_aware",
+          "specificity_area": 0.006742364146143986
+        },
+        {
+          "backbone": "ridge",
+          "mse_area": 0.01753096875207535,
+          "policy": "bias_aware",
+          "specificity_area": 0.010750821908421297
+        },
+        {
+          "backbone": "ridge_cv",
+          "mse_area": 0.007868435417438814,
+          "policy": "bias_aware",
+          "specificity_area": 0.006690487840636289
+        },
+        {
+          "backbone": "local_residual_adaptation",
+          "mse_area": 0.012219517763837805,
+          "policy": "bias_aware",
+          "specificity_area": 0.0077242681822125465
+        },
+        {
+          "backbone": "recipient_local_lowrank",
+          "mse_area": 0.010142127317578848,
+          "policy": "bias_aware",
+          "specificity_area": 0.007171236151858275
+        },
+        {
+          "backbone": "perturbmap_reconstruction",
+          "mse_area": 0.011675793038888898,
+          "policy": "bias_aware",
+          "specificity_area": 0.006697307726628682
+        },
+        {
+          "backbone": "zero",
+          "mse_area": 0.008125083908890643,
+          "policy": "bias_gamma025",
+          "specificity_area": 0.0069095687441631925
+        },
+        {
+          "backbone": "mean",
+          "mse_area": 0.013579040111082585,
+          "policy": "bias_gamma025",
+          "specificity_area": 0.006909568744170627
+        },
+        {
+          "backbone": "source_copy",
+          "mse_area": 0.00902911241227292,
+          "policy": "bias_gamma025",
+          "specificity_area": 0.007756828216740747
+        },
+        {
+          "backbone": "affine",
+          "mse_area": 0.007973933089501659,
+          "policy": "bias_gamma025",
+          "specificity_area": 0.006760360931487592
+        },
+        {
+          "backbone": "ridge",
+          "mse_area": 0.016898262860949274,
+          "policy": "bias_gamma025",
+          "specificity_area": 0.010542827166018547
+        },
+        {
+          "backbone": "ridge_cv",
+          "mse_area": 0.007851691186883766,
+          "policy": "bias_gamma025",
+          "specificity_area": 0.0066701168198401535
+        },
+        {
+          "backbone": "local_residual_adaptation",
+          "mse_area": 0.011841742031114886,
+          "policy": "bias_gamma025",
+          "specificity_area": 0.007750236899753919
+        },
+        {
+          "backbone": "recipient_local_lowrank",
+          "mse_area": 0.010342160285631098,
+          "policy": "bias_gamma025",
+          "specificity_area": 0.007304020295545293
+        },
+        {
+          "backbone": "perturbmap_reconstruction",
+          "mse_area": 0.011447278414867893,
+          "policy": "bias_gamma025",
+          "specificity_area": 0.006772804968251287
+        },
+        {
+          "backbone": "zero",
+          "mse_area": 0.008125083908890643,
+          "policy": "bias_equal_depth",
+          "specificity_area": 0.0069095687441631925
+        },
+        {
+          "backbone": "mean",
+          "mse_area": 0.013541944851665814,
+          "policy": "bias_equal_depth",
+          "specificity_area": 0.0069095687441705755
+        },
+        {
+          "backbone": "source_copy",
+          "mse_area": 0.00902911241227292,
+          "policy": "bias_equal_depth",
+          "specificity_area": 0.007756828216740747
+        },
+        {
+          "backbone": "affine",
+          "mse_area": 0.008015397394915443,
+          "policy": "bias_equal_depth",
+          "specificity_area": 0.006752055224822407
+        },
+        {
+          "backbone": "ridge",
+          "mse_area": 0.01742364153652769,
+          "policy": "bias_equal_depth",
+          "specificity_area": 0.011159741051121228
+        },
+        {
+          "backbone": "ridge_cv",
+          "mse_area": 0.007823899582612415,
+          "policy": "bias_equal_depth",
+          "specificity_area": 0.006696867071238762
+        },
+        {
+          "backbone": "local_residual_adaptation",
+          "mse_area": 0.011882943387425977,
+          "policy": "bias_equal_depth",
+          "specificity_area": 0.007717190078640052
+        },
+        {
+          "backbone": "recipient_local_lowrank",
+          "mse_area": 0.009961675821205386,
+          "policy": "bias_equal_depth",
+          "specificity_area": 0.007158279998829775
+        },
+        {
+          "backbone": "perturbmap_reconstruction",
+          "mse_area": 0.011461798932367716,
+          "policy": "bias_equal_depth",
+          "specificity_area": 0.006736467792307533
+        },
+        {
+          "backbone": "zero",
+          "mse_area": 0.008125083908890643,
+          "policy": "bias_fixed_controls",
+          "specificity_area": 0.0069095687441631925
+        },
+        {
+          "backbone": "mean",
+          "mse_area": 0.01732837139873573,
+          "policy": "bias_fixed_controls",
+          "specificity_area": 0.006909568744174019
+        },
+        {
+          "backbone": "source_copy",
+          "mse_area": 0.00902911241227292,
+          "policy": "bias_fixed_controls",
+          "specificity_area": 0.007756828216740747
+        },
+        {
+          "backbone": "affine",
+          "mse_area": 0.007951215446159975,
+          "policy": "bias_fixed_controls",
+          "specificity_area": 0.006750850764023153
+        },
+        {
+          "backbone": "ridge",
+          "mse_area": 0.020679834714218255,
+          "policy": "bias_fixed_controls",
+          "specificity_area": 0.010697314473030978
+        },
+        {
+          "backbone": "ridge_cv",
+          "mse_area": 0.007893361867297196,
+          "policy": "bias_fixed_controls",
+          "specificity_area": 0.006688534178510373
+        },
+        {
+          "backbone": "local_residual_adaptation",
+          "mse_area": 0.014724660031249037,
+          "policy": "bias_fixed_controls",
+          "specificity_area": 0.007711539935438423
+        },
+        {
+          "backbone": "recipient_local_lowrank",
+          "mse_area": 0.011583413855367264,
+          "policy": "bias_fixed_controls",
+          "specificity_area": 0.007284132494342862
+        },
+        {
+          "backbone": "perturbmap_reconstruction",
+          "mse_area": 0.015233988032626978,
+          "policy": "bias_fixed_controls",
+          "specificity_area": 0.0067239794181985215
+        },
+        {
+          "backbone": "zero",
+          "mse_area": 0.008125083908890643,
+          "policy": "bias_fixed_interventions",
+          "specificity_area": 0.0069095687441631925
+        },
+        {
+          "backbone": "mean",
+          "mse_area": 0.014699725558538539,
+          "policy": "bias_fixed_interventions",
+          "specificity_area": 0.006909568744170633
+        },
+        {
+          "backbone": "source_copy",
+          "mse_area": 0.00902911241227292,
+          "policy": "bias_fixed_interventions",
+          "specificity_area": 0.007756828216740747
+        },
+        {
+          "backbone": "affine",
+          "mse_area": 0.007921692660095122,
+          "policy": "bias_fixed_interventions",
+          "specificity_area": 0.006757864961275578
+        },
+        {
+          "backbone": "ridge",
+          "mse_area": 0.4080231206218145,
+          "policy": "bias_fixed_interventions",
+          "specificity_area": 0.3781539724986732
+        },
+        {
+          "backbone": "ridge_cv",
+          "mse_area": 0.008285418361215194,
+          "policy": "bias_fixed_interventions",
+          "specificity_area": 0.007082290352074515
+        },
+        {
+          "backbone": "local_residual_adaptation",
+          "mse_area": 0.0110041910280546,
+          "policy": "bias_fixed_interventions",
+          "specificity_area": 0.007741928885591755
+        },
+        {
+          "backbone": "recipient_local_lowrank",
+          "mse_area": 0.011729145941533297,
+          "policy": "bias_fixed_interventions",
+          "specificity_area": 0.007716796985250447
+        },
+        {
+          "backbone": "perturbmap_reconstruction",
+          "mse_area": 0.012578447501000675,
+          "policy": "bias_fixed_interventions",
+          "specificity_area": 0.00711416882661079
+        },
+        {
+          "backbone": "zero",
+          "mse_area": 0.008125083908890643,
+          "policy": "bias_fixed_order",
+          "specificity_area": 0.0069095687441631925
+        },
+        {
+          "backbone": "mean",
+          "mse_area": 0.015524684829792572,
+          "policy": "bias_fixed_order",
+          "specificity_area": 0.006909568744171696
+        },
+        {
+          "backbone": "source_copy",
+          "mse_area": 0.00902911241227292,
+          "policy": "bias_fixed_order",
+          "specificity_area": 0.007756828216740747
+        },
+        {
+          "backbone": "affine",
+          "mse_area": 0.007941341244043148,
+          "policy": "bias_fixed_order",
+          "specificity_area": 0.006759391225686031
+        },
+        {
+          "backbone": "ridge",
+          "mse_area": 0.09480048430656286,
+          "policy": "bias_fixed_order",
+          "specificity_area": 0.08172306619144683
+        },
+        {
+          "backbone": "ridge_cv",
+          "mse_area": 0.008385104395214685,
+          "policy": "bias_fixed_order",
+          "specificity_area": 0.007184100554803429
+        },
+        {
+          "backbone": "local_residual_adaptation",
+          "mse_area": 0.011693911242300955,
+          "policy": "bias_fixed_order",
+          "specificity_area": 0.007729905345450181
+        },
+        {
+          "backbone": "recipient_local_lowrank",
+          "mse_area": 0.012113162104255252,
+          "policy": "bias_fixed_order",
+          "specificity_area": 0.007819724665838551
+        },
+        {
+          "backbone": "perturbmap_reconstruction",
+          "mse_area": 0.013322853929403768,
+          "policy": "bias_fixed_order",
+          "specificity_area": 0.007085627798323158
+        },
+        {
+          "backbone": "zero",
+          "mse_area": 0.008125083908890643,
+          "policy": "bias_independent_controls",
+          "specificity_area": 0.0069095687441631925
+        },
+        {
+          "backbone": "mean",
+          "mse_area": 0.01491586100028025,
+          "policy": "bias_independent_controls",
+          "specificity_area": 0.0069095687441720725
+        },
+        {
+          "backbone": "source_copy",
+          "mse_area": 0.00902911241227292,
+          "policy": "bias_independent_controls",
+          "specificity_area": 0.007756828216740747
+        },
+        {
+          "backbone": "affine",
+          "mse_area": 0.008017523790965809,
+          "policy": "bias_independent_controls",
+          "specificity_area": 0.006795694340893939
+        },
+        {
+          "backbone": "ridge",
+          "mse_area": 0.01824511617958317,
+          "policy": "bias_independent_controls",
+          "specificity_area": 0.010729760892973441
+        },
+        {
+          "backbone": "ridge_cv",
+          "mse_area": 0.007858322632475984,
+          "policy": "bias_independent_controls",
+          "specificity_area": 0.006678335632386793
+        },
+        {
+          "backbone": "local_residual_adaptation",
+          "mse_area": 0.01280596586116227,
+          "policy": "bias_independent_controls",
+          "specificity_area": 0.007721825489685191
+        },
+        {
+          "backbone": "recipient_local_lowrank",
+          "mse_area": 0.010901115123940777,
+          "policy": "bias_independent_controls",
+          "specificity_area": 0.0073026048304437
+        },
+        {
+          "backbone": "perturbmap_reconstruction",
+          "mse_area": 0.012650611809004219,
+          "policy": "bias_independent_controls",
+          "specificity_area": 0.0066984744833272596
+        },
+        {
+          "backbone": "zero",
+          "mse_area": 0.008125083908890643,
+          "policy": "bias_no_extension",
+          "specificity_area": 0.0069095687441631925
+        },
+        {
+          "backbone": "mean",
+          "mse_area": 0.013012318802708984,
+          "policy": "bias_no_extension",
+          "specificity_area": 0.006909568744170053
+        },
+        {
+          "backbone": "source_copy",
+          "mse_area": 0.00902911241227292,
+          "policy": "bias_no_extension",
+          "specificity_area": 0.007756828216740747
+        },
+        {
+          "backbone": "affine",
+          "mse_area": 0.008009272920239088,
+          "policy": "bias_no_extension",
+          "specificity_area": 0.006817681797868758
+        },
+        {
+          "backbone": "ridge",
+          "mse_area": 0.016558062125849732,
+          "policy": "bias_no_extension",
+          "specificity_area": 0.010709415423649145
+        },
+        {
+          "backbone": "ridge_cv",
+          "mse_area": 0.007824223179393217,
+          "policy": "bias_no_extension",
+          "specificity_area": 0.00666668753262651
+        },
+        {
+          "backbone": "local_residual_adaptation",
+          "mse_area": 0.011395815062780881,
+          "policy": "bias_no_extension",
+          "specificity_area": 0.007754380792171257
+        },
+        {
+          "backbone": "recipient_local_lowrank",
+          "mse_area": 0.01050444955041217,
+          "policy": "bias_no_extension",
+          "specificity_area": 0.0073557848553383095
+        },
+        {
+          "backbone": "perturbmap_reconstruction",
+          "mse_area": 0.011077359793827657,
+          "policy": "bias_no_extension",
+          "specificity_area": 0.006835111143508141
+        }
+      ],
+      "configuration_sha256": "8e5c293657762fb0474e86941c1d96485cfbb233984ca45310b7442e05bd38bf",
+      "development_cost": 6428,
+      "metric_rows": 282960,
+      "public_source_cells": 50912,
+      "resources_end": {
+        "available_ram_bytes": 2551554048,
+        "disk_free_bytes": 602663317504,
+        "disk_total_bytes": 1002016075776,
+        "logical_cpus": 16,
+        "memory_scope": "Current process; peak is over its lifetime, not a per-case delta.",
+        "peak_commit_bytes": 581558272,
+        "peak_working_set_bytes": 707694592,
+        "process_id": 16992,
+        "ram_bytes": 16418983936,
+        "recorded_at": "2026-10-22T18:13:58.531442+00:00",
+        "working_set_bytes": 277860352
+      },
+      "run": "external-k562-to-rpe1-v1",
+      "run_directory": "C:\\Users\\Abdul\\Documents\\MLResearch\\runs\\external-k562-to-rpe1-v1",
+      "run_manifest_sha256": "008ad74413a3151a3df01c18f6576ebd31e64ccf243d7996963e9599b221bc4f",
+      "runtime_seconds": 4044.5041959999944,
+      "scorer_only_cells": 4448,
+      "scoring_runtime_seconds": 3561.6444875999878,
+      "source_context": "K562",
+      "source_control": "none",
+      "source_coordinates": {
+        "explained_fraction": 0.2709701878847581,
+        "rank": 4,
+        "source_half_noise": 0.006452792668297915
+      },
+      "target_context": "RPE1"
+    },
+    {
+      "acquisition_runtime_seconds": 522.1849959999963,
+      "areas": [
+        {
+          "backbone": "zero",
+          "mse_area": 0.005759731300940105,
+          "policy": "random_equal",
+          "specificity_area": 0.005087793342561062
+        },
+        {
+          "backbone": "mean",
+          "mse_area": 0.010581002356769977,
+          "policy": "random_equal",
+          "specificity_area": 0.00508779334256562
+        },
+        {
+          "backbone": "source_copy",
+          "mse_area": 0.008942459416771294,
+          "policy": "random_equal",
+          "specificity_area": 0.007654995581951386
+        },
+        {
+          "backbone": "affine",
+          "mse_area": 0.0056784895099268335,
+          "policy": "random_equal",
+          "specificity_area": 0.004961907694735776
+        },
+        {
+          "backbone": "ridge",
+          "mse_area": 0.04021371271262405,
+          "policy": "random_equal",
+          "specificity_area": 0.031249931603238027
+        },
+        {
+          "backbone": "ridge_cv",
+          "mse_area": 0.005754760167932749,
+          "policy": "random_equal",
+          "specificity_area": 0.005082532652869191
+        },
+        {
+          "backbone": "local_residual_adaptation",
+          "mse_area": 0.011223881708373249,
+          "policy": "random_equal",
+          "specificity_area": 0.0074050614162405656
+        },
+        {
+          "backbone": "recipient_local_lowrank",
+          "mse_area": 0.008196345726271934,
+          "policy": "random_equal",
+          "specificity_area": 0.005429886425811859
+        },
+        {
+          "backbone": "perturbmap_reconstruction",
+          "mse_area": 0.009303390188632178,
+          "policy": "random_equal",
+          "specificity_area": 0.005170692498093396
+        },
+        {
+          "backbone": "zero",
+          "mse_area": 0.005759731300940105,
+          "policy": "fixed_grid",
+          "specificity_area": 0.005087793342561062
+        },
+        {
+          "backbone": "mean",
+          "mse_area": 0.01054495365762581,
+          "policy": "fixed_grid",
+          "specificity_area": 0.0050877933425655915
+        },
+        {
+          "backbone": "source_copy",
+          "mse_area": 0.008942459416771294,
+          "policy": "fixed_grid",
+          "specificity_area": 0.007654995581951386
+        },
+        {
+          "backbone": "affine",
+          "mse_area": 0.00571431340884381,
+          "policy": "fixed_grid",
+          "specificity_area": 0.004976960268617783
+        },
+        {
+          "backbone": "ridge",
+          "mse_area": 0.04099425281287811,
+          "policy": "fixed_grid",
+          "specificity_area": 0.0318326625154853
+        },
+        {
+          "backbone": "ridge_cv",
+          "mse_area": 0.005760076963525183,
+          "policy": "fixed_grid",
+          "specificity_area": 0.005087092675642839
+        },
+        {
+          "backbone": "local_residual_adaptation",
+          "mse_area": 0.01119025665890728,
+          "policy": "fixed_grid",
+          "specificity_area": 0.007386212468229059
+        },
+        {
+          "backbone": "recipient_local_lowrank",
+          "mse_area": 0.008325369802727193,
+          "policy": "fixed_grid",
+          "specificity_area": 0.005488840151256007
+        },
+        {
+          "backbone": "perturbmap_reconstruction",
+          "mse_area": 0.009496476451983068,
+          "policy": "fixed_grid",
+          "specificity_area": 0.00522821784441327
+        },
+        {
+          "backbone": "zero",
+          "mse_area": 0.005759731300940105,
+          "policy": "diversity",
+          "specificity_area": 0.005087793342561062
+        },
+        {
+          "backbone": "mean",
+          "mse_area": 0.013012082544709735,
+          "policy": "diversity",
+          "specificity_area": 0.005087793342567996
+        },
+        {
+          "backbone": "source_copy",
+          "mse_area": 0.008942459416771294,
+          "policy": "diversity",
+          "specificity_area": 0.007654995581951386
+        },
+        {
+          "backbone": "affine",
+          "mse_area": 0.005775412212458901,
+          "policy": "diversity",
+          "specificity_area": 0.004940704198633844
+        },
+        {
+          "backbone": "ridge",
+          "mse_area": 0.015932864015343155,
+          "policy": "diversity",
+          "specificity_area": 0.006906699979378949
+        },
+        {
+          "backbone": "ridge_cv",
+          "mse_area": 0.005745453887436436,
+          "policy": "diversity",
+          "specificity_area": 0.0050739566271303105
+        },
+        {
+          "backbone": "local_residual_adaptation",
+          "mse_area": 0.013646759619238762,
+          "policy": "diversity",
+          "specificity_area": 0.007260967533554527
+        },
+        {
+          "backbone": "recipient_local_lowrank",
+          "mse_area": 0.010882550273753067,
+          "policy": "diversity",
+          "specificity_area": 0.005921389440618373
+        },
+        {
+          "backbone": "perturbmap_reconstruction",
+          "mse_area": 0.012200879049241985,
+          "policy": "diversity",
+          "specificity_area": 0.005091453030637148
+        },
+        {
+          "backbone": "zero",
+          "mse_area": 0.005759731300940105,
+          "policy": "d_optimal",
+          "specificity_area": 0.005087793342561062
+        },
+        {
+          "backbone": "mean",
+          "mse_area": 0.010717531989521158,
+          "policy": "d_optimal",
+          "specificity_area": 0.005087793342565916
+        },
+        {
+          "backbone": "source_copy",
+          "mse_area": 0.008942459416771294,
+          "policy": "d_optimal",
+          "specificity_area": 0.007654995581951386
+        },
+        {
+          "backbone": "affine",
+          "mse_area": 0.005717729806763357,
+          "policy": "d_optimal",
+          "specificity_area": 0.004945030598718584
+        },
+        {
+          "backbone": "ridge",
+          "mse_area": 0.01291465583750272,
+          "policy": "d_optimal",
+          "specificity_area": 0.006520612429076154
+        },
+        {
+          "backbone": "ridge_cv",
+          "mse_area": 0.005742134577594309,
+          "policy": "d_optimal",
+          "specificity_area": 0.0050719203855319125
+        },
+        {
+          "backbone": "local_residual_adaptation",
+          "mse_area": 0.011303903722306996,
+          "policy": "d_optimal",
+          "specificity_area": 0.007253164708978507
+        },
+        {
+          "backbone": "recipient_local_lowrank",
+          "mse_area": 0.009390025438546811,
+          "policy": "d_optimal",
+          "specificity_area": 0.005709631558538695
+        },
+        {
+          "backbone": "perturbmap_reconstruction",
+          "mse_area": 0.010072217152576942,
+          "policy": "d_optimal",
+          "specificity_area": 0.005113710827472959
+        },
+        {
+          "backbone": "zero",
+          "mse_area": 0.005759731300940105,
+          "policy": "worst_query",
+          "specificity_area": 0.005087793342561062
+        },
+        {
+          "backbone": "mean",
+          "mse_area": 0.010315924095124905,
+          "policy": "worst_query",
+          "specificity_area": 0.005087793342565566
+        },
+        {
+          "backbone": "source_copy",
+          "mse_area": 0.008942459416771294,
+          "policy": "worst_query",
+          "specificity_area": 0.007654995581951386
+        },
+        {
+          "backbone": "affine",
+          "mse_area": 0.005686936843615154,
+          "policy": "worst_query",
+          "specificity_area": 0.0049542295488157525
+        },
+        {
+          "backbone": "ridge",
+          "mse_area": 0.016002383405315047,
+          "policy": "worst_query",
+          "specificity_area": 0.009573142523933029
+        },
+        {
+          "backbone": "ridge_cv",
+          "mse_area": 0.00572304597687069,
+          "policy": "worst_query",
+          "specificity_area": 0.0050539461907851526
+        },
+        {
+          "backbone": "local_residual_adaptation",
+          "mse_area": 0.011104559405168815,
+          "policy": "worst_query",
+          "specificity_area": 0.007308374052751022
+        },
+        {
+          "backbone": "recipient_local_lowrank",
+          "mse_area": 0.008732357646903163,
+          "policy": "worst_query",
+          "specificity_area": 0.005589805683848531
+        },
+        {
+          "backbone": "perturbmap_reconstruction",
+          "mse_area": 0.00981649893202358,
+          "policy": "worst_query",
+          "specificity_area": 0.005121055288117918
+        },
+        {
+          "backbone": "zero",
+          "mse_area": 0.005759731300940105,
+          "policy": "mean_query",
+          "specificity_area": 0.005087793342561062
+        },
+        {
+          "backbone": "mean",
+          "mse_area": 0.008947903243717062,
+          "policy": "mean_query",
+          "specificity_area": 0.005087793342564387
+        },
+        {
+          "backbone": "source_copy",
+          "mse_area": 0.008942459416771294,
+          "policy": "mean_query",
+          "specificity_area": 0.007654995581951386
+        },
+        {
+          "backbone": "affine",
+          "mse_area": 0.005625421187892246,
+          "policy": "mean_query",
+          "specificity_area": 0.004945713809855769
+        },
+        {
+          "backbone": "ridge",
+          "mse_area": 0.010754675114682324,
+          "policy": "mean_query",
+          "specificity_area": 0.006745713736655815
+        },
+        {
+          "backbone": "ridge_cv",
+          "mse_area": 0.005750736021538346,
+          "policy": "mean_query",
+          "specificity_area": 0.005079922070024601
+        },
+        {
+          "backbone": "local_residual_adaptation",
+          "mse_area": 0.010010976662010684,
+          "policy": "mean_query",
+          "specificity_area": 0.007236983899296241
+        },
+        {
+          "backbone": "recipient_local_lowrank",
+          "mse_area": 0.008127841757132,
+          "policy": "mean_query",
+          "specificity_area": 0.0053669001505127715
+        },
+        {
+          "backbone": "perturbmap_reconstruction",
+          "mse_area": 0.008341664135372101,
+          "policy": "mean_query",
+          "specificity_area": 0.005115536545729922
+        },
+        {
+          "backbone": "zero",
+          "mse_area": 0.005759731300940105,
+          "policy": "reliability",
+          "specificity_area": 0.005087793342561062
+        },
+        {
+          "backbone": "mean",
+          "mse_area": 0.015148492002610188,
+          "policy": "reliability",
+          "specificity_area": 0.005087793342570211
+        },
+        {
+          "backbone": "source_copy",
+          "mse_area": 0.008942459416771294,
+          "policy": "reliability",
+          "specificity_area": 0.007654995581951386
+        },
+        {
+          "backbone": "affine",
+          "mse_area": 0.0057977424596635605,
+          "policy": "reliability",
+          "specificity_area": 0.004941040769807845
+        },
+        {
+          "backbone": "ridge",
+          "mse_area": 0.02605384492752215,
+          "policy": "reliability",
+          "specificity_area": 0.014142384994282485
+        },
+        {
+          "backbone": "ridge_cv",
+          "mse_area": 0.005759701329897528,
+          "policy": "reliability",
+          "specificity_area": 0.005082677141674915
+        },
+        {
+          "backbone": "local_residual_adaptation",
+          "mse_area": 0.014957592471158576,
+          "policy": "reliability",
+          "specificity_area": 0.0072921349511298455
+        },
+        {
+          "backbone": "recipient_local_lowrank",
+          "mse_area": 0.011703911112207012,
+          "policy": "reliability",
+          "specificity_area": 0.005915542523633322
+        },
+        {
+          "backbone": "perturbmap_reconstruction",
+          "mse_area": 0.013861670245327374,
+          "policy": "reliability",
+          "specificity_area": 0.005115077274819225
+        },
+        {
+          "backbone": "zero",
+          "mse_area": 0.005759731300940105,
+          "policy": "disagreement",
+          "specificity_area": 0.005087793342561062
+        },
+        {
+          "backbone": "mean",
+          "mse_area": 0.009213590615853546,
+          "policy": "disagreement",
+          "specificity_area": 0.005087793342564588
+        },
+        {
+          "backbone": "source_copy",
+          "mse_area": 0.008942459416771294,
+          "policy": "disagreement",
+          "specificity_area": 0.007654995581951386
+        },
+        {
+          "backbone": "affine",
+          "mse_area": 0.005650318391698197,
+          "policy": "disagreement",
+          "specificity_area": 0.004948225995557963
+        },
+        {
+          "backbone": "ridge",
+          "mse_area": 0.011026566797371573,
+          "policy": "disagreement",
+          "specificity_area": 0.006459747981100086
+        },
+        {
+          "backbone": "ridge_cv",
+          "mse_area": 0.005735532909258634,
+          "policy": "disagreement",
+          "specificity_area": 0.005066297788451485
+        },
+        {
+          "backbone": "local_residual_adaptation",
+          "mse_area": 0.01017606179653149,
+          "policy": "disagreement",
+          "specificity_area": 0.007206281428758017
+        },
+        {
+          "backbone": "recipient_local_lowrank",
+          "mse_area": 0.00864175820596639,
+          "policy": "disagreement",
+          "specificity_area": 0.005536799839914931
+        },
+        {
+          "backbone": "perturbmap_reconstruction",
+          "mse_area": 0.008643511134258328,
+          "policy": "disagreement",
+          "specificity_area": 0.005092496037085216
+        },
+        {
+          "backbone": "zero",
+          "mse_area": 0.005759731300940105,
+          "policy": "bias_aware",
+          "specificity_area": 0.005087793342561062
+        },
+        {
+          "backbone": "mean",
+          "mse_area": 0.011350997465570967,
+          "policy": "bias_aware",
+          "specificity_area": 0.005087793342566546
+        },
+        {
+          "backbone": "source_copy",
+          "mse_area": 0.008942459416771294,
+          "policy": "bias_aware",
+          "specificity_area": 0.007654995581951386
+        },
+        {
+          "backbone": "affine",
+          "mse_area": 0.0056852252917443296,
+          "policy": "bias_aware",
+          "specificity_area": 0.004953129871511602
+        },
+        {
+          "backbone": "ridge",
+          "mse_area": 0.01696712387111885,
+          "policy": "bias_aware",
+          "specificity_area": 0.009690584621089545
+        },
+        {
+          "backbone": "ridge_cv",
+          "mse_area": 0.005723834580602765,
+          "policy": "bias_aware",
+          "specificity_area": 0.005055057086543706
+        },
+        {
+          "backbone": "local_residual_adaptation",
+          "mse_area": 0.01181589273237331,
+          "policy": "bias_aware",
+          "specificity_area": 0.0072521800985455125
+        },
+        {
+          "backbone": "recipient_local_lowrank",
+          "mse_area": 0.008822563402822498,
+          "policy": "bias_aware",
+          "specificity_area": 0.00545648572141833
+        },
+        {
+          "backbone": "perturbmap_reconstruction",
+          "mse_area": 0.01022842579972376,
+          "policy": "bias_aware",
+          "specificity_area": 0.0050708347629213925
+        },
+        {
+          "backbone": "zero",
+          "mse_area": 0.005759731300940105,
+          "policy": "bias_gamma025",
+          "specificity_area": 0.005087793342561062
+        },
+        {
+          "backbone": "mean",
+          "mse_area": 0.010606196604568628,
+          "policy": "bias_gamma025",
+          "specificity_area": 0.005087793342565794
+        },
+        {
+          "backbone": "source_copy",
+          "mse_area": 0.008942459416771294,
+          "policy": "bias_gamma025",
+          "specificity_area": 0.007654995581951386
+        },
+        {
+          "backbone": "affine",
+          "mse_area": 0.005680578504611556,
+          "policy": "bias_gamma025",
+          "specificity_area": 0.004956509339272689
+        },
+        {
+          "backbone": "ridge",
+          "mse_area": 0.016180108941618334,
+          "policy": "bias_gamma025",
+          "specificity_area": 0.009624196156039195
+        },
+        {
+          "backbone": "ridge_cv",
+          "mse_area": 0.005721281468518894,
+          "policy": "bias_gamma025",
+          "specificity_area": 0.005053162288933372
+        },
+        {
+          "backbone": "local_residual_adaptation",
+          "mse_area": 0.011266656358187044,
+          "policy": "bias_gamma025",
+          "specificity_area": 0.007275403569809996
+        },
+        {
+          "backbone": "recipient_local_lowrank",
+          "mse_area": 0.008711135256209113,
+          "policy": "bias_gamma025",
+          "specificity_area": 0.005508776112385138
+        },
+        {
+          "backbone": "perturbmap_reconstruction",
+          "mse_area": 0.009543500163344168,
+          "policy": "bias_gamma025",
+          "specificity_area": 0.0051183816937371476
+        },
+        {
+          "backbone": "zero",
+          "mse_area": 0.005759731300940105,
+          "policy": "bias_equal_depth",
+          "specificity_area": 0.005087793342561062
+        },
+        {
+          "backbone": "mean",
+          "mse_area": 0.010592091662552726,
+          "policy": "bias_equal_depth",
+          "specificity_area": 0.005087793342565825
+        },
+        {
+          "backbone": "source_copy",
+          "mse_area": 0.008942459416771294,
+          "policy": "bias_equal_depth",
+          "specificity_area": 0.007654995581951386
+        },
+        {
+          "backbone": "affine",
+          "mse_area": 0.0056831577163554345,
+          "policy": "bias_equal_depth",
+          "specificity_area": 0.004957576832612316
+        },
+        {
+          "backbone": "ridge",
+          "mse_area": 0.016387866544226373,
+          "policy": "bias_equal_depth",
+          "specificity_area": 0.009969801545970216
+        },
+        {
+          "backbone": "ridge_cv",
+          "mse_area": 0.005730995343457053,
+          "policy": "bias_equal_depth",
+          "specificity_area": 0.005060072199606193
+        },
+        {
+          "backbone": "local_residual_adaptation",
+          "mse_area": 0.01132378285243638,
+          "policy": "bias_equal_depth",
+          "specificity_area": 0.00724501215671091
+        },
+        {
+          "backbone": "recipient_local_lowrank",
+          "mse_area": 0.008557436305008385,
+          "policy": "bias_equal_depth",
+          "specificity_area": 0.005420926939212231
+        },
+        {
+          "backbone": "perturbmap_reconstruction",
+          "mse_area": 0.009793908314705682,
+          "policy": "bias_equal_depth",
+          "specificity_area": 0.00511443636256978
+        },
+        {
+          "backbone": "zero",
+          "mse_area": 0.005759731300940105,
+          "policy": "bias_fixed_controls",
+          "specificity_area": 0.005087793342561062
+        },
+        {
+          "backbone": "mean",
+          "mse_area": 0.014810075904381353,
+          "policy": "bias_fixed_controls",
+          "specificity_area": 0.005087793342569795
+        },
+        {
+          "backbone": "source_copy",
+          "mse_area": 0.008942459416771294,
+          "policy": "bias_fixed_controls",
+          "specificity_area": 0.007654995581951386
+        },
+        {
+          "backbone": "affine",
+          "mse_area": 0.005763234617898861,
+          "policy": "bias_fixed_controls",
+          "specificity_area": 0.0049562940047209155
+        },
+        {
+          "backbone": "ridge",
+          "mse_area": 0.020137620769105746,
+          "policy": "bias_fixed_controls",
+          "specificity_area": 0.009614655527362308
+        },
+        {
+          "backbone": "ridge_cv",
+          "mse_area": 0.0057230816090140055,
+          "policy": "bias_fixed_controls",
+          "specificity_area": 0.005052665727893999
+        },
+        {
+          "backbone": "local_residual_adaptation",
+          "mse_area": 0.014438151822063748,
+          "policy": "bias_fixed_controls",
+          "specificity_area": 0.007242267018971302
+        },
+        {
+          "backbone": "recipient_local_lowrank",
+          "mse_area": 0.010600516151312394,
+          "policy": "bias_fixed_controls",
+          "specificity_area": 0.005723080167072881
+        },
+        {
+          "backbone": "perturbmap_reconstruction",
+          "mse_area": 0.01341599622661028,
+          "policy": "bias_fixed_controls",
+          "specificity_area": 0.005107853646572104
+        },
+        {
+          "backbone": "zero",
+          "mse_area": 0.005759731300940105,
+          "policy": "bias_fixed_interventions",
+          "specificity_area": 0.005087793342561062
+        },
+        {
+          "backbone": "mean",
+          "mse_area": 0.011543884270284051,
+          "policy": "bias_fixed_interventions",
+          "specificity_area": 0.005087793342566432
+        },
+        {
+          "backbone": "source_copy",
+          "mse_area": 0.008942459416771294,
+          "policy": "bias_fixed_interventions",
+          "specificity_area": 0.007654995581951386
+        },
+        {
+          "backbone": "affine",
+          "mse_area": 0.005728410999659863,
+          "policy": "bias_fixed_interventions",
+          "specificity_area": 0.004988664109295507
+        },
+        {
+          "backbone": "ridge",
+          "mse_area": 0.21502769587802403,
+          "policy": "bias_fixed_interventions",
+          "specificity_area": 0.17187348084955534
+        },
+        {
+          "backbone": "ridge_cv",
+          "mse_area": 0.005761628931470716,
+          "policy": "bias_fixed_interventions",
+          "specificity_area": 0.005088433135738691
+        },
+        {
+          "backbone": "local_residual_adaptation",
+          "mse_area": 0.010379442973043374,
+          "policy": "bias_fixed_interventions",
+          "specificity_area": 0.007446283716139887
+        },
+        {
+          "backbone": "recipient_local_lowrank",
+          "mse_area": 0.009507125270926417,
+          "policy": "bias_fixed_interventions",
+          "specificity_area": 0.005671045237852061
+        },
+        {
+          "backbone": "perturbmap_reconstruction",
+          "mse_area": 0.010472441999071113,
+          "policy": "bias_fixed_interventions",
+          "specificity_area": 0.005234784375051476
+        },
+        {
+          "backbone": "zero",
+          "mse_area": 0.005759731300940105,
+          "policy": "bias_fixed_order",
+          "specificity_area": 0.005087793342561062
+        },
+        {
+          "backbone": "mean",
+          "mse_area": 0.01287321958669925,
+          "policy": "bias_fixed_order",
+          "specificity_area": 0.005087793342567711
+        },
+        {
+          "backbone": "source_copy",
+          "mse_area": 0.008942459416771294,
+          "policy": "bias_fixed_order",
+          "specificity_area": 0.007654995581951386
+        },
+        {
+          "backbone": "affine",
+          "mse_area": 0.005784168731313256,
+          "policy": "bias_fixed_order",
+          "specificity_area": 0.004978787787181001
+        },
+        {
+          "backbone": "ridge",
+          "mse_area": 0.06443005646632691,
+          "policy": "bias_fixed_order",
+          "specificity_area": 0.049569562435361
+        },
+        {
+          "backbone": "ridge_cv",
+          "mse_area": 0.0057616747017157416,
+          "policy": "bias_fixed_order",
+          "specificity_area": 0.0050893174315624675
+        },
+        {
+          "backbone": "local_residual_adaptation",
+          "mse_area": 0.011411852811161517,
+          "policy": "bias_fixed_order",
+          "specificity_area": 0.0074071693412892554
+        },
+        {
+          "backbone": "recipient_local_lowrank",
+          "mse_area": 0.010560066449523724,
+          "policy": "bias_fixed_order",
+          "specificity_area": 0.006052061646258233
+        },
+        {
+          "backbone": "perturbmap_reconstruction",
+          "mse_area": 0.011675110950440354,
+          "policy": "bias_fixed_order",
+          "specificity_area": 0.005219330876201282
+        },
+        {
+          "backbone": "zero",
+          "mse_area": 0.005759731300940105,
+          "policy": "bias_independent_controls",
+          "specificity_area": 0.005087793342561062
+        },
+        {
+          "backbone": "mean",
+          "mse_area": 0.011925179849100865,
+          "policy": "bias_independent_controls",
+          "specificity_area": 0.0050877933425670175
+        },
+        {
+          "backbone": "source_copy",
+          "mse_area": 0.008942459416771294,
+          "policy": "bias_independent_controls",
+          "specificity_area": 0.007654995581951386
+        },
+        {
+          "backbone": "affine",
+          "mse_area": 0.005708604432963005,
+          "policy": "bias_independent_controls",
+          "specificity_area": 0.004957737245861481
+        },
+        {
+          "backbone": "ridge",
+          "mse_area": 0.01745262792133365,
+          "policy": "bias_independent_controls",
+          "specificity_area": 0.009695922289385508
+        },
+        {
+          "backbone": "ridge_cv",
+          "mse_area": 0.005723940297062373,
+          "policy": "bias_independent_controls",
+          "specificity_area": 0.0050524971240808025
+        },
+        {
+          "backbone": "local_residual_adaptation",
+          "mse_area": 0.012240076246162208,
+          "policy": "bias_independent_controls",
+          "specificity_area": 0.007238092498428569
+        },
+        {
+          "backbone": "recipient_local_lowrank",
+          "mse_area": 0.009270127032035967,
+          "policy": "bias_independent_controls",
+          "specificity_area": 0.0055636419306739175
+        },
+        {
+          "backbone": "perturbmap_reconstruction",
+          "mse_area": 0.011170159054884929,
+          "policy": "bias_independent_controls",
+          "specificity_area": 0.005081950807786647
+        },
+        {
+          "backbone": "zero",
+          "mse_area": 0.005759731300940105,
+          "policy": "bias_no_extension",
+          "specificity_area": 0.005087793342561062
+        },
+        {
+          "backbone": "mean",
+          "mse_area": 0.010315924095124905,
+          "policy": "bias_no_extension",
+          "specificity_area": 0.005087793342565566
+        },
+        {
+          "backbone": "source_copy",
+          "mse_area": 0.008942459416771294,
+          "policy": "bias_no_extension",
+          "specificity_area": 0.007654995581951386
+        },
+        {
+          "backbone": "affine",
+          "mse_area": 0.005686936843615154,
+          "policy": "bias_no_extension",
+          "specificity_area": 0.0049542295488157525
+        },
+        {
+          "backbone": "ridge",
+          "mse_area": 0.016002383405315047,
+          "policy": "bias_no_extension",
+          "specificity_area": 0.009573142523933029
+        },
+        {
+          "backbone": "ridge_cv",
+          "mse_area": 0.00572304597687069,
+          "policy": "bias_no_extension",
+          "specificity_area": 0.0050539461907851526
+        },
+        {
+          "backbone": "local_residual_adaptation",
+          "mse_area": 0.011104559405168815,
+          "policy": "bias_no_extension",
+          "specificity_area": 0.007308374052751022
+        },
+        {
+          "backbone": "recipient_local_lowrank",
+          "mse_area": 0.008732357646903163,
+          "policy": "bias_no_extension",
+          "specificity_area": 0.005589805683848531
+        },
+        {
+          "backbone": "perturbmap_reconstruction",
+          "mse_area": 0.00981649893202358,
+          "policy": "bias_no_extension",
+          "specificity_area": 0.005121055288117918
+        }
+      ],
+      "configuration_sha256": "0f18d150125293b8dead91abc70dcce5fef049db1588a24cf9812fc017128ad2",
+      "development_cost": 6428,
+      "metric_rows": 282960,
+      "public_source_cells": 50912,
+      "resources_end": {
+        "available_ram_bytes": 2779619328,
+        "disk_free_bytes": 602491195392,
+        "disk_total_bytes": 1002016075776,
+        "logical_cpus": 16,
+        "memory_scope": "Current process; peak is over its lifetime, not a per-case delta.",
+        "peak_commit_bytes": 581558272,
+        "peak_working_set_bytes": 707694592,
+        "process_id": 16992,
+        "ram_bytes": 16418983936,
+        "recorded_at": "2026-10-22T18:20:31.364595+00:00",
+        "working_set_bytes": 324857856
+      },
+      "run": "external-rpe1-to-k562-v1",
+      "run_directory": "C:\\Users\\Abdul\\Documents\\MLResearch\\runs\\external-rpe1-to-k562-v1",
+      "run_manifest_sha256": "51c1bd407974b76b7153af2cafa725494c4ab7d4ed263984b41a4047746fc9c2",
+      "runtime_seconds": 914.6030091000139,
+      "scorer_only_cells": 4448,
+      "scoring_runtime_seconds": 392.4180094000185,
+      "source_context": "RPE1",
+      "source_control": "none",
+      "source_coordinates": {
+        "explained_fraction": 0.4748642779199801,
+        "rank": 4,
+        "source_half_noise": 0.006776526771758743
+      },
+      "target_context": "K562"
+    },
+    {
+      "acquisition_runtime_seconds": 6551.527179600002,
+      "areas": [
+        {
+          "backbone": "zero",
+          "mse_area": 0.008125083908890643,
+          "policy": "fixed_grid",
+          "specificity_area": 0.0069095687441631925
+        },
+        {
+          "backbone": "mean",
+          "mse_area": 0.01274852218313093,
+          "policy": "fixed_grid",
+          "specificity_area": 0.006909568744168981
+        },
+        {
+          "backbone": "source_copy",
+          "mse_area": 0.010608769906111402,
+          "policy": "fixed_grid",
+          "specificity_area": 0.009368179755167867
+        },
+        {
+          "backbone": "affine",
+          "mse_area": 0.008143690901646319,
+          "policy": "fixed_grid",
+          "specificity_area": 0.006910911467666779
+        },
+        {
+          "backbone": "ridge",
+          "mse_area": 0.04531711867449187,
+          "policy": "fixed_grid",
+          "specificity_area": 0.03596999509737751
+        },
+        {
+          "backbone": "ridge_cv",
+          "mse_area": 0.008372710046797696,
+          "policy": "fixed_grid",
+          "specificity_area": 0.007227425414025034
+        },
+        {
+          "backbone": "local_residual_adaptation",
+          "mse_area": 0.013491588187388609,
+          "policy": "fixed_grid",
+          "specificity_area": 0.009370118783670948
+        },
+        {
+          "backbone": "recipient_local_lowrank",
+          "mse_area": 0.01007163015483269,
+          "policy": "fixed_grid",
+          "specificity_area": 0.0072872273098610486
+        },
+        {
+          "backbone": "perturbmap_reconstruction",
+          "mse_area": 0.0110683562924043,
+          "policy": "fixed_grid",
+          "specificity_area": 0.007114494336673407
+        },
+        {
+          "backbone": "zero",
+          "mse_area": 0.008125083908890643,
+          "policy": "worst_query",
+          "specificity_area": 0.0069095687441631925
+        },
+        {
+          "backbone": "mean",
+          "mse_area": 0.012224839275994753,
+          "policy": "worst_query",
+          "specificity_area": 0.00690956874416817
+        },
+        {
+          "backbone": "source_copy",
+          "mse_area": 0.010608769906111402,
+          "policy": "worst_query",
+          "specificity_area": 0.009368179755167867
+        },
+        {
+          "backbone": "affine",
+          "mse_area": 0.008080414279179193,
+          "policy": "worst_query",
+          "specificity_area": 0.006916034376441097
+        },
+        {
+          "backbone": "ridge",
+          "mse_area": 0.017305426584017035,
+          "policy": "worst_query",
+          "specificity_area": 0.01125929339211984
+        },
+        {
+          "backbone": "ridge_cv",
+          "mse_area": 0.008127670181737757,
+          "policy": "worst_query",
+          "specificity_area": 0.006911969911053979
+        },
+        {
+          "backbone": "local_residual_adaptation",
+          "mse_area": 0.013356742832839111,
+          "policy": "worst_query",
+          "specificity_area": 0.009503001771582385
+        },
+        {
+          "backbone": "recipient_local_lowrank",
+          "mse_area": 0.009823510684005957,
+          "policy": "worst_query",
+          "specificity_area": 0.0072231498907176644
+        },
+        {
+          "backbone": "perturbmap_reconstruction",
+          "mse_area": 0.010749886656588235,
+          "policy": "worst_query",
+          "specificity_area": 0.007018798380196343
+        },
+        {
+          "backbone": "zero",
+          "mse_area": 0.008125083908890643,
+          "policy": "mean_query",
+          "specificity_area": 0.0069095687441631925
+        },
+        {
+          "backbone": "mean",
+          "mse_area": 0.011312551093114574,
+          "policy": "mean_query",
+          "specificity_area": 0.006909568744167037
+        },
+        {
+          "backbone": "source_copy",
+          "mse_area": 0.010608769906111402,
+          "policy": "mean_query",
+          "specificity_area": 0.009368179755167867
+        },
+        {
+          "backbone": "affine",
+          "mse_area": 0.008085917729477565,
+          "policy": "mean_query",
+          "specificity_area": 0.006911612087631346
+        },
+        {
+          "backbone": "ridge",
+          "mse_area": 0.014039419559750292,
+          "policy": "mean_query",
+          "specificity_area": 0.009092853367807931
+        },
+        {
+          "backbone": "ridge_cv",
+          "mse_area": 0.008125083908890643,
+          "policy": "mean_query",
+          "specificity_area": 0.0069095687441631925
+        },
+        {
+          "backbone": "local_residual_adaptation",
+          "mse_area": 0.012494744726850247,
+          "policy": "mean_query",
+          "specificity_area": 0.009374922568001681
+        },
+        {
+          "backbone": "recipient_local_lowrank",
+          "mse_area": 0.00924289824797193,
+          "policy": "mean_query",
+          "specificity_area": 0.007047064756150079
+        },
+        {
+          "backbone": "perturbmap_reconstruction",
+          "mse_area": 0.00966169108597986,
+          "policy": "mean_query",
+          "specificity_area": 0.006976858767715105
+        },
+        {
+          "backbone": "zero",
+          "mse_area": 0.008125083908890643,
+          "policy": "bias_aware",
+          "specificity_area": 0.0069095687441631925
+        },
+        {
+          "backbone": "mean",
+          "mse_area": 0.013136736750995462,
+          "policy": "bias_aware",
+          "specificity_area": 0.006909568744169426
+        },
+        {
+          "backbone": "source_copy",
+          "mse_area": 0.010608769906111402,
+          "policy": "bias_aware",
+          "specificity_area": 0.009368179755167867
+        },
+        {
+          "backbone": "affine",
+          "mse_area": 0.008070144678310676,
+          "policy": "bias_aware",
+          "specificity_area": 0.00691778703294248
+        },
+        {
+          "backbone": "ridge",
+          "mse_area": 0.018220100682930958,
+          "policy": "bias_aware",
+          "specificity_area": 0.01165086737397145
+        },
+        {
+          "backbone": "ridge_cv",
+          "mse_area": 0.008127670181737757,
+          "policy": "bias_aware",
+          "specificity_area": 0.006911969911053979
+        },
+        {
+          "backbone": "local_residual_adaptation",
+          "mse_area": 0.01389820930512234,
+          "policy": "bias_aware",
+          "specificity_area": 0.00953961783670995
+        },
+        {
+          "backbone": "recipient_local_lowrank",
+          "mse_area": 0.009963078640687992,
+          "policy": "bias_aware",
+          "specificity_area": 0.007208041999278035
+        },
+        {
+          "backbone": "perturbmap_reconstruction",
+          "mse_area": 0.011258235465601337,
+          "policy": "bias_aware",
+          "specificity_area": 0.007024646923482501
+        }
+      ],
+      "configuration_sha256": "b6a0c3b941d7e8e03c97e9da43f0c58c4da35bb52b4bda104515c69398a5fda4",
+      "development_cost": 6428,
+      "metric_rows": 70740,
+      "public_source_cells": 50912,
+      "resources_end": {
+        "available_ram_bytes": 2445434880,
+        "disk_free_bytes": 602467708928,
+        "disk_total_bytes": 1002016075776,
+        "logical_cpus": 16,
+        "memory_scope": "Current process; peak is over its lifetime, not a per-case delta.",
+        "peak_commit_bytes": 581558272,
+        "peak_working_set_bytes": 707694592,
+        "process_id": 16992,
+        "ram_bytes": 16418983936,
+        "recorded_at": "2026-10-22T21:16:21.866993+00:00",
+        "working_set_bytes": 329404416
+      },
+      "run": "external-k562-to-rpe1-identity-permuted-v1",
+      "run_directory": "C:\\Users\\Abdul\\Documents\\MLResearch\\runs\\external-k562-to-rpe1-identity-permuted-v1",
+      "run_manifest_sha256": "3cf97359c9a2e3801acab0e3127ff2109f58214b8de20a45091c7b5d1aa841ac",
+      "runtime_seconds": 17101.675342100003,
+      "scorer_only_cells": 4448,
+      "scoring_runtime_seconds": 10550.14816109999,
+      "source_context": "K562",
+      "source_control": "identity_permutation",
+      "source_coordinates": {
+        "explained_fraction": 0.27097018788475785,
+        "rank": 4,
+        "source_half_noise": 0.006452792668297915
+      },
+      "target_context": "RPE1"
+    },
+    {
+      "acquisition_runtime_seconds": 134.3015688000014,
+      "areas": [
+        {
+          "backbone": "zero",
+          "mse_area": 0.008125083908890643,
+          "policy": "fixed_grid",
+          "specificity_area": 0.0069095687441631925
+        },
+        {
+          "backbone": "mean",
+          "mse_area": 0.01274852218313093,
+          "policy": "fixed_grid",
+          "specificity_area": 0.006909568744168981
+        },
+        {
+          "backbone": "source_copy",
+          "mse_area": 0.010664563667351652,
+          "policy": "fixed_grid",
+          "specificity_area": 0.009099315448269182
+        },
+        {
+          "backbone": "affine",
+          "mse_area": 0.00841317490478528,
+          "policy": "fixed_grid",
+          "specificity_area": 0.00711762303997138
+        },
+        {
+          "backbone": "ridge",
+          "mse_area": 1.3495643348409567,
+          "policy": "fixed_grid",
+          "specificity_area": 0.34447487103705926
+        },
+        {
+          "backbone": "ridge_cv",
+          "mse_area": 0.008159188494714685,
+          "policy": "fixed_grid",
+          "specificity_area": 0.006959468254560123
+        },
+        {
+          "backbone": "local_residual_adaptation",
+          "mse_area": 0.013669484043103123,
+          "policy": "fixed_grid",
+          "specificity_area": 0.009118003517758889
+        },
+        {
+          "backbone": "recipient_local_lowrank",
+          "mse_area": 0.01007158459749823,
+          "policy": "fixed_grid",
+          "specificity_area": 0.007266381912009387
+        },
+        {
+          "backbone": "perturbmap_reconstruction",
+          "mse_area": 0.011370527263058358,
+          "policy": "fixed_grid",
+          "specificity_area": 0.006981016897434925
+        },
+        {
+          "backbone": "zero",
+          "mse_area": 0.008125083908890643,
+          "policy": "worst_query",
+          "specificity_area": 0.0069095687441631925
+        },
+        {
+          "backbone": "mean",
+          "mse_area": 0.01648307229808592,
+          "policy": "worst_query",
+          "specificity_area": 0.00690956874417302
+        },
+        {
+          "backbone": "source_copy",
+          "mse_area": 0.010664563667351652,
+          "policy": "worst_query",
+          "specificity_area": 0.009099315448269182
+        },
+        {
+          "backbone": "affine",
+          "mse_area": 0.008625314493544884,
+          "policy": "worst_query",
+          "specificity_area": 0.007312796803512891
+        },
+        {
+          "backbone": "ridge",
+          "mse_area": 0.13987206501787805,
+          "policy": "worst_query",
+          "specificity_area": 0.03306621334188102
+        },
+        {
+          "backbone": "ridge_cv",
+          "mse_area": 0.008153434305701882,
+          "policy": "worst_query",
+          "specificity_area": 0.006879563873913478
+        },
+        {
+          "backbone": "local_residual_adaptation",
+          "mse_area": 0.015003897096571938,
+          "policy": "worst_query",
+          "specificity_area": 0.009119897046811687
+        },
+        {
+          "backbone": "recipient_local_lowrank",
+          "mse_area": 0.011697499153133398,
+          "policy": "worst_query",
+          "specificity_area": 0.007690981007354932
+        },
+        {
+          "backbone": "perturbmap_reconstruction",
+          "mse_area": 0.014197296871789722,
+          "policy": "worst_query",
+          "specificity_area": 0.007012156896041146
+        },
+        {
+          "backbone": "zero",
+          "mse_area": 0.008125083908890643,
+          "policy": "mean_query",
+          "specificity_area": 0.0069095687441631925
+        },
+        {
+          "backbone": "mean",
+          "mse_area": 0.013317902767397706,
+          "policy": "mean_query",
+          "specificity_area": 0.006909568744169635
+        },
+        {
+          "backbone": "source_copy",
+          "mse_area": 0.010664563667351652,
+          "policy": "mean_query",
+          "specificity_area": 0.009099315448269182
+        },
+        {
+          "backbone": "affine",
+          "mse_area": 0.008510992829063112,
+          "policy": "mean_query",
+          "specificity_area": 0.007212760689367506
+        },
+        {
+          "backbone": "ridge",
+          "mse_area": 0.13447861106773346,
+          "policy": "mean_query",
+          "specificity_area": 0.03464524979313216
+        },
+        {
+          "backbone": "ridge_cv",
+          "mse_area": 0.008072597241380677,
+          "policy": "mean_query",
+          "specificity_area": 0.006890013709405569
+        },
+        {
+          "backbone": "local_residual_adaptation",
+          "mse_area": 0.013552969244724239,
+          "policy": "mean_query",
+          "specificity_area": 0.00910258673018902
+        },
+        {
+          "backbone": "recipient_local_lowrank",
+          "mse_area": 0.009997919793214865,
+          "policy": "mean_query",
+          "specificity_area": 0.007201681796593245
+        },
+        {
+          "backbone": "perturbmap_reconstruction",
+          "mse_area": 0.011513802319403075,
+          "policy": "mean_query",
+          "specificity_area": 0.006996136383494609
+        },
+        {
+          "backbone": "zero",
+          "mse_area": 0.008125083908890643,
+          "policy": "bias_aware",
+          "specificity_area": 0.0069095687441631925
+        },
+        {
+          "backbone": "mean",
+          "mse_area": 0.01615532892503391,
+          "policy": "bias_aware",
+          "specificity_area": 0.00690956874417227
+        },
+        {
+          "backbone": "source_copy",
+          "mse_area": 0.010664563667351652,
+          "policy": "bias_aware",
+          "specificity_area": 0.009099315448269182
+        },
+        {
+          "backbone": "affine",
+          "mse_area": 0.008486128644491876,
+          "policy": "bias_aware",
+          "specificity_area": 0.00719816744290413
+        },
+        {
+          "backbone": "ridge",
+          "mse_area": 0.13360506500607666,
+          "policy": "bias_aware",
+          "specificity_area": 0.03297996124909153
+        },
+        {
+          "backbone": "ridge_cv",
+          "mse_area": 0.008058708351626103,
+          "policy": "bias_aware",
+          "specificity_area": 0.0068577013864514645
+        },
+        {
+          "backbone": "local_residual_adaptation",
+          "mse_area": 0.01511968080786205,
+          "policy": "bias_aware",
+          "specificity_area": 0.00910992094376345
+        },
+        {
+          "backbone": "recipient_local_lowrank",
+          "mse_area": 0.011123496947022186,
+          "policy": "bias_aware",
+          "specificity_area": 0.007378181070047642
+        },
+        {
+          "backbone": "perturbmap_reconstruction",
+          "mse_area": 0.014336635481611681,
+          "policy": "bias_aware",
+          "specificity_area": 0.006963097535035078
+        }
+      ],
+      "configuration_sha256": "d9299f53f0b5ba69c29efb6ea9dee15b6969df905dd8439b180b15e2189c446a",
+      "development_cost": 6428,
+      "metric_rows": 70740,
+      "public_source_cells": 50912,
+      "resources_end": {
+        "available_ram_bytes": 1627103232,
+        "disk_free_bytes": 602427965440,
+        "disk_total_bytes": 1002016075776,
+        "logical_cpus": 16,
+        "memory_scope": "Current process; peak is over its lifetime, not a per-case delta.",
+        "peak_commit_bytes": 581558272,
+        "peak_working_set_bytes": 707694592,
+        "process_id": 16992,
+        "ram_bytes": 16418983936,
+        "recorded_at": "2026-10-22T21:18:13.682346+00:00",
+        "working_set_bytes": 329596928
+      },
+      "run": "external-k562-to-rpe1-query-gene-permuted-v1",
+      "run_directory": "C:\\Users\\Abdul\\Documents\\MLResearch\\runs\\external-k562-to-rpe1-query-gene-permuted-v1",
+      "run_manifest_sha256": "8bfa39930a440210c992cb93537db16d871eb6cb996a0cdf33f4778fc88bc2e6",
+      "runtime_seconds": 245.86151919999975,
+      "scorer_only_cells": 4448,
+      "scoring_runtime_seconds": 111.55994800000917,
+      "source_context": "K562",
+      "source_control": "query_gene_permutation",
+      "source_coordinates": {
+        "explained_fraction": 0.24631785709441237,
+        "rank": 4,
+        "source_half_noise": 0.006452792668297914
+      },
+      "target_context": "RPE1"
+    },
+    {
+      "acquisition_runtime_seconds": 7250.518897500006,
+      "areas": [
+        {
+          "backbone": "zero",
+          "mse_area": 0.005759731300940105,
+          "policy": "fixed_grid",
+          "specificity_area": 0.005087793342561062
+        },
+        {
+          "backbone": "mean",
+          "mse_area": 0.01054495365762581,
+          "policy": "fixed_grid",
+          "specificity_area": 0.0050877933425655915
+        },
+        {
+          "backbone": "source_copy",
+          "mse_area": 0.012079742714198698,
+          "policy": "fixed_grid",
+          "specificity_area": 0.010450341980934606
+        },
+        {
+          "backbone": "affine",
+          "mse_area": 0.005843362874661929,
+          "policy": "fixed_grid",
+          "specificity_area": 0.005091713507947543
+        },
+        {
+          "backbone": "ridge",
+          "mse_area": 0.04210825523828302,
+          "policy": "fixed_grid",
+          "specificity_area": 0.03517802741255765
+        },
+        {
+          "backbone": "ridge_cv",
+          "mse_area": 0.00576000924366636,
+          "policy": "fixed_grid",
+          "specificity_area": 0.005088107237339164
+        },
+        {
+          "backbone": "local_residual_adaptation",
+          "mse_area": 0.013971686028215597,
+          "policy": "fixed_grid",
+          "specificity_area": 0.009987992080637973
+        },
+        {
+          "backbone": "recipient_local_lowrank",
+          "mse_area": 0.008155756661734497,
+          "policy": "fixed_grid",
+          "specificity_area": 0.005500194991814622
+        },
+        {
+          "backbone": "perturbmap_reconstruction",
+          "mse_area": 0.009046794267835,
+          "policy": "fixed_grid",
+          "specificity_area": 0.0052505693595420126
+        },
+        {
+          "backbone": "zero",
+          "mse_area": 0.005759731300940105,
+          "policy": "worst_query",
+          "specificity_area": 0.005087793342561062
+        },
+        {
+          "backbone": "mean",
+          "mse_area": 0.010657210165892701,
+          "policy": "worst_query",
+          "specificity_area": 0.005087793342565626
+        },
+        {
+          "backbone": "source_copy",
+          "mse_area": 0.012079742714198698,
+          "policy": "worst_query",
+          "specificity_area": 0.010450341980934606
+        },
+        {
+          "backbone": "affine",
+          "mse_area": 0.005825213292495849,
+          "policy": "worst_query",
+          "specificity_area": 0.005094241318750477
+        },
+        {
+          "backbone": "ridge",
+          "mse_area": 0.017481094639156633,
+          "policy": "worst_query",
+          "specificity_area": 0.011222774091532262
+        },
+        {
+          "backbone": "ridge_cv",
+          "mse_area": 0.005763567592391413,
+          "policy": "worst_query",
+          "specificity_area": 0.0050921636980903445
+        },
+        {
+          "backbone": "local_residual_adaptation",
+          "mse_area": 0.013684707481564059,
+          "policy": "worst_query",
+          "specificity_area": 0.009663973796283224
+        },
+        {
+          "backbone": "recipient_local_lowrank",
+          "mse_area": 0.0089875845484134,
+          "policy": "worst_query",
+          "specificity_area": 0.005828445015793706
+        },
+        {
+          "backbone": "perturbmap_reconstruction",
+          "mse_area": 0.009711724823728004,
+          "policy": "worst_query",
+          "specificity_area": 0.00523068765409519
+        },
+        {
+          "backbone": "zero",
+          "mse_area": 0.005759731300940105,
+          "policy": "mean_query",
+          "specificity_area": 0.005087793342561062
+        },
+        {
+          "backbone": "mean",
+          "mse_area": 0.008988401176895826,
+          "policy": "mean_query",
+          "specificity_area": 0.005087793342564214
+        },
+        {
+          "backbone": "source_copy",
+          "mse_area": 0.012079742714198698,
+          "policy": "mean_query",
+          "specificity_area": 0.010450341980934606
+        },
+        {
+          "backbone": "affine",
+          "mse_area": 0.005789154873489678,
+          "policy": "mean_query",
+          "specificity_area": 0.005090901729124586
+        },
+        {
+          "backbone": "ridge",
+          "mse_area": 0.011384438547848257,
+          "policy": "mean_query",
+          "specificity_area": 0.007212646248546801
+        },
+        {
+          "backbone": "ridge_cv",
+          "mse_area": 0.005760515768293991,
+          "policy": "mean_query",
+          "specificity_area": 0.0050891146684408865
+        },
+        {
+          "backbone": "local_residual_adaptation",
+          "mse_area": 0.01235874421306747,
+          "policy": "mean_query",
+          "specificity_area": 0.009416190685011818
+        },
+        {
+          "backbone": "recipient_local_lowrank",
+          "mse_area": 0.008295320369822305,
+          "policy": "mean_query",
+          "specificity_area": 0.005663474694971163
+        },
+        {
+          "backbone": "perturbmap_reconstruction",
+          "mse_area": 0.008345844806336216,
+          "policy": "mean_query",
+          "specificity_area": 0.005311289505189091
+        },
+        {
+          "backbone": "zero",
+          "mse_area": 0.005759731300940105,
+          "policy": "bias_aware",
+          "specificity_area": 0.005087793342561062
+        },
+        {
+          "backbone": "mean",
+          "mse_area": 0.0112010167771628,
+          "policy": "bias_aware",
+          "specificity_area": 0.005087793342566211
+        },
+        {
+          "backbone": "source_copy",
+          "mse_area": 0.012079742714198698,
+          "policy": "bias_aware",
+          "specificity_area": 0.010450341980934606
+        },
+        {
+          "backbone": "affine",
+          "mse_area": 0.005817010037879966,
+          "policy": "bias_aware",
+          "specificity_area": 0.005097031625897265
+        },
+        {
+          "backbone": "ridge",
+          "mse_area": 0.01748810784239487,
+          "policy": "bias_aware",
+          "specificity_area": 0.010780831369739827
+        },
+        {
+          "backbone": "ridge_cv",
+          "mse_area": 0.005762571418783978,
+          "policy": "bias_aware",
+          "specificity_area": 0.005091169903926903
+        },
+        {
+          "backbone": "local_residual_adaptation",
+          "mse_area": 0.014011147839640171,
+          "policy": "bias_aware",
+          "specificity_area": 0.009489578201225105
+        },
+        {
+          "backbone": "recipient_local_lowrank",
+          "mse_area": 0.009001130252012912,
+          "policy": "bias_aware",
+          "specificity_area": 0.005599188026402382
+        },
+        {
+          "backbone": "perturbmap_reconstruction",
+          "mse_area": 0.010247179650743418,
+          "policy": "bias_aware",
+          "specificity_area": 0.005210185820869942
+        }
+      ],
+      "configuration_sha256": "31cbf0dc3acc75ec00f57892535fc54e1d49dfb86cf2335f3e4ffd2574536126",
+      "development_cost": 6428,
+      "metric_rows": 70740,
+      "public_source_cells": 50912,
+      "resources_end": {
+        "available_ram_bytes": 866107392,
+        "disk_free_bytes": 602682822656,
+        "disk_total_bytes": 1002016075776,
+        "logical_cpus": 16,
+        "memory_scope": "Current process; peak is over its lifetime, not a per-case delta.",
+        "peak_commit_bytes": 581558272,
+        "peak_working_set_bytes": 707694592,
+        "process_id": 16992,
+        "ram_bytes": 16418983936,
+        "recorded_at": "2026-10-22T21:19:58.134224+00:00",
+        "working_set_bytes": 326393856
+      },
+      "run": "external-rpe1-to-k562-identity-permuted-v1",
+      "run_directory": "C:\\Users\\Abdul\\Documents\\MLResearch\\runs\\external-rpe1-to-k562-identity-permuted-v1",
+      "run_manifest_sha256": "49d478c5fb256898cec9f8a342f0bbd8bd226492746c8de970e3fcecf69a1f15",
+      "runtime_seconds": 7354.74192629999,
+      "scorer_only_cells": 4448,
+      "scoring_runtime_seconds": 104.22302639999543,
+      "source_context": "RPE1",
+      "source_control": "identity_permutation",
+      "source_coordinates": {
+        "explained_fraction": 0.47486427791998037,
+        "rank": 4,
+        "source_half_noise": 0.006776526771758744
+      },
+      "target_context": "K562"
+    },
+    {
+      "acquisition_runtime_seconds": 115.66491099999985,
+      "areas": [
+        {
+          "backbone": "zero",
+          "mse_area": 0.005759731300940105,
+          "policy": "fixed_grid",
+          "specificity_area": 0.005087793342561062
+        },
+        {
+          "backbone": "mean",
+          "mse_area": 0.01054495365762581,
+          "policy": "fixed_grid",
+          "specificity_area": 0.0050877933425655915
+        },
+        {
+          "backbone": "source_copy",
+          "mse_area": 0.01073796234302022,
+          "policy": "fixed_grid",
+          "specificity_area": 0.009091790615659352
+        },
+        {
+          "backbone": "affine",
+          "mse_area": 0.005936123968522557,
+          "policy": "fixed_grid",
+          "specificity_area": 0.0051544572284296895
+        },
+        {
+          "backbone": "ridge",
+          "mse_area": 1.5961107259884946,
+          "policy": "fixed_grid",
+          "specificity_area": 0.9183248220682805
+        },
+        {
+          "backbone": "ridge_cv",
+          "mse_area": 0.005762270754920548,
+          "policy": "fixed_grid",
+          "specificity_area": 0.005086185721522518
+        },
+        {
+          "backbone": "local_residual_adaptation",
+          "mse_area": 0.014247765856341589,
+          "policy": "fixed_grid",
+          "specificity_area": 0.009112621036999728
+        },
+        {
+          "backbone": "recipient_local_lowrank",
+          "mse_area": 0.008325369802727193,
+          "policy": "fixed_grid",
+          "specificity_area": 0.005488840151256007
+        },
+        {
+          "backbone": "perturbmap_reconstruction",
+          "mse_area": 0.009445239874738429,
+          "policy": "fixed_grid",
+          "specificity_area": 0.005171189009822517
+        },
+        {
+          "backbone": "zero",
+          "mse_area": 0.005759731300940105,
+          "policy": "worst_query",
+          "specificity_area": 0.005087793342561062
+        },
+        {
+          "backbone": "mean",
+          "mse_area": 0.014815877649476238,
+          "policy": "worst_query",
+          "specificity_area": 0.005087793342569511
+        },
+        {
+          "backbone": "source_copy",
+          "mse_area": 0.01073796234302022,
+          "policy": "worst_query",
+          "specificity_area": 0.009091790615659352
+        },
+        {
+          "backbone": "affine",
+          "mse_area": 0.0061678955674660165,
+          "policy": "worst_query",
+          "specificity_area": 0.005260798536238768
+        },
+        {
+          "backbone": "ridge",
+          "mse_area": 0.2731793825642746,
+          "policy": "worst_query",
+          "specificity_area": 0.15138305197621693
+        },
+        {
+          "backbone": "ridge_cv",
+          "mse_area": 0.005762719132016284,
+          "policy": "worst_query",
+          "specificity_area": 0.00508326464537841
+        },
+        {
+          "backbone": "local_residual_adaptation",
+          "mse_area": 0.016194964174118597,
+          "policy": "worst_query",
+          "specificity_area": 0.009120573184250988
+        },
+        {
+          "backbone": "recipient_local_lowrank",
+          "mse_area": 0.011603062309915542,
+          "policy": "worst_query",
+          "specificity_area": 0.006351360210103777
+        },
+        {
+          "backbone": "perturbmap_reconstruction",
+          "mse_area": 0.01391244118515373,
+          "policy": "worst_query",
+          "specificity_area": 0.005167473490035603
+        },
+        {
+          "backbone": "zero",
+          "mse_area": 0.005759731300940105,
+          "policy": "mean_query",
+          "specificity_area": 0.005087793342561062
+        },
+        {
+          "backbone": "mean",
+          "mse_area": 0.012678082990433753,
+          "policy": "mean_query",
+          "specificity_area": 0.00508779334256768
+        },
+        {
+          "backbone": "source_copy",
+          "mse_area": 0.01073796234302022,
+          "policy": "mean_query",
+          "specificity_area": 0.009091790615659352
+        },
+        {
+          "backbone": "affine",
+          "mse_area": 0.006086154568331675,
+          "policy": "mean_query",
+          "specificity_area": 0.005245730424220191
+        },
+        {
+          "backbone": "ridge",
+          "mse_area": 0.2578188684750646,
+          "policy": "mean_query",
+          "specificity_area": 0.1439766158907636
+        },
+        {
+          "backbone": "ridge_cv",
+          "mse_area": 0.005758930721658814,
+          "policy": "mean_query",
+          "specificity_area": 0.005084261904046674
+        },
+        {
+          "backbone": "local_residual_adaptation",
+          "mse_area": 0.015023633372837589,
+          "policy": "mean_query",
+          "specificity_area": 0.009118384964704126
+        },
+        {
+          "backbone": "recipient_local_lowrank",
+          "mse_area": 0.009788814841191582,
+          "policy": "mean_query",
+          "specificity_area": 0.005654107365806755
+        },
+        {
+          "backbone": "perturbmap_reconstruction",
+          "mse_area": 0.011754806604406937,
+          "policy": "mean_query",
+          "specificity_area": 0.005146280910464859
+        },
+        {
+          "backbone": "zero",
+          "mse_area": 0.005759731300940105,
+          "policy": "bias_aware",
+          "specificity_area": 0.005087793342561062
+        },
+        {
+          "backbone": "mean",
+          "mse_area": 0.014318817889358265,
+          "policy": "bias_aware",
+          "specificity_area": 0.005087793342569082
+        },
+        {
+          "backbone": "source_copy",
+          "mse_area": 0.01073796234302022,
+          "policy": "bias_aware",
+          "specificity_area": 0.009091790615659352
+        },
+        {
+          "backbone": "affine",
+          "mse_area": 0.006153469762079167,
+          "policy": "bias_aware",
+          "specificity_area": 0.005254650123334123
+        },
+        {
+          "backbone": "ridge",
+          "mse_area": 0.27470629412924236,
+          "policy": "bias_aware",
+          "specificity_area": 0.15244516729837276
+        },
+        {
+          "backbone": "ridge_cv",
+          "mse_area": 0.005762582801452181,
+          "policy": "bias_aware",
+          "specificity_area": 0.005085587903099417
+        },
+        {
+          "backbone": "local_residual_adaptation",
+          "mse_area": 0.016018390849472052,
+          "policy": "bias_aware",
+          "specificity_area": 0.009115399662225212
+        },
+        {
+          "backbone": "recipient_local_lowrank",
+          "mse_area": 0.010470182445684128,
+          "policy": "bias_aware",
+          "specificity_area": 0.005813593725779339
+        },
+        {
+          "backbone": "perturbmap_reconstruction",
+          "mse_area": 0.013288532773297695,
+          "policy": "bias_aware",
+          "specificity_area": 0.005150299478706305
+        }
+      ],
+      "configuration_sha256": "3f7e65486a636fe79750afd7b8cf21a631bd63822ee3388c6ef219cd8d1b22c5",
+      "development_cost": 6428,
+      "metric_rows": 70740,
+      "public_source_cells": 50912,
+      "resources_end": {
+        "available_ram_bytes": 930922496,
+        "disk_free_bytes": 602416250880,
+        "disk_total_bytes": 1002016075776,
+        "logical_cpus": 16,
+        "memory_scope": "Current process; peak is over its lifetime, not a per-case delta.",
+        "peak_commit_bytes": 581558272,
+        "peak_working_set_bytes": 707694592,
+        "process_id": 16992,
+        "ram_bytes": 16418983936,
+        "recorded_at": "2026-10-22T21:20:58.977569+00:00",
+        "working_set_bytes": 326451200
+      },
+      "run": "external-rpe1-to-k562-query-gene-permuted-v1",
+      "run_directory": "C:\\Users\\Abdul\\Documents\\MLResearch\\runs\\external-rpe1-to-k562-query-gene-permuted-v1",
+      "run_manifest_sha256": "572e4e54941ec0365f2f954efb7072f34c4e44dd81c54342ea29e9843d03d0b6",
+      "runtime_seconds": 176.18421810001018,
+      "scorer_only_cells": 4448,
+      "scoring_runtime_seconds": 60.519306200003484,
+      "source_context": "RPE1",
+      "source_control": "query_gene_permutation",
+      "source_coordinates": {
+        "explained_fraction": 0.4606912015463645,
+        "rank": 4,
+        "source_half_noise": 0.006776526771758744
+      },
+      "target_context": "K562"
+    }
+  ],
+  "suite_manifest_sha256": "6520d23aebfa4963cf7a6e13f983840b3d680c4ae8fc1b4b27e02b127a3eebc4"
+}

@@ -1,47 +1,47 @@
 # MLResearch
 
-A Python workspace for machine learning research, scaffolded with `uv init`.
+A locked Python/uv package and computational study of budgeted cross-context
+perturbation prediction: joint allocation of calibration identities, cell depth
+and shared controls under sealed recipient queries.
 
-## Research
+The [research report](docs/research-report.md) retains the completed experiments
+and negative primary result. The proposed discrepancy extension does not improve
+classical worst-query acquisition in either frozen K562/RPE1 direction.
 
-Start with the [research dossier](docs/README.md), a literature-backed frontier
-assessment and proposed project on budgeted cross-context perturbation prediction.
-The research snapshot is dated October 21, 2026.
+- [External results and standalone figures](docs/external-evaluation-findings.md)
+- [Methods and assumptions](docs/implemented-methods.md)
+- [Data dictionary and provenance](docs/data-dictionary.md)
+- [Reproduction workflow](docs/external-reproduction.md)
+- [Implementation guide](docs/implementation-guide.md) and [milestone ledger](docs/implementation-status.md)
+- [Original research dossier](docs/README.md)
 
-## Getting started
+## Quick start
 
-Install [uv](https://docs.astral.sh/uv/getting-started/installation/), then run:
+Use Python 3.12 and [uv](https://docs.astral.sh/uv/getting-started/installation/).
+The small offline example needs no dataset download:
 
 ```sh
-uv sync --locked
-uv run mlresearch --help
-```
-
-The implementation provides verified downloads, streaming preparation, frozen
-episodes, paid finite-pool acquisition, transfer predictors, replay experiments,
-and standalone result plots. Run a small example without downloading data:
-
-```sh
+uv sync --locked --group dev
+uv run --locked mlresearch --help
 uv run --locked mlresearch demo --directory runs/offline-demo --five-seeds
 uv run --locked mlresearch report runs/offline-demo/experiment --output runs/offline-demo/report
 ```
 
-See the [implementation guide](docs/implementation-guide.md)
-and [current milestone status](docs/implementation-status.md). The complete
-study remains in progress. The [first synthetic pilot](docs/results/synthetic-pilot-v1/results.md)
-retains a negative result for the extension; it is not a completed study.
+Use fresh output directories. On PowerShell, set
+`$env:OPENBLAS_NUM_THREADS='1'` before numerical commands. Large raw/prepared
+matrices, environments, caches and prediction arrays remain ignored.
 
-## Development
+## Verification
 
-- Python 3.12 or newer is required; `.python-version` pins the default to 3.12.
-- Application code lives in `src/mlresearch/`.
-- Add dependencies with `uv add <package>`.
-- Add development tools with `uv add --dev <package>`.
-- Commit `uv.lock` when dependencies change to keep environments reproducible.
-- Install development tools with `uv sync --locked --group dev`.
+```sh
+uv run --locked python -m pytest --basetemp .cache/pytest
+uv run --locked ruff check src tests scripts
+uv run --locked ruff format --check src tests scripts
+uv run --locked python -m mypy src/mlresearch
+```
 
-The [controlled simulation protocol](docs/controlled-study-protocol.md) and `configs/study-controlled-v1.json` define the larger synthetic study. Run it with `uv run mlresearch study configs/study-controlled-v1.json`; use a fresh output directory for another run. This study is separate from the still-pending external evaluation. The [risk-retention analysis correction](docs/retention-analysis-correction.md) preserves the original pilot findings while correcting their diagnostic selection rule.
-
-The [70-case controlled study](docs/controlled-study-findings.md) is complete and reports mixed, mainly negative extension results plus a source-support failure under measurement error. [Development tuning](docs/development-tuning-findings.md) and its full candidate table are retained. External evaluation and final method/uncertainty integration remain in progress.
-
-The [integrated development check](docs/integrated-development-findings.md) now crosses ten policies and nine predictors, with 90 passing tests and Windows/Ubuntu CI. Its negative results, paired common-control analysis, canonical external-ID audit and full development cost are retained. Frozen external scoring remains pending.
+The fast offline workflow runs on Windows and Ubuntu. Full-data experiments are
+separate: the retained study includes 70 controlled simulation cases,
+five-seed development selection and six jointly frozen external runs with nine
+prediction backbones and 720 checkpoints. Conditional resampling, technical
+batches and reused transfer directions are not independent biological evidence.

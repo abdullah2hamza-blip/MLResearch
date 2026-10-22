@@ -11,8 +11,8 @@ uv run --locked mlresearch resources
 uv run --locked mlresearch provenance --output .cache/environment.json
 python -c "from pathlib import Path; Path('.cache').mkdir(exist_ok=True)"
 uv run --locked python -m pytest --basetemp .cache/pytest
-uv run --locked ruff check src tests
-uv run --locked ruff format --check src tests
+uv run --locked ruff check src tests scripts
+uv run --locked ruff format --check src tests scripts
 uv run --locked python -m mypy src/mlresearch
 ```
 
@@ -23,8 +23,8 @@ The GitHub workflow defines these fast offline checks for Python 3.12 on Windows
 ```sh
 uv run --locked mlresearch data list
 uv run --locked mlresearch data fetch frangieh-rna
-uv run --locked mlresearch data audit data/raw/FrangiehIzar2021_RNA.h5ad --output docs/evidence/frangieh-rna-audit.json
-uv run --locked mlresearch data counts configs/prepare-frangieh.json --output docs/evidence/frangieh-eligibility.json
+uv run --locked mlresearch data audit data/raw/FrangiehIzar2021_RNA.h5ad --output runs/reproduced-frangieh-audit.json
+uv run --locked mlresearch data counts configs/prepare-frangieh.json --output runs/reproduced-frangieh-eligibility.json
 ```
 
 Downloads are incoming public files from the pinned registry. A `.part` file can be resumed; a server that ignores byte ranges causes a safe restart rather than appending incompatible content. A final filename is accepted only after exact byte-size and published MD5 verification. A provenance sidecar also records SHA-256, the release DOI, and license declaration. `--restart` requests a fresh partial download when necessary. Existing final files are verified again before use.
@@ -51,7 +51,7 @@ A preparation directory is never silently overwritten. An interrupted run retain
 
 `mlresearch.acquisition` accepts calibration/control pools only. Query outcomes are rejected at construction and query purchases are forbidden. It tracks unused cell identities, charges new-intervention setup and per-cell/control costs, and records a deterministic hash-chained ledger. Purchases return copies of paid observations. Policies must receive only public state and paid observations; never pass them a raw dataset or scorer object. The service is an experimental API boundary, not a sandbox for malicious Python introspection or arbitrary filesystem access.
 
-Assessment-bank independence is checked separately. A hash chain detects accidental ledger edits but does not authenticate an adversary who can rewrite both records and hashes. Run manifests and scorer validation provide additional experiment-integrity checks as the remaining pipeline is built.
+Assessment-bank independence is checked separately. A hash chain detects accidental ledger edits but does not authenticate an adversary who can rewrite both records and hashes. Run manifests and scorer validation provide additional experiment-integrity checks alongside the completed joint-freeze and scoring pipeline.
 
 ## Episodes and replay
 
@@ -75,13 +75,13 @@ Reports also retain compressed per-query metrics, the input run manifest, alloca
 
 For bounded external preparation, download both pinned Replogle files and run `configs/prepare-k562.json` and `configs/prepare-rpe1.json` through `data prepare`. These configs retain the 525 exact target identities having at least 96 cells in both files, plus controls. This metadata-only restriction is recorded in `docs/evidence/replogle-overlap.json`. The RPE1 row block follows its HDF5 chunk height to reduce repeated decompression. Preparation remains a substantial CPU/disk job.
 
-## Remaining work
+## Executed study and limitations
 
-The controlled grid, development tuning, integrated comparator check and canonical metadata freeze have executed. Frozen external scoring, remaining analysis and final claim assessment remain active. See [milestone status](implementation-status.md). Neither passing tests nor a pilot result completes the implementation goal.
+The controlled grid, development tuning, integrated comparator check and six-run frozen external evaluation have executed. The [research report](research-report.md) and [external findings](external-evaluation-findings.md) retain the negative primary result, all declared controls/ablations and inference limits. The [data dictionary](data-dictionary.md) describes actual fields and artifact semantics. See [milestone status](implementation-status.md) for the final publication/completion audit.
 
 ## Integrated transfer and uncertainty
 
-A run config may set `transfer` to an object of [declared reconstruction settings](transfer-comparator-protocol.md); `{}` selects those defaults. This enables `recipient_local_lowrank` and `perturbmap_reconstruction` alongside the seven earlier predictors, all using the same paid ledger. Omit the option or set it to null for legacy behavior. `source_sensitivity: true` adds [joint source-half diagnostics](source-sensitivity-protocol.md) for ridge predictors without purchasing more cells or changing acquisitions. The [integrated development protocol](integrated-development-protocol.md) freezes the next fidelity check.
+A run config may set `transfer` to an object of [declared reconstruction settings](transfer-comparator-protocol.md); `{}` selects those defaults. This enables `recipient_local_lowrank` and `perturbmap_reconstruction` alongside the seven earlier predictors, all using the same paid ledger. Omit the option or set it to null for legacy behavior. `source_sensitivity: true` adds [joint source-half diagnostics](source-sensitivity-protocol.md) for ridge predictors without purchasing more cells or changing acquisitions. The [integrated development protocol](integrated-development-protocol.md) records the completed fidelity check.
 
 ```sh
 uv run --locked mlresearch run configs/run-frangieh-integrated-v1.json
@@ -101,3 +101,5 @@ uv run --locked mlresearch score-external runs/external-evaluation-v1
 ```
 
 The second command is recovery for a confirmed interrupted scoring phase after the joint gate exists; it never repeats acquisition or refits predictors. A completed suite is validated and returned without rescoring. Preserve incomplete acquisitions and inspect their actual process handle before considering any restart. Settings/source/evidence edits invalidate a frozen suite. Use one worker and set `OPENBLAS_NUM_THREADS=1`; the CLI never buys cloud compute. Scoring and report input stream metric rows to keep large external panels within bounded local memory.
+
+For a clean checkout that rebuilds episode manifests, follow [the external reproduction workflow](external-reproduction.md). It creates a newly bound identifier audit and fresh paths/declaration while preserving every published scientific setting, rather than overwriting historical provenance.

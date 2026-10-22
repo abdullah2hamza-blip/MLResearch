@@ -1,0 +1,21 @@
+{
+  "archive_files": {
+    "identifiers.json": "cfb9cd7552c9282436623706b600455b0d48078314cdf55ff0411046f960473c",
+    "k562-to-rpe1-configuration.json": "ed56b01f19ee53100cda9dbb56157bf148160ee916ada1c5e92c0a657c091166",
+    "reproduction/configuration.json": "37e1abb42c8e1ea671bf8faf48238f21671f22c23ca294fd73b6def03d5e3cb8",
+    "reproduction/declaration.json": "c00ffc8fbe7e81a54fa83a5c91555cb08653d820ae69b672fbac6125b53e78f8",
+    "rpe1-to-k562-configuration.json": "1ede621c9c87730a1a4473e73f6ea2adf9531828da88ebacbffbe62e0b240136"
+  },
+  "archive_sha256": "959e739a799af708d5ef04f2f7f53d4d52fd07d67280012d153831801743bf63",
+  "fresh_canonical_audit_and_six_run_declaration_accepted": true,
+  "fresh_real_episode_rebuild_evidence_sha256": "c0a6cdcf9422b480856b45c96dba10d7118206f1db2f0bbaceca19ed4970f08a",
+  "qualification": "Rebuilt all source summaries/banks from verified existing preparations; independently reran canonical metadata audit and fresh-path freeze. Did not rerun full 720-checkpoint scientific study or re-prepare all raw matrix entries.",
+  "recorded_at": "2026-10-22T21:34:22.712072+00:00",
+  "scientific_settings_changed": false,
+  "source_sha256": {
+    "scripts/audit-external-identifiers.py": "799c26a4959705268f8acdd0ac5f541daa51707a17986309b0e05f7183aa4515",
+    "scripts/check-external-episode-rebuild.py": "825bcd146f6fdbd4666ac91bff30130fdf69a64de78e4aaab4156c3ad3e26767",
+    "scripts/freeze-external-reproduction.py": "dd4364df91aaac0bb98ff5d5e4b40fbe6d1dda6c071240671a2ec5ad91feaa56"
+  },
+  "state": "passed"
+}

@@ -1,0 +1,7 @@
+{
+  "actual_transform_audit": "not yet executed; requires completed scorer suite",
+  "analysis_source_sha256": "ea43dd8e2f2568a17ae1d25f521e742945a27c987eba36230d531d09154cf693",
+  "checked_at": "2026-10-22T13:11:31.186248+00:00",
+  "output_created": false,
+  "premature_raw_row_audit_rejected": true
+}

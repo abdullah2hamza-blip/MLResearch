@@ -1,0 +1,200 @@
+{
+  "analysis_version": 2,
+  "assessment_noise_floor": 0.004848967395861667,
+  "bootstrap_samples": 2000,
+  "bootstrap_seed": 20261022,
+  "comparisons": [
+    {
+      "acquisition_seeds": 5,
+      "comparator": "worst_query",
+      "conditional_high": 0.00036161066702003475,
+      "conditional_low": 8.825886125467728e-05,
+      "mean_normalized_area": 0.008032355328711577,
+      "paired_difference": 0.0002081321493183558,
+      "policy": "random_equal",
+      "query_interventions": 131,
+      "relative_error_change": 0.026600998533185597
+    },
+    {
+      "acquisition_seeds": 5,
+      "comparator": "worst_query",
+      "conditional_high": 0.0004241887399913761,
+      "conditional_low": 0.00012019206631045183,
+      "mean_normalized_area": 0.00808182566138646,
+      "paired_difference": 0.0002576024819932402,
+      "policy": "fixed_grid",
+      "query_interventions": 131,
+      "relative_error_change": 0.032923713458441715
+    },
+    {
+      "acquisition_seeds": 5,
+      "comparator": "worst_query",
+      "conditional_high": 7.356885982413672e-05,
+      "conditional_low": -0.0003402781323302427,
+      "mean_normalized_area": 0.007706979580291348,
+      "paired_difference": -0.00011724359910187342,
+      "policy": "diversity",
+      "query_interventions": 131,
+      "relative_error_change": -0.014984695146562246
+    },
+    {
+      "acquisition_seeds": 5,
+      "comparator": "worst_query",
+      "conditional_high": 0.00016400339439415023,
+      "conditional_low": -0.0003065400450576137,
+      "mean_normalized_area": 0.0077633105842929324,
+      "paired_difference": -6.091259510028898e-05,
+      "policy": "d_optimal",
+      "query_interventions": 131,
+      "relative_error_change": -0.0077851300638656935
+    },
+    {
+      "acquisition_seeds": 5,
+      "comparator": "worst_query",
+      "conditional_high": 0.0,
+      "conditional_low": 0.0,
+      "mean_normalized_area": 0.00782422317939322,
+      "paired_difference": 0.0,
+      "policy": "worst_query",
+      "query_interventions": 131,
+      "relative_error_change": 0.0
+    },
+    {
+      "acquisition_seeds": 5,
+      "comparator": "worst_query",
+      "conditional_high": 4.426358442429962e-05,
+      "conditional_low": -9.530964420684829e-05,
+      "mean_normalized_area": 0.007805868771762407,
+      "paired_difference": -1.835440763081438e-05,
+      "policy": "mean_query",
+      "query_interventions": 131,
+      "relative_error_change": -0.0023458440806180827
+    },
+    {
+      "acquisition_seeds": 5,
+      "comparator": "worst_query",
+      "conditional_high": 3.6194437111723756e-05,
+      "conditional_low": -0.00022848868440666716,
+      "mean_normalized_area": 0.0077373725751183125,
+      "paired_difference": -8.685060427491027e-05,
+      "policy": "reliability",
+      "query_interventions": 131,
+      "relative_error_change": -0.01110022072269744
+    },
+    {
+      "acquisition_seeds": 5,
+      "comparator": "worst_query",
+      "conditional_high": 3.518072549481812e-05,
+      "conditional_low": -0.00011176588154289127,
+      "mean_normalized_area": 0.007795916842346639,
+      "paired_difference": -2.830633704658214e-05,
+      "policy": "disagreement",
+      "query_interventions": 131,
+      "relative_error_change": -0.0036177824171903716
+    },
+    {
+      "acquisition_seeds": 5,
+      "comparator": "worst_query",
+      "conditional_high": 0.00013031455431198813,
+      "conditional_low": -4.495715930730481e-05,
+      "mean_normalized_area": 0.007868435417438821,
+      "paired_difference": 4.421223804559956e-05,
+      "policy": "bias_aware",
+      "query_interventions": 131,
+      "relative_error_change": 0.0056506872352570445
+    },
+    {
+      "acquisition_seeds": 5,
+      "comparator": "worst_query",
+      "conditional_high": 5.573894451297937e-05,
+      "conditional_low": 2.049718265160076e-06,
+      "mean_normalized_area": 0.007851691186883763,
+      "paired_difference": 2.7468007490540945e-05,
+      "policy": "bias_gamma025",
+      "query_interventions": 131,
+      "relative_error_change": 0.003510637012870986
+    },
+    {
+      "acquisition_seeds": 5,
+      "comparator": "worst_query",
+      "conditional_high": 0.00012038969752496989,
+      "conditional_low": -0.00013786139284445193,
+      "mean_normalized_area": 0.007823899582612419,
+      "paired_difference": -3.235967808047426e-07,
+      "policy": "bias_equal_depth",
+      "query_interventions": 131,
+      "relative_error_change": -4.1358327003887685e-05
+    },
+    {
+      "acquisition_seeds": 5,
+      "comparator": "worst_query",
+      "conditional_high": 0.00016184369760820552,
+      "conditional_low": -2.5568299480054863e-05,
+      "mean_normalized_area": 0.007893361867297203,
+      "paired_difference": 6.913868790397925e-05,
+      "policy": "bias_fixed_controls",
+      "query_interventions": 131,
+      "relative_error_change": 0.008836492303296115
+    },
+    {
+      "acquisition_seeds": 5,
+      "comparator": "worst_query",
+      "conditional_high": 0.0007395372146653776,
+      "conditional_low": 0.00024768784021120824,
+      "mean_normalized_area": 0.008285418361215192,
+      "paired_difference": 0.00046119518182196874,
+      "policy": "bias_fixed_interventions",
+      "query_interventions": 131,
+      "relative_error_change": 0.05894453305430061
+    },
+    {
+      "acquisition_seeds": 5,
+      "comparator": "worst_query",
+      "conditional_high": 0.0009044311960499103,
+      "conditional_low": 0.00029281849780843995,
+      "mean_normalized_area": 0.00838510439521468,
+      "paired_difference": 0.0005608812158214605,
+      "policy": "bias_fixed_order",
+      "query_interventions": 131,
+      "relative_error_change": 0.07168522714161095
+    },
+    {
+      "acquisition_seeds": 5,
+      "comparator": "worst_query",
+      "conditional_high": 0.00010248249515483239,
+      "conditional_low": -3.97866471983544e-05,
+      "mean_normalized_area": 0.007858322632475982,
+      "paired_difference": 3.409945308276138e-05,
+      "policy": "bias_independent_controls",
+      "query_interventions": 131,
+      "relative_error_change": 0.004358190238306295
+    },
+    {
+      "acquisition_seeds": 5,
+      "comparator": "worst_query",
+      "conditional_high": 0.0,
+      "conditional_low": 0.0,
+      "mean_normalized_area": 0.00782422317939322,
+      "paired_difference": 0.0,
+      "policy": "bias_no_extension",
+      "query_interventions": 131,
+      "relative_error_change": 0.0
+    }
+  ],
+  "fixed_development_cost_units": 6428,
+  "interpretation": "Lower error area and negative differences favor the named policy.",
+  "interval_scope": "Descriptive query-intervention bootstrap conditional on source data, fixed split, acquisition seeds, and fixed assessment/control bank. Excludes biological, guide/batch and common scoring-control uncertainty.",
+  "limitations": [
+    "Intervals are ideal Gaussian diagnostics; post-selection coverage is unvalidated.",
+    "Scalar variances omit gene heteroskedasticity, guide/batch effects and source-coordinate uncertainty.",
+    "Unregularized ideal variances do not account for ridge shrinkage bias.",
+    "The discrepancy objective uses fixed-kernel variance as a surrogate for the ridge predictor's residual risk.",
+    "Seeds and cells are not independent biological replicates.",
+    "Local residual baseline is an adaptation, not a PerturbMap reproduction.",
+    "Optional PerturbMap reconstruction uses one source and paid validation/controls; implementation differences are declared in the comparator protocol.",
+    "Fixed-grid settings are declared in configuration; any development selection must be recorded separately."
+  ],
+  "risk_retention_backbone": "ridge_cv",
+  "risk_retention_source_stability_available": true,
+  "run_manifest_sha256": "008ad74413a3151a3df01c18f6576ebd31e64ccf243d7996963e9599b221bc4f"
+}

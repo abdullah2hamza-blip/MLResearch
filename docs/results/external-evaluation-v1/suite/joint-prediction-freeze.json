@@ -1,0 +1,49 @@
+{
+  "boundary": "All declared predictions and paid ledgers authenticated before scoring.",
+  "configuration_sha256": "311e1710fa9a1f562e691fbe8d1a5fe1e8b21cc9f5008bd27b8e8a9b95fe1694",
+  "frozen_at": "2026-10-22T17:09:33.760669+00:00",
+  "runs": [
+    {
+      "acquisition_manifest": "acquisition-manifests/run-0.json",
+      "acquisition_manifest_sha256": "ba23229f998c14b87b9ea9fdbf1bdf1c665f643d4cbdafbc06a2b219df2979df",
+      "configuration_sha256": "8e5c293657762fb0474e86941c1d96485cfbb233984ca45310b7442e05bd38bf",
+      "predictions_sha256": "fbf18fb6328227fb27cdf767b6eb6bb061a72b4eb52eb203ebc8cbaad92f10c1",
+      "run_directory": "C:\\Users\\Abdul\\Documents\\MLResearch\\runs\\external-k562-to-rpe1-v1"
+    },
+    {
+      "acquisition_manifest": "acquisition-manifests/run-1.json",
+      "acquisition_manifest_sha256": "9ff69491cfd2e160ab1b0a6fe6df996274abf05abe6bbb06d5146dfb09f95ced",
+      "configuration_sha256": "0f18d150125293b8dead91abc70dcce5fef049db1588a24cf9812fc017128ad2",
+      "predictions_sha256": "7ea6a99b2777d19c8d02206d4050c46637c850c0e498b461a0302f991e2b51e9",
+      "run_directory": "C:\\Users\\Abdul\\Documents\\MLResearch\\runs\\external-rpe1-to-k562-v1"
+    },
+    {
+      "acquisition_manifest": "acquisition-manifests/run-2.json",
+      "acquisition_manifest_sha256": "43d2c994ae06a7fcf74eb19ccf545e310fc5ec772ac7f765d71d6c0234e67f22",
+      "configuration_sha256": "b6a0c3b941d7e8e03c97e9da43f0c58c4da35bb52b4bda104515c69398a5fda4",
+      "predictions_sha256": "3f219723cc130de0afe6985f51c43029575c06ebd94200fadc4ff92855314d72",
+      "run_directory": "C:\\Users\\Abdul\\Documents\\MLResearch\\runs\\external-k562-to-rpe1-identity-permuted-v1"
+    },
+    {
+      "acquisition_manifest": "acquisition-manifests/run-3.json",
+      "acquisition_manifest_sha256": "11ec9c8f37b1a38a2515ec5b5342cd2fccf2a85073cac89220b5ad0acfb2c99e",
+      "configuration_sha256": "d9299f53f0b5ba69c29efb6ea9dee15b6969df905dd8439b180b15e2189c446a",
+      "predictions_sha256": "ddc58c0b617144ec2b0edb8d807cd49d34e99a65344e034d206d3470569714c3",
+      "run_directory": "C:\\Users\\Abdul\\Documents\\MLResearch\\runs\\external-k562-to-rpe1-query-gene-permuted-v1"
+    },
+    {
+      "acquisition_manifest": "acquisition-manifests/run-4.json",
+      "acquisition_manifest_sha256": "092899a8588bc08a2b65836e07c58eafd256504259cfe819170d877572342b34",
+      "configuration_sha256": "31cbf0dc3acc75ec00f57892535fc54e1d49dfb86cf2335f3e4ffd2574536126",
+      "predictions_sha256": "4f50901d1b489568804eb4d3bcdd43b7b2ab68be88cdc841e7a8e4bafd132772",
+      "run_directory": "C:\\Users\\Abdul\\Documents\\MLResearch\\runs\\external-rpe1-to-k562-identity-permuted-v1"
+    },
+    {
+      "acquisition_manifest": "acquisition-manifests/run-5.json",
+      "acquisition_manifest_sha256": "ba2c9560c2eecf561996acd62b1b983ba95fc1c51128e6e5c7272306d7f5d253",
+      "configuration_sha256": "3f7e65486a636fe79750afd7b8cf21a631bd63822ee3388c6ef219cd8d1b22c5",
+      "predictions_sha256": "3fedf3ec036bd5540e4d3e8a8afe81234f664ea740dd69d0c19675a7398df713",
+      "run_directory": "C:\\Users\\Abdul\\Documents\\MLResearch\\runs\\external-rpe1-to-k562-query-gene-permuted-v1"
+    }
+  ]
+}

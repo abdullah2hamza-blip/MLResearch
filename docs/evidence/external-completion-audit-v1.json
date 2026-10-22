@@ -1,0 +1,1726 @@
+{
+  "analysis_source_sha256": "9d87d0c9d786d834dbf25b8d49fe643a5f92dc78cfd2e3998789aeb33a922b80",
+  "joint_frozen_at": "2026-10-22T17:09:33.760669+00:00",
+  "joint_gate_sha256": "b31b2d81b6af3aa367399ce681189f6f839b913b068bfccafceb3ef0b35906da",
+  "qualification": "Full artifact/index and ledger-prefix authentication plus independent inventory/cost reconciliation. Timestamps and hashes document the cooperative runner boundary; they do not sandbox a hostile filesystem process. Counterfactual policies reuse cells.",
+  "query_gene_fixed_grid_unchanged_checkpoints": [
+    {
+      "budget": 128,
+      "run": "external-k562-to-rpe1-query-gene-permuted-v1",
+      "seed": 0
+    },
+    {
+      "budget": 256,
+      "run": "external-k562-to-rpe1-query-gene-permuted-v1",
+      "seed": 0
+    },
+    {
+      "budget": 512,
+      "run": "external-k562-to-rpe1-query-gene-permuted-v1",
+      "seed": 0
+    },
+    {
+      "budget": 128,
+      "run": "external-k562-to-rpe1-query-gene-permuted-v1",
+      "seed": 1
+    },
+    {
+      "budget": 256,
+      "run": "external-k562-to-rpe1-query-gene-permuted-v1",
+      "seed": 1
+    },
+    {
+      "budget": 512,
+      "run": "external-k562-to-rpe1-query-gene-permuted-v1",
+      "seed": 1
+    },
+    {
+      "budget": 128,
+      "run": "external-k562-to-rpe1-query-gene-permuted-v1",
+      "seed": 2
+    },
+    {
+      "budget": 256,
+      "run": "external-k562-to-rpe1-query-gene-permuted-v1",
+      "seed": 2
+    },
+    {
+      "budget": 512,
+      "run": "external-k562-to-rpe1-query-gene-permuted-v1",
+      "seed": 2
+    },
+    {
+      "budget": 128,
+      "run": "external-k562-to-rpe1-query-gene-permuted-v1",
+      "seed": 3
+    },
+    {
+      "budget": 256,
+      "run": "external-k562-to-rpe1-query-gene-permuted-v1",
+      "seed": 3
+    },
+    {
+      "budget": 512,
+      "run": "external-k562-to-rpe1-query-gene-permuted-v1",
+      "seed": 3
+    },
+    {
+      "budget": 128,
+      "run": "external-k562-to-rpe1-query-gene-permuted-v1",
+      "seed": 4
+    },
+    {
+      "budget": 256,
+      "run": "external-k562-to-rpe1-query-gene-permuted-v1",
+      "seed": 4
+    },
+    {
+      "budget": 512,
+      "run": "external-k562-to-rpe1-query-gene-permuted-v1",
+      "seed": 4
+    },
+    {
+      "budget": 128,
+      "run": "external-rpe1-to-k562-query-gene-permuted-v1",
+      "seed": 0
+    },
+    {
+      "budget": 256,
+      "run": "external-rpe1-to-k562-query-gene-permuted-v1",
+      "seed": 0
+    },
+    {
+      "budget": 512,
+      "run": "external-rpe1-to-k562-query-gene-permuted-v1",
+      "seed": 0
+    },
+    {
+      "budget": 128,
+      "run": "external-rpe1-to-k562-query-gene-permuted-v1",
+      "seed": 1
+    },
+    {
+      "budget": 256,
+      "run": "external-rpe1-to-k562-query-gene-permuted-v1",
+      "seed": 1
+    },
+    {
+      "budget": 512,
+      "run": "external-rpe1-to-k562-query-gene-permuted-v1",
+      "seed": 1
+    },
+    {
+      "budget": 128,
+      "run": "external-rpe1-to-k562-query-gene-permuted-v1",
+      "seed": 2
+    },
+    {
+      "budget": 256,
+      "run": "external-rpe1-to-k562-query-gene-permuted-v1",
+      "seed": 2
+    },
+    {
+      "budget": 512,
+      "run": "external-rpe1-to-k562-query-gene-permuted-v1",
+      "seed": 2
+    },
+    {
+      "budget": 128,
+      "run": "external-rpe1-to-k562-query-gene-permuted-v1",
+      "seed": 3
+    },
+    {
+      "budget": 256,
+      "run": "external-rpe1-to-k562-query-gene-permuted-v1",
+      "seed": 3
+    },
+    {
+      "budget": 512,
+      "run": "external-rpe1-to-k562-query-gene-permuted-v1",
+      "seed": 3
+    },
+    {
+      "budget": 128,
+      "run": "external-rpe1-to-k562-query-gene-permuted-v1",
+      "seed": 4
+    },
+    {
+      "budget": 256,
+      "run": "external-rpe1-to-k562-query-gene-permuted-v1",
+      "seed": 4
+    },
+    {
+      "budget": 512,
+      "run": "external-rpe1-to-k562-query-gene-permuted-v1",
+      "seed": 4
+    }
+  ],
+  "recorded_at": "2026-10-22T21:22:20.447038+00:00",
+  "runs": [
+    {
+      "assessment_access_sha256": "3cc21c74049021d28c647099514716b746890d039c58104cb312b0529ec3ba95",
+      "assessment_opened_at": "2026-10-22T18:07:21.051535+00:00",
+      "independently_reconciled_ledgers": [
+        {
+          "cells": 364,
+          "policy": "random_equal",
+          "seed": 0,
+          "spent": 512
+        },
+        {
+          "cells": 364,
+          "policy": "fixed_grid",
+          "seed": 0,
+          "spent": 512
+        },
+        {
+          "cells": 348,
+          "policy": "diversity",
+          "seed": 0,
+          "spent": 512
+        },
+        {
+          "cells": 468,
+          "policy": "d_optimal",
+          "seed": 0,
+          "spent": 512
+        },
+        {
+          "cells": 452,
+          "policy": "worst_query",
+          "seed": 0,
+          "spent": 512
+        },
+        {
+          "cells": 456,
+          "policy": "mean_query",
+          "seed": 0,
+          "spent": 512
+        },
+        {
+          "cells": 348,
+          "policy": "reliability",
+          "seed": 0,
+          "spent": 512
+        },
+        {
+          "cells": 464,
+          "policy": "disagreement",
+          "seed": 0,
+          "spent": 512
+        },
+        {
+          "cells": 376,
+          "policy": "bias_aware",
+          "seed": 0,
+          "spent": 512
+        },
+        {
+          "cells": 388,
+          "policy": "bias_gamma025",
+          "seed": 0,
+          "spent": 512
+        },
+        {
+          "cells": 364,
+          "policy": "bias_equal_depth",
+          "seed": 0,
+          "spent": 512
+        },
+        {
+          "cells": 360,
+          "policy": "bias_fixed_controls",
+          "seed": 0,
+          "spent": 512
+        },
+        {
+          "cells": 488,
+          "policy": "bias_fixed_interventions",
+          "seed": 0,
+          "spent": 512
+        },
+        {
+          "cells": 460,
+          "policy": "bias_fixed_order",
+          "seed": 0,
+          "spent": 512
+        },
+        {
+          "cells": 364,
+          "policy": "bias_independent_controls",
+          "seed": 0,
+          "spent": 512
+        },
+        {
+          "cells": 452,
+          "policy": "bias_no_extension",
+          "seed": 0,
+          "spent": 512
+        },
+        {
+          "cells": 364,
+          "policy": "random_equal",
+          "seed": 1,
+          "spent": 512
+        },
+        {
+          "cells": 364,
+          "policy": "fixed_grid",
+          "seed": 1,
+          "spent": 512
+        },
+        {
+          "cells": 348,
+          "policy": "diversity",
+          "seed": 1,
+          "spent": 512
+        },
+        {
+          "cells": 472,
+          "policy": "d_optimal",
+          "seed": 1,
+          "spent": 512
+        },
+        {
+          "cells": 448,
+          "policy": "worst_query",
+          "seed": 1,
+          "spent": 512
+        },
+        {
+          "cells": 460,
+          "policy": "mean_query",
+          "seed": 1,
+          "spent": 512
+        },
+        {
+          "cells": 348,
+          "policy": "reliability",
+          "seed": 1,
+          "spent": 512
+        },
+        {
+          "cells": 452,
+          "policy": "disagreement",
+          "seed": 1,
+          "spent": 512
+        },
+        {
+          "cells": 372,
+          "policy": "bias_aware",
+          "seed": 1,
+          "spent": 512
+        },
+        {
+          "cells": 388,
+          "policy": "bias_gamma025",
+          "seed": 1,
+          "spent": 512
+        },
+        {
+          "cells": 364,
+          "policy": "bias_equal_depth",
+          "seed": 1,
+          "spent": 512
+        },
+        {
+          "cells": 360,
+          "policy": "bias_fixed_controls",
+          "seed": 1,
+          "spent": 512
+        },
+        {
+          "cells": 488,
+          "policy": "bias_fixed_interventions",
+          "seed": 1,
+          "spent": 512
+        },
+        {
+          "cells": 476,
+          "policy": "bias_fixed_order",
+          "seed": 1,
+          "spent": 512
+        },
+        {
+          "cells": 364,
+          "policy": "bias_independent_controls",
+          "seed": 1,
+          "spent": 512
+        },
+        {
+          "cells": 448,
+          "policy": "bias_no_extension",
+          "seed": 1,
+          "spent": 512
+        },
+        {
+          "cells": 364,
+          "policy": "random_equal",
+          "seed": 2,
+          "spent": 512
+        },
+        {
+          "cells": 364,
+          "policy": "fixed_grid",
+          "seed": 2,
+          "spent": 512
+        },
+        {
+          "cells": 348,
+          "policy": "diversity",
+          "seed": 2,
+          "spent": 512
+        },
+        {
+          "cells": 468,
+          "policy": "d_optimal",
+          "seed": 2,
+          "spent": 512
+        },
+        {
+          "cells": 448,
+          "policy": "worst_query",
+          "seed": 2,
+          "spent": 512
+        },
+        {
+          "cells": 456,
+          "policy": "mean_query",
+          "seed": 2,
+          "spent": 512
+        },
+        {
+          "cells": 348,
+          "policy": "reliability",
+          "seed": 2,
+          "spent": 512
+        },
+        {
+          "cells": 460,
+          "policy": "disagreement",
+          "seed": 2,
+          "spent": 512
+        },
+        {
+          "cells": 368,
+          "policy": "bias_aware",
+          "seed": 2,
+          "spent": 512
+        },
+        {
+          "cells": 380,
+          "policy": "bias_gamma025",
+          "seed": 2,
+          "spent": 512
+        },
+        {
+          "cells": 364,
+          "policy": "bias_equal_depth",
+          "seed": 2,
+          "spent": 512
+        },
+        {
+          "cells": 356,
+          "policy": "bias_fixed_controls",
+          "seed": 2,
+          "spent": 512
+        },
+        {
+          "cells": 488,
+          "policy": "bias_fixed_interventions",
+          "seed": 2,
+          "spent": 512
+        },
+        {
+          "cells": 464,
+          "policy": "bias_fixed_order",
+          "seed": 2,
+          "spent": 512
+        },
+        {
+          "cells": 360,
+          "policy": "bias_independent_controls",
+          "seed": 2,
+          "spent": 512
+        },
+        {
+          "cells": 448,
+          "policy": "bias_no_extension",
+          "seed": 2,
+          "spent": 512
+        },
+        {
+          "cells": 364,
+          "policy": "random_equal",
+          "seed": 3,
+          "spent": 512
+        },
+        {
+          "cells": 364,
+          "policy": "fixed_grid",
+          "seed": 3,
+          "spent": 512
+        },
+        {
+          "cells": 348,
+          "policy": "diversity",
+          "seed": 3,
+          "spent": 512
+        },
+        {
+          "cells": 472,
+          "policy": "d_optimal",
+          "seed": 3,
+          "spent": 512
+        },
+        {
+          "cells": 452,
+          "policy": "worst_query",
+          "seed": 3,
+          "spent": 512
+        },
+        {
+          "cells": 464,
+          "policy": "mean_query",
+          "seed": 3,
+          "spent": 512
+        },
+        {
+          "cells": 348,
+          "policy": "reliability",
+          "seed": 3,
+          "spent": 512
+        },
+        {
+          "cells": 464,
+          "policy": "disagreement",
+          "seed": 3,
+          "spent": 512
+        },
+        {
+          "cells": 364,
+          "policy": "bias_aware",
+          "seed": 3,
+          "spent": 512
+        },
+        {
+          "cells": 384,
+          "policy": "bias_gamma025",
+          "seed": 3,
+          "spent": 512
+        },
+        {
+          "cells": 364,
+          "policy": "bias_equal_depth",
+          "seed": 3,
+          "spent": 512
+        },
+        {
+          "cells": 352,
+          "policy": "bias_fixed_controls",
+          "seed": 3,
+          "spent": 512
+        },
+        {
+          "cells": 488,
+          "policy": "bias_fixed_interventions",
+          "seed": 3,
+          "spent": 512
+        },
+        {
+          "cells": 472,
+          "policy": "bias_fixed_order",
+          "seed": 3,
+          "spent": 512
+        },
+        {
+          "cells": 360,
+          "policy": "bias_independent_controls",
+          "seed": 3,
+          "spent": 512
+        },
+        {
+          "cells": 452,
+          "policy": "bias_no_extension",
+          "seed": 3,
+          "spent": 512
+        },
+        {
+          "cells": 364,
+          "policy": "random_equal",
+          "seed": 4,
+          "spent": 512
+        },
+        {
+          "cells": 364,
+          "policy": "fixed_grid",
+          "seed": 4,
+          "spent": 512
+        },
+        {
+          "cells": 348,
+          "policy": "diversity",
+          "seed": 4,
+          "spent": 512
+        },
+        {
+          "cells": 468,
+          "policy": "d_optimal",
+          "seed": 4,
+          "spent": 512
+        },
+        {
+          "cells": 436,
+          "policy": "worst_query",
+          "seed": 4,
+          "spent": 512
+        },
+        {
+          "cells": 460,
+          "policy": "mean_query",
+          "seed": 4,
+          "spent": 512
+        },
+        {
+          "cells": 348,
+          "policy": "reliability",
+          "seed": 4,
+          "spent": 512
+        },
+        {
+          "cells": 464,
+          "policy": "disagreement",
+          "seed": 4,
+          "spent": 512
+        },
+        {
+          "cells": 372,
+          "policy": "bias_aware",
+          "seed": 4,
+          "spent": 512
+        },
+        {
+          "cells": 384,
+          "policy": "bias_gamma025",
+          "seed": 4,
+          "spent": 512
+        },
+        {
+          "cells": 364,
+          "policy": "bias_equal_depth",
+          "seed": 4,
+          "spent": 512
+        },
+        {
+          "cells": 356,
+          "policy": "bias_fixed_controls",
+          "seed": 4,
+          "spent": 512
+        },
+        {
+          "cells": 488,
+          "policy": "bias_fixed_interventions",
+          "seed": 4,
+          "spent": 512
+        },
+        {
+          "cells": 460,
+          "policy": "bias_fixed_order",
+          "seed": 4,
+          "spent": 512
+        },
+        {
+          "cells": 360,
+          "policy": "bias_independent_controls",
+          "seed": 4,
+          "spent": 512
+        },
+        {
+          "cells": 436,
+          "policy": "bias_no_extension",
+          "seed": 4,
+          "spent": 512
+        }
+      ],
+      "prediction_checkpoints": 240,
+      "prediction_index_sha256": "fbf18fb6328227fb27cdf767b6eb6bb061a72b4eb52eb203ebc8cbaad92f10c1",
+      "predictions_frozen_at": "2026-10-22T13:05:20.573349+00:00",
+      "run": "external-k562-to-rpe1-v1",
+      "run_manifest_sha256": "008ad74413a3151a3df01c18f6576ebd31e64ccf243d7996963e9599b221bc4f",
+      "scorer_only_cells": 4448
+    },
+    {
+      "assessment_access_sha256": "23f90de9f27b64756ad209918efcfb3ef00fcac69dab4e9d4d38fce0faef541f",
+      "assessment_opened_at": "2026-10-22T18:14:37.776919+00:00",
+      "independently_reconciled_ledgers": [
+        {
+          "cells": 364,
+          "policy": "random_equal",
+          "seed": 0,
+          "spent": 512
+        },
+        {
+          "cells": 364,
+          "policy": "fixed_grid",
+          "seed": 0,
+          "spent": 512
+        },
+        {
+          "cells": 348,
+          "policy": "diversity",
+          "seed": 0,
+          "spent": 512
+        },
+        {
+          "cells": 464,
+          "policy": "d_optimal",
+          "seed": 0,
+          "spent": 512
+        },
+        {
+          "cells": 436,
+          "policy": "worst_query",
+          "seed": 0,
+          "spent": 512
+        },
+        {
+          "cells": 464,
+          "policy": "mean_query",
+          "seed": 0,
+          "spent": 512
+        },
+        {
+          "cells": 348,
+          "policy": "reliability",
+          "seed": 0,
+          "spent": 512
+        },
+        {
+          "cells": 460,
+          "policy": "disagreement",
+          "seed": 0,
+          "spent": 512
+        },
+        {
+          "cells": 368,
+          "policy": "bias_aware",
+          "seed": 0,
+          "spent": 512
+        },
+        {
+          "cells": 388,
+          "policy": "bias_gamma025",
+          "seed": 0,
+          "spent": 512
+        },
+        {
+          "cells": 364,
+          "policy": "bias_equal_depth",
+          "seed": 0,
+          "spent": 512
+        },
+        {
+          "cells": 360,
+          "policy": "bias_fixed_controls",
+          "seed": 0,
+          "spent": 512
+        },
+        {
+          "cells": 488,
+          "policy": "bias_fixed_interventions",
+          "seed": 0,
+          "spent": 512
+        },
+        {
+          "cells": 468,
+          "policy": "bias_fixed_order",
+          "seed": 0,
+          "spent": 512
+        },
+        {
+          "cells": 364,
+          "policy": "bias_independent_controls",
+          "seed": 0,
+          "spent": 512
+        },
+        {
+          "cells": 436,
+          "policy": "bias_no_extension",
+          "seed": 0,
+          "spent": 512
+        },
+        {
+          "cells": 364,
+          "policy": "random_equal",
+          "seed": 1,
+          "spent": 512
+        },
+        {
+          "cells": 364,
+          "policy": "fixed_grid",
+          "seed": 1,
+          "spent": 512
+        },
+        {
+          "cells": 348,
+          "policy": "diversity",
+          "seed": 1,
+          "spent": 512
+        },
+        {
+          "cells": 464,
+          "policy": "d_optimal",
+          "seed": 1,
+          "spent": 512
+        },
+        {
+          "cells": 424,
+          "policy": "worst_query",
+          "seed": 1,
+          "spent": 512
+        },
+        {
+          "cells": 456,
+          "policy": "mean_query",
+          "seed": 1,
+          "spent": 512
+        },
+        {
+          "cells": 348,
+          "policy": "reliability",
+          "seed": 1,
+          "spent": 512
+        },
+        {
+          "cells": 452,
+          "policy": "disagreement",
+          "seed": 1,
+          "spent": 512
+        },
+        {
+          "cells": 372,
+          "policy": "bias_aware",
+          "seed": 1,
+          "spent": 512
+        },
+        {
+          "cells": 388,
+          "policy": "bias_gamma025",
+          "seed": 1,
+          "spent": 512
+        },
+        {
+          "cells": 364,
+          "policy": "bias_equal_depth",
+          "seed": 1,
+          "spent": 512
+        },
+        {
+          "cells": 352,
+          "policy": "bias_fixed_controls",
+          "seed": 1,
+          "spent": 512
+        },
+        {
+          "cells": 488,
+          "policy": "bias_fixed_interventions",
+          "seed": 1,
+          "spent": 512
+        },
+        {
+          "cells": 472,
+          "policy": "bias_fixed_order",
+          "seed": 1,
+          "spent": 512
+        },
+        {
+          "cells": 356,
+          "policy": "bias_independent_controls",
+          "seed": 1,
+          "spent": 512
+        },
+        {
+          "cells": 424,
+          "policy": "bias_no_extension",
+          "seed": 1,
+          "spent": 512
+        },
+        {
+          "cells": 364,
+          "policy": "random_equal",
+          "seed": 2,
+          "spent": 512
+        },
+        {
+          "cells": 364,
+          "policy": "fixed_grid",
+          "seed": 2,
+          "spent": 512
+        },
+        {
+          "cells": 348,
+          "policy": "diversity",
+          "seed": 2,
+          "spent": 512
+        },
+        {
+          "cells": 464,
+          "policy": "d_optimal",
+          "seed": 2,
+          "spent": 512
+        },
+        {
+          "cells": 448,
+          "policy": "worst_query",
+          "seed": 2,
+          "spent": 512
+        },
+        {
+          "cells": 460,
+          "policy": "mean_query",
+          "seed": 2,
+          "spent": 512
+        },
+        {
+          "cells": 348,
+          "policy": "reliability",
+          "seed": 2,
+          "spent": 512
+        },
+        {
+          "cells": 464,
+          "policy": "disagreement",
+          "seed": 2,
+          "spent": 512
+        },
+        {
+          "cells": 376,
+          "policy": "bias_aware",
+          "seed": 2,
+          "spent": 512
+        },
+        {
+          "cells": 388,
+          "policy": "bias_gamma025",
+          "seed": 2,
+          "spent": 512
+        },
+        {
+          "cells": 368,
+          "policy": "bias_equal_depth",
+          "seed": 2,
+          "spent": 512
+        },
+        {
+          "cells": 364,
+          "policy": "bias_fixed_controls",
+          "seed": 2,
+          "spent": 512
+        },
+        {
+          "cells": 488,
+          "policy": "bias_fixed_interventions",
+          "seed": 2,
+          "spent": 512
+        },
+        {
+          "cells": 468,
+          "policy": "bias_fixed_order",
+          "seed": 2,
+          "spent": 512
+        },
+        {
+          "cells": 368,
+          "policy": "bias_independent_controls",
+          "seed": 2,
+          "spent": 512
+        },
+        {
+          "cells": 448,
+          "policy": "bias_no_extension",
+          "seed": 2,
+          "spent": 512
+        },
+        {
+          "cells": 364,
+          "policy": "random_equal",
+          "seed": 3,
+          "spent": 512
+        },
+        {
+          "cells": 364,
+          "policy": "fixed_grid",
+          "seed": 3,
+          "spent": 512
+        },
+        {
+          "cells": 348,
+          "policy": "diversity",
+          "seed": 3,
+          "spent": 512
+        },
+        {
+          "cells": 464,
+          "policy": "d_optimal",
+          "seed": 3,
+          "spent": 512
+        },
+        {
+          "cells": 448,
+          "policy": "worst_query",
+          "seed": 3,
+          "spent": 512
+        },
+        {
+          "cells": 468,
+          "policy": "mean_query",
+          "seed": 3,
+          "spent": 512
+        },
+        {
+          "cells": 348,
+          "policy": "reliability",
+          "seed": 3,
+          "spent": 512
+        },
+        {
+          "cells": 472,
+          "policy": "disagreement",
+          "seed": 3,
+          "spent": 512
+        },
+        {
+          "cells": 376,
+          "policy": "bias_aware",
+          "seed": 3,
+          "spent": 512
+        },
+        {
+          "cells": 380,
+          "policy": "bias_gamma025",
+          "seed": 3,
+          "spent": 512
+        },
+        {
+          "cells": 368,
+          "policy": "bias_equal_depth",
+          "seed": 3,
+          "spent": 512
+        },
+        {
+          "cells": 360,
+          "policy": "bias_fixed_controls",
+          "seed": 3,
+          "spent": 512
+        },
+        {
+          "cells": 488,
+          "policy": "bias_fixed_interventions",
+          "seed": 3,
+          "spent": 512
+        },
+        {
+          "cells": 468,
+          "policy": "bias_fixed_order",
+          "seed": 3,
+          "spent": 512
+        },
+        {
+          "cells": 360,
+          "policy": "bias_independent_controls",
+          "seed": 3,
+          "spent": 512
+        },
+        {
+          "cells": 448,
+          "policy": "bias_no_extension",
+          "seed": 3,
+          "spent": 512
+        },
+        {
+          "cells": 364,
+          "policy": "random_equal",
+          "seed": 4,
+          "spent": 512
+        },
+        {
+          "cells": 364,
+          "policy": "fixed_grid",
+          "seed": 4,
+          "spent": 512
+        },
+        {
+          "cells": 348,
+          "policy": "diversity",
+          "seed": 4,
+          "spent": 512
+        },
+        {
+          "cells": 468,
+          "policy": "d_optimal",
+          "seed": 4,
+          "spent": 512
+        },
+        {
+          "cells": 436,
+          "policy": "worst_query",
+          "seed": 4,
+          "spent": 512
+        },
+        {
+          "cells": 464,
+          "policy": "mean_query",
+          "seed": 4,
+          "spent": 512
+        },
+        {
+          "cells": 348,
+          "policy": "reliability",
+          "seed": 4,
+          "spent": 512
+        },
+        {
+          "cells": 464,
+          "policy": "disagreement",
+          "seed": 4,
+          "spent": 512
+        },
+        {
+          "cells": 368,
+          "policy": "bias_aware",
+          "seed": 4,
+          "spent": 512
+        },
+        {
+          "cells": 388,
+          "policy": "bias_gamma025",
+          "seed": 4,
+          "spent": 512
+        },
+        {
+          "cells": 364,
+          "policy": "bias_equal_depth",
+          "seed": 4,
+          "spent": 512
+        },
+        {
+          "cells": 356,
+          "policy": "bias_fixed_controls",
+          "seed": 4,
+          "spent": 512
+        },
+        {
+          "cells": 488,
+          "policy": "bias_fixed_interventions",
+          "seed": 4,
+          "spent": 512
+        },
+        {
+          "cells": 472,
+          "policy": "bias_fixed_order",
+          "seed": 4,
+          "spent": 512
+        },
+        {
+          "cells": 364,
+          "policy": "bias_independent_controls",
+          "seed": 4,
+          "spent": 512
+        },
+        {
+          "cells": 436,
+          "policy": "bias_no_extension",
+          "seed": 4,
+          "spent": 512
+        }
+      ],
+      "prediction_checkpoints": 240,
+      "prediction_index_sha256": "7ea6a99b2777d19c8d02206d4050c46637c850c0e498b461a0302f991e2b51e9",
+      "predictions_frozen_at": "2026-10-22T13:14:04.193476+00:00",
+      "run": "external-rpe1-to-k562-v1",
+      "run_manifest_sha256": "51c1bd407974b76b7153af2cafa725494c4ab7d4ed263984b41a4047746fc9c2",
+      "scorer_only_cells": 4448
+    },
+    {
+      "assessment_access_sha256": "5f4dcc8e01f5c9ed145a32d4067c67317506795c36631a4685fcaf6486d15ac0",
+      "assessment_opened_at": "2026-10-22T18:20:53.257613+00:00",
+      "independently_reconciled_ledgers": [
+        {
+          "cells": 364,
+          "policy": "fixed_grid",
+          "seed": 0,
+          "spent": 512
+        },
+        {
+          "cells": 452,
+          "policy": "worst_query",
+          "seed": 0,
+          "spent": 512
+        },
+        {
+          "cells": 468,
+          "policy": "mean_query",
+          "seed": 0,
+          "spent": 512
+        },
+        {
+          "cells": 368,
+          "policy": "bias_aware",
+          "seed": 0,
+          "spent": 512
+        },
+        {
+          "cells": 364,
+          "policy": "fixed_grid",
+          "seed": 1,
+          "spent": 512
+        },
+        {
+          "cells": 444,
+          "policy": "worst_query",
+          "seed": 1,
+          "spent": 512
+        },
+        {
+          "cells": 464,
+          "policy": "mean_query",
+          "seed": 1,
+          "spent": 512
+        },
+        {
+          "cells": 368,
+          "policy": "bias_aware",
+          "seed": 1,
+          "spent": 512
+        },
+        {
+          "cells": 364,
+          "policy": "fixed_grid",
+          "seed": 2,
+          "spent": 512
+        },
+        {
+          "cells": 452,
+          "policy": "worst_query",
+          "seed": 2,
+          "spent": 512
+        },
+        {
+          "cells": 468,
+          "policy": "mean_query",
+          "seed": 2,
+          "spent": 512
+        },
+        {
+          "cells": 364,
+          "policy": "bias_aware",
+          "seed": 2,
+          "spent": 512
+        },
+        {
+          "cells": 364,
+          "policy": "fixed_grid",
+          "seed": 3,
+          "spent": 512
+        },
+        {
+          "cells": 440,
+          "policy": "worst_query",
+          "seed": 3,
+          "spent": 512
+        },
+        {
+          "cells": 468,
+          "policy": "mean_query",
+          "seed": 3,
+          "spent": 512
+        },
+        {
+          "cells": 364,
+          "policy": "bias_aware",
+          "seed": 3,
+          "spent": 512
+        },
+        {
+          "cells": 364,
+          "policy": "fixed_grid",
+          "seed": 4,
+          "spent": 512
+        },
+        {
+          "cells": 444,
+          "policy": "worst_query",
+          "seed": 4,
+          "spent": 512
+        },
+        {
+          "cells": 460,
+          "policy": "mean_query",
+          "seed": 4,
+          "spent": 512
+        },
+        {
+          "cells": 364,
+          "policy": "bias_aware",
+          "seed": 4,
+          "spent": 512
+        }
+      ],
+      "prediction_checkpoints": 60,
+      "prediction_index_sha256": "3f219723cc130de0afe6985f51c43029575c06ebd94200fadc4ff92855314d72",
+      "predictions_frozen_at": "2026-10-22T15:03:17.123218+00:00",
+      "run": "external-k562-to-rpe1-identity-permuted-v1",
+      "run_manifest_sha256": "3cf97359c9a2e3801acab0e3127ff2109f58214b8de20a45091c7b5d1aa841ac",
+      "scorer_only_cells": 4448
+    },
+    {
+      "assessment_access_sha256": "2bf62ccf412b2d1ae738a7feb5f9fc91078e44d0ac1b170b11920388af8638f5",
+      "assessment_opened_at": "2026-10-22T21:16:39.734278+00:00",
+      "independently_reconciled_ledgers": [
+        {
+          "cells": 364,
+          "policy": "fixed_grid",
+          "seed": 0,
+          "spent": 512
+        },
+        {
+          "cells": 456,
+          "policy": "worst_query",
+          "seed": 0,
+          "spent": 512
+        },
+        {
+          "cells": 460,
+          "policy": "mean_query",
+          "seed": 0,
+          "spent": 512
+        },
+        {
+          "cells": 440,
+          "policy": "bias_aware",
+          "seed": 0,
+          "spent": 512
+        },
+        {
+          "cells": 364,
+          "policy": "fixed_grid",
+          "seed": 1,
+          "spent": 512
+        },
+        {
+          "cells": 440,
+          "policy": "worst_query",
+          "seed": 1,
+          "spent": 512
+        },
+        {
+          "cells": 452,
+          "policy": "mean_query",
+          "seed": 1,
+          "spent": 512
+        },
+        {
+          "cells": 432,
+          "policy": "bias_aware",
+          "seed": 1,
+          "spent": 512
+        },
+        {
+          "cells": 364,
+          "policy": "fixed_grid",
+          "seed": 2,
+          "spent": 512
+        },
+        {
+          "cells": 456,
+          "policy": "worst_query",
+          "seed": 2,
+          "spent": 512
+        },
+        {
+          "cells": 452,
+          "policy": "mean_query",
+          "seed": 2,
+          "spent": 512
+        },
+        {
+          "cells": 444,
+          "policy": "bias_aware",
+          "seed": 2,
+          "spent": 512
+        },
+        {
+          "cells": 364,
+          "policy": "fixed_grid",
+          "seed": 3,
+          "spent": 512
+        },
+        {
+          "cells": 452,
+          "policy": "worst_query",
+          "seed": 3,
+          "spent": 512
+        },
+        {
+          "cells": 456,
+          "policy": "mean_query",
+          "seed": 3,
+          "spent": 512
+        },
+        {
+          "cells": 436,
+          "policy": "bias_aware",
+          "seed": 3,
+          "spent": 512
+        },
+        {
+          "cells": 364,
+          "policy": "fixed_grid",
+          "seed": 4,
+          "spent": 512
+        },
+        {
+          "cells": 456,
+          "policy": "worst_query",
+          "seed": 4,
+          "spent": 512
+        },
+        {
+          "cells": 452,
+          "policy": "mean_query",
+          "seed": 4,
+          "spent": 512
+        },
+        {
+          "cells": 444,
+          "policy": "bias_aware",
+          "seed": 4,
+          "spent": 512
+        }
+      ],
+      "prediction_checkpoints": 60,
+      "prediction_index_sha256": "ddc58c0b617144ec2b0edb8d807cd49d34e99a65344e034d206d3470569714c3",
+      "predictions_frozen_at": "2026-10-22T15:05:32.382645+00:00",
+      "run": "external-k562-to-rpe1-query-gene-permuted-v1",
+      "run_manifest_sha256": "8bfa39930a440210c992cb93537db16d871eb6cb996a0cdf33f4778fc88bc2e6",
+      "scorer_only_cells": 4448
+    },
+    {
+      "assessment_access_sha256": "fe709e41394404ab70b9638c959815cb087de55d3fed9cf1ea5e34d781431367",
+      "assessment_opened_at": "2026-10-22T21:18:31.506162+00:00",
+      "independently_reconciled_ledgers": [
+        {
+          "cells": 364,
+          "policy": "fixed_grid",
+          "seed": 0,
+          "spent": 512
+        },
+        {
+          "cells": 448,
+          "policy": "worst_query",
+          "seed": 0,
+          "spent": 512
+        },
+        {
+          "cells": 476,
+          "policy": "mean_query",
+          "seed": 0,
+          "spent": 512
+        },
+        {
+          "cells": 376,
+          "policy": "bias_aware",
+          "seed": 0,
+          "spent": 512
+        },
+        {
+          "cells": 364,
+          "policy": "fixed_grid",
+          "seed": 1,
+          "spent": 512
+        },
+        {
+          "cells": 440,
+          "policy": "worst_query",
+          "seed": 1,
+          "spent": 512
+        },
+        {
+          "cells": 460,
+          "policy": "mean_query",
+          "seed": 1,
+          "spent": 512
+        },
+        {
+          "cells": 372,
+          "policy": "bias_aware",
+          "seed": 1,
+          "spent": 512
+        },
+        {
+          "cells": 364,
+          "policy": "fixed_grid",
+          "seed": 2,
+          "spent": 512
+        },
+        {
+          "cells": 452,
+          "policy": "worst_query",
+          "seed": 2,
+          "spent": 512
+        },
+        {
+          "cells": 460,
+          "policy": "mean_query",
+          "seed": 2,
+          "spent": 512
+        },
+        {
+          "cells": 372,
+          "policy": "bias_aware",
+          "seed": 2,
+          "spent": 512
+        },
+        {
+          "cells": 364,
+          "policy": "fixed_grid",
+          "seed": 3,
+          "spent": 512
+        },
+        {
+          "cells": 436,
+          "policy": "worst_query",
+          "seed": 3,
+          "spent": 512
+        },
+        {
+          "cells": 464,
+          "policy": "mean_query",
+          "seed": 3,
+          "spent": 512
+        },
+        {
+          "cells": 368,
+          "policy": "bias_aware",
+          "seed": 3,
+          "spent": 512
+        },
+        {
+          "cells": 364,
+          "policy": "fixed_grid",
+          "seed": 4,
+          "spent": 512
+        },
+        {
+          "cells": 440,
+          "policy": "worst_query",
+          "seed": 4,
+          "spent": 512
+        },
+        {
+          "cells": 468,
+          "policy": "mean_query",
+          "seed": 4,
+          "spent": 512
+        },
+        {
+          "cells": 372,
+          "policy": "bias_aware",
+          "seed": 4,
+          "spent": 512
+        }
+      ],
+      "prediction_checkpoints": 60,
+      "prediction_index_sha256": "4f50901d1b489568804eb4d3bcdd43b7b2ab68be88cdc841e7a8e4bafd132772",
+      "predictions_frozen_at": "2026-10-22T17:06:23.705359+00:00",
+      "run": "external-rpe1-to-k562-identity-permuted-v1",
+      "run_manifest_sha256": "49d478c5fb256898cec9f8a342f0bbd8bd226492746c8de970e3fcecf69a1f15",
+      "scorer_only_cells": 4448
+    },
+    {
+      "assessment_access_sha256": "24ad1ca36714dfc3932427b287d57eae1735f3e38322917aaa23f0711acf7e6f",
+      "assessment_opened_at": "2026-10-22T21:20:10.510224+00:00",
+      "independently_reconciled_ledgers": [
+        {
+          "cells": 364,
+          "policy": "fixed_grid",
+          "seed": 0,
+          "spent": 512
+        },
+        {
+          "cells": 456,
+          "policy": "worst_query",
+          "seed": 0,
+          "spent": 512
+        },
+        {
+          "cells": 460,
+          "policy": "mean_query",
+          "seed": 0,
+          "spent": 512
+        },
+        {
+          "cells": 440,
+          "policy": "bias_aware",
+          "seed": 0,
+          "spent": 512
+        },
+        {
+          "cells": 364,
+          "policy": "fixed_grid",
+          "seed": 1,
+          "spent": 512
+        },
+        {
+          "cells": 436,
+          "policy": "worst_query",
+          "seed": 1,
+          "spent": 512
+        },
+        {
+          "cells": 448,
+          "policy": "mean_query",
+          "seed": 1,
+          "spent": 512
+        },
+        {
+          "cells": 436,
+          "policy": "bias_aware",
+          "seed": 1,
+          "spent": 512
+        },
+        {
+          "cells": 364,
+          "policy": "fixed_grid",
+          "seed": 2,
+          "spent": 512
+        },
+        {
+          "cells": 460,
+          "policy": "worst_query",
+          "seed": 2,
+          "spent": 512
+        },
+        {
+          "cells": 460,
+          "policy": "mean_query",
+          "seed": 2,
+          "spent": 512
+        },
+        {
+          "cells": 448,
+          "policy": "bias_aware",
+          "seed": 2,
+          "spent": 512
+        },
+        {
+          "cells": 364,
+          "policy": "fixed_grid",
+          "seed": 3,
+          "spent": 512
+        },
+        {
+          "cells": 460,
+          "policy": "worst_query",
+          "seed": 3,
+          "spent": 512
+        },
+        {
+          "cells": 460,
+          "policy": "mean_query",
+          "seed": 3,
+          "spent": 512
+        },
+        {
+          "cells": 448,
+          "policy": "bias_aware",
+          "seed": 3,
+          "spent": 512
+        },
+        {
+          "cells": 364,
+          "policy": "fixed_grid",
+          "seed": 4,
+          "spent": 512
+        },
+        {
+          "cells": 448,
+          "policy": "worst_query",
+          "seed": 4,
+          "spent": 512
+        },
+        {
+          "cells": 448,
+          "policy": "mean_query",
+          "seed": 4,
+          "spent": 512
+        },
+        {
+          "cells": 440,
+          "policy": "bias_aware",
+          "seed": 4,
+          "spent": 512
+        }
+      ],
+      "prediction_checkpoints": 60,
+      "prediction_index_sha256": "3fedf3ec036bd5540e4d3e8a8afe81234f664ea740dd69d0c19675a7398df713",
+      "predictions_frozen_at": "2026-10-22T17:08:20.273951+00:00",
+      "run": "external-rpe1-to-k562-query-gene-permuted-v1",
+      "run_manifest_sha256": "572e4e54941ec0365f2f954efb7072f34c4e44dd81c54342ea29e9843d03d0b6",
+      "scorer_only_cells": 4448
+    }
+  ],
+  "suite_manifest_sha256": "6520d23aebfa4963cf7a6e13f983840b3d680c4ae8fc1b4b27e02b127a3eebc4",
+  "zero_weight_classical_byte_identical_pairs": [
+    {
+      "run": "external-k562-to-rpe1-v1",
+      "seed": 0,
+      "sha256": "968cd17ca7c58ebc3d8a6c23351aa5a7037120e267b7c2b87cc4ae29d63d1dcc"
+    },
+    {
+      "run": "external-k562-to-rpe1-v1",
+      "seed": 1,
+      "sha256": "ecf0f5290d4c445ac1591ed4201ce6da94a9324005d7eb9c7048d60d89f7ba7f"
+    },
+    {
+      "run": "external-k562-to-rpe1-v1",
+      "seed": 2,
+      "sha256": "e370b267449c3707e44b1b5fe9fe10f1ecf051ac9d3b3271d6436f179f57758a"
+    },
+    {
+      "run": "external-k562-to-rpe1-v1",
+      "seed": 3,
+      "sha256": "22246f6f9df770e06a31d843949922c9340b779866c009001d1aa9d63e74be8d"
+    },
+    {
+      "run": "external-k562-to-rpe1-v1",
+      "seed": 4,
+      "sha256": "d043cb7970a6f49834335cb9d9de603f97e7fd2fae5312e26034f01451fd196d"
+    },
+    {
+      "run": "external-rpe1-to-k562-v1",
+      "seed": 0,
+      "sha256": "d46c72099ae4fd470a8d3f7090d04f3ded7b9d7d21099ff130255844302a4b7d"
+    },
+    {
+      "run": "external-rpe1-to-k562-v1",
+      "seed": 1,
+      "sha256": "47eba2994d854fbfc0f58dc27b94f8a1421f78f717f169aa476a448cb4ed00b9"
+    },
+    {
+      "run": "external-rpe1-to-k562-v1",
+      "seed": 2,
+      "sha256": "96b76a36118a303c41ef66d3bf7e053b5ee836ecae73e5b3ab868a0a0dfd70be"
+    },
+    {
+      "run": "external-rpe1-to-k562-v1",
+      "seed": 3,
+      "sha256": "3a2aba9aa0b91efe453538c0b72ade23afd267a07abeecbbbbaf01c5da9929cc"
+    },
+    {
+      "run": "external-rpe1-to-k562-v1",
+      "seed": 4,
+      "sha256": "fd4bb8ea7c5454adc0affba77dc2fd369df8d3a49c6749a0d3d5f23918670d7d"
+    }
+  ]
+}

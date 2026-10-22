@@ -1,0 +1,7 @@
+{
+  "as_executed_archive_sha256": "072d028c63d0f84fa4bfa6d976c34964c9ef6d08bbe5a60c9677e6dc509c5400",
+  "as_executed_source_sha256": "5de90b202bdc2f91ef3786a22caf1c98f82ff85a67365866bbbd239f032a881b",
+  "change": "Wrap a long string literal after process exit; original exact source retained.",
+  "current_formatted_source_sha256": "17689bc08f558109ee8e578caf8b4cb894b297aea772875bb1bb45c721155980",
+  "python_abstract_syntax_tree_unchanged": true
+}

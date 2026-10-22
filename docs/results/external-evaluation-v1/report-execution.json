@@ -1,0 +1,20 @@
+{
+  "analysis_source_sha256": "0969f0eeb228bb19c305a7c129af796dd9570b7524300f02c8e5a072b814be19",
+  "bootstrap_samples": 2000,
+  "bootstrap_seed": 20261022,
+  "qualification": "Separate query, measurement and technical-batch scopes; no refitting.",
+  "recorded_at": "2026-10-22T21:23:43.851509+00:00",
+  "reports_and_analyses": [
+    "runs\\external-k562-to-rpe1-v1",
+    "uncertainty\\external-k562-to-rpe1-v1-vs-worst_query.json",
+    "uncertainty\\external-k562-to-rpe1-v1-vs-mean_query.json",
+    "runs\\external-rpe1-to-k562-v1",
+    "uncertainty\\external-rpe1-to-k562-v1-vs-worst_query.json",
+    "uncertainty\\external-rpe1-to-k562-v1-vs-mean_query.json",
+    "runs\\external-k562-to-rpe1-identity-permuted-v1",
+    "runs\\external-k562-to-rpe1-query-gene-permuted-v1",
+    "runs\\external-rpe1-to-k562-identity-permuted-v1",
+    "runs\\external-rpe1-to-k562-query-gene-permuted-v1"
+  ],
+  "suite_manifest_sha256": "6520d23aebfa4963cf7a6e13f983840b3d680c4ae8fc1b4b27e02b127a3eebc4"
+}

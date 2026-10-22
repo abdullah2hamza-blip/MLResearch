@@ -1,0 +1,19 @@
+{
+  "all_gzip_metrics_reinflate_to_original_bytes": true,
+  "all_retained_file_hashes_match": true,
+  "package_sources_still_match_original_six_run_freeze": true,
+  "qualification": "Six-run primary/declared-control bundle verified. Original-plan secondary completion supplements are declared separately and remain unexecuted at this audit.",
+  "report_count": 6,
+  "retained_files": 179,
+  "retained_supplement_manifest_sha256": "d5dce36cb75f6a6d40ce50d574c6ccc3f69cd619ee2b63f6ada187bba4dfd063",
+  "state": "passed",
+  "suite_manifest_sha256": "6520d23aebfa4963cf7a6e13f983840b3d680c4ae8fc1b4b27e02b127a3eebc4",
+  "verified_at": "2026-10-22T21:40:25.915288+00:00",
+  "visually_inspected_standalone_figures": [
+    "primary-error-and-uncertainty",
+    "all-policies-and-ablations",
+    "source-permutation-specificity",
+    "allocation-decisions",
+    "risk-retention"
+  ]
+}

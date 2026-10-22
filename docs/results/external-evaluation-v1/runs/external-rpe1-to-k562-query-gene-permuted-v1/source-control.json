@@ -1,0 +1,7 @@
+{
+  "control": "query_gene_permutation",
+  "definition": "Only query source coordinates are permuted; calibration sources and recipient gene order stay fixed.",
+  "query_gene_index_permutation_sha256": "98b85090868e489f71bd99c7d3326d57bd56fc37c7046e820ffb4eb390c3bbd2",
+  "recipient_outcomes_accessed": false,
+  "seed": 20261022
+}

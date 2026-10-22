@@ -1,0 +1,1771 @@
+{
+  "analysis_source_sha256": "f7fa9518a0636c7492eabe8e4bb6a6be317bc08158546f9fe0270b030ca35f73",
+  "backbone": "ridge_cv",
+  "batch_reweighting_sensitivity": {
+    "available": true,
+    "observed_technical_batches": 48,
+    "percentile_high": -2.2418599375512338e-05,
+    "percentile_low": -3.093100285372248e-05,
+    "point": -2.6901440935576102e-05,
+    "qualification": "Positive batch-weight sensitivity, not a biological confidence interval",
+    "resampling_standard_deviation": 2.16895728095798e-06,
+    "shared_batch_weights_reused": true
+  },
+  "iid_cell_bootstrap_fixed_queries": {
+    "control_strata": {
+      "cells": 256,
+      "cells_in_singleton_strata": 0,
+      "singleton_strata": 0,
+      "strata": 1
+    },
+    "percentile_high": -2.230963420990921e-05,
+    "percentile_low": -3.161704688420921e-05,
+    "point": -2.6901440935576102e-05,
+    "resampling_standard_deviation": 2.382263137495101e-06,
+    "shared_control_resample_reused_for_all_queries": true,
+    "treatment_strata": [
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 0,
+        "singleton_strata": 0,
+        "strata": 1
+      }
+    ]
+  },
+  "iid_measurement_variance_check": {
+    "qualification": "Plug-in IID variance conditional on fixed predictions and query identities",
+    "shared_control_component": 4.802542200045023e-13,
+    "standard_error": 2.3509705064734647e-06,
+    "treatment_component": 5.046808102303597e-12
+  },
+  "original_metric_paired_difference": -2.690144093557607e-05,
+  "paired_difference": -2.6901440935576102e-05,
+  "per_query_differences": [
+    -2.270560894973117e-06,
+    -1.2643419674456598e-05,
+    -7.893119771656867e-06,
+    1.3920449960775673e-05,
+    -3.406049116886896e-06,
+    -1.4350111782631596e-05,
+    2.322602888657772e-06,
+    -4.3364902684298187e-05,
+    1.0435885683150956e-05,
+    1.793434936623689e-05,
+    -2.9734535602550006e-06,
+    2.7836723887353105e-06,
+    1.5509800674302172e-05,
+    3.879957545270486e-06,
+    -8.542558411611732e-05,
+    1.881272471964627e-05,
+    2.805856051472843e-05,
+    -0.00018417957482025436,
+    7.187690211310832e-06,
+    -0.0002229285274638937,
+    -2.9907473134616253e-06,
+    2.521520455778703e-05,
+    -0.0004370549077853591,
+    1.3378342200651692e-06,
+    2.4889074123651985e-06,
+    -6.009791053536385e-06,
+    5.8539124867214905e-06,
+    4.4801003985794896e-07,
+    6.859896999566052e-06,
+    2.180874113559081e-05,
+    2.6297840739009928e-05,
+    2.447763591220968e-05,
+    -3.650519500981066e-05,
+    2.953820356073854e-06,
+    4.3029195005365314e-05,
+    2.623565595184736e-05,
+    8.446235855741953e-06,
+    -6.5244053676047115e-06,
+    5.871363395950496e-06,
+    1.2648051726900627e-05,
+    2.8864687537562283e-06,
+    1.8679507956144413e-05,
+    1.233420362774365e-05,
+    1.1725006421783705e-06,
+    -1.429295791518327e-05,
+    -7.656461745854674e-05,
+    2.171437558553445e-05,
+    -2.528593102885232e-06,
+    1.3871416077501625e-06,
+    1.4045899644065264e-06,
+    -7.155138768741407e-07,
+    -2.6333248522079347e-05,
+    -0.0002893668305878753,
+    -4.352431257866002e-06,
+    -1.241996456272966e-05,
+    7.610269442553735e-06,
+    1.7497869887275885e-05,
+    5.145510947527146e-06,
+    9.93746968157858e-06,
+    -2.454976691581277e-06,
+    -6.096562142247802e-05,
+    -8.588976847692924e-06,
+    -4.280260173182343e-05,
+    1.1200320338178348e-06,
+    3.4222085310066234e-05,
+    6.0282520485393e-05,
+    5.17639947287085e-05,
+    3.091489249062177e-05,
+    3.5057978362180455e-05,
+    1.6203665144604983e-05,
+    4.379703309195435e-06,
+    1.6123118193558288e-06,
+    -0.00018273578899019268,
+    9.012611508972556e-06,
+    2.4304261715952353e-06,
+    1.0634045746493297e-05,
+    -9.40325231055364e-06,
+    3.2885848817545732e-06,
+    2.042321937758846e-07,
+    -7.70997782128459e-05,
+    -0.00016881238625656738,
+    -1.2671708768490853e-05,
+    4.6345969153155126e-06,
+    1.025746944423787e-05,
+    3.739069642626455e-05,
+    -5.63028126144332e-06,
+    -0.0003438326841316807,
+    1.6958921059722764e-05,
+    -1.1886189139482275e-05,
+    -7.439654479239448e-06,
+    3.6548181555024557e-06,
+    4.348416793856745e-06,
+    -0.00038399135215292073,
+    3.701391055856944e-06,
+    1.9215890106592543e-06,
+    2.492585003748232e-06,
+    6.723088925243345e-07,
+    1.3893179457183337e-05,
+    1.6016153060592782e-06,
+    -0.0006216906415110524,
+    -2.117638488490208e-06,
+    7.015438192393232e-06,
+    1.4453636111851553e-05,
+    2.0520624027547355e-05,
+    3.38107808450078e-05,
+    7.976121299712062e-06,
+    -2.5821343550644566e-05,
+    -9.384528939747826e-06,
+    -8.898866565506267e-05,
+    1.794871626738107e-05,
+    1.7840037370198927e-05,
+    1.5090513482691906e-05,
+    7.121448425621653e-07,
+    -5.0903442839390846e-05,
+    -0.0007659220676683213,
+    -4.933254991923452e-06,
+    5.457728986995333e-06,
+    -8.619510891070951e-06,
+    -0.00016171280111653774,
+    5.527948781378192e-05,
+    -2.280236000455464e-06,
+    -8.01802876594674e-06,
+    -1.1747868459105026e-05,
+    8.110076580147309e-06,
+    6.585188331739586e-06,
+    -8.678591738153215e-06,
+    4.825633845945533e-06,
+    1.0234077967099598e-05,
+    1.5710672331779006e-05,
+    -1.8093963537098583e-06,
+    2.3135556656753164e-05
+  ],
+  "policy": "bias_aware",
+  "prediction_index_sha256": "7ea6a99b2777d19c8d02206d4050c46637c850c0e498b461a0302f991e2b51e9",
+  "qualification": "Separate conditional query and measurement uncertainty. No biological replication, source-error or adaptive-selection coverage claim.",
+  "queries": 131,
+  "query_bootstrap_conditional_on_bank": {
+    "percentile_high": -9.719391100585851e-06,
+    "percentile_low": -4.840890370521672e-05,
+    "point": -2.6901440935576102e-05,
+    "resampling_standard_deviation": 9.927006473980489e-06
+  },
+  "reference": "mean_query",
+  "run_manifest_sha256": "51c1bd407974b76b7153af2cafa725494c4ab7d4ed263984b41a4047746fc9c2",
+  "samples": 2000,
+  "seed": 20261022,
+  "stratified_cell_bootstrap_fixed_queries": {
+    "control_strata": {
+      "cells": 256,
+      "cells_in_singleton_strata": 247,
+      "singleton_strata": 247,
+      "strata": 251
+    },
+    "percentile_high": -2.470204210002945e-05,
+    "percentile_low": -2.8986054843742578e-05,
+    "point": -2.6901440935576102e-05,
+    "resampling_standard_deviation": 1.1143826569376865e-06,
+    "shared_control_resample_reused_for_all_queries": true,
+    "treatment_strata": [
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 20,
+        "singleton_strata": 20,
+        "strata": 25
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 18,
+        "singleton_strata": 18,
+        "strata": 25
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 13,
+        "singleton_strata": 13,
+        "strata": 22
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 19,
+        "singleton_strata": 19,
+        "strata": 25
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 20,
+        "singleton_strata": 20,
+        "strata": 26
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 16,
+        "singleton_strata": 16,
+        "strata": 23
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 15,
+        "singleton_strata": 15,
+        "strata": 23
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 24,
+        "singleton_strata": 24,
+        "strata": 28
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 21,
+        "singleton_strata": 21,
+        "strata": 26
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 20,
+        "singleton_strata": 20,
+        "strata": 25
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 14,
+        "singleton_strata": 14,
+        "strata": 22
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 11,
+        "singleton_strata": 11,
+        "strata": 20
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 15,
+        "singleton_strata": 15,
+        "strata": 22
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 24,
+        "singleton_strata": 24,
+        "strata": 27
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 20,
+        "singleton_strata": 20,
+        "strata": 25
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 25,
+        "singleton_strata": 25,
+        "strata": 28
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 20,
+        "singleton_strata": 20,
+        "strata": 26
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 18,
+        "singleton_strata": 18,
+        "strata": 23
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 17,
+        "singleton_strata": 17,
+        "strata": 23
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 14,
+        "singleton_strata": 14,
+        "strata": 22
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 18,
+        "singleton_strata": 18,
+        "strata": 24
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 22,
+        "singleton_strata": 22,
+        "strata": 27
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 18,
+        "singleton_strata": 18,
+        "strata": 25
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 23,
+        "singleton_strata": 23,
+        "strata": 27
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 19,
+        "singleton_strata": 19,
+        "strata": 25
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 26,
+        "singleton_strata": 26,
+        "strata": 29
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 19,
+        "singleton_strata": 19,
+        "strata": 25
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 16,
+        "singleton_strata": 16,
+        "strata": 23
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 15,
+        "singleton_strata": 15,
+        "strata": 23
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 14,
+        "singleton_strata": 14,
+        "strata": 21
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 26,
+        "singleton_strata": 26,
+        "strata": 29
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 13,
+        "singleton_strata": 13,
+        "strata": 22
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 12,
+        "singleton_strata": 12,
+        "strata": 22
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 20,
+        "singleton_strata": 20,
+        "strata": 26
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 19,
+        "singleton_strata": 19,
+        "strata": 25
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 19,
+        "singleton_strata": 19,
+        "strata": 24
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 12,
+        "singleton_strata": 12,
+        "strata": 22
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 14,
+        "singleton_strata": 14,
+        "strata": 22
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 22,
+        "singleton_strata": 22,
+        "strata": 27
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 19,
+        "singleton_strata": 19,
+        "strata": 25
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 18,
+        "singleton_strata": 18,
+        "strata": 23
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 15,
+        "singleton_strata": 15,
+        "strata": 23
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 14,
+        "singleton_strata": 14,
+        "strata": 22
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 17,
+        "singleton_strata": 17,
+        "strata": 23
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 16,
+        "singleton_strata": 16,
+        "strata": 23
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 13,
+        "singleton_strata": 13,
+        "strata": 21
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 12,
+        "singleton_strata": 12,
+        "strata": 21
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 17,
+        "singleton_strata": 17,
+        "strata": 24
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 24,
+        "singleton_strata": 24,
+        "strata": 28
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 20,
+        "singleton_strata": 20,
+        "strata": 26
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 18,
+        "singleton_strata": 18,
+        "strata": 25
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 19,
+        "singleton_strata": 19,
+        "strata": 25
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 14,
+        "singleton_strata": 14,
+        "strata": 23
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 18,
+        "singleton_strata": 18,
+        "strata": 25
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 16,
+        "singleton_strata": 16,
+        "strata": 23
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 14,
+        "singleton_strata": 14,
+        "strata": 22
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 18,
+        "singleton_strata": 18,
+        "strata": 24
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 21,
+        "singleton_strata": 21,
+        "strata": 26
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 20,
+        "singleton_strata": 20,
+        "strata": 26
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 15,
+        "singleton_strata": 15,
+        "strata": 23
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 15,
+        "singleton_strata": 15,
+        "strata": 23
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 16,
+        "singleton_strata": 16,
+        "strata": 23
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 19,
+        "singleton_strata": 19,
+        "strata": 25
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 15,
+        "singleton_strata": 15,
+        "strata": 23
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 15,
+        "singleton_strata": 15,
+        "strata": 22
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 15,
+        "singleton_strata": 15,
+        "strata": 22
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 18,
+        "singleton_strata": 18,
+        "strata": 24
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 11,
+        "singleton_strata": 11,
+        "strata": 19
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 13,
+        "singleton_strata": 13,
+        "strata": 22
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 13,
+        "singleton_strata": 13,
+        "strata": 21
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 17,
+        "singleton_strata": 17,
+        "strata": 24
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 18,
+        "singleton_strata": 18,
+        "strata": 25
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 21,
+        "singleton_strata": 21,
+        "strata": 26
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 21,
+        "singleton_strata": 21,
+        "strata": 26
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 21,
+        "singleton_strata": 21,
+        "strata": 25
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 16,
+        "singleton_strata": 16,
+        "strata": 23
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 17,
+        "singleton_strata": 17,
+        "strata": 24
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 20,
+        "singleton_strata": 20,
+        "strata": 26
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 17,
+        "singleton_strata": 17,
+        "strata": 24
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 13,
+        "singleton_strata": 13,
+        "strata": 21
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 20,
+        "singleton_strata": 20,
+        "strata": 26
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 15,
+        "singleton_strata": 15,
+        "strata": 21
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 16,
+        "singleton_strata": 16,
+        "strata": 24
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 21,
+        "singleton_strata": 21,
+        "strata": 25
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 28,
+        "singleton_strata": 28,
+        "strata": 29
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 16,
+        "singleton_strata": 16,
+        "strata": 23
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 23,
+        "singleton_strata": 23,
+        "strata": 27
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 17,
+        "singleton_strata": 17,
+        "strata": 24
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 15,
+        "singleton_strata": 15,
+        "strata": 23
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 16,
+        "singleton_strata": 16,
+        "strata": 24
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 16,
+        "singleton_strata": 16,
+        "strata": 23
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 23,
+        "singleton_strata": 23,
+        "strata": 27
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 16,
+        "singleton_strata": 16,
+        "strata": 24
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 22,
+        "singleton_strata": 22,
+        "strata": 27
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 14,
+        "singleton_strata": 14,
+        "strata": 22
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 13,
+        "singleton_strata": 13,
+        "strata": 22
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 15,
+        "singleton_strata": 15,
+        "strata": 23
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 20,
+        "singleton_strata": 20,
+        "strata": 26
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 20,
+        "singleton_strata": 20,
+        "strata": 26
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 16,
+        "singleton_strata": 16,
+        "strata": 23
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 22,
+        "singleton_strata": 22,
+        "strata": 27
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 15,
+        "singleton_strata": 15,
+        "strata": 23
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 20,
+        "singleton_strata": 20,
+        "strata": 26
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 22,
+        "singleton_strata": 22,
+        "strata": 27
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 22,
+        "singleton_strata": 22,
+        "strata": 26
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 13,
+        "singleton_strata": 13,
+        "strata": 21
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 19,
+        "singleton_strata": 19,
+        "strata": 25
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 21,
+        "singleton_strata": 21,
+        "strata": 26
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 19,
+        "singleton_strata": 19,
+        "strata": 25
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 17,
+        "singleton_strata": 17,
+        "strata": 23
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 10,
+        "singleton_strata": 10,
+        "strata": 20
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 17,
+        "singleton_strata": 17,
+        "strata": 24
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 19,
+        "singleton_strata": 19,
+        "strata": 25
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 12,
+        "singleton_strata": 12,
+        "strata": 21
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 14,
+        "singleton_strata": 14,
+        "strata": 21
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 16,
+        "singleton_strata": 16,
+        "strata": 22
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 23,
+        "singleton_strata": 23,
+        "strata": 27
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 15,
+        "singleton_strata": 15,
+        "strata": 22
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 13,
+        "singleton_strata": 13,
+        "strata": 21
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 26,
+        "singleton_strata": 26,
+        "strata": 29
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 26,
+        "singleton_strata": 26,
+        "strata": 29
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 18,
+        "singleton_strata": 18,
+        "strata": 24
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 22,
+        "singleton_strata": 22,
+        "strata": 27
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 16,
+        "singleton_strata": 16,
+        "strata": 24
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 16,
+        "singleton_strata": 16,
+        "strata": 24
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 20,
+        "singleton_strata": 20,
+        "strata": 25
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 17,
+        "singleton_strata": 17,
+        "strata": 24
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 18,
+        "singleton_strata": 18,
+        "strata": 24
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 15,
+        "singleton_strata": 15,
+        "strata": 23
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 15,
+        "singleton_strata": 15,
+        "strata": 23
+      },
+      {
+        "cells": 32,
+        "cells_in_singleton_strata": 28,
+        "singleton_strata": 28,
+        "strata": 30
+      }
+    ]
+  }
+}

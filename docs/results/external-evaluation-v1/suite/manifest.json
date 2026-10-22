@@ -1,0 +1,761 @@
+{
+  "completed_at": "2026-10-22T21:20:59.060527+00:00",
+  "configuration": {
+    "evidence_files": [
+      "docs/external-evaluation-protocol.md",
+      "docs/transfer-comparator-protocol.md",
+      "docs/source-sensitivity-protocol.md",
+      "docs/assessment-uncertainty-protocol.md",
+      "docs/evidence/development-tuning-selection.json",
+      "docs/evidence/development-resource-accounting-v3.json",
+      "docs/evidence/external-canonical-identifiers-v1.json",
+      "docs/evidence/external-evaluation-declaration-v1.json",
+      "docs/evidence/resources-external-evaluation-v1.json"
+    ],
+    "output_directory": "runs/external-evaluation-v1",
+    "runs": [
+      {
+        "budgets": [
+          128,
+          256,
+          512
+        ],
+        "defer_assessment": true,
+        "development_resource_record": "docs/evidence/development-resource-accounting-v3.json",
+        "episode_directory": "data/episodes/k562-to-rpe1-v1",
+        "identifier_record": "docs/evidence/external-canonical-identifiers-v1.json",
+        "label": "Frozen external primary k562-to-rpe1; docs/external-evaluation-protocol.md",
+        "output_directory": "runs/external-k562-to-rpe1-v1",
+        "policies": [
+          "random_equal",
+          "fixed_grid",
+          "diversity",
+          "d_optimal",
+          "worst_query",
+          "mean_query",
+          "reliability",
+          "disagreement",
+          "bias_aware",
+          "bias_gamma025",
+          "bias_equal_depth",
+          "bias_fixed_controls",
+          "bias_fixed_interventions",
+          "bias_fixed_order",
+          "bias_independent_controls",
+          "bias_no_extension"
+        ],
+        "policy": {
+          "allow_controls": true,
+          "allow_depth": true,
+          "allow_opening": true,
+          "block_cells": 8,
+          "cell_cost": 1,
+          "control_cell_cost": 1,
+          "discrepancy_weight": 1.0,
+          "fixed_control_fraction": 0.125,
+          "fixed_depth": 8,
+          "identity_selection": "adaptive",
+          "kernel_length": 1.0,
+          "partial_blocks": true,
+          "pilot_cells": 8,
+          "pilot_controls": 16,
+          "pilot_interventions": 6,
+          "rank": 4,
+          "ridge": 0.1,
+          "ridge_grid": [
+            0.1,
+            1,
+            10,
+            100,
+            1000,
+            10000,
+            100000
+          ],
+          "ridge_include_null": true,
+          "setup_cost": 4,
+          "shared_covariance": true,
+          "variance_prior": "paid_ratio"
+        },
+        "primary_backbone": "ridge_cv",
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "source_control": "none",
+        "source_control_seed": 20261022,
+        "source_sensitivity": true,
+        "transfer": {
+          "anchors": 64,
+          "batch_size": 16,
+          "epochs_per_round": 3,
+          "hidden": 128,
+          "learning_rate": 0.001,
+          "max_rounds": 100,
+          "model_seed": 20261022,
+          "patience": 15,
+          "rank": 16,
+          "ridge_grid": [
+            0.001,
+            0.01,
+            0.1,
+            1.0,
+            10.0
+          ],
+          "split_seed": 20260718,
+          "validation_fraction": 0.2,
+          "weight_decay": 0.0001
+        },
+        "variants": {
+          "bias_equal_depth": {
+            "base": "bias_aware",
+            "overrides": {
+              "allow_depth": false
+            }
+          },
+          "bias_fixed_controls": {
+            "base": "bias_aware",
+            "overrides": {
+              "allow_controls": false
+            }
+          },
+          "bias_fixed_interventions": {
+            "base": "bias_aware",
+            "overrides": {
+              "allow_opening": false
+            }
+          },
+          "bias_fixed_order": {
+            "base": "bias_aware",
+            "overrides": {
+              "identity_selection": "fixed_order"
+            }
+          },
+          "bias_gamma025": {
+            "base": "bias_aware",
+            "overrides": {
+              "discrepancy_weight": 0.25
+            }
+          },
+          "bias_independent_controls": {
+            "base": "bias_aware",
+            "overrides": {
+              "shared_covariance": false
+            }
+          },
+          "bias_no_extension": {
+            "base": "bias_aware",
+            "overrides": {
+              "discrepancy_weight": 0
+            }
+          }
+        }
+      },
+      {
+        "budgets": [
+          128,
+          256,
+          512
+        ],
+        "defer_assessment": true,
+        "development_resource_record": "docs/evidence/development-resource-accounting-v3.json",
+        "episode_directory": "data/episodes/rpe1-to-k562-v1",
+        "identifier_record": "docs/evidence/external-canonical-identifiers-v1.json",
+        "label": "Frozen external primary rpe1-to-k562; docs/external-evaluation-protocol.md",
+        "output_directory": "runs/external-rpe1-to-k562-v1",
+        "policies": [
+          "random_equal",
+          "fixed_grid",
+          "diversity",
+          "d_optimal",
+          "worst_query",
+          "mean_query",
+          "reliability",
+          "disagreement",
+          "bias_aware",
+          "bias_gamma025",
+          "bias_equal_depth",
+          "bias_fixed_controls",
+          "bias_fixed_interventions",
+          "bias_fixed_order",
+          "bias_independent_controls",
+          "bias_no_extension"
+        ],
+        "policy": {
+          "allow_controls": true,
+          "allow_depth": true,
+          "allow_opening": true,
+          "block_cells": 8,
+          "cell_cost": 1,
+          "control_cell_cost": 1,
+          "discrepancy_weight": 1.0,
+          "fixed_control_fraction": 0.125,
+          "fixed_depth": 8,
+          "identity_selection": "adaptive",
+          "kernel_length": 1.0,
+          "partial_blocks": true,
+          "pilot_cells": 8,
+          "pilot_controls": 16,
+          "pilot_interventions": 6,
+          "rank": 4,
+          "ridge": 0.1,
+          "ridge_grid": [
+            0.1,
+            1,
+            10,
+            100,
+            1000,
+            10000,
+            100000
+          ],
+          "ridge_include_null": true,
+          "setup_cost": 4,
+          "shared_covariance": true,
+          "variance_prior": "paid_ratio"
+        },
+        "primary_backbone": "ridge_cv",
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "source_control": "none",
+        "source_control_seed": 20261022,
+        "source_sensitivity": true,
+        "transfer": {
+          "anchors": 64,
+          "batch_size": 16,
+          "epochs_per_round": 3,
+          "hidden": 128,
+          "learning_rate": 0.001,
+          "max_rounds": 100,
+          "model_seed": 20261022,
+          "patience": 15,
+          "rank": 16,
+          "ridge_grid": [
+            0.001,
+            0.01,
+            0.1,
+            1.0,
+            10.0
+          ],
+          "split_seed": 20260718,
+          "validation_fraction": 0.2,
+          "weight_decay": 0.0001
+        },
+        "variants": {
+          "bias_equal_depth": {
+            "base": "bias_aware",
+            "overrides": {
+              "allow_depth": false
+            }
+          },
+          "bias_fixed_controls": {
+            "base": "bias_aware",
+            "overrides": {
+              "allow_controls": false
+            }
+          },
+          "bias_fixed_interventions": {
+            "base": "bias_aware",
+            "overrides": {
+              "allow_opening": false
+            }
+          },
+          "bias_fixed_order": {
+            "base": "bias_aware",
+            "overrides": {
+              "identity_selection": "fixed_order"
+            }
+          },
+          "bias_gamma025": {
+            "base": "bias_aware",
+            "overrides": {
+              "discrepancy_weight": 0.25
+            }
+          },
+          "bias_independent_controls": {
+            "base": "bias_aware",
+            "overrides": {
+              "shared_covariance": false
+            }
+          },
+          "bias_no_extension": {
+            "base": "bias_aware",
+            "overrides": {
+              "discrepancy_weight": 0
+            }
+          }
+        }
+      },
+      {
+        "budgets": [
+          128,
+          256,
+          512
+        ],
+        "defer_assessment": true,
+        "development_resource_record": "docs/evidence/development-resource-accounting-v3.json",
+        "episode_directory": "data/episodes/k562-to-rpe1-v1",
+        "identifier_record": "docs/evidence/external-canonical-identifiers-v1.json",
+        "label": "Frozen external negative control k562-to-rpe1/identity_permutation; docs/external-evaluation-protocol.md",
+        "output_directory": "runs/external-k562-to-rpe1-identity-permuted-v1",
+        "policies": [
+          "fixed_grid",
+          "worst_query",
+          "mean_query",
+          "bias_aware"
+        ],
+        "policy": {
+          "allow_controls": true,
+          "allow_depth": true,
+          "allow_opening": true,
+          "block_cells": 8,
+          "cell_cost": 1,
+          "control_cell_cost": 1,
+          "discrepancy_weight": 1.0,
+          "fixed_control_fraction": 0.125,
+          "fixed_depth": 8,
+          "identity_selection": "adaptive",
+          "kernel_length": 1.0,
+          "partial_blocks": true,
+          "pilot_cells": 8,
+          "pilot_controls": 16,
+          "pilot_interventions": 6,
+          "rank": 4,
+          "ridge": 0.1,
+          "ridge_grid": [
+            0.1,
+            1,
+            10,
+            100,
+            1000,
+            10000,
+            100000
+          ],
+          "ridge_include_null": true,
+          "setup_cost": 4,
+          "shared_covariance": true,
+          "variance_prior": "paid_ratio"
+        },
+        "primary_backbone": "ridge_cv",
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "source_control": "identity_permutation",
+        "source_control_seed": 20261022,
+        "source_sensitivity": true,
+        "transfer": {
+          "anchors": 64,
+          "batch_size": 16,
+          "epochs_per_round": 3,
+          "hidden": 128,
+          "learning_rate": 0.001,
+          "max_rounds": 100,
+          "model_seed": 20261022,
+          "patience": 15,
+          "rank": 16,
+          "ridge_grid": [
+            0.001,
+            0.01,
+            0.1,
+            1.0,
+            10.0
+          ],
+          "split_seed": 20260718,
+          "validation_fraction": 0.2,
+          "weight_decay": 0.0001
+        },
+        "variants": {}
+      },
+      {
+        "budgets": [
+          128,
+          256,
+          512
+        ],
+        "defer_assessment": true,
+        "development_resource_record": "docs/evidence/development-resource-accounting-v3.json",
+        "episode_directory": "data/episodes/k562-to-rpe1-v1",
+        "identifier_record": "docs/evidence/external-canonical-identifiers-v1.json",
+        "label": "Frozen external negative control k562-to-rpe1/query_gene_permutation; docs/external-evaluation-protocol.md",
+        "output_directory": "runs/external-k562-to-rpe1-query-gene-permuted-v1",
+        "policies": [
+          "fixed_grid",
+          "worst_query",
+          "mean_query",
+          "bias_aware"
+        ],
+        "policy": {
+          "allow_controls": true,
+          "allow_depth": true,
+          "allow_opening": true,
+          "block_cells": 8,
+          "cell_cost": 1,
+          "control_cell_cost": 1,
+          "discrepancy_weight": 1.0,
+          "fixed_control_fraction": 0.125,
+          "fixed_depth": 8,
+          "identity_selection": "adaptive",
+          "kernel_length": 1.0,
+          "partial_blocks": true,
+          "pilot_cells": 8,
+          "pilot_controls": 16,
+          "pilot_interventions": 6,
+          "rank": 4,
+          "ridge": 0.1,
+          "ridge_grid": [
+            0.1,
+            1,
+            10,
+            100,
+            1000,
+            10000,
+            100000
+          ],
+          "ridge_include_null": true,
+          "setup_cost": 4,
+          "shared_covariance": true,
+          "variance_prior": "paid_ratio"
+        },
+        "primary_backbone": "ridge_cv",
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "source_control": "query_gene_permutation",
+        "source_control_seed": 20261022,
+        "source_sensitivity": true,
+        "transfer": {
+          "anchors": 64,
+          "batch_size": 16,
+          "epochs_per_round": 3,
+          "hidden": 128,
+          "learning_rate": 0.001,
+          "max_rounds": 100,
+          "model_seed": 20261022,
+          "patience": 15,
+          "rank": 16,
+          "ridge_grid": [
+            0.001,
+            0.01,
+            0.1,
+            1.0,
+            10.0
+          ],
+          "split_seed": 20260718,
+          "validation_fraction": 0.2,
+          "weight_decay": 0.0001
+        },
+        "variants": {}
+      },
+      {
+        "budgets": [
+          128,
+          256,
+          512
+        ],
+        "defer_assessment": true,
+        "development_resource_record": "docs/evidence/development-resource-accounting-v3.json",
+        "episode_directory": "data/episodes/rpe1-to-k562-v1",
+        "identifier_record": "docs/evidence/external-canonical-identifiers-v1.json",
+        "label": "Frozen external negative control rpe1-to-k562/identity_permutation; docs/external-evaluation-protocol.md",
+        "output_directory": "runs/external-rpe1-to-k562-identity-permuted-v1",
+        "policies": [
+          "fixed_grid",
+          "worst_query",
+          "mean_query",
+          "bias_aware"
+        ],
+        "policy": {
+          "allow_controls": true,
+          "allow_depth": true,
+          "allow_opening": true,
+          "block_cells": 8,
+          "cell_cost": 1,
+          "control_cell_cost": 1,
+          "discrepancy_weight": 1.0,
+          "fixed_control_fraction": 0.125,
+          "fixed_depth": 8,
+          "identity_selection": "adaptive",
+          "kernel_length": 1.0,
+          "partial_blocks": true,
+          "pilot_cells": 8,
+          "pilot_controls": 16,
+          "pilot_interventions": 6,
+          "rank": 4,
+          "ridge": 0.1,
+          "ridge_grid": [
+            0.1,
+            1,
+            10,
+            100,
+            1000,
+            10000,
+            100000
+          ],
+          "ridge_include_null": true,
+          "setup_cost": 4,
+          "shared_covariance": true,
+          "variance_prior": "paid_ratio"
+        },
+        "primary_backbone": "ridge_cv",
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "source_control": "identity_permutation",
+        "source_control_seed": 20261022,
+        "source_sensitivity": true,
+        "transfer": {
+          "anchors": 64,
+          "batch_size": 16,
+          "epochs_per_round": 3,
+          "hidden": 128,
+          "learning_rate": 0.001,
+          "max_rounds": 100,
+          "model_seed": 20261022,
+          "patience": 15,
+          "rank": 16,
+          "ridge_grid": [
+            0.001,
+            0.01,
+            0.1,
+            1.0,
+            10.0
+          ],
+          "split_seed": 20260718,
+          "validation_fraction": 0.2,
+          "weight_decay": 0.0001
+        },
+        "variants": {}
+      },
+      {
+        "budgets": [
+          128,
+          256,
+          512
+        ],
+        "defer_assessment": true,
+        "development_resource_record": "docs/evidence/development-resource-accounting-v3.json",
+        "episode_directory": "data/episodes/rpe1-to-k562-v1",
+        "identifier_record": "docs/evidence/external-canonical-identifiers-v1.json",
+        "label": "Frozen external negative control rpe1-to-k562/query_gene_permutation; docs/external-evaluation-protocol.md",
+        "output_directory": "runs/external-rpe1-to-k562-query-gene-permuted-v1",
+        "policies": [
+          "fixed_grid",
+          "worst_query",
+          "mean_query",
+          "bias_aware"
+        ],
+        "policy": {
+          "allow_controls": true,
+          "allow_depth": true,
+          "allow_opening": true,
+          "block_cells": 8,
+          "cell_cost": 1,
+          "control_cell_cost": 1,
+          "discrepancy_weight": 1.0,
+          "fixed_control_fraction": 0.125,
+          "fixed_depth": 8,
+          "identity_selection": "adaptive",
+          "kernel_length": 1.0,
+          "partial_blocks": true,
+          "pilot_cells": 8,
+          "pilot_controls": 16,
+          "pilot_interventions": 6,
+          "rank": 4,
+          "ridge": 0.1,
+          "ridge_grid": [
+            0.1,
+            1,
+            10,
+            100,
+            1000,
+            10000,
+            100000
+          ],
+          "ridge_include_null": true,
+          "setup_cost": 4,
+          "shared_covariance": true,
+          "variance_prior": "paid_ratio"
+        },
+        "primary_backbone": "ridge_cv",
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "source_control": "query_gene_permutation",
+        "source_control_seed": 20261022,
+        "source_sensitivity": true,
+        "transfer": {
+          "anchors": 64,
+          "batch_size": 16,
+          "epochs_per_round": 3,
+          "hidden": 128,
+          "learning_rate": 0.001,
+          "max_rounds": 100,
+          "model_seed": 20261022,
+          "patience": 15,
+          "rank": 16,
+          "ridge_grid": [
+            0.001,
+            0.01,
+            0.1,
+            1.0,
+            10.0
+          ],
+          "split_seed": 20260718,
+          "validation_fraction": 0.2,
+          "weight_decay": 0.0001
+        },
+        "variants": {}
+      }
+    ]
+  },
+  "configuration_sha256": "311e1710fa9a1f562e691fbe8d1a5fe1e8b21cc9f5008bd27b8e8a9b95fe1694",
+  "environment": {
+    "git": {
+      "revision": "a04f92ffb9ac867244fc08f4bd82baba89c75138",
+      "status": ""
+    },
+    "packages": {
+      "h5py": "3.16.0",
+      "matplotlib": "3.11.2",
+      "mlresearch": "0.1.0",
+      "numpy": "2.5.4",
+      "pytest": "9.1.1",
+      "scipy": "1.18.1"
+    },
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.14",
+    "recorded_at": "2026-10-22T12:57:16.272231+00:00",
+    "source_hashes": {
+      "__init__.py": "bb8543f534bc0779c941e08d8786d17c10a58bfc43e97e080422afc3757c8eb0",
+      "__main__.py": "27503438dec93a74b0ebe814fc619333accf571b77f73344c6252c94b0b5d8b3",
+      "accounting.py": "8ed6d877678a1de2f8b0b6e7c0a471126cc3348c21f852f50caa7d17b1de40f8",
+      "acquisition.py": "52e82caa4c80dd4e577bb2e90cdaca52caf35fc8c97000e529161c21596be19d",
+      "cli.py": "6c3dd5025df8fdf80da117f6129bf36e3bbb87d0304589ea3b678ddd7d272f97",
+      "controls.py": "458f52e5886f97eed105e2c56701b51d2a26c080043b60ad8c39e9f6e9d24297",
+      "data.py": "ac2e62e8a74960d279f681cd4983d5a2f42f3cf13c8b8fde1887fc6265953789",
+      "datasets.json": "e90daa691730f09ba8885f1777ed5ae379f075d010a1dc3093c23272865e8881",
+      "design.py": "e83d39a64f0336ba7c5bf97deb997c68db3c72b3c09adf178a71b5d210d055e5",
+      "episodes.py": "62f0ee1615fcd268aec088a83e34c0744b981523a74f58fc34a7fb3a110328c6",
+      "experiment.py": "62caf7bff0edf14dd6e59d65a43198c7f34f72ade9c20df6e9faa2c7bdd6c6ef",
+      "external.py": "264b6312dda17caed78ba4e608f301ecaad034311189ee5c33597446fdd42a68",
+      "identifiers.py": "d0010bfbab280eabda82e43a5d286b3bc6a4c105a344102798ff1dcd97ccb2de",
+      "linear.py": "614d58fc6e8280e6559eb41e1d015723763ebb1db2469b5a7fe5a3ccb270566f",
+      "models.py": "5592d6c632bc9b9d6a47d1a1cf699a7fadc48c66fdba0a69c5e11eaa1230e8de",
+      "policies.py": "2ccb2f39cb78fafa6a3b452f0f76d4913e1660847cabb287ea382a69a01980fa",
+      "prepare.py": "ee8db1f477dc3185104013f08358682b6255c479226a3935acc17614eb5bf75e",
+      "provenance.py": "599e5f4b17cd39c44be9a7ddd27df89172ac3d3f6eca7a76b311cfea7c96a7e4",
+      "report.py": "1d370344507b9c5c668dcd61161df884a82ab3f91eeea4fa3bd71ef4f19b9f1c",
+      "simulation.py": "eaa3ff0c98f8f9970c7e7c9a6ee75d9fba37326187fb5932ab7a9a5cb0aa0076",
+      "study.py": "514dea833445eee09a3795c5796bd729f67893d54a1b28da5128087c1fe97708",
+      "transfer.py": "1f57c328560f3c5c08c978387fd62c865992816d5e3d962e239bdc40e0dbe20d",
+      "uncertainty.py": "f7fa9518a0636c7492eabe8e4bb6a6be317bc08158546f9fe0270b030ca35f73"
+    },
+    "source_tree_sha256": "5df3ead591e659904efc40a4bce1bf977dccca9919c2f1fea370d2f2b4c2c696"
+  },
+  "evidence": [
+    {
+      "original": "docs\\external-evaluation-protocol.md",
+      "sha256": "1148f0dcfb5283a60eca30ddebd53ac71deaab32db9a64496863406557c322db",
+      "snapshot": "frozen-evidence/0-external-evaluation-protocol.md"
+    },
+    {
+      "original": "docs\\transfer-comparator-protocol.md",
+      "sha256": "4b15212f565d39e7154a678c8201536a80c48f9458aa2b6046db398a8dd2128e",
+      "snapshot": "frozen-evidence/1-transfer-comparator-protocol.md"
+    },
+    {
+      "original": "docs\\source-sensitivity-protocol.md",
+      "sha256": "6e671519cd96b9ca10c19467981d1157533555d3336bb45f0bf28a7d93e8409f",
+      "snapshot": "frozen-evidence/2-source-sensitivity-protocol.md"
+    },
+    {
+      "original": "docs\\assessment-uncertainty-protocol.md",
+      "sha256": "84a0a345415d05e4cb565d5038e1229765faafbc0651649fb11f493631ba7ef9",
+      "snapshot": "frozen-evidence/3-assessment-uncertainty-protocol.md"
+    },
+    {
+      "original": "docs\\evidence\\development-tuning-selection.json",
+      "sha256": "4c5874fb6f5d090bbe6cffd6cbc87cfc6f79d69e493ba970a47253eb0b8715b4",
+      "snapshot": "frozen-evidence/4-development-tuning-selection.json"
+    },
+    {
+      "original": "docs\\evidence\\development-resource-accounting-v3.json",
+      "sha256": "97979e5855ae038eef2f59ab301c51c450b445d1f4b3417dfd7d5017250c614a",
+      "snapshot": "frozen-evidence/5-development-resource-accounting-v3.json"
+    },
+    {
+      "original": "docs\\evidence\\external-canonical-identifiers-v1.json",
+      "sha256": "a760b19f4e33ae6706eb4fd345eceaffa8b3c80aa427642dd5482163c725ae6b",
+      "snapshot": "frozen-evidence/6-external-canonical-identifiers-v1.json"
+    },
+    {
+      "original": "docs\\evidence\\external-evaluation-declaration-v1.json",
+      "sha256": "6035a4a336e739b5179cd4962635fe8d8dfb56ba4f603232afc73343c2b79fbe",
+      "snapshot": "frozen-evidence/7-external-evaluation-declaration-v1.json"
+    },
+    {
+      "original": "docs\\evidence\\resources-external-evaluation-v1.json",
+      "sha256": "87a8fc49344f7c5e0d8c3571eaec81f97e99ec8d7035498068d2c7e3e93fd083",
+      "snapshot": "frozen-evidence/8-resources-external-evaluation-v1.json"
+    }
+  ],
+  "joint_gate_sha256": "b31b2d81b6af3aa367399ce681189f6f839b913b068bfccafceb3ef0b35906da",
+  "resources_end": {
+    "available_ram_bytes": 1179254784,
+    "disk_free_bytes": 602416250880,
+    "disk_total_bytes": 1002016075776,
+    "logical_cpus": 16,
+    "memory_scope": "Current process; peak is over its lifetime, not a per-case delta.",
+    "peak_commit_bytes": 581558272,
+    "peak_working_set_bytes": 707694592,
+    "process_id": 16992,
+    "ram_bytes": 16418983936,
+    "recorded_at": "2026-10-22T21:20:59.062037+00:00",
+    "working_set_bytes": 70172672
+  },
+  "resources_start": {
+    "available_ram_bytes": 1104084992,
+    "disk_free_bytes": 628694646784,
+    "disk_total_bytes": 1002016075776,
+    "logical_cpus": 16,
+    "memory_scope": "Current process; peak is over its lifetime, not a per-case delta.",
+    "peak_commit_bytes": 46153728,
+    "peak_working_set_bytes": 64167936,
+    "process_id": 16992,
+    "ram_bytes": 16418983936,
+    "recorded_at": "2026-10-22T12:57:17.085382+00:00",
+    "working_set_bytes": 59375616
+  },
+  "run_runtime_seconds": 29837.57021080001,
+  "scoring_pass_runtime_seconds": 15084.08926009998,
+  "source_snapshot": {
+    "path": "code.zip",
+    "purpose": "Exact package sources plus available project dependency specification.",
+    "sha256": "c8fa5b6732d7ccd5fb060366f0fc50ece34fba409ecf58ffff701f105f210e42"
+  },
+  "state": "complete",
+  "uninterrupted_suite_runtime_seconds": 30223.788394300005,
+  "workers": 1
+}

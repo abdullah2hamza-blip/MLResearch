@@ -1,0 +1,129 @@
+{
+  "analysis_source_sha256": "825bcd146f6fdbd4666ac91bff30130fdf69a64de78e4aaab4156c3ad3e26767",
+  "directions": [
+    {
+      "all_public_arrays_byte_equal": {
+        "effects": {
+          "dtype": "float32",
+          "numeric_bytes_sha256": "c9bdb64aed8c25a95722f9cad75d4942ec59e4d94f3997c5c83f434013f42a32",
+          "shape": [
+            525,
+            7226
+          ]
+        },
+        "half_difference": {
+          "dtype": "float32",
+          "numeric_bytes_sha256": "2bb9e4aa0bc547d28dd6a837e2ed70deb5f093814a25a2a31ebdec3436c064f4",
+          "shape": [
+            525,
+            7226
+          ]
+        },
+        "mean_variance": {
+          "dtype": "float64",
+          "numeric_bytes_sha256": "b7bae35c26a041e56bc2b2fd66e8e009b51ca230a07839524d0ce8a38fcd655e",
+          "shape": [
+            525
+          ]
+        },
+        "per_cell_variance": {
+          "dtype": "float64",
+          "numeric_bytes_sha256": "86b16d40d4c801c615d7e46fe97252aa695829a9fafe5a4b08a55818f29618d7",
+          "shape": [
+            525
+          ]
+        }
+      },
+      "configuration": {
+        "acquisition_cells": 64,
+        "acquisition_controls": 256,
+        "assessment_cells": 32,
+        "assessment_controls": 256,
+        "min_source_cells": 32,
+        "output_directory": "C:\\Users\\Abdul\\Documents\\MLResearch\\.cache\\rebuilt-external-v1\\k562-to-rpe1",
+        "query_fraction": 0.25,
+        "seed": 20261021,
+        "source_context": "K562",
+        "source_prepared": "data/prepared/k562-paired-cap96-v1",
+        "target_context": "RPE1",
+        "target_prepared": "data/prepared/rpe1-paired-cap96-v1"
+      },
+      "direction": "k562-to-rpe1",
+      "inventory": {
+        "acquisition_cells": 25472,
+        "assessment_cells": 17056,
+        "candidates": 394,
+        "genes": 7226,
+        "interventions": 525,
+        "queries": 131
+      },
+      "original_manifest_sha256": "6b9a48d9650c26b40068074b975979568f384f0b6443b513055279dce636413e",
+      "public_metadata_and_all_private_cell_maps_equal": true,
+      "rebuilt_manifest_sha256": "4b1a12f9b5ee4844cecfae9af0a675844bfa98f655065bdcdc306cb1cc1b699c"
+    },
+    {
+      "all_public_arrays_byte_equal": {
+        "effects": {
+          "dtype": "float32",
+          "numeric_bytes_sha256": "de91cba50a11f2e8035b6a865177e40a59fe99577700bdd21612f77e87aed2b8",
+          "shape": [
+            525,
+            7226
+          ]
+        },
+        "half_difference": {
+          "dtype": "float32",
+          "numeric_bytes_sha256": "c6f810961c52e803bf283ba9a7d6a082ad2bf4438b4fee55fc4aef390996fa00",
+          "shape": [
+            525,
+            7226
+          ]
+        },
+        "mean_variance": {
+          "dtype": "float64",
+          "numeric_bytes_sha256": "6110db153f5eab6610b469fdf9edfb397fe42a193961d99bbd2740e2f03f32ee",
+          "shape": [
+            525
+          ]
+        },
+        "per_cell_variance": {
+          "dtype": "float64",
+          "numeric_bytes_sha256": "a61a00b5a8b16dfd7f384b434464fdae92f6a1edbd5081f2ad413f537003e8f3",
+          "shape": [
+            525
+          ]
+        }
+      },
+      "configuration": {
+        "acquisition_cells": 64,
+        "acquisition_controls": 256,
+        "assessment_cells": 32,
+        "assessment_controls": 256,
+        "min_source_cells": 32,
+        "output_directory": "C:\\Users\\Abdul\\Documents\\MLResearch\\.cache\\rebuilt-external-v1\\rpe1-to-k562",
+        "query_fraction": 0.25,
+        "seed": 20261021,
+        "source_context": "RPE1",
+        "source_prepared": "data/prepared/rpe1-paired-cap96-v1",
+        "target_context": "K562",
+        "target_prepared": "data/prepared/k562-paired-cap96-v1"
+      },
+      "direction": "rpe1-to-k562",
+      "inventory": {
+        "acquisition_cells": 25472,
+        "assessment_cells": 17056,
+        "candidates": 394,
+        "genes": 7226,
+        "interventions": 525,
+        "queries": 131
+      },
+      "original_manifest_sha256": "d64e6ffe37bec7d895a0dc1f6802b7b1ec2d2e541f1a58f5287e40056eff1ec0",
+      "public_metadata_and_all_private_cell_maps_equal": true,
+      "rebuilt_manifest_sha256": "8b8259f39157abd42d12def3e12f7bf0c0f050aed69d904230bb0114b46f1053"
+    }
+  ],
+  "qualification": "Fresh real episode outputs from the existing checksum-verified preparations. Every source numeric array, split/identity axis and bank map compared; not a second raw-matrix preparation or independent external replication.",
+  "recorded_at": "2026-10-22T21:29:30.978450+00:00",
+  "state": "passed",
+  "suite_manifest_sha256": "6520d23aebfa4963cf7a6e13f983840b3d680c4ae8fc1b4b27e02b127a3eebc4"
+}
