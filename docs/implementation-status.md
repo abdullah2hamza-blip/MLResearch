@@ -22,6 +22,8 @@ Last substantive update: October 22, 2026 (America/New_York). The implementation
 - [Development tuning](development-tuning-findings.md) evaluated nine fixed grids and five weights at seven backbones. The selected grid is fraction .125/depth 8 and weight 1, but zero remains best and 163/210 ridge-CV selections are null. Updated fixed development cost: 6,344 units.
 - [Hosted CI at 536e822](evidence/ci-536e822.json) passed both matrices, including the bounded two-worker study smoke. [Pending prototypes](evidence/pending-analysis-prototypes.zip) preserve the prior-method reconstruction, paired common-control analysis and generic development accounting, with 12 prototype checks and three typed/linted modules. These are not yet production CLI components.
 
+- [Hosted CI at efccf6a](evidence/ci-efccf6a.json) also passed on Windows and Linux after publication of the completed study and reporting fixes.
+
 ## Requirement ledger
 
 | Full specification requirement | Status | Authoritative evidence / remaining work |
