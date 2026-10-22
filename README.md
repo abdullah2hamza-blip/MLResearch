@@ -39,3 +39,5 @@ retains a negative result for the extension; it is not a completed study.
 - Add development tools with `uv add --dev <package>`.
 - Commit `uv.lock` when dependencies change to keep environments reproducible.
 - Install development tools with `uv sync --locked --group dev`.
+
+The [controlled simulation protocol](docs/controlled-study-protocol.md) and `configs/study-controlled-v1.json` define the larger synthetic study. Run it with `uv run mlresearch study configs/study-controlled-v1.json`; use a fresh output directory for another run. This study is separate from the still-pending external evaluation. The [risk-retention analysis correction](docs/retention-analysis-correction.md) preserves the original pilot findings while correcting their diagnostic selection rule.

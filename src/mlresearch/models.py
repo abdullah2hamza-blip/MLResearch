@@ -27,6 +27,8 @@ def ridge_validation_scores(
     mean_variances: np.ndarray,
     control_variance: float,
     grid: tuple[float, ...],
+    *,
+    include_null: bool = False,
 ) -> np.ndarray:
     """Paid-label leave-one-intervention-out scores with shared-control correction.
 
@@ -70,6 +72,9 @@ def ridge_validation_scores(
                 + 2 * control_variance * weights.sum()
             )
         scores.append(float(np.mean(errors)))
+    if include_null:
+        # The zero predictor has weights a=0: no shared-control cross term.
+        scores.append(float(np.mean(np.diag(response_gram) - variance - control_variance)))
     return np.asarray(scores)
 
 
@@ -168,6 +173,7 @@ def predict(
     *,
     ridge: float,
     ridge_grid: tuple[float, ...] = (0.1, 1.0, 10.0, 100.0, 1000.0),
+    ridge_include_null: bool = False,
 ) -> tuple[dict[str, np.ndarray], dict[str, np.ndarray | int | float]]:
     training_ids, effects, variances, control_variance = observations.training(public)
     if not training_ids:
@@ -177,9 +183,16 @@ def predict(
     x, query = coordinates.features[rows], coordinates.features[query_rows]
     coefficients = fit_gls(x, effects, variances, control_variance, ridge=ridge)
     fitted = query @ coefficients
-    validation_scores = ridge_validation_scores(x, effects, variances, control_variance, ridge_grid)
-    selected_ridge = ridge_grid[int(np.argmin(validation_scores))]
-    cv_fitted = query @ fit_gls(x, effects, variances, control_variance, ridge=selected_ridge)
+    validation_scores = ridge_validation_scores(
+        x, effects, variances, control_variance, ridge_grid, include_null=ridge_include_null
+    )
+    penalties = (*ridge_grid, -1.0) if ridge_include_null else ridge_grid
+    selected_ridge = penalties[int(np.argmin(validation_scores))]
+    cv_fitted = (
+        np.zeros_like(fitted)
+        if selected_ridge == -1
+        else query @ fit_gls(x, effects, variances, control_variance, ridge=selected_ridge)
+    )
     mean = effects.mean(axis=0)
     # Global affine adaptation: y = intercept + scale * source, using ordinary
     # least squares and all genes pooled. The slope/intercept are scalars, making
@@ -238,6 +251,16 @@ def predict(
         "source_half_noise": coordinates.source_half_noise,
         "ridge_cv_selected": selected_ridge,
         "ridge_cv_scores": validation_scores,
+        "ridge_cv_penalties": np.asarray(penalties),
+        "ridge_cv_null": selected_ridge == -1,
+        "source_mean_noise_estimate": public.source_effect_mean_variance[query_rows].copy(),
+        "source_unstable": np.mean(public.source_effects[query_rows] ** 2, axis=1)
+        <= 2 * public.source_effect_mean_variance[query_rows],
+        "deferral_recommended": ~support.identified
+        | (
+            np.mean(public.source_effects[query_rows] ** 2, axis=1)
+            <= 2 * public.source_effect_mean_variance[query_rows]
+        ),
         "paid_training_residual_mse": float(np.mean((effects - x @ coefficients) ** 2)),
     }
     return {

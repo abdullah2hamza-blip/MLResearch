@@ -1,4 +1,5 @@
 {
+  "analysis_version": 2,
   "assessment_noise_floor": 0.002276768217966638,
   "bootstrap_samples": 2000,
   "bootstrap_seed": 513,
@@ -92,6 +93,7 @@
       "relative_error_change": 0.2678649966678956
     }
   ],
+  "fixed_development_cost_units": null,
   "interpretation": "Lower error area and negative differences favor the named policy.",
   "interval_scope": "Descriptive query-intervention bootstrap conditional on source data, fixed split, acquisition seeds, and fixed assessment/control bank. Excludes biological, guide/batch and common scoring-control uncertainty.",
   "limitations": [
@@ -103,5 +105,7 @@
     "Local residual baseline is an adaptation, not a PerturbMap reproduction.",
     "Fixed-grid settings have not yet been tuned on a development validation design."
   ],
+  "risk_retention_backbone": "ridge",
+  "risk_retention_source_stability_available": false,
   "run_manifest_sha256": "51da938b9b09a6ac7ebd186adb6ada38bb376e72a1b22b6f4c9cbacae2f6e993"
 }

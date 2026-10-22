@@ -12,11 +12,13 @@ from typing import Any
 import numpy as np
 
 from mlresearch.acquisition import CONTROL, AcquisitionService, IndexedCellPool, Pool, verify_ledger
+from mlresearch.controls import SOURCE_CONTROLS, transform_source
 from mlresearch.episodes import load_prepared, load_public_episode
 from mlresearch.models import BACKBONES, Observations, predict, source_coordinates
 from mlresearch.policies import POLICIES, Policy, PolicyConfig
 from mlresearch.provenance import (
     environment_record,
+    event_log,
     file_hash,
     object_hash,
     read_json,
@@ -37,8 +39,47 @@ class RunConfig:
     policy: PolicyConfig = field(default_factory=PolicyConfig)
     label: str = "exploratory"
     primary_backbone: str = "ridge"
+    variants: dict[str, dict[str, Any]] = field(default_factory=dict)
+    source_control: str = "none"
+    source_control_seed: int = 20261022
+    development_resource_record: str | None = None
 
     def __post_init__(self) -> None:
+        if self.source_control not in SOURCE_CONTROLS:
+            raise ValueError("Unknown source-information control")
+        if (
+            isinstance(self.source_control_seed, bool)
+            or not isinstance(self.source_control_seed, int)
+            or self.source_control_seed < 0
+        ):
+            raise ValueError("Invalid source-control seed")
+        if set(self.variants) & set(POLICIES):
+            raise ValueError("Variant labels cannot replace canonical policy names")
+        for name in self.variants:
+            if not name or any(
+                character not in "abcdefghijklmnopqrstuvwxyz0123456789_-" for character in name
+            ):
+                raise ValueError("Variant labels must be safe directory names")
+            base, variant = self.policy_for(name)
+            if base not in POLICIES:
+                raise ValueError("A variant requires a known base policy")
+            for field_name in (
+                "rank",
+                "pilot_controls",
+                "pilot_interventions",
+                "setup_cost",
+                "cell_cost",
+                "control_cell_cost",
+                "ridge",
+                "ridge_grid",
+                "ridge_include_null",
+            ):
+                if getattr(variant, field_name) != getattr(self.policy, field_name):
+                    raise ValueError(
+                        "Variants must share prediction settings, pilot access and costs"
+                    )
+            if variant.pilot_cell_count != self.policy.pilot_cell_count:
+                raise ValueError("Variants must share pilot cell depth")
         if self.primary_backbone not in BACKBONES:
             raise ValueError("Unknown primary predictor backbone")
         if self.policy.pilot_interventions < 3:
@@ -54,16 +95,28 @@ class RunConfig:
         if (
             not self.policies
             or len(set(self.policies)) != len(self.policies)
-            or set(self.policies) - set(POLICIES)
+            or set(self.policies) - (set(POLICIES) | set(self.variants))
         ):
             raise ValueError("Policies must be distinct known policies")
         pilot_cost = (
             self.policy.pilot_controls * self.policy.control_cell_cost
             + self.policy.pilot_interventions
-            * (self.policy.setup_cost + self.policy.block_cells * self.policy.cell_cost)
+            * (self.policy.setup_cost + self.policy.pilot_cell_count * self.policy.cell_cost)
         )
         if pilot_cost > self.budgets[0]:
             raise ValueError("The first budget cannot pay for the common pilot")
+
+    def policy_for(self, name: str) -> tuple[str, PolicyConfig]:
+        if name not in self.variants:
+            return name, self.policy
+        declaration = self.variants[name]
+        if set(declaration) - {"base", "overrides"}:
+            raise ValueError("Unknown policy-variant fields")
+        try:
+            settings = PolicyConfig(**(asdict(self.policy) | declaration.get("overrides", {})))
+        except TypeError as error:
+            raise ValueError(f"Invalid policy variant: {error}") from error
+        return declaration.get("base", "bias_aware"), settings
 
     @classmethod
     def load(cls, path: Path) -> RunConfig:
@@ -120,12 +173,36 @@ def _assessment(
 
 
 def run_experiment(config: RunConfig) -> dict[str, Any]:
-    started = time.perf_counter()
-    output, episode = Path(config.output_directory), Path(config.episode_directory)
+    output = Path(config.output_directory)
     if output.exists():
         raise ValueError("Run directory exists; use a fresh path")
+    output.mkdir(parents=True)
+    write_json(output / "manifest.json", {"state": "validating", "configuration": asdict(config)})
+    with event_log(output / "events.jsonl"):
+        try:
+            return _run_experiment(config)
+        except Exception as error:
+            logger = logging.getLogger(__name__)
+            logger.error("Run failed: %s", error)
+            manifest = read_json(output / "manifest.json")
+            manifest.update(
+                state="failed",
+                error_type=type(error).__name__,
+                error=str(error),
+                failed_at=utc_now(),
+            )
+            write_json(output / "manifest.json", manifest)
+            raise
+
+
+def _run_experiment(config: RunConfig) -> dict[str, Any]:
+    started = time.perf_counter()
+    output, episode = Path(config.output_directory), Path(config.episode_directory)
     environment = environment_record()
     public = load_public_episode(episode)
+    public, source_control_record = transform_source(
+        public, config.source_control, config.source_control_seed
+    )
     banks = read_json(episode / "private-banks.json")
     target_path = Path(banks["target_prepared"])
     if not target_path.is_absolute():
@@ -150,7 +227,22 @@ def run_experiment(config: RunConfig) -> dict[str, Any]:
         pools[identity] = IndexedCellPool(
             ids, target_values, tuple(bank_rows), tuple(banks["target_columns"])
         )
-    output.mkdir(parents=True)
+    write_json(output / "source-control.json", source_control_record)
+    development: dict[str, Any] = {
+        "unique_resource_cost_units": 0,
+        "status": "No fixed development record supplied.",
+    }
+    if config.development_resource_record is not None:
+        record_path = Path(config.development_resource_record)
+        development = read_json(record_path)
+        cost = development.get("unique_resource_cost_units")
+        if isinstance(cost, bool) or not isinstance(cost, int) or cost < 0:
+            raise ValueError("Invalid fixed development-resource accounting")
+        development = {
+            "record": development,
+            "sha256": file_hash(record_path),
+            "unique_resource_cost_units": cost,
+        }
     configuration = asdict(config)
     manifest: dict[str, Any] = {
         "state": "acquiring",
@@ -162,6 +254,18 @@ def run_experiment(config: RunConfig) -> dict[str, Any]:
         "resources_start": resource_record(output),
         "episode_manifest_sha256": file_hash(episode / "manifest.json"),
         "fixed_public_source_cells": len(banks["source_cell_ids"]),
+        "fixed_development_resources": development,
+        "total_program_budget_grid": [
+            budget + development["unique_resource_cost_units"] for budget in config.budgets
+        ],
+        "source_control": source_control_record,
+        "policy_specifications": {
+            name: {
+                "base": config.policy_for(name)[0],
+                "settings": asdict(config.policy_for(name)[1]),
+            }
+            for name in config.policies
+        },
         "primary_comparator": "worst_query",
         "primary_backbone": config.primary_backbone,
         "primary_endpoint": (
@@ -180,9 +284,10 @@ def run_experiment(config: RunConfig) -> dict[str, Any]:
     allocations: list[dict[str, Any]] = []
     for seed in config.seeds:
         for name in config.policies:
-            logging.info("Acquiring seed=%s policy=%s", seed, name)
+            logging.getLogger(__name__).info("Acquiring", extra={"seed": seed, "policy": name})
             policy_started = time.perf_counter()
             directory = output / f"seed-{seed}" / name
+            base_policy, settings = config.policy_for(name)
             service = AcquisitionService(
                 pools,
                 public.query_ids,
@@ -193,7 +298,7 @@ def run_experiment(config: RunConfig) -> dict[str, Any]:
                 ledger_path=directory / "ledger.jsonl",
             )
             observations = Observations()
-            policy = Policy(name, public, coordinates, config.policy, seed)
+            policy = Policy(base_policy, public, coordinates, settings, seed)
             for pilot_action in policy.pilot():
                 if (
                     service.public_state()["spent"] + service.price(pilot_action)
@@ -212,8 +317,9 @@ def run_experiment(config: RunConfig) -> dict[str, Any]:
                     coordinates,
                     observations,
                     public.query_ids,
-                    ridge=config.policy.ridge,
-                    ridge_grid=tuple(config.policy.ridge_grid),
+                    ridge=settings.ridge,
+                    ridge_grid=tuple(settings.ridge_grid),
+                    ridge_include_null=settings.ridge_include_null,
                 )
                 artifact = directory / f"budget-{budget}.npz"
                 payload: dict[str, Any] = {
@@ -240,6 +346,7 @@ def run_experiment(config: RunConfig) -> dict[str, Any]:
                         "spent": state["spent"],
                         "control_cells": state["counts"][CONTROL],
                         "ridge_cv_selected": diagnostics["ridge_cv_selected"],
+                        "variance_prior_scale": policy.variance_ratio(observations),
                         "interventions_opened": sum(
                             count > 0 for key, count in state["counts"].items() if key != CONTROL
                         ),
@@ -302,6 +409,8 @@ def run_experiment(config: RunConfig) -> dict[str, Any]:
                             "policy": item["policy"],
                             "budget": item["budget"],
                             "spent": item["spent"],
+                            "total_program_cost": item["spent"]
+                            + development["unique_resource_cost_units"],
                             "recipient_measurements_used_cost": 0
                             if backbone in ("zero", "source_copy")
                             else item["spent"],
@@ -316,6 +425,11 @@ def run_experiment(config: RunConfig) -> dict[str, Any]:
                             if source_norm[index] >= median_signal
                             else "weak",
                             "identified": bool(arrays["identified"][index]),
+                            "source_unstable": bool(arrays["source_unstable"][index]),
+                            "deferral_recommended": bool(arrays["deferral_recommended"][index]),
+                            "source_mean_noise_estimate": float(
+                                arrays["source_mean_noise_estimate"][index]
+                            ),
                             "ideal_variance": variance if np.isfinite(variance) else None,
                             "gaussian_coverage_diagnostic": coverage,
                             "gaussian_mean_width_diagnostic": float(2 * width.mean())

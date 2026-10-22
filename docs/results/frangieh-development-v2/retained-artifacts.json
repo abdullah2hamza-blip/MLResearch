@@ -1,8 +1,8 @@
 {
   "analysis_environment": {
     "git": {
-      "revision": "c347560b054f7cfe5363f9a4291fcaa3ed9fbb5a",
-      "status": "M docs/implementation-status.md"
+      "revision": "70b3ed6a024d95a60e537c8ad8e2883473a0f1da",
+      "status": "M docs/results/frangieh-development-v1/analysis-code.zip\n M docs/results/frangieh-development-v1/areas-by-query-seed.csv\n M docs/results/frangieh-development-v1/curves.csv\n M docs/results/frangieh-development-v1/paired-comparisons.csv\n M docs/results/frangieh-development-v1/results.md\n M docs/results/frangieh-development-v1/retained-artifacts.json\n M docs/results/frangieh-development-v1/risk-retention.csv\n M docs/results/frangieh-development-v1/summary.json\n M docs/results/synthetic-pilot-v1/acquisition-curves.png\n M docs/results/synthetic-pilot-v1/acquisition-curves.svg\n M docs/results/synthetic-pilot-v1/areas-by-query-seed.csv\n M docs/results/synthetic-pilot-v1/curves.csv\n M docs/results/synthetic-pilot-v1/paired-comparisons.csv\n M docs/results/synthetic-pilot-v1/predictor-curves.png\n M docs/results/synthetic-pilot-v1/predictor-curves.svg\n M docs/results/synthetic-pilot-v1/results.md\n M docs/results/synthetic-pilot-v1/retained-artifacts.json\n M docs/results/synthetic-pilot-v1/risk-retention.csv\n M docs/results/synthetic-pilot-v1/summary.json\n M docs/results/synthetic-pilot-v2/analysis-code.zip\n M docs/results/synthetic-pilot-v2/areas-by-query-seed.csv\n M docs/results/synthetic-pilot-v2/curves.csv\n M docs/results/synthetic-pilot-v2/paired-comparisons.csv\n M docs/results/synthetic-pilot-v2/results.md\n M docs/results/synthetic-pilot-v2/retained-artifacts.json\n M docs/results/synthetic-pilot-v2/risk-retention.csv\n M docs/results/synthetic-pilot-v2/summary.json\n M src/mlresearch/__main__.py\n M src/mlresearch/cli.py\n M src/mlresearch/experiment.py\n M src/mlresearch/models.py\n M src/mlresearch/policies.py\n M src/mlresearch/provenance.py\n M src/mlresearch/report.py\n M src/mlresearch/simulation.py\n M tests/test_experiment.py\n M tests/test_validation.py"
     },
     "packages": {
       "h5py": "3.16.0",
@@ -14,51 +14,59 @@
     },
     "platform": "Windows-11-10.0.26200-SP0",
     "python": "3.12.14",
-    "recorded_at": "2026-10-22T03:38:38.871198+00:00",
+    "recorded_at": "2026-10-22T05:09:55.851945+00:00",
     "source_hashes": {
       "__init__.py": "bb8543f534bc0779c941e08d8786d17c10a58bfc43e97e080422afc3757c8eb0",
-      "__main__.py": "b0d77ab859d763e6f3785dd41bbd3ff202db56bab564968167beefa5d5580d17",
+      "__main__.py": "27503438dec93a74b0ebe814fc619333accf571b77f73344c6252c94b0b5d8b3",
       "acquisition.py": "52e82caa4c80dd4e577bb2e90cdaca52caf35fc8c97000e529161c21596be19d",
-      "cli.py": "9005059fb5b78a917ea19d13a4ce3099bef04127280d8b087ad522997d2e9aa3",
+      "cli.py": "5a1bb5bea2cf8f6d837f4d5837d06f7fe922764426b1bae50223458f0055b408",
+      "controls.py": "458f52e5886f97eed105e2c56701b51d2a26c080043b60ad8c39e9f6e9d24297",
       "data.py": "ac2e62e8a74960d279f681cd4983d5a2f42f3cf13c8b8fde1887fc6265953789",
       "datasets.json": "e90daa691730f09ba8885f1777ed5ae379f075d010a1dc3093c23272865e8881",
+      "design.py": "e83d39a64f0336ba7c5bf97deb997c68db3c72b3c09adf178a71b5d210d055e5",
       "episodes.py": "62f0ee1615fcd268aec088a83e34c0744b981523a74f58fc34a7fb3a110328c6",
-      "experiment.py": "625000dea66b2fd9a8480a457e57b7b0ac7678c24693846851d60534178aa41c",
+      "experiment.py": "b2fe6a29e3dd94f8dc8e10455d66a39bb7595dca3a88f009dd627b0422ff94d9",
       "linear.py": "614d58fc6e8280e6559eb41e1d015723763ebb1db2469b5a7fe5a3ccb270566f",
-      "models.py": "2c93ff76f0701527510fe2e514e297449d68da69ac51d7dc50dc35263f675118",
-      "policies.py": "326398f47ea885da313ca5e0f3d1c4a48aaab2e2b98fda7e116643da6853abf8",
+      "models.py": "909777c0efa98bf0696e867671c2d856addc0fb33dcaa4a4a034f3a90838b04e",
+      "policies.py": "5e7f7041aa9a803b73a44b7a5ede1578451ffd0dc85cda83ac743fb546d0e190",
       "prepare.py": "ee8db1f477dc3185104013f08358682b6255c479226a3935acc17614eb5bf75e",
-      "provenance.py": "d908200cc6c7e92d8cdfbdb4cb6deef29f48fb54e9d16f24b68b4cbe55ce9087",
-      "report.py": "284c7bb57bdd6e68e128148e46e35c3cdbc66d848715bb11cd5ee2ceeff1483f",
-      "simulation.py": "67c391950a553ca7f536bbe9c81718958d8da5ac4f54e2815fda69ffd774c2d0"
+      "provenance.py": "599e5f4b17cd39c44be9a7ddd27df89172ac3d3f6eca7a76b311cfea7c96a7e4",
+      "report.py": "0e47c505e80095f6bacbc4e406cefb8f8a13a6225eba2d067bc3649270256ebc",
+      "simulation.py": "eaa3ff0c98f8f9970c7e7c9a6ee75d9fba37326187fb5932ab7a9a5cb0aa0076",
+      "study.py": "514dea833445eee09a3795c5796bd729f67893d54a1b28da5128087c1fe97708"
     },
-    "source_tree_sha256": "1a64fded5e2de23c6000b6a6d9cf662367e5cc7a2c797458e2e50e7e18f547c4"
+    "source_tree_sha256": "c66a26c9542621d399f9840b9dc481fdc1a8211e959fb3864fac1259ae45a304"
   },
   "analysis_source_snapshot": {
     "path": "analysis-code.zip",
     "purpose": "Exact package sources plus available project dependency specification.",
-    "sha256": "add1b059bd735255f2e63dde0a353d8979faf3f7960e35979490661d453ec99b"
+    "sha256": "0e51ebd8caf79daf188eefc4311340c8e1c82bd889712d5fb49ce283dc6bb00b"
   },
+  "cell_expression_included": false,
+  "cell_identifiers_included": true,
   "large_outputs": "Raw/prepared cells and prediction arrays remain ignored; regenerate from pinned inputs and saved configurations.",
   "metrics_uncompressed_sha256": "70be87f06af4303b6912995bd8867b1e2d623e092a4a326619e867e9e2279f4d",
   "raw_cells_included": false,
-  "run_directory": "runs\\frangieh-development-v2",
+  "run_directory": "C:\\Users\\Abdul\\Documents\\MLResearch\\runs\\frangieh-development-v2",
   "sha256": {
     "acquisition-curves.png": "389f7aec752f3724744ba62bd13b5a8fd29d36114e65a7b9c673c1c47d721555",
     "acquisition-curves.svg": "710c0eba3d6b3743e41556a503dfb9536fe49f66cdf7041e966fe834d26ec81a",
+    "acquisition-ledgers.zip": "72eea365c056a9145f2fe58b1fbafce78c1540b3cdb08d8195fb66daaab11893",
     "allocations.csv": "397f0a8ba17870b637d0bb2665c05aebd97e862b161ba278d5411f1d53dd5f43",
-    "analysis-code.zip": "add1b059bd735255f2e63dde0a353d8979faf3f7960e35979490661d453ec99b",
+    "analysis-code.zip": "0e51ebd8caf79daf188eefc4311340c8e1c82bd889712d5fb49ce283dc6bb00b",
     "areas-by-query-seed.csv": "4aa3c2d66154b86fe56432f654a409773421974a8e382c83d449e6d7d7d81bfa",
+    "assessment-access.json": "8747884cd2860b2293d551b60d9cff2a774efcaa6ed16fcde2cedb9f328daaed",
     "code.zip": "add1b059bd735255f2e63dde0a353d8979faf3f7960e35979490661d453ec99b",
     "curves.csv": "e0ca8710e3978c5d5977da1d6fb9f211634a01eceb28e9bbb6cec7ed3a154753",
+    "episode-manifest.json": "f0e6bc6d8791c687d0286ee7cce0ec43cd9a088514a0cfc41d3367d1aaa8c151",
     "metrics.csv.gz": "eaf4568f411a6af1d58db5c9bf225fa3ad09408d12e93b1713a43169385714c0",
     "paired-comparisons.csv": "ea3196f3ae8137ad0c13ef03f0ccff653ae2f948a48b0aec1efa5d5b4729e205",
     "prediction-index.json": "92f5f95523d94de6351f8558d8c577e3dedbc60cf6c34031848b5f4b4e2ed883",
     "predictor-curves.png": "07a2c46be1d36cfd50ebcfdeb9750d9143d6df7db0de9c3025393b7aa48390b4",
     "predictor-curves.svg": "5557f45d497577348aa86063503910b9519be68c7f3ed7ca8901ac2137a83af5",
     "results.md": "55eebc0f90b18a43d54409700d5fe1fc2a241bbbf819d7e38049f181e1f589ef",
-    "risk-retention.csv": "b94bd588a5fe3bca5e6cd5e7a10dfd44b2eed566a1632e3883eaa48d7e8267e8",
+    "risk-retention.csv": "17ba3e430c30df57d2eefd47858947aac42c779a42ef412a9ffbdf347f0e7aea",
     "run-manifest.json": "3307568f128347d52632a3c41562dc0b3ce4bf5f139502f27a5e35cb07829f44",
-    "summary.json": "255542b1f28db5913a4dab8964c882d46764da8f7d236d9738e1e84ad55cc16b"
+    "summary.json": "73eb7c46d0d1fbee229101b37a4470bf4f4d1c4625ad074b42c79f097e2d436f"
   }
 }

@@ -30,3 +30,4 @@ jobs:
       - run: uv run --locked mlresearch --help
       - run: uv run --locked mlresearch data list
       - run: uv run --locked mlresearch demo --directory .cache/offline-demo
+      - run: uv run --locked mlresearch study configs/study-smoke.json

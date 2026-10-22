@@ -1,0 +1,48 @@
+{
+  "acquisition_seeds": [
+    0
+  ],
+  "budgets": [
+    24,
+    32
+  ],
+  "generative_seeds": [
+    9
+  ],
+  "output_directory": ".cache/ci-study-smoke",
+  "policies": [
+    "worst_query",
+    "bias_aware"
+  ],
+  "policy": {
+    "block_cells": 4,
+    "partial_blocks": true,
+    "pilot_controls": 4,
+    "pilot_interventions": 3,
+    "rank": 2,
+    "ridge_grid": [
+      0.1,
+      10
+    ],
+    "ridge_include_null": true,
+    "setup_cost": 2,
+    "variance_prior": "paid_ratio"
+  },
+  "scenarios": {
+    "baseline": {},
+    "rank_missing": {
+      "calibration_last_axis_scale": 0
+    }
+  },
+  "simulation": {
+    "acquisition_cells": 4,
+    "assessment_cells": 4,
+    "controls_each_bank": 4,
+    "genes": 12,
+    "interventions": 12,
+    "latent_rank": 2,
+    "seed": 9,
+    "source_cells": 4
+  },
+  "workers": 2
+}

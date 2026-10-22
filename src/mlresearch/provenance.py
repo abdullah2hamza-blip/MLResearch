@@ -4,17 +4,52 @@ from __future__ import annotations
 
 import ctypes
 import hashlib
+import importlib
 import importlib.metadata
 import json
+import logging
 import os
 import platform
 import shutil
 import subprocess
 import tempfile
 import zipfile
+from collections.abc import Iterator
+from contextlib import contextmanager
 from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
+
+
+class JsonLogFormatter(logging.Formatter):
+    def format(self, record: logging.LogRecord) -> str:
+        payload = {
+            "recorded_at": datetime.fromtimestamp(record.created, UTC).isoformat(),
+            "level": record.levelname,
+            "logger": record.name,
+            "event": record.getMessage(),
+        }
+        for key in ("seed", "policy", "budget", "spent", "phase"):
+            if hasattr(record, key):
+                payload[key] = getattr(record, key)
+        return json.dumps(payload, sort_keys=True)
+
+
+@contextmanager
+def event_log(path: Path) -> Iterator[None]:
+    logger = logging.getLogger("mlresearch")
+    previous = logger.level
+    with path.open("x", encoding="utf-8", newline="\n") as stream:
+        handler = logging.StreamHandler(stream)
+        handler.setFormatter(JsonLogFormatter())
+        logger.addHandler(handler)
+        logger.setLevel(logging.INFO)
+        try:
+            yield
+        finally:
+            logger.removeHandler(handler)
+            handler.close()
+            logger.setLevel(previous)
 
 
 def utc_now() -> str:
@@ -118,9 +153,11 @@ def resource_record(path: Path) -> dict[str, Any]:
     result: dict[str, Any] = {
         "recorded_at": utc_now(),
         "logical_cpus": os.cpu_count(),
+        "process_id": os.getpid(),
         "disk_total_bytes": disk.total,
         "disk_free_bytes": disk.free,
     }
+    result.update(process_memory_record())
     if os.name == "nt":
 
         class MemoryStatus(ctypes.Structure):
@@ -150,4 +187,56 @@ def resource_record(path: Path) -> dict[str, Any]:
             result["available_ram_bytes"] = sysconf("SC_PAGE_SIZE") * sysconf("SC_AVPHYS_PAGES")
         except (AttributeError, OSError, ValueError):
             result["ram_bytes"] = None
+    return result
+
+
+def process_memory_record() -> dict[str, Any]:
+    """Own-process lifetime peak, including mapped/shared resident pages."""
+    result: dict[str, Any] = {
+        "memory_scope": "Current process; peak is over its lifetime, not a per-case delta."
+    }
+    if os.name == "nt":
+
+        class ProcessMemory(ctypes.Structure):
+            _fields_ = [
+                ("size", ctypes.c_ulong),
+                ("faults", ctypes.c_ulong),
+                *[
+                    (name, ctypes.c_size_t)
+                    for name in (
+                        "peak_working",
+                        "working",
+                        "peak_paged",
+                        "paged",
+                        "peak_nonpaged",
+                        "nonpaged",
+                        "commit",
+                        "peak_commit",
+                    )
+                ],
+            ]
+
+        windows = getattr(ctypes, "windll", None)
+        if windows is None:
+            return result
+        memory = ProcessMemory()
+        memory.size = ctypes.sizeof(memory)
+        windows.kernel32.GetCurrentProcess.restype = ctypes.c_void_p
+        function = windows.psapi.GetProcessMemoryInfo
+        function.argtypes = [ctypes.c_void_p, ctypes.POINTER(ProcessMemory), ctypes.c_ulong]
+        if function(windows.kernel32.GetCurrentProcess(), ctypes.byref(memory), memory.size):
+            result.update(
+                peak_working_set_bytes=memory.peak_working,
+                working_set_bytes=memory.working,
+                peak_commit_bytes=memory.peak_commit,
+            )
+    else:
+        try:
+            usage = importlib.import_module("resource").getrusage(0)
+            if platform.system() == "Linux":
+                result["peak_working_set_bytes"] = int(usage.ru_maxrss) * 1024
+            else:
+                result["peak_resident_set_native_units"] = int(usage.ru_maxrss)
+        except (ImportError, OSError, AttributeError):
+            pass
     return result

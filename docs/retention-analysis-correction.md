@@ -1,0 +1,11 @@
+# Risk-retention analysis correction
+
+October 22, 2026. The four retained pilot bundles were regenerated with analysis version 2. This corrects a descriptive diagnostic; acquisition ledgers, frozen predictions, assessment metrics, primary error areas, paired primary intervals, and assessment noise floors are unchanged. Exact equality of every primary comparison and noise-floor value was checked against the prior retained summaries before replacing reports. [The correction record](evidence/retention-analysis-correction.json) preserves previous and corrected artifact hashes and the new analysis source snapshots. The Git history retains the original reports.
+
+The previous diagnostic sorted `(prediction variance, assessment error)` tuples. Equal variances could therefore be ordered by held-out error, giving the retention rule information unavailable at prediction time. It also removed unsupported queries from the retention denominator and always used fixed ridge, even when the run's primary backbone was `ridge_cv`.
+
+The corrected diagnostic uses stable variance-only ordering, the run's declared primary backbone, and all query/seed observations in its denominator. It reports requested and actual retention separately; unsupported queries cannot be retained by the linear-support rule. A source-stability rule is available for newly recorded flags. Legacy runs do not contain those flags, so their source-stability analysis is explicitly unavailable. Ties retain the saved query order without consulting outcomes.
+
+Newly retained ledgers, scorer-access records, and episode manifests improve auditability where the original local artifacts are available. They include cell identifiers, not cell expression. Run code and analysis code are separate ZIP snapshots; regenerating an analysis does not claim that the updated package generated the original predictions.
+
+The corrected curves remain descriptive and conditional on the original split, acquisition seeds, and assessment/control bank. They do not validate adaptive coverage or account for biological or common-control uncertainty. The primary negative pilot findings in [development findings](development-findings.md) remain unchanged.

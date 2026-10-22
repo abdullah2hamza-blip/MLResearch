@@ -2,7 +2,7 @@ import csv
 import hashlib
 import shutil
 import zipfile
-from dataclasses import asdict
+from dataclasses import asdict, replace
 
 import numpy as np
 import pytest
@@ -104,10 +104,9 @@ def test_sealed_query_and_assessment_control_changes_cannot_change_predictions(t
     banks = read_json(episode / "private-banks.json")
     queries = load_public_episode(episode).query_ids
     matrix = np.load(data / "target/values.npy", mmap_mode="r+")
-    sealed_rows = [
-        row for identity in ["__control__", *queries] for row in banks["assessment_rows"][identity]
-    ]
+    sealed_rows = [row for identity in queries for row in banks["assessment_rows"][identity]]
     matrix[sealed_rows, :] += 500
+    matrix[banks["assessment_rows"]["__control__"], :] -= 300
     matrix.flush()
     del matrix
     refresh_prepared(data / "target")
@@ -127,6 +126,12 @@ def test_sealed_query_and_assessment_control_changes_cannot_change_predictions(t
     assert (first / "seed-0/worst_query/ledger.jsonl").read_text() == (
         second / "seed-0/worst_query/ledger.jsonl"
     ).read_text()
+
+    with (first / "metrics.csv").open(encoding="utf-8") as stream:
+        first_errors = [float(row["mse"]) for row in csv.DictReader(stream)]
+    with (second / "metrics.csv").open(encoding="utf-8") as stream:
+        second_errors = [float(row["mse"]) for row in csv.DictReader(stream)]
+    assert np.mean(second_errors) > np.mean(first_errors) + 10000
 
 
 def test_query_variance_policy_does_not_reward_irrelevant_rank_gain():
@@ -230,3 +235,68 @@ def test_frozen_episode_can_be_relocated_with_its_data(tmp_path):
     shutil.copytree(episode, relocated / "episode")
     result = run_experiment(config(relocated / "episode", relocated / "run", ["worst_query"]))
     assert result["state"] == "complete"
+
+
+def test_variants_preserve_paid_pilot_and_apply_declared_ablations(tmp_path):
+    _, episode = fixture(tmp_path)
+    base = config(episode, tmp_path / "variants")
+    declarations = {
+        "no_discrepancy": {"base": "bias_aware", "overrides": {"discrepancy_weight": 0}},
+        "fixed_controls": {"base": "bias_aware", "overrides": {"allow_controls": False}},
+        "one_depth": {"base": "bias_aware", "overrides": {"allow_depth": False}},
+    }
+    settings = replace(base.policy, ridge_grid=(0.1, 1000, 100000), ridge_include_null=True)
+    result = run_experiment(
+        replace(
+            base, policy=settings, variants=declarations, policies=["worst_query", *declarations]
+        )
+    )
+    root = tmp_path / "variants/seed-0"
+    import json
+    from collections import Counter
+
+    assert (root / "worst_query/ledger.jsonl").read_text() == (
+        root / "no_discrepancy/ledger.jsonl"
+    ).read_text()
+    controls = [
+        json.loads(line) for line in (root / "fixed_controls/ledger.jsonl").read_text().splitlines()
+    ]
+    assert (
+        sum(
+            event["action"]["cells"]
+            for event in controls
+            if event["action"]["intervention"] == "__control__"
+        )
+        == settings.pilot_controls
+    )
+    depth = Counter(
+        json.loads(line)["action"]["intervention"]
+        for line in (root / "one_depth/ledger.jsonl").read_text().splitlines()
+    )
+    assert all(count == 1 for identity, count in depth.items() if identity != "__control__")
+    assert result["policy_specifications"]["fixed_controls"]["settings"]["allow_controls"] is False
+    with pytest.raises(ValueError, match="pilot"):
+        replace(base, variants={"free_pilot": {"overrides": {"pilot_controls": 8}}})
+
+
+def test_partial_blocks_fill_nonmultiple_budgets_without_singleton_new_conditions(tmp_path):
+    _, episode = fixture(tmp_path)
+    base = config(episode, tmp_path / "partial", ["worst_query"])
+    run_experiment(
+        replace(base, budgets=[33, 49], policy=replace(base.policy, partial_blocks=True))
+    )
+    import json
+
+    events = [
+        json.loads(line)
+        for line in (tmp_path / "partial/seed-0/worst_query/ledger.jsonl").read_text().splitlines()
+    ]
+    opened = set()
+    for event in events:
+        identity = event["action"]["intervention"]
+        if identity not in opened:
+            assert event["action"]["cells"] >= 2
+        opened.add(identity)
+    with (tmp_path / "partial/allocations.csv").open(encoding="utf-8") as stream:
+        allocations = list(csv.DictReader(stream))
+    assert [int(row["spent"]) for row in allocations] == [33, 49]

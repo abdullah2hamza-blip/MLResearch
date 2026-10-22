@@ -5,6 +5,7 @@ from __future__ import annotations
 import csv
 import gzip
 import shutil
+import zipfile
 from collections import defaultdict
 from pathlib import Path
 from typing import Any
@@ -19,6 +20,41 @@ from mlresearch.provenance import (
     snapshot_sources,
     write_json,
 )
+
+
+def risk_retention_rows(
+    policy: str, budget: int, backbone: str, values: list[tuple[float, float, bool | None]]
+) -> list[dict[str, Any]]:
+    """Rank by label-free variance only; ties never use observed assessment error."""
+    variance = np.asarray([value[0] for value in values])
+    errors = np.asarray([value[1] for value in values])
+    unstable = np.asarray([value[2] is True for value in values], dtype=bool)
+    result = []
+    criteria = (
+        ("linear_support", "linear_support_and_source_stability")
+        if all(value[2] is not None for value in values)
+        else ("linear_support",)
+    )
+    for criterion in criteria:
+        eligible = np.isfinite(variance) & (~unstable if criterion.endswith("stability") else True)
+        candidates = np.flatnonzero(eligible)
+        order = candidates[np.argsort(variance[candidates], kind="stable")]
+        for requested in (0.25, 0.5, 0.75, 1.0):
+            retained = min(len(order), max(1, int(len(values) * requested)))
+            result.append(
+                {
+                    "policy": policy,
+                    "budget": budget,
+                    "backbone": backbone,
+                    "criterion": criterion,
+                    "requested_retention": requested,
+                    "actual_retention": retained / len(values) if values else 0,
+                    "retained_query_seed_observations": retained,
+                    "total_query_seed_observations": len(values),
+                    "mse": float(errors[order[:retained]].mean()) if retained else None,
+                }
+            )
+    return result
 
 
 def summarize_run(
@@ -45,13 +81,19 @@ def summarize_run(
         raise ValueError("At least two frozen budgets are required for the area endpoint")
     grouped: dict[tuple[str, str, int], list[float]] = defaultdict(list)
     trajectories: dict[tuple[str, str, int, str], dict[int, float]] = defaultdict(dict)
-    risks: dict[tuple[str, int], list[tuple[float, float]]] = defaultdict(list)
+    risks: dict[tuple[str, int], list[tuple[float, float, bool | None]]] = defaultdict(list)
     for row in rows:
         policy, backbone, budget = row["policy"], row["backbone"], int(row["budget"])
         grouped[(policy, backbone, budget)].append(float(row["mse"]))
         trajectories[(policy, backbone, int(row["seed"]), row["query"])][budget] = float(row["mse"])
-        if backbone == "ridge" and row["ideal_variance"]:
-            risks[(policy, budget)].append((float(row["ideal_variance"]), float(row["mse"])))
+        if backbone == manifest["primary_backbone"]:
+            risks[(policy, budget)].append(
+                (
+                    float(row["ideal_variance"]) if row["ideal_variance"] else np.inf,
+                    float(row["mse"]),
+                    row["source_unstable"] == "True" if "source_unstable" in row else None,
+                )
+            )
     curves = [
         {"policy": p, "backbone": b, "budget": n, "mse": float(np.mean(v))}
         for (p, b, n), v in sorted(grouped.items())
@@ -108,17 +150,7 @@ def summarize_run(
         _write_csv(output / "paired-comparisons.csv", comparisons)
     risk_rows = []
     for (policy, budget), values in sorted(risks.items()):
-        ordered = np.asarray(sorted(values))
-        for retention in (0.25, 0.5, 0.75, 1.0):
-            retained = max(1, int(len(ordered) * retention))
-            risk_rows.append(
-                {
-                    "policy": policy,
-                    "budget": budget,
-                    "retention": retention,
-                    "mse": float(ordered[:retained, 1].mean()),
-                }
-            )
+        risk_rows.extend(risk_retention_rows(policy, budget, backbone, values))
     if risk_rows:
         _write_csv(output / "risk-retention.csv", risk_rows)
     import matplotlib
@@ -172,6 +204,7 @@ def summarize_run(
         "guide/batch and common scoring-control uncertainty."
     )
     summary = {
+        "analysis_version": 2,
         "run_manifest_sha256": file_hash(directory / "manifest.json"),
         "comparisons": comparisons,
         "bootstrap_seed": bootstrap_seed,
@@ -180,6 +213,11 @@ def summarize_run(
         "assessment_noise_floor": noise_floor,
         "interpretation": "Lower error area and negative differences favor the named policy.",
         "limitations": manifest["limitations"],
+        "risk_retention_backbone": backbone,
+        "risk_retention_source_stability_available": "source_unstable" in rows[0],
+        "fixed_development_cost_units": manifest.get("fixed_development_resources", {}).get(
+            "unique_resource_cost_units"
+        ),
     }
     write_json(output / "summary.json", summary)
     lines = [
@@ -216,12 +254,30 @@ def summarize_run(
         ]
     )
     (output / "results.md").write_text("\n".join(lines), encoding="utf-8", newline="\n")
-    for name in ("manifest.json", "allocations.csv", "prediction-index.json", "code.zip"):
+    for name in (
+        "manifest.json",
+        "allocations.csv",
+        "prediction-index.json",
+        "code.zip",
+        "assessment-access.json",
+        "source-control.json",
+        "events.jsonl",
+    ):
         if (directory / name).is_file():
             shutil.copyfile(
                 directory / name,
                 output / ("run-manifest.json" if name == "manifest.json" else name),
             )
+    ledgers = sorted(directory.glob("seed-*/*/ledger.jsonl"))
+    if ledgers:
+        with zipfile.ZipFile(
+            output / "acquisition-ledgers.zip", "x", compression=zipfile.ZIP_DEFLATED
+        ) as archive:
+            for ledger in ledgers:
+                archive.write(ledger, ledger.relative_to(directory).as_posix())
+    episode = Path(manifest["configuration"].get("episode_directory", "")) / "manifest.json"
+    if episode.is_file() and file_hash(episode) == manifest.get("episode_manifest_sha256"):
+        shutil.copyfile(episode, output / "episode-manifest.json")
     with (
         (directory / "metrics.csv").open("rb") as source,
         (output / "metrics.csv.gz").open("wb") as sink,
@@ -239,6 +295,8 @@ def summarize_run(
             "analysis_environment": analysis_environment,
             "analysis_source_snapshot": analysis_snapshot,
             "raw_cells_included": False,
+            "cell_expression_included": False,
+            "cell_identifiers_included": bool(ledgers),
             "sha256": {path.name: file_hash(path) for path in output.iterdir() if path.is_file()},
             "large_outputs": (
                 "Raw/prepared cells and prediction arrays remain ignored; "

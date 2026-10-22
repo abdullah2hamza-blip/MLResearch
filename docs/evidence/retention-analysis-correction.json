@@ -1,0 +1,89 @@
+{
+  "analysis_version": 2,
+  "bundles": [
+    {
+      "analysis_source_snapshot": {
+        "path": "analysis-code.zip",
+        "purpose": "Exact package sources plus available project dependency specification.",
+        "sha256": "0e51ebd8caf79daf188eefc4311340c8e1c82bd889712d5fb49ce283dc6bb00b"
+      },
+      "assessment_noise_floor_unchanged": true,
+      "bundle": "synthetic-pilot-v1",
+      "corrected_sha256": {
+        "retained-artifacts.json": "c48ee3beed20b7e7257b6d16b823e33138b4d79db37e1c64d486165602d7c020",
+        "risk-retention.csv": "0d9c9376d7d455d1a1df69202a6e121b26bde0329dfe40771296e1ac3a567f36",
+        "summary.json": "494ec7d95a7abe35442fca3c5ec6aaef9138c4821f57ad0ea589e0e7c7d87396"
+      },
+      "previous_sha256": {
+        "retained-artifacts.json": "b0306713afe18766cc68fb184e55c476a6df8858a09c81a4f9684f87c4eaf652",
+        "risk-retention.csv": "0e5ef4012627e9ccdd6ae39461c93b439bd9cd8b178a4f19a363a81eb69fe103",
+        "summary.json": "558af7ea1057dbf929fd8fdd72fe24e30e78a3e861e08ef79aadfaf99580f89d"
+      },
+      "primary_error_areas_and_paired_intervals_unchanged": true
+    },
+    {
+      "analysis_source_snapshot": {
+        "path": "analysis-code.zip",
+        "purpose": "Exact package sources plus available project dependency specification.",
+        "sha256": "0e51ebd8caf79daf188eefc4311340c8e1c82bd889712d5fb49ce283dc6bb00b"
+      },
+      "assessment_noise_floor_unchanged": true,
+      "bundle": "synthetic-pilot-v2",
+      "corrected_sha256": {
+        "retained-artifacts.json": "af3a36ff409fd4fe69c02664c06ef2e049bd059c4b91810f74cd53cd9108c61e",
+        "risk-retention.csv": "0d9c9376d7d455d1a1df69202a6e121b26bde0329dfe40771296e1ac3a567f36",
+        "summary.json": "d21e9bc73c8d01c27a0050f54c91efb18bb6cef4d4b32e4c741449b59325e063"
+      },
+      "previous_sha256": {
+        "retained-artifacts.json": "7d372057db416725670e62286ba9b68104b1d13d2548e806ab699e6fe95e575b",
+        "risk-retention.csv": "0e5ef4012627e9ccdd6ae39461c93b439bd9cd8b178a4f19a363a81eb69fe103",
+        "summary.json": "29c30a1925f014a07b0c39e9db156b2f292be67e421adb4d8a73e9e2a5a95646"
+      },
+      "primary_error_areas_and_paired_intervals_unchanged": true
+    },
+    {
+      "analysis_source_snapshot": {
+        "path": "analysis-code.zip",
+        "purpose": "Exact package sources plus available project dependency specification.",
+        "sha256": "0e51ebd8caf79daf188eefc4311340c8e1c82bd889712d5fb49ce283dc6bb00b"
+      },
+      "assessment_noise_floor_unchanged": true,
+      "bundle": "frangieh-development-v1",
+      "corrected_sha256": {
+        "retained-artifacts.json": "e0a05f20d68eb67f3fc9f9a16a3e5272ca093210f329dc760abf2271ae5772b9",
+        "risk-retention.csv": "9f6c8cc02fbdd524515b31a0f16425626ffc99edffc15132bf4b3c3e8938019e",
+        "summary.json": "7d301eff6513e6afa5bf986a35097f0c9e421d594aee0ed6a5aa253f714ded54"
+      },
+      "previous_sha256": {
+        "retained-artifacts.json": "abf583639b5af222cdf2e4f59f223ea0ed7612ef8724c7384271bb834dfc4652",
+        "risk-retention.csv": "98416a20601b633ea2bde9229e204011ddc0349b4d6530e7b808fd2f0feffe6b",
+        "summary.json": "27a5787e2ba9c07a0c767e504dff4ffc0d5eca6aafa1f6365b294d9e935f96eb"
+      },
+      "primary_error_areas_and_paired_intervals_unchanged": true
+    },
+    {
+      "analysis_source_snapshot": {
+        "path": "analysis-code.zip",
+        "purpose": "Exact package sources plus available project dependency specification.",
+        "sha256": "0e51ebd8caf79daf188eefc4311340c8e1c82bd889712d5fb49ce283dc6bb00b"
+      },
+      "assessment_noise_floor_unchanged": true,
+      "bundle": "frangieh-development-v2",
+      "corrected_sha256": {
+        "retained-artifacts.json": "6e46dc5e9819a28694f77edc41e0539d4cedc729db8e4d9e50d34f37668ebbbf",
+        "risk-retention.csv": "17ba3e430c30df57d2eefd47858947aac42c779a42ef412a9ffbdf347f0e7aea",
+        "summary.json": "73eb7c46d0d1fbee229101b37a4470bf4f4d1c4625ad074b42c79f097e2d436f"
+      },
+      "previous_sha256": {
+        "retained-artifacts.json": "58595ce8f345e256e615adaeef679d3762e311ebda6360e9262ccb881dd378fe",
+        "risk-retention.csv": "b94bd588a5fe3bca5e6cd5e7a10dfd44b2eed566a1632e3883eaa48d7e8267e8",
+        "summary.json": "255542b1f28db5913a4dab8964c882d46764da8f7d236d9738e1e84ad55cc16b"
+      },
+      "primary_error_areas_and_paired_intervals_unchanged": true
+    }
+  ],
+  "correction": "Stable variance-only ordering; full query-seed denominator; explicitly declared primary backbone. Legacy absent source-stability flags are reported unavailable. Additional ledger/access/split manifests are retained where available.",
+  "reason": "Legacy diagnostic sorted (variance, assessment error) tuples, which could use assessment outcomes to break variance ties; it also removed unsupported queries from the retention denominator and always used the fixed-ridge backbone.",
+  "recorded_date": "2026-10-22",
+  "scope": "Descriptive risk-retention diagnostics only; original acquisition and predictions unchanged."
+}

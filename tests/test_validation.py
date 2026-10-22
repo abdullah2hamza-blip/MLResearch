@@ -3,6 +3,14 @@ import numpy as np
 from mlresearch.models import ridge_validation_scores
 
 
+def test_null_candidate_uses_only_paid_risk_and_is_explicitly_indexed():
+    x = np.column_stack([np.ones(4), np.arange(4)])
+    effects = np.zeros((4, 12))
+    scores = ridge_validation_scores(x, effects, np.ones(4), 0.5, (0.1, 1000), include_null=True)
+    assert scores[-1] == -1.5
+    assert np.argmin(scores) == 2
+
+
 def test_shared_control_correction_matches_true_risk_in_independent_monte_carlo():
     rng = np.random.default_rng(90)
     x = np.column_stack([np.ones(6), np.linspace(-1, 1, 6)])

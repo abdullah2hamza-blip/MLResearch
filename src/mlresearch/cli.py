@@ -10,7 +10,7 @@ from pathlib import Path
 from typing import Any
 
 from mlresearch import __version__
-from mlresearch.provenance import environment_record, resource_record, write_json
+from mlresearch.provenance import JsonLogFormatter, environment_record, resource_record, write_json
 
 
 def emit(value: Any, output: Path | None) -> None:
@@ -42,6 +42,15 @@ def parser() -> argparse.ArgumentParser:
     report = commands.add_parser("report", help="Create standalone replay plots and tables")
     report.add_argument("run_directory", type=Path)
     report.add_argument("--output", type=Path, required=True)
+    simulate = commands.add_parser(
+        "simulate", help="Generate a configured offline source/recipient dataset"
+    )
+    simulate.add_argument("config", type=Path)
+    simulate.add_argument("--directory", type=Path, required=True)
+    study = commands.add_parser(
+        "study", help="Run a frozen controlled simulation study with bounded workers"
+    )
+    study.add_argument("config", type=Path)
     data = commands.add_parser("data", help="Pinned public data acquisition and inspection")
     operations = data.add_subparsers(dest="operation", required=True)
     operations.add_parser("list", help="List the pinned public dataset registry")
@@ -66,7 +75,9 @@ def parser() -> argparse.ArgumentParser:
 
 def main(argv: list[str] | None = None) -> None:
     arguments = parser().parse_args(argv)
-    logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
+    handler = logging.StreamHandler()
+    handler.setFormatter(JsonLogFormatter())
+    logging.basicConfig(level=logging.INFO, handlers=[handler])
     try:
         if arguments.command == "resources":
             emit(resource_record(Path.cwd()), arguments.output)
@@ -90,6 +101,29 @@ def main(argv: list[str] | None = None) -> None:
             from mlresearch.report import summarize_run
 
             emit(summarize_run(arguments.run_directory, arguments.output), None)
+        elif arguments.command == "simulate":
+            from mlresearch.provenance import read_json
+            from mlresearch.simulation import SimulationConfig, make_simulation
+
+            try:
+                simulation = SimulationConfig(**read_json(arguments.config))
+            except TypeError as error:
+                raise ValueError(f"Invalid simulation configuration: {error}") from error
+            emit(make_simulation(arguments.directory, simulation), None)
+        elif arguments.command == "study":
+            from mlresearch.study import StudyConfig, run_study
+
+            config_study = StudyConfig.load(arguments.config)
+            result = run_study(config_study)
+            emit(
+                {
+                    "manifest": str(Path(config_study.output_directory) / "manifest.json"),
+                    "state": result["state"],
+                    "cases": len(result["cases"]),
+                    "runtime_seconds": result["runtime_seconds"],
+                },
+                None,
+            )
         elif arguments.command == "data":
             from mlresearch.data import audit_h5ad, datasets, fetch_dataset
 

@@ -29,6 +29,8 @@ The high-novelty hypothesis is that **jointly selecting calibration intervention
 | [Milestone status](implementation-status.md) | Completed evidence and outstanding requirements. |
 | [Implemented methods](implemented-methods.md) | Actual algorithms, paid validation, assumptions and approximations. |
 | [Pilot protocol](pilot-protocol.md) | Settings frozen before the first real-data policy scoring. |
+| [Controlled simulation protocol](controlled-study-protocol.md) | Frozen scenario matrix, paired replication, matched ablations and oracle diagnostics. |
+| [Risk-retention correction](retention-analysis-correction.md) | Corrected diagnostic ordering and denominators; unchanged primary pilot findings. |
 | [Development findings](development-findings.md) | Actual results, zero baseline, allocation evidence and negative findings. |
 | [External data compatibility](external-data-compatibility.md) | Target-ID checks, protocol differences, attribution and limits. |
 | [Technical notes](technical-notes.md) | Identifiability argument, shared-control covariance, and a reproducible toy calculation. |
