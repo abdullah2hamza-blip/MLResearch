@@ -35,6 +35,14 @@ def parser() -> argparse.ArgumentParser:
         "run", help="Acquire, freeze predictions, then score a configured replay"
     )
     run.add_argument("config", type=Path)
+    external = commands.add_parser(
+        "external", help="Acquire all declared runs, jointly freeze, then score"
+    )
+    external.add_argument("config", type=Path)
+    score_external = commands.add_parser(
+        "score-external", help="Resume scoring an authenticated joint freeze"
+    )
+    score_external.add_argument("suite_directory", type=Path)
     demo = commands.add_parser("demo", help="Run a small offline synthetic experiment")
     demo.add_argument("--directory", type=Path, required=True)
     demo.add_argument("--seed", type=int, default=71)
@@ -106,6 +114,15 @@ def main(argv: list[str] | None = None) -> None:
             from mlresearch.experiment import RunConfig, run_experiment
 
             emit(run_experiment(RunConfig.load(arguments.config)), None)
+        elif arguments.command in ("external", "score-external"):
+            from mlresearch.external import ExternalConfig, run_suite, score_suite
+
+            completed = (
+                run_suite(ExternalConfig.load(arguments.config))
+                if arguments.command == "external"
+                else score_suite(arguments.suite_directory)
+            )
+            emit({key: completed[key] for key in ("state", "configuration_sha256")}, None)
         elif arguments.command == "demo":
             from mlresearch.simulation import run_demo
 

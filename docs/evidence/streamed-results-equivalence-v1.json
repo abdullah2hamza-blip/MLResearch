@@ -1,0 +1,57 @@
+{
+  "byte_identical_outputs": {
+    "acquisition-curves.png": "eb82deb0dc3b7cd54ab2618d77da833b3e66fd217a02c2a050387130386162bd",
+    "areas-by-query-seed.csv": "436d7a82c898e95cb2924019e2e33f30dec677f1d2a6f1a9266629315e73328c",
+    "curves.csv": "a7271640fc8edd4157b0f5ff01f5ac5b34f455b7cc71cae9a278c4f298f370f5",
+    "metrics.csv": "a29cc49ba790018fa7ee95ae094aa072e64f6548514c3df2b1844a27d4b219a3",
+    "paired-comparisons.csv": "8b79b2fc3ace6b3c4e37aadf1c785ac12be3a2bdbd9a359f4fba30dfb1748e87",
+    "predictor-curves.png": "708bd1006c31e4f142e4cd780790f211848de8ce6a8caa2d9e04bccfd8d36db7",
+    "risk-retention.csv": "1d535a8785e7a6c03e526ad5eb3016460cd6f76c404ad6e63b77e27dd4dd439e"
+  },
+  "environment": {
+    "git": {
+      "revision": "ba5dc96aa44e41ecc046bd33a78a015f4e13167b",
+      "status": "M .github/workflows/checks.yml\n M src/mlresearch/cli.py\n M src/mlresearch/experiment.py\n M src/mlresearch/report.py"
+    },
+    "packages": {
+      "h5py": "3.16.0",
+      "matplotlib": "3.11.2",
+      "mlresearch": "0.1.0",
+      "numpy": "2.5.4",
+      "pytest": "9.1.1",
+      "scipy": "1.18.1"
+    },
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.14",
+    "recorded_at": "2026-10-22T12:31:11.938380+00:00",
+    "source_hashes": {
+      "__init__.py": "bb8543f534bc0779c941e08d8786d17c10a58bfc43e97e080422afc3757c8eb0",
+      "__main__.py": "27503438dec93a74b0ebe814fc619333accf571b77f73344c6252c94b0b5d8b3",
+      "accounting.py": "8ed6d877678a1de2f8b0b6e7c0a471126cc3348c21f852f50caa7d17b1de40f8",
+      "acquisition.py": "52e82caa4c80dd4e577bb2e90cdaca52caf35fc8c97000e529161c21596be19d",
+      "cli.py": "6c3dd5025df8fdf80da117f6129bf36e3bbb87d0304589ea3b678ddd7d272f97",
+      "controls.py": "458f52e5886f97eed105e2c56701b51d2a26c080043b60ad8c39e9f6e9d24297",
+      "data.py": "ac2e62e8a74960d279f681cd4983d5a2f42f3cf13c8b8fde1887fc6265953789",
+      "datasets.json": "e90daa691730f09ba8885f1777ed5ae379f075d010a1dc3093c23272865e8881",
+      "design.py": "e83d39a64f0336ba7c5bf97deb997c68db3c72b3c09adf178a71b5d210d055e5",
+      "episodes.py": "62f0ee1615fcd268aec088a83e34c0744b981523a74f58fc34a7fb3a110328c6",
+      "experiment.py": "62caf7bff0edf14dd6e59d65a43198c7f34f72ade9c20df6e9faa2c7bdd6c6ef",
+      "external.py": "264b6312dda17caed78ba4e608f301ecaad034311189ee5c33597446fdd42a68",
+      "identifiers.py": "d0010bfbab280eabda82e43a5d286b3bc6a4c105a344102798ff1dcd97ccb2de",
+      "linear.py": "614d58fc6e8280e6559eb41e1d015723763ebb1db2469b5a7fe5a3ccb270566f",
+      "models.py": "5592d6c632bc9b9d6a47d1a1cf699a7fadc48c66fdba0a69c5e11eaa1230e8de",
+      "policies.py": "2ccb2f39cb78fafa6a3b452f0f76d4913e1660847cabb287ea382a69a01980fa",
+      "prepare.py": "ee8db1f477dc3185104013f08358682b6255c479226a3935acc17614eb5bf75e",
+      "provenance.py": "599e5f4b17cd39c44be9a7ddd27df89172ac3d3f6eca7a76b311cfea7c96a7e4",
+      "report.py": "1d370344507b9c5c668dcd61161df884a82ab3f91eeea4fa3bd71ef4f19b9f1c",
+      "simulation.py": "eaa3ff0c98f8f9970c7e7c9a6ee75d9fba37326187fb5932ab7a9a5cb0aa0076",
+      "study.py": "514dea833445eee09a3795c5796bd729f67893d54a1b28da5128087c1fe97708",
+      "transfer.py": "1f57c328560f3c5c08c978387fd62c865992816d5e3d962e239bdc40e0dbe20d",
+      "uncertainty.py": "f7fa9518a0636c7492eabe8e4bb6a6be317bc08158546f9fe0270b030ca35f73"
+    },
+    "source_tree_sha256": "5df3ead591e659904efc40a4bce1bf977dccca9919c2f1fea370d2f2b4c2c696"
+  },
+  "qualification": "Bounded offline replay verifies unchanged metrics, derived tables and rendered PNGs; source/provenance snapshots differ by design.",
+  "scientific_summary_identical": true,
+  "state": "passed"
+}

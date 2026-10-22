@@ -44,7 +44,7 @@ Indexed primary methods describe Bayesian optimization of donor, cell-type, and 
 
 Huang, Lopez, Hütter, Kudo, Rios, and Regev, **Sequential Optimal Experimental Design of Perturbation Screens Guided by Multi-modal Priors**. Preprint posted December 13, 2023, DOI [10.1101/2023.12.12.571389](https://www.biorxiv.org/content/10.1101/2023.12.12.571389v1); the [RECOMB 2024 proceedings](https://link.springer.com/book/10.1007/978-1-0716-3989-4) list the chapter. An [author publication page](https://biologicalml.org/publication/iterpert-recomb/) corroborates the authors and venue; [author code](https://github.com/Genentech/iterative-perturb-seq) is linked publicly.
 
-Its acquisition objective improves predictions for remaining unprofiled perturbations using multimodal priors. This is closer to the proposal than a pure hit-discovery baseline. **Prediction-directed acquisition is therefore already occupied.** An adaptation must be labeled as such when its feature inputs, predictor, or budget interface differ. Cross-context transfer and joint cell/control allocation require separate evidence.
+Its acquisition objective improves predictions for remaining unprofiled perturbations using multimodal priors. This is closer to the proposal than a pure hit-discovery baseline. **Prediction-directed acquisition is therefore already occupied.** The later author-code audit below also verifies an RPE1 prior in K562 acquisition. An adaptation must be labeled as such when its feature inputs, predictor, or budget interface differ; cross-context priors alone cannot support priority.
 
 ## Missing predecessor: PerturbPlan
 
@@ -71,3 +71,21 @@ The directly inspected [author app documentation](https://katsevich-lab.github.i
 **No contradiction found** in the inspected PerturbMap metadata or the dossier's narrow description of its reliability gate. **Stale uncertainty corrected:** both OpenReview paper identities can now be named; only their complete method inspection remains unresolved. Avoid upgrading workshop work to main-conference acceptance based on a PDF header.
 
 The implementation can proceed while keeping novelty provisional. No positive result or publication-priority conclusion follows from this literature audit.
+
+## Follow-up method-interface audit, October 22, 2026
+
+A bounded independent review was checked against the primary sources before external scoring. PerturbPlan's complete [PMC manuscript](https://pmc.ncbi.nlm.nih.gov/articles/PMC13228452/) is now accessible and explicitly remains a May 23, 2026 preprint. Its Methods specify reference UMI/read information, assumed effect sizes, guide variability and non-null proportion. It computes power for perturbation–expression associations and jointly searches cells per target and reads per cell under cost/power constraints. Expected treatment and control counts enter the calculation. The listed optimization problems do not establish an adaptive shared-control acquisition policy for sealed response prediction. This is a narrower, inspected-interface distinction, not an absence claim about all related work.
+
+| Dimension | Inspected IterPert interface | Inspected PerturbPlan interface |
+| --- | --- | --- |
+| Objective | Sequential acquisition to improve unseen-perturbation prediction | Association-testing power and cost-constrained screen planning |
+| Information | Acquired recipient profiles and model-derived/multimodal prior features | Reference expression/read information plus assumed alternatives |
+| Query boundary | Held-out perturbations are separate from the acquisition pool | Association pairs and testing targets; a different estimand |
+| Acquisition unit | Newly selected interventions per round | Cells per target and reads per cell in a prospective design grid |
+| Controls | No adaptive control-depth interface verified | Non-targeting-guide count and control-group type are explicit inputs |
+
+The [author IterPert API](https://raw.githubusercontent.com/Genentech/iterative-perturb-seq/master/iterpert/iterpert.py), inspected at `initialize_active_learning_strategy` and `start`, includes `rpe1_kernel` for K562-essential acquisition and maximum-distance selection with prior/model integration. Its round budget counts interventions; training-loader batch size is not measurement depth. The [data implementation](https://raw.githubusercontent.com/Genentech/iterative-perturb-seq/master/iterpert/data_pert.py) separates held-out identities and splits acquired identities into training/validation. The [selection implementation](https://raw.githubusercontent.com/Genentech/iterative-perturb-seq/master/iterpert/query_strategies/kernel_based_active_learning.py) passes pool/train features to batch selection. These author-code observations do not constitute verification of inaccessible manuscript details or reproduction of its reported performance.
+
+The [PerturbPlan cost API](https://katsevich-lab.github.io/perturbplan/reference/cost_power_computation.html) confirms cell/read grid variables, explicit control choices, and library/sequencing cost components. Our replay neither measures reads per cell nor establishes prospective association-testing power, so an error-area comparison cannot be labeled a PerturbPlan reproduction.
+
+Consequently, this project makes no first-use claim for prediction-directed acquisition, cross-context priors, cell-depth planning or control-aware design. Its fixed-query joint acquisition interface remains a specified empirical question whose classical components receive attribution. Source-only diversity/disagreement are adaptations under matched inputs, not IterPert reproductions. The reconstructed transfer comparator retains its own fidelity limitations. A negative cost-matched study remains a valid result without a priority claim; inaccessible CausalPert/multiaxis full methods remain explicit limitations.

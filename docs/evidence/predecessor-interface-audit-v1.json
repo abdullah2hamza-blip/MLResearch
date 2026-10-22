@@ -1,0 +1,28 @@
+{
+  "checked_at": "2026-10-22T12:33:55.998211+00:00",
+  "claim_restrictions": [
+    "No priority claim for prediction-directed acquisition or cross-context priors",
+    "No priority claim for cell/control-aware design",
+    "Neither this diversity baseline nor the response-error endpoint reproduces either original method"
+  ],
+  "confirmed": [
+    "PerturbPlan full manuscript accessible and explicitly preprint",
+    "PerturbPlan optimizes cells/read depth for association power with treatment/control count formulas",
+    "IterPert K562-essential public API includes an RPE1 prior kernel",
+    "IterPert API acquisition budget counts interventions; held-out identities are separated from pool"
+  ],
+  "experiment_data_accessed": false,
+  "limits": [
+    "IterPert full bioRxiv manuscript access remained restricted in the independent review",
+    "Author master-branch interfaces are inspected versions, not pinned executable dependencies",
+    "Unresolved complete CausalPert/multiaxis methods remain documented claim limitations"
+  ],
+  "review": "Bounded read-only independent audit, followed by primary-source inspection by the integrating agent",
+  "sources": {
+    "iterpert_api": "https://raw.githubusercontent.com/Genentech/iterative-perturb-seq/master/iterpert/iterpert.py",
+    "iterpert_data": "https://raw.githubusercontent.com/Genentech/iterative-perturb-seq/master/iterpert/data_pert.py",
+    "iterpert_selection": "https://raw.githubusercontent.com/Genentech/iterative-perturb-seq/master/iterpert/query_strategies/kernel_based_active_learning.py",
+    "perturbplan_api": "https://katsevich-lab.github.io/perturbplan/reference/cost_power_computation.html",
+    "perturbplan_full": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13228452/"
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "evidence_files": [],
+  "output_directory": ".cache/external-smoke-suite",
+  "runs": [
+    {
+      "budgets": [
+        96,
+        144
+      ],
+      "defer_assessment": true,
+      "development_resource_record": null,
+      "episode_directory": ".cache/offline-demo/episode",
+      "identifier_record": null,
+      "label": "Offline joint-freeze smoke",
+      "output_directory": ".cache/external-smoke-first",
+      "policies": [
+        "worst_query",
+        "bias_aware"
+      ],
+      "policy": {
+        "allow_controls": true,
+        "allow_depth": true,
+        "allow_opening": true,
+        "block_cells": 8,
+        "cell_cost": 1,
+        "control_cell_cost": 1,
+        "discrepancy_weight": 0.25,
+        "fixed_control_fraction": 0.25,
+        "fixed_depth": 8,
+        "identity_selection": "adaptive",
+        "kernel_length": 1.0,
+        "partial_blocks": false,
+        "pilot_cells": null,
+        "pilot_controls": 16,
+        "pilot_interventions": 6,
+        "rank": 3,
+        "ridge": 0.1,
+        "ridge_grid": [
+          0.1,
+          1.0,
+          10.0,
+          100.0,
+          1000.0
+        ],
+        "ridge_include_null": false,
+        "setup_cost": 4,
+        "shared_covariance": true,
+        "variance_prior": "source"
+      },
+      "primary_backbone": "ridge_cv",
+      "seeds": [
+        0
+      ],
+      "source_control": "none",
+      "source_control_seed": 20261022,
+      "source_sensitivity": true,
+      "transfer": {
+        "anchors": 4,
+        "batch_size": 16,
+        "epochs_per_round": 3,
+        "hidden": 8,
+        "learning_rate": 0.001,
+        "max_rounds": 3,
+        "model_seed": 20261022,
+        "patience": 2,
+        "rank": 3,
+        "ridge_grid": [
+          0.001,
+          0.01,
+          0.1,
+          1.0,
+          10.0
+        ],
+        "split_seed": 20260718,
+        "validation_fraction": 0.2,
+        "weight_decay": 0.0001
+      },
+      "variants": {}
+    },
+    {
+      "budgets": [
+        96,
+        144
+      ],
+      "defer_assessment": true,
+      "development_resource_record": null,
+      "episode_directory": ".cache/offline-demo/episode",
+      "identifier_record": null,
+      "label": "Offline joint-freeze smoke",
+      "output_directory": ".cache/external-smoke-second",
+      "policies": [
+        "worst_query",
+        "bias_aware"
+      ],
+      "policy": {
+        "allow_controls": true,
+        "allow_depth": true,
+        "allow_opening": true,
+        "block_cells": 8,
+        "cell_cost": 1,
+        "control_cell_cost": 1,
+        "discrepancy_weight": 0.25,
+        "fixed_control_fraction": 0.25,
+        "fixed_depth": 8,
+        "identity_selection": "adaptive",
+        "kernel_length": 1.0,
+        "partial_blocks": false,
+        "pilot_cells": null,
+        "pilot_controls": 16,
+        "pilot_interventions": 6,
+        "rank": 3,
+        "ridge": 0.1,
+        "ridge_grid": [
+          0.1,
+          1.0,
+          10.0,
+          100.0,
+          1000.0
+        ],
+        "ridge_include_null": false,
+        "setup_cost": 4,
+        "shared_covariance": true,
+        "variance_prior": "source"
+      },
+      "primary_backbone": "ridge_cv",
+      "seeds": [
+        0
+      ],
+      "source_control": "none",
+      "source_control_seed": 20261022,
+      "source_sensitivity": true,
+      "transfer": {
+        "anchors": 4,
+        "batch_size": 16,
+        "epochs_per_round": 3,
+        "hidden": 8,
+        "learning_rate": 0.001,
+        "max_rounds": 3,
+        "model_seed": 20261022,
+        "patience": 2,
+        "rank": 3,
+        "ridge_grid": [
+          0.001,
+          0.01,
+          0.1,
+          1.0,
+          10.0
+        ],
+        "split_seed": 20260718,
+        "validation_fraction": 0.2,
+        "weight_decay": 0.0001
+      },
+      "variants": {}
+    }
+  ]
+}

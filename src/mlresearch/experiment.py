@@ -3,8 +3,11 @@
 from __future__ import annotations
 
 import csv
+import hashlib
+import json
 import logging
 import time
+from collections.abc import Iterable, Iterator
 from dataclasses import asdict, dataclass, field
 from pathlib import Path
 from typing import Any
@@ -13,7 +16,8 @@ import numpy as np
 
 from mlresearch.acquisition import CONTROL, AcquisitionService, IndexedCellPool, Pool, verify_ledger
 from mlresearch.controls import SOURCE_CONTROLS, transform_source
-from mlresearch.episodes import load_prepared, load_public_episode
+from mlresearch.episodes import PublicEpisode, load_prepared, load_public_episode
+from mlresearch.identifiers import verify_identifier_record
 from mlresearch.models import (
     BACKBONES,
     BASE_BACKBONES,
@@ -53,10 +57,14 @@ class RunConfig:
     development_resource_record: str | None = None
     transfer: TransferConfig | None = None
     source_sensitivity: bool = False
+    defer_assessment: bool = False
+    identifier_record: str | None = None
 
     def __post_init__(self) -> None:
         if not isinstance(self.source_sensitivity, bool):
             raise ValueError("source_sensitivity must be boolean")
+        if not isinstance(self.defer_assessment, bool):
+            raise ValueError("defer_assessment must be boolean")
         if self.source_control not in SOURCE_CONTROLS:
             raise ValueError("Unknown source-information control")
         if (
@@ -133,7 +141,11 @@ class RunConfig:
 
     @classmethod
     def load(cls, path: Path) -> RunConfig:
-        value = read_json(path)
+        return cls.from_dict(read_json(path))
+
+    @classmethod
+    def from_dict(cls, declaration: dict[str, Any]) -> RunConfig:
+        value = dict(declaration)
         try:
             value["policy"] = PolicyConfig(**value.get("policy", {}))
             if value.get("transfer") is not None:
@@ -143,13 +155,16 @@ class RunConfig:
             raise ValueError(f"Invalid run configuration: {error}") from error
 
 
-def _write_csv(path: Path, rows: list[dict[str, Any]]) -> None:
-    if not rows:
+def _write_csv(path: Path, rows: Iterable[dict[str, Any]]) -> None:
+    iterator = iter(rows)
+    first = next(iterator, None)
+    if first is None:
         raise ValueError("Cannot write an empty results table")
     with path.open("w", newline="", encoding="utf-8") as stream:
-        writer = csv.DictWriter(stream, fieldnames=list(rows[0]), lineterminator="\n")
+        writer = csv.DictWriter(stream, fieldnames=list(first), lineterminator="\n")
         writer.writeheader()
-        writer.writerows(rows)
+        writer.writerow(first)
+        writer.writerows(iterator)
 
 
 def _assessment(
@@ -224,6 +239,16 @@ def _run_experiment(config: RunConfig) -> dict[str, Any]:
         target_path = episode / target_path
     target_metadata, target_values, target_manifest = load_prepared(target_path)
     episode_manifest = read_json(episode / "manifest.json")
+    identifiers = (
+        verify_identifier_record(
+            public,
+            episode_manifest,
+            Path(config.identifier_record),
+            episode_sha256=file_hash(episode / "manifest.json"),
+        )
+        if config.identifier_record is not None
+        else None
+    )
     if target_manifest != episode_manifest["prepared_inputs"]["target"]:
         raise ValueError("Target preparation manifest changed after episode freezing")
     if set(banks["acquisition_rows"]) != {CONTROL, *public.candidate_ids}:
@@ -282,6 +307,7 @@ def _run_experiment(config: RunConfig) -> dict[str, Any]:
             for name in config.policies
         },
         "primary_comparator": "worst_query",
+        "canonical_identifier_audit": identifiers,
         "primary_backbone": config.primary_backbone,
         "primary_endpoint": (
             "Mean full aligned-gene squared control-relative error; trapezoidal area "
@@ -411,97 +437,228 @@ def _run_experiment(config: RunConfig) -> dict[str, Any]:
         raise ValueError(
             "Package sources changed during acquisition; predictions retained, scoring refused"
         )
+    manifest["acquisition_runtime_seconds"] = time.perf_counter() - started
+    manifest["acquisition_resources_end"] = resource_record(output)
+    manifest["predictions_frozen_at"] = utc_now()
+    manifest["source_coordinates"] = {
+        "rank": coordinates.rank,
+        "explained_fraction": coordinates.explained_fraction,
+        "source_half_noise": coordinates.source_half_noise,
+    }
+    write_json(output / "manifest.json", manifest)
+    if config.defer_assessment:
+        return manifest
+    return _score_experiment(output, manifest, public, banks, target_values)
+
+
+def verify_frozen_predictions(
+    output: Path, manifest: dict[str, Any], public: PublicEpisode
+) -> list[dict[str, Any]]:
+    """Authenticate all checkpoints and their complete paid ledger before scoring."""
+    if object_hash(manifest["configuration"]) != manifest["configuration_sha256"]:
+        raise ValueError("Frozen configuration changed")
+    if environment_record()["source_tree_sha256"] != manifest["environment"]["source_tree_sha256"]:
+        raise ValueError("Package sources changed after acquisition")
+    index = output / "prediction-index.json"
+    if file_hash(index) != manifest["predictions_sha256"]:
+        raise ValueError("Prediction index changed")
+    predictions = read_json(index)
+    config = RunConfig.from_dict(manifest["configuration"])
+    by_key = {(i["policy"], i["seed"], i["budget"]): i for i in predictions}
+    expected = {(p, s, b) for p in config.policies for s in config.seeds for b in config.budgets}
+    if len(by_key) != len(predictions) or set(by_key) != expected:
+        raise ValueError("Prediction index must contain every configured checkpoint once")
+    for policy in config.policies:
+        for seed in config.seeds:
+            directory = output / f"seed-{seed}" / policy
+            lines = (directory / "ledger.jsonl").read_bytes().splitlines(keepends=True)
+            events = [json.loads(line) for line in lines]
+            verify_ledger(
+                events,
+                budget=config.budgets[-1],
+                query_ids=public.query_ids,
+                setup_cost=config.policy.setup_cost,
+                cell_cost=config.policy.cell_cost,
+                control_cell_cost=config.policy.control_cell_cost,
+            )
+            for budget in config.budgets:
+                item = by_key[policy, seed, budget]
+                count = item["ledger_events"]
+                if (
+                    isinstance(count, bool)
+                    or not isinstance(count, int)
+                    or not 1 <= count <= len(events)
+                ):
+                    raise ValueError("Invalid frozen ledger prefix length")
+                if (
+                    events[count - 1]["spent"] != item["spent"]
+                    or item["spent"] > budget
+                    or hashlib.sha256(b"".join(lines[:count])).hexdigest() != item["ledger_sha256"]
+                ):
+                    raise ValueError("Frozen ledger prefix changed")
+                relative = Path(f"seed-{seed}") / policy / f"budget-{budget}.npz"
+                if (
+                    Path(item["artifact"]) != relative
+                    or file_hash(output / relative) != item["sha256"]
+                ):
+                    raise ValueError("A frozen prediction artifact changed")
+            if by_key[policy, seed, config.budgets[-1]]["ledger_events"] != len(events):
+                raise ValueError("Final ledger differs from frozen predictions")
+    return predictions
+
+
+def score_frozen_experiment(output: Path, gate: Path) -> dict[str, Any]:
+    """Resume only after a validated joint prediction freeze; never acquire labels."""
+    started = time.perf_counter()
+    from mlresearch.external import validate_joint_freeze
+
+    freeze = validate_joint_freeze(gate)
+    if str(output.resolve()) not in {item["run_directory"] for item in freeze["runs"]}:
+        raise ValueError("Run is not a member of this joint freeze")
+    manifest = read_json(output / "manifest.json")
+    if (
+        manifest["state"] != "predictions_frozen"
+        or not manifest["configuration"]["defer_assessment"]
+    ):
+        raise ValueError("Only an unscored deferred run can resume scoring")
+    config = RunConfig.from_dict(manifest["configuration"])
+    episode = Path(config.episode_directory)
+    if file_hash(episode / "manifest.json") != manifest["episode_manifest_sha256"]:
+        raise ValueError("Frozen episode changed")
+    public = load_public_episode(episode)
+    public, source_control = transform_source(
+        public, config.source_control, config.source_control_seed
+    )
+    if source_control != manifest["source_control"]:
+        raise ValueError("Frozen source-information control changed")
+    banks = read_json(episode / "private-banks.json")
+    prepared = Path(banks["target_prepared"])
+    if not prepared.is_absolute():
+        prepared = episode / prepared
+    metadata, values, prepared_manifest = load_prepared(prepared)
+    if prepared_manifest != read_json(episode / "manifest.json")["prepared_inputs"]["target"]:
+        raise ValueError("Target preparation changed")
+    for identity, rows in banks["assessment_rows"].items():
+        if [metadata["cell_ids"][row] for row in rows] != banks["assessment_cell_ids"][identity]:
+            raise ValueError("Scorer row identifiers changed")
+    binding = {
+        "gate": str(gate.resolve()),
+        "sha256": file_hash(gate),
+        "all_predictions_frozen_at": freeze["frozen_at"],
+        "runs": len(freeze["runs"]),
+    }
+    return _score_experiment(
+        output, manifest, public, banks, values, scoring_started=started, joint_gate=binding
+    )
+
+
+def _score_experiment(
+    output: Path,
+    manifest: dict[str, Any],
+    public: PublicEpisode,
+    banks: dict[str, Any],
+    target_values: np.ndarray,
+    *,
+    scoring_started: float | None = None,
+    joint_gate: dict[str, Any] | None = None,
+) -> dict[str, Any]:
+    started = time.perf_counter() if scoring_started is None else scoring_started
+    config = RunConfig.from_dict(manifest["configuration"])
+    predictions = verify_frozen_predictions(output, manifest, public)
+    development = manifest["fixed_development_resources"]
     effects, noise, access = _assessment(target_values, banks, public.query_ids)
     manifest["scorer_only_assessment_cells"] = access["resource_cells"]
+    if joint_gate is not None:
+        access["joint_prediction_freeze"] = joint_gate
+        manifest["joint_prediction_freeze"] = joint_gate
     access["prediction_index_sha256_before_opening"] = manifest["predictions_sha256"]
     write_json(output / "assessment-access.json", access)
     np.savez(output / "assessment.npz", effects=effects, mean_noise_variance=noise)
     source = public.source_effects[[public.index(key) for key in public.query_ids]]
     source_norm = np.mean(source**2, axis=1)
     median_signal = float(np.median(source_norm))
-    rows: list[dict[str, Any]] = []
-    for item in predictions:
-        artifact = output / item["artifact"]
-        if file_hash(artifact) != item["sha256"]:
-            raise ValueError("A prediction artifact changed before scoring")
-        with np.load(artifact, allow_pickle=False) as arrays:
-            for backbone in BACKBONES:
-                if backbone not in arrays:
-                    continue
-                estimated = arrays[backbone]
-                errors = np.mean((estimated - effects) ** 2, axis=1)
-                specificity = np.mean(
-                    ((estimated - estimated.mean(axis=0)) - (effects - effects.mean(axis=0))) ** 2,
-                    axis=1,
-                )
-                ideal_variance = arrays["ideal_variance"]
-                for index, identity in enumerate(public.query_ids):
-                    variance = float(ideal_variance[index])
-                    width = 1.96 * np.sqrt(variance + noise[index])
-                    coverage = (
-                        float(np.mean(np.abs(estimated[index] - effects[index]) <= width))
-                        if backbone == "ridge" and np.isfinite(variance)
-                        else None
+
+    def metric_rows() -> Iterator[dict[str, Any]]:
+        for item in predictions:
+            artifact = output / item["artifact"]
+            if file_hash(artifact) != item["sha256"]:
+                raise ValueError("A prediction artifact changed before scoring")
+            with np.load(artifact, allow_pickle=False) as arrays:
+                for backbone in BACKBONES:
+                    if backbone not in arrays:
+                        continue
+                    estimated = arrays[backbone]
+                    errors = np.mean((estimated - effects) ** 2, axis=1)
+                    specificity = np.mean(
+                        ((estimated - estimated.mean(axis=0)) - (effects - effects.mean(axis=0)))
+                        ** 2,
+                        axis=1,
                     )
-                    rows.append(
-                        {
-                            "seed": item["seed"],
-                            "policy": item["policy"],
-                            "budget": item["budget"],
-                            "spent": item["spent"],
-                            "total_program_cost": item["spent"]
-                            + development["unique_resource_cost_units"],
-                            "recipient_measurements_used_cost": 0
-                            if backbone in ("zero", "source_copy")
-                            else item["spent"],
-                            "backbone": backbone,
-                            "query": identity,
-                            "mse": float(errors[index]),
-                            "assessment_noise_floor": float(noise[index].mean()),
-                            "noise_subtracted_mse": float(errors[index] - noise[index].mean()),
-                            "specificity_mse": float(specificity[index]),
-                            "source_signal": float(source_norm[index]),
-                            "source_stratum": "strong"
-                            if source_norm[index] >= median_signal
-                            else "weak",
-                            "identified": bool(arrays["identified"][index]),
-                            "source_unstable": bool(arrays["source_unstable"][index]),
-                            "deferral_recommended": bool(arrays["deferral_recommended"][index]),
-                            "source_mean_noise_estimate": float(
-                                arrays["source_mean_noise_estimate"][index]
-                            ),
-                            "source_half_support_disagreement": bool(
-                                arrays["source_half_support_disagreement"][index]
-                            )
-                            if config.source_sensitivity
-                            else None,
-                            "source_half_identified_both": bool(
-                                arrays["source_half_identified_both"][index]
-                            )
-                            if config.source_sensitivity
-                            else None,
-                            "source_half_max_prediction_shift_mse": float(
-                                arrays[f"source_half_{backbone}_max_shift_mse"][index]
-                            )
-                            if config.source_sensitivity and backbone in ("ridge", "ridge_cv")
-                            else None,
-                            "ideal_variance": variance if np.isfinite(variance) else None,
-                            "gaussian_coverage_diagnostic": coverage,
-                            "gaussian_mean_width_diagnostic": float(2 * width.mean())
-                            if coverage is not None
-                            else None,
-                        }
-                    )
-    _write_csv(output / "metrics.csv", rows)
+                    ideal_variance = arrays["ideal_variance"]
+                    for index, identity in enumerate(public.query_ids):
+                        variance = float(ideal_variance[index])
+                        width = 1.96 * np.sqrt(variance + noise[index])
+                        coverage = (
+                            float(np.mean(np.abs(estimated[index] - effects[index]) <= width))
+                            if backbone == "ridge" and np.isfinite(variance)
+                            else None
+                        )
+                        yield (
+                            {
+                                "seed": item["seed"],
+                                "policy": item["policy"],
+                                "budget": item["budget"],
+                                "spent": item["spent"],
+                                "total_program_cost": item["spent"]
+                                + development["unique_resource_cost_units"],
+                                "recipient_measurements_used_cost": 0
+                                if backbone in ("zero", "source_copy")
+                                else item["spent"],
+                                "backbone": backbone,
+                                "query": identity,
+                                "mse": float(errors[index]),
+                                "assessment_noise_floor": float(noise[index].mean()),
+                                "noise_subtracted_mse": float(errors[index] - noise[index].mean()),
+                                "specificity_mse": float(specificity[index]),
+                                "source_signal": float(source_norm[index]),
+                                "source_stratum": "strong"
+                                if source_norm[index] >= median_signal
+                                else "weak",
+                                "identified": bool(arrays["identified"][index]),
+                                "source_unstable": bool(arrays["source_unstable"][index]),
+                                "deferral_recommended": bool(arrays["deferral_recommended"][index]),
+                                "source_mean_noise_estimate": float(
+                                    arrays["source_mean_noise_estimate"][index]
+                                ),
+                                "source_half_support_disagreement": bool(
+                                    arrays["source_half_support_disagreement"][index]
+                                )
+                                if config.source_sensitivity
+                                else None,
+                                "source_half_identified_both": bool(
+                                    arrays["source_half_identified_both"][index]
+                                )
+                                if config.source_sensitivity
+                                else None,
+                                "source_half_max_prediction_shift_mse": float(
+                                    arrays[f"source_half_{backbone}_max_shift_mse"][index]
+                                )
+                                if config.source_sensitivity and backbone in ("ridge", "ridge_cv")
+                                else None,
+                                "ideal_variance": variance if np.isfinite(variance) else None,
+                                "gaussian_coverage_diagnostic": coverage,
+                                "gaussian_mean_width_diagnostic": float(2 * width.mean())
+                                if coverage is not None
+                                else None,
+                            }
+                        )
+
+    _write_csv(output / "metrics.csv", metric_rows())
     manifest.update(
         state="complete",
         completed_at=utc_now(),
-        runtime_seconds=time.perf_counter() - started,
-        source_coordinates={
-            "rank": coordinates.rank,
-            "explained_fraction": coordinates.explained_fraction,
-            "source_half_noise": coordinates.source_half_noise,
-        },
+        scoring_runtime_seconds=time.perf_counter() - started,
+        runtime_seconds=manifest["acquisition_runtime_seconds"] + time.perf_counter() - started,
         results_sha256=file_hash(output / "metrics.csv"),
         resources_end=resource_record(output),
         limitations=[

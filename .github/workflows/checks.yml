@@ -30,6 +30,8 @@ jobs:
       - run: uv run --locked mlresearch --help
       - run: uv run --locked mlresearch data list
       - run: uv run --locked mlresearch demo --directory .cache/offline-demo
+      - run: uv run --locked mlresearch external configs/external-smoke.json
+      - run: uv run --locked mlresearch score-external .cache/external-smoke-suite
       - run: uv run --locked mlresearch uncertainty .cache/offline-demo/experiment --output .cache/uncertainty.json --samples 200
       - run: uv run --locked mlresearch account-development --output .cache/development-cost.json .cache/offline-demo/experiment
       - run: uv run --locked mlresearch study configs/study-smoke.json

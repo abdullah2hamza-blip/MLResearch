@@ -77,7 +77,7 @@ For bounded external preparation, download both pinned Replogle files and run `c
 
 ## Remaining work
 
-The controlled simulation grid and development tuning have executed. The integrated comparator check, frozen external scoring, remaining metadata/uncertainty analysis and final claim assessment remain active. See [milestone status](implementation-status.md). Neither passing tests nor a pilot result completes the implementation goal.
+The controlled grid, development tuning, integrated comparator check and canonical metadata freeze have executed. Frozen external scoring, remaining analysis and final claim assessment remain active. See [milestone status](implementation-status.md). Neither passing tests nor a pilot result completes the implementation goal.
 
 ## Integrated transfer and uncertainty
 
@@ -90,3 +90,14 @@ uv run --locked mlresearch account-development --output runs/development-resourc
 ```
 
 Analysis requires complete runs, the original frozen episode and verified prepared inputs. Every output must use a fresh path. Query bootstrap, cell resampling and batch sensitivity have separate conditional scopes; none is biological replication. New checkpoint indexes authenticate ledger prefixes as well as predictions. Historical runs retain their original indexes and are reconciled against checkpoint spends without claiming missing historical hashes.
+
+## Joint external prediction freeze
+
+`defer_assessment: true` makes `run` stop at authenticated frozen predictions without opening scorer cells. The `external` command loads every full run definition, freezes supporting evidence and acquires sequentially. Only after all declared predictions and ledger prefixes authenticate does it archive acquisition manifests and write a joint gate. Every peer artifact is checked before the first scorer; immutable acquisition fields and peer indexes are checked before each subsequent scorer. The [external protocol](external-evaluation-protocol.md) fixes both directions, all ablations, four permutation controls, five seeds and the 6,428-unit development cost.
+
+```sh
+uv run --locked mlresearch external configs/external-evaluation-v1.json
+uv run --locked mlresearch score-external runs/external-evaluation-v1
+```
+
+The second command is recovery for a confirmed interrupted scoring phase after the joint gate exists; it never repeats acquisition or refits predictors. A completed suite is validated and returned without rescoring. Preserve incomplete acquisitions and inspect their actual process handle before considering any restart. Settings/source/evidence edits invalidate a frozen suite. Use one worker and set `OPENBLAS_NUM_THREADS=1`; the CLI never buys cloud compute. Scoring and report input stream metric rows to keep large external panels within bounded local memory.

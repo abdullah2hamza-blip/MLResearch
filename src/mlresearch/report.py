@@ -74,26 +74,33 @@ def summarize_run(
         or bootstrap_samples < 100
     ):
         raise ValueError("At least 100 bootstrap samples are required")
-    with (directory / "metrics.csv").open(newline="", encoding="utf-8") as stream:
-        rows = list(csv.DictReader(stream))
     budgets = manifest["configuration"]["budgets"]
     if len(budgets) < 2:
         raise ValueError("At least two frozen budgets are required for the area endpoint")
     grouped: dict[tuple[str, str, int], list[float]] = defaultdict(list)
     trajectories: dict[tuple[str, str, int, str], dict[int, float]] = defaultdict(dict)
     risks: dict[tuple[str, int], list[tuple[float, float, bool | None]]] = defaultdict(list)
-    for row in rows:
-        policy, backbone, budget = row["policy"], row["backbone"], int(row["budget"])
-        grouped[(policy, backbone, budget)].append(float(row["mse"]))
-        trajectories[(policy, backbone, int(row["seed"]), row["query"])][budget] = float(row["mse"])
-        if backbone == manifest["primary_backbone"]:
-            risks[(policy, budget)].append(
-                (
-                    float(row["ideal_variance"]) if row["ideal_variance"] else np.inf,
-                    float(row["mse"]),
-                    row["source_unstable"] == "True" if "source_unstable" in row else None,
-                )
+    noise_values: list[float] = []
+    with (directory / "metrics.csv").open(newline="", encoding="utf-8") as stream:
+        reader = csv.DictReader(stream)
+        source_stability_available = "source_unstable" in (reader.fieldnames or [])
+        for row in reader:
+            noise_values.append(float(row["assessment_noise_floor"]))
+            policy, backbone, budget = row["policy"], row["backbone"], int(row["budget"])
+            grouped[(policy, backbone, budget)].append(float(row["mse"]))
+            trajectories[(policy, backbone, int(row["seed"]), row["query"])][budget] = float(
+                row["mse"]
             )
+            if backbone == manifest["primary_backbone"]:
+                risks[(policy, budget)].append(
+                    (
+                        float(row["ideal_variance"]) if row["ideal_variance"] else np.inf,
+                        float(row["mse"]),
+                        row["source_unstable"] == "True" if "source_unstable" in row else None,
+                    )
+                )
+    if not grouped:
+        raise ValueError("Results table is empty")
     curves = [
         {"policy": p, "backbone": b, "budget": n, "mse": float(np.mean(v))}
         for (p, b, n), v in sorted(grouped.items())
@@ -118,7 +125,7 @@ def summarize_run(
         by_query[(policy, backbone, query)].append(area)
     comparator, backbone = manifest["primary_comparator"], manifest["primary_backbone"]
     policies = manifest["configuration"]["policies"]
-    queries = sorted({row["query"] for row in rows})
+    queries = sorted({key[3] for key in trajectories})
     comparisons = []
     if comparator in policies:
         reference = np.asarray([np.mean(by_query[(comparator, backbone, q)]) for q in queries])
@@ -159,11 +166,11 @@ def summarize_run(
     import matplotlib.pyplot as plt
 
     plt.rcParams.update({"font.size": 9, "figure.dpi": 140, "svg.hashsalt": "mlresearch"})
-    noise_floor = float(np.mean([float(row["assessment_noise_floor"]) for row in rows]))
+    noise_floor = float(np.mean(noise_values))
     for kind in ("acquisition", "predictor"):
         figure, axis = plt.subplots(figsize=(7.2, 4.2), layout="constrained")
         display_policy = "bias_aware" if "bias_aware" in policies else policies[0]
-        labels = policies if kind == "acquisition" else sorted({row["backbone"] for row in rows})
+        labels = policies if kind == "acquisition" else sorted({key[1] for key in grouped})
         for label in labels:
             p, b = (label, backbone) if kind == "acquisition" else (display_policy, label)
             axis.plot(
@@ -215,7 +222,7 @@ def summarize_run(
         "interpretation": "Lower error area and negative differences favor the named policy.",
         "limitations": manifest["limitations"],
         "risk_retention_backbone": backbone,
-        "risk_retention_source_stability_available": "source_unstable" in rows[0],
+        "risk_retention_source_stability_available": source_stability_available,
         "fixed_development_cost_units": manifest.get("fixed_development_resources", {}).get(
             "unique_resource_cost_units"
         ),
