@@ -1,3 +1,5 @@
+> Publication pass, October 23, 2026: the [PI-reviewed manuscript and submission materials](publication-guide.md) now supersede the historical implementation-only status below. The new eight-cell split/rank/budget study includes conditional successes as well as failures; all32contrasts are retained. The28-page paper, source archive, MIT/CC BY4.0 terms, review responses and reproducibility checks are complete. All111tests and Windows/UbuntuCI pass. See the [publication readiness audit](evidence/publication-readiness-audit-v1.json). GitHub remains private; the code/evidence archive is prepared for deposit with the paper.
+
 # Implementation status
 
 Last substantive update: October 22, 2026 (America/New_York). The computational implementation goal is **complete**. All 11 requirements and the original plan's secondary checks have executed evidence; code/results are published and expanded Windows/Ubuntu CI passed. Earlier bullets are dated milestones, not current pending-work instructions.

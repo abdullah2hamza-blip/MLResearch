@@ -1,0 +1,77 @@
+{
+  "closure_scope": "Completion records/documentation and minimal arXiv packaging follow source-revision CI. The additional31-file upload compiles to the same inspected PDF. Scientific runtime, configurations, predictions, manuscript and asset generator remain unchanged. Publication is a separate human/platform action.",
+  "criteria": {
+    "1_manuscript": {
+      "evidence": "docs/evidence/publication-pdf-quality-v1.json",
+      "pages": 28,
+      "pdf": "output/pdf/joint-acquisition-study.pdf",
+      "source": "paper/main.tex",
+      "state": "passed"
+    },
+    "2_internal_reviews": {
+      "response_ledger": "docs/publication-review-response.md",
+      "reviewers": 2,
+      "scope": "Independent automated scientific/statistical and mathematical/code internal reviews; essential findings addressed.",
+      "state": "passed"
+    },
+    "3_quantitative_traceability": {
+      "evidence": "docs/evidence/publication-retained-evidence-check-v1.json",
+      "generated_outputs": 25,
+      "input_files": 150,
+      "registry": "paper/generated/numerical-registry.json",
+      "staged_exact_bindings": 196,
+      "state": "passed"
+    },
+    "4_contribution_and_prior_work": {
+      "bibliography_entries": 10,
+      "scope": "Focused fixed-kernel augmentation evaluation, conditional successes/failures and source-error counterexample. Full baseline definitions, DGP, comparator fidelity and primary-comparator history explicit.",
+      "state": "passed"
+    },
+    "5_essential_robustness": {
+      "all_signs_retained": true,
+      "checkpoints": 360,
+      "freeze": "docs/evidence/publication-robustness-declaration-v1.json",
+      "matrix_cells": 8,
+      "paired_contrasts": 32,
+      "state": "passed",
+      "summary": "docs/results/publication-robustness-v1/analysis/summary.json"
+    },
+    "6_reproduction_and_checks": {
+      "ci": "docs/evidence/publication-ci-v1.json",
+      "clean_archives": "docs/evidence/publication-archive-portability-v1.json",
+      "licensed_wheel_and_sdist": "docs/evidence/publication-local-verification-v1.json",
+      "local_tests": 111,
+      "source_binding": "docs/evidence/publication-reproduction-binding-check-v2.json",
+      "state": "passed"
+    },
+    "7_reader_access_and_licenses": {
+      "availability": "Complete accompanying local code/evidence archive prepared for deposit. GitHub remains private; no permanent deposit identifier invented.",
+      "citation": "CITATION.cff",
+      "guide": "docs/publication-guide.md",
+      "manuscript_license": "CC BY4.0",
+      "software_license": "MIT",
+      "state": "passed"
+    },
+    "8_visual_and_archive_quality": {
+      "all28_pages_visually_checked": true,
+      "generated_numeric_registry_and12tex_assets_match_in_clean_code_archive": true,
+      "manuscript_only_archive_rebuilds_byte_identical_pdf": true,
+      "minimal_arxiv_archive": "docs/evidence/publication-arxiv-portability-v1.json",
+      "overfull_boxes": 0,
+      "state": "passed",
+      "unresolved_references": 0
+    }
+  },
+  "github_visibility": "private, unchanged",
+  "numerical_source_tree_sha256": "1a3392680a7abfd4fdd7a5b2fc808e595bfc5e2628271f207c0e5cb789f569a3",
+  "objective": "Make the paper, code and accompanying project ready for preprint or formal submission.",
+  "pdf_sha256": "3563a6d56194689494830b15680a0758c59d07a22f06fde3555abfb97090c033",
+  "recorded_at": "2026-10-23T20:52:06.590768+00:00",
+  "remaining_human_submission_actions": [
+    "Final author review of the paper",
+    "Deposit the accompanying code/evidence archive with the submission or persistent repository",
+    "Select venue/category and upload manuscript/source under author account"
+  ],
+  "scientific_source_revision": "fee4ee8f0be53a87dda9c9f31acf0bfadd5cd3af",
+  "state": "passed"
+}

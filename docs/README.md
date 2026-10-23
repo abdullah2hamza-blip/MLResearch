@@ -1,3 +1,5 @@
+> Current publication materials: [PI-reviewed manuscript, reproducible archives and submission guide](publication-guide.md). The research dossier below preserves the prospective and historical study record.
+
 # Machine learning frontier research
 
 The [research report](research-report.md) gives the completed computational study's results and evidence-to-claim assessment. The frozen external extension is 0.565% and 0.0138% worse than classical worst-query acquisition in the two directions; no primary benefit is demonstrated. Full [external findings](external-evaluation-findings.md), [data dictionary](data-dictionary.md), [reproduction commands](external-reproduction.md) and [status ledger](implementation-status.md) connect the implementation to authoritative artifacts.

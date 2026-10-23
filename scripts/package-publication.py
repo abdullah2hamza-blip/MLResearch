@@ -14,7 +14,9 @@ def digest(payload: bytes) -> str:
     return hashlib.sha256(payload).hexdigest()
 
 
-def archive(path: Path, members: dict[str, Path | bytes], kind: str) -> dict:
+def archive(
+    path: Path, members: dict[str, Path | bytes], kind: str, include_inventory: bool = True
+) -> dict:
     hashes = {}
     with zipfile.ZipFile(path, "w", compression=zipfile.ZIP_DEFLATED, compresslevel=6) as output:
         for name, source in sorted(members.items()):
@@ -43,14 +45,14 @@ def archive(path: Path, members: dict[str, Path | bytes], kind: str) -> dict:
                 "Original code MIT; manuscript CC BY 4.0; third parties retain their terms."
             ),
         }
-        info = zipfile.ZipInfo("CONTENTS.sha256.json", date_time=(2026, 10, 23, 0, 0, 0))
-        info.compress_type = zipfile.ZIP_DEFLATED
-        info.external_attr = 0o100644 << 16
-        output.writestr(info, json.dumps(inventory, indent=2, sort_keys=True) + "\n")
+        if include_inventory:
+            info = zipfile.ZipInfo("CONTENTS.sha256.json", date_time=(2026, 10, 23, 0, 0, 0))
+            info.compress_type = zipfile.ZIP_DEFLATED
+            info.external_attr = 0o100644 << 16
+            output.writestr(info, json.dumps(inventory, indent=2, sort_keys=True) + "\n")
     with zipfile.ZipFile(path) as check:
-        if check.testzip() is not None or set(check.namelist()) != set(hashes) | {
-            "CONTENTS.sha256.json"
-        }:
+        expected_names = set(hashes) | ({"CONTENTS.sha256.json"} if include_inventory else set())
+        if check.testzip() is not None or set(check.namelist()) != expected_names:
             raise ValueError("Archive integrity or membership failure")
         for name, expected in hashes.items():
             if digest(check.read(name)) != expected:
@@ -76,6 +78,7 @@ def main() -> None:
     names = [
         "manuscript-source-v0.2.0.zip",
         "code-and-evidence-v0.2.0.zip",
+        "arxiv-source-v0.2.0.zip",
         "release-manifest-v0.2.0.json",
     ]
     if any((destination / name).exists() for name in names) and not args.replace:
@@ -105,8 +108,15 @@ def main() -> None:
         b"Compile: python build-paper.py --source main.tex --output joint-acquisition-study.pdf\n"
         b"Requires Tectonic or pdfLaTeX/BibTeX. TeX source needs no expression data.\n"
         b"Asset hashes verified; underlying evidence is in the separate code archive.\n"
-        b"For arXiv upload archive contents and select main.tex. See current arXiv instructions.\n"
+        b"For arXiv upload arxiv-source-v0.2.0.zip and select main.tex; see current instructions.\n"
     )
+    arxiv = {
+        name: payload
+        for name, payload in manuscript.items()
+        if name.endswith(".tex")
+        or name in {"references.bib", "main.bbl"}
+        or (name.startswith("figures/") and name.endswith(".pdf"))
+    }
     code = {}
     for directory in ("src", "tests", "scripts", "configs", "docs", "paper", ".github"):
         for path in Path(directory).rglob("*"):
@@ -137,6 +147,7 @@ def main() -> None:
     records = [
         archive(destination / names[0], manuscript, "manuscript-source"),
         archive(destination / names[1], code, "code-and-evidence"),
+        archive(destination / names[2], arxiv, "arxiv-source", include_inventory=False),
     ]
     manifest = {
         "state": "built_and_payload_verified",
@@ -152,10 +163,10 @@ def main() -> None:
             "Local submission artifacts; no public deposit, submission or DOI claimed."
         ),
     }
-    (destination / names[2]).write_text(
+    (destination / names[3]).write_text(
         json.dumps(manifest, indent=2, sort_keys=True) + "\n", encoding="utf-8"
     )
-    print("Both archives and exact member payloads verified", flush=True)
+    print("All three archives and exact member payloads verified", flush=True)
 
 
 if __name__ == "__main__":

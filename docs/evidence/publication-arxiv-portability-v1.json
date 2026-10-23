@@ -1,0 +1,12 @@
+{
+  "archive_sha256": "c757e650404b60e2147ce6345e0b96b3cbd1abc9d7de73633bef47c9e3e68f1f",
+  "clean_compile": "Tectonic0.15.0; main.tex from archive root",
+  "guidance": "https://info.arxiv.org/help/submit_tex.html",
+  "member_scope": "TeX inputs, BibTeX source, compiled bibliography and four referenced PDF figures only. No helper, manifest, unused PNG/SVG or output PDF.",
+  "pdf_sha256": "3563a6d56194689494830b15680a0758c59d07a22f06fde3555abfb97090c033",
+  "qualification": "Actual local source processing; author must still inspect the PDF produced by the chosen submission platform.",
+  "rebuilt_pdf_byte_identical": true,
+  "recorded_at": "2026-10-23T20:57:24.796479+00:00",
+  "required_members": 31,
+  "state": "passed"
+}
