@@ -1,0 +1,633 @@
+{
+  "completed_at": "2026-10-23T19:51:06.742801+00:00",
+  "configuration": {
+    "evidence_files": [
+      "docs/publication-robustness-protocol.md",
+      "docs/publication-method-clarifications.md",
+      "docs/evidence/publication-canonical-seed20261023-v1.json",
+      "docs/evidence/publication-canonical-seed20261024-v1.json",
+      "docs/evidence/development-resource-accounting-v3.json",
+      "docs/evidence/publication-robustness-declaration-v1.json"
+    ],
+    "output_directory": "runs/publication-robustness-v1",
+    "runs": [
+      {
+        "budgets": [
+          128,
+          256,
+          512,
+          1024,
+          2048
+        ],
+        "defer_assessment": true,
+        "development_resource_record": "docs/evidence/development-resource-accounting-v3.json",
+        "episode_directory": "data/episodes/publication-k562-to-rpe1-seed20261023-v1",
+        "identifier_record": "docs/evidence/publication-canonical-seed20261023-v1.json",
+        "label": "Post-primary PI robustness;split20261023;rank4;k562-to-rpe1",
+        "output_directory": "runs/publication-k562-to-rpe1-seed20261023-rank4-v1",
+        "policies": [
+          "worst_query",
+          "mean_query",
+          "bias_aware"
+        ],
+        "policy": {
+          "allow_controls": true,
+          "allow_depth": true,
+          "allow_opening": true,
+          "block_cells": 8,
+          "cell_cost": 1,
+          "control_cell_cost": 1,
+          "discrepancy_weight": 1.0,
+          "fixed_control_fraction": 0.125,
+          "fixed_depth": 8,
+          "identity_selection": "adaptive",
+          "kernel_length": 1.0,
+          "partial_blocks": true,
+          "pilot_cells": 8,
+          "pilot_controls": 16,
+          "pilot_interventions": 6,
+          "rank": 4,
+          "ridge": 0.1,
+          "ridge_grid": [
+            0.1,
+            1,
+            10,
+            100,
+            1000,
+            10000,
+            100000
+          ],
+          "ridge_include_null": true,
+          "setup_cost": 4,
+          "shared_covariance": true,
+          "variance_prior": "paid_ratio"
+        },
+        "primary_backbone": "ridge_cv",
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "source_control": "none",
+        "source_control_seed": 20261022,
+        "source_sensitivity": true,
+        "transfer": null,
+        "variants": {}
+      },
+      {
+        "budgets": [
+          128,
+          256,
+          512,
+          1024,
+          2048
+        ],
+        "defer_assessment": true,
+        "development_resource_record": "docs/evidence/development-resource-accounting-v3.json",
+        "episode_directory": "data/episodes/publication-k562-to-rpe1-seed20261023-v1",
+        "identifier_record": "docs/evidence/publication-canonical-seed20261023-v1.json",
+        "label": "Post-primary PI robustness;split20261023;rank16;k562-to-rpe1",
+        "output_directory": "runs/publication-k562-to-rpe1-seed20261023-rank16-v1",
+        "policies": [
+          "worst_query",
+          "mean_query",
+          "bias_aware"
+        ],
+        "policy": {
+          "allow_controls": true,
+          "allow_depth": true,
+          "allow_opening": true,
+          "block_cells": 8,
+          "cell_cost": 1,
+          "control_cell_cost": 1,
+          "discrepancy_weight": 1.0,
+          "fixed_control_fraction": 0.125,
+          "fixed_depth": 8,
+          "identity_selection": "adaptive",
+          "kernel_length": 1.0,
+          "partial_blocks": true,
+          "pilot_cells": 8,
+          "pilot_controls": 16,
+          "pilot_interventions": 6,
+          "rank": 16,
+          "ridge": 0.1,
+          "ridge_grid": [
+            0.1,
+            1,
+            10,
+            100,
+            1000,
+            10000,
+            100000
+          ],
+          "ridge_include_null": true,
+          "setup_cost": 4,
+          "shared_covariance": true,
+          "variance_prior": "paid_ratio"
+        },
+        "primary_backbone": "ridge_cv",
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "source_control": "none",
+        "source_control_seed": 20261022,
+        "source_sensitivity": true,
+        "transfer": null,
+        "variants": {}
+      },
+      {
+        "budgets": [
+          128,
+          256,
+          512,
+          1024,
+          2048
+        ],
+        "defer_assessment": true,
+        "development_resource_record": "docs/evidence/development-resource-accounting-v3.json",
+        "episode_directory": "data/episodes/publication-rpe1-to-k562-seed20261023-v1",
+        "identifier_record": "docs/evidence/publication-canonical-seed20261023-v1.json",
+        "label": "Post-primary PI robustness;split20261023;rank4;rpe1-to-k562",
+        "output_directory": "runs/publication-rpe1-to-k562-seed20261023-rank4-v1",
+        "policies": [
+          "worst_query",
+          "mean_query",
+          "bias_aware"
+        ],
+        "policy": {
+          "allow_controls": true,
+          "allow_depth": true,
+          "allow_opening": true,
+          "block_cells": 8,
+          "cell_cost": 1,
+          "control_cell_cost": 1,
+          "discrepancy_weight": 1.0,
+          "fixed_control_fraction": 0.125,
+          "fixed_depth": 8,
+          "identity_selection": "adaptive",
+          "kernel_length": 1.0,
+          "partial_blocks": true,
+          "pilot_cells": 8,
+          "pilot_controls": 16,
+          "pilot_interventions": 6,
+          "rank": 4,
+          "ridge": 0.1,
+          "ridge_grid": [
+            0.1,
+            1,
+            10,
+            100,
+            1000,
+            10000,
+            100000
+          ],
+          "ridge_include_null": true,
+          "setup_cost": 4,
+          "shared_covariance": true,
+          "variance_prior": "paid_ratio"
+        },
+        "primary_backbone": "ridge_cv",
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "source_control": "none",
+        "source_control_seed": 20261022,
+        "source_sensitivity": true,
+        "transfer": null,
+        "variants": {}
+      },
+      {
+        "budgets": [
+          128,
+          256,
+          512,
+          1024,
+          2048
+        ],
+        "defer_assessment": true,
+        "development_resource_record": "docs/evidence/development-resource-accounting-v3.json",
+        "episode_directory": "data/episodes/publication-rpe1-to-k562-seed20261023-v1",
+        "identifier_record": "docs/evidence/publication-canonical-seed20261023-v1.json",
+        "label": "Post-primary PI robustness;split20261023;rank16;rpe1-to-k562",
+        "output_directory": "runs/publication-rpe1-to-k562-seed20261023-rank16-v1",
+        "policies": [
+          "worst_query",
+          "mean_query",
+          "bias_aware"
+        ],
+        "policy": {
+          "allow_controls": true,
+          "allow_depth": true,
+          "allow_opening": true,
+          "block_cells": 8,
+          "cell_cost": 1,
+          "control_cell_cost": 1,
+          "discrepancy_weight": 1.0,
+          "fixed_control_fraction": 0.125,
+          "fixed_depth": 8,
+          "identity_selection": "adaptive",
+          "kernel_length": 1.0,
+          "partial_blocks": true,
+          "pilot_cells": 8,
+          "pilot_controls": 16,
+          "pilot_interventions": 6,
+          "rank": 16,
+          "ridge": 0.1,
+          "ridge_grid": [
+            0.1,
+            1,
+            10,
+            100,
+            1000,
+            10000,
+            100000
+          ],
+          "ridge_include_null": true,
+          "setup_cost": 4,
+          "shared_covariance": true,
+          "variance_prior": "paid_ratio"
+        },
+        "primary_backbone": "ridge_cv",
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "source_control": "none",
+        "source_control_seed": 20261022,
+        "source_sensitivity": true,
+        "transfer": null,
+        "variants": {}
+      },
+      {
+        "budgets": [
+          128,
+          256,
+          512,
+          1024,
+          2048
+        ],
+        "defer_assessment": true,
+        "development_resource_record": "docs/evidence/development-resource-accounting-v3.json",
+        "episode_directory": "data/episodes/publication-k562-to-rpe1-seed20261024-v1",
+        "identifier_record": "docs/evidence/publication-canonical-seed20261024-v1.json",
+        "label": "Post-primary PI robustness;split20261024;rank4;k562-to-rpe1",
+        "output_directory": "runs/publication-k562-to-rpe1-seed20261024-rank4-v1",
+        "policies": [
+          "worst_query",
+          "mean_query",
+          "bias_aware"
+        ],
+        "policy": {
+          "allow_controls": true,
+          "allow_depth": true,
+          "allow_opening": true,
+          "block_cells": 8,
+          "cell_cost": 1,
+          "control_cell_cost": 1,
+          "discrepancy_weight": 1.0,
+          "fixed_control_fraction": 0.125,
+          "fixed_depth": 8,
+          "identity_selection": "adaptive",
+          "kernel_length": 1.0,
+          "partial_blocks": true,
+          "pilot_cells": 8,
+          "pilot_controls": 16,
+          "pilot_interventions": 6,
+          "rank": 4,
+          "ridge": 0.1,
+          "ridge_grid": [
+            0.1,
+            1,
+            10,
+            100,
+            1000,
+            10000,
+            100000
+          ],
+          "ridge_include_null": true,
+          "setup_cost": 4,
+          "shared_covariance": true,
+          "variance_prior": "paid_ratio"
+        },
+        "primary_backbone": "ridge_cv",
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "source_control": "none",
+        "source_control_seed": 20261022,
+        "source_sensitivity": true,
+        "transfer": null,
+        "variants": {}
+      },
+      {
+        "budgets": [
+          128,
+          256,
+          512,
+          1024,
+          2048
+        ],
+        "defer_assessment": true,
+        "development_resource_record": "docs/evidence/development-resource-accounting-v3.json",
+        "episode_directory": "data/episodes/publication-k562-to-rpe1-seed20261024-v1",
+        "identifier_record": "docs/evidence/publication-canonical-seed20261024-v1.json",
+        "label": "Post-primary PI robustness;split20261024;rank16;k562-to-rpe1",
+        "output_directory": "runs/publication-k562-to-rpe1-seed20261024-rank16-v1",
+        "policies": [
+          "worst_query",
+          "mean_query",
+          "bias_aware"
+        ],
+        "policy": {
+          "allow_controls": true,
+          "allow_depth": true,
+          "allow_opening": true,
+          "block_cells": 8,
+          "cell_cost": 1,
+          "control_cell_cost": 1,
+          "discrepancy_weight": 1.0,
+          "fixed_control_fraction": 0.125,
+          "fixed_depth": 8,
+          "identity_selection": "adaptive",
+          "kernel_length": 1.0,
+          "partial_blocks": true,
+          "pilot_cells": 8,
+          "pilot_controls": 16,
+          "pilot_interventions": 6,
+          "rank": 16,
+          "ridge": 0.1,
+          "ridge_grid": [
+            0.1,
+            1,
+            10,
+            100,
+            1000,
+            10000,
+            100000
+          ],
+          "ridge_include_null": true,
+          "setup_cost": 4,
+          "shared_covariance": true,
+          "variance_prior": "paid_ratio"
+        },
+        "primary_backbone": "ridge_cv",
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "source_control": "none",
+        "source_control_seed": 20261022,
+        "source_sensitivity": true,
+        "transfer": null,
+        "variants": {}
+      },
+      {
+        "budgets": [
+          128,
+          256,
+          512,
+          1024,
+          2048
+        ],
+        "defer_assessment": true,
+        "development_resource_record": "docs/evidence/development-resource-accounting-v3.json",
+        "episode_directory": "data/episodes/publication-rpe1-to-k562-seed20261024-v1",
+        "identifier_record": "docs/evidence/publication-canonical-seed20261024-v1.json",
+        "label": "Post-primary PI robustness;split20261024;rank4;rpe1-to-k562",
+        "output_directory": "runs/publication-rpe1-to-k562-seed20261024-rank4-v1",
+        "policies": [
+          "worst_query",
+          "mean_query",
+          "bias_aware"
+        ],
+        "policy": {
+          "allow_controls": true,
+          "allow_depth": true,
+          "allow_opening": true,
+          "block_cells": 8,
+          "cell_cost": 1,
+          "control_cell_cost": 1,
+          "discrepancy_weight": 1.0,
+          "fixed_control_fraction": 0.125,
+          "fixed_depth": 8,
+          "identity_selection": "adaptive",
+          "kernel_length": 1.0,
+          "partial_blocks": true,
+          "pilot_cells": 8,
+          "pilot_controls": 16,
+          "pilot_interventions": 6,
+          "rank": 4,
+          "ridge": 0.1,
+          "ridge_grid": [
+            0.1,
+            1,
+            10,
+            100,
+            1000,
+            10000,
+            100000
+          ],
+          "ridge_include_null": true,
+          "setup_cost": 4,
+          "shared_covariance": true,
+          "variance_prior": "paid_ratio"
+        },
+        "primary_backbone": "ridge_cv",
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "source_control": "none",
+        "source_control_seed": 20261022,
+        "source_sensitivity": true,
+        "transfer": null,
+        "variants": {}
+      },
+      {
+        "budgets": [
+          128,
+          256,
+          512,
+          1024,
+          2048
+        ],
+        "defer_assessment": true,
+        "development_resource_record": "docs/evidence/development-resource-accounting-v3.json",
+        "episode_directory": "data/episodes/publication-rpe1-to-k562-seed20261024-v1",
+        "identifier_record": "docs/evidence/publication-canonical-seed20261024-v1.json",
+        "label": "Post-primary PI robustness;split20261024;rank16;rpe1-to-k562",
+        "output_directory": "runs/publication-rpe1-to-k562-seed20261024-rank16-v1",
+        "policies": [
+          "worst_query",
+          "mean_query",
+          "bias_aware"
+        ],
+        "policy": {
+          "allow_controls": true,
+          "allow_depth": true,
+          "allow_opening": true,
+          "block_cells": 8,
+          "cell_cost": 1,
+          "control_cell_cost": 1,
+          "discrepancy_weight": 1.0,
+          "fixed_control_fraction": 0.125,
+          "fixed_depth": 8,
+          "identity_selection": "adaptive",
+          "kernel_length": 1.0,
+          "partial_blocks": true,
+          "pilot_cells": 8,
+          "pilot_controls": 16,
+          "pilot_interventions": 6,
+          "rank": 16,
+          "ridge": 0.1,
+          "ridge_grid": [
+            0.1,
+            1,
+            10,
+            100,
+            1000,
+            10000,
+            100000
+          ],
+          "ridge_include_null": true,
+          "setup_cost": 4,
+          "shared_covariance": true,
+          "variance_prior": "paid_ratio"
+        },
+        "primary_backbone": "ridge_cv",
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "source_control": "none",
+        "source_control_seed": 20261022,
+        "source_sensitivity": true,
+        "transfer": null,
+        "variants": {}
+      }
+    ]
+  },
+  "configuration_sha256": "8bc758b844b3e717ca08f430fc95896c8bb331be5934525d644b3b4a56b462cc",
+  "environment": {
+    "git": {
+      "revision": "314dc29ead38d51819064518b7689d3b08a84af1",
+      "status": "M pyproject.toml\n M src/mlresearch/__init__.py\n M src/mlresearch/transfer.py\n M tests/test_transfer.py\n M uv.lock"
+    },
+    "packages": {
+      "h5py": "3.16.0",
+      "matplotlib": "3.11.2",
+      "mlresearch": "0.2.0",
+      "numpy": "2.5.4",
+      "pytest": "9.1.1",
+      "scipy": "1.18.1"
+    },
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.14",
+    "recorded_at": "2026-10-23T19:12:15.059461+00:00",
+    "source_hashes": {
+      "__init__.py": "9f601963fa8d47709b9ae0b37a97daab7dc9d36e5429fe305a58787948a66a8f",
+      "__main__.py": "27503438dec93a74b0ebe814fc619333accf571b77f73344c6252c94b0b5d8b3",
+      "accounting.py": "8ed6d877678a1de2f8b0b6e7c0a471126cc3348c21f852f50caa7d17b1de40f8",
+      "acquisition.py": "52e82caa4c80dd4e577bb2e90cdaca52caf35fc8c97000e529161c21596be19d",
+      "cli.py": "6c3dd5025df8fdf80da117f6129bf36e3bbb87d0304589ea3b678ddd7d272f97",
+      "controls.py": "458f52e5886f97eed105e2c56701b51d2a26c080043b60ad8c39e9f6e9d24297",
+      "data.py": "ac2e62e8a74960d279f681cd4983d5a2f42f3cf13c8b8fde1887fc6265953789",
+      "datasets.json": "e90daa691730f09ba8885f1777ed5ae379f075d010a1dc3093c23272865e8881",
+      "design.py": "e83d39a64f0336ba7c5bf97deb997c68db3c72b3c09adf178a71b5d210d055e5",
+      "episodes.py": "62f0ee1615fcd268aec088a83e34c0744b981523a74f58fc34a7fb3a110328c6",
+      "experiment.py": "62caf7bff0edf14dd6e59d65a43198c7f34f72ade9c20df6e9faa2c7bdd6c6ef",
+      "external.py": "264b6312dda17caed78ba4e608f301ecaad034311189ee5c33597446fdd42a68",
+      "identifiers.py": "d0010bfbab280eabda82e43a5d286b3bc6a4c105a344102798ff1dcd97ccb2de",
+      "linear.py": "614d58fc6e8280e6559eb41e1d015723763ebb1db2469b5a7fe5a3ccb270566f",
+      "models.py": "5592d6c632bc9b9d6a47d1a1cf699a7fadc48c66fdba0a69c5e11eaa1230e8de",
+      "policies.py": "2ccb2f39cb78fafa6a3b452f0f76d4913e1660847cabb287ea382a69a01980fa",
+      "prepare.py": "ee8db1f477dc3185104013f08358682b6255c479226a3935acc17614eb5bf75e",
+      "provenance.py": "599e5f4b17cd39c44be9a7ddd27df89172ac3d3f6eca7a76b311cfea7c96a7e4",
+      "report.py": "1d370344507b9c5c668dcd61161df884a82ab3f91eeea4fa3bd71ef4f19b9f1c",
+      "simulation.py": "eaa3ff0c98f8f9970c7e7c9a6ee75d9fba37326187fb5932ab7a9a5cb0aa0076",
+      "study.py": "514dea833445eee09a3795c5796bd729f67893d54a1b28da5128087c1fe97708",
+      "transfer.py": "e1338b44c91db6abfe650e58e631718a3893bda2a009d2f2fcdf9ca44d5c4ab5",
+      "uncertainty.py": "f7fa9518a0636c7492eabe8e4bb6a6be317bc08158546f9fe0270b030ca35f73"
+    },
+    "source_tree_sha256": "1a3392680a7abfd4fdd7a5b2fc808e595bfc5e2628271f207c0e5cb789f569a3"
+  },
+  "evidence": [
+    {
+      "original": "docs\\publication-robustness-protocol.md",
+      "sha256": "a71f26039652b591201f991668a285a0615dda113d46a9151e9ea434cf5ff6b4",
+      "snapshot": "frozen-evidence/0-publication-robustness-protocol.md"
+    },
+    {
+      "original": "docs\\publication-method-clarifications.md",
+      "sha256": "3cb86304b048d4a12a2c2a63b5bb4b5342bac13dc7e6090fde8f03443823d6c2",
+      "snapshot": "frozen-evidence/1-publication-method-clarifications.md"
+    },
+    {
+      "original": "docs\\evidence\\publication-canonical-seed20261023-v1.json",
+      "sha256": "b4288d188c4aff3e62a3633009cbd7bde2ae7a2270dc29fa22cd78722d5bb3b7",
+      "snapshot": "frozen-evidence/2-publication-canonical-seed20261023-v1.json"
+    },
+    {
+      "original": "docs\\evidence\\publication-canonical-seed20261024-v1.json",
+      "sha256": "b1448076c1dc408f495e139a271e7557f7ae02d4eef5f819a7cc10602bceacef",
+      "snapshot": "frozen-evidence/3-publication-canonical-seed20261024-v1.json"
+    },
+    {
+      "original": "docs\\evidence\\development-resource-accounting-v3.json",
+      "sha256": "97979e5855ae038eef2f59ab301c51c450b445d1f4b3417dfd7d5017250c614a",
+      "snapshot": "frozen-evidence/4-development-resource-accounting-v3.json"
+    },
+    {
+      "original": "docs\\evidence\\publication-robustness-declaration-v1.json",
+      "sha256": "7a241554eabc403efc2e1c4ed9e0778afd822ff87c3e5ed5ec8be165109eff42",
+      "snapshot": "frozen-evidence/5-publication-robustness-declaration-v1.json"
+    }
+  ],
+  "joint_gate_sha256": "ef4497f6e5b2c84efbaba7a5526bd58ef4eda720b3ac2833d860d679961dc8ec",
+  "resources_end": {
+    "available_ram_bytes": 2001006592,
+    "disk_free_bytes": 574377730048,
+    "disk_total_bytes": 1002016075776,
+    "logical_cpus": 16,
+    "memory_scope": "Current process; peak is over its lifetime, not a per-case delta.",
+    "peak_commit_bytes": 607617024,
+    "peak_working_set_bytes": 790515712,
+    "process_id": 50776,
+    "ram_bytes": 16418983936,
+    "recorded_at": "2026-10-23T19:51:06.746163+00:00",
+    "working_set_bytes": 89681920
+  },
+  "resources_start": {
+    "available_ram_bytes": 1781936128,
+    "disk_free_bytes": 596131688448,
+    "disk_total_bytes": 1002016075776,
+    "logical_cpus": 16,
+    "memory_scope": "Current process; peak is over its lifetime, not a per-case delta.",
+    "peak_commit_bytes": 45383680,
+    "peak_working_set_bytes": 63574016,
+    "process_id": 50776,
+    "ram_bytes": 16418983936,
+    "recorded_at": "2026-10-23T19:12:15.717444+00:00",
+    "working_set_bytes": 58781696
+  },
+  "run_runtime_seconds": 2240.504830100079,
+  "scoring_pass_runtime_seconds": 653.7585265999951,
+  "source_snapshot": {
+    "path": "code.zip",
+    "purpose": "Exact package sources plus available project dependency specification.",
+    "sha256": "c5d728f7c936893950abaea3fcdd719c81895ef437752cadb3b3cea22194c495"
+  },
+  "state": "complete",
+  "uninterrupted_suite_runtime_seconds": 2332.5402477000025,
+  "workers": 1
+}

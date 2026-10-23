@@ -1,0 +1,16 @@
+episode_a,episode_b,split_seed_a,source_context_a,target_context_a,split_seed_b,source_context_b,target_context_b,shared_queries,shared_calibrations,shared_source_cells,shared_target_acquisition_cells,shared_query_assessment_cells,shared_scorer_control_cells,shared_all_assessment_cells,shared_target_retained_cells,source_a_in_target_b,source_b_in_target_a,source_a_in_scorer_b,source_b_in_scorer_a
+publication-k562-to-rpe1-seed20261023-v1,publication-rpe1-to-k562-seed20261023-v1,20261023,K562,RPE1,20261023,RPE1,K562,131,394,0,0,0,0,0,0,50912,50912,4448,4448
+publication-k562-to-rpe1-seed20261023-v1,publication-k562-to-rpe1-seed20261024-v1,20261023,K562,RPE1,20261024,K562,RPE1,35,298,50912,12864,342,121,5770,50912,0,0,0,0
+publication-k562-to-rpe1-seed20261023-v1,publication-rpe1-to-k562-seed20261024-v1,20261023,K562,RPE1,20261024,RPE1,K562,35,298,0,0,0,0,0,0,50912,50912,4448,4448
+publication-k562-to-rpe1-seed20261023-v1,k562-to-rpe1-v1,20261023,K562,RPE1,20261021,K562,RPE1,31,294,50912,12730,316,131,5823,50912,0,0,0,0
+publication-k562-to-rpe1-seed20261023-v1,rpe1-to-k562-v1,20261023,K562,RPE1,20261021,RPE1,K562,31,294,0,0,0,0,0,0,50912,50912,4448,4448
+publication-rpe1-to-k562-seed20261023-v1,publication-k562-to-rpe1-seed20261024-v1,20261023,RPE1,K562,20261024,K562,RPE1,35,298,0,0,0,0,0,0,50912,50912,4448,4448
+publication-rpe1-to-k562-seed20261023-v1,publication-rpe1-to-k562-seed20261024-v1,20261023,RPE1,K562,20261024,RPE1,K562,35,298,50912,12864,342,121,5770,50912,0,0,0,0
+publication-rpe1-to-k562-seed20261023-v1,k562-to-rpe1-v1,20261023,RPE1,K562,20261021,K562,RPE1,31,294,0,0,0,0,0,0,50912,50912,4448,4448
+publication-rpe1-to-k562-seed20261023-v1,rpe1-to-k562-v1,20261023,RPE1,K562,20261021,RPE1,K562,31,294,50912,12730,316,131,5823,50912,0,0,0,0
+publication-k562-to-rpe1-seed20261024-v1,publication-rpe1-to-k562-seed20261024-v1,20261024,K562,RPE1,20261024,RPE1,K562,131,394,0,0,0,0,0,0,50912,50912,4448,4448
+publication-k562-to-rpe1-seed20261024-v1,k562-to-rpe1-v1,20261024,K562,RPE1,20261021,K562,RPE1,33,296,50912,12810,363,127,5800,50912,0,0,0,0
+publication-k562-to-rpe1-seed20261024-v1,rpe1-to-k562-v1,20261024,K562,RPE1,20261021,RPE1,K562,33,296,0,0,0,0,0,0,50912,50912,4448,4448
+publication-rpe1-to-k562-seed20261024-v1,k562-to-rpe1-v1,20261024,RPE1,K562,20261021,K562,RPE1,33,296,0,0,0,0,0,0,50912,50912,4448,4448
+publication-rpe1-to-k562-seed20261024-v1,rpe1-to-k562-v1,20261024,RPE1,K562,20261021,RPE1,K562,33,296,50912,12810,363,127,5800,50912,0,0,0,0
+k562-to-rpe1-v1,rpe1-to-k562-v1,20261021,K562,RPE1,20261021,RPE1,K562,131,394,0,0,0,0,0,0,50912,50912,4448,4448

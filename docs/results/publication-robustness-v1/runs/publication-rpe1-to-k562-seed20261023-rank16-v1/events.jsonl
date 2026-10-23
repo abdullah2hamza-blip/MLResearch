@@ -1,0 +1,9 @@
+{"event": "Acquiring", "level": "INFO", "logger": "mlresearch.experiment", "policy": "worst_query", "recorded_at": "2026-10-23T19:22:25.006619+00:00", "seed": 0}
+{"event": "Acquiring", "level": "INFO", "logger": "mlresearch.experiment", "policy": "mean_query", "recorded_at": "2026-10-23T19:22:46.938641+00:00", "seed": 0}
+{"event": "Acquiring", "level": "INFO", "logger": "mlresearch.experiment", "policy": "bias_aware", "recorded_at": "2026-10-23T19:23:09.971604+00:00", "seed": 0}
+{"event": "Acquiring", "level": "INFO", "logger": "mlresearch.experiment", "policy": "worst_query", "recorded_at": "2026-10-23T19:23:38.202184+00:00", "seed": 1}
+{"event": "Acquiring", "level": "INFO", "logger": "mlresearch.experiment", "policy": "mean_query", "recorded_at": "2026-10-23T19:23:57.880742+00:00", "seed": 1}
+{"event": "Acquiring", "level": "INFO", "logger": "mlresearch.experiment", "policy": "bias_aware", "recorded_at": "2026-10-23T19:24:19.613698+00:00", "seed": 1}
+{"event": "Acquiring", "level": "INFO", "logger": "mlresearch.experiment", "policy": "worst_query", "recorded_at": "2026-10-23T19:24:49.478854+00:00", "seed": 2}
+{"event": "Acquiring", "level": "INFO", "logger": "mlresearch.experiment", "policy": "mean_query", "recorded_at": "2026-10-23T19:25:08.835495+00:00", "seed": 2}
+{"event": "Acquiring", "level": "INFO", "logger": "mlresearch.experiment", "policy": "bias_aware", "recorded_at": "2026-10-23T19:25:30.578395+00:00", "seed": 2}

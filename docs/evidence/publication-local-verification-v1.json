@@ -1,0 +1,26 @@
+{
+  "mypy": "22source modules passed",
+  "qualification": "Local runtime/test evidence. Packaging-only LICENSE addition is documented separately. Remote CI and clean archive checks are separate records.",
+  "recorded_at": "2026-10-23T20:38:50.568682+00:00",
+  "ruff_check": "passed",
+  "ruff_format_check": "71files passed",
+  "sdist": {
+    "cache_environment_or_data_members": false,
+    "license_notice_included": true,
+    "sha256": "25e6e011b5f8acf11b22b90d6610ddc700def25f9014eb4c6e652cf1ce921114"
+  },
+  "state": "passed",
+  "tests": {
+    "command": "python -m pytest --basetemp .cache/pytest-publication-final-v1 -q",
+    "elapsed_seconds": 128.96,
+    "passed": 111
+  },
+  "uv_locked_offline_check": "passed",
+  "wheel": {
+    "all_package_source_members_byte_equal": true,
+    "fresh_environment": "Python3.12.14; exact14hash-pinnedruntime dependencies; standalone wheel installed",
+    "license_notice_included_and_byte_equal": true,
+    "offline_demo_and_report": "complete; numerical source identical before metadata-only license-file addition",
+    "sha256": "35b7af53690c7e49195479428aff7b1039464b9515eb1abfe9e5c0a8f4d1385c"
+  }
+}

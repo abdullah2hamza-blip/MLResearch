@@ -1,3 +1,5 @@
+> Version note added for the publication package: exact historical predictions use the retained 0.1.0 source snapshot. Current 0.2.0 corrects transport acceptance diagnostics without changing the original numerical prediction arrays. See the [concrete snapshot restoration instructions](publication-guide.md#full-numerical-reproduction) and keep strict historical replay separate from current release validation.
+
 # Reproducing the frozen external study
 
 Use a clean checkout, Python 3.12 and the locked uv environment. This reproduces the published released-data comparison; it is not a new untouched external dataset or biological replication. The [frozen protocol](external-evaluation-protocol.md) defines the scientific settings. Raw/prepared matrices, environments and large predictions remain ignored.

@@ -1,0 +1,27 @@
+{
+  "generated_tex_tables_and_macros_byte_equal": [
+    "controlled-scenarios.tex",
+    "development-references.tex",
+    "forward-all-backbones.tex",
+    "interval-diagnostics.tex",
+    "numbers.tex",
+    "primary-comparison.tex",
+    "ranking-and-absolute.tex",
+    "reverse-all-backbones.tex",
+    "robustness-absolute.tex",
+    "robustness-full_grid.tex",
+    "robustness-original_grid.tex",
+    "uncertainty-scopes.tex"
+  ],
+  "numeric_registry_semantically_identical": true,
+  "pdf_bytes_identical": true,
+  "pdf_pages": 28,
+  "pdf_text_identical": true,
+  "preliminary_code_archive_sha256": "44a01c5c4f7c843ae953a1bffae4b92727deed90a822452cd663aa1ed536917b",
+  "qualification": "Exact checked payloads. Final archive may add completion records and documentation without changing any checked runtime/build/generator or manuscript member.",
+  "source_archive_sha256": "489f8114e7d8887c41e06ad9ab793d4a1ee4e7c4b14df1e1a8dd9cf5928f4563",
+  "state": "passed",
+  "unpacked_code_asset_regeneration": "passed in isolated installed-wheel environment",
+  "unpacked_code_retained_verifier": "passed without raw/prepared data or prediction arrays",
+  "unpacked_manuscript_build": "success"
+}

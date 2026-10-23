@@ -1,0 +1,14 @@
+{
+  "acquisition_cells": 64,
+  "acquisition_controls": 256,
+  "assessment_cells": 32,
+  "assessment_controls": 256,
+  "min_source_cells": 32,
+  "output_directory": "data/episodes/publication-rpe1-to-k562-seed20261023-v1",
+  "query_fraction": 0.25,
+  "seed": 20261023,
+  "source_context": "RPE1",
+  "source_prepared": "data/prepared/rpe1-paired-cap96-v1",
+  "target_context": "K562",
+  "target_prepared": "data/prepared/k562-paired-cap96-v1"
+}

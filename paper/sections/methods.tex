@@ -1,0 +1,56 @@
+\section{Task, estimand and methods}
+\label{sec:methods}
+\subsection{Information, finite pools and costs}
+Let $\mathcal C$ be eligible recipient calibration interventions and $\mathcal Q$ a disjoint, fixed query set, grouped by canonical target gene so guides cannot cross the split. Source responses for both sets are supplied. A policy sees source summaries and only recipient cells already purchased through a finite-pool service. Its actions open a calibration intervention, add cells to an opened intervention, or add shared negative-control cells. It cannot purchase query outcomes. An append-only ledger records cell identifiers, action costs and cumulative spend; previously purchased cells cannot be reused within a ledger.
+
+Each policy has its own counterfactual paid ledger. The same policy seed gives matched pilot identities and the same per-condition cell order across policies. Setup costs four abstract units per opened intervention; perturbed and control cells each cost one. The pilot buys six interventions at eight cells each and 16 controls, totaling 88. Subsequent blocks contain eight cells; affordable partial blocks are allowed, with at least two cells required to open an intervention. Unaffordable actions stop acquisition, and actual spend is reported. The units are hypothetical: a pooled screen does not inherently permit purchasing an arbitrary chosen gene's next cells. Real implementation could require enrichment, reweighting or arrayed experiments.
+
+Independent scorer-only treatment/control banks are inaccessible to the policy and predictor. For the primary external suite, all six runs close and authenticate their predictions before any scorer opens. This joint barrier protects the intended cooperative workflow; it is not a security sandbox against a hostile process with filesystem access. Source observations and scorer resources are disclosed separately from predictor-used recipient costs. Selecting a null predictor does not refund its acquisition policy's paid observations; a standalone zero predictor has zero recipient measurement-use cost.
+
+\subsection{Expression target and source coordinates}
+For a count vector $c$, preprocessing applies
+\begin{equation}
+ T_g(c)=\log\!\left(1+10^4c_g/\sum_{h\in\mathcal G_{\rm released}}c_h\right).
+\end{equation}
+The population target is $\delta_{ig}=E[T_g(c)\mid i]-E[T_g(c)\mid 0]$ in the recipient, estimated for scoring by independent treatment/control cell means. It is a difference of normalized-log means, not a count-mean log fold change. Each file's complete released panel enters normalization before the exact source/recipient gene intersection. Different released panels therefore define different compositional denominators.
+
+Center the supplied source-response matrix over interventions and obtain its leading $r$ principal coordinates through its intervention Gram matrix. Scale the coordinates to unit root-mean-square and append an intercept, producing $x_i\in\mathbb R^{r+1}$, including coordinates $q_i$ for source-observed queries. This is transductive access to \emph{source} query responses, not recipient query labels. The primary external representation fixes $r=4$. Source half-sample differences and variance estimates are diagnostic inputs; they are not fully propagated into fitted uncertainty.
+
+\subsection{Shared controls, regularization and support}
+Under an ideal linear response model $\delta_i=x_i^\top B$, let treatment-mean noise variance be $d_i=v_i/n_i$ and control-mean variance be $c=v_0/n_0$. Let $\mathcal A(s)=\{i\in\mathcal C:n_i(s)>0\}$ denote the currently purchased calibration identities, and $X=X_{\mathcal A}$, $Y=Y_{\mathcal A}$ their rows. For a single expression coordinate, their observed control-relative effects have covariance
+\begin{equation}
+ C=\operatorname{diag}(d_i)+c\mathbf 1\mathbf 1^\top,
+ \qquad M=X^\top C^{-1}X.
+ \label{eq:cov}
+\end{equation}
+The implementation evaluates the equivalent weighted centered scatter including a zero-feature control group and uses a factored generalized least-squares solve, avoiding unstable subtraction. Scalar variances average measurement variability over expression genes. Opened interventions use purchased-cell estimates; unopened interventions use source variance multiplied by the median recipient/source ratio learned from paid observations. This is a plug-in working model, not a complete gene-specific or batch-dependent noise model.
+
+For positive control depth, a query is linearly estimable under the fixed-feature model only when $q$ lies in the row space of $X$ (equivalently the range of $M$). We compute projection residuals before ridge and assign unsupported queries infinite ideal variance. A relative eigenvalue tolerance $10^{-9}$ defines numerical support. Regularizing $M$ makes a point fit unique but does not establish identification from observations. Errors in estimated source coordinates or misspecified transfer can invalidate even a full numerical support diagnosis (Appendix~\ref{app:math}). This is linear-model algebra, not identification of biological transportability.
+
+The principal prediction backbone solves
+\begin{equation}
+ \widehat B_\lambda=\arg\min_B\operatorname{tr}[(Y-XB)^\top C^{-1}(Y-XB)]+\lambda\|B\|_F^2.
+\end{equation}
+Paid leave-one-intervention-out validation selects among $\lambda\in\{.1,1,10,100,10^3,10^4,10^5\}$ and an explicit zero-effect candidate. For linear held-out prediction $a^\top Y_{-i}$, its score subtracts the held-out mean variance and shared-control variance and adds $2c\sum_j a_j$. Under fixed design and known variances this corrects shared-control validation covariance; the derivation and limitations appear in Appendix~\ref{app:math}. Plug-in variances, adaptivity and winner selection preclude an end-to-end unbiased-risk guarantee.
+
+\subsection{The evaluated acquisition augmentation}
+Let $V_{\max}=\max_{q\in\mathcal Q}q^\top(M+.01I)^{-1}q$. The classical worst-query rule greedily selects an affordable action's reduction in $V_{\max}$ per cost. The mean-query rule replaces the maximum by an average, aligning its ideal variance objective more closely with mean squared error. Both are greedy working-model rules, not global optimizers of realized prediction loss.
+
+The evaluated extension adds a fixed kernel-variance term. For non-intercept standardized source coordinates $z_i\in\mathbb R^r$, set
+\begin{align}
+ K_{ij}&=\exp[-\|z_i-z_j\|^2/(2r\ell^2)],\\
+ V_K&=|\mathcal Q|^{-1}\operatorname{tr}\{K_{QQ}-K_{Q\mathcal A}(K_{\mathcal A\mathcal A}+C_{\rm noise}+10^{-6}I)^{-1}K_{\mathcal A Q}\}.
+\end{align}
+Here $C_{\rm noise}=\operatorname{diag}(v_i/n_i)_{i\in\mathcal A}+(v_0/n_0)\mathbf1\mathbf1^\top$ conditions on purchased interventions only; an empty set gives the prior query variance. The kernel is unit amplitude, $\ell=1$, and $C_{\rm noise}$ includes shared-control covariance. The covariance expression is standard Gaussian-process algebra \citep{gpml2006}; here it treats the linear trend as known. For state $s$ and action $a$, the actual extension score is
+\begin{equation}
+ U(a)=\frac{V_{\max}(s)-V_{\max}(s+a)+\gamma[V_K(s)-V_K(s+a)]+10^6 H(s,a)}{\operatorname{cost}(a)},
+ \label{eq:acquisition}
+\end{equation}
+where $H$ is the nonnegative decrease in summed query projection-residual fractions while any query is unsupported, and is zero once all are supported. The finite support bonus is also used by the query-directed classical rules. Setting $\gamma=0$ reproduces worst-query acquisition. Development selected $\gamma=1$; the original $.25$ is retained as a comparator.
+
+Crucially, the kernel term's amplitude is not learned from realized residual bias, and the fitted primary predictor does not include this GP discrepancy. Its variance is therefore not the primary ridge predictor's risk. Evidence about Equation~\ref{eq:acquisition} cannot reject bias-aware acquisition generally or establish online detection of mechanism shift.
+
+\subsection{Matched predictors, policies and controls}
+Each policy's identical purchases feed zero effect, shared mean, source copy, scalar affine transfer, fixed-ridge GLS, paid-validation ridge, heuristic local residual adaptation, a recipient-local low-rank network and a single-source PerturbMap-style reconstruction. The last two share a training-only rank-16 response basis, paid-control descriptors, a 128-unit LayerNorm/GELU network and fixed model seed; they are not author-code reproductions. Appendix~\ref{app:implementation} specifies optimization and fidelity differences. Early stopping, transport selection and interpolation reuse the paid validation set, so the reconstruction's fitted calibration improvement is not an independent reliability test.
+
+The original external suite includes random/equal allocation, a development-selected fixed grid, source diversity, D-optimal, worst-query, mean-query, reliability and disagreement rules alongside the extension. Six allocation/covariance/extension ablations and the original discrepancy weight are retained. Source-identity derangement and query-source gene-coordinate permutation are run in both directions with fixed permutations and four prespecified policies. The corrupted public sources are processed through the same source-only coordinate pipeline. Scoring-coordinate permutation is a separate post-primary diagnostic without refitting. Every comparison retains its information, cost and task qualification.

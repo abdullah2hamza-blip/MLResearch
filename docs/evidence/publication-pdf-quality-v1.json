@@ -1,0 +1,179 @@
+{
+  "all_citation_keys_resolved": true,
+  "bibliography_entries": 10,
+  "desktop_compiler": "success",
+  "export_compiler": "Tectonic0.15.0,standardbundle33",
+  "inspection_method": "All28 initial pages at1.5x; all7 changed final pages re-inspected; remaining21 final rasters pixel-identical. Final tables/figures/captions/equations/margins readable, no clipping or overlapping labels.",
+  "nonfatal_compiler_notes": [
+    "One underfull paragraph box; visually acceptable.",
+    "Tectonic bibliography cache consistency/rerun warning; final references resolved."
+  ],
+  "overfull_boxes": [],
+  "pages": 28,
+  "pages_rendered": [
+    {
+      "page": 1,
+      "render_sha256": "31c1bc738c4d73b8ae00da80cc997f6e417f33ceb2a371e319784654b4b9a51a",
+      "same_as_visually_inspected_v1": true
+    },
+    {
+      "page": 2,
+      "render_sha256": "9b239152a69977e108d9ff5a04ddfec03c37c62d407f3432b71a7f669894999d",
+      "same_as_visually_inspected_v1": true
+    },
+    {
+      "page": 3,
+      "render_sha256": "a69ee6c837a42df5fe1a851f40f49bd7246dc070f80977b5f75c34d7d3843ebd",
+      "same_as_visually_inspected_v1": true
+    },
+    {
+      "page": 4,
+      "render_sha256": "1be084ee9941deea337640e906f18580b9ed731d905c71e78eb4b38249d37ff7",
+      "same_as_visually_inspected_v1": true
+    },
+    {
+      "page": 5,
+      "render_sha256": "51e667c33a48e407083ee1814a0af28ba78aeaa4a319f99841bd92ed574021db",
+      "same_as_visually_inspected_v1": true
+    },
+    {
+      "page": 6,
+      "render_sha256": "3322b97b1b48ac37b3ce02125d8e12cf5f9bb58e0aafab1f8570c8727ce654db",
+      "same_as_visually_inspected_v1": true
+    },
+    {
+      "page": 7,
+      "render_sha256": "78182ae1b5c7ae6b1733dc4f48c35baa2dece1e0bba64ab7f8fbf510cd61779e",
+      "same_as_visually_inspected_v1": true
+    },
+    {
+      "page": 8,
+      "render_sha256": "ffb80b40477a125422fc6d63b603a5ab828f0db36e05010deaa9e28d1e3ecb99",
+      "same_as_visually_inspected_v1": true
+    },
+    {
+      "page": 9,
+      "render_sha256": "e46eee075253c4aba3305aba6163aac2a42f9b73bbbd93a76ff4971885bd3243",
+      "same_as_visually_inspected_v1": true
+    },
+    {
+      "page": 10,
+      "render_sha256": "1094f3181b43cfd345846e656cf531e99c098669255dbd6b554278a19b186e65",
+      "same_as_visually_inspected_v1": true
+    },
+    {
+      "page": 11,
+      "render_sha256": "88dcb468565ffb4533c9e2d5451ee6449ce8447f7fb2be71ede5f8954b1d7db9",
+      "same_as_visually_inspected_v1": false
+    },
+    {
+      "page": 12,
+      "render_sha256": "80f8ec653c23da531ddd88df0ded1cd6a2bd1c51fec9599c709b451a8abbc7f3",
+      "same_as_visually_inspected_v1": true
+    },
+    {
+      "page": 13,
+      "render_sha256": "57032f12bfb171bd7bf529c2832d4196e02e5eed2b7bb8503c9354d538ff9fde",
+      "same_as_visually_inspected_v1": true
+    },
+    {
+      "page": 14,
+      "render_sha256": "abd86c9cbd33cab528eea3c3224197c5d7a4f0ceef6ed06285ae32b884d38508",
+      "same_as_visually_inspected_v1": true
+    },
+    {
+      "page": 15,
+      "render_sha256": "ca24c3628bf4149258850d13d9e6e4140544290f412fbda6a9cf8ff66781141a",
+      "same_as_visually_inspected_v1": true
+    },
+    {
+      "page": 16,
+      "render_sha256": "5e4ee944e74b6b3a276d404312b6a864e4b2e7b1ca23e5e150277383a74c2cf5",
+      "same_as_visually_inspected_v1": true
+    },
+    {
+      "page": 17,
+      "render_sha256": "b69a3d719dc72b6433485de6e5a0d683b7d6be1f66ea9fe188b5e0c801b69365",
+      "same_as_visually_inspected_v1": true
+    },
+    {
+      "page": 18,
+      "render_sha256": "927875a0cdab3f07b1d4d8fc33d04f9383ef08d96a0bf847c7d559c93f5b22a0",
+      "same_as_visually_inspected_v1": false
+    },
+    {
+      "page": 19,
+      "render_sha256": "de551b27128021d29318474dacaff2f7f5cbc066e34406c345ab7130e9153471",
+      "same_as_visually_inspected_v1": true
+    },
+    {
+      "page": 20,
+      "render_sha256": "76fabe285938ee9de5b899fc144f69bf3c6c8128b9e925a3dd14b051c32fb8e7",
+      "same_as_visually_inspected_v1": true
+    },
+    {
+      "page": 21,
+      "render_sha256": "f4d8d77509268bf9c44008b8b492e2161ee1b7d728f61ef7448db32e6ac19250",
+      "same_as_visually_inspected_v1": true
+    },
+    {
+      "page": 22,
+      "render_sha256": "b43d3896f7c4b3e56a50f9084450601a4f304b006545571fe17595064d7feddc",
+      "same_as_visually_inspected_v1": true
+    },
+    {
+      "page": 23,
+      "render_sha256": "e842cd278f3bebffa90c2038894a92e092dc250fe902d6d5efa167b6d657ada7",
+      "same_as_visually_inspected_v1": false
+    },
+    {
+      "page": 24,
+      "render_sha256": "f6cbedcad3051cfecba21ceccb2033d26ddf23a48ebe71b277a2710b8af52863",
+      "same_as_visually_inspected_v1": false
+    },
+    {
+      "page": 25,
+      "render_sha256": "6f9e2a482845d78bea4d3da7120f589a4bd58b51847c805eb5af6ecec19dcf06",
+      "same_as_visually_inspected_v1": true
+    },
+    {
+      "page": 26,
+      "render_sha256": "6b64e74cec19d6c95d242943352d8c126afa4866727aa8bae8767cf5e8ae851f",
+      "same_as_visually_inspected_v1": false
+    },
+    {
+      "page": 27,
+      "render_sha256": "f6cabc3a96fce187ae511a1e59b96bdbcbeeb3960973bab373384e5617413d5d",
+      "same_as_visually_inspected_v1": false
+    },
+    {
+      "page": 28,
+      "render_sha256": "6b74c05b260d3a5c2251fff81aeefa05f7208028c66fb70e29231174b6695758",
+      "same_as_visually_inspected_v1": false
+    }
+  ],
+  "pdf_bytes": 254964,
+  "pdf_sha256": "3563a6d56194689494830b15680a0758c59d07a22f06fde3555abfb97090c033",
+  "placeholders_found": false,
+  "recorded_at": "2026-10-23T20:38:50.405428+00:00",
+  "source_sha256": {
+    "paper/main.tex": "a3125c405cdffce07dbf0af246c02e3300613d649ceaf76edb77c4d5b0d40349",
+    "paper/references.bib": "429f140c55d321c6bf0fd1746c440038ea503f3e22373ba110cb20a7d6f364d1",
+    "paper/sections/assessment-appendix.tex": "d78fc3e93a1abc316b210d1397ed20c5a6bf32a82b5661aaa371aca44c369409",
+    "paper/sections/baseline-appendix.tex": "df0c827e7e1461001c93a3aeb05d2c6591b6c837891b953796cd4089722c333d",
+    "paper/sections/disclosures.tex": "a6df85b7eb77b6d60e7acb7816b48152ff77959dc395accf5cf90be2b6f8f331",
+    "paper/sections/discussion.tex": "7ee38ca7a18a44aa9f916eb66aaac4b5d46334d4bdff1308f9c7d283cd1a6d24",
+    "paper/sections/experiments.tex": "6ef9ad94cee7fb6e87ed34ab2b1b0905ed272704cbe2ddabc29a3c28096e3485",
+    "paper/sections/implementation-appendix.tex": "ec3081093dd3dd6988162a2e2d939ec41ab54ecb02cf024dc6dc787e5d2077c7",
+    "paper/sections/introduction.tex": "0b9ed00beb41c9e9bb059f351f22929115f7999813ea1cebe8bd48bfb319bcec",
+    "paper/sections/mathematical-appendix.tex": "97ef68a3a321cd6eaade26107c2bd05074ee6819dc2e3801cd860d0d71760835",
+    "paper/sections/methods.tex": "e6a5e8e777f93ecb3f2617d1a37ea26b413fc294577be5e9af3f17bdba04467b",
+    "paper/sections/reproduction-appendix.tex": "b7a37474d1843b8f9f15c1528110bc4d7dffb5fbdc173093bb779ab827c840ae",
+    "paper/sections/results.tex": "ea106993cc923475be2a8e622bd2aa8e5b0c15f763f56ce23b9e32b281111d4b",
+    "paper/sections/robustness-results.tex": "4f297ef9d319cf5b37b776dc4a282561953d3dbd5605784be5c7e1f792925fb6"
+  },
+  "state": "passed",
+  "unique_labels": 28,
+  "unresolved_references": [],
+  "visually_inspected_all_final_pages": true
+}

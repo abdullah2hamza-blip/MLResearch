@@ -19,3 +19,13 @@ wheels/
 .env
 .env.*
 !.env.example
+
+# Manuscript intermediates; retain the named publication PDF only.
+/output/pdf/*
+!/output/pdf/joint-acquisition-study.pdf
+/paper/*.aux
+/paper/*.log
+/paper/*.out
+/paper/*.blg
+/paper/*.synctex.gz
+/output/release/

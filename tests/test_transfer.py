@@ -4,6 +4,7 @@ import pytest
 from mlresearch.transfer import (
     CoefficientMLP,
     TransferConfig,
+    calibrate_route,
     descriptors,
     reconstruct,
     response_basis,
@@ -110,3 +111,32 @@ def test_query_calibration_overlap_rejected():
     args[5] = [args[2][0], *args[5][1:]]
     with pytest.raises(ValueError, match="overlap"):
         reconstruct(*args)
+
+
+def test_route_calibration_rejects_zero_weight_and_equal_error():
+    target, base = np.zeros((2, 3)), np.ones((2, 3))
+    assert calibrate_route(target, base, 2 * base) == (0.0, 0.0)
+    assert calibrate_route(target, base, base) == (0.0, 0.0)
+    # A perfect base cannot acquire positive reliability from an epsilon denominator.
+    assert calibrate_route(target, target, base) == (0.0, 0.0)
+    # A small coordinate improvement can be invisible beside a huge squared error.
+    # A positive interpolation alone must not imply a positive numerical gain.
+    assert calibrate_route(np.zeros(2), np.array([1e20, 1.0]), np.array([1e20, 0.0])) == (
+        1.0,
+        0.0,
+    )
+
+
+def test_route_calibration_has_exact_analytic_fractional_optimum():
+    target, base = np.zeros((2, 3)), np.ones((2, 3))
+    assert calibrate_route(target, base, -base) == (0.5, 1.0)
+    assert calibrate_route(target, base, target) == (1.0, 1.0)
+    # Orthogonal displacement has positive norm but cannot reduce squared error.
+    assert calibrate_route(np.array([1.0, 0]), np.zeros(2), np.array([0.0, 1])) == (0.0, 0.0)
+
+
+def test_route_calibration_rejects_invalid_arrays():
+    with pytest.raises(ValueError, match="matching nonempty"):
+        calibrate_route(np.zeros(2), np.zeros(3), np.zeros(2))
+    with pytest.raises(ValueError, match="finite"):
+        calibrate_route(np.array([np.nan]), np.zeros(1), np.ones(1))

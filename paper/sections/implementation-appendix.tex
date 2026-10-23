@@ -1,0 +1,50 @@
+\section{Implementation, comparator fidelity and complete results}
+\label{app:implementation}
+\subsection{Operational settings and reproducibility}
+The software is a typed CPU-first Python package with a locked dependency environment and command-line stages for verified downloads, H5AD audit, bounded-memory preprocessing, episodes, finite-pool acquisition, scoring and reporting. Dense/CSR inputs stream rows; CSC inputs stream columns and compute full-panel library totals before transformation. Float32 memory-mapped prepared arrays avoid loading a full dense atlas. Original and canonical gene/guide/context identifiers and unavailable batch/donor metadata remain explicit. The public episode exposes source summaries and inventory, while only the runner loads private recipient row maps.
+
+Each prediction checkpoint binds its numeric artifact, exact ledger prefix, event count and spend. Joint suites archive acquisition manifests and authenticate every peer before opening any scorer. No source or declared configuration/evidence mutation is allowed during a live suite. A confirmed interrupted scoring phase may resume from its original gate; a timeout alone does not justify restarting acquisition. Historical source snapshots accompany every major stage. This is reproducibility and cooperative access control, not protection against an actor who rewrites all sources and hashes.
+
+The original fixed grid was tuned only on development to control fraction $.125$ and depth 8. Classical design uses a $.01I$ weak design prior, independently of the predictor's fixed ridge $.1$ or paid-validation penalty. Source rank is four in the original real replay and three in the original controlled grid. Source half sensitivity refits ridge predictors on two source halves at fixed paid ledgers; it does not refit acquisition or neural models and is not a confidence bound. The source warning compares squared public source-response norm with twice estimated mean measurement variance; it has no calibrated deferral guarantee.
+
+\subsection{The reconstructed transfer comparator}
+The recipient-local network and transport reconstruction use the same paid observations. Source and recipient responses from training identities alone define an exact low-rank basis, capped at 16 and the available centered rank; validation and query source tokens are excluded from fitting that basis. Descriptors are correlations of the target gene with 64 variable genes in paid controls, augmented by mean, standard deviation and detection rate. A target gene absent from the released expression panel receives an explicit zero descriptor and a missingness flag, rather than free external measurements.
+
+A LayerNorm/128-unit/GELU network predicts response coefficients. The NumPy AdamW implementation uses learning rate $.001$, weight decay $.0001$, batch 16 and three epochs per round, up to 100 rounds with patience 15. Model seed is 20261022 and paid identity split seed is 20260718; 20\% of paid identities are reserved for validation, with at least one validation identity and two training identities. An affine source-to-recipient expert selects ridge strength from $.001,.01,.1,1,10$, scaled by average per-coordinate source Gram energy. Interpolation to the local predictor is clipped to $[0,1]$ on that same paid validation set.
+
+These choices differ from author-code reproduction: there is one source, exact train-only PCA instead of a covariance sketch, a declared optimizer and energy scale, explicitly missing descriptors, and a different cohort/budget regime from the original PerturbMap study \citep{perturbmap2026}. We report this comparator's performance, not reproduction or refutation of that article. Because early stopping, expert selection and interpolation reuse validation outcomes, positive fitted gain is not independent evidence that a route generalizes. Zero interpolation is feasible, so nonnegative fitted gain is partly enforced by optimization.
+
+PI code review found a diagnostic error in the historical formula
+\begin{equation}
+ \rho=\max\{0,1-\mathrm{MSE}_{route}/(\mathrm{MSE}_{base}+10^{-12})\}.
+\end{equation} For positive base error this is positive even at equal errors. Twenty of the original 720 checkpoints have $\alpha=0$ and equal route/base errors but were marked accepted. Their authenticated reconstruction and local-base arrays are byte-identical; the other 700 have strictly positive fitted gain and positive interpolation. Thus the correction changes those flags, not any original prediction score. Version 0.2.0 uses $\max(0,\mathrm{MSE}_{base}-\mathrm{MSE}_{route})/\max(\mathrm{MSE}_{base},10^{-12})$ and requires positive interpolation and positive gain. Edge-case tests include zero displacement, perfect base, an analytic fractional optimum, and an improvement too small to resolve beside a large squared error. Original artifacts remain unmodified, and the audit identifies every affected checkpoint.
+
+\subsection{Full crossed primary prediction results}
+Tables~\ref{tab:full-forward}--\ref{tab:full-reverse} report all original policy/backbone point estimates on the same fixed endpoint. They are descriptive complete comparisons, not a multiplicity-adjusted ranking of biological methods. The zero/copy columns have zero recipient measurement-use cost even though displayed next to each policy's counterfactual paid trajectory. ``Local'' denotes the recipient-local network and ``Recon.'' the qualified reconstruction. Appendix ablation labels refer to the fixed-RBF augmentation; predictions retain the same covariance-correct backbone. Tables~\ref{tab:all-scenarios} and \ref{tab:intervals} additionally report all original controlled scenarios and both nominal Gaussian diagnostic levels.
+
+\begin{table}[p]
+\centering\footnotesize
+\caption{K562 to RPE1: full normalized MSE areas, multiplied by $10^3$. All five acquisition seeds and 128/256/512 budgets are included. Fixed ridge and paid-validation ridge (CV) are distinct. These data precede the gate diagnostic correction, which leaves predictions unchanged.}
+\label{tab:full-forward}
+\input{generated/forward-all-backbones}
+\end{table}
+\begin{table}[p]
+\centering\footnotesize
+\caption{RPE1 to K562: full normalized MSE areas, multiplied by $10^3$, under the same endpoint and qualifications as Table~\ref{tab:full-forward}. Directions reuse observations and are reported separately.}
+\label{tab:full-reverse}
+\input{generated/reverse-all-backbones}
+\end{table}
+
+\begin{table}[p]
+\centering\footnotesize
+\caption{All 14 original controlled scenarios: extension/ridge-CV true-error area $A_E$, paired difference from worst-query, Monte Carlo standard error of the paired difference, and relative change. Negative differences favor the extension. Each row uses five generated worlds, averaging six queries and five acquisition seeds within each world. Scenarios share random draws and are not independent replications. These settings use discrepancy weight $.25$.}
+\label{tab:all-scenarios}
+\input{generated/controlled-scenarios}
+\end{table}
+
+\begin{table}[p]
+\centering\footnotesize
+\caption{Known-truth Gaussian diagnostics at budget 192 for fixed ridge/worst-query. Entries are mean coordinate coverage and full width, conditional on finite intervals. ``Finite'' counts query/seed intervals across five worlds (six queries and five acquisition seeds each); these 150 observations are not independent biological replicates. The exact-source missing-direction case has no finite interval. The original full tables retain every scenario and checkpoint. Neither nominal level is a validated adaptive inference procedure.}
+\label{tab:intervals}
+\input{generated/interval-diagnostics}
+\end{table}

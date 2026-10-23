@@ -1,0 +1,9 @@
+{
+  "asset_manifest_sha256": "e8b539a94a5cc49b92beb2ffc23cbdcdb474d5f5c137df50fa4bde50d8cb73b6",
+  "pdf_quality_record_sha256": "0659a6195c2c33b9b1f413eaf4e011720cf29f05e9f545550500a90d17026f63",
+  "qualification": "Git index blobs checked independently; byte-preserving attributes prevent newline conversion of checksum-bound publication sources, configs, evidence and assets.",
+  "recorded_at": "2026-10-23T20:45:20.588824+00:00",
+  "source_asset_and_declared_evidence_bytes_equal": true,
+  "staged_bound_payload_count": 196,
+  "state": "passed"
+}

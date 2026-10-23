@@ -1,0 +1,36 @@
+\section{Complete baseline rules and controlled data model}
+\label{app:baselines}
+\subsection{Additional allocation rules}
+All actions are filtered by inventory, allowed action types and affordability before scoring. Deterministic score ties follow sorted action order; seeded order/random ties are explicit below. Every score is divided by the action's full cell/setup cost.
+
+Random/equal allocation first buys controls when their accumulated cost is below the configured fraction of current spend, or when no treatment action remains. Otherwise it selects randomly among treatments at minimum current depth, including unopened interventions at depth zero. Fixed grid has the same control rule, then chooses the earliest seeded intervention below target depth (eight after development); if none remains, it chooses the earliest among minimum-depth ties. The primary configured control fraction is $.125$; the original controlled study uses $.25$.
+
+Diversity is a hybrid: an unopened treatment scores its minimum squared source-feature distance to any opened treatment, an already opened treatment scores zero, and controls score the decrease in maximum working query variance. With no opened treatment it uses feature norm. D-optimal scores the increase in $\log\det(M+.01I)$. Reliability scores the decrease in one scalar mean variance: $v_0/n_0-v_0/(n_0+k)$ for $k$ controls, or $v_i/\max(n_i,1)-v_i/(n_i+k)$ for a treatment. It does not use a calibrated probability of transfer success.
+
+Disagreement fits paid-data GLS at the full coordinate resolution and at the first $\max(1,\lfloor(r+1)/2\rfloor)$ features, including the intercept. Their ridge penalties are $.1$ and $10\max(.1,.01)=1$. Let $d_q$ be their mean squared prediction disagreement over genes, normalized by $\max(\overline d,10^{-8})$. The rule scores mean query-variance reduction weighted by $1+d_q$. Worst-query, mean-query, disagreement and the fixed-RBF rule add the same finite support bonus $10^6H$ while any query is unsupported; other heuristics do not. These are explicit benchmark heuristics, not reproductions of published acquisition algorithms.
+
+The original external ablations set the discrepancy weight to zero or $.25$, fix intervention opening order to the seeded order, forbid extra depth, forbid extra controls, forbid new interventions after the pilot, or replace shared-control covariance in the acquisition score with diagonal effect variances. This last design ablation still uses the covariance-correct prediction backbone; it does not change the actual shared controls. Prohibitions apply after the common paid pilot. Fixed order restricts new openings, while allowed control/depth choices retain their action scores. The separate price study's identity-only ablation jointly forbids extra depth and extra controls.
+
+\subsection{Additional prediction backbones}
+Let $s_i\in\R^G$ be the supplied source effect and $y_i$ the purchased recipient contrast, for $i\in\mathcal A$. Zero predicts zero and source copy predicts $s_q$. Shared mean predicts $|\mathcal A|^{-1}\sum_i y_i$ for every query. Scalar affine adaptation pools all purchased intervention/gene pairs into ordinary least squares $y_{ig}=a+bs_{ig}$, with scalar slope and intercept, then predicts $a+bs_{qg}$; its source Gram denominator is floored at $10^{-12}$.
+
+Fixed ridge uses GLS penalty $.1$; paid-validation ridge includes the stated penalty grid and zero candidate. The local residual heuristic predicts
+\begin{equation}
+ \widehat\delta_q=s_q+\frac{|\mathcal A|}{|\mathcal A|+4}
+       \sum_{i\in\mathcal A}w_{qi}(y_i-s_i),\qquad
+ w_{qi}\propto\frac{\exp[-\|z_q-z_i\|^2/(2r)]}{d_i+c+.1},
+ \quad\sum_i w_{qi}=1.
+\end{equation}
+The weight denominator is protected numerically at $10^{-12}$. This is an explicitly heuristic adaptation, distinct from the reconstructed transport network in Appendix~\ref{app:implementation}. None of these predictors reads assessment outcomes for fitting or selection.
+
+\subsection{Known-truth generative model}
+Simulated continuous expression is used as provided, without count normalization. For each generated world draw 24 latent vectors $h_i\sim N(0,I_3)$, independently of a metadata-seeded six-query split. For calibration identities only, multiply the last latent coordinate by $a$. Draw independent loadings $L_S,L_T\in\R^{3\times64}$ and a nonlinear gene direction $u\in\R^{64}$ with iid $N(0,.3^2)$ entries. With independent $e_i\sim N(0,I_{64})$, define
+\begin{align}
+ s_i^*&=h_i^\top L_S,&s_i&=s_i^*+\tau e_i,\\
+ \delta_i&=h_i^\top L_T+m\sin(h_{i1})u.
+\end{align}
+The source-feature offset $\tau e_i$ is persistent across all source cells of intervention $i$, unlike independent cell measurement noise. Each context has an independent baseline $\mu_c\sim N(0,.5^2I)$; source cells are $\mu_S+s_i+\sigma_S\epsilon$, recipient cells are $\mu_T+\delta_i+\sigma_T\epsilon$, and control cells omit the intervention effect. All $\epsilon$ are independent standard Gaussian vectors before optional batches. Recipient control SD is $\kappa\sigma_T$, while source control SD is $\sigma_S$. Float32 values enter the same episode/acquisition/scoring interface. Truth, including $s_i^*$ and $\delta_i$, stays outside policy objects.
+
+Baseline parameters are $(a,\tau,m,\sigma_S,\sigma_T,\kappa)=(1,0,0,.5,1,1)$. Single-factor changes are $\tau=.5$ or 1; $\sigma_S=2$; $\sigma_T=.5$ or 2; $\kappa=4$ (control \emph{standard deviation}, hence variance times 16); and $m=2$. Missing-direction cases set $a=0$, with ordinary source noise $.5$ or exact source noise zero; an exact full-rank source case keeps $a=1$ and sets $\sigma_S=0$. Source-identity derangement and query-source gene permutation are separate controls.
+
+The batch scenario adds one shared vector $b_j\sim N(0,I_{64})$ to each recipient cell assigned to one of four cyclic technical batches. Full recipient treatment/control conditions are balanced across batches, so the full-condition batch mean cancels in the truth contrast; smaller acquisition/assessment banks can be unbalanced. Batch vectors are shared across interventions, creating dependence. Source conditions contain 32 treatment cells and 128 controls; recipient conditions contain 48 treatment cells and 128 controls, split into the stated banks. The latent/data stream uses a seed sequence distinct from the metadata split stream. All scenarios reuse five world seeds as common random draws; independence is not multiplied by 14 scenario labels.

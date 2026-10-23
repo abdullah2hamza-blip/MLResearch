@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "Please cite the accompanying manuscript and identify the software version used."
+type: software
+title: "MLResearch: joint acquisition for cross-context perturbation prediction"
+version: 0.2.0
+date-released: 2026-10-23
+authors:
+  - family-names: Hamza
+    given-names: Abdullah
+    affiliation: Independent Researcher
+    email: abdullah2hamza@gmail.com
+repository-code: "https://github.com/abdullah2hamza-blip/MLResearch"
+license: MIT
+abstract: >-
+  Finite-pool, costed acquisition and sealed-query evaluation with shared-control
+  covariance, frozen historical results and post-primary robustness diagnostics.
+  The repository is private during preparation; the accompanying code/evidence
+  archive can be deposited separately. No permanent archive DOI is assigned yet.
+preferred-citation:
+  type: article
+  title: "Evaluating fixed-kernel joint acquisition for cross-context perturbation prediction"
+  authors:
+    - family-names: Hamza
+      given-names: Abdullah
+      affiliation: Independent Researcher
+  year: 2026
+  license: CC-BY-4.0
+  notes: "Unsubmitted manuscript supplied in the publication package; no publication DOI yet."

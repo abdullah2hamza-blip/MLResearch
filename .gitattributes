@@ -1,8 +1,14 @@
 * text=auto eol=lf
 *.png binary
+*.pdf binary
 *.zip binary
 *.gz binary
 *.svg binary
 # Preserve bytes referenced by scientific artifact checksums.
 /docs/evidence/** -text whitespace=cr-at-eol
 /docs/results/** -text whitespace=cr-at-eol
+/paper/** -text whitespace=cr-at-eol
+/scripts/** -text whitespace=cr-at-eol
+/configs/** -text whitespace=cr-at-eol
+/docs/publication-robustness-protocol.md -text whitespace=cr-at-eol
+/docs/publication-method-clarifications.md -text whitespace=cr-at-eol

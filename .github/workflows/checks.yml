@@ -40,6 +40,8 @@ jobs:
       - run: uv run --locked python scripts/ranking-diagnostics.py --diagnostics .cache/secondary-frozen-smoke --output .cache/ranking-smoke
       - run: uv run --locked python scripts/ranking-diagnostics.py --diagnostics .cache/secondary-frozen-smoke --output .cache/ranking-smoke --resume
       - run: uv run --locked python scripts/verify-secondary-retention.py --bundle docs/results/secondary-supplement-v1 --primary docs/results/external-evaluation-v1 --output .cache/secondary-retention.json
+      - run: uv run --locked python scripts/verify-publication-package.py --output .cache/publication-evidence-check.json
+      - run: uv run --locked python scripts/generate-paper-assets.py --output .cache/paper-assets/generated --figures .cache/paper-assets/figures --robustness docs/results/publication-robustness-v1/analysis
       - run: uv run --locked mlresearch uncertainty .cache/offline-demo/experiment --output .cache/uncertainty.json --samples 200
       - run: uv run --locked mlresearch account-development --output .cache/development-cost.json .cache/offline-demo/experiment
       - run: uv run --locked mlresearch study configs/study-smoke.json

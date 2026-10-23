@@ -1,0 +1,20 @@
+{
+  "manuscript_inputs": 150,
+  "manuscript_outputs": 25,
+  "qualification": "Retained evidence authentication and independent arithmetic checks; not a fresh acquisition or a biological validation.",
+  "raw_expression_or_prediction_arrays_required": false,
+  "reconstructed_robustness_contrasts": 32,
+  "recorded_at": "2026-10-23T20:24:56.123875+00:00",
+  "retained_index_counts": {
+    "controlled-study-v1": 21,
+    "external-evaluation-v1": 179,
+    "publication-robustness-v1": 128,
+    "secondary-supplement-v1": 229
+  },
+  "robustness_checkpoints": 360,
+  "robustness_metric_rows": 330120,
+  "state": "passed",
+  "verification_source_sha256": "8fdc14b390be42a61517d700296cc8628a271f74d4774d62b1d1e1d17c2d38ab",
+  "zip_archives_checked": 78,
+  "zip_members_checked": 8387
+}

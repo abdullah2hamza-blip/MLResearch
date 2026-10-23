@@ -216,6 +216,31 @@ def fit_base(
     }
 
 
+def calibrate_route(
+    target: np.ndarray, base: np.ndarray, transport: np.ndarray
+) -> tuple[float, float]:
+    """Fit interpolation and its in-sample improvement; this is not a reliability test.
+
+    The same paid calibration labels select the interpolation and report its gain.
+    Zero interpolation or equal errors must have exactly zero reported gain.
+    """
+    if target.shape != base.shape or target.shape != transport.shape or target.size == 0:
+        raise ValueError("Route calibration requires matching nonempty arrays")
+    if not all(np.isfinite(value).all() for value in (target, base, transport)):
+        raise ValueError("Route calibration requires finite arrays")
+    displacement = transport - base
+    denominator = float(np.sum(displacement**2))
+    alpha = (
+        float(np.clip(np.sum((target - base) * displacement) / denominator, 0, 1))
+        if denominator
+        else 0.0
+    )
+    base_mse = float(np.mean((target - base) ** 2))
+    route_mse = float(np.mean((target - (base + alpha * displacement)) ** 2))
+    improvement = max(0.0, base_mse - route_mse)
+    return alpha, improvement / max(base_mse, 1e-12) if alpha > 0 else 0.0
+
+
 def reconstruct(
     control_cells: np.ndarray,
     genes: tuple[str, ...],
@@ -322,22 +347,12 @@ def reconstruct(
             best, selected, validation_predictions = score, ridge, val
             query_predictions = center + ((query_z - x_mean) @ mapping + y_mean) @ basis
     assert validation_predictions is not None and query_predictions is not None
-    displacement = validation_predictions - base_validation
-    denominator = float(np.sum(displacement**2))
-    alpha = (
-        float(
-            np.clip(
-                np.sum((recipient[validation] - base_validation) * displacement) / denominator, 0, 1
-            )
-        )
-        if denominator
-        else 0.0
-    )
-    proposal_validation = base_validation + alpha * displacement
+    alpha, rho = calibrate_route(recipient[validation], base_validation, validation_predictions)
+    proposal_validation = base_validation + alpha * (validation_predictions - base_validation)
     base_mse = float(np.mean((recipient[validation] - base_validation) ** 2))
     route_mse = float(np.mean((recipient[validation] - proposal_validation) ** 2))
-    rho = max(0.0, 1 - route_mse / (base_mse + 1e-12))
-    prediction = base_query + alpha * (query_predictions - base_query) if rho > 0 else base_query
+    accepted = alpha > 0 and rho > 0
+    prediction = base_query + alpha * (query_predictions - base_query) if accepted else base_query
     return {
         "perturbmap_reconstruction": prediction,
         "recipient_local_lowrank": base_query,
@@ -356,7 +371,11 @@ def reconstruct(
             "ridge_energy_scale": eta,
             "alpha": alpha,
             "rho": rho,
-            "route_accepted": rho > 0,
+            "route_accepted": accepted,
+            "calibration_gain_scope": (
+                "In-sample paid calibration improvement after early stopping, ridge selection "
+                "and interpolation on the same validation set; not independent reliability"
+            ),
             "base_validation_mse": base_mse,
             "proposal_validation_mse": route_mse,
             "base_fitting": fitting,

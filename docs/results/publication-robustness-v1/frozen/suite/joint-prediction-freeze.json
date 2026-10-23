@@ -1,0 +1,63 @@
+{
+  "boundary": "All declared predictions and paid ledgers authenticated before scoring.",
+  "configuration_sha256": "8bc758b844b3e717ca08f430fc95896c8bb331be5934525d644b3b4a56b462cc",
+  "frozen_at": "2026-10-23T19:40:11.507776+00:00",
+  "runs": [
+    {
+      "acquisition_manifest": "acquisition-manifests/run-0.json",
+      "acquisition_manifest_sha256": "02e27867db53852992a724b904f60007fa3a331786ab2f5a0a8e79798297d09d",
+      "configuration_sha256": "2ca984591428db542544131a793b9678c670e5b0cf28769464f5c8f961051dd9",
+      "predictions_sha256": "bef98fb9af1480e041eb222da953684b1f0db6489b05d9c5e623a5c7f6eb9102",
+      "run_directory": "C:\\Users\\Abdul\\Documents\\MLResearch\\runs\\publication-k562-to-rpe1-seed20261023-rank4-v1"
+    },
+    {
+      "acquisition_manifest": "acquisition-manifests/run-1.json",
+      "acquisition_manifest_sha256": "ea83449c63c10e5d59d4f804066ca27023cf5f8504a64934db7d68a562c929fd",
+      "configuration_sha256": "e0a1e6d54dd47c8e74bec7ae395b52b96da83e36b29e979d0f25454ff4805755",
+      "predictions_sha256": "8f7e23bc8c95cb3ab054d970b2d1b5d6acfbbcecd392978dc04676d5033857eb",
+      "run_directory": "C:\\Users\\Abdul\\Documents\\MLResearch\\runs\\publication-k562-to-rpe1-seed20261023-rank16-v1"
+    },
+    {
+      "acquisition_manifest": "acquisition-manifests/run-2.json",
+      "acquisition_manifest_sha256": "9bec0ae35d9670955345483d0b40179183f05a3884ac623c16db6a9a69d37499",
+      "configuration_sha256": "b95bc551de343d5e6716fc470f9f8e788c59f64b7c91b37fe2ec9e717777e66e",
+      "predictions_sha256": "4cb961d5f7fdadac57bfb0e548aa651406288144e9b15184d726083a7be37526",
+      "run_directory": "C:\\Users\\Abdul\\Documents\\MLResearch\\runs\\publication-rpe1-to-k562-seed20261023-rank4-v1"
+    },
+    {
+      "acquisition_manifest": "acquisition-manifests/run-3.json",
+      "acquisition_manifest_sha256": "1c59f61f9d341c0da089d694ec9377aed83ffe2e46b7e2f8b2c165da4c456a00",
+      "configuration_sha256": "eeeec91447b5725ca2c83225519c8bee7ed5f764024d10f73910b24b44649d41",
+      "predictions_sha256": "be5406c46bb4c0373e6bb9a941e9ecb160db4701d6542dbe7935230d9d106a30",
+      "run_directory": "C:\\Users\\Abdul\\Documents\\MLResearch\\runs\\publication-rpe1-to-k562-seed20261023-rank16-v1"
+    },
+    {
+      "acquisition_manifest": "acquisition-manifests/run-4.json",
+      "acquisition_manifest_sha256": "81413fccea108fc8d4d3b1b4b7ecee490c548f07a5835ac8b321863a497171c1",
+      "configuration_sha256": "3018b993ceea1fc7b476fc7e8a3bd9d46d92439b75e1c30a2c76e6ccb31a3094",
+      "predictions_sha256": "8cdc0cf7ab539caae307247f8c622b7553ceb0d9bf83c02fd030c8932b66921b",
+      "run_directory": "C:\\Users\\Abdul\\Documents\\MLResearch\\runs\\publication-k562-to-rpe1-seed20261024-rank4-v1"
+    },
+    {
+      "acquisition_manifest": "acquisition-manifests/run-5.json",
+      "acquisition_manifest_sha256": "24e8318ce2a1bb4a3ec3b1b56929226de68dc936021e42a0319ffd4ad37a1785",
+      "configuration_sha256": "5c9b00a244b7b92b76f59544a78e065084888116309c18fd83a18728b5f4f3e2",
+      "predictions_sha256": "ea8267b9ffca6d5873e20db58be43f1ca2580a2f9a91c8d8e6c3d69d97cc91cb",
+      "run_directory": "C:\\Users\\Abdul\\Documents\\MLResearch\\runs\\publication-k562-to-rpe1-seed20261024-rank16-v1"
+    },
+    {
+      "acquisition_manifest": "acquisition-manifests/run-6.json",
+      "acquisition_manifest_sha256": "dd2a749aa96d8188bec0c21b00b0427aaf3a33514e3b22d992fcbd6f88bd4f1c",
+      "configuration_sha256": "34b9967168c4bf8b3b4bd33b6ef3853c48814b6351c7daa3c032d0aa30130d91",
+      "predictions_sha256": "3290c337ccb1e83fe4daaf812cb530e6ed2b6e93b531996bf4d26776f7dff0b7",
+      "run_directory": "C:\\Users\\Abdul\\Documents\\MLResearch\\runs\\publication-rpe1-to-k562-seed20261024-rank4-v1"
+    },
+    {
+      "acquisition_manifest": "acquisition-manifests/run-7.json",
+      "acquisition_manifest_sha256": "ca787401032abef0502e1e53868b321e7879335dc778958cfb6a923bbe1cea6d",
+      "configuration_sha256": "56ee34fe336e470eaf11dfa0a040f9988974ed88da282383eaa167ec068b2bee",
+      "predictions_sha256": "d7e842c8d651e544c3e77525fe3b6c8fbac15cdb8c761d982d7dacdc96213c15",
+      "run_directory": "C:\\Users\\Abdul\\Documents\\MLResearch\\runs\\publication-rpe1-to-k562-seed20261024-rank16-v1"
+    }
+  ]
+}

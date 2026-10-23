@@ -1,0 +1,26 @@
+{
+  "affected_artifacts_authenticated_and_baseline_byte_equal": 20,
+  "affected_counts_by_run": {
+    "external-k562-to-rpe1-identity-permuted-v1": 5,
+    "external-k562-to-rpe1-v1": 11,
+    "external-rpe1-to-k562-identity-permuted-v1": 3,
+    "external-rpe1-to-k562-v1": 1
+  },
+  "all_prediction_arrays_unaffected_by_gate_correction": true,
+  "analysis_source_sha256": "6db3ed7fe29d68652ff6b434057ee61709f0b599c9ee25fc35fe397dc37e6b3e",
+  "epsilon_only_zero_alpha_flags": 20,
+  "historical_accepted_flags": 720,
+  "historical_diagnostics_sha256": "366fd700051cccd8ee29819a0c75910eead891ad52391d1d987aca4e05e96592",
+  "prediction_index_sha256": {
+    "external-k562-to-rpe1-identity-permuted-v1": "3f219723cc130de0afe6985f51c43029575c06ebd94200fadc4ff92855314d72",
+    "external-k562-to-rpe1-query-gene-permuted-v1": "ddc58c0b617144ec2b0edb8d807cd49d34e99a65344e034d206d3470569714c3",
+    "external-k562-to-rpe1-v1": "fbf18fb6328227fb27cdf767b6eb6bb061a72b4eb52eb203ebc8cbaad92f10c1",
+    "external-rpe1-to-k562-identity-permuted-v1": "4f50901d1b489568804eb4d3bcdd43b7b2ab68be88cdc841e7a8e4bafd132772",
+    "external-rpe1-to-k562-query-gene-permuted-v1": "3fedf3ec036bd5540e4d3e8a8afe81234f664ea740dd69d0c19675a7398df713",
+    "external-rpe1-to-k562-v1": "7ea6a99b2777d19c8d02206d4050c46637c850c0e498b461a0302f991e2b51e9"
+  },
+  "qualification": "Twenty zero-alpha gates change diagnostic status only; all 700 positive-alpha strict gains remain routed. Alpha calculation is unchanged in version0.2.0; rho magnitude does not weight single-source predictions. Historical artifacts are preserved. Fitted calibration gain is not independent reliability.",
+  "recorded_at": "2026-10-23T19:05:41.837860+00:00",
+  "state": "passed",
+  "strict_positive_calibration_gain": 700
+}

@@ -1,0 +1,1312 @@
+{
+  "analysis_source_sha256": "d497a5b985929055dc8ad3518a67628de5a2c2875e27d5ed85de5fdf80e68c92",
+  "analyzed_at": "2026-10-23T19:57:02.231216+00:00",
+  "bootstrap_samples": 2000,
+  "bootstrap_seed": 20261022,
+  "qualifications": [
+    "Queries averaged over acquisition seeds before paired descriptive bootstrap.",
+    "Directions reuse observations and are not independent biological replications.",
+    "Gaussian fields measure noisy-contrast compatibility, not population coverage.",
+    "Source-half support and instability/deferral flags are uncalibrated diagnostics.",
+    "Weak/strong strata use permitted public sources, including deliberate corruption."
+  ],
+  "runs": [
+    {
+      "acquisition_runtime_seconds": 192.63746770002763,
+      "areas": [
+        {
+          "backbone": "zero",
+          "mse_area": 0.00907644896410736,
+          "policy": "worst_query",
+          "specificity_area": 0.007595080373709372
+        },
+        {
+          "backbone": "mean",
+          "mse_area": 0.010883135012032715,
+          "policy": "worst_query",
+          "specificity_area": 0.007595080373714347
+        },
+        {
+          "backbone": "source_copy",
+          "mse_area": 0.009861592887928344,
+          "policy": "worst_query",
+          "specificity_area": 0.008324052317067529
+        },
+        {
+          "backbone": "affine",
+          "mse_area": 0.008871531242628346,
+          "policy": "worst_query",
+          "specificity_area": 0.007393276148095875
+        },
+        {
+          "backbone": "ridge",
+          "mse_area": 0.010443491559666713,
+          "policy": "worst_query",
+          "specificity_area": 0.007803055587000949
+        },
+        {
+          "backbone": "ridge_cv",
+          "mse_area": 0.00842652088903623,
+          "policy": "worst_query",
+          "specificity_area": 0.007082927002919711
+        },
+        {
+          "backbone": "local_residual_adaptation",
+          "mse_area": 0.010046655268186076,
+          "policy": "worst_query",
+          "specificity_area": 0.00801238718318922
+        },
+        {
+          "backbone": "zero",
+          "mse_area": 0.00907644896410736,
+          "policy": "mean_query",
+          "specificity_area": 0.007595080373709372
+        },
+        {
+          "backbone": "mean",
+          "mse_area": 0.009967254334235986,
+          "policy": "mean_query",
+          "specificity_area": 0.007595080373712777
+        },
+        {
+          "backbone": "source_copy",
+          "mse_area": 0.009861592887928344,
+          "policy": "mean_query",
+          "specificity_area": 0.008324052317067529
+        },
+        {
+          "backbone": "affine",
+          "mse_area": 0.008759880815054636,
+          "policy": "mean_query",
+          "specificity_area": 0.007361079070361051
+        },
+        {
+          "backbone": "ridge",
+          "mse_area": 0.009340330542972567,
+          "policy": "mean_query",
+          "specificity_area": 0.007358735729348769
+        },
+        {
+          "backbone": "ridge_cv",
+          "mse_area": 0.008756591312292686,
+          "policy": "mean_query",
+          "specificity_area": 0.007322536408679202
+        },
+        {
+          "backbone": "local_residual_adaptation",
+          "mse_area": 0.00994738370325687,
+          "policy": "mean_query",
+          "specificity_area": 0.008089987456854927
+        },
+        {
+          "backbone": "zero",
+          "mse_area": 0.00907644896410736,
+          "policy": "bias_aware",
+          "specificity_area": 0.007595080373709372
+        },
+        {
+          "backbone": "mean",
+          "mse_area": 0.010994650747742595,
+          "policy": "bias_aware",
+          "specificity_area": 0.007595080373714212
+        },
+        {
+          "backbone": "source_copy",
+          "mse_area": 0.009861592887928344,
+          "policy": "bias_aware",
+          "specificity_area": 0.008324052317067529
+        },
+        {
+          "backbone": "affine",
+          "mse_area": 0.008841434175149494,
+          "policy": "bias_aware",
+          "specificity_area": 0.007389814899131585
+        },
+        {
+          "backbone": "ridge",
+          "mse_area": 0.010579851455185262,
+          "policy": "bias_aware",
+          "specificity_area": 0.007719493003950569
+        },
+        {
+          "backbone": "ridge_cv",
+          "mse_area": 0.008124785768637463,
+          "policy": "bias_aware",
+          "specificity_area": 0.006989937583150202
+        },
+        {
+          "backbone": "local_residual_adaptation",
+          "mse_area": 0.010219486377531591,
+          "policy": "bias_aware",
+          "specificity_area": 0.007946910777093804
+        }
+      ],
+      "configuration_sha256": "2ca984591428db542544131a793b9678c670e5b0cf28769464f5c8f961051dd9",
+      "development_cost": 6428,
+      "metric_rows": 41265,
+      "public_source_cells": 50912,
+      "resources_end": {
+        "available_ram_bytes": 383811584,
+        "disk_free_bytes": 575406141440,
+        "disk_total_bytes": 1002016075776,
+        "logical_cpus": 16,
+        "memory_scope": "Current process; peak is over its lifetime, not a per-case delta.",
+        "peak_commit_bytes": 607617024,
+        "peak_working_set_bytes": 790515712,
+        "process_id": 50776,
+        "ram_bytes": 16418983936,
+        "recorded_at": "2026-10-23T19:42:11.535376+00:00",
+        "working_set_bytes": 397168640
+      },
+      "run": "publication-k562-to-rpe1-seed20261023-rank4-v1",
+      "run_directory": "C:\\Users\\Abdul\\Documents\\MLResearch\\runs\\publication-k562-to-rpe1-seed20261023-rank4-v1",
+      "run_manifest_sha256": "1cad19757c75bd278c61bb970345e0228145293f543e60ac7e8ccb51f966959a",
+      "runtime_seconds": 268.6103605000244,
+      "scorer_only_cells": 4448,
+      "scoring_runtime_seconds": 75.97288939999999,
+      "source_context": "K562",
+      "source_control": "none",
+      "source_coordinates": {
+        "explained_fraction": 0.2709701878847581,
+        "rank": 4,
+        "source_half_noise": 0.006410004444883512
+      },
+      "target_context": "RPE1"
+    },
+    {
+      "acquisition_runtime_seconds": 218.07816839998122,
+      "areas": [
+        {
+          "backbone": "zero",
+          "mse_area": 0.00907644896410736,
+          "policy": "worst_query",
+          "specificity_area": 0.007595080373709372
+        },
+        {
+          "backbone": "mean",
+          "mse_area": 0.012107704128808374,
+          "policy": "worst_query",
+          "specificity_area": 0.007595080373714822
+        },
+        {
+          "backbone": "source_copy",
+          "mse_area": 0.009861592887928344,
+          "policy": "worst_query",
+          "specificity_area": 0.008324052317067529
+        },
+        {
+          "backbone": "affine",
+          "mse_area": 0.008771991465419498,
+          "policy": "worst_query",
+          "specificity_area": 0.007365209695355852
+        },
+        {
+          "backbone": "ridge",
+          "mse_area": 0.05540688656392889,
+          "policy": "worst_query",
+          "specificity_area": 0.04990379631660966
+        },
+        {
+          "backbone": "ridge_cv",
+          "mse_area": 0.008732359712115919,
+          "policy": "worst_query",
+          "specificity_area": 0.007333569013150817
+        },
+        {
+          "backbone": "local_residual_adaptation",
+          "mse_area": 0.011667941117287497,
+          "policy": "worst_query",
+          "specificity_area": 0.008197635362068698
+        },
+        {
+          "backbone": "zero",
+          "mse_area": 0.00907644896410736,
+          "policy": "mean_query",
+          "specificity_area": 0.007595080373709372
+        },
+        {
+          "backbone": "mean",
+          "mse_area": 0.010854646126291003,
+          "policy": "mean_query",
+          "specificity_area": 0.0075950803737139675
+        },
+        {
+          "backbone": "source_copy",
+          "mse_area": 0.009861592887928344,
+          "policy": "mean_query",
+          "specificity_area": 0.008324052317067529
+        },
+        {
+          "backbone": "affine",
+          "mse_area": 0.008781636927151209,
+          "policy": "mean_query",
+          "specificity_area": 0.0073858105161057255
+        },
+        {
+          "backbone": "ridge",
+          "mse_area": 0.032239119361342564,
+          "policy": "mean_query",
+          "specificity_area": 0.028653842486724205
+        },
+        {
+          "backbone": "ridge_cv",
+          "mse_area": 0.00871398686823631,
+          "policy": "mean_query",
+          "specificity_area": 0.007319878240830326
+        },
+        {
+          "backbone": "local_residual_adaptation",
+          "mse_area": 0.010583892184140721,
+          "policy": "mean_query",
+          "specificity_area": 0.008133141356759223
+        },
+        {
+          "backbone": "zero",
+          "mse_area": 0.00907644896410736,
+          "policy": "bias_aware",
+          "specificity_area": 0.007595080373709372
+        },
+        {
+          "backbone": "mean",
+          "mse_area": 0.01209901498625625,
+          "policy": "bias_aware",
+          "specificity_area": 0.0075950803737146015
+        },
+        {
+          "backbone": "source_copy",
+          "mse_area": 0.009861592887928344,
+          "policy": "bias_aware",
+          "specificity_area": 0.008324052317067529
+        },
+        {
+          "backbone": "affine",
+          "mse_area": 0.008736511032165698,
+          "policy": "bias_aware",
+          "specificity_area": 0.007328042002245653
+        },
+        {
+          "backbone": "ridge",
+          "mse_area": 0.05495205573356083,
+          "policy": "bias_aware",
+          "specificity_area": 0.0493543521234655
+        },
+        {
+          "backbone": "ridge_cv",
+          "mse_area": 0.008705915008019247,
+          "policy": "bias_aware",
+          "specificity_area": 0.007290771319463606
+        },
+        {
+          "backbone": "local_residual_adaptation",
+          "mse_area": 0.011769855418548747,
+          "policy": "bias_aware",
+          "specificity_area": 0.008173430414046895
+        }
+      ],
+      "configuration_sha256": "e0a1e6d54dd47c8e74bec7ae395b52b96da83e36b29e979d0f25454ff4805755",
+      "development_cost": 6428,
+      "metric_rows": 41265,
+      "public_source_cells": 50912,
+      "resources_end": {
+        "available_ram_bytes": 1403019264,
+        "disk_free_bytes": 575379693568,
+        "disk_total_bytes": 1002016075776,
+        "logical_cpus": 16,
+        "memory_scope": "Current process; peak is over its lifetime, not a per-case delta.",
+        "peak_commit_bytes": 607617024,
+        "peak_working_set_bytes": 790515712,
+        "process_id": 50776,
+        "ram_bytes": 16418983936,
+        "recorded_at": "2026-10-23T19:43:25.935195+00:00",
+        "working_set_bytes": 397328384
+      },
+      "run": "publication-k562-to-rpe1-seed20261023-rank16-v1",
+      "run_directory": "C:\\Users\\Abdul\\Documents\\MLResearch\\runs\\publication-k562-to-rpe1-seed20261023-rank16-v1",
+      "run_manifest_sha256": "78989c78d26e17f3499170d8fb9788f380b0160555c31f781bbb8b05df7c4485",
+      "runtime_seconds": 292.2531028999947,
+      "scorer_only_cells": 4448,
+      "scoring_runtime_seconds": 74.17493100001593,
+      "source_context": "K562",
+      "source_control": "none",
+      "source_coordinates": {
+        "explained_fraction": 0.3808842588132716,
+        "rank": 16,
+        "source_half_noise": 0.006410004444883512
+      },
+      "target_context": "RPE1"
+    },
+    {
+      "acquisition_runtime_seconds": 187.66708220000146,
+      "areas": [
+        {
+          "backbone": "zero",
+          "mse_area": 0.005682743733738065,
+          "policy": "worst_query",
+          "specificity_area": 0.005068854572872165
+        },
+        {
+          "backbone": "mean",
+          "mse_area": 0.0077046381087674766,
+          "policy": "worst_query",
+          "specificity_area": 0.005068854572874466
+        },
+        {
+          "backbone": "source_copy",
+          "mse_area": 0.009573216376182378,
+          "policy": "worst_query",
+          "specificity_area": 0.008129024269422528
+        },
+        {
+          "backbone": "affine",
+          "mse_area": 0.005599169036178265,
+          "policy": "worst_query",
+          "specificity_area": 0.004969197881857349
+        },
+        {
+          "backbone": "ridge",
+          "mse_area": 0.008563628844045199,
+          "policy": "worst_query",
+          "specificity_area": 0.005755628380832679
+        },
+        {
+          "backbone": "ridge_cv",
+          "mse_area": 0.005532845676342564,
+          "policy": "worst_query",
+          "specificity_area": 0.004940926451099222
+        },
+        {
+          "backbone": "local_residual_adaptation",
+          "mse_area": 0.009598718337417898,
+          "policy": "worst_query",
+          "specificity_area": 0.007393860451423701
+        },
+        {
+          "backbone": "zero",
+          "mse_area": 0.005682743733738065,
+          "policy": "mean_query",
+          "specificity_area": 0.005068854572872165
+        },
+        {
+          "backbone": "mean",
+          "mse_area": 0.007223302820619016,
+          "policy": "mean_query",
+          "specificity_area": 0.005068854572873888
+        },
+        {
+          "backbone": "source_copy",
+          "mse_area": 0.009573216376182378,
+          "policy": "mean_query",
+          "specificity_area": 0.008129024269422528
+        },
+        {
+          "backbone": "affine",
+          "mse_area": 0.00554591203230839,
+          "policy": "mean_query",
+          "specificity_area": 0.004930520029524441
+        },
+        {
+          "backbone": "ridge",
+          "mse_area": 0.007467707992596703,
+          "policy": "mean_query",
+          "specificity_area": 0.005467692653170836
+        },
+        {
+          "backbone": "ridge_cv",
+          "mse_area": 0.005609941403055234,
+          "policy": "mean_query",
+          "specificity_area": 0.004999472711902873
+        },
+        {
+          "backbone": "local_residual_adaptation",
+          "mse_area": 0.009082174487677952,
+          "policy": "mean_query",
+          "specificity_area": 0.007301259181873263
+        },
+        {
+          "backbone": "zero",
+          "mse_area": 0.005682743733738065,
+          "policy": "bias_aware",
+          "specificity_area": 0.005068854572872165
+        },
+        {
+          "backbone": "mean",
+          "mse_area": 0.007784433709419587,
+          "policy": "bias_aware",
+          "specificity_area": 0.00506885457287446
+        },
+        {
+          "backbone": "source_copy",
+          "mse_area": 0.009573216376182378,
+          "policy": "bias_aware",
+          "specificity_area": 0.008129024269422528
+        },
+        {
+          "backbone": "affine",
+          "mse_area": 0.005559264196684736,
+          "policy": "bias_aware",
+          "specificity_area": 0.004942657101353668
+        },
+        {
+          "backbone": "ridge",
+          "mse_area": 0.008331342009648293,
+          "policy": "bias_aware",
+          "specificity_area": 0.00567940658044244
+        },
+        {
+          "backbone": "ridge_cv",
+          "mse_area": 0.005548899913548371,
+          "policy": "bias_aware",
+          "specificity_area": 0.004947920939169837
+        },
+        {
+          "backbone": "local_residual_adaptation",
+          "mse_area": 0.009543348306209606,
+          "policy": "bias_aware",
+          "specificity_area": 0.007388589651689587
+        }
+      ],
+      "configuration_sha256": "b95bc551de343d5e6716fc470f9f8e788c59f64b7c91b37fe2ec9e717777e66e",
+      "development_cost": 6428,
+      "metric_rows": 41265,
+      "public_source_cells": 50912,
+      "resources_end": {
+        "available_ram_bytes": 1781325824,
+        "disk_free_bytes": 575338528768,
+        "disk_total_bytes": 1002016075776,
+        "logical_cpus": 16,
+        "memory_scope": "Current process; peak is over its lifetime, not a per-case delta.",
+        "peak_commit_bytes": 607617024,
+        "peak_working_set_bytes": 790515712,
+        "process_id": 50776,
+        "ram_bytes": 16418983936,
+        "recorded_at": "2026-10-23T19:44:45.927674+00:00",
+        "working_set_bytes": 373186560
+      },
+      "run": "publication-rpe1-to-k562-seed20261023-rank4-v1",
+      "run_directory": "C:\\Users\\Abdul\\Documents\\MLResearch\\runs\\publication-rpe1-to-k562-seed20261023-rank4-v1",
+      "run_manifest_sha256": "4f9587b22e86739b85d03b37c99fef2dffd3701e88f93c61a3445a2e7d3f1e3d",
+      "runtime_seconds": 267.3143945999909,
+      "scorer_only_cells": 4448,
+      "scoring_runtime_seconds": 79.64731000000029,
+      "source_context": "RPE1",
+      "source_control": "none",
+      "source_coordinates": {
+        "explained_fraction": 0.4748642779199801,
+        "rank": 4,
+        "source_half_noise": 0.006844582690389605
+      },
+      "target_context": "K562"
+    },
+    {
+      "acquisition_runtime_seconds": 220.8991337000043,
+      "areas": [
+        {
+          "backbone": "zero",
+          "mse_area": 0.005682743733738065,
+          "policy": "worst_query",
+          "specificity_area": 0.005068854572872165
+        },
+        {
+          "backbone": "mean",
+          "mse_area": 0.009367465568443761,
+          "policy": "worst_query",
+          "specificity_area": 0.005068854572875819
+        },
+        {
+          "backbone": "source_copy",
+          "mse_area": 0.009573216376182378,
+          "policy": "worst_query",
+          "specificity_area": 0.008129024269422528
+        },
+        {
+          "backbone": "affine",
+          "mse_area": 0.00554402419584635,
+          "policy": "worst_query",
+          "specificity_area": 0.004929758021810117
+        },
+        {
+          "backbone": "ridge",
+          "mse_area": 0.05960966181246691,
+          "policy": "worst_query",
+          "specificity_area": 0.054187404924173385
+        },
+        {
+          "backbone": "ridge_cv",
+          "mse_area": 0.005615569263513558,
+          "policy": "worst_query",
+          "specificity_area": 0.0050056202733020395
+        },
+        {
+          "backbone": "local_residual_adaptation",
+          "mse_area": 0.011121072579737705,
+          "policy": "worst_query",
+          "specificity_area": 0.007670202747847818
+        },
+        {
+          "backbone": "zero",
+          "mse_area": 0.005682743733738065,
+          "policy": "mean_query",
+          "specificity_area": 0.005068854572872165
+        },
+        {
+          "backbone": "mean",
+          "mse_area": 0.0079425329140356,
+          "policy": "mean_query",
+          "specificity_area": 0.005068854572874537
+        },
+        {
+          "backbone": "source_copy",
+          "mse_area": 0.009573216376182378,
+          "policy": "mean_query",
+          "specificity_area": 0.008129024269422528
+        },
+        {
+          "backbone": "affine",
+          "mse_area": 0.005541208174703497,
+          "policy": "mean_query",
+          "specificity_area": 0.004931741060472102
+        },
+        {
+          "backbone": "ridge",
+          "mse_area": 0.03911079035952433,
+          "policy": "mean_query",
+          "specificity_area": 0.03586481686901406
+        },
+        {
+          "backbone": "ridge_cv",
+          "mse_area": 0.005583577229456927,
+          "policy": "mean_query",
+          "specificity_area": 0.004975778151965296
+        },
+        {
+          "backbone": "local_residual_adaptation",
+          "mse_area": 0.00990466887346253,
+          "policy": "mean_query",
+          "specificity_area": 0.007571718041450369
+        },
+        {
+          "backbone": "zero",
+          "mse_area": 0.005682743733738065,
+          "policy": "bias_aware",
+          "specificity_area": 0.005068854572872165
+        },
+        {
+          "backbone": "mean",
+          "mse_area": 0.009463109872495554,
+          "policy": "bias_aware",
+          "specificity_area": 0.005068854572875886
+        },
+        {
+          "backbone": "source_copy",
+          "mse_area": 0.009573216376182378,
+          "policy": "bias_aware",
+          "specificity_area": 0.008129024269422528
+        },
+        {
+          "backbone": "affine",
+          "mse_area": 0.005538979686527669,
+          "policy": "bias_aware",
+          "specificity_area": 0.0049300875216759105
+        },
+        {
+          "backbone": "ridge",
+          "mse_area": 0.05975260396299496,
+          "policy": "bias_aware",
+          "specificity_area": 0.0542153792860817
+        },
+        {
+          "backbone": "ridge_cv",
+          "mse_area": 0.0056328664324768836,
+          "policy": "bias_aware",
+          "specificity_area": 0.005022530275337027
+        },
+        {
+          "backbone": "local_residual_adaptation",
+          "mse_area": 0.011316314599175679,
+          "policy": "bias_aware",
+          "specificity_area": 0.007717913398386072
+        }
+      ],
+      "configuration_sha256": "eeeec91447b5725ca2c83225519c8bee7ed5f764024d10f73910b24b44649d41",
+      "development_cost": 6428,
+      "metric_rows": 41265,
+      "public_source_cells": 50912,
+      "resources_end": {
+        "available_ram_bytes": 1425522688,
+        "disk_free_bytes": 575091511296,
+        "disk_total_bytes": 1002016075776,
+        "logical_cpus": 16,
+        "memory_scope": "Current process; peak is over its lifetime, not a per-case delta.",
+        "peak_commit_bytes": 607617024,
+        "peak_working_set_bytes": 790515712,
+        "process_id": 50776,
+        "ram_bytes": 16418983936,
+        "recorded_at": "2026-10-23T19:46:04.544472+00:00",
+        "working_set_bytes": 373207040
+      },
+      "run": "publication-rpe1-to-k562-seed20261023-rank16-v1",
+      "run_directory": "C:\\Users\\Abdul\\Documents\\MLResearch\\runs\\publication-rpe1-to-k562-seed20261023-rank16-v1",
+      "run_manifest_sha256": "501f41fab05304dd900d2fdbf7abdc47c8903b43f5c49103fea9e6614e421ed2",
+      "runtime_seconds": 299.0653532000142,
+      "scorer_only_cells": 4448,
+      "scoring_runtime_seconds": 78.16621700001997,
+      "source_context": "RPE1",
+      "source_control": "none",
+      "source_coordinates": {
+        "explained_fraction": 0.6037328991302221,
+        "rank": 16,
+        "source_half_noise": 0.006844582690389605
+      },
+      "target_context": "K562"
+    },
+    {
+      "acquisition_runtime_seconds": 207.9747563000128,
+      "areas": [
+        {
+          "backbone": "zero",
+          "mse_area": 0.0077831232559979644,
+          "policy": "worst_query",
+          "specificity_area": 0.006574992131753725
+        },
+        {
+          "backbone": "mean",
+          "mse_area": 0.010457222173781576,
+          "policy": "worst_query",
+          "specificity_area": 0.00657499213175887
+        },
+        {
+          "backbone": "source_copy",
+          "mse_area": 0.00883903488824389,
+          "policy": "worst_query",
+          "specificity_area": 0.007531235439434673
+        },
+        {
+          "backbone": "affine",
+          "mse_area": 0.007678474205707773,
+          "policy": "worst_query",
+          "specificity_area": 0.006498645094341722
+        },
+        {
+          "backbone": "ridge",
+          "mse_area": 0.01013667660844714,
+          "policy": "worst_query",
+          "specificity_area": 0.007290777662949806
+        },
+        {
+          "backbone": "ridge_cv",
+          "mse_area": 0.0071532660750385415,
+          "policy": "worst_query",
+          "specificity_area": 0.006129017854015612
+        },
+        {
+          "backbone": "local_residual_adaptation",
+          "mse_area": 0.00953982253031716,
+          "policy": "worst_query",
+          "specificity_area": 0.007374031096306155
+        },
+        {
+          "backbone": "zero",
+          "mse_area": 0.0077831232559979644,
+          "policy": "mean_query",
+          "specificity_area": 0.006574992131753725
+        },
+        {
+          "backbone": "mean",
+          "mse_area": 0.009305244384980642,
+          "policy": "mean_query",
+          "specificity_area": 0.0065749921317572796
+        },
+        {
+          "backbone": "source_copy",
+          "mse_area": 0.00883903488824389,
+          "policy": "mean_query",
+          "specificity_area": 0.007531235439434673
+        },
+        {
+          "backbone": "affine",
+          "mse_area": 0.007598390918427091,
+          "policy": "mean_query",
+          "specificity_area": 0.006462134526399044
+        },
+        {
+          "backbone": "ridge",
+          "mse_area": 0.008874474585741612,
+          "policy": "mean_query",
+          "specificity_area": 0.006740495812962803
+        },
+        {
+          "backbone": "ridge_cv",
+          "mse_area": 0.0073541288806484644,
+          "policy": "mean_query",
+          "specificity_area": 0.006186969448573147
+        },
+        {
+          "backbone": "local_residual_adaptation",
+          "mse_area": 0.00926593744619088,
+          "policy": "mean_query",
+          "specificity_area": 0.007421439200796068
+        },
+        {
+          "backbone": "zero",
+          "mse_area": 0.0077831232559979644,
+          "policy": "bias_aware",
+          "specificity_area": 0.006574992131753725
+        },
+        {
+          "backbone": "mean",
+          "mse_area": 0.010782917418186152,
+          "policy": "bias_aware",
+          "specificity_area": 0.006574992131759318
+        },
+        {
+          "backbone": "source_copy",
+          "mse_area": 0.00883903488824389,
+          "policy": "bias_aware",
+          "specificity_area": 0.007531235439434673
+        },
+        {
+          "backbone": "affine",
+          "mse_area": 0.007696464647232563,
+          "policy": "bias_aware",
+          "specificity_area": 0.006513948121453472
+        },
+        {
+          "backbone": "ridge",
+          "mse_area": 0.010293094959913492,
+          "policy": "bias_aware",
+          "specificity_area": 0.007239339895163565
+        },
+        {
+          "backbone": "ridge_cv",
+          "mse_area": 0.007188881588820911,
+          "policy": "bias_aware",
+          "specificity_area": 0.006233808686285935
+        },
+        {
+          "backbone": "local_residual_adaptation",
+          "mse_area": 0.009776519711698545,
+          "policy": "bias_aware",
+          "specificity_area": 0.0073325150105620785
+        }
+      ],
+      "configuration_sha256": "3018b993ceea1fc7b476fc7e8a3bd9d46d92439b75e1c30a2c76e6ccb31a3094",
+      "development_cost": 6428,
+      "metric_rows": 41265,
+      "public_source_cells": 50912,
+      "resources_end": {
+        "available_ram_bytes": 1729937408,
+        "disk_free_bytes": 574643130368,
+        "disk_total_bytes": 1002016075776,
+        "logical_cpus": 16,
+        "memory_scope": "Current process; peak is over its lifetime, not a per-case delta.",
+        "peak_commit_bytes": 607617024,
+        "peak_working_set_bytes": 790515712,
+        "process_id": 50776,
+        "ram_bytes": 16418983936,
+        "recorded_at": "2026-10-23T19:47:23.536802+00:00",
+        "working_set_bytes": 376500224
+      },
+      "run": "publication-k562-to-rpe1-seed20261024-rank4-v1",
+      "run_directory": "C:\\Users\\Abdul\\Documents\\MLResearch\\runs\\publication-k562-to-rpe1-seed20261024-rank4-v1",
+      "run_manifest_sha256": "d6bc9e464ac90cb9a5f19cb1cd2d5ae135ae0fa8745c56d6eadbc30877fa0efa",
+      "runtime_seconds": 286.7743808000232,
+      "scorer_only_cells": 4448,
+      "scoring_runtime_seconds": 78.79962279999745,
+      "source_context": "K562",
+      "source_control": "none",
+      "source_coordinates": {
+        "explained_fraction": 0.2709701878847581,
+        "rank": 4,
+        "source_half_noise": 0.006398727913223311
+      },
+      "target_context": "RPE1"
+    },
+    {
+      "acquisition_runtime_seconds": 221.2506735000061,
+      "areas": [
+        {
+          "backbone": "zero",
+          "mse_area": 0.0077831232559979644,
+          "policy": "worst_query",
+          "specificity_area": 0.006574992131753725
+        },
+        {
+          "backbone": "mean",
+          "mse_area": 0.012016865890384342,
+          "policy": "worst_query",
+          "specificity_area": 0.0065749921317598495
+        },
+        {
+          "backbone": "source_copy",
+          "mse_area": 0.00883903488824389,
+          "policy": "worst_query",
+          "specificity_area": 0.007531235439434673
+        },
+        {
+          "backbone": "affine",
+          "mse_area": 0.007622925460215795,
+          "policy": "worst_query",
+          "specificity_area": 0.006486808986903637
+        },
+        {
+          "backbone": "ridge",
+          "mse_area": 0.04993207908490374,
+          "policy": "worst_query",
+          "specificity_area": 0.044450452360186646
+        },
+        {
+          "backbone": "ridge_cv",
+          "mse_area": 0.007671549167611669,
+          "policy": "worst_query",
+          "specificity_area": 0.006557613385347946
+        },
+        {
+          "backbone": "local_residual_adaptation",
+          "mse_area": 0.01143791614409418,
+          "policy": "worst_query",
+          "specificity_area": 0.007478836141246328
+        },
+        {
+          "backbone": "zero",
+          "mse_area": 0.0077831232559979644,
+          "policy": "mean_query",
+          "specificity_area": 0.006574992131753725
+        },
+        {
+          "backbone": "mean",
+          "mse_area": 0.010380816675013763,
+          "policy": "mean_query",
+          "specificity_area": 0.006574992131758476
+        },
+        {
+          "backbone": "source_copy",
+          "mse_area": 0.00883903488824389,
+          "policy": "mean_query",
+          "specificity_area": 0.007531235439434673
+        },
+        {
+          "backbone": "affine",
+          "mse_area": 0.0076176477784931735,
+          "policy": "mean_query",
+          "specificity_area": 0.006485755146738038
+        },
+        {
+          "backbone": "ridge",
+          "mse_area": 0.028910757496316886,
+          "policy": "mean_query",
+          "specificity_area": 0.02525234857169243
+        },
+        {
+          "backbone": "ridge_cv",
+          "mse_area": 0.007639428378055452,
+          "policy": "mean_query",
+          "specificity_area": 0.006467197296319805
+        },
+        {
+          "backbone": "local_residual_adaptation",
+          "mse_area": 0.01004899224811424,
+          "policy": "mean_query",
+          "specificity_area": 0.007533131720261826
+        },
+        {
+          "backbone": "zero",
+          "mse_area": 0.0077831232559979644,
+          "policy": "bias_aware",
+          "specificity_area": 0.006574992131753725
+        },
+        {
+          "backbone": "mean",
+          "mse_area": 0.011775850158025104,
+          "policy": "bias_aware",
+          "specificity_area": 0.006574992131759372
+        },
+        {
+          "backbone": "source_copy",
+          "mse_area": 0.00883903488824389,
+          "policy": "bias_aware",
+          "specificity_area": 0.007531235439434673
+        },
+        {
+          "backbone": "affine",
+          "mse_area": 0.007541444075861504,
+          "policy": "bias_aware",
+          "specificity_area": 0.006417587501985986
+        },
+        {
+          "backbone": "ridge",
+          "mse_area": 0.05003738769330028,
+          "policy": "bias_aware",
+          "specificity_area": 0.044531264390704824
+        },
+        {
+          "backbone": "ridge_cv",
+          "mse_area": 0.007703471163605006,
+          "policy": "bias_aware",
+          "specificity_area": 0.006560154213644942
+        },
+        {
+          "backbone": "local_residual_adaptation",
+          "mse_area": 0.011561108148892805,
+          "policy": "bias_aware",
+          "specificity_area": 0.007494973963977728
+        }
+      ],
+      "configuration_sha256": "5c9b00a244b7b92b76f59544a78e065084888116309c18fd83a18728b5f4f3e2",
+      "development_cost": 6428,
+      "metric_rows": 41265,
+      "public_source_cells": 50912,
+      "resources_end": {
+        "available_ram_bytes": 1500581888,
+        "disk_free_bytes": 574557409280,
+        "disk_total_bytes": 1002016075776,
+        "logical_cpus": 16,
+        "memory_scope": "Current process; peak is over its lifetime, not a per-case delta.",
+        "peak_commit_bytes": 607617024,
+        "peak_working_set_bytes": 790515712,
+        "process_id": 50776,
+        "ram_bytes": 16418983936,
+        "recorded_at": "2026-10-23T19:48:43.023859+00:00",
+        "working_set_bytes": 376360960
+      },
+      "run": "publication-k562-to-rpe1-seed20261024-rank16-v1",
+      "run_directory": "C:\\Users\\Abdul\\Documents\\MLResearch\\runs\\publication-k562-to-rpe1-seed20261024-rank16-v1",
+      "run_manifest_sha256": "261da4bb5fce4dc109e02be9a0c7340f23be67a0ce1551f24416a4584f9fd8dd",
+      "runtime_seconds": 300.4871752000181,
+      "scorer_only_cells": 4448,
+      "scoring_runtime_seconds": 79.23649989999831,
+      "source_context": "K562",
+      "source_control": "none",
+      "source_coordinates": {
+        "explained_fraction": 0.3808842588132716,
+        "rank": 16,
+        "source_half_noise": 0.006398727913223311
+      },
+      "target_context": "RPE1"
+    },
+    {
+      "acquisition_runtime_seconds": 180.02221730002202,
+      "areas": [
+        {
+          "backbone": "zero",
+          "mse_area": 0.005704796601688349,
+          "policy": "worst_query",
+          "specificity_area": 0.005042787074022113
+        },
+        {
+          "backbone": "mean",
+          "mse_area": 0.0075238521105787555,
+          "policy": "worst_query",
+          "specificity_area": 0.005042787074024275
+        },
+        {
+          "backbone": "source_copy",
+          "mse_area": 0.00864303205833319,
+          "policy": "worst_query",
+          "specificity_area": 0.00746610272346424
+        },
+        {
+          "backbone": "affine",
+          "mse_area": 0.0055737622385123205,
+          "policy": "worst_query",
+          "specificity_area": 0.00492108177902846
+        },
+        {
+          "backbone": "ridge",
+          "mse_area": 0.008441297557894788,
+          "policy": "worst_query",
+          "specificity_area": 0.005506576466091389
+        },
+        {
+          "backbone": "ridge_cv",
+          "mse_area": 0.005568857962647182,
+          "policy": "worst_query",
+          "specificity_area": 0.00491569095968938
+        },
+        {
+          "backbone": "local_residual_adaptation",
+          "mse_area": 0.009488944836152596,
+          "policy": "worst_query",
+          "specificity_area": 0.007091364661702201
+        },
+        {
+          "backbone": "zero",
+          "mse_area": 0.005704796601688349,
+          "policy": "mean_query",
+          "specificity_area": 0.005042787074022113
+        },
+        {
+          "backbone": "mean",
+          "mse_area": 0.007095484944666439,
+          "policy": "mean_query",
+          "specificity_area": 0.005042787074023774
+        },
+        {
+          "backbone": "source_copy",
+          "mse_area": 0.00864303205833319,
+          "policy": "mean_query",
+          "specificity_area": 0.00746610272346424
+        },
+        {
+          "backbone": "affine",
+          "mse_area": 0.005569685655581891,
+          "policy": "mean_query",
+          "specificity_area": 0.0049173490192749355
+        },
+        {
+          "backbone": "ridge",
+          "mse_area": 0.007298746451751082,
+          "policy": "mean_query",
+          "specificity_area": 0.005262824677129076
+        },
+        {
+          "backbone": "ridge_cv",
+          "mse_area": 0.005639212484373362,
+          "policy": "mean_query",
+          "specificity_area": 0.004976477603182431
+        },
+        {
+          "backbone": "local_residual_adaptation",
+          "mse_area": 0.008754020760314073,
+          "policy": "mean_query",
+          "specificity_area": 0.0070039725325216655
+        },
+        {
+          "backbone": "zero",
+          "mse_area": 0.005704796601688349,
+          "policy": "bias_aware",
+          "specificity_area": 0.005042787074022113
+        },
+        {
+          "backbone": "mean",
+          "mse_area": 0.007614359189712712,
+          "policy": "bias_aware",
+          "specificity_area": 0.005042787074024239
+        },
+        {
+          "backbone": "source_copy",
+          "mse_area": 0.00864303205833319,
+          "policy": "bias_aware",
+          "specificity_area": 0.00746610272346424
+        },
+        {
+          "backbone": "affine",
+          "mse_area": 0.005566431381420914,
+          "policy": "bias_aware",
+          "specificity_area": 0.00491701309809057
+        },
+        {
+          "backbone": "ridge",
+          "mse_area": 0.008194292843281725,
+          "policy": "bias_aware",
+          "specificity_area": 0.0053568533930608885
+        },
+        {
+          "backbone": "ridge_cv",
+          "mse_area": 0.005585137501975609,
+          "policy": "bias_aware",
+          "specificity_area": 0.004915098295241906
+        },
+        {
+          "backbone": "local_residual_adaptation",
+          "mse_area": 0.009481420078732851,
+          "policy": "bias_aware",
+          "specificity_area": 0.0070212339964028396
+        }
+      ],
+      "configuration_sha256": "34b9967168c4bf8b3b4bd33b6ef3853c48814b6351c7daa3c032d0aa30130d91",
+      "development_cost": 6428,
+      "metric_rows": 41265,
+      "public_source_cells": 50912,
+      "resources_end": {
+        "available_ram_bytes": 1734512640,
+        "disk_free_bytes": 574468349952,
+        "disk_total_bytes": 1002016075776,
+        "logical_cpus": 16,
+        "memory_scope": "Current process; peak is over its lifetime, not a per-case delta.",
+        "peak_commit_bytes": 607617024,
+        "peak_working_set_bytes": 790515712,
+        "process_id": 50776,
+        "ram_bytes": 16418983936,
+        "recorded_at": "2026-10-23T19:49:53.551294+00:00",
+        "working_set_bytes": 346370048
+      },
+      "run": "publication-rpe1-to-k562-seed20261024-rank4-v1",
+      "run_directory": "C:\\Users\\Abdul\\Documents\\MLResearch\\runs\\publication-rpe1-to-k562-seed20261024-rank4-v1",
+      "run_manifest_sha256": "e002cb8fa90d2cabfd06d02b36e909e00956248be100f32837ed7f510080daa0",
+      "runtime_seconds": 250.25946800003294,
+      "scorer_only_cells": 4448,
+      "scoring_runtime_seconds": 70.23724899999797,
+      "source_context": "RPE1",
+      "source_control": "none",
+      "source_coordinates": {
+        "explained_fraction": 0.4748642779199801,
+        "rank": 4,
+        "source_half_noise": 0.006848386716137777
+      },
+      "target_context": "K562"
+    },
+    {
+      "acquisition_runtime_seconds": 202.87165089999326,
+      "areas": [
+        {
+          "backbone": "zero",
+          "mse_area": 0.005704796601688349,
+          "policy": "worst_query",
+          "specificity_area": 0.005042787074022113
+        },
+        {
+          "backbone": "mean",
+          "mse_area": 0.009557574121622402,
+          "policy": "worst_query",
+          "specificity_area": 0.005042787074025848
+        },
+        {
+          "backbone": "source_copy",
+          "mse_area": 0.00864303205833319,
+          "policy": "worst_query",
+          "specificity_area": 0.00746610272346424
+        },
+        {
+          "backbone": "affine",
+          "mse_area": 0.005576929317339441,
+          "policy": "worst_query",
+          "specificity_area": 0.004919654623140568
+        },
+        {
+          "backbone": "ridge",
+          "mse_area": 0.048038491713833294,
+          "policy": "worst_query",
+          "specificity_area": 0.042173796464925514
+        },
+        {
+          "backbone": "ridge_cv",
+          "mse_area": 0.00563899659693591,
+          "policy": "worst_query",
+          "specificity_area": 0.004973453699087197
+        },
+        {
+          "backbone": "local_residual_adaptation",
+          "mse_area": 0.01110233104991059,
+          "policy": "worst_query",
+          "specificity_area": 0.0072572956709399065
+        },
+        {
+          "backbone": "zero",
+          "mse_area": 0.005704796601688349,
+          "policy": "mean_query",
+          "specificity_area": 0.005042787074022113
+        },
+        {
+          "backbone": "mean",
+          "mse_area": 0.007798952149013785,
+          "policy": "mean_query",
+          "specificity_area": 0.005042787074024271
+        },
+        {
+          "backbone": "source_copy",
+          "mse_area": 0.00864303205833319,
+          "policy": "mean_query",
+          "specificity_area": 0.00746610272346424
+        },
+        {
+          "backbone": "affine",
+          "mse_area": 0.005577219536638934,
+          "policy": "mean_query",
+          "specificity_area": 0.0049214797527645
+        },
+        {
+          "backbone": "ridge",
+          "mse_area": 0.02564599226217151,
+          "policy": "mean_query",
+          "specificity_area": 0.02238682968479833
+        },
+        {
+          "backbone": "ridge_cv",
+          "mse_area": 0.005643804944378976,
+          "policy": "mean_query",
+          "specificity_area": 0.004981026882444081
+        },
+        {
+          "backbone": "local_residual_adaptation",
+          "mse_area": 0.009614646517826203,
+          "policy": "mean_query",
+          "specificity_area": 0.007194359694693094
+        },
+        {
+          "backbone": "zero",
+          "mse_area": 0.005704796601688349,
+          "policy": "bias_aware",
+          "specificity_area": 0.005042787074022113
+        },
+        {
+          "backbone": "mean",
+          "mse_area": 0.009668703662202743,
+          "policy": "bias_aware",
+          "specificity_area": 0.0050427870740258895
+        },
+        {
+          "backbone": "source_copy",
+          "mse_area": 0.00864303205833319,
+          "policy": "bias_aware",
+          "specificity_area": 0.00746610272346424
+        },
+        {
+          "backbone": "affine",
+          "mse_area": 0.0055742555058935035,
+          "policy": "bias_aware",
+          "specificity_area": 0.004918601658042542
+        },
+        {
+          "backbone": "ridge",
+          "mse_area": 0.048060329291000646,
+          "policy": "bias_aware",
+          "specificity_area": 0.04214275122739181
+        },
+        {
+          "backbone": "ridge_cv",
+          "mse_area": 0.00565097791528582,
+          "policy": "bias_aware",
+          "specificity_area": 0.004985979399538181
+        },
+        {
+          "backbone": "local_residual_adaptation",
+          "mse_area": 0.011224276418059715,
+          "policy": "bias_aware",
+          "specificity_area": 0.007265317964968647
+        }
+      ],
+      "configuration_sha256": "56ee34fe336e470eaf11dfa0a040f9988974ed88da282383eaa167ec068b2bee",
+      "development_cost": 6428,
+      "metric_rows": 41265,
+      "public_source_cells": 50912,
+      "resources_end": {
+        "available_ram_bytes": 1758208000,
+        "disk_free_bytes": 574377734144,
+        "disk_total_bytes": 1002016075776,
+        "logical_cpus": 16,
+        "memory_scope": "Current process; peak is over its lifetime, not a per-case delta.",
+        "peak_commit_bytes": 607617024,
+        "peak_working_set_bytes": 790515712,
+        "process_id": 50776,
+        "ram_bytes": 16418983936,
+        "recorded_at": "2026-10-23T19:51:06.611056+00:00",
+        "working_set_bytes": 346484736
+      },
+      "run": "publication-rpe1-to-k562-seed20261024-rank16-v1",
+      "run_directory": "C:\\Users\\Abdul\\Documents\\MLResearch\\runs\\publication-rpe1-to-k562-seed20261024-rank16-v1",
+      "run_manifest_sha256": "529ca0c85887812ab862136c28aeff3f0f0834c9d04ea99178d745621c7dd32c",
+      "runtime_seconds": 275.74059489998035,
+      "scorer_only_cells": 4448,
+      "scoring_runtime_seconds": 72.8689422000025,
+      "source_context": "RPE1",
+      "source_control": "none",
+      "source_coordinates": {
+        "explained_fraction": 0.6037328991302221,
+        "rank": 16,
+        "source_half_noise": 0.006848386716137777
+      },
+      "target_context": "K562"
+    }
+  ],
+  "suite_manifest_sha256": "079a5479bd3ac13bbbb852ca8e758778420a6350f3621d75dd642776ee58c20b"
+}

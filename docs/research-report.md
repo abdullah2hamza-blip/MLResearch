@@ -1,3 +1,5 @@
+> Historical primary-study report. The later [PI-reviewed manuscript and publication package](publication-guide.md) add the complete split/rank/budget robustness matrix, including conditional successes. Original frozen results below are preserved.
+
 # Budgeted identification of transferable perturbation effects
 
 Computational research report, October 22, 2026.

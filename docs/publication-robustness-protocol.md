@@ -1,0 +1,23 @@
+# PI-requested post-primary robustness study
+
+Declared October 23, 2026, after the original primary and secondary results and before the new robustness acquisitions/scores. This study addresses a concrete alternative explanation identified by independent review: the original rank-four representation plus intercept was already supported after its six-identity pilot, and the smallest budget spends 68.75% on that pilot. The study tests sensitivity to a fixed split, representation size and short budget range. It is exploratory robustness on reused public data, not a new untouched external confirmation, an amendment to the primary test, or biological replication.
+
+## Frozen matrix
+
+- Use the same pinned K562-essential/RPE1 preparations, 525 eligible gene targets, 7,226 aligned genes, normalization, source availability and 64/32 recipient acquisition/assessment cells with 256/256 control banks.
+- Build both directions at each of two new episode seeds, **20261023 and 20261024**. The deterministic seed changes query membership and within-condition cell ordering/banks; source summaries remain based on 96 cells per target. Preserve every original episode. Canonical target and expression identifiers must pass the metadata audit for each new pair before running.
+- Cross source-coordinate ranks **4 and 16** (plus the intercept) with both seeds/directions: **eight runs**. Do not choose a rank from outcomes.
+- Incremental budgets: **128, 256, 512, 1,024, 2,048**. Setup cost 4, cell/control cost 1, block 8, affordable partial blocks enabled, common pilot 16 controls plus six interventions at depth 8. Finite pools and all costs remain unchanged. Record actual spend.
+- Policies: `worst_query`, `mean_query`, `bias_aware`; acquisition-order/tie seeds **0,1,2**. Hold every other original main-policy setting fixed, including discrepancy weight 1 and length 1, paid-ratio variance forecasting, design prior and ridge-validation grid/null option. No new tuning or outcome-dependent additions.
+- Primary analysis backbone within this robustness study: `ridge_cv`; retain all seven legacy backbones sharing the same purchases, including zero. Disable the optional neural reconstruction, which is not needed to test this acquisition hypothesis. Enable the original source-half sensitivity with fixed paid ledgers.
+- Retain the historical 6,428-unit development record separately. These are new counterfactual replay purchases, not uncharged model selection or a new development program. Directions and new splits reuse cells/genes and are dependent; three seeds describe algorithmic ordering only, not network initialization, cell-sampling or biological replication.
+
+This is **360 checkpoints**, 72 policy/seed ledgers, 2,520 checkpoint/backbone combinations and 330,120 query metric rows. Use one worker and one BLAS thread after checking current RAM/disk. No paid compute. Do not edit package sources/configurations or declared evidence while the suite is live.
+
+## Gates and complete analysis
+
+Use the existing `ExternalConfig` joint runner. Declare all eight runs and bind this protocol, new canonical audits, code/configuration hashes and development accounting before acquisition. All 360 predictions close and authenticate jointly before any new scorer opens. Preserve predictions, ledgers, access records, failures and exact resources. Recover a confirmed interrupted scoring process with its original gate; observation timeout alone never permits restart.
+
+Report every matrix cell, policy and budget. For each split/direction/rank, compute paired extension-minus-worst and extension-minus-mean differences for ridge-CV, both on the original 128/256/512 subgrid and the full 128–2,048 grid. Show zero, selected penalties/null fits, unregularized support fractions and source-half sensitivity. Lower error and negative differences favor the extension. Report actual query counts/seed units and distributions; do not pool dependent splits/directions as independent biological replications or replace an unfavorable primary result. Query resampling, if shown, is explicitly descriptive conditional on that split and scorer bank; no combined biological interval or multiplicity-adjusted discovery is claimed.
+
+The original main finding remains fixed regardless of this study's sign. Report reversals and heterogeneity prominently. Do not change the surrogate or tune a new predictor after seeing these scores. A supplementary per-query influence analysis of the original saved predictions will report leave-one-query-out mean shifts, paired distributions, acquisition-seed variation, fixed public-source strata and assessment-noise context; no query exclusions or new threshold selection follow from it.

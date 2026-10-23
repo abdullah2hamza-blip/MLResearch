@@ -1,0 +1,138 @@
+{
+  "analysis_source_sha256": "5feddf9021e3bee4993f1349064504ded94db77cbb0fd8fcbbfd8b2b80f31704",
+  "comparisons": [
+    {
+      "acquisition_seed_difference_range": [
+        -4.341727184883901e-05,
+        0.00018203432265065085
+      ],
+      "acquisition_seed_difference_sd": 8.630629540724502e-05,
+      "acquisition_seeds": 5,
+      "leave_one_query_out_mean_range": [
+        2.597067859745305e-05,
+        7.133440157831611e-05
+      ],
+      "leave_one_query_out_sign_reversals": 0,
+      "mean_paired_area_difference": 4.421223804559951e-05,
+      "queries": 131,
+      "queries_negative": 25,
+      "queries_positive": 106,
+      "queries_zero": 0,
+      "query_quantiles": {
+        "maximum": 0.002415614966304639,
+        "median": 4.8503491316416804e-05,
+        "minimum": -0.0034816690212075576,
+        "p10": -9.560191090196048e-05,
+        "p25": 2.242150118719824e-05,
+        "p75": 8.203261618669103e-05,
+        "p90": 0.0002106519557874241
+      },
+      "reference": "worst_query",
+      "run": "external-k562-to-rpe1-v1"
+    },
+    {
+      "acquisition_seed_difference_range": [
+        -4.659180999370128e-05,
+        0.00012417642706288073
+      ],
+      "acquisition_seed_difference_sd": 6.416998163488537e-05,
+      "acquisition_seeds": 5,
+      "leave_one_query_out_mean_range": [
+        4.1028999019654126e-05,
+        7.034060915153956e-05
+      ],
+      "leave_one_query_out_sign_reversals": 0,
+      "mean_paired_area_difference": 6.256664567641385e-05,
+      "queries": 131,
+      "queries_negative": 23,
+      "queries_positive": 108,
+      "queries_zero": 0,
+      "query_quantiles": {
+        "maximum": 0.002862460711055178,
+        "median": 3.7022577236065816e-05,
+        "minimum": -0.0009480486060899288,
+        "p10": -3.992835054241195e-05,
+        "p25": 2.1263575873561087e-05,
+        "p75": 6.224124939243729e-05,
+        "p90": 0.00016413021827322156
+      },
+      "reference": "mean_query",
+      "run": "external-k562-to-rpe1-v1"
+    },
+    {
+      "acquisition_seed_difference_range": [
+        -2.1995003214752604e-05,
+        3.65418464894764e-05
+      ],
+      "acquisition_seed_difference_sd": 2.639450950366939e-05,
+      "acquisition_seeds": 5,
+      "leave_one_query_out_mean_range": [
+        -8.950258223267968e-07,
+        2.127551814016003e-06
+      ],
+      "leave_one_query_out_sign_reversals": 1,
+      "mean_paired_area_difference": 7.886037320772683e-07,
+      "queries": 131,
+      "queries_negative": 72,
+      "queries_positive": 59,
+      "queries_zero": 0,
+      "query_quantiles": {
+        "maximum": 0.00021966044580460574,
+        "median": -6.209782523133172e-07,
+        "minimum": -0.00017327464691995823,
+        "p10": -1.307242725606967e-05,
+        "p25": -4.271646840790701e-06,
+        "p75": 4.522723156547438e-06,
+        "p90": 1.835295089147055e-05
+      },
+      "reference": "worst_query",
+      "run": "external-rpe1-to-k562-v1"
+    },
+    {
+      "acquisition_seed_difference_range": [
+        -4.583233593113157e-05,
+        6.875718258845857e-06
+      ],
+      "acquisition_seed_difference_sd": 2.019813289691681e-05,
+      "acquisition_seeds": 5,
+      "leave_one_query_out_mean_range": [
+        -2.757208679266042e-05,
+        -2.1216666883785703e-05
+      ],
+      "leave_one_query_out_sign_reversals": 0,
+      "mean_paired_area_difference": -2.6901440935576048e-05,
+      "queries": 131,
+      "queries_negative": 52,
+      "queries_positive": 79,
+      "queries_zero": 0,
+      "query_quantiles": {
+        "maximum": 6.028252048539233e-05,
+        "median": 2.4304261715953763e-06,
+        "minimum": -0.0007659220676683204,
+        "p10": -7.709977821284565e-05,
+        "p25": -8.604243869381883e-06,
+        "p75": 1.2491127677322077e-05,
+        "p90": 2.44776359122097e-05
+      },
+      "reference": "mean_query",
+      "run": "external-rpe1-to-k562-v1"
+    }
+  ],
+  "input_sha256": {
+    "runs/external-k562-to-rpe1-v1/areas-by-query-seed.csv": "d56afab02a93cd79312fa56e12796a3c1759f2b4a571da7fda0ec023c8b70eec",
+    "runs/external-rpe1-to-k562-v1/areas-by-query-seed.csv": "ff6dedbb545b8fa182b859c53696177fd64cb93f1152ce4e18bbc05ee2c98270",
+    "supplement/curves-and-specificity.csv": "e76721a7e16cd1f6d9c66ede2be28822cf6952fa51d913edf58e9e31950f21b7",
+    "supplement/paired-primary-comparisons.csv": "93c261d43f7fbe80162dd7a1a5dab699b611fb20215be95cd1be2702a728fdf2",
+    "supplement/public-source-strata.csv": "12eb36ab7fd922f85b99a27e71398fdcbdd04bffca5a459ddc6c90d65e26eafb",
+    "supplement/summary.json": "ebe12b14106cdd873eb188310cb8d7d56c19383962dacc24599995286778418f"
+  },
+  "qualification": [
+    "Post-primary descriptive influence; no exclusions, threshold tuning or new tests.",
+    "Seeds vary pilot order/ties on fixed cell order, not biological replication.",
+    "Query signs/leave-one-out shifts are dependent diagnostics, not significance.",
+    "Noise floors are plug-in independent-cell approximations, not known truth.",
+    "Source strata retain the original source-only threshold; no recipient selection."
+  ],
+  "recorded_at": "2026-10-23T19:11:03.258927+00:00",
+  "state": "complete"
+}

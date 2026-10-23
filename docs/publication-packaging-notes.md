@@ -1,0 +1,7 @@
+# Packaging after the completed numerical freeze
+
+The eight-run robustness study completed using the v0.2.0 source tree `1a3392680a7abfd4fdd7a5b2fc808e595bfc5e2628271f207c0e5cb789f569a3` and the project/dependency files in its immutable source snapshot. Those files and historical predictions remain preserved.
+
+Final wheel inspection showed that `uv_build` did not include the MIT notice merely because `license = "MIT"` was present. After all numerical analysis completed, the release added only `project.license-files = ["LICENSE"]` to `pyproject.toml`. This packages the author-approved notice in wheels and source distributions. Numerical source, version, dependencies, `uv.lock` and scientific settings are unchanged. The MIT license is not applied to third-party data or to the separately CC BY 4.0 manuscript.
+
+The fresh robustness reproduction helper compares the entire project specification with the frozen snapshot, permitting exactly this license-file addition and recording its contents hash as a packaging-only difference. It still requires the exact frozen numerical source/version/lock and rejects every other project or scientific change. Its new declaration also binds the current project, lock and license files through scoring. The original binding-check-v1 record predates this packaging addition; binding-check-v2 verifies the released helper afterward. This is a packaging correction, not a replacement numerical study.

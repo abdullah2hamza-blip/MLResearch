@@ -1,7 +1,10 @@
 [project]
 name = "mlresearch"
-version = "0.1.0"
-description = "Machine learning research workspace."
+version = "0.2.0"
+description = "Audited finite-pool joint acquisition for cross-context perturbation prediction."
+authors = [{ name = "Abdullah Hamza", email = "abdullah2hamza@gmail.com" }]
+license = "MIT"
+license-files = ["LICENSE"]
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [

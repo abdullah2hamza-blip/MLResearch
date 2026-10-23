@@ -1,0 +1,33 @@
+\section{Assessment scopes, cost sensitivity and stronger-information reference}
+\label{app:assessment}
+\subsection{Separate uncertainty questions}
+Table~\ref{tab:uncertainty} reports four scopes for the same original paired endpoint. The query range can cross zero even when fixed-query cell or batch ranges do not: their randomization units and conditioning differ. All procedures preserve the shared assessment controls. They omit uncertainty in source estimation, model selection and prospective biological contexts.
+
+\begin{table}[htbp]
+\centering\small
+\caption{Original extension minus worst-query area: central 95\% resampling ranges in units $10^{-5}$. The point estimates remain $4.4212$ forward and $.0789$ reverse. Each row answers its own conditional question; no row supplies biological replication or a joint interval.}
+\label{tab:uncertainty}
+\input{generated/uncertainty-scopes}
+\end{table}
+
+Guide/batch stratification is severely limited by sparse strata: 243/256 forward and 247/256 reverse assessment controls are in singleton strata, as are 2,558/4,192 and 2,328/4,192 treatment cells. A singleton cannot exhibit within-stratum resampling variation. Technical-batch reweighting changes the weights of observed batches; it does not introduce new biological replicates. The analytic independent-cell projection variance is a numerical cross-check, not evidence that real cells satisfy independence.
+
+\subsection{Absolute error and ordinal denominators}
+\begin{table}[htbp]
+\centering\small
+\caption{Budget-512 diagnostics on original extension purchases. MSE uses units $10^{-3}$. Rank is the fixed-gene Spearman score across query identities; ``Permuted'' uses one fixed scoring-coordinate permutation shared across query rows, without refitting. ``Defined'' is the fraction of 36,130 gene/seed correlations that are defined; undefined terms contribute neutral zero to the fixed-gene aggregate. Zero is a zero-recipient-cost reference even when tabulated beside purchased predictors. All 131 queries and 7,226 aligned genes are retained.}
+\label{tab:ranking}
+\input{generated/ranking-and-absolute}
+\end{table}
+
+The retained ranking tables also report the mean over defined genes, undefined counts, sign-tie rules, raw/centered cosines and within-query gene correlations. These distinct estimands should not be interchanged. Across-query gene ranks are invariant to a per-gene common control shift; absolute effects are not.
+
+\subsection{Setup price and finite-pool exhaustion}
+At setup price zero, every unconstrained policy exhausts the 496-unit acquisition inventory before the first nominal budget of 512; the combined identity-only ablation spends 160. Equal final predictions among the unconstrained policies are mechanically uninformative about acquisition quality. At setup price 16, the available inventory is 784 and the identity-only limit is 448. At setup price 64, unconstrained policies reach the final 1,024 budget, while constrained variants may underspend earlier. These are finite inventory effects, not refunds or hidden reassignment of observations.
+
+Extension/worst-query true-error area changes at setup price 16 are $+1.383\%$ in baseline and $+1.474\%$ with nonlinear shift; at price 64 they are $+1.248\%$ and $-.704\%$. Price-zero changes are exactly zero after exhaustion. Each comparison averages five generated worlds and five acquisition seeds, with worlds shared across prices/scenarios. The unchanged $.25$ discrepancy weight and larger budgets differ from the primary external configuration. Full spend curves, world-level differences and identity-only results accompany the release.
+
+\subsection{Direct query measurement}
+The stronger-information reference directly buys reserved query cells and controls, using different cell-order seeds and an independent scorer. With 131 queries, setup price four, depths 2, 4, 8, 16, 32 and 64 and matched control increments, actual costs are 802, 1,064, 1,588, 2,684, 4,844 and 9,164. At the smallest/largest depths mean MSE is $.08181/.00755$ forward and $.07791/.00716$ reverse. Small direct samples are noisy; these are raw direct contrasts, not an optimized estimator for all procedures allowed query information.
+
+Its minimum cost exceeds the original primary maximum of 512. The later robustness grid extends into the same cost range but has no exactly matched checkpoint/task comparison. We therefore infer neither a universal crossover budget nor laboratory savings. All 60 direct predictions and ledger prefixes reproduce byte-for-byte on re-execution. This verifies the declared reference implementation, not experimental economics.

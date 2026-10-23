@@ -1,0 +1,47 @@
+\section{Classical identities and their limits}
+\label{app:math}
+\subsection{Nuisance baseline and shared-control information}
+For one response coordinate, write the independent raw treatment means as $m_i=\mu_0+x_i^\top\beta+\epsilon_i$, with $\operatorname{var}(\epsilon_i)=d_i$, and the control mean as $m_0=\mu_0+\epsilon_0$, with variance $c>0$. Taking contrasts $Y_i=m_i-m_0$ yields Equation~\ref{eq:cov}. This derivation assumes independence of treatment and control means; shared batch effects can violate it.
+
+Let $w_i=1/d_i$, $w_0=1/c$, $W=w_0+\sum_iw_i$, $s=\sum_iw_ix_i$ and $\mu=s/W$. The raw-mean weighted information for the unknown baseline and response coefficients is
+\begin{equation}
+ \begin{pmatrix}W&s^\top\\s&\sum_iw_ix_ix_i^\top\end{pmatrix}.
+\end{equation}
+Eliminating the baseline by its Schur complement gives
+\begin{align}
+ M&=\sum_iw_ix_ix_i^\top-ss^\top/W\\
+  &=\sum_iw_i(x_i-\mu)(x_i-\mu)^\top+w_0\mu\mu^\top=X^\top C^{-1}X.
+\end{align}
+The centered expression and a factored whitening solve are used numerically. The source-feature intercept is part of $\beta$; it differs from the raw control baseline $\mu_0$, whose feature is zero. Ridge penalizes all response coefficients, including the appended source intercept, but not this eliminated nuisance baseline.
+
+Adding precision $t>0$ at feature $x$ updates information by
+\begin{equation}
+ M_{\rm new}=M+\frac{t}{1+t/W}(x-\mu)(x-\mu)^\top \quad(W>0).
+\end{equation}
+At the first weighted group with no previous observations, centered information is zero. Rank-one inverse/determinant identities accelerate the hypothetical action scores. Variance forecasts are held fixed while evaluating each candidate action and updated from newly purchased cells afterward. Thus a positive hypothetical gain does not imply monotonically decreasing realized prediction error.
+
+\subsection{Estimability is conditional on the supplied coordinates}
+With $c>0$ and finite positive $d_i$, $C$ is positive definite, so $\operatorname{range}(M)=\operatorname{row}(X)$. If $q$ is outside this space, choose $h\in\operatorname{null}(X)$ with $q^\top h\ne0$. Parameters $\beta$ and $\beta+th$ give identical expected calibration observations for every $t$, while their query means differ by $tq^\top h$. The query is therefore not estimable in this fixed-feature model. If $q$ lies in the space, its unregularized ideal variance is $q^\top M^+q$.
+
+A ridge inverse exists even outside the space because its uniqueness is supplied by a penalty, not additional observations. Moreover, replacing latent coordinates by noisy estimated source features can change the apparent row space. A numerical full-rank certificate about those estimates is not a certificate about population transfer. The simulation's missing-direction example demonstrates this logical distinction under a controlled construction; it does not estimate how often that failure occurs in real screens.
+
+\subsection{Paid validation with a shared noisy reference}
+For held-out contrast $Y_i=\delta_i+\epsilon_i-\epsilon_0$ and linear predictor $\widehat\delta_i=a^\top Y_{-i}$, let $d_i=\operatorname{var}(\epsilon_i)$, $c=\operatorname{var}(\epsilon_0)$ and $u=\sum_j a_j$. Under fixed features, fixed coefficients $a$ and independent mean-zero noises,
+\begin{align}
+ E[(Y_i-a^\top Y_{-i})^2]
+ &= (\delta_i-a^\top\delta_{-i})^2+d_i+\sum_j a_j^2d_j+c(1-u)^2,\\
+ E[(\widehat\delta_i-\delta_i)^2]
+ &= (\delta_i-a^\top\delta_{-i})^2+\sum_j a_j^2d_j+cu^2.
+\end{align}
+Consequently, subtracting $d_i+c$ and adding $2cu$ to the held-out squared residual has the second expectation. Averaging expression coordinates gives the implemented scalar score. The null candidate has $a=0$. This is a fixed-design known-variance identity; estimated variances and adaptive acquisition depend on the same observations, and selecting the minimum score adds selection effects. We do not assert unbiasedness of the full adaptive procedure or a prediction-interval guarantee.
+
+\subsection{Paired errors preserve the common control}
+For frozen predictions $p_A,p_B\in\mathbb R^G$ and assessment contrast $\widetilde\delta_i=\overline T_i-\overline T_0$,
+\begin{equation}
+ D_i=\frac{\|p_A\|^2-\|p_B\|^2}{G}
+      -\frac{2(p_A-p_B)^\top\overline T_i}{G}
+      +\frac{2(p_A-p_B)^\top\overline T_0}{G}.
+\end{equation}
+The unknown truth's quadratic term cancels. Averaging seeds and trapezoid weights produces one constant and one projection vector per query. Cell resampling then operates on these low-dimensional treatment/control projections without refitting. The same resampled controls must be used for every query. An independent control resample per query would discard cross-query covariance and can understate the control contribution.
+
+For fixed queries and independent cells, the analytic mean-difference variance has treatment terms proportional to $\sum_i\operatorname{var}(t_i)/n_i$ and a control term $\operatorname{var}(\sum_i z_i)/n_0$, rather than $\sum_i\operatorname{var}(z_i)/n_0$. Implementation tests check this identity against direct resampling. Query resampling instead changes which empirical interventions receive weight while fixing their observed assessment contrasts. The two procedures have different scopes and are not a calibrated joint biological interval. Nearly singleton guide/batch strata and missing biological replication remain limitations, not problems solved by the algebra.

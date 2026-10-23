@@ -1,0 +1,204 @@
+{
+  "analysis_source_sha256": "010e6f74b0613b91fc64595c7e9702e01ef0f50bffb7fac77dbbeef47757c7e5",
+  "input_episode_sha256": {
+    "data\\episodes\\k562-to-rpe1-v1\\manifest.json": "6b9a48d9650c26b40068074b975979568f384f0b6443b513055279dce636413e",
+    "data\\episodes\\rpe1-to-k562-v1\\manifest.json": "d64e6ffe37bec7d895a0dc1f6802b7b1ec2d2e541f1a58f5287e40056eff1ec0"
+  },
+  "pilot_fraction_of_first_budget": 0.6875,
+  "public_source_rank": 4,
+  "qualification": "Source-feature span at the actual pilot, not population transport identification. No recipient outcomes were read; positive control precision makes this span the ideal fixed-feature GLS estimability condition. Frozen numeric support at reported budgets is a separate retained diagnostic.",
+  "recorded_at": "2026-10-23T19:23:57.872120+00:00",
+  "records": [
+    {
+      "all_policy_pilot_prefixes_equal": true,
+      "direction": "k562-to-rpe1",
+      "feature_dimension_including_intercept": 5,
+      "ledger_sha256": "968cd17ca7c58ebc3d8a6c23351aa5a7037120e267b7c2b87cc4ae29d63d1dcc",
+      "maximum_relative_query_projection_residual": 7.556223219193725e-16,
+      "minimum_pilot_feature_singular_value": 0.1637562307637819,
+      "pilot_feature_rank": 5,
+      "pilot_interventions": [
+        "TSFM",
+        "NAA20",
+        "PYROXD1",
+        "PHAX",
+        "JMJD6",
+        "CAMLG"
+      ],
+      "pilot_spend": 88,
+      "seed": 0
+    },
+    {
+      "all_policy_pilot_prefixes_equal": true,
+      "direction": "k562-to-rpe1",
+      "feature_dimension_including_intercept": 5,
+      "ledger_sha256": "ecf0f5290d4c445ac1591ed4201ce6da94a9324005d7eb9c7048d60d89f7ba7f",
+      "maximum_relative_query_projection_residual": 6.40362972807925e-16,
+      "minimum_pilot_feature_singular_value": 0.1849694698119961,
+      "pilot_feature_rank": 5,
+      "pilot_interventions": [
+        "PKM",
+        "XRCC1",
+        "CADM4",
+        "MZF1",
+        "ACIN1",
+        "CNN2"
+      ],
+      "pilot_spend": 88,
+      "seed": 1
+    },
+    {
+      "all_policy_pilot_prefixes_equal": true,
+      "direction": "k562-to-rpe1",
+      "feature_dimension_including_intercept": 5,
+      "ledger_sha256": "e370b267449c3707e44b1b5fe9fe10f1ecf051ac9d3b3271d6436f179f57758a",
+      "maximum_relative_query_projection_residual": 9.076454738927309e-16,
+      "minimum_pilot_feature_singular_value": 0.1848806693315408,
+      "pilot_feature_rank": 5,
+      "pilot_interventions": [
+        "GTF3C4",
+        "EDC4",
+        "SSBP3",
+        "KPNB1",
+        "LCE1C",
+        "NELFCD"
+      ],
+      "pilot_spend": 88,
+      "seed": 2
+    },
+    {
+      "all_policy_pilot_prefixes_equal": true,
+      "direction": "k562-to-rpe1",
+      "feature_dimension_including_intercept": 5,
+      "ledger_sha256": "22246f6f9df770e06a31d843949922c9340b779866c009001d1aa9d63e74be8d",
+      "maximum_relative_query_projection_residual": 6.71962023837407e-16,
+      "minimum_pilot_feature_singular_value": 0.20402542715948488,
+      "pilot_feature_rank": 5,
+      "pilot_interventions": [
+        "DCTN3",
+        "CUL3",
+        "DNM1L",
+        "NDUFB8",
+        "C14orf178",
+        "RAB4A"
+      ],
+      "pilot_spend": 88,
+      "seed": 3
+    },
+    {
+      "all_policy_pilot_prefixes_equal": true,
+      "direction": "k562-to-rpe1",
+      "feature_dimension_including_intercept": 5,
+      "ledger_sha256": "d043cb7970a6f49834335cb9d9de603f97e7fd2fae5312e26034f01451fd196d",
+      "maximum_relative_query_projection_residual": 5.317490201846239e-16,
+      "minimum_pilot_feature_singular_value": 0.033311261798275496,
+      "pilot_feature_rank": 5,
+      "pilot_interventions": [
+        "NAGLU",
+        "FAM207A",
+        "RCC1",
+        "ACTB",
+        "CDC16",
+        "ZRSR2"
+      ],
+      "pilot_spend": 88,
+      "seed": 4
+    },
+    {
+      "all_policy_pilot_prefixes_equal": true,
+      "direction": "rpe1-to-k562",
+      "feature_dimension_including_intercept": 5,
+      "ledger_sha256": "d46c72099ae4fd470a8d3f7090d04f3ded7b9d7d21099ff130255844302a4b7d",
+      "maximum_relative_query_projection_residual": 1.1981208212957114e-15,
+      "minimum_pilot_feature_singular_value": 0.49724402306348886,
+      "pilot_feature_rank": 5,
+      "pilot_interventions": [
+        "TSFM",
+        "NAA20",
+        "PYROXD1",
+        "PHAX",
+        "JMJD6",
+        "CAMLG"
+      ],
+      "pilot_spend": 88,
+      "seed": 0
+    },
+    {
+      "all_policy_pilot_prefixes_equal": true,
+      "direction": "rpe1-to-k562",
+      "feature_dimension_including_intercept": 5,
+      "ledger_sha256": "47eba2994d854fbfc0f58dc27b94f8a1421f78f717f169aa476a448cb4ed00b9",
+      "maximum_relative_query_projection_residual": 1.18008333334601e-15,
+      "minimum_pilot_feature_singular_value": 0.041775874238499655,
+      "pilot_feature_rank": 5,
+      "pilot_interventions": [
+        "PKM",
+        "XRCC1",
+        "CADM4",
+        "MZF1",
+        "ACIN1",
+        "CNN2"
+      ],
+      "pilot_spend": 88,
+      "seed": 1
+    },
+    {
+      "all_policy_pilot_prefixes_equal": true,
+      "direction": "rpe1-to-k562",
+      "feature_dimension_including_intercept": 5,
+      "ledger_sha256": "96b76a36118a303c41ef66d3bf7e053b5ee836ecae73e5b3ab868a0a0dfd70be",
+      "maximum_relative_query_projection_residual": 1.0439456822811453e-15,
+      "minimum_pilot_feature_singular_value": 0.30535146567023785,
+      "pilot_feature_rank": 5,
+      "pilot_interventions": [
+        "GTF3C4",
+        "EDC4",
+        "SSBP3",
+        "KPNB1",
+        "LCE1C",
+        "NELFCD"
+      ],
+      "pilot_spend": 88,
+      "seed": 2
+    },
+    {
+      "all_policy_pilot_prefixes_equal": true,
+      "direction": "rpe1-to-k562",
+      "feature_dimension_including_intercept": 5,
+      "ledger_sha256": "3a2aba9aa0b91efe453538c0b72ade23afd267a07abeecbbbbaf01c5da9929cc",
+      "maximum_relative_query_projection_residual": 9.23967307846744e-16,
+      "minimum_pilot_feature_singular_value": 0.5554083515807164,
+      "pilot_feature_rank": 5,
+      "pilot_interventions": [
+        "DCTN3",
+        "CUL3",
+        "DNM1L",
+        "NDUFB8",
+        "C14orf178",
+        "RAB4A"
+      ],
+      "pilot_spend": 88,
+      "seed": 3
+    },
+    {
+      "all_policy_pilot_prefixes_equal": true,
+      "direction": "rpe1-to-k562",
+      "feature_dimension_including_intercept": 5,
+      "ledger_sha256": "fd4bb8ea7c5454adc0affba77dc2fd369df8d3a49c6749a0d3d5f23918670d7d",
+      "maximum_relative_query_projection_residual": 1.4750971839884803e-15,
+      "minimum_pilot_feature_singular_value": 0.10622929758906406,
+      "pilot_feature_rank": 5,
+      "pilot_interventions": [
+        "NAGLU",
+        "FAM207A",
+        "RCC1",
+        "ACTB",
+        "CDC16",
+        "ZRSR2"
+      ],
+      "pilot_spend": 88,
+      "seed": 4
+    }
+  ],
+  "state": "passed"
+}

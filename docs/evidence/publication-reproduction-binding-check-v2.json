@@ -1,0 +1,22 @@
+{
+  "all_eight_scientific_run_fields_unchanged": true,
+  "analysis_source_sha256": "d491aeb06d047ddde62e4a1fd9f8f41a266d0b72562676439ed2c8cedf1ca95d",
+  "changed_scientific_template_rejected_before_outputs": true,
+  "commands": [
+    {
+      "label": "original-audits",
+      "returncode": 0
+    },
+    {
+      "label": "fresh-audits",
+      "returncode": 0
+    }
+  ],
+  "new_current_project_lock_and_license_bound_as_evidence": true,
+  "no_acquisition_or_scoring_started": true,
+  "packaging_only_addition": "project.license-files=[LICENSE]",
+  "proof_archive_sha256": "cdf9cc90f8b49f8780cc9e4e56dd4166425b4c7899e5f9d69978384c1679da82",
+  "qualification": "Actual four completed-study episodes; new audit names/provenance paths only. No fresh episode construction or repeated acquisition claimed.",
+  "recorded_at": "2026-10-23T20:36:16.870617+00:00",
+  "state": "passed"
+}

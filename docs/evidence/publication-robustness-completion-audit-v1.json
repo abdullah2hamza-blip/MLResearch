@@ -1,0 +1,540 @@
+{
+  "analysis_source_sha256": "9d87d0c9d786d834dbf25b8d49fe643a5f92dc78cfd2e3998789aeb33a922b80",
+  "joint_frozen_at": "2026-10-23T19:40:11.507776+00:00",
+  "joint_gate_sha256": "ef4497f6e5b2c84efbaba7a5526bd58ef4eda720b3ac2833d860d679961dc8ec",
+  "qualification": "Full artifact/index and ledger-prefix authentication plus independent inventory/cost reconciliation. Timestamps and hashes document the cooperative runner boundary; they do not sandbox a hostile filesystem process. Counterfactual policies reuse cells.",
+  "query_gene_fixed_grid_unchanged_checkpoints": [],
+  "recorded_at": "2026-10-23T19:56:45.078443+00:00",
+  "runs": [
+    {
+      "assessment_access_sha256": "9fbbe1241b3721182b762f40658cca651432eefa237758987675fd8eea93c23e",
+      "assessment_opened_at": "2026-10-23T19:41:12.634925+00:00",
+      "independently_reconciled_ledgers": [
+        {
+          "cells": 1920,
+          "policy": "worst_query",
+          "seed": 0,
+          "spent": 2048
+        },
+        {
+          "cells": 1940,
+          "policy": "mean_query",
+          "seed": 0,
+          "spent": 2048
+        },
+        {
+          "cells": 1708,
+          "policy": "bias_aware",
+          "seed": 0,
+          "spent": 2048
+        },
+        {
+          "cells": 1912,
+          "policy": "worst_query",
+          "seed": 1,
+          "spent": 2048
+        },
+        {
+          "cells": 1932,
+          "policy": "mean_query",
+          "seed": 1,
+          "spent": 2048
+        },
+        {
+          "cells": 1700,
+          "policy": "bias_aware",
+          "seed": 1,
+          "spent": 2048
+        },
+        {
+          "cells": 1908,
+          "policy": "worst_query",
+          "seed": 2,
+          "spent": 2048
+        },
+        {
+          "cells": 1932,
+          "policy": "mean_query",
+          "seed": 2,
+          "spent": 2048
+        },
+        {
+          "cells": 1704,
+          "policy": "bias_aware",
+          "seed": 2,
+          "spent": 2048
+        }
+      ],
+      "prediction_checkpoints": 45,
+      "prediction_index_sha256": "bef98fb9af1480e041eb222da953684b1f0db6489b05d9c5e623a5c7f6eb9102",
+      "predictions_frozen_at": "2026-10-23T19:15:29.360676+00:00",
+      "run": "publication-k562-to-rpe1-seed20261023-rank4-v1",
+      "run_manifest_sha256": "1cad19757c75bd278c61bb970345e0228145293f543e60ac7e8ccb51f966959a",
+      "scorer_only_cells": 4448
+    },
+    {
+      "assessment_access_sha256": "7dffca4391fa04034aaa49bca8c5e24fc713061207e0a47c541707e9e1b5fd1a",
+      "assessment_opened_at": "2026-10-23T19:42:28.010298+00:00",
+      "independently_reconciled_ledgers": [
+        {
+          "cells": 1792,
+          "policy": "worst_query",
+          "seed": 0,
+          "spent": 2048
+        },
+        {
+          "cells": 1864,
+          "policy": "mean_query",
+          "seed": 0,
+          "spent": 2048
+        },
+        {
+          "cells": 1480,
+          "policy": "bias_aware",
+          "seed": 0,
+          "spent": 2048
+        },
+        {
+          "cells": 1792,
+          "policy": "worst_query",
+          "seed": 1,
+          "spent": 2048
+        },
+        {
+          "cells": 1848,
+          "policy": "mean_query",
+          "seed": 1,
+          "spent": 2048
+        },
+        {
+          "cells": 1468,
+          "policy": "bias_aware",
+          "seed": 1,
+          "spent": 2048
+        },
+        {
+          "cells": 1780,
+          "policy": "worst_query",
+          "seed": 2,
+          "spent": 2048
+        },
+        {
+          "cells": 1832,
+          "policy": "mean_query",
+          "seed": 2,
+          "spent": 2048
+        },
+        {
+          "cells": 1476,
+          "policy": "bias_aware",
+          "seed": 2,
+          "spent": 2048
+        }
+      ],
+      "prediction_checkpoints": 45,
+      "prediction_index_sha256": "8f7e23bc8c95cb3ab054d970b2d1b5d6acfbbcecd392978dc04676d5033857eb",
+      "predictions_frozen_at": "2026-10-23T19:19:08.509977+00:00",
+      "run": "publication-k562-to-rpe1-seed20261023-rank16-v1",
+      "run_manifest_sha256": "78989c78d26e17f3499170d8fb9788f380b0160555c31f781bbb8b05df7c4485",
+      "scorer_only_cells": 4448
+    },
+    {
+      "assessment_access_sha256": "887191c6310af742fd7dcc7b5d7bc0284031bd29b8e74651c265cf7de8c7624a",
+      "assessment_opened_at": "2026-10-23T19:43:44.851155+00:00",
+      "independently_reconciled_ledgers": [
+        {
+          "cells": 1916,
+          "policy": "worst_query",
+          "seed": 0,
+          "spent": 2048
+        },
+        {
+          "cells": 1936,
+          "policy": "mean_query",
+          "seed": 0,
+          "spent": 2048
+        },
+        {
+          "cells": 1708,
+          "policy": "bias_aware",
+          "seed": 0,
+          "spent": 2048
+        },
+        {
+          "cells": 1908,
+          "policy": "worst_query",
+          "seed": 1,
+          "spent": 2048
+        },
+        {
+          "cells": 1932,
+          "policy": "mean_query",
+          "seed": 1,
+          "spent": 2048
+        },
+        {
+          "cells": 1696,
+          "policy": "bias_aware",
+          "seed": 1,
+          "spent": 2048
+        },
+        {
+          "cells": 1904,
+          "policy": "worst_query",
+          "seed": 2,
+          "spent": 2048
+        },
+        {
+          "cells": 1936,
+          "policy": "mean_query",
+          "seed": 2,
+          "spent": 2048
+        },
+        {
+          "cells": 1712,
+          "policy": "bias_aware",
+          "seed": 2,
+          "spent": 2048
+        }
+      ],
+      "prediction_checkpoints": 45,
+      "prediction_index_sha256": "4cb961d5f7fdadac57bfb0e548aa651406288144e9b15184d726083a7be37526",
+      "predictions_frozen_at": "2026-10-23T19:22:17.187095+00:00",
+      "run": "publication-rpe1-to-k562-seed20261023-rank4-v1",
+      "run_manifest_sha256": "4f9587b22e86739b85d03b37c99fef2dffd3701e88f93c61a3445a2e7d3f1e3d",
+      "scorer_only_cells": 4448
+    },
+    {
+      "assessment_access_sha256": "25bf9e9c50a854edf895f7d8db9d5f1eb619747e808a86c2111e0558238b3b7b",
+      "assessment_opened_at": "2026-10-23T19:45:03.624528+00:00",
+      "independently_reconciled_ledgers": [
+        {
+          "cells": 1860,
+          "policy": "worst_query",
+          "seed": 0,
+          "spent": 2048
+        },
+        {
+          "cells": 1876,
+          "policy": "mean_query",
+          "seed": 0,
+          "spent": 2048
+        },
+        {
+          "cells": 1500,
+          "policy": "bias_aware",
+          "seed": 0,
+          "spent": 2048
+        },
+        {
+          "cells": 1812,
+          "policy": "worst_query",
+          "seed": 1,
+          "spent": 2048
+        },
+        {
+          "cells": 1860,
+          "policy": "mean_query",
+          "seed": 1,
+          "spent": 2048
+        },
+        {
+          "cells": 1504,
+          "policy": "bias_aware",
+          "seed": 1,
+          "spent": 2048
+        },
+        {
+          "cells": 1792,
+          "policy": "worst_query",
+          "seed": 2,
+          "spent": 2048
+        },
+        {
+          "cells": 1864,
+          "policy": "mean_query",
+          "seed": 2,
+          "spent": 2048
+        },
+        {
+          "cells": 1492,
+          "policy": "bias_aware",
+          "seed": 2,
+          "spent": 2048
+        }
+      ],
+      "prediction_checkpoints": 45,
+      "prediction_index_sha256": "be5406c46bb4c0373e6bb9a941e9ecb160db4701d6542dbe7935230d9d106a30",
+      "predictions_frozen_at": "2026-10-23T19:25:59.127594+00:00",
+      "run": "publication-rpe1-to-k562-seed20261023-rank16-v1",
+      "run_manifest_sha256": "501f41fab05304dd900d2fdbf7abdc47c8903b43f5c49103fea9e6614e421ed2",
+      "scorer_only_cells": 4448
+    },
+    {
+      "assessment_access_sha256": "cc68da3678de012a9daacb7f732b3fbf76bd8a813c2b008bcd13135867723718",
+      "assessment_opened_at": "2026-10-23T19:46:23.725243+00:00",
+      "independently_reconciled_ledgers": [
+        {
+          "cells": 1904,
+          "policy": "worst_query",
+          "seed": 0,
+          "spent": 2048
+        },
+        {
+          "cells": 1936,
+          "policy": "mean_query",
+          "seed": 0,
+          "spent": 2048
+        },
+        {
+          "cells": 1692,
+          "policy": "bias_aware",
+          "seed": 0,
+          "spent": 2048
+        },
+        {
+          "cells": 1920,
+          "policy": "worst_query",
+          "seed": 1,
+          "spent": 2048
+        },
+        {
+          "cells": 1940,
+          "policy": "mean_query",
+          "seed": 1,
+          "spent": 2048
+        },
+        {
+          "cells": 1696,
+          "policy": "bias_aware",
+          "seed": 1,
+          "spent": 2048
+        },
+        {
+          "cells": 1912,
+          "policy": "worst_query",
+          "seed": 2,
+          "spent": 2048
+        },
+        {
+          "cells": 1932,
+          "policy": "mean_query",
+          "seed": 2,
+          "spent": 2048
+        },
+        {
+          "cells": 1696,
+          "policy": "bias_aware",
+          "seed": 2,
+          "spent": 2048
+        }
+      ],
+      "prediction_checkpoints": 45,
+      "prediction_index_sha256": "8cdc0cf7ab539caae307247f8c622b7553ceb0d9bf83c02fd030c8932b66921b",
+      "predictions_frozen_at": "2026-10-23T19:29:28.091235+00:00",
+      "run": "publication-k562-to-rpe1-seed20261024-rank4-v1",
+      "run_manifest_sha256": "d6bc9e464ac90cb9a5f19cb1cd2d5ae135ae0fa8745c56d6eadbc30877fa0efa",
+      "scorer_only_cells": 4448
+    },
+    {
+      "assessment_access_sha256": "e0541a9a863d63acb49ed4e866cea9006f50e5218f87df298d166a77a51e0559",
+      "assessment_opened_at": "2026-10-23T19:47:41.708523+00:00",
+      "independently_reconciled_ledgers": [
+        {
+          "cells": 1784,
+          "policy": "worst_query",
+          "seed": 0,
+          "spent": 2048
+        },
+        {
+          "cells": 1852,
+          "policy": "mean_query",
+          "seed": 0,
+          "spent": 2048
+        },
+        {
+          "cells": 1524,
+          "policy": "bias_aware",
+          "seed": 0,
+          "spent": 2048
+        },
+        {
+          "cells": 1816,
+          "policy": "worst_query",
+          "seed": 1,
+          "spent": 2048
+        },
+        {
+          "cells": 1860,
+          "policy": "mean_query",
+          "seed": 1,
+          "spent": 2048
+        },
+        {
+          "cells": 1524,
+          "policy": "bias_aware",
+          "seed": 1,
+          "spent": 2048
+        },
+        {
+          "cells": 1816,
+          "policy": "worst_query",
+          "seed": 2,
+          "spent": 2048
+        },
+        {
+          "cells": 1876,
+          "policy": "mean_query",
+          "seed": 2,
+          "spent": 2048
+        },
+        {
+          "cells": 1504,
+          "policy": "bias_aware",
+          "seed": 2,
+          "spent": 2048
+        }
+      ],
+      "prediction_checkpoints": 45,
+      "prediction_index_sha256": "ea8267b9ffca6d5873e20db58be43f1ca2580a2f9a91c8d8e6c3d69d97cc91cb",
+      "predictions_frozen_at": "2026-10-23T19:33:10.524668+00:00",
+      "run": "publication-k562-to-rpe1-seed20261024-rank16-v1",
+      "run_manifest_sha256": "261da4bb5fce4dc109e02be9a0c7340f23be67a0ce1551f24416a4584f9fd8dd",
+      "scorer_only_cells": 4448
+    },
+    {
+      "assessment_access_sha256": "5aba8f82d81bd6c6273d6a851ba1e58f16b9dbfb1f08943df63b12f432a68105",
+      "assessment_opened_at": "2026-10-23T19:48:59.190590+00:00",
+      "independently_reconciled_ledgers": [
+        {
+          "cells": 1912,
+          "policy": "worst_query",
+          "seed": 0,
+          "spent": 2048
+        },
+        {
+          "cells": 1932,
+          "policy": "mean_query",
+          "seed": 0,
+          "spent": 2048
+        },
+        {
+          "cells": 1712,
+          "policy": "bias_aware",
+          "seed": 0,
+          "spent": 2048
+        },
+        {
+          "cells": 1912,
+          "policy": "worst_query",
+          "seed": 1,
+          "spent": 2048
+        },
+        {
+          "cells": 1932,
+          "policy": "mean_query",
+          "seed": 1,
+          "spent": 2048
+        },
+        {
+          "cells": 1712,
+          "policy": "bias_aware",
+          "seed": 1,
+          "spent": 2048
+        },
+        {
+          "cells": 1912,
+          "policy": "worst_query",
+          "seed": 2,
+          "spent": 2048
+        },
+        {
+          "cells": 1932,
+          "policy": "mean_query",
+          "seed": 2,
+          "spent": 2048
+        },
+        {
+          "cells": 1708,
+          "policy": "bias_aware",
+          "seed": 2,
+          "spent": 2048
+        }
+      ],
+      "prediction_checkpoints": 45,
+      "prediction_index_sha256": "3290c337ccb1e83fe4daaf812cb530e6ed2b6e93b531996bf4d26776f7dff0b7",
+      "predictions_frozen_at": "2026-10-23T19:36:11.381664+00:00",
+      "run": "publication-rpe1-to-k562-seed20261024-rank4-v1",
+      "run_manifest_sha256": "e002cb8fa90d2cabfd06d02b36e909e00956248be100f32837ed7f510080daa0",
+      "scorer_only_cells": 4448
+    },
+    {
+      "assessment_access_sha256": "7df6a529bc41cca0c6cc08e6d3c84c9e8b14d1889405f8c2f2f6eecd5c523d14",
+      "assessment_opened_at": "2026-10-23T19:50:09.249983+00:00",
+      "independently_reconciled_ledgers": [
+        {
+          "cells": 1828,
+          "policy": "worst_query",
+          "seed": 0,
+          "spent": 2048
+        },
+        {
+          "cells": 1856,
+          "policy": "mean_query",
+          "seed": 0,
+          "spent": 2048
+        },
+        {
+          "cells": 1612,
+          "policy": "bias_aware",
+          "seed": 0,
+          "spent": 2048
+        },
+        {
+          "cells": 1844,
+          "policy": "worst_query",
+          "seed": 1,
+          "spent": 2048
+        },
+        {
+          "cells": 1864,
+          "policy": "mean_query",
+          "seed": 1,
+          "spent": 2048
+        },
+        {
+          "cells": 1620,
+          "policy": "bias_aware",
+          "seed": 1,
+          "spent": 2048
+        },
+        {
+          "cells": 1824,
+          "policy": "worst_query",
+          "seed": 2,
+          "spent": 2048
+        },
+        {
+          "cells": 1848,
+          "policy": "mean_query",
+          "seed": 2,
+          "spent": 2048
+        },
+        {
+          "cells": 1624,
+          "policy": "bias_aware",
+          "seed": 2,
+          "spent": 2048
+        }
+      ],
+      "prediction_checkpoints": 45,
+      "prediction_index_sha256": "d7e842c8d651e544c3e77525fe3b6c8fbac15cdb8c761d982d7dacdc96213c15",
+      "predictions_frozen_at": "2026-10-23T19:39:35.251153+00:00",
+      "run": "publication-rpe1-to-k562-seed20261024-rank16-v1",
+      "run_manifest_sha256": "529ca0c85887812ab862136c28aeff3f0f0834c9d04ea99178d745621c7dd32c",
+      "scorer_only_cells": 4448
+    }
+  ],
+  "suite_manifest_sha256": "079a5479bd3ac13bbbb852ca8e758778420a6350f3621d75dd642776ee58c20b",
+  "zero_weight_classical_byte_identical_pairs": []
+}

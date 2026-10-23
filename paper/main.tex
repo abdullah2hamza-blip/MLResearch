@@ -1,0 +1,43 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern,microtype}
+\usepackage{amsmath,amssymb,graphicx,booktabs,array}
+\usepackage[round,authoryear]{natbib}
+\usepackage{caption}
+\usepackage{xcolor}
+\usepackage[colorlinks=true,allcolors=blue,breaklinks=true]{hyperref}
+\hypersetup{pdftitle={Evaluating fixed-kernel joint acquisition for cross-context perturbation prediction},pdfauthor={Abdullah Hamza}}
+\captionsetup{font=small,labelfont=bf}
+\setlength{\emergencystretch}{2em}
+\setlength{\tabcolsep}{4pt}
+\newcommand{\R}{\mathbb R}
+\input{generated/numbers}
+\title{Evaluating fixed-kernel joint acquisition for cross-context perturbation prediction}
+\author{Abdullah Hamza\\Independent Researcher\\\href{mailto:abdullah2hamza@gmail.com}{\texttt{abdullah2hamza@gmail.com}}}
+\date{October 23, 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+Predicting an intervention's response in a new context can require choosing which other interventions to measure, how many cells to acquire, and how much to spend on shared controls. We evaluate a fixed radial-basis-function discrepancy-variance augmentation of greedy worst-query design under this joint budget. A finite-pool replay separates supplied source responses, paid recipient calibration cells and sealed recipient assessment cells; all policies share prediction backbones and explicit purchase ledgers. In a frozen K562/RPE1 replay with 131 held-out interventions, rank-four source coordinates and budgets 128--512, the augmentation changes paid-validation ridge error area by $+0.565\%$ and $+0.0138\%$ in the two directions, respectively; conditional query-resampling ranges include zero. The pilot already spans the estimated representation, and assessment noise is large relative to prediction gains. A separately declared post-primary study crosses two new split/cell-order seeds, ranks 4/16 and budgets through 2,048. Six of eight wider-grid point contrasts favor worst-query, while five favor the extension against mean-query. One forward rank-four cell improves by $3.58\%$ against worst-query, demonstrating sensitivity rather than a universal negative result. Known-truth experiments expose a further failure: noisy source coordinates can make a missing direction appear supported, while ideal Gaussian intervals miss structural error. These findings concern one fixed acquisition surrogate, whose variance is not the fitted ridge predictor's risk. The contribution is an auditable evaluation of its limitations and conditional successes, with complete comparisons, uncertainty scopes and reproducible artifacts; it does not establish biological transportability or prospective laboratory savings.
+\end{abstract}
+\noindent\textbf{Keywords:} perturbation prediction; experimental design; shared controls; transfer learning; computational reproducibility
+\input{sections/introduction}
+\input{sections/methods}
+\input{sections/experiments}
+\input{sections/results}
+\input{sections/robustness-results}
+\input{sections/discussion}
+\input{sections/disclosures}
+\clearpage
+\bibliographystyle{plainnat}
+\bibliography{references}
+\clearpage
+\appendix
+\input{sections/mathematical-appendix}
+\input{sections/baseline-appendix}
+\input{sections/implementation-appendix}
+\input{sections/assessment-appendix}
+\input{sections/reproduction-appendix}
+\end{document}
