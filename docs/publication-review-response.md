@@ -1,6 +1,6 @@
 # PI review and response ledger
 
-October 23, 2026. Two narrowly scoped independent automated internal reviews were requested: one scientific/statistical review and one mathematical/code review. They are internal quality checks, not external peer review or endorsements. Parent review verified findings against current code, retained results and actual prediction files. The manuscript will disclose AI-assisted implementation/drafting/internal review; human authorship and responsibility remain with Abdullah Hamza.
+October 23, 2026. Two narrowly scoped internal reviews were requested: one scientific/statistical review and one mathematical/code review. They are internal quality checks, not external peer review or endorsements. Parent review verified findings against current code, retained results and actual prediction files. Authorship and responsibility remain with Abdullah Hamza. This ledger records the October 23 review; the fresh October 28 release review is recorded separately.
 
 | Issue | Evidence and assessment | Required response | Current state |
 | --- | --- | --- | --- |

@@ -29,3 +29,5 @@ wheels/
 /paper/*.blg
 /paper/*.synctex.gz
 /output/release/
+/output/kaggle/
+/output/public-release/

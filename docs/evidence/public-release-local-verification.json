@@ -1,0 +1,96 @@
+{
+  "base_repository_revision": "3302c7c17c1aab7bd8c4f7408636d0b4d26de9a9",
+  "build_tool": {
+    "executable_sha256": "6760c6368d3219c687eb1811e55379af9526fbd97e97fa954968267f5241deb9",
+    "fixed_source_date_epoch": "1793145600",
+    "name": "Tectonic",
+    "observed_version": "tectonic 0.15.0Tectonic 0.15.0",
+    "version_command": "tectonic --version"
+  },
+  "canonical_AI_disclosure": "OpenAI Codex (OpenAI) assisted with research planning, literature review and experimental design, code preparation, statistical analysis and interpretation, figure and table preparation, manuscript drafting and revision, internal review, and release preparation. These AI-assisted reviews were internal quality checks, not independent human peer review. The human author retains responsibility for the final work.",
+  "citation_schema": {
+    "citation_sha256": "609ce0447d76db52c943106fc691de441de4e1a1699e71d66b91aed0e0ba4b81",
+    "errors": [],
+    "schema_sha256": "0b8d22140da702d766df318dcff3a91af2f39521298dcf36d76315fd99cc169b",
+    "schema_url": "https://raw.githubusercontent.com/citation-file-format/citation-file-format/1.2.0/schema.json",
+    "state": "passed",
+    "validator": "Draft7Validator with format checks",
+    "validator_version": "4.26.0",
+    "yaml_version": "6.0.3"
+  },
+  "claim_map": "docs/claim-evidence-public-release.md",
+  "disclosure_consistency": "Exact paragraph matched in manuscript, README and source notebook; staged dataset cards use the same canonical constant.",
+  "environment": {
+    "architecture": "AMD64",
+    "gpu_used": false,
+    "hdf5_runtime": "2.0.0",
+    "logical_cpu_count": 16,
+    "numerical_worker_policy": "one worker and OPENBLAS_NUM_THREADS=1 for the numerical check suite",
+    "packages": {
+      "h5py": "3.16.0",
+      "matplotlib": "3.11.2",
+      "mlresearch": "0.2.0",
+      "mypy": "2.4.0",
+      "numpy": "2.5.4",
+      "pytest": "9.1.1",
+      "ruff": "0.17.1",
+      "scipy": "1.18.1"
+    },
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.14"
+  },
+  "exposure_audit": "docs/public-release-exposure-audit.md",
+  "mypy": "passed; 22 source modules",
+  "notebook_verification": "Fresh local top-to-bottom saved-output arithmetic and refusal tests; no hosted Kaggle run is claimed.",
+  "pdf_quality": {
+    "all_pages_visually_inspected": true,
+    "canonical_AI_disclosure_present": true,
+    "contact_sheets": 14,
+    "metadata": {
+      "/Author": "Abdullah Hamza",
+      "/CreationDate": "D:20261028000000-00'00'",
+      "/Creator": "LaTeX with hyperref",
+      "/Producer": "xdvipdfmx (0.1)",
+      "/Title": "Evaluating fixed-kernel joint acquisition for cross-context perturbation prediction"
+    },
+    "no_new_human_review_attestation": true,
+    "overfull_boxes": [],
+    "pages": 28,
+    "pdf_sha256": "33ee27e5201be6d65dc470d594c0121310cde6daa12c616ac442d1e31d3c8527",
+    "source_date_epoch": "1793145600",
+    "state": "passed",
+    "technical_report_label_present": true,
+    "unresolved_references": [],
+    "visual_review": "All 28 final pages inspected using fourteen full-resolution two-page contact sheets. No clipping, missing glyphs, overflowing tables, unreadable figures or broken cross-references identified."
+  },
+  "publication_state": "Prepared locally; no Kaggle payload uploaded and GitHub remains private at this checkpoint.",
+  "qualification": "Scientific evidence remains the frozen prior experiments; fresh saved-output arithmetic and local tests are distinct from full experimental reproduction. Final source commit/tag are recorded in the exported artifact manifest after commit, avoiding a self-reference.",
+  "remaining_gates": [
+    "Clean source commit/export and artifact binding",
+    "Cross-platform CI and final new-payload exposure checks",
+    "Authorized Kaggle upload and fresh hosted execution",
+    "Public GitHub release/visibility and public Kaggle versions",
+    "Unauthenticated downloads, links and final publication receipt"
+  ],
+  "review_date": "2026-10-28",
+  "ruff_check": "passed; src tests scripts notebooks",
+  "ruff_format_check": "passed; 77 files",
+  "scientific_runtime_config_lock_project_unchanged": true,
+  "source_payload_sha256": {
+    "notebooks/joint-acquisition-reanalysis.ipynb": "07051dadd26cd420e373fada4b626c1ce79b0f9e2243498f6df9be75dd6d5404",
+    "notebooks/prepare_saved_result_inputs.py": "301e7eb8a87bb5b8f90c6e2eae9fc12054ba4251a0d251c31a53a5a48b3a7b2f",
+    "notebooks/validate_saved_results_notebook.py": "8bbcef35fb08b774e8350bb1b7cb90644c81793e5da22b1feb3f3130d03530d1",
+    "scripts/build-paper.py": "b7082a4fec8616986faa5f784a326c9d50d2e595e28238fc6b95ab173d7f89e1",
+    "scripts/package-publication.py": "cf2748c243aba21364fcc3ce6e6a7cad341fd98496f3980cf18b8dc2e550ae7d",
+    "tests/test_kaggle_reanalysis.py": "44bc18a1184c0ee6596454989273aba9f2fc5c3a035aa9ba35eb27da3c06f5a4",
+    "tests/test_public_release_provenance.py": "ffac475795b50ace2e42af0188289e08f57d3ac925c4bbd7be100640fe7d0d62",
+    "tests/test_publication_build.py": "b60c2e4bcaf0b03f3c95e2ca1fa647938c59a4572b207bc2b182feb5ee3e1057"
+  },
+  "state": "passed_local_prepublication_checks",
+  "tests": {
+    "command": "python -m pytest --basetemp .cache/pytest-public-release-final",
+    "elapsed_seconds": 196.16,
+    "passed": 145,
+    "warnings": "Three expected non-interactive Matplotlib show warnings in headless notebook tests; files were produced and checked."
+  }
+}

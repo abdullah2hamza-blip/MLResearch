@@ -9,6 +9,7 @@
 /docs/results/** -text whitespace=cr-at-eol
 /paper/** -text whitespace=cr-at-eol
 /scripts/** -text whitespace=cr-at-eol
+/notebooks/** -text whitespace=cr-at-eol
 /configs/** -text whitespace=cr-at-eol
 /docs/publication-robustness-protocol.md -text whitespace=cr-at-eol
 /docs/publication-method-clarifications.md -text whitespace=cr-at-eol

@@ -1,6 +1,8 @@
 # Manuscript, evidence and submission package
 
-The manuscript is **Evaluating fixed-kernel joint acquisition for cross-context perturbation prediction**, by Abdullah Hamza (Independent Researcher). The PDF includes the main article, references and technical supplement. It reports the original frozen comparison and every cell of the later split/rank/budget study, including the favorable forward split. Internal automated reviews are documented in [the response ledger](publication-review-response.md); they are not external peer review or acceptance.
+The manuscript is **Evaluating fixed-kernel joint acquisition for cross-context perturbation prediction**, by Abdullah Hamza (Independent Researcher). The PDF includes the main article, references and technical supplement. It reports the original frozen comparison and every cell of the later split/rank/budget study, including the favorable forward split. The October 23 internal reviews are documented in [the response ledger](publication-review-response.md); they are not external peer review or acceptance. The [October 28 release review](release-review-v2.md) records the fresh review and verification of the current artifacts.
+
+The subsequent [public-release checklist](public-release-checklist.md) tracks actual GitHub/Kaggle uploads, hosted execution and public-access checks. Earlier readiness audits are historical evidence, not proof of later hosted publication.
 
 ## Deliverables and reader access
 
@@ -10,9 +12,9 @@ The manuscript is **Evaluating fixed-kernel joint acquisition for cross-context 
 - `output/release/code-and-evidence-v0.2.0.zip`: original software, tests, locked environment, configurations, retained evidence, manuscript pipeline and PDF. It excludes raw/prepared expression data, large predictions, credentials, Git history and machine caches.
 - `output/release/release-manifest-v0.2.0.json`: archive/PDF checksums and member inventories.
 
-The GitHub repository is private during preparation. Deposit the code/evidence archive with the paper or in a persistent archive so readers actually receive it; a private GitHub URL alone is not an availability statement. The manuscript accurately describes the accompanying archive and does not claim a public repository or code DOI. Making the repository public would expose its existing history and requires a separate user decision. No submission or visibility change is performed by these instructions.
+The canonical repository is https://github.com/abdullah2hamza-blip/MLResearch and the versioned technical-report release is https://github.com/abdullah2hamza-blip/MLResearch/releases/tag/v0.2.0. Release assets provide the manuscript, editable sources and complete distributable code/evidence package. The Kaggle workflow is saved-output reanalysis, not full experimental reproduction; its actual hosted version and verification status are recorded with the release. Hosting is not independent peer review or journal acceptance, and no DOI is assigned. Final public accessibility is verified by the release workflow rather than inferred from prepared local files.
 
-Original code uses [MIT](../LICENSE); the manuscript uses [CC BY 4.0](../paper/LICENSE). Third-party data retain their original terms. [CITATION.cff](../CITATION.cff) contains versioned citation metadata without an invented publication or DOI. The supplied author reports no external funding or competing interests. AI assistance is disclosed in the manuscript.
+Original code uses [MIT](../LICENSE); the manuscript uses [CC BY 4.0](../paper/LICENSE). Third-party data retain their original terms. [CITATION.cff](../CITATION.cff) contains versioned citation metadata without an invented publication or DOI. The supplied author reports no external funding or competing interests. Assistance, including substantive preparation and internal review, is disclosed consistently in [the canonical assistance record](ai-assistance.md). Those checks are not a new human-author attestation.
 
 ## Lightweight evidence and paper reproduction
 
@@ -25,7 +27,7 @@ uv run --locked python scripts/generate-paper-assets.py --replace --robustness d
 uv run --locked python scripts/build-paper.py
 ```
 
-The verifier checks retained indexes, compressed/nested payloads, manuscript evidence bindings, review audits and numerical contrasts. The figure/table generator reads authenticated small summaries; it does not need raw expression or prediction arrays. It retains exact numeric registries and hashes rather than silently editing manuscript numbers. Matplotlib figure bytes can differ with rendering environment; compare numeric tables/registries and visually inspect regenerated figures. The build helper refuses incomplete or changed generated assets.
+The verifier checks retained indexes, compressed/nested payloads, manuscript evidence bindings, review audits and numerical contrasts. The figure/table generator reads authenticated small summaries; it does not need raw expression or prediction arrays. It retains exact numeric registries and hashes rather than silently editing manuscript numbers. Matplotlib figure bytes can differ with rendering environment; compare numeric tables/registries and visually inspect regenerated figures. The build helper refuses incomplete or changed generated assets. It also records the complete manuscript input inventory and hashes, compiled bibliography and PDF in a build receipt. Packaging requires that receipt and rejects edited, added or removed manuscript inputs and changed compiled outputs; rebuild after every manuscript edit.
 
 Install [Tectonic](https://tectonic-typesetting.github.io/book/latest/getting-started/first-document.html) or a conventional pdfLaTeX/BibTeX distribution, or pass `--compiler PATH`. Tectonic downloads its TeX support bundle on first use and needs a writable standard format cache. The verified build used official Tectonic 0.15.0 with the standard version-33 TeX bundle. From an unpacked manuscript-only archive run:
 
@@ -79,14 +81,16 @@ uv run --locked python scripts/analyze-robustness-influence.py --output runs/rep
 
 ```sh
 uv run --locked python -m pytest --basetemp .cache/pytest-publication
-uv run --locked ruff check src tests scripts
-uv run --locked ruff format --check src tests scripts
+uv run --locked ruff check src tests scripts notebooks
+uv run --locked ruff format --check src tests scripts notebooks
 uv run --locked python -m mypy src/mlresearch
 uv run --locked python scripts/package-publication.py --output output/release
 ```
 
 Tests cover meaningful numerical/covariance, information-boundary, accounting and resume behavior. The release audit distinguishes these checks from the model's unverified biological assumptions. A clean unpack/install and manuscript-only unpack/compile are independently checked before completion.
 
+Authenticated protocol copies inside `docs/results/**/frozen-evidence/` preserve the original document bytes, including relative links written for the original `docs/` location. Resolve those links from `docs/`, using the corresponding current protocol and evidence paths. Do not edit frozen copies to change link targets; that would invalidate their evidence bindings. The editable documentation is checked separately for broken local links.
+
 ## Human submission actions
 
-Review the final paper and choose a suitable preprint category or journal; this is a focused computational evaluation with limited biological generalization. For arXiv, [the official submission guide](https://info.arxiv.org/help/submit/index.html) requires source submission for a TeX-authored article. Its [TeX instructions](https://info.arxiv.org/help/submit_tex.html) also exclude unused files; the separate arXiv archive omits the full editable package's tooling, manifests and unused image formats. Upload the minimal `arxiv-source-v0.2.0.zip`, select `main.tex`, inspect the platform-generated PDF, and choose the author-approved CC BY 4.0 terms. Account registration, possible endorsement and moderation remain platform decisions. Deposit the accompanying code/evidence archive and supply its persistent URL/identifier when assigned; update the availability/citation metadata if a public archive is created. For a journal, adapt its template, data/code deposit and AI-disclosure fields without changing the scientific qualifications. No acceptance, endorsement, DOI or public deposition is implied by this preparation.
+The public research release is labeled a technical report. Submission to an additional preprint service or journal requires separate instructions. Choose a suitable preprint category or journal; this is a focused computational evaluation with limited biological generalization. For arXiv, [the official submission guide](https://info.arxiv.org/help/submit/index.html) requires source submission for a TeX-authored article. Its [TeX instructions](https://info.arxiv.org/help/submit_tex.html) also exclude unused files; the separate arXiv archive omits the full editable package's tooling, manifests and unused image formats. Upload the minimal `arxiv-source-v0.2.0.zip`, select `main.tex`, inspect the platform-generated PDF, and choose the author-approved CC BY 4.0 terms. Account registration, possible endorsement and moderation remain platform decisions. Deposit the accompanying code/evidence archive and supply its persistent URL/identifier when assigned; update the availability/citation metadata if a public archive is created. For a journal, adapt its template, data/code deposit and AI-disclosure fields without changing the scientific qualifications. No acceptance, endorsement, DOI or public deposition is implied by this preparation.

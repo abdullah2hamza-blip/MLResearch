@@ -3,7 +3,7 @@ message: "Please cite the accompanying manuscript and identify the software vers
 type: software
 title: "MLResearch: joint acquisition for cross-context perturbation prediction"
 version: 0.2.0
-date-released: 2026-10-23
+date-released: 2026-10-28
 authors:
   - family-names: Hamza
     given-names: Abdullah
@@ -14,10 +14,10 @@ license: MIT
 abstract: >-
   Finite-pool, costed acquisition and sealed-query evaluation with shared-control
   covariance, frozen historical results and post-primary robustness diagnostics.
-  The repository is private during preparation; the accompanying code/evidence
-  archive can be deposited separately. No permanent archive DOI is assigned yet.
+  Public technical-report research release with source, retained evidence and
+  a separately verified Kaggle saved-result reanalysis. No DOI is assigned.
 preferred-citation:
-  type: article
+  type: report
   title: "Evaluating fixed-kernel joint acquisition for cross-context perturbation prediction"
   authors:
     - family-names: Hamza
@@ -25,4 +25,5 @@ preferred-citation:
       affiliation: Independent Researcher
   year: 2026
   license: CC-BY-4.0
-  notes: "Unsubmitted manuscript supplied in the publication package; no publication DOI yet."
+  url: "https://github.com/abdullah2hamza-blip/MLResearch/releases/tag/v0.2.0"
+  notes: "Technical report and public research release; not peer reviewed. No publication DOI is assigned."

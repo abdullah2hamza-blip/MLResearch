@@ -11,6 +11,41 @@ import subprocess
 from pathlib import Path
 
 
+def manuscript_input_hashes(source: Path, destination: Path) -> dict[str, str]:
+    """Bind saved manuscript payloads with portable paths, excluding build products."""
+    source, destination = source.resolve(), destination.resolve()
+    root = source.parent
+    auxiliary = (
+        ".aux",
+        ".log",
+        ".out",
+        ".blg",
+        ".bbl",
+        ".xdv",
+        ".fls",
+        ".fdb_latexmk",
+        ".synctex.gz",
+        ".toc",
+        ".lof",
+        ".lot",
+        ".pdf",
+    )
+    excluded = {
+        folder / (source.stem + suffix)
+        for folder in (root, destination.parent)
+        for suffix in auxiliary
+    }
+    excluded.update((destination, destination.with_suffix(".build.json")))
+    inputs = {}
+    for path in sorted(root.rglob("*")):
+        if not path.is_file() or "__pycache__" in path.parts or path in excluded:
+            continue
+        if not path.resolve().is_relative_to(root):
+            raise ValueError("Manuscript input resolves outside its source directory")
+        inputs[path.relative_to(root).as_posix()] = hashlib.sha256(path.read_bytes()).hexdigest()
+    return inputs
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--source", type=Path, default=Path("paper/main.tex"))
@@ -45,7 +80,8 @@ def main() -> None:
         raise SystemExit("Install Tectonic or pdfLaTeX/BibTeX, or pass --compiler PATH")
     executable = str(Path(compiler).resolve()) if Path(compiler).is_file() else compiler
     environment = dict(os.environ)
-    environment["SOURCE_DATE_EPOCH"] = "1792713600"  # 2026-10-23, reproducible document date
+    environment["SOURCE_DATE_EPOCH"] = "1793145600"  # 2026-10-28, reproducible release build epoch
+    manuscript_inputs = manuscript_input_hashes(source, destination)
 
     def run(command: list[str], cwd: Path) -> None:
         subprocess.run(command, cwd=cwd, env=environment, check=True)
@@ -87,6 +123,11 @@ def main() -> None:
     built = destination.parent / (source.stem + ".pdf")
     if not built.is_file() or built.stat().st_size < 1024:
         raise SystemExit("Compiler did not create a nonempty PDF")
+    bibliography = destination.parent / (source.stem + ".bbl")
+    if not bibliography.is_file():
+        raise SystemExit("Compiler did not create the compiled bibliography")
+    if manuscript_input_hashes(source, destination) != manuscript_inputs:
+        raise SystemExit("Manuscript inputs changed during compilation; rebuild before packaging")
     if built != destination:
         shutil.copy2(built, destination)
     log = destination.parent / (source.stem + ".log")
@@ -98,8 +139,14 @@ def main() -> None:
         and ("reference" in line.lower() or "citation" in line.lower())
     ]
     report = {
+        "build_binding_schema": 1,
         "compiler": implementation,
+        "source_date_epoch": environment["SOURCE_DATE_EPOCH"],
         "source": source.name,
+        "manuscript_inputs_sha256": manuscript_inputs,
+        "manuscript_inputs_unchanged_during_build": True,
+        "asset_manifest_sha256": hashlib.sha256(asset_manifest.read_bytes()).hexdigest(),
+        "bibliography_sha256": hashlib.sha256(bibliography.read_bytes()).hexdigest(),
         "pdf": destination.name,
         "pdf_sha256": hashlib.sha256(destination.read_bytes()).hexdigest(),
         "pdf_bytes": destination.stat().st_size,

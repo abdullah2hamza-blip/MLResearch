@@ -1,0 +1,110 @@
+{
+  "base_revision": "3302c7c17c1aab7bd8c4f7408636d0b4d26de9a9",
+  "criteria": {
+    "artifact_portability": {
+      "clean_locked_runtime_install": true,
+      "expressions_required_for_source_only_build": false,
+      "full_and_minimal_source_builds_byte_equal_final_pdf": true,
+      "standalone_wheel_execution": true,
+      "state": "passed"
+    },
+    "current_software_checks": {
+      "clean_offline_workflow_commands": 19,
+      "mypy_source_modules": 22,
+      "remote_ci_for_current_edits_claimed": false,
+      "ruff_files": 72,
+      "state": "passed",
+      "tests": 123
+    },
+    "licenses_and_citation": {
+      "cff_schema_validation": "passed",
+      "cff_schema_version": "1.2.0",
+      "code": "MIT",
+      "distribution_MIT_notice": "included and byte-equal",
+      "manuscript": "CC BY 4.0",
+      "state": "passed",
+      "third_party_terms_preserved": true
+    },
+    "pdf_quality": {
+      "changed_pages_visually_inspected": [
+        16,
+        17
+      ],
+      "other_pages_pixel_identical": 26,
+      "overfull_boxes": 0,
+      "pages": 28,
+      "state": "passed",
+      "unresolved_references": 0
+    },
+    "release_guard": {
+      "build_receipt_schema": 1,
+      "real_stale_packaging_cli_refused_before_outputs": true,
+      "regression_tests": 12,
+      "state": "passed"
+    },
+    "repository_readiness": {
+      "broken_editable_documentation_links": 0,
+      "files_at_95MiB_or_more": 0,
+      "frozen_snapshot_original_link_resolution_documented": true,
+      "known_credential_matches_current_or_reachable_history": 0,
+      "nested_payload_scan_matches": 0,
+      "state": "passed",
+      "target": "GitHub",
+      "visibility": "private, unchanged"
+    },
+    "requested_author_statements": {
+      "author_confirmed_review_and_responsibility_retained": true,
+      "current_assistance_paragraph_removed": true,
+      "pdf": "output/pdf/joint-acquisition-study.pdf",
+      "source": "paper/sections/disclosures.tex",
+      "state": "passed"
+    },
+    "scientific_integrity": {
+      "evidence": "docs/evidence/release-local-checks-v2.json",
+      "frozen_numerical_package_payloads_byte_equal": 23,
+      "historical_results_modified": false,
+      "manuscript_inputs_authenticated": 150,
+      "manuscript_outputs_authenticated": 25,
+      "regenerated_registry_and_12_tex_assets_byte_equal": true,
+      "robustness_contrasts_reconstructed": 32,
+      "state": "passed"
+    },
+    "scientific_review": {
+      "essential_new_experiments_identified": 0,
+      "evidence": "docs/release-scientific-review-v2.md",
+      "state": "passed",
+      "unresolved_required_scientific_repairs": 0
+    },
+    "software_review": {
+      "evidence": "docs/release-software-review-v2.md",
+      "independent_algebra_cases": 200,
+      "required_release_defects_repaired": [
+        "stale source/PDF/bibliography packaging"
+      ],
+      "state": "passed"
+    }
+  },
+  "final_artifact_records": {
+    "manifest": "output/release/release-manifest-v0.2.0.json",
+    "payload_verification": "output/release/final-payload-verification-v0.2.0.json",
+    "qualification": "Final artifact checksums and closure-only differences are recorded outside the archive to avoid a self-referential checksum cycle."
+  },
+  "kaggle_execution_validated": false,
+  "local_checks_sha256": "2ab9052d4eb998debd5e67e8a9760692eff9f1e02cbcb264b51f1157b4252ac6",
+  "objective_scope": "Fresh full-manuscript and software/release review with two focused internal reviewers; current author-statement edits; GitHub publication readiness and distributable manuscript/code artifacts.",
+  "pdf_sha256": "62425599db63895192260f73bcee3433d19ae05baae5e545efc63b86b47a64cd",
+  "publication_performed": false,
+  "qualification": "Readiness for the supported GitHub/local-archive path, within the stated conditional computational scope. This is not external peer review, venue acceptance, a public code deposit, hosted Kaggle validation or a fresh full-data numerical acquisition.",
+  "remaining_author_platform_actions": [
+    "Provide the requested next instructions for final author statements",
+    "Choose reader-access/public-deposit arrangements",
+    "Select a venue/category and upload under the author account",
+    "Inspect any platform-generated PDF before completing submission"
+  ],
+  "review_date": "2026-10-28",
+  "review_source_sha256": {
+    "docs/release-scientific-review-v2.md": "be5c25d11a72e614bfd50fd9859d71a70358df3f841c288d34c8cc6cbb197613",
+    "docs/release-software-review-v2.md": "c548bcf8d576ff040600a0aa9ac617bbe9eebeefafb975522424ccb595023c34"
+  },
+  "state": "passed_local_release_readiness_checks"
+}

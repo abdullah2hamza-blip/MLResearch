@@ -1,0 +1,499 @@
+{
+  "base_repository_revision": "3302c7c17c1aab7bd8c4f7408636d0b4d26de9a9",
+  "checks": {
+    "citation_schema": {
+      "citation_sha256": "3876a5fe3fb8895088744138f2c590c42dfc1a99725fafb6e61b36a8c45cf065",
+      "errors": [],
+      "schema_sha256": "0b8d22140da702d766df318dcff3a91af2f39521298dcf36d76315fd99cc169b",
+      "schema_url": "https://raw.githubusercontent.com/citation-file-format/citation-file-format/1.2.0/schema.json",
+      "state": "passed",
+      "validator": "Draft7Validator with format checks",
+      "validator_version": "4.26.0",
+      "yaml_version": "6.0.3"
+    },
+    "clean_manuscript_archives": {
+      "full_editable_source_compiles_byte_identical_pdf": true,
+      "minimal_arxiv_source_compiles_byte_identical_pdf": true,
+      "numerical_source_config_lock_project_changes_from_base": false,
+      "overfull_boxes": [],
+      "pdf_sha256": "62425599db63895192260f73bcee3433d19ae05baae5e545efc63b86b47a64cd",
+      "source_only_build_requires_expression_data": false,
+      "source_only_manuscript_input_count": 45,
+      "state": "passed",
+      "unresolved_references": []
+    },
+    "clean_runtime": {
+      "commands": [
+        {
+          "arguments": [
+            "-m",
+            "mlresearch",
+            "--help"
+          ],
+          "elapsed_seconds": 0.645,
+          "log_sha256": "cc45acb6abad505fda9177f52771925a7b19a090abaffdc75ead96daaf117fac",
+          "returncode": 0
+        },
+        {
+          "arguments": [
+            "-m",
+            "mlresearch",
+            "data",
+            "list"
+          ],
+          "elapsed_seconds": 4.121,
+          "log_sha256": "27f5ffbcc4c102a71c0d3eb48280b65da4aa82edf99637f53a1df1e0c98de954",
+          "returncode": 0
+        },
+        {
+          "arguments": [
+            "-m",
+            "mlresearch",
+            "demo",
+            "--directory",
+            ".cache/offline-demo"
+          ],
+          "elapsed_seconds": 11.047,
+          "log_sha256": "e89effd68d091a4cb54b26a9e676eb0e3fa932300bec75145514ee26744ac21c",
+          "returncode": 0
+        },
+        {
+          "arguments": [
+            "-m",
+            "mlresearch",
+            "report",
+            ".cache/offline-demo/experiment",
+            "--output",
+            ".cache/offline-demo/report"
+          ],
+          "elapsed_seconds": 12.283,
+          "log_sha256": "54d1d537c74e408b8b6ca8d523903891f675575ef26a15cb826129b55c8c207b",
+          "returncode": 0
+        },
+        {
+          "arguments": [
+            "-m",
+            "mlresearch",
+            "external",
+            "configs/external-smoke.json"
+          ],
+          "elapsed_seconds": 12.571,
+          "log_sha256": "5d85101b18087fde26f44512f5f637e756948988bb4039ce2465290f22a7f0bb",
+          "returncode": 0
+        },
+        {
+          "arguments": [
+            "-m",
+            "mlresearch",
+            "score-external",
+            ".cache/external-smoke-suite"
+          ],
+          "elapsed_seconds": 3.875,
+          "log_sha256": "ee26b7f5644ed14303bdc0c2673756901acd2da6153bf26820991b29df014e8d",
+          "returncode": 0
+        },
+        {
+          "arguments": [
+            "scripts/audit-external-completion.py",
+            ".cache/external-smoke-suite",
+            "--output",
+            ".cache/external-smoke-audit.json"
+          ],
+          "elapsed_seconds": 3.463,
+          "log_sha256": "dd0b907580b88354b937734af3d5ae0cc401a75f44c4fc03558a86a6dd13f39f",
+          "returncode": 0
+        },
+        {
+          "arguments": [
+            "scripts/report-external-suite.py",
+            ".cache/external-smoke-suite",
+            "--output",
+            ".cache/external-smoke-reports"
+          ],
+          "elapsed_seconds": 8.038,
+          "log_sha256": "680f9567426da51787d9b1159200f98e9c9af774e62ad27a5e84a012f811612e",
+          "returncode": 0
+        },
+        {
+          "arguments": [
+            "scripts/analyze-external-suite.py",
+            ".cache/external-smoke-suite",
+            "--output",
+            ".cache/external-smoke-supplement"
+          ],
+          "elapsed_seconds": 2.912,
+          "log_sha256": "2677c5b704be48157bf1c45e37efb521eebd80f097605fe9af8523809d01ed43",
+          "returncode": 0
+        },
+        {
+          "arguments": [
+            "scripts/retain-external-diagnostics.py",
+            ".cache/external-smoke-suite",
+            "--output",
+            ".cache/external-smoke-diagnostics"
+          ],
+          "elapsed_seconds": 2.732,
+          "log_sha256": "14e5719c636e042b158cd6b9f445d0a22510fa90c2ed5a69d82a603a11678ba1",
+          "returncode": 0
+        },
+        {
+          "arguments": [
+            "scripts/secondary-frozen-diagnostics.py",
+            "--external-suite",
+            ".cache/external-smoke-suite",
+            "--output",
+            ".cache/secondary-frozen-smoke"
+          ],
+          "elapsed_seconds": 3.17,
+          "log_sha256": "f66d5a243018f62c09f59cdb5d22e48639c1b08f305ea4e9965902f1929445e1",
+          "returncode": 0
+        },
+        {
+          "arguments": [
+            "scripts/ranking-diagnostics.py",
+            "--diagnostics",
+            ".cache/secondary-frozen-smoke",
+            "--output",
+            ".cache/ranking-smoke"
+          ],
+          "elapsed_seconds": 14.862,
+          "log_sha256": "6c2b594ffeff9c8037d0bdc3c68d7313947dced7e1462d1a6f0d013bd7a9416d",
+          "returncode": 0
+        },
+        {
+          "arguments": [
+            "scripts/ranking-diagnostics.py",
+            "--diagnostics",
+            ".cache/secondary-frozen-smoke",
+            "--output",
+            ".cache/ranking-smoke",
+            "--resume"
+          ],
+          "elapsed_seconds": 4.008,
+          "log_sha256": "612b900246502ca2bd2d941f8354ae225b9e9052a9905e447d7c4a1217e0e028",
+          "returncode": 0
+        },
+        {
+          "arguments": [
+            "scripts/verify-secondary-retention.py",
+            "--bundle",
+            "docs/results/secondary-supplement-v1",
+            "--primary",
+            "docs/results/external-evaluation-v1",
+            "--output",
+            ".cache/secondary-retention.json"
+          ],
+          "elapsed_seconds": 7.503,
+          "log_sha256": "26bb23f991e03c574c7534372139bf01636be7b92dc7f8550d93646137a69555",
+          "returncode": 0
+        },
+        {
+          "arguments": [
+            "scripts/verify-publication-package.py",
+            "--output",
+            ".cache/publication-evidence-check.json"
+          ],
+          "elapsed_seconds": 8.367,
+          "log_sha256": "9b598160c2cbb291e35af135ae887045d06805fa2806a1881bdccee437ea2ee9",
+          "returncode": 0
+        },
+        {
+          "arguments": [
+            "scripts/generate-paper-assets.py",
+            "--output",
+            ".cache/paper-assets/generated",
+            "--figures",
+            ".cache/paper-assets/figures",
+            "--robustness",
+            "docs/results/publication-robustness-v1/analysis"
+          ],
+          "elapsed_seconds": 15.291,
+          "log_sha256": "490df95c7fc1ee8c6c432d058607788a85f54451069e76bd0b2e651a7e5a9d84",
+          "returncode": 0
+        },
+        {
+          "arguments": [
+            "-m",
+            "mlresearch",
+            "uncertainty",
+            ".cache/offline-demo/experiment",
+            "--output",
+            ".cache/uncertainty.json",
+            "--samples",
+            "200"
+          ],
+          "elapsed_seconds": 1.535,
+          "log_sha256": "d3879cdb8dce8a64fd519356f0d3af64c62d141643b1b95bebc199000133023f",
+          "returncode": 0
+        },
+        {
+          "arguments": [
+            "-m",
+            "mlresearch",
+            "account-development",
+            "--output",
+            ".cache/development-cost.json",
+            ".cache/offline-demo/experiment"
+          ],
+          "elapsed_seconds": 0.827,
+          "log_sha256": "5e6845a36694177b1836dcf5764a1a194f12abbc20582f9314232a6f55d525ef",
+          "returncode": 0
+        },
+        {
+          "arguments": [
+            "-m",
+            "mlresearch",
+            "study",
+            "configs/study-smoke.json"
+          ],
+          "elapsed_seconds": 11.312,
+          "log_sha256": "7ed79b2eacd76b1dae110e91f2e7721519767322746fdd9d2df007a6b21edc22",
+          "returncode": 0
+        }
+      ],
+      "installed_package_origin": "standalone wheel in fresh virtual environment",
+      "interpreter_selection": "explicit installed Python 3.12 interpreter, avoiding an unusable Windows Store execution alias",
+      "python": "3.12.14",
+      "qualification": "Offline CI command path plus README report command, from a clean unpacked archive using the built wheel; no new full-data experiment or hosted Kaggle execution.",
+      "runtime_install": "locked offline installation, no dev dependencies; wheel replaces editable project without changing dependencies",
+      "runtime_versions": {
+        "h5py": "3.16.0",
+        "matplotlib": "3.11.2",
+        "mlresearch": "0.2.0",
+        "numpy": "2.5.4",
+        "scipy": "1.18.1"
+      },
+      "state": "passed"
+    },
+    "distribution": {
+      "MIT_notice_byte_equal": true,
+      "all_runtime_payloads_equal_clean_runtime_tested_wheel": true,
+      "cache_environment_data_payloads": false,
+      "changes_from_clean_runtime_tested_wheel": [
+        "mlresearch-0.2.0.dist-info/METADATA",
+        "mlresearch-0.2.0.dist-info/RECORD"
+      ],
+      "package_payloads_byte_equal": 23,
+      "qualification": "Final README documentation is reflected in metadata; the scientific package payloads are byte-identical to the wheel that passed all 19 clean offline workflow commands.",
+      "sdist": "mlresearch-0.2.0.tar.gz",
+      "sdist_sha256": "35193bd1490387bd3b9441c3ce6315adc0c305670a989ce91a0967783e87ebf5",
+      "state": "passed",
+      "wheel": "mlresearch-0.2.0-py3-none-any.whl",
+      "wheel_sha256": "5f85607f6bbf24dd99bdfeccdf8bc5b5498690326ed755f571ff8551b2fe2f75"
+    },
+    "documentation_links": {
+      "broken_editable_documentation_links": [],
+      "frozen_snapshot_bytes_changed": false,
+      "frozen_snapshot_links_resolve_from_original_docs_location": [
+        {
+          "path": "docs/results/external-evaluation-v1/suite/frozen-evidence/0-external-evaluation-protocol.md",
+          "target": "implementation-objective.md"
+        },
+        {
+          "path": "docs/results/external-evaluation-v1/suite/frozen-evidence/0-external-evaluation-protocol.md",
+          "target": "integrated-development-findings.md"
+        },
+        {
+          "path": "docs/results/external-evaluation-v1/suite/frozen-evidence/0-external-evaluation-protocol.md",
+          "target": "evidence/external-canonical-identifiers-v1.json"
+        },
+        {
+          "path": "docs/results/external-evaluation-v1/suite/frozen-evidence/0-external-evaluation-protocol.md",
+          "target": "external-data-compatibility.md"
+        },
+        {
+          "path": "docs/results/external-evaluation-v1/suite/frozen-evidence/0-external-evaluation-protocol.md",
+          "target": "transfer-comparator-protocol.md"
+        },
+        {
+          "path": "docs/results/external-evaluation-v1/suite/frozen-evidence/0-external-evaluation-protocol.md",
+          "target": "evidence/development-resource-accounting-v3.json"
+        },
+        {
+          "path": "docs/results/external-evaluation-v1/suite/frozen-evidence/0-external-evaluation-protocol.md",
+          "target": "assessment-uncertainty-protocol.md"
+        },
+        {
+          "path": "docs/results/external-evaluation-v1/suite/frozen-evidence/0-external-evaluation-protocol.md",
+          "target": "source-sensitivity-protocol.md"
+        },
+        {
+          "path": "docs/results/external-evaluation-v1/suite/frozen-evidence/2-source-sensitivity-protocol.md",
+          "target": "assessment-uncertainty-protocol.md"
+        }
+      ],
+      "resolution_documented_in": "docs/publication-guide.md",
+      "state": "passed"
+    },
+    "numerical_regeneration": {
+      "historical_prediction_or_evidence_changes": false,
+      "numerical_registry_byte_equal": true,
+      "numerical_source_payloads_byte_equal": 23,
+      "numerical_source_snapshot": "docs/results/publication-robustness-v1/frozen/suite/code.zip",
+      "regenerated_tex_assets_byte_equal": 12,
+      "state": "passed"
+    },
+    "pdf_quality": {
+      "author_statements_kept_together_on_page": 17,
+      "build_input_count": 41,
+      "changed_pages": [
+        16,
+        17
+      ],
+      "overfull_boxes": [],
+      "pages": 28,
+      "pdf_sha256": "62425599db63895192260f73bcee3433d19ae05baae5e545efc63b86b47a64cd",
+      "pixel_identical_pages": 26,
+      "removed_assistance_paragraph_absent": true,
+      "requested_author_statements_present": true,
+      "state": "passed",
+      "unresolved_references": [],
+      "visual_review": "Pages 16 and 17 inspected at rendered resolution; no clipping, overlaps or legibility defects. All other 26 pages pixel-identical to the previously inspected PDF."
+    },
+    "real_stale_packaging_probe": {
+      "archives_created": false,
+      "returncode": 1,
+      "state": "passed",
+      "test": "Real packager rejects the actual PDF after a manuscript edit without recompilation"
+    },
+    "repository_files": {
+      "broken_local_markdown_links": [
+        {
+          "path": "docs/results/external-evaluation-v1/suite/frozen-evidence/0-external-evaluation-protocol.md",
+          "target": "implementation-objective.md"
+        },
+        {
+          "path": "docs/results/external-evaluation-v1/suite/frozen-evidence/0-external-evaluation-protocol.md",
+          "target": "integrated-development-findings.md"
+        },
+        {
+          "path": "docs/results/external-evaluation-v1/suite/frozen-evidence/0-external-evaluation-protocol.md",
+          "target": "evidence/external-canonical-identifiers-v1.json"
+        },
+        {
+          "path": "docs/results/external-evaluation-v1/suite/frozen-evidence/0-external-evaluation-protocol.md",
+          "target": "external-data-compatibility.md"
+        },
+        {
+          "path": "docs/results/external-evaluation-v1/suite/frozen-evidence/0-external-evaluation-protocol.md",
+          "target": "transfer-comparator-protocol.md"
+        },
+        {
+          "path": "docs/results/external-evaluation-v1/suite/frozen-evidence/0-external-evaluation-protocol.md",
+          "target": "evidence/development-resource-accounting-v3.json"
+        },
+        {
+          "path": "docs/results/external-evaluation-v1/suite/frozen-evidence/0-external-evaluation-protocol.md",
+          "target": "assessment-uncertainty-protocol.md"
+        },
+        {
+          "path": "docs/results/external-evaluation-v1/suite/frozen-evidence/0-external-evaluation-protocol.md",
+          "target": "source-sensitivity-protocol.md"
+        },
+        {
+          "path": "docs/results/external-evaluation-v1/suite/frozen-evidence/2-source-sensitivity-protocol.md",
+          "target": "assessment-uncertainty-protocol.md"
+        }
+      ],
+      "files_near_github_100MiB_limit": [],
+      "high_confidence_secret_matches": [],
+      "qualification": "Current tracked files and standard high-confidence secret signatures; Git history and arbitrary secret formats are outside this scan.",
+      "tracked_files": 983
+    },
+    "repository_history": {
+      "blobs_scanned": 997,
+      "high_confidence_secret_matches": [],
+      "qualification": "All blobs reachable from current local refs, using listed high-confidence signatures. Compressed historical archives are scanned as stored bytes; a separate current-release review checks nested payloads. No secret scanner proves absence of every possible credential format.",
+      "reachable_objects": 1179,
+      "state": "passed",
+      "uncompressed_blob_bytes": 258605413
+    },
+    "retained_evidence": {
+      "manuscript_inputs": 150,
+      "manuscript_outputs": 25,
+      "qualification": "Retained evidence authentication and independent arithmetic checks; not a fresh acquisition or a biological validation.",
+      "raw_expression_or_prediction_arrays_required": false,
+      "reconstructed_robustness_contrasts": 32,
+      "recorded_at": "2026-10-29T00:18:44.042996+00:00",
+      "retained_index_counts": {
+        "controlled-study-v1": 21,
+        "external-evaluation-v1": 179,
+        "publication-robustness-v1": 128,
+        "secondary-supplement-v1": 229
+      },
+      "robustness_checkpoints": 360,
+      "robustness_metric_rows": 330120,
+      "state": "passed",
+      "verification_source_sha256": "8fdc14b390be42a61517d700296cc8628a271f74d4774d62b1d1e1d17c2d38ab",
+      "zip_archives_checked": 79,
+      "zip_members_checked": 8398
+    }
+  },
+  "clean_regenerated_registry_and_12_tex_assets_byte_equal": true,
+  "full_tests": {
+    "command": "python -m pytest --basetemp .cache/pytest-review-final-20261028",
+    "elapsed_seconds": 139.28,
+    "passed": 123
+  },
+  "independent_algebra": {
+    "cases": 200,
+    "maximum_absolute_gls_discrepancy": 1.4210854715202004e-14,
+    "maximum_absolute_information_discrepancy": 1.0089706847793423e-12,
+    "scope": "Fresh comparison to augmented raw-mean nuisance weighted least squares and dense shared-control covariance across varied dimensions, variances, and positive penalties; not a full scientific replay.",
+    "seed": 20261028
+  },
+  "locked_environment_sync": "passed",
+  "mypy": "passed; 22 source modules",
+  "nested_archive_privacy": {
+    "credential_pattern_hits": [],
+    "largest_tracked_files": [
+      [
+        27732898,
+        "docs/results/controlled-study-v1/per-query-metrics.zip"
+      ],
+      [
+        22302863,
+        "docs/results/secondary-supplement-v1/frozen-diagnostics-complete/coordinate-and-interval-diagnostics.csv"
+      ],
+      [
+        16618533,
+        "docs/results/secondary-supplement-v1/ranking/within-gene-perturbation-ranking.csv"
+      ],
+      [
+        16230140,
+        "docs/results/external-evaluation-v1/runs/external-k562-to-rpe1-v1/metrics.csv.gz"
+      ],
+      [
+        16039971,
+        "docs/results/external-evaluation-v1/runs/external-rpe1-to-k562-v1/metrics.csv.gz"
+      ],
+      [
+        10749550,
+        "docs/results/controlled-study-v1/case-audits.zip"
+      ]
+    ],
+    "nested_members": 8448,
+    "payloads_scanned": 9458,
+    "qualification": "Current tracked content and nested ZIP/gzip payloads only; pattern matching is not a guarantee of no secret. Public study cell identifiers and author correspondence are intentionally included.",
+    "suspicious_archive_paths": [],
+    "tracked_files": 983
+  },
+  "platform_scope": "GitHub repository and local distributable archives; no hosted Kaggle validation or publication performed.",
+  "prior_ci": {
+    "conclusion": "success",
+    "qualification": "Historical Windows/Ubuntu CI for the base revision, not remote CI for the current uncommitted release edits.",
+    "revision": "3302c7c17c1aab7bd8c4f7408636d0b4d26de9a9",
+    "status": "completed",
+    "url": "https://github.com/abdullah2hamza-blip/MLResearch/actions/runs/40023190276"
+  },
+  "qualification": "Fresh local/internal checks and clean candidate-archive execution. Full-data historical numerical acquisition was not rerun. Secret patterns and selected numerical tests cannot certify every possible defect.",
+  "review_date": "2026-10-28",
+  "ruff_check": "passed; src tests scripts",
+  "ruff_format_check": "passed; 72 files",
+  "state": "passed",
+  "tool_source_sha256": {
+    "scripts/build-paper.py": "2e9a7802e13e3bff68f04b0a158f266a6d503178f80313cbea928011d9100020",
+    "scripts/package-publication.py": "da90557717236974b8b1344da4c3025f0c7e97b8bea867d07b22421a1784e69d",
+    "tests/test_publication_build.py": "bea17ab5abf9db2f671b31fc5bd65d22b34c8f1c542868392f445b91e9ee8a8b"
+  }
+}

@@ -1,0 +1,446 @@
+{
+  "actions": {
+    "decoded_log_characters": 1719325,
+    "decoded_log_lines": 22887,
+    "job_logs_scanned": [
+      {
+        "characters": 84603,
+        "job": 120652704775,
+        "lines": 1121,
+        "name": "checks (ubuntu-latest)",
+        "recognized_credential_patterns": [],
+        "run": 40023190276
+      },
+      {
+        "characters": 84363,
+        "job": 120652705421,
+        "lines": 1085,
+        "name": "checks (windows-latest)",
+        "recognized_credential_patterns": [],
+        "run": 40023190276
+      },
+      {
+        "characters": 85339,
+        "job": 120648187505,
+        "lines": 1101,
+        "name": "checks (windows-latest)",
+        "recognized_credential_patterns": [],
+        "run": 40021877021
+      },
+      {
+        "characters": 84606,
+        "job": 120648187889,
+        "lines": 1121,
+        "name": "checks (ubuntu-latest)",
+        "recognized_credential_patterns": [],
+        "run": 40021877021
+      },
+      {
+        "characters": 82260,
+        "job": 120145458453,
+        "lines": 1066,
+        "name": "checks (windows-latest)",
+        "recognized_credential_patterns": [],
+        "run": 39871102658
+      },
+      {
+        "characters": 82251,
+        "job": 120145458797,
+        "lines": 1097,
+        "name": "checks (ubuntu-latest)",
+        "recognized_credential_patterns": [],
+        "run": 39871102658
+      },
+      {
+        "characters": 82248,
+        "job": 120143780375,
+        "lines": 1097,
+        "name": "checks (ubuntu-latest)",
+        "recognized_credential_patterns": [],
+        "run": 39870606542
+      },
+      {
+        "characters": 82251,
+        "job": 120143780887,
+        "lines": 1066,
+        "name": "checks (windows-latest)",
+        "recognized_credential_patterns": [],
+        "run": 39870606542
+      },
+      {
+        "characters": 77029,
+        "job": 120105688680,
+        "lines": 1043,
+        "name": "checks (ubuntu-latest)",
+        "recognized_credential_patterns": [],
+        "run": 39859341451
+      },
+      {
+        "characters": 76910,
+        "job": 120105688716,
+        "lines": 1013,
+        "name": "checks (windows-latest)",
+        "recognized_credential_patterns": [],
+        "run": 39859341451
+      },
+      {
+        "characters": 72378,
+        "job": 119830791508,
+        "lines": 991,
+        "name": "checks (ubuntu-latest)",
+        "recognized_credential_patterns": [],
+        "run": 39780669492
+      },
+      {
+        "characters": 72533,
+        "job": 119830792145,
+        "lines": 968,
+        "name": "checks (windows-latest)",
+        "recognized_credential_patterns": [],
+        "run": 39780669492
+      },
+      {
+        "characters": 67387,
+        "job": 119816228264,
+        "lines": 932,
+        "name": "checks (ubuntu-latest)",
+        "recognized_credential_patterns": [],
+        "run": 39776367907
+      },
+      {
+        "characters": 67612,
+        "job": 119816228890,
+        "lines": 912,
+        "name": "checks (windows-latest)",
+        "recognized_credential_patterns": [],
+        "run": 39776367907
+      },
+      {
+        "characters": 67587,
+        "job": 119678119580,
+        "lines": 935,
+        "name": "checks (ubuntu-latest)",
+        "recognized_credential_patterns": [],
+        "run": 39734879228
+      },
+      {
+        "characters": 67612,
+        "job": 119678119716,
+        "lines": 912,
+        "name": "checks (windows-latest)",
+        "recognized_credential_patterns": [],
+        "run": 39734879228
+      },
+      {
+        "characters": 52703,
+        "job": 119671184581,
+        "lines": 700,
+        "name": "checks (windows-latest)",
+        "recognized_credential_patterns": [],
+        "run": 39732711972
+      },
+      {
+        "characters": 52842,
+        "job": 119671184815,
+        "lines": 721,
+        "name": "checks (ubuntu-latest)",
+        "recognized_credential_patterns": [],
+        "run": 39732711972
+      },
+      {
+        "characters": 52700,
+        "job": 119670165536,
+        "lines": 700,
+        "name": "checks (windows-latest)",
+        "recognized_credential_patterns": [],
+        "run": 39732391083
+      },
+      {
+        "characters": 52839,
+        "job": 119670165760,
+        "lines": 721,
+        "name": "checks (ubuntu-latest)",
+        "recognized_credential_patterns": [],
+        "run": 39732391083
+      },
+      {
+        "characters": 52805,
+        "job": 119652634110,
+        "lines": 721,
+        "name": "checks (ubuntu-latest)",
+        "recognized_credential_patterns": [],
+        "run": 39726858341
+      },
+      {
+        "characters": 52674,
+        "job": 119652634395,
+        "lines": 700,
+        "name": "checks (windows-latest)",
+        "recognized_credential_patterns": [],
+        "run": 39726858341
+      },
+      {
+        "characters": 41565,
+        "job": 119626343503,
+        "lines": 531,
+        "name": "checks (windows-latest)",
+        "recognized_credential_patterns": [],
+        "run": 39718526938
+      },
+      {
+        "characters": 41331,
+        "job": 119626343668,
+        "lines": 551,
+        "name": "checks (ubuntu-latest)",
+        "recognized_credential_patterns": [],
+        "run": 39718526938
+      },
+      {
+        "characters": 41339,
+        "job": 119622140815,
+        "lines": 551,
+        "name": "checks (ubuntu-latest)",
+        "recognized_credential_patterns": [],
+        "run": 39717233811
+      },
+      {
+        "characters": 41558,
+        "job": 119622140982,
+        "lines": 531,
+        "name": "checks (windows-latest)",
+        "recognized_credential_patterns": [],
+        "run": 39717233811
+      }
+    ],
+    "log_fetch_failures": 0,
+    "recognized_credential_patterns": 0,
+    "runs": [
+      {
+        "branch": "main",
+        "conclusion": "success",
+        "event": "push",
+        "head_sha": "3302c7c17c1aab7bd8c4f7408636d0b4d26de9a9",
+        "hosted_artifacts": 0,
+        "id": 40023190276,
+        "status": "completed"
+      },
+      {
+        "branch": "main",
+        "conclusion": "success",
+        "event": "push",
+        "head_sha": "fee4ee8f0be53a87dda9c9f31acf0bfadd5cd3af",
+        "hosted_artifacts": 0,
+        "id": 40021877021,
+        "status": "completed"
+      },
+      {
+        "branch": "main",
+        "conclusion": "success",
+        "event": "push",
+        "head_sha": "314dc29ead38d51819064518b7689d3b08a84af1",
+        "hosted_artifacts": 0,
+        "id": 39871102658,
+        "status": "completed"
+      },
+      {
+        "branch": "main",
+        "conclusion": "success",
+        "event": "push",
+        "head_sha": "f892907323353166acb5dff31827bbc87ec8d938",
+        "hosted_artifacts": 0,
+        "id": 39870606542,
+        "status": "completed"
+      },
+      {
+        "branch": "main",
+        "conclusion": "success",
+        "event": "push",
+        "head_sha": "19811f287aa46108c8be5e609dbaacd624ce577a",
+        "hosted_artifacts": 0,
+        "id": 39859341451,
+        "status": "completed"
+      },
+      {
+        "branch": "main",
+        "conclusion": "success",
+        "event": "push",
+        "head_sha": "a04f92ffb9ac867244fc08f4bd82baba89c75138",
+        "hosted_artifacts": 0,
+        "id": 39780669492,
+        "status": "completed"
+      },
+      {
+        "branch": "main",
+        "conclusion": "success",
+        "event": "push",
+        "head_sha": "ba5dc96aa44e41ecc046bd33a78a015f4e13167b",
+        "hosted_artifacts": 0,
+        "id": 39776367907,
+        "status": "completed"
+      },
+      {
+        "branch": "main",
+        "conclusion": "success",
+        "event": "push",
+        "head_sha": "43d77dc4a77142459f0f5d177a048cbe343c3fe3",
+        "hosted_artifacts": 0,
+        "id": 39734879228,
+        "status": "completed"
+      },
+      {
+        "branch": "main",
+        "conclusion": "success",
+        "event": "push",
+        "head_sha": "d0f1ee60a07e9dbe796b4bf12e32a73ed5feb657",
+        "hosted_artifacts": 0,
+        "id": 39732711972,
+        "status": "completed"
+      },
+      {
+        "branch": "main",
+        "conclusion": "success",
+        "event": "push",
+        "head_sha": "efccf6ac018b4e5f9b9dc283ebf917d2c48c216e",
+        "hosted_artifacts": 0,
+        "id": 39732391083,
+        "status": "completed"
+      },
+      {
+        "branch": "main",
+        "conclusion": "success",
+        "event": "push",
+        "head_sha": "536e822dd97e2bf0a16f35daef1fe9bbac2f6ab9",
+        "hosted_artifacts": 0,
+        "id": 39726858341,
+        "status": "completed"
+      },
+      {
+        "branch": "main",
+        "conclusion": "success",
+        "event": "push",
+        "head_sha": "70b3ed6a024d95a60e537c8ad8e2883473a0f1da",
+        "hosted_artifacts": 0,
+        "id": 39718526938,
+        "status": "completed"
+      },
+      {
+        "branch": "main",
+        "conclusion": "success",
+        "event": "push",
+        "head_sha": "c347560b054f7cfe5363f9a4291fcaa3ed9fbb5a",
+        "hosted_artifacts": 0,
+        "id": 39717233811,
+        "status": "completed"
+      }
+    ],
+    "total_hosted_artifacts": 0,
+    "total_job_logs": 26
+  },
+  "commits_in_reviewed_remote_history": 14,
+  "confirmed_blockers": [],
+  "current_content_scan_reference": "docs/evidence/release-local-checks-v2.json",
+  "default_branch": "main",
+  "discussions_enabled": false,
+  "historical_figures_and_metadata_scan": {
+    "base_revision": "3302c7c17c1aab7bd8c4f7408636d0b4d26de9a9",
+    "findings": [],
+    "pdf_metadata_keys": {
+      "/Author": 1,
+      "/CreationDate": 15,
+      "/Creator": 15,
+      "/Producer": 15,
+      "/Title": 1
+    },
+    "png_metadata_keys": {
+      "Software": 43,
+      "dpi": 43
+    },
+    "qualification": "Unique PDF/PNG/SVG blobs named by reachable committed history: PDF metadata and extracted text, PDF embedded-file/JavaScript name trees, PNG metadata/EXIF presence and SVG script tags. This is not an OCR review of every historical pixel or a scan of future release artifacts.",
+    "state": "passed",
+    "unique_historical_figure_counts": {
+      "pdf_pages": 42,
+      "pdfs": 15,
+      "pngs": 43,
+      "svgs": 43
+    }
+  },
+  "historical_git_and_recursive_archive_scan": {
+    "archive_errors": [],
+    "base_revision": "3302c7c17c1aab7bd8c4f7408636d0b4d26de9a9",
+    "counts": {
+      "deduplicated_payloads": 7643,
+      "git_blobs": 995,
+      "git_objects": 1172,
+      "nested_members": 7682,
+      "payloads": 8677,
+      "uncompressed_payload_bytes": 1014655405
+    },
+    "elapsed_seconds": 103.148,
+    "qualification": "All blobs reachable from the verified remote main commit, with deduplicated recursive ZIP/gzip payloads. Known credential signatures and sensitive archive filenames are checked without printing values. This does not prove absence of arbitrary secrets or cover future release changes.",
+    "recognized_credential_matches": [],
+    "state": "passed",
+    "suspicious_archive_paths": []
+  },
+  "issues_all_states": 0,
+  "lfs": {
+    "all_refs_pointer_count": 0,
+    "command": "git lfs ls-files --all",
+    "exit_code": 0,
+    "lfs_config_file": false,
+    "submodule_config_file": false
+  },
+  "pending_final_release_checks": [
+    "Scan the final release commit/artifact additions and notebook outputs after they are finalized.",
+    "Inspect logs/artifacts of the final release CI run, not only this historical base.",
+    "Confirm branch/rules/security UI state after the repository becomes public.",
+    "Verify final public URLs and asset hashes without owner-only access."
+  ],
+  "public_history_author_committer_identity": "Only owner GitHub noreply identity observed; no unrelated identity.",
+  "pull_requests_all_states": 0,
+  "qualification": "AI-assisted internal technical audit, not human peer review, exhaustive secret discovery or a publication action. Historical Git/embedded-artifact scans are recorded separately below; final changing release files and newly generated hosted surfaces require final release verification.",
+  "recommendations": [
+    "An ordinary non-force push to main is consistent with the existing unprotected branch workflow; no AGENTS.md or CONTRIBUTING.md was found.",
+    "Remote v0.2.0 tag is unused and aligns with the unchanged scientific package version.",
+    "Do not mirror-push local refs/codex/* snapshots; publish only intended branch/tag refs.",
+    "Do not describe historical successful CI as checks of later release edits.",
+    "Keep secrets, local environments/caches, raw/prepared expression and unnecessary prediction arrays outside release assets; use suitable Release assets for the large distributable ZIP."
+  ],
+  "releases": 0,
+  "remote_branches": [
+    {
+      "name": "main",
+      "protected": false,
+      "sha": "3302c7c17c1aab7bd8c4f7408636d0b4d26de9a9"
+    }
+  ],
+  "remote_refs": [
+    {
+      "ref": "refs/heads/main",
+      "sha": "3302c7c17c1aab7bd8c4f7408636d0b4d26de9a9",
+      "type": "commit"
+    }
+  ],
+  "remote_tags": [],
+  "repository": "abdullah2hamza-blip/MLResearch",
+  "repository_id": 1428609138,
+  "review_date": "2026-10-28",
+  "reviewed_remote_revision": "3302c7c17c1aab7bd8c4f7408636d0b4d26de9a9",
+  "state": "passed_inspected_pre_release_surfaces",
+  "visibility_at_review": "private",
+  "wiki_enabled": false,
+  "workflow": {
+    "api_scope_failures_resolved_by_supported_alternative": [
+      "Tags collection fetch not allow-listed; complete git/matching-refs namespace and tags namespace inspected instead.",
+      "Repository Actions-artifact collection fetch not allow-listed; all 13 per-run artifact lists inspected instead."
+    ],
+    "branch_protection_detail_read": "403 Resource not accessible by integration; branch collection reports protected=false",
+    "current_branch_protected": false,
+    "operating_systems": [
+      "ubuntu-latest",
+      "windows-latest"
+    ],
+    "path": ".github/workflows/checks.yml",
+    "permissions": "contents: read",
+    "rulesets_read": "403 Upgrade to GitHub Pro or make private repository public to enable this feature"
+  }
+}

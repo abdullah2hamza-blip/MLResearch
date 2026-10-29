@@ -24,8 +24,8 @@ jobs:
       - name: Prepare local test directory
         run: python -c "from pathlib import Path; Path('.cache').mkdir(exist_ok=True)"
       - run: uv run --locked python -m pytest --basetemp .cache/pytest
-      - run: uv run --locked ruff check src tests scripts
-      - run: uv run --locked ruff format --check src tests scripts
+      - run: uv run --locked ruff check src tests scripts notebooks
+      - run: uv run --locked ruff format --check src tests scripts notebooks
       - run: uv run --locked python -m mypy src/mlresearch
       - run: uv run --locked mlresearch --help
       - run: uv run --locked mlresearch data list
