@@ -1,8 +1,14 @@
-> Historical primary-study report. The later [PI-reviewed manuscript and publication package](publication-guide.md) add the complete split/rank/budget robustness matrix, including conditional successes. Original frozen results below are preserved.
+> Historical primary-study report. The later [internally reviewed manuscript and publication package](publication-guide.md) add the complete split/rank/budget robustness matrix, including conditional successes. Original frozen results below are preserved.
 
 # Budgeted identification of transferable perturbation effects
 
 Computational research report, October 22, 2026.
+
+## AI assistance disclosure for this distributed report
+
+Artificial intelligence (AI) tools were used for manuscript editing and code preparation.
+
+OpenAI Codex (OpenAI) assisted with research planning, literature review and experimental design, code preparation, statistical analysis and interpretation, figure and table preparation, manuscript drafting and revision, internal review, and release preparation. These AI-assisted reviews were internal quality checks, not independent human peer review. The human author retains responsibility for the final work.
 
 The implemented study finds **no demonstrated primary benefit from adding the proposed fixed-kernel discrepancy term to classical joint acquisition design**. In the frozen external replay, its error area is 0.565% higher for K562→RPE1 and 0.0138% higher in reverse, with conditional query-bootstrap bands spanning zero. Controlled simulations show mixed effects, and the real development improvement is negligible. These results support retaining the simpler classical comparator rather than claiming a new acquisition advantage.
 

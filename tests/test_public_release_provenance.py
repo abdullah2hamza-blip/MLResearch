@@ -172,6 +172,45 @@ def test_clean_public_release_has_explicit_provenance_and_non_circular_checksums
     assert {entry["file"] for entry in manifest["release_files"]} == expected | {"SHA256SUMS"}
 
 
+def test_artifact_revision_preserves_numerical_package_and_old_releases(public_release):
+    case = public_release
+    case.run(
+        "--source-tag",
+        "v0.2.1",
+        "--source-commit",
+        case.commit,
+        "--source-export",
+        str(case.export),
+    )
+    output = case.root / "output/release"
+    manifest = json.loads((output / "release-manifest-v0.2.1.json").read_text())
+    assert manifest["version"] == "0.2.1"
+    assert manifest["software_package_version"] == "0.2.0"
+    assert manifest["environment_and_scientific_provenance"]["package_version"] == "0.2.0"
+    assert manifest["public_source"]["tag"] == "v0.2.1"
+    with zipfile.ZipFile(output / "manuscript-source-v0.2.1.zip") as archive:
+        assert json.loads(archive.read("CONTENTS.sha256.json"))["version"] == "0.2.1"
+        assert b"arxiv-source-v0.2.1.zip" in archive.read("README.txt")
+    assert not (output / "release-manifest-v0.2.0.json").exists()
+
+
+@pytest.mark.parametrize("version", ["../0.2.1", "0.2.1/file", "0.2.2"])
+def test_release_version_rejects_paths_and_tag_mismatch(public_release, version):
+    case = public_release
+    with pytest.raises(ValueError, match="version"):
+        case.run(
+            "--release-version",
+            version,
+            "--source-tag",
+            "v0.2.1",
+            "--source-commit",
+            case.commit,
+            "--source-export",
+            str(case.export),
+        )
+    assert not (case.root / "output/release").exists()
+
+
 @pytest.mark.parametrize("commit", ["abc123", "z" * 40, "c" * 39])
 def test_release_refuses_incomplete_or_nonhex_commit(public_release, commit):
     case = public_release

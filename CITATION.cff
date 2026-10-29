@@ -25,5 +25,5 @@ preferred-citation:
       affiliation: Independent Researcher
   year: 2026
   license: CC-BY-4.0
-  url: "https://github.com/abdullah2hamza-blip/MLResearch/releases/tag/v0.2.0"
-  notes: "Technical report and public research release; not peer reviewed. No publication DOI is assigned."
+  url: "https://github.com/abdullah2hamza-blip/MLResearch/releases/tag/v0.2.1"
+  notes: "Technical report artifact revision v0.2.1; numerical software remains 0.2.0. Not peer reviewed. No publication DOI is assigned."

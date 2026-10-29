@@ -4,15 +4,17 @@ The manuscript is **Evaluating fixed-kernel joint acquisition for cross-context 
 
 The subsequent [public-release checklist](public-release-checklist.md) tracks actual GitHub/Kaggle uploads, hosted execution and public-access checks. Earlier readiness audits are historical evidence, not proof of later hosted publication.
 
+Artifact release v0.2.1 updates disclosure/distribution while preserving numerical software 0.2.0. Earlier release files and experiment snapshots retain their original identities.
+
 ## Deliverables and reader access
 
 - `output/pdf/joint-acquisition-study.pdf`: article and supplement.
-- `output/release/arxiv-source-v0.2.0.zip`: minimal upload, containing only the31 TeX/bibliography/referenced-figure files needed to compile the article. It was unpacked and rebuilt to a byte-identical PDF.
-- `output/release/manuscript-source-v0.2.0.zip`: self-contained TeX sources, bibliography, vector figures, generated tables, compiled bibliography and build helper. No expression data are needed to compile it.
-- `output/release/code-and-evidence-v0.2.0.zip`: original software, tests, locked environment, configurations, retained evidence, manuscript pipeline and PDF. It excludes raw/prepared expression data, large predictions, credentials, Git history and machine caches.
-- `output/release/release-manifest-v0.2.0.json`: archive/PDF checksums and member inventories.
+- `output/release/arxiv-source-v0.2.1.zip`: minimal upload, containing only the31 TeX/bibliography/referenced-figure files needed to compile the article. It was unpacked and rebuilt to a byte-identical PDF.
+- `output/release/manuscript-source-v0.2.1.zip`: self-contained TeX sources, bibliography, vector figures, generated tables, compiled bibliography and build helper. No expression data are needed to compile it.
+- `output/release/code-and-evidence-v0.2.1.zip`: original software, tests, locked environment, configurations, retained evidence, manuscript pipeline and PDF. It excludes raw/prepared expression data, large predictions, credentials, Git history and machine caches.
+- `output/release/release-manifest-v0.2.1.json`: archive/PDF checksums and member inventories.
 
-The canonical repository is https://github.com/abdullah2hamza-blip/MLResearch and the versioned technical-report release is https://github.com/abdullah2hamza-blip/MLResearch/releases/tag/v0.2.0. Release assets provide the manuscript, editable sources and complete distributable code/evidence package. The Kaggle workflow is saved-output reanalysis, not full experimental reproduction; its actual hosted version and verification status are recorded with the release. Hosting is not independent peer review or journal acceptance, and no DOI is assigned. Final public accessibility is verified by the release workflow rather than inferred from prepared local files.
+The canonical repository is https://github.com/abdullah2hamza-blip/MLResearch and the versioned technical-report release is https://github.com/abdullah2hamza-blip/MLResearch/releases/tag/v0.2.1. Release assets provide the manuscript, editable sources and complete distributable code/evidence package. The Kaggle workflow is saved-output reanalysis, not full experimental reproduction; its actual hosted version and verification status are recorded with the release. Hosting is not independent peer review or journal acceptance, and no DOI is assigned. Final public accessibility is verified by the release workflow rather than inferred from prepared local files.
 
 Original code uses [MIT](../LICENSE); the manuscript uses [CC BY 4.0](../paper/LICENSE). Third-party data retain their original terms. [CITATION.cff](../CITATION.cff) contains versioned citation metadata without an invented publication or DOI. The supplied author reports no external funding or competing interests. Assistance, including substantive preparation and internal review, is disclosed consistently in [the canonical assistance record](ai-assistance.md). Those checks are not a new human-author attestation.
 
@@ -84,7 +86,7 @@ uv run --locked python -m pytest --basetemp .cache/pytest-publication
 uv run --locked ruff check src tests scripts notebooks
 uv run --locked ruff format --check src tests scripts notebooks
 uv run --locked python -m mypy src/mlresearch
-uv run --locked python scripts/package-publication.py --output output/release
+uv run --locked python scripts/package-publication.py --output output/release --release-version 0.2.1
 ```
 
 Tests cover meaningful numerical/covariance, information-boundary, accounting and resume behavior. The release audit distinguishes these checks from the model's unverified biological assumptions. A clean unpack/install and manuscript-only unpack/compile are independently checked before completion.
@@ -93,4 +95,4 @@ Authenticated protocol copies inside `docs/results/**/frozen-evidence/` preserve
 
 ## Human submission actions
 
-The public research release is labeled a technical report. Submission to an additional preprint service or journal requires separate instructions. Choose a suitable preprint category or journal; this is a focused computational evaluation with limited biological generalization. For arXiv, [the official submission guide](https://info.arxiv.org/help/submit/index.html) requires source submission for a TeX-authored article. Its [TeX instructions](https://info.arxiv.org/help/submit_tex.html) also exclude unused files; the separate arXiv archive omits the full editable package's tooling, manifests and unused image formats. Upload the minimal `arxiv-source-v0.2.0.zip`, select `main.tex`, inspect the platform-generated PDF, and choose the author-approved CC BY 4.0 terms. Account registration, possible endorsement and moderation remain platform decisions. Deposit the accompanying code/evidence archive and supply its persistent URL/identifier when assigned; update the availability/citation metadata if a public archive is created. For a journal, adapt its template, data/code deposit and AI-disclosure fields without changing the scientific qualifications. No acceptance, endorsement, DOI or public deposition is implied by this preparation.
+The public research release is labeled a technical report. Submission to an additional preprint service or journal requires separate instructions. Choose a suitable preprint category or journal; this is a focused computational evaluation with limited biological generalization. For arXiv, [the official submission guide](https://info.arxiv.org/help/submit/index.html) requires source submission for a TeX-authored article. Its [TeX instructions](https://info.arxiv.org/help/submit_tex.html) also exclude unused files; the separate arXiv archive omits the full editable package's tooling, manifests and unused image formats. Upload the minimal `arxiv-source-v0.2.1.zip`, select `main.tex`, inspect the platform-generated PDF, and choose the author-approved CC BY 4.0 terms. Account registration, possible endorsement and moderation remain platform decisions. Deposit the accompanying code/evidence archive and supply its persistent URL/identifier when assigned; update the availability/citation metadata if a public archive is created. For a journal, adapt its template, data/code deposit and AI-disclosure fields without changing the scientific qualifications. No acceptance, endorsement, DOI or public deposition is implied by this preparation.

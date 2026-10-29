@@ -224,7 +224,12 @@ def validate_build_receipt(source: Path, pdf: Path, bibliography: Path) -> dict:
 
 
 def archive(
-    path: Path, members: dict[str, Path | bytes], kind: str, include_inventory: bool = True
+    path: Path,
+    members: dict[str, Path | bytes],
+    kind: str,
+    include_inventory: bool = True,
+    *,
+    version: str = "0.2.0",
 ) -> dict:
     hashes = {}
     with zipfile.ZipFile(path, "w", compression=zipfile.ZIP_DEFLATED, compresslevel=6) as output:
@@ -241,7 +246,7 @@ def archive(
             hashes[name] = digest(payload)
         inventory = {
             "kind": kind,
-            "version": "0.2.0",
+            "version": version,
             "sha256": hashes,
             "excluded": [
                 "raw/prepared expression",
@@ -279,6 +284,10 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", type=Path, default=Path("output/release"))
     parser.add_argument("--replace", action="store_true")
+    parser.add_argument(
+        "--release-version",
+        help="Artifact version; defaults to a semantic source tag, then the software version",
+    )
     parser.add_argument("--source-tag", help="Actual release tag represented by --source-export")
     parser.add_argument(
         "--source-commit", help="Complete 40-character commit represented by the export"
@@ -295,14 +304,26 @@ def main() -> None:
             "Public release mode requires --source-tag, --source-commit and --source-export"
         )
     root = Path.cwd().resolve()
+    project = tomllib.loads((root / "pyproject.toml").read_text(encoding="utf-8"))["project"]
+    semantic_version = r"[0-9]+\.[0-9]+\.[0-9]+(?:[-+][A-Za-z0-9.-]+)?"
+    tagged_version = (
+        args.source_tag.removeprefix("v")
+        if args.source_tag and re.fullmatch("v?" + semantic_version, args.source_tag)
+        else None
+    )
+    version = args.release_version or tagged_version or project["version"]
+    if re.fullmatch(semantic_version, version) is None:
+        raise ValueError("Release version must be a portable semantic version")
+    if tagged_version is not None and version != tagged_version:
+        raise ValueError("Release version does not match the semantic source tag")
     destination = args.output.resolve()
     if not destination.is_relative_to(root):
         raise ValueError("Choose an output folder inside this checkout")
     names = [
-        "manuscript-source-v0.2.0.zip",
-        "code-and-evidence-v0.2.0.zip",
-        "arxiv-source-v0.2.0.zip",
-        "release-manifest-v0.2.0.json",
+        f"manuscript-source-v{version}.zip",
+        f"code-and-evidence-v{version}.zip",
+        f"arxiv-source-v{version}.zip",
+        f"release-manifest-v{version}.json",
     ]
     if (
         any(
@@ -341,14 +362,16 @@ def main() -> None:
     manuscript["build-paper.py"] = Path("scripts/build-paper.py")
     manuscript["CODE-LICENSE"] = Path("LICENSE")
     manuscript["README.txt"] = (
-        b"Technical report and supplement, Abdullah Hamza, October 28, 2026.\n"
-        b"License: CC BY 4.0; see LICENSE.\n"
-        b"The build helper is MIT licensed; see CODE-LICENSE.\n"
-        b"Compile: python build-paper.py --source main.tex --output joint-acquisition-study.pdf\n"
-        b"Requires Tectonic or pdfLaTeX/BibTeX. TeX source needs no expression data.\n"
-        b"Asset hashes verified; underlying evidence is in the separate code archive.\n"
-        b"For arXiv upload arxiv-source-v0.2.0.zip and select main.tex; see current instructions.\n"
-    )
+        "Technical report and supplement, Abdullah Hamza.\n"
+        f"Artifact release v{version}; numerical software identity is recorded separately.\n"
+        "License: CC BY 4.0; see LICENSE.\n"
+        "The build helper is MIT licensed; see CODE-LICENSE.\n"
+        "Compile: python build-paper.py --source main.tex --output joint-acquisition-study.pdf\n"
+        "Requires Tectonic or pdfLaTeX/BibTeX. TeX source needs no expression data.\n"
+        "Asset hashes verified; underlying evidence is in the separate code archive.\n"
+        f"For arXiv upload arxiv-source-v{version}.zip "
+        "and select main.tex; see current instructions.\n"
+    ).encode()
     arxiv = {
         name: payload
         for name, payload in manuscript.items()
@@ -405,15 +428,18 @@ def main() -> None:
         f"Packing {len(manuscript)} manuscript and {len(code)} code/evidence payloads", flush=True
     )
     records = [
-        archive(destination / names[0], manuscript, "manuscript-source"),
-        archive(destination / names[1], code, "code-and-evidence"),
-        archive(destination / names[2], arxiv, "arxiv-source", include_inventory=False),
+        archive(destination / names[0], manuscript, "manuscript-source", version=version),
+        archive(destination / names[1], code, "code-and-evidence", version=version),
+        archive(
+            destination / names[2], arxiv, "arxiv-source", include_inventory=False, version=version
+        ),
     ]
     if public_source is not None:
         validate_exported_code_payloads(records[1]["member_sha256"], public_source, receipt)
     manifest = {
         "state": "built_and_payload_verified",
-        "version": "0.2.0",
+        "version": version,
+        "software_package_version": project["version"],
         "packager_sha256": digest(Path(__file__).read_bytes()),
         "build_receipt_sha256": digest(pdf.with_suffix(".build.json").read_bytes()),
         "pdf": {

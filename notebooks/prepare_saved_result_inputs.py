@@ -24,6 +24,7 @@ INPUTS = {
 }
 
 AI_DISCLOSURE = (
+    "Artificial intelligence (AI) tools were used for manuscript editing and code preparation. "
     "OpenAI Codex (OpenAI) assisted with research planning, literature review and experimental "
     "design, code preparation, statistical analysis and interpretation, figure and table "
     "preparation, manuscript drafting and revision, internal review, and release preparation. "

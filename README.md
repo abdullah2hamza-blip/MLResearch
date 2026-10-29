@@ -13,9 +13,18 @@ computational evaluation, with no claim of biological transportability.
 
 The [publication guide](docs/publication-guide.md) explains the editable sources,
 shareable code/evidence archive, lightweight figure/table regeneration, full
-replay, licensing and submission steps. The versioned [v0.2.0 research release](https://github.com/abdullah2hamza-blip/MLResearch/releases/tag/v0.2.0)
+replay, licensing and submission steps. The versioned [v0.2.1 artifact release](https://github.com/abdullah2hamza-blip/MLResearch/releases/tag/v0.2.1)
 provides the paper, editable sources and retained code/evidence. Hosting is not
 independent peer review or journal acceptance; no DOI is assigned.
+
+The artifact release preserves numerical software version 0.2.0 and its recorded
+scientific snapshots. It updates disclosure and distribution materials without
+changing the scientific method or retained results. The [Kaggle research bundle](https://www.kaggle.com/datasets/abdullah2hamza/joint-acquisition-perturbation-prediction)
+and [executable study writeup](https://www.kaggle.com/code/abdullah2hamza/joint-acquisition-saved-output-reanalysis)
+provide the manuscript, implementation, configurations, evidence and a saved-output
+reanalysis. Use their release bindings rather than assuming that a hosting date
+identifies an original experiment. The [release follow-up checklist](docs/public-release-followup-20261029.md)
+separates source preparation from verified publication.
 
 The [October 28 release review](docs/release-review-v2.md) records the fresh
 manuscript/code review and artifact verification before the subsequent
@@ -73,6 +82,8 @@ prediction backbones and 720 checkpoints. Conditional resampling, technical
 batches and reused transfer directions are not independent biological evidence.
 
 ## AI assistance
+
+Artificial intelligence (AI) tools were used for manuscript editing and code preparation.
 
 OpenAI Codex (OpenAI) assisted with research planning, literature review and experimental design, code preparation, statistical analysis and interpretation, figure and table preparation, manuscript drafting and revision, internal review, and release preparation. These AI-assisted reviews were internal quality checks, not independent human peer review. The human author retains responsibility for the final work.
 

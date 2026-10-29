@@ -1,0 +1,135 @@
+{
+  "state": "passed_local_checks_before_source_freeze",
+  "artifact_release": "v0.2.1",
+  "numerical_package_version": "0.2.0",
+  "source_freeze_status": "Commit/tag, clean-export packaging, hosted versions and public-access verification are subsequent gates.",
+  "tests": {
+    "passed": 149,
+    "elapsed_seconds": 176.59,
+    "warnings": "Three expected Agg show warnings in notebook tests"
+  },
+  "focused_version_build_notebook_tests": {
+    "passed": 38,
+    "elapsed_seconds": 18.56
+  },
+  "ruff": {
+    "state": "passed",
+    "files": 77
+  },
+  "mypy": {
+    "state": "passed",
+    "source_modules": 22
+  },
+  "scientific_source_and_configs_and_lock_unchanged_from_base": "2cdee918ff261285646844331fb8e4752ed4c290",
+  "offline_smoke": {
+    "state": "complete",
+    "kind": "synthetic example; not a new original full experiment",
+    "commands": [
+      "mlresearch demo --directory runs/offline-demo-v021 --five-seeds",
+      "mlresearch report runs/offline-demo-v021/experiment --output runs/offline-demo-v021/report"
+    ],
+    "policies": [
+      "random_equal",
+      "worst_query",
+      "bias_aware"
+    ],
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "budgets": [
+      96,
+      144,
+      192
+    ],
+    "run_manifest_sha256": "0b94a8e1afec062fe763b68fc440ee06e04521e652233c02bbf143abea8a42ac",
+    "report_sha256": "393c40977f46b69189457e128ca9e058cdfe82dae50c131425637bb12b19ca55",
+    "observed_environment": {
+      "packages": {
+        "h5py": "3.16.0",
+        "matplotlib": "3.11.2",
+        "mlresearch": "0.2.0",
+        "numpy": "2.5.4",
+        "pytest": "9.1.1",
+        "scipy": "1.18.1"
+      },
+      "platform": "Windows-11-10.0.26200-SP0",
+      "python": "3.12.14"
+    },
+    "process_resource_scope": "Per-process/lifetime peaks in the retained local run; one BLAS thread, no paid service"
+  },
+  "pdf": {
+    "state": "passed",
+    "pages": 28,
+    "pdf_sha256": "b30c58b0042bce86ebaa4813f9c6037262565ce75d08f0191a4eedbf66fd2a2b",
+    "exact_minimum_disclosure_pages": [
+      17
+    ],
+    "broader_disclosure_preserved": true,
+    "render_scale": 1.5,
+    "pixel_identical_to_previous_visually_reviewed_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28
+    ],
+    "changed_pages_requiring_visual_inspection": [
+      17
+    ],
+    "previous_pdf_sha256": "33ee27e5201be6d65dc470d594c0121310cde6daa12c616ac442d1e31d3c8527",
+    "metadata": {
+      "/Creator": "LaTeX with hyperref",
+      "/Title": "Evaluating fixed-kernel joint acquisition for cross-context perturbation prediction",
+      "/Author": "Abdullah Hamza",
+      "/Producer": "xdvipdfmx (0.1)",
+      "/CreationDate": "D:20261028000000-00'00'"
+    },
+    "unresolved_references": [],
+    "overfull_boxes": [],
+    "changed_pages_visually_inspected": [
+      17
+    ],
+    "visual_review": "All 28 pages rendered. Pages 1-16 and 18-28 are pixel-identical to the previously inspected edition. The changed page 17 was visually inspected: exact minimum sentence and full broader disclosure are readable, no clipping, overflow or missing content."
+  },
+  "citation_schema_check": {
+    "state": "passed",
+    "schema_url": "https://raw.githubusercontent.com/citation-file-format/citation-file-format/1.2.0/schema.json",
+    "schema_sha256": "0b8d22140da702d766df318dcff3a91af2f39521298dcf36d76315fd99cc169b",
+    "citation_sha256": "99669648fc054b4ef5645c674528eaaf3bf4cab74cc42e8a643faabe28bba690",
+    "validator": "Draft7Validator with format checks",
+    "validator_version": "4.26.0",
+    "yaml_version": "6.0.3",
+    "errors": []
+  },
+  "exact_required_disclosure": "Artificial intelligence (AI) tools were used for manuscript editing and code preparation.",
+  "broader_disclosure_retained": true,
+  "canonical_notebook_sha256": "023ec73ac1c72987a90063d0c97cae69d626090208af69fe4b1df2e2f3d8fe71",
+  "notebook_executable_cell_sources_changed": false,
+  "prior_publication_evidence": "The existing v0.2.0 release and v1 Kaggle resources are preserved; this record is not evidence that v0.2.1 is already published."
+}
